@@ -1,0 +1,113 @@
+{
+  "source_file": "Toyota_Yaris_Sedan_U.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 6,
+  "dtcs": [
+    {
+      "dtc_code": "U0073",
+      "description": "Control Module Communication Bus OFF The skid control ECU receives the signal sent from the ECM via the CAN communication system. When DTCs indicating a CAN communication system malfunction are output, repair the CAN communication system before repairing each corresponding sensor. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "RECONFIRM DTC (a) Clear the DTC    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). (b) Turn the ignition switch off. (c) Start the engine. (d) Drive the vehicle and turn the steering wheel to the right and left at a speed of 15 km/h (9 mph) or more. (e) Check for DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). HINT If the CAN communication system DTC and the relevant sensor DTCs are output simultaneously, troubleshoot the relevant sensor DTCs (for ABS) after the CAN communication system returns to normal. Result B --  REPAIR CIRCUIT INDICATED BY OUTPUT DTC  See: Diagnostic Trouble Code Descriptions/Anti-Lock Brake System (for Sedan) C --  CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/Electronic Circuit A --  CHECK CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Proceed With Troubleshooting Vehicle Stability Control System (for Sedan) BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM (for Sedan): U0073, U0100, U0123, U0124, U0126: Control Module Communication Bus OFF",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0126",
+      "description": "Lost Communication with Steering Angle Sensor Module The skid control ECU receives the signals from the ECM, steering angle sensor, and yaw rate and acceleration sensor via the CAN communication system. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK HARNESS AND CONNECTOR (MOMENTARY INTERRUPTION) (a) Using the Techstream, check for any momentary interruption in the wire harness and connector corresponding to a DTC    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Component Tests and General Diagnostics/Vehicle Stability Control System (for Sedan)/Check For Intermittent Problems. ABS/VSC/TRAC Result HINT Perform the above inspection before removing the sensor and connector. B --  RECONFIRM DTC C --  REPAIR OR REPLACE HARNESS OR CONNECTOR A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK IF EACH SENSOR AND ECM CONNECTOR IS SECURELY CONNECTED (a) Turn the ignition switch off. (b) Check if each sensor or ECM connector is securely connected. OK: Each connector is securely connected. NG --  CONNECT CONNECTOR TO EACH SENSOR OR ECM CORRECTLY OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "RECONFIRM DTC (a) Turn the ignition switch off. (b) Record the output DTCs (for ABS, VSC, and CAN communication)    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). HINT If the CAN communication system DTC and the relevant sensor DTCs are output simultaneously, troubleshoot the relevant sensor DTCs (for ABS and VSC) after the CAN communication system returns to normal. Result B --  REPAIR CIRCUIT INDICATED BY OUTPUT DTC  See: Diagnostic Trouble Code Descriptions/Vehicle Stability Control System (for Sedan) C --  CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Component Tests and General Diagnostics/Vehicle Stability Control System (for Sedan)/Check For Intermittent Problems A --  CHECK CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Proceed With Troubleshooting",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "REPAIR OR REPLACE HARNESS OR CONNECTOR (a) Turn the ignition switch off. (b) Repair or replace the harness or connector. (c) Check for any momentary interruption between the skid control ECU and each sensor or ECM    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Component Tests and General Diagnostics/Vehicle Stability Control System (for Sedan)/Check For Intermittent Problems. (d) Check that there is no momentary interruption. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "RECONFIRM DTC (a) Turn the ignition switch off. (b) Clear the DTC    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). (c) Start the engine. (d) Drive the vehicle and turn the steering wheel to the right and left at a speed of 15 km/h (9 mph) or more. (e) Check that no CAN communication system DTC is output    See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/Diagnosis System. (f) If ABS and VSC DTCs are output, record them. Result HINT The CAN communication system must be normal when repairing each sensor DTC (for ABS and VSC). B --  REPAIR CIRCUIT INDICATED BY OUTPUT DTC  See: Diagnostic Trouble Code Descriptions/Vehicle Stability Control System (for Sedan) C --  END A --  CHECK CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Proceed With Troubleshooting Meter / Gauge System (for Sedan)",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100",
+      "description": "Lost Communication with ECM / PCM \"A\" The combination meter assembly and the ECM exchange signals through the CAN communication system. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CONFIRM DTC OUTPUT (a) Connect the Techstream to the DLC3. (b) Turn the ignition switch ON and turn the tester ON. (c) Clear the stored DTCs by selecting the following menu items on the tester: Body Electrical / Combination Meter / Trouble Codes. (d) Drive the vehicle at more than 3.1 mph (5 km/h) for at least 60 seconds. (e) Stop the vehicle. (f) Check for DTCs. Result: B --  SYSTEM IS OK A --  GO TO CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Proceed With Troubleshooting Power Steering System (for Sedan)",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0129",
+      "description": "93 - Lost Communication with Brake System Control Module The power steering ECU receives signals from the ECM and the skid control ECU (ABS ECU) via the CAN communication system. HINT When two or more DTCs starting with [U] are output simultaneously, inspect the connectors and wire harness of each ECU. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CONFIRM DTC (a) Check for DTCs    See: Steering and Suspension/Steering/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. OK: DTCs other than U0100/92 and U0129/93 are not output. NG --  REPAIR CIRCUITS INDICATED BY OUTPUT DTCS  See: Diagnostic Trouble Code Descriptions/Power Steering System (for Sedan) OK --  GO TO CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Proceed With Troubleshooting Vehicle Stability Control System (for Sedan) BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM (for Sedan): U0073, U0100, U0123, U0124, U0126: Control Module Communication Bus OFF",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0123",
+      "description": "BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM (for Sedan): U0073, U0100, U0123, U0124, U0126: Control Module Communication Bus OFF",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0124",
+      "description": "BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM (for Sedan): U0073, U0100, U0123, U0124, U0126: Control Module Communication Bus OFF",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "source_file": "Mitsubishi_Eclipse_DTC's.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 1,
+  "dtcs": [
+    {
+      "dtc_code": "B1301",
+      "description": "B1310/U1073 Cruise Control DIAGNOSTIC TROUBLE CODE CHART Check according to the inspection chart that is appropriate for the diagnostic trouble code. Diagnostic Trouble Code Chart Automatic Air Conditioning DIAGNOSTIC TROUBLE CODE CHART",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

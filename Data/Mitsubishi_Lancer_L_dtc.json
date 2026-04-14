@@ -1,0 +1,520 @@
+{
+  "source_file": "Mitsubishi_Lancer_L.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 15,
+  "dtcs": [
+    {
+      "dtc_code": "L0432",
+      "description": "RLS RS Adaptation Error TROUBLE JUDGMENT When the lighting control sensor is installed with the wrong procedure, DTC L0432 is stored by LIN. TECHNICAL DESCRIPTION (COMMENT) The lighting control sensor may have been installed with the wrong procedure. - Incorrect installation procedure: Connect the connector before mounting the lighting control sensor onto the optical coupler of the windshield. - Correct installation procedure: Mount the lighting control sensor onto the optical coupler of the windshield. Wipe the windshield surface thoroughly, and check that the surface is dry. Then, connect the connector. HINTS - Lighting control sensor improperly installed - Lighting control sensor (rain sensor) abnormal operation DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicle Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Using scan tool MB991958, Check whether the diagnostic trouble code is reset. Disconnect the connector from the lighting control sensor, and connect the connector to the lighting control sensor again. Then, check again if the DTC is set to LIN.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958. Refer to  See: Lighting and Horns/Headlamp/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/How to Connect the Scan Tool (M.U.T.-III)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Disconnect the connector of lighting control sensor, and connect it again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check if DTC is set. Q : Is the DTC set?",
+          "yes": "Replace the lighting control sensor.",
+          "no": "The trouble can be an intermittent malfunction."
+        },
+        {
+          "step": 4,
+          "instruction": "Check if DTC is set. Q : Is the DTC set? STEP 2. Lighting control sensor installation surface check Visually check the presence of scratches or air bubbles [diameter of 5 mm (0.2 inch) or more] on the windshield to which the lighting control sensor is installed. In addition, visually check that the optical coupler is not broken and that the lighting control sensor can be installed. Q : Is the check result normal? STEP 3. Using scan tool MB991958, Check whether the diagnostic trouble code is reset. Check again if the DTC is set to LIN.",
+          "yes": "Go to Step 3.",
+          "no": "Replace the windshield"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "L0434",
+      "description": "RLS Rain Sensor Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "L0436",
+      "description": "RLS Light Sensor Error TROUBLE JUDGMENT If a trouble occurs in the lighting control sensor, DTC L0434 and L0436 are stored to LIN. TECHNICAL DESCRIPTION (COMMENT) Malfunction of the lighting control sensor DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicle Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) Using scan tool MB991958, Check whether the diagnostic trouble code is reset. Check again if the DTC is set to LIN.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958. Refer to  See: Lighting and Horns/Headlamp/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/How to Connect the Scan Tool (M.U.T.-III)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Erase the DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch from \"LOCK\" (OFF) position to \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check if DTC is set. Q : Is the DTC set?",
+          "yes": "Replace the lighting control sensor.",
+          "no": "The trouble can be an intermittent malfunction."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "L0630",
+      "description": "CODE NO. L0630: S/R Power supply STEP 1. Check sunroof motor assembly connector D-05 for loose, corroded or damaged terminals, or terminals pushed back in the connector. Q: Is sunroof switch connector D-05 in good condition? YES : Go to Step 2. NO : Repair or replace the damaged component(s). Refer to general (electrical), Harness Connector Inspection. Check that the sunroof works normally. STEP 2. Check the wiring harness between sunroof motor assembly connector D-05 (terminal 6) and fusible link (34).",
+      "detection_condition": [],
+      "possible_causes": [
+        "-",
+        "Malfunction of the sunroof motor assembly",
+        "-",
+        "Damaged wiring harness and connectors"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Erase the diagnostic trouble code.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch from the LOCK (OFF) position to the ON position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check if the diagnostic trouble code is set. Q: Is the diagnostic trouble code set?",
+          "yes": "Replace the sunroof motor assembly.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "L0632",
+      "description": "CODE NO. L0632: S/R Switch fail STEP 1. Check sunroof switch connector D-04 and sunroof motor assembly D-05 for loose, corroded or damaged terminals, or terminals pushed back in the connector. Q: Are sunroof switch connector D-04 and sunroof motor assembly D-05 in good condition? YES : Go to Step 2. NO : Repair or replace the damaged component(s). Refer to general (electrical), Harness Connector Inspection. Check that the sunroof works normally. STEP 2. Check the wiring harness between sunroof switch connector D-04 (terminals No. 3, 5, 6) and sunroof motor assembly connector D-05 (terminals No. 4, 5, 10). Q: Is the wiring harness between sunroof switch connector D-04 (terminal 3, 5, 6) and sunroof motor assembly connector D-05 (terminal No. 4, 5, 10) in good condition? YES : Go to Step 3. NO : The wiring harness may be damaged or the connector(s) may have loose, corroded or damaged terminals, or terminals pushed back in the connector. Repair the wiring harness as necessary. Check that the sunroof works normally. STEP 3. Diagnostic trouble code recheck Replace the sunroof switch. Recheck if the diagnostic trouble code is set.",
+      "detection_condition": [],
+      "possible_causes": [
+        "-",
+        "Malfunction of the sunroof motor assembly",
+        "-",
+        "Malfunction of the sunroof switch",
+        "-",
+        "Damaged wiring harness and connectors"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Erase the diagnostic trouble code.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch from the LOCK (OFF) position to the ON position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check if the diagnostic trouble code is set. Q: Is the diagnostic trouble code set?",
+          "yes": "Replace the sunroof motor assembly.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "L0634",
+      "description": "CODE NO. L0634: S/R Sensor signal Diagnostic trouble code recheck Recheck if the diagnostic trouble code is set.",
+      "detection_condition": [],
+      "possible_causes": [
+        "-",
+        "Malfunction of the sunroof motor assembly"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Erase the diagnostic trouble code.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch from the LOCK (OFF) position to the ON position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check if the diagnostic trouble code is set. Q: Is the diagnostic trouble code set?",
+          "yes": "Replace the sunroof motor assembly.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "L0637",
+      "description": "CODE NO. L0637: S/R Position STEP 1. Check the sunroof fully closed position",
+      "detection_condition": [],
+      "possible_causes": [
+        "-",
+        "Malfunction of the sunroof motor assembly"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Carry out the learning procedures of the sunroof fully closed position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Recheck if the diagnostic trouble code is set. a. Erase the diagnostic trouble code. b. Turn the ignition switch from the LOCK (OFF) position to the ON position. c. Check if the diagnostic trouble code is set. Q: Is the check result normal? STEP 2. Diagnostic trouble code recheck Recheck if the diagnostic trouble code is set.",
+          "yes": "The procedure is complete.",
+          "no": "Go to Step 2."
+        },
+        {
+          "step": 1,
+          "instruction": "Erase the diagnostic trouble code.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch from the LOCK (OFF) position to the ON position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check if the diagnostic trouble code is set. Q: Is the diagnostic trouble code set?",
+          "yes": "Replace the sunroof motor assembly.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "L0640",
+      "description": "CODE NO. L0640: S/R Over load STEP 1. Check the sunroof fully closed position",
+      "detection_condition": [],
+      "possible_causes": [
+        "-",
+        "Malfunction of the sunroof motor assembly"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Carry out the learning procedures of the sunroof fully closed position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Recheck if the diagnostic trouble code is set. a. Erase the diagnostic trouble code. b. Turn the ignition switch from the LOCK (OFF) position to the ON position. c. Check if the diagnostic trouble code is set. Q: Is the check result normal? STEP 2. Diagnostic trouble code recheck Recheck if the diagnostic trouble code is set.",
+          "yes": "The procedure is complete.",
+          "no": "Go to Step 2."
+        },
+        {
+          "step": 1,
+          "instruction": "Erase the diagnostic trouble code.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch from the LOCK (OFF) position to the ON position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check if the diagnostic trouble code is set. Q: Is the diagnostic trouble code set?",
+          "yes": "Replace the sunroof motor assembly.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "L0730",
+      "description": "CODE NO. L0730: P/W (DR) SW pulse 1 disconnection STEP 1. Check power window main switch connector E-28, front power window motor (LH) connector E-14 for loose, corroded or damaged terminals, or terminals pushed back in the connector. Q: Are power window main switch connector E-28, front power window motor (LH) connector E-14 in good condition? YES : Go to Step 2. NO : Repair or replace the damaged component(s). Refer to general (electrical), Harness Connector Inspection. Verify that the power window works normally. STEP 2. Check the wiring harness between power window main switch connector E-28 (terminals 8, 9, 12) and front power window motor (LH) connector E-14 (terminals 3, 5, 6). Q: Is the wiring harness between power window main switch connector E-28 (terminals 8, 9, 12) and front power window motor (LH) connector E-14 (terminals 3, 5, 6) in good condition? YES : Go to Step 3. NO : The wiring harness may be damaged or the connector(s) may have loose, corroded or damaged terminals, or terminals pushed back in the connector. Repair the wiring harness as necessary. Verify that the power window works normally. STEP 3. Diagnostic trouble code recheck Replace the front power window motor (LH). Recheck if the diagnostic trouble code is set.",
+      "detection_condition": [],
+      "possible_causes": [
+        "-",
+        "Malfunction of the front power window motor (LH)",
+        "-",
+        "Malfunction of the power window main switch",
+        "-",
+        "Damaged wiring harness and connectors"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Erase the diagnostic trouble code.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the driver's door window switch on the power window main switch.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check if the diagnostic trouble code is set. Q: Is the diagnostic trouble code set?",
+          "yes": "Replace the power window main switch.",
+          "no": "The procedure is complete. Verify that the power window works normally."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "L0732",
+      "description": "CODE NO. L0732: P/W (DR) SW pulse 2 disconnection STEP 1. Check power window main switch connector E-28, front power window motor (LH) connector E-14 for loose, corroded or damaged terminals, or terminals pushed back in the connector. Q: Are power window main switch connector E-28, front power window motor (LH) connector E-14 in good condition? YES : Go to Step 2. NO : Repair or replace the damaged component(s). Refer to general (electrical), Harness Connector Inspection. Verify that the power window works normally. STEP 2. Check the wiring harness between power window main switch connector E-28 (terminals 9, 11, 12) and front power window motor (LH) connector E-14 (terminals 5, 2, 6). Q: Is the wiring harness between power window main switch connector E-28 (terminals 9, 11,12) and front power window motor (LH) connector E-14 (terminals 5, 2, 6) in good condition? YES : Go to Step 3. NO : The wiring harness may be damaged or the connector(s) may have loose, corroded or damaged terminals, or terminals pushed back in the connector. Repair the wiring harness as necessary. Verify that the power window works normally. STEP 3. Diagnostic trouble code recheck Replace the front power window motor (LH). Recheck if the diagnostic trouble code is set.",
+      "detection_condition": [],
+      "possible_causes": [
+        "-",
+        "Malfunction of the front power window motor (LH)",
+        "-",
+        "Malfunction of the power window main switch",
+        "-",
+        "Damaged wiring harness and connectors"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Erase the diagnostic trouble code.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the driver's door window switch on the power window main switch.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check if the diagnostic trouble code is set. Q: Is the diagnostic trouble code set?",
+          "yes": "Replace the power window main switch.",
+          "no": "The procedure is complete. Verify that the power window works normally."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "L0734",
+      "description": "CODE NO. L0734: P/W (DR) Above window position STEP 1. Check the power window fully closed position",
+      "detection_condition": [],
+      "possible_causes": [
+        "-",
+        "Malfunction of the front power window motor (LH)",
+        "-",
+        "Malfunction of the power window main switch"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Carry out the learning procedures of the power window fully closed position. Refer to Learning Procedures Of The Power Window Fully Closed Position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Recheck if the diagnostic trouble code is set. a. Erase the diagnostic trouble code. b. Press the driver's door window switch (on the power window main switch) down to open the window, and pull up the driver's door window switch to fully close the window. c. Check if the diagnostic trouble code is set. Q: Is the check result normal? STEP 2. Diagnostic trouble code recheck Replace the front power window motor (LH). Recheck if the diagnostic trouble code is set.",
+          "yes": "The procedure is complete.",
+          "no": "Go to Step 2."
+        },
+        {
+          "step": 1,
+          "instruction": "Erase the diagnostic trouble code.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Press the driver's door window switch (on the power window main switch) down to open the window, and pull up the driver's door window switch to fully close the window. (3) Check if the diagnostic trouble code is set. Q: Is the diagnostic trouble code set?",
+          "yes": "Replace the power window main switch.",
+          "no": "The procedure is complete. Verify that the power window works normally."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "L0736",
+      "description": "CODE NO. L0736: P/W (DR) Sensor fail (ground) STEP 1. Check power window main switch connector E-28, front power window motor (LH) connector E-14 for loose, corroded or damaged terminals, or terminals pushed back in the connector. Q: Are power window main switch connector E-28, front power window motor (LH) connector E-14 in good condition? YES : Go to Step 2. NO : Repair or replace the damaged component(s). Refer to general (electrical), Harness Connector Inspection. Verify that the power window works normally. STEP 2. Check the wiring harness between power window main switch connector E-28 (terminal 12) and front power window motor (LH) connector E-14 (terminal 6). Q: Is the wiring harness between power window main switch connector E-28 (terminal 12) and front power window motor (LH) connector E-14 (terminal 6) in good condition? YES : Go to Step 3. NO : The wiring harness may be damaged or the connector(s) may have loose, corroded or damaged terminals, or terminals pushed back in the connector. Repair the wiring harness as necessary. Verify that the power window works normally. STEP 3. Diagnostic trouble code recheck Replace the front power window motor (LH). Recheck if the diagnostic trouble code is set.",
+      "detection_condition": [],
+      "possible_causes": [
+        "-",
+        "Malfunction of the front power window motor (LH)",
+        "-",
+        "Malfunction of the power window main switch",
+        "-",
+        "Damaged wiring harness and connectors"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Erase the diagnostic trouble code.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch from the LOCK (OFF) position to the ON position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check if the diagnostic trouble code is set. Q: Is the diagnostic trouble code set?",
+          "yes": "Replace the power window main switch.",
+          "no": "The procedure is complete. Verify that the power window works normally."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "L0740",
+      "description": "CODE NO. L0740: P/W (DR) 3 times jam - protection STEP 1. Check the power window fully closed position",
+      "detection_condition": [],
+      "possible_causes": [
+        "-",
+        "Malfunction of the front power window motor (LH)",
+        "-",
+        "Malfunction of the power window main switch"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Carry out the learning procedures of the power window fully closed position. Refer to Learning Procedures Of The Power Window Fully Closed Position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Recheck if the diagnostic trouble code is set. a. Erase the diagnostic trouble code. b. Turn the ignition switch from the LOCK (OFF) position to the ON position. c. Check if the diagnostic trouble code is set. Q: Is the check result normal? STEP 2. Diagnostic trouble code recheck Replace the front power window motor (LH). Recheck if the diagnostic trouble code is set.",
+          "yes": "The procedure is complete.",
+          "no": "Go to Step 2."
+        },
+        {
+          "step": 1,
+          "instruction": "Erase the diagnostic trouble code.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch from the LOCK (OFF) position to the ON position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check if the diagnostic trouble code is set. Q: Is the diagnostic trouble code set?",
+          "yes": "Replace the power window main switch.",
+          "no": "The procedure is complete. Verify that the power window works normally."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "L0746",
+      "description": "CODE NO. L0746: P/W (DR) Parameter read fail CODE NO. L0750: P/W (DR) Position read fail Diagnostic trouble code recheck Recheck if the diagnostic trouble code is set.",
+      "detection_condition": [],
+      "possible_causes": [
+        "-",
+        "Malfunction of the power window main switch"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Erase the diagnostic trouble code.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch from the LOCK (OFF) position to the ON position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check if the diagnostic trouble code is set. Q: Is the diagnostic trouble code set?",
+          "yes": "Replace the power window main switch.",
+          "no": "The procedure is complete. Verify that the power window works normally."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "L0750",
+      "description": "CODE NO. L0746: P/W (DR) Parameter read fail CODE NO. L0750: P/W (DR) Position read fail Diagnostic trouble code recheck Recheck if the diagnostic trouble code is set.",
+      "detection_condition": [],
+      "possible_causes": [
+        "-",
+        "Malfunction of the power window main switch"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Erase the diagnostic trouble code.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch from the LOCK (OFF) position to the ON position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check if the diagnostic trouble code is set. Q: Is the diagnostic trouble code set?",
+          "yes": "Replace the power window main switch.",
+          "no": "The procedure is complete. Verify that the power window works normally."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

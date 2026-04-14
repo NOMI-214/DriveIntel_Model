@@ -1,0 +1,188 @@
+{
+  "source_file": "Toyota_Corolla_DTC's.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 16,
+  "dtcs": [
+    {
+      "dtc_code": "C0200",
+      "description": "31-C0246/23",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C0256",
+      "description": "24-C1238/38",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1239",
+      "description": "39-C1251/51 / U0073/94 *1: Even after the trouble areas are repaired, the ABS warning light will not go off unless the following operations are performed: * Drive the vehicle at 20 km/h (12 mph) for 30 seconds or more and check that the ABS warning light goes off. * Clear the DTCs. HINT In some cases, the Techstream cannot be used when the ABS warning light remains on. ABS test mode DTC ABS Test Mode DTC Air Conditioning System (for Automatic Air Conditioning System) HEATING / AIR CONDITIONING: AIR CONDITIONING SYSTEM (for Automatic Air Conditioning System): DIAGNOSTIC TROUBLE CODE CHART HINT When the air conditioning system functions properly, DTC B1400/00 is output. Air Conditioning System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1411",
+      "description": "11-B1443/43",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1451",
+      "description": "51-B1499/99 *1: If the cabin temperature is approximately -18.6°C (-1.48°F) or lower, DTC B1411/11 may be output even though the system is normal. *2: If the ambient temperature is approximately -52.9°C (-63.22°F) or lower, DTC B1412/12 may be output even though the system is normal. *3: If the check is performed in a dark place, DTC B1421/21 (solar sensor circuit abnormal) may be output even though the system is normal. *4: The A/C amplifier memorizes the DTC of the respective malfunction if it has occurred for the period of time indicated in the brackets. Air Conditioning System (for Manual Air Conditioning System) HEATING / AIR CONDITIONING: AIR CONDITIONING SYSTEM (for Manual Air Conditioning System): DIAGNOSTIC TROUBLE CODE CHART HINT When the air conditioning system functions properly, DTC B1400 is output. Air Conditioning System (for Manual Air Conditioning System) Air Conditioning System (for Manual Air Conditioning System) HINT * *1: If the ambient temperature is approx. -52.9°C (-63.22°F) or lower, DTC B1412/12 may be output even though the system is normal. * *2: The A/C amplifier memorizes the DTC of the respective malfunction if it has occurred for the period of time indicated in the brackets. * *3: For models without an air conditioning system, if this DTC is output, it does not indicate a problem. Airbag System SUPPLEMENTAL RESTRAINT SYSTEMS: AIRBAG SYSTEM: DIAGNOSTIC TROUBLE CODE CHART If a trouble code is displayed during the DTC check, check the circuit listed for the code in the table below (refer to the applicable Diagnostic Trouble Code Test). HINT * When the SRS warning light remains on and the DTC output is the normal system code, a voltage source drop is likely to occur. This malfunction is not stored in the memory by the center airbag sensor assembly. If the power source voltage returns to normal, the SRS warning light will automatically go off. * When 2 or more codes are indicated, the code with the lower number appears first. * If a code is not listed on the display chart, the center airbag sensor assembly may have failed. * In the case of any malfunction concerning an open circuit, short to ground, or short to B+ due to a squib, other trouble codes may not be detected. In this case, repair the malfunction currently indicated and then perform malfunction diagnosis again. * Mark in the check mode column: * *1: DTC does not correspond to check mode. * *2: DTC corresponds to check mode. * DTCs marked *3 are output only on vehicles equipped with the front seat side airbags and curtain shield airbags. Airbag System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1000",
+      "description": "31-B1655/37",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1600",
+      "description": "43-B1813/53",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1815",
+      "description": "54-B1831/57",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1832",
+      "description": "57-B1908/74 Audio and Visual System AUDIO / VIDEO: AUDIO AND VISUAL SYSTEM: DIAGNOSTIC TROUBLE CODE CHART Communication diagnosis 01-21 - 01-DC 01-DD - 01-FF Radio Unit Telephone CD Player In-dash CD Changer XM Tuner Automatic Transaxle System - U341E",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U341E",
+      "description": "AUTOMATIC TRANSMISSION / TRANSAXLE: AUTOMATIC TRANSAXLE SYSTEM: DIAGNOSTIC TROUBLE CODE CHART If a DTC is displayed during the DTC check, check the parts listed in the table below and proceed to the applicable Diagnostic Trouble Code Test. HINT * *1: Comes on MIL (Malfunction Indicator Lamp) light up * *2: \"DTC stored\" mark means ECM memorizes the malfunction code if the ECM detects the DTC detection condition. * This DTC may be output when the clutch, brake and gear components etc. inside the automatic transaxle are damaged. Automatic Transaxle System P0705-P0751 P0756-P2716 P2757-P2759 CAN Communication System NETWORKING: CAN COMMUNICATION SYSTEM: DIAGNOSTIC TROUBLE CODE CHART CAN Communication System CAN Communication System Cruise Control System CRUISE CONTROL: CRUISE CONTROL SYSTEM: DIAGNOSTIC TROUBLE CODE CHART If a trouble code is displayed during the DTC check, check the trouble areas listed for that code in the table below and proceed to the applicable Diagnostic Trouble Code Test. Cruise Control System Cruise Control System Engine Control System - SFI System 2ZR-FE ENGINE CONTROL: SFI SYSTEM: DIAGNOSTIC TROUBLE CODE CHART HINT Parameters listed in the chart may not be exactly the same as your readings due to the type of instrument or other factors. If a trouble code is displayed during the DTC check, inspect the trouble areas listed for that code. For details of the code, refer to the applicable Diagnostic Trouble Code Test. *1: The MIL flashes when a catalyst damaging misfire is detected *2: Automatic Transaxle models *3: Manual Transaxle models SFI System P0010-P0014 P0015-P0032 P0037-P0113 P0115-P0122 P0123-P0138 P0139-P0220 P0222-P0304 P0325-P0340 P0342-P0354 P0365-P0420 P043E-P0451 P0452-P0456 P0500-P060A P060D-P2118 P2119-P2135 P2138-P2239 P2252-P2402 P2419-P2A00 Engine Immobiliser System (w/ Smart Key System) THEFT DETERRENT / KEYLESS ENTRY: ENGINE IMMOBILISER SYSTEM (w/ Smart Key System): DIAGNOSTIC TROUBLE CODE CHART",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CERTIFICATION ECU (SMART KEY ECU ASSEMBLY) DIAGNOSTIC TROUBLE CODE CHART ECU (Smart Key Assembly) Certification ECU (Smart Key ECU Assembly)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "ECM DIAGNOSTIC TROUBLE CODE CHART HINT The DTCs for the engine immobiliser system are specified above. If other codes are output, check the DTC chart for the SFI system. ECM ECM Engine Immobiliser System (w/o Smart Key System) THEFT DETERRENT / KEYLESS ENTRY: ENGINE IMMOBILISER SYSTEM (w/o Smart Key System): DIAGNOSTIC TROUBLE CODE CHART",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 1,
+          "instruction": "TRANSPONDER KEY ECU DIAGNOSTIC TROUBLE CODE CHART Transponder Key ECU Assembly Transponder Key ECU Assembly",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "ECM DIAGNOSTIC TROUBLE CODE CHART HINT The DTCs for the engine immobiliser system are specified above. If other codes are output, check the DTC chart for the SFI system. ECM ECM LIN Communication System NETWORKING: LIN COMMUNICATION SYSTEM: DIAGNOSTIC TROUBLE CODE CHART",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 1,
+          "instruction": "MAIN BODY ECU (INSTRUMENT PANEL JUNCTION BLOCK) DIAGNOSTIC TROUBLE CODE CHART Main Body ECU Main Body ECU (Instrument Panel Junction Block)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CERTIFICATION ECU (SMART KEY ECU ASSEMBLY) DIAGNOSTIC TROUBLE CODE CHART Certification ECU (Smart Key ECU Assembly) Certification ECU (Smart Key ECU Assembly) Meter / Gauge System METER / GAUGE / DISPLAY: METER / GAUGE SYSTEM: DIAGNOSTIC TROUBLE CODE CHART METER / GAUGE System Meter/Gauge System Navigation System NAVIGATION / MULTI INFO DISPLAY: NAVIGATION SYSTEM: DIAGNOSTIC TROUBLE CODE CHART Communication Diagnosis Communication Diagnosis SW SW SW with Name SW with Name SW Converting SW Converting Command SW Command SW Front Monitor Front Monitor Navi Navi Radio Unit Radio Unit CD Player CD Player GPS GPS Occupant Classification System SUPPLEMENTAL RESTRAINT SYSTEMS: OCCUPANT CLASSIFICATION SYSTEM: DIAGNOSTIC TROUBLE CODE CHART HINT When DTC B1650/32 is detected as a result of troubleshooting for the airbag system, perform troubleshooting for the occupant classification system as shown in the chart below. Occupant Classification System Occupant Classification System Power Steering System POWER ASSIST SYSTEMS: POWER STEERING SYSTEM (for 2ZR-FE): DIAGNOSTIC TROUBLE CODE CHART HINT If any DTCs are displayed during the DTC check, inspect the circuit listed for those DTCs. For details of each DTC, refer to the applicable Diagnostic Trouble Code Test. Power Steering System C1511-C1535 C1551-C1581 / U0100-U0129 o: Warning light comes on *1: Depending on some detection conditions, there is a case that the warning light does not come on. Smart Key System (for Start Function) THEFT DETERRENT / KEYLESS ENTRY: SMART KEY SYSTEM (for Start Function): DIAGNOSTIC TROUBLE CODE CHART Smart Key System B2271-B2281 B2282-B2288",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B2289",
+      "description": "Steering Lock System STEERING COLUMN: STEERING LOCK SYSTEM: DIAGNOSTIC TROUBLE CODE CHART If a trouble code is displayed during the DTC check, check the parts listed for that code in the table below and proceed to the applicable Diagnostic Trouble Code Test. HINT The steering lock ECU does not store DTCs regarding the past problems. Steering Lock System Steering Lock System Theft Deterrent System THEFT DETERRENT / KEYLESS ENTRY: THEFT DETERRENT SYSTEM: DIAGNOSTIC TROUBLE CODE CHART Theft Deterrent System Theft Deterrent System Tire Pressure Warning System TIRE PRESSURE MONITORING: TIRE PRESSURE WARNING SYSTEM: DIAGNOSTIC TROUBLE CODE CHART HINT If a trouble code is displayed during the DTC check, inspect the circuit listed for that code. For details of each code, refer to the applicable Diagnostic Trouble Code Test. Tire Pressure Warning System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2111",
+      "description": "11-C2123/23",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2124",
+      "description": "24-C2166/66",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2167",
+      "description": "67-C2184/84",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2191",
+      "description": "91-C2194/94 Vehicle Stability Control System BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM: DIAGNOSTIC TROUBLE CODE CHART NOTICE: Turn the ignition switch off before removing any parts. HINT * If no malfunction is found when inspecting parts, inspect the skid control ECU and ground points for poor connect. * If a trouble code is displayed during the DTC check, check the circuit indicated by the DTC. For details of each code, refer to the applicable Diagnostic Trouble Code Test. * When 2 or more DTCs are detected, perform circuit inspection one by one until the problem is identified. * For DTCs indicated by the warning light or indicator light, refer to the DTC charts in DTC Check/Clear. * Inspect the fuses and relays before investigating the trouble areas as shown in the table below. ABS DTC C0226-C1361 C1381-C1414 C1415-C1428",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1442",
+      "description": "U0073-U0124 *1 to *3: Even after the trouble areas are repaired, the ABS warning light will not go off unless the following operations are performed: * *1: * Drive the vehicle at 20 km/h (12 mph) for 30 seconds or more and check that the ABS warning light goes off. * Clear the DTCs. * *2: * Turn the ignition switch to ON. * Keep the vehicle stationary for 5 seconds or more and depress the brake pedal lightly 2 or 3 times. * Drive the vehicle at the vehicle speed of 50 km/h (31 mph) and depress and hold the brake pedal firmly for approximately 3 seconds. * Repeat the above operation 3 times or more and check that the ABS warning light goes off. * Clear the DTCs. * *3: * Turn the ignition switch to ON. * Depress the brake pedal. * Clear the DTCs. HINT In some cases, the Techstream cannot be used when the ABS warning light remains on. VSC DTC C1201-C1440 C1443-C1445 / U0100-U0126 HINT In some cases, the Techstream cannot be used when the VSC OFF indicator light remains on. ABS Test Mode DTC ABS Test Mode DTC VSC Test Mode DTC Wireless Door Lock Control System (w/ Smart Key System) DOOR LOCK: WIRELESS DOOR LOCK CONTROL SYSTEM (w/ Smart Key System): DIAGNOSTIC TROUBLE CODE CHART HINT If a trouble code is displayed during the DTC check, inspect the trouble areas listed for that code. For details of the code, refer to the applicable Diagnostic Trouble Code Test. * Inspect the fuses and relays before troubleshooting the areas shown in the table below. Wireless Door Lock Control System Wireless Door Lock Control System Wireless Door Lock Control System (w/o Smart Key System) DOOR LOCK: WIRELESS DOOR LOCK CONTROL SYSTEM (w/o Smart Key System): DIAGNOSTIC TROUBLE CODE CHART HINT If a trouble code is displayed during the DTC check, inspect the trouble areas listed for that code. For details of the code, refer to the applicable Diagnostic Trouble Code Test. * Inspect the fuses and relays before troubleshooting the areas shown in the table below. Wireless Door Lock Control System Wireless Door Lock Control System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

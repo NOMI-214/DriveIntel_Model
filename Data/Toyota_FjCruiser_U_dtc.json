@@ -1,0 +1,65 @@
+{
+  "source_file": "Toyota_FjCruiser_U.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 4,
+  "dtcs": [
+    {
+      "dtc_code": "U0073",
+      "description": "Control Module Communication Bus OFF",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": [
+        "U0100",
+        "U0123",
+        "U0124",
+        "U0126"
+      ]
+    },
+    {
+      "dtc_code": "U0126",
+      "description": "Lost Communication with Steering Angle Sensor Module PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "RECONFIRM DTC (a) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. (b) Check if the same DTCs are output    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. Result B --  USE SIMULATION METHOD TO CHECK  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/How To Proceed With Troubleshooting A --  GO TO DTC CAN COMMUNICATION SYSTEM (HOW TO PROCEED WITH TROUBLESHOOTING)  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With Troubleshooting Meter / Gauge System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100",
+      "description": "Lost Communication with ECM / PCM \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": [
+        "U0129",
+        "U0151"
+      ]
+    },
+    {
+      "dtc_code": "U0151",
+      "description": "Lost Communication with Airbag ECU The combination meter communicates with the ECM, skid control ECU and center airbag sensor via the CAN communication system. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CONFIRM DTC OUTPUT (a) Connect the Techstream to the DLC3. (b) Turn the ignition switch to ON. (c) Turn the Techstream on. (d) Enter the following menus: Body Electrical / Combination Meter / Trouble Codes. (e) Clear DTCs    See: Instrument Panel, Gauges and Warning Indicators/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. (f) Drive the vehicle at more than 5 km/h (3.1 mph) for at least 60 seconds. (g) Stop the vehicle. (h) Check DTCs    See: Instrument Panel, Gauges and Warning Indicators/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. Result HINT If CAN communication system DTC U0100, U0129 or U0151 and another DTC are output at the same time, perform troubleshooting for CAN communication system DTC U0100, U0129 or U0151 first. B --  USE SIMULATION METHOD TO CHECK  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/How To Proceed With Troubleshooting A --  GO TO CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With Vehicle Stability Control System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

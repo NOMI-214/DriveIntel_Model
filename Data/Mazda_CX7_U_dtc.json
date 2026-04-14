@@ -1,0 +1,202 @@
+{
+  "source_file": "Mazda_CX7_U.pdf",
+  "format_detected": "mazda_image",
+  "dtc_count": 39,
+  "dtcs": [
+    {
+      "dtc_code": "U0001",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0010",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0073",
+      "description": "DTC , U0100, U0101, U0114, U0140, U1900",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0074",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0100",
+      "description": "87",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0101",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0114",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0123",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0127",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0140",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0214",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0236",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0300",
+      "description": "DTC :00",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0401",
+      "description": "DTC [BCM]",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "U0402",
+      "description": "DTC :68 [INSTRUMENT CLUSTER]",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "U0414",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "U0415",
+      "description": "00",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "U0422",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "U0423",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "U0452",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "U0498",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "U0515",
+      "description": "68",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "U0516",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "U0533",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "U0534",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "U1900",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "U1901",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "U2005",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "U2017",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "B2444",
+      "description": "DTC , U2017",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "U2018",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "B2445",
+      "description": "DTC , U2018",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "U2023",
+      "description": "DTC [ADVANCED KEYLESS ENTRY AND START SYSTEM]",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "U2030",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "U2100",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "U2510",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "B2741",
+      "description": "DTC , C2768, U2516",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "U3000",
+      "description": "01",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "U3003",
+      "description": "DTC: :16, 09:Er20 [AUDIO]",
+      "system": "Instrument"
+    }
+  ]
+}

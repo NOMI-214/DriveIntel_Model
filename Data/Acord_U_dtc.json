@@ -1,0 +1,1316 @@
+{
+  "source_file": "Acord_U.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 8,
+  "dtcs": [
+    {
+      "dtc_code": "U0037",
+      "description": "IMA-CAN Malfunction (Bus-Off) (MCM-PCM)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for Temporary DTCs or DTCs in the DTCs MENU with the HDS. Is DTC U0037 indicated? PCM.",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, system is OK at this time. Check for poor connections or loose terminals at the MCM, the A/C compressor driver and the"
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Measure resistance between PCM connector terminals D1* and D13. Is there about 54-66 Ohm, at room temperature?",
+          "yes": "Go to step 21.",
+          "no": "Go to step 6."
+        },
+        {
+          "step": 6,
+          "instruction": "Jump the SCS line with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Disconnect PCM connector D(17P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Remove the IPU lid.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect MCM connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect the A/C compressor driver 4P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Check for continuity between PCM connector terminals D1* and D13. Is there continuity?",
+          "yes": "Repair short in the wires between the PCM (D13 (IMACANH line)) and (D1 (IMACANL line)), then go to step 43.",
+          "no": "Go to step 12."
+        },
+        {
+          "step": 12,
+          "instruction": "Connect between PCM connector terminal D1, D13 to body ground with a jumper wire individually.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "Check for continuity between MCM connector terminals A6*,A7 and body ground individually. Is there continuity?",
+          "yes": "Go to step 14.",
+          "no": "Repair open in the wire between the MCM (A7 (A6)*) and the PCM (D13 (D1)*),then go to step 43."
+        },
+        {
+          "step": 14,
+          "instruction": "Check for continuity between the A/C compressor driver 4P connector terminals No. 2, No. 3* and body ground individually. Is there continuity?",
+          "yes": "Go to step 15.",
+          "no": "Repair open in the wire between the A/C compressor driver (No. 2 (No. 3)*) and the PCM (D13 (D1)*), then go to step 43."
+        },
+        {
+          "step": 15,
+          "instruction": "Remove the jumper wire from PCM connector D(17P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 16,
+          "instruction": "Reconnect MCM connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 17,
+          "instruction": "Measure resistance between MCM connector terminals A6* and A7. Is there about 108-132 Ohm, at room temperature? 43.",
+          "yes": "Go to step 18.",
+          "no": "Substitute a known-good MCM, then go to step 43 and recheck. If DTC U0037 is not indicated, replace the original MCM, then go to step"
+        },
+        {
+          "step": 18,
+          "instruction": "Disconnect MCM connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 19,
+          "instruction": "Reconnect the A/C compressor driver 4P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 20,
+          "instruction": "Measure resistance between A/C compressor driver 4P connector terminals No. 2 and No. 3*. Is there about 2.3-2.9 k Ohm at room temperature? compressor driver, then go to step 43.",
+          "yes": "Go to step 49.",
+          "no": "Substitute a known-good A/C compressor driver , then go to step 43 and recheck. If DTC U0037 is not indicated, replace the original A/C"
+        },
+        {
+          "step": 21,
+          "instruction": "Jump the SCS line with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 22,
+          "instruction": "Disconnect PCM connector D (17P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 23,
+          "instruction": "Remove the IPU lid.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 24,
+          "instruction": "Disconnect MCM connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 25,
+          "instruction": "Disconnect the A/C compressor control unit 4P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 26,
+          "instruction": "Check for continuity between PCM connector terminal D1* and body ground, and between terminal D13 and body ground individually. Is there continuity?",
+          "yes": "Repair short in the wire between the MCM, the A/C compressor driver and the PCM (D13 (D1)*), then go to step 43.",
+          "no": "Go to step 27."
+        },
+        {
+          "step": 27,
+          "instruction": "Disconnect PCM connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 28,
+          "instruction": "Check for continuity between PCM connector terminal A3 and body ground, and between terminal D16 and body ground individually. Is there continuity?",
+          "yes": "Go to step 29.",
+          "no": "Repair open in the wire between the PCM (A3, D16) and G101, then go to step 43."
+        },
+        {
+          "step": 29,
+          "instruction": "Disconnect MCM connector B (24P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 30,
+          "instruction": "Check for continuity between MCM connector terminal B3 and body ground, and between terminal B5 and body ground individually. Is there continuity?",
+          "yes": "Go to step 31.",
+          "no": "Repair open in the wire between the MCM (B3, B5) and G651, then go to step 43."
+        },
+        {
+          "step": 31,
+          "instruction": "Check for continuity between A/C compressor driver 4P connector terminal No. 1 and body ground. Is there continuity?",
+          "yes": "Go to step 32.",
+          "no": "Repair open in the wire between the A/C compressor driver and G651, then go to step 43."
+        },
+        {
+          "step": 32,
+          "instruction": "Reconnect PCM connectors A (31P) and D(17P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 33,
+          "instruction": "Reconnect MCM connectors A (31P) and B (24P)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 34,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 35,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 36,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Is only DTC U0164 indicated? compressor driver, then go to step 43.",
+          "yes": "Substitute a known-good A/C compressor driver, then go to step 43 and recheck. If DTC U0037 is not indicated, replace the original A/C",
+          "no": "Go to step 37."
+        },
+        {
+          "step": 37,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 38,
+          "instruction": "Reconnect the A/C compressor driver 4P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 39,
+          "instruction": "Disconnect MCM connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 40,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 41,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 42,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Is only DTC U0110 indicated? 43.",
+          "yes": "Substitute a known-good MCM, then go to step 43 and recheck. If DTC U0037 is not indicated, replace the original MCM, then go to step",
+          "no": "Go to step 49."
+        },
+        {
+          "step": 43,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 44,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 45,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 46,
+          "instruction": "Reset the PCM with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 47,
+          "instruction": "Do the PCM idle learn procedure.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 48,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Are any Temporary DTCs or DTCs indicated? step 1. If any other Temporary DTCs or DTCs are indicated, go to the indicated DTC's troubleshooting.",
+          "yes": "If DTC U0037 is indicated, check for poor connections or loose terminals at the MCM, the A/C compressor driver and the PCM, then go to",
+          "no": "Troubleshooting is complete."
+        },
+        {
+          "step": 49,
+          "instruction": "Update the PCM if it does not have the latest software, or substitute a known-good PCM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 50,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Are any Temporary DTCs or DTCs indicated? step 1. If any other Temporary DTCs or DTCs are indicated, go to the indicated DTC's troubleshooting.",
+          "yes": "If DTC U0037 is indicated, check for poor connections or loose terminals at the MCM, the A/C compressor driver and the PCM, then go to",
+          "no": "If the PCM was updated, troubleshooting is complete. If the PCM was substituted, replace the original PCM."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0073",
+      "description": "F-CAN Malfunction (Bus-Off)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0155",
+      "description": "F-CAN Malfunction (Gauge Control Module-PCM)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Is DTC U0073 and/or U0155 indicated? control unit, the VSA control unit*, the engine mount control unit, the navigation unit, and the PCM.",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, system is OK at this time. Check for poor connections or loose terminals at the gauge control module, the ABS/TCS"
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs in the Body Electrical system DTCs menu with the HDS. Is DTC B1168, B1169, and/or B1178 indicated?",
+          "yes": "Go to step 5.",
+          "no": "Do the gauge control module input test."
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Remove the gauge control module.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Disconnect the gauge control module 30P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Disconnect the ABS/TCS control unit 47P connector (or the VSA control unit 37P connector)*.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect the engine mount control unit 20P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect the navigation unit 20P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Jump the SCS line with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Disconnect PCM connector E (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "Check for continuity between body ground and PCM connector terminals E15 and E26and body ground individually. Is there continuity? and the PCM (E15 (E26)), then go to step 18.",
+          "yes": "Repair short in the wire between the gauge control module, the ABS/TCS control unit, the engine mount control unit, the navigation unit,",
+          "no": "Go to step 14."
+        },
+        {
+          "step": 14,
+          "instruction": "Check for continuity between PCM connector terminals E15 and E26. Is there continuity?",
+          "yes": "Repair short in the wires between the PCM E15 (CANH line) and E26 (CANL line), then go to step 18.",
+          "no": "Go to step 15."
+        },
+        {
+          "step": 15,
+          "instruction": "Check for continuity between PCM connector terminal E15 and these connector terminals: Is there continuity between the PCM terminal and each of the terminals in the chart?",
+          "yes": "Go to step 16.",
+          "no": "Repair open in the wire between the PCM and the appropriate connector, then go to step 18."
+        },
+        {
+          "step": 16,
+          "instruction": "Check for continuity between PCM connector terminal E26 and these connector terminals: Is there continuity between the PCM terminal and each of the terminals in the chart?",
+          "yes": "Go to step 17.",
+          "no": "Repair open in the wire between the PCM and the appropriate connector, then go to step 18."
+        },
+        {
+          "step": 17,
+          "instruction": "Using the following chart. Select the row that most closely represents the combination of DTCs retrieved from the PGM-FI, ABS/TCS*, VSA** and Body Electrical systems: Check connections at the control module indicated in the last column. If all the connections are OK, substitute another control module. After substituting the control module, check for DTCs with the HDS. Are the DTCs still indicated? DTCs go away. After replacing the faulty control module, go to step 18.",
+          "yes": "Substitute the remaining control modules, one at time, until the DTCs are no longer present, then replace the control module that made the",
+          "no": "Replace the faulty control module, then go to step 18."
+        },
+        {
+          "step": 18,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 19,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 20,
+          "instruction": "Reset the PCM with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 21,
+          "instruction": "Do the PCM idle learn procedure.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 22,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Are any Temporary DTCs or DTCs indicated? VSA control unit**, the engine mount control unit, the navigation unit, and the PCM, then go to step 1. If any other DTCs are indicated, go to the indicated DTC's troubleshooting.",
+          "yes": "If DTC U0073 and/or U0155 is indicated, check for poor connections or loose terminals at the gauge assembly, the ABS/TCS control unit*,",
+          "no": "Troubleshooting is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100",
+      "description": "(55): Motor Control Module (MCM) Lost Communication with PCM",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch ON (II), and read the HDS. Does the HDS communicate with the PCM?",
+          "yes": "Go to step 3.",
+          "no": "Go to \"DLC Circuit Troubleshooting\". If no problem is found in the DLC troubleshooting."
+        },
+        {
+          "step": 3,
+          "instruction": "Check for Temporary DTCs or DTCs of the PGM-FI system with the HDS. Is DTC U0037 indicated?",
+          "yes": "Do the troubleshooting for DTC U0037.",
+          "no": "Go to step 4."
+        },
+        {
+          "step": 4,
+          "instruction": "Reset the MCM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Is DTC U0100 indicated?",
+          "yes": "Go to step 6.",
+          "no": "Intermittent failure, system is OK at this time. Check for poor connections or loose terminals at the PCM and the MCM."
+        },
+        {
+          "step": 6,
+          "instruction": "Check for Temporary DTCs or DTCs of the PGM-FI system with the HDS. Are DTC U1201, U0110, and U0164 indicated at same time?",
+          "yes": "Go to step 7.",
+          "no": "Go to step 15."
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Turn the battery module switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Remove the IPU lid.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect MCM connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Jump the SCS line with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Disconnect PCM connector D (17P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "Disconnect the A/C compressor driver 4P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "Connect PCM connector terminals D13 and D1 to body ground with a jumper wire individually.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "Check for continuity between MCM connector terminals AT A6 and body ground, and between A/C compressor driver 4P connector terminals No. 2, No. 3 and body ground individually. Is there continuity?",
+          "yes": "Go to step 16.",
+          "no": "Repair open in the wire between the A/C compressor driver, the MCM (A7, A6), and the PCM (D13, D1)"
+        },
+        {
+          "step": 16,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Is DTC U0164 indicated?",
+          "yes": "Go to step 17.",
+          "no": "Go to step 20."
+        },
+        {
+          "step": 17,
+          "instruction": "Reinstall the IPU lid, then turn the battery module switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 18,
+          "instruction": "Update the MCM if it does not have the latest software, or substitute a known-good MCM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 19,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Are any Temporary DTCs or DTCs indicated? Temporary DTCs or DTCs are indicated, go to the indicated DTC's troubleshooting.",
+          "yes": "If DTC U0100 is indicated, check for poor connections or loose terminals at the PCM and the MCM, then go to step 1. If any other",
+          "no": "If the MCM was updated, troubleshooting is complete. If the MCM was substituted, replace the original MCM."
+        },
+        {
+          "step": 20,
+          "instruction": "Reinstall the IPU lid, then turn the battery module switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 21,
+          "instruction": "Update the PCM if it does not have the latest software, or substitute a known-good PCM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 22,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Are any Temporary DTCs or DTCs indicated? Temporary DTCs or DTCs are indicated, go to the indicated DTC's troubleshooting.",
+          "yes": "If DTC U0100 is indicated, check for poor connections or loose terminals at the PCM and the MCM, then go to step 1. If any other",
+          "no": "If the PCM was updated, troubleshooting is complete. If the PCM was substituted, replace the original PCM."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0107",
+      "description": "Lost Communication With Throttle Actuator Control Module",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Is DTC U0107 indicated? go to step 50. If the connections and terminals are OK, go to step 6.",
+          "yes": "Check for, and repair any poor connections or loose terminals at the throttle body, the throttle actuator control module, and the PCM, then",
+          "no": "Go to step 4."
+        },
+        {
+          "step": 4,
+          "instruction": "Start the engine.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Is DTC U0107 indicated? module relay, the throttle actuator control module, and the PCM.",
+          "yes": "Go to step 46.",
+          "no": "Intermittent failure, system is OK at this time. Check for poor connections or loose terminals at the throttle body, the throttle actuator control"
+        },
+        {
+          "step": 6,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Disconnect the intake air duct from the throttle body.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Press the accelerator pedal to the floor.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Check the throttle valve operation. Does the throttle valve open after it closes?",
+          "yes": "Go to step 12.",
+          "no": "Go to step 13."
+        },
+        {
+          "step": 12,
+          "instruction": "Check the throttle valve again. Does the throttle valve open fully?",
+          "yes": "Go to step 40.",
+          "no": "Go to step 34."
+        },
+        {
+          "step": 13,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "Disconnect the throttle actuator control module 16P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "Check for continuity between throttle actuator control module 16P connector terminal No. 7 and body ground. Is there continuity?",
+          "yes": "Go to step 16.",
+          "no": "Repair open in the wire between the throttle body, the throttle actuator control module, and Gi01,then go to step 50."
+        },
+        {
+          "step": 16,
+          "instruction": "Remove the throttle actuator control module relay (A).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 17,
+          "instruction": "Measure voltage between throttle actuator control module relay 4P connector terminal No. 1 and body ground. Is there battery voltage?",
+          "yes": "Go to step 19.",
+          "no": "Go to step 18."
+        },
+        {
+          "step": 18,
+          "instruction": "Check the No. 1 THROTTLE ACTUATOR CONTROL (DBW) (15 A) fuse in under-dash fuse/relay box. Is the fuse OK? (DBW) (15 A) fuse, then go to step 50. (DBW) (15 A) fuse, then go to step 50.",
+          "yes": "Repair open in the wire between the throttle actuator control module relay (+B line) and the No. 1 THROTTLE ACTUATOR CONTR01.",
+          "no": "Repair short in the wire between the throttle actuator control module relay (+B line) and the No. 1 THROTTLE ACTUATOR CONTROL"
+        },
+        {
+          "step": 19,
+          "instruction": "Install the throttle actuator control module relay.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 20,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 21,
+          "instruction": "Measure voltage between throttle actuator control module 16P connector terminal No. 2 and body ground. Is there battery voltage for about 2 seconds? original throttle actuator control module, then go to step 50.",
+          "yes": "Substitute a known-good throttle actuator control module, then go to step 50 and recheck. If DTC U0107 is not indicated, replace the",
+          "no": "Go to step 22."
+        },
+        {
+          "step": 22,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 23,
+          "instruction": "Remove the throttle actuator control module relay (A).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 24,
+          "instruction": "Check the throttle actuator control module relay Is the throttle actuator control module relay OK?",
+          "yes": "Go to step 25.",
+          "no": "Replace the throttle actuator control module relay, then go to step 50."
+        },
+        {
+          "step": 25,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 26,
+          "instruction": "Measure voltage between throttle actuator control module relay 4P connector terminal No. 4 and body ground. Is there battery voltage?",
+          "yes": "Go to step 27.",
+          "no": "Repair open in the wire between the throttle actuator control module relay and PGM-FI main relay 1 (FIMAIN), then go to step 50."
+        },
+        {
+          "step": 27,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 28,
+          "instruction": "Jump the SCS line with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 29,
+          "instruction": "Disconnect PCM connector E (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 30,
+          "instruction": "Check for continuity between PCM connector terminal E3 and throttle actuator control module relay 4P connector terminal No. 3. Is there continuity?",
+          "yes": "Go to step 31.",
+          "no": "Repair open in the wire between the PCM (E3) and the throttle actuator control module relay, then go to step 50."
+        },
+        {
+          "step": 31,
+          "instruction": "Check for continuity between throttle actuator control module 16P connector terminal No. 2 and body ground. Is there continuity? 50",
+          "yes": "Repair short in the wire between the throttle actuator control module and the throttle actuator control module relay (+B line), then go to step",
+          "no": "Go to step 32."
+        },
+        {
+          "step": 32,
+          "instruction": "Connect throttle actuator control module relay 4P connector terminal No. 2 to body ground with a jumper wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 33,
+          "instruction": "Check for continuity between throttle actuator control module 16P connector terminal No. 2 and body ground. Is there continuity? 50.",
+          "yes": "Go to step 56.",
+          "no": "Repair open in the wire between the throttle actuator control module and the throttle actuator control module relay (+B line), then go to step"
+        },
+        {
+          "step": 34,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 35,
+          "instruction": "Jump the SCS line with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 36,
+          "instruction": "Disconnect the throttle actuator control module 16P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 37,
+          "instruction": "Disconnect PCM connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 38,
+          "instruction": "Check for continuity between PCM connector terminal A25 and body ground. Is there continuity?",
+          "yes": "Repair short in the wire between the PCM (A25) and the throttle actuator control module, then go to step 50.",
+          "no": "Go to step 39."
+        },
+        {
+          "step": 39,
+          "instruction": "Check for continuity between PCM connector terminal A25 and throttle actuator control module 16P connector terminal No. 6. Is there continuity? original throttle actuator control module, then go to step 50. If DTC U0107 is indicated, go to step 56.",
+          "yes": "Substitute a known-good throttle actuator control module, then go to step 50 and recheck. If DTC U0107 is not indicated, replace the",
+          "no": "Repair open in the wire between the PCM (A25) and the throttle actuator control module, then go to step 50."
+        },
+        {
+          "step": 40,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 41,
+          "instruction": "Jump the SCS line with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 42,
+          "instruction": "Disconnect the throttle actuator control module 16P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 43,
+          "instruction": "Disconnect PCM connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 44,
+          "instruction": "Check for continuity between PCM connector terminal A26 and body ground. Is there continuity?",
+          "yes": "Repair short in the wire between the PCM (A26) and the throttle actuator control module, then go to step 50.",
+          "no": "Go to step 45."
+        },
+        {
+          "step": 45,
+          "instruction": "Check for continuity between PCM connector terminal A26 and throttle actuator control module 16P connector terminal No. 14. Is there continuity? original throttle?actuator control module, then go to step 50. If DTC U0107 is indicated, go to step 56.",
+          "yes": "Substitute a known-good throttle actuator control module, then go to step 50 and recheck. If DTC U0107 is not indicated, replace the",
+          "no": "Repair open in the wire between the PCM (A26) and the throttle actuator control module, then go to step 50."
+        },
+        {
+          "step": 46,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 47,
+          "instruction": "Jump the SCS line with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 48,
+          "instruction": "Disconnect PCM connectors A (31P) and D (17P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 49,
+          "instruction": "Check for continuity between body ground and PCM connector terminals A3 and D16 individually. Is there continuity? module, and the PCM, then go to step 1.",
+          "yes": "Check for poor connections or loose terminals at the throttle body, the throttle actuator control module relay, the throttle actuator control",
+          "no": "Repair open in the wire between the PCM (A3, D16) and G101, then go to step 50."
+        },
+        {
+          "step": 50,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 51,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 52,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 53,
+          "instruction": "Reset the PCM with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 54,
+          "instruction": "Do the PCM idle learn procedure.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 55,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Are any Temporary DTCs or DTCs indicated? throttle actuator control module, and the PCM, then go to step 1. If any other Temporary DTCs or DTCs are indicated, go to the indicated DTC's .",
+          "yes": "If DTC U0107 is indicated, check for poor connections or loose terminals at the throttle body, the throttle actuator control module relay, the",
+          "no": "Troubleshooting is complete."
+        },
+        {
+          "step": 56,
+          "instruction": "Update the PCM if it does not have the latest software, or substitute a known-good PCM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 57,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Are any Temporary DTCs or DTCs indicated? throttle actuator control module, and the PCM, then go to step 1. If any other Temporary DTCs or DTCs are indicated, go to the indicated DTC's .",
+          "yes": "If DTC U0107 is indicated, check for poor connections or loose terminals at the throttle body, the throttle actuator control module relay, the",
+          "no": "If the PCM was updated, troubleshooting is complete. If the PCM was substituted, replace the original PCM."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0110",
+      "description": "IMA-CAN Malfunction (MCM-(Battery Condition Monitor CPU)-PCM)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch ON (II) and read the HDS. Does the HDS communicate with the IMA system?",
+          "yes": "Go to step 2.",
+          "no": "Go to \"IMA System Indicator Circuit Troubleshooting\"."
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for Temporary DTCs or DTCs in the DTCs MENU with the HDS. Is DTC U0110 indicated? PCM.",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, system is OK at this time. Check for poor connections or loose terminals at the MCM, the A/C compressor driver and the"
+        },
+        {
+          "step": 4,
+          "instruction": "Check for Temporary DTCs or DTCs in the DTCs MENU with the HDS again. Are DTC U0037 and U0110 indicated at the same time?",
+          "yes": "Go to troubleshooting DTC U0037.",
+          "no": "Go to step 5."
+        },
+        {
+          "step": 5,
+          "instruction": "Check for Temporary DTCs or DTCs in the DTCs MENU with the HDS again. Are DTC U0110, U0164 and U1201 indicated at the same time? 15.",
+          "yes": "Go to step 6.",
+          "no": "Substitute a known-good MCM, then go to step 15 and recheck. If DTC U0037 is not indicated, replace the original MCM, then go to step"
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Jump the SCS line with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Disconnect PCM connector D(17P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Remove the IPU lid.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect MCM connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect the A/C compressor driver 4P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Connect between PCM connector terminal D1*, D13 to body ground with a jumper wire individually.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "Check for continuity between MCM connector terminals A6, A7 and body ground individually. Is there continuity?",
+          "yes": "Go to step 14.",
+          "no": "Repair open in the wire between the MCM (A7 (A6)*) and the PCM (D13(D1)*), then go to step 15."
+        },
+        {
+          "step": 14,
+          "instruction": "Check for continuity between the A/C compressor driver 4P connector terminals No. 2, No. 3 and body ground individually. Is there continuity? 15.",
+          "yes": "Substitute a known-good MCM, then go to step 15 and recheck. If DTC U0037 is not indicated, replace the original MCM, then go to step",
+          "no": "Repair open in the wire between the A/C compressor driver (No. 2 (No. 3)*) and the PCM (D13(D1)*),then go to step 15."
+        },
+        {
+          "step": 15,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 16,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 17,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 18,
+          "instruction": "Reset the PCM with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 19,
+          "instruction": "Do the PCM idle learn procedure.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 20,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Are any Temporary DTCs or DTCs indicated? step 1. If any other Temporary DTCs or DTCs are indicated, go to the indicated DTC's troubleshooting.",
+          "yes": "If DTC U0110 is indicated, check for poor connections or loose terminals at the MCM, the A/C compressor driver and the PCM, then go to",
+          "no": "Troubleshooting is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0122",
+      "description": "F-CAN Malfunction (VSA-PCM) (2006 model)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS.Is DTC U0122 indicated? and the PCM.",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, system is OK at this time. Check for poor connections or loose terminals at the gauge assembly, the VSA control unit,"
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs in the DTCs MENU with the HDS.Is VSA DTC 86 indicated?",
+          "yes": "Go to step 5.",
+          "no": "Go to step 9."
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Disconnect the VSA control unit 37P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check for continuity between VSA control unit 37P connector terminals No. 13 and No. 22. Is there continuity? then go to step 14. *: CANL line",
+          "yes": "Substitute a known-good VSA control unit, then go to step 14 and recheck. If no DTCs are indicated, replace the original VSA control unit,",
+          "no": "Repair open in the wire between the VSA control unit (No. 13 (No. 22)*) and the PCM (A15 (A26)*). then go to step 14."
+        },
+        {
+          "step": 8,
+          "instruction": "Check for a poor connection at the VSA control unit 37P connector. Is the connection OK?",
+          "yes": "Go to step 9.",
+          "no": "Repair the poor connection at the VSA control unit 37P connector, then go to step 14."
+        },
+        {
+          "step": 9,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect the VSA control unit 37P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Measure voltage between VSA control unit 37P connector terminal No. 5 and body ground. Is there battery voltage? A) fuse and the VSA control unit, then go to step 14.",
+          "yes": "Go to step 13.",
+          "no": "Check the No. 18 ACG (15 A) fuse in the under-dash fuse/relay box. If the fuse is OK, repair open in the wire between the No. 18 ACG (15"
+        },
+        {
+          "step": 13,
+          "instruction": "Check for continuity between VSA control unit 37P connector terminal No. 34 and body ground. Is there continuity? then go to step 14.",
+          "yes": "Substitute a known-good VSA control unit, then go to step 14 and recheck. If no DTCs are indicated, replace the original VSA control unit,",
+          "no": "Repair open in the wire between the VSA control unit and G203, then go to step 14."
+        },
+        {
+          "step": 14,
+          "instruction": "Reconnect the VSA control unit 37P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 16,
+          "instruction": "Reset the PCM with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 17,
+          "instruction": "Do the PCM idle learn procedure.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 18,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Are any Temporary DTCs or DTCs indicated? go to step 1. If any other Temporary DTCs or DTCs are indicated, go to the indicated DTC's troubleshooting.",
+          "yes": "If DTC U0122 is indicated, check for poor connections or loose terminals at the gauge assembly, the VSA control unit, and the PCM, then",
+          "no": "Troubleshooting is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0164",
+      "description": "IMA-CAN Malfunction (A/C compressor driver-PCM)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Is DTC U0164 indicated? PCM.",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, system is OK at this time. Check for poor connections or loose terminals at the MCM, the A/C compressor driver and the"
+        },
+        {
+          "step": 4,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS again. Are DTC U0037 and U0164 indicated at the same time?",
+          "yes": "Go to troubleshooting DTC U0037.",
+          "no": "Go to step 5."
+        },
+        {
+          "step": 5,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS again. Are DTC U0110, U0164 and U1201 indicated at the same time?",
+          "yes": "Go to troubleshooting DTC U0110., or DTC U 1201.",
+          "no": "Go to step 6."
+        },
+        {
+          "step": 6,
+          "instruction": "Check the No. 29 (7.5 A) fuse in under-dash fuse/relay box. Is the fuse blown?",
+          "yes": "Repair short in the wire the A/C compressor driver and the No. 29 (7.5 A) fuse. Also replace the No. 29 (7.5 A) fuse, then go to step 17.",
+          "no": "Go to step 7."
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Remove the IPU lid.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect MCM connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect the A/C compressor driver 4P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Check for continuity between MCM connector terminal A7 and A/C compressor driver 4P connector terminal No. 2. Is there continuity?",
+          "yes": "Go to step 12.",
+          "no": "Repair open in the wire between the MCM (A7) and the A/C compressor driver, then go to step 18."
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between MCM connector terminal A6 and A/C compressor driver 4P connector terminal No. 3. Is there continuity?",
+          "yes": "Go to step 13.",
+          "no": "Repair open in the wire between the MCM (A6) and the A/C compressor driver, then go to step 18."
+        },
+        {
+          "step": 13,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "Measure voltage between A/C compressor driver 4P connector terminal No. 4 and body ground. Is there battery voltage9",
+          "yes": "Go to step 15.",
+          "no": "Repair open in the wire between the A/C compressor driver and the No. 29 (7.5 A) fuse, then go to step 18."
+        },
+        {
+          "step": 15,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 16,
+          "instruction": "Check for continuity between A/C compressor driver 4P connector terminal No. 1 and body ground. Is there continuity? This document was truncated. To convert full document use the desktop version of product Total PDF Converter",
+          "yes": "Go to step 17.",
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

@@ -1,0 +1,522 @@
+{
+  "source_file": "Accord_K24_U.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 3,
+  "dtcs": [
+    {
+      "dtc_code": "U0107",
+      "description": "Lost Communication With Throttle Actuator Control Module (2006 model)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Is DTC U0107 indicated?",
+          "yes": "Check for poor connections or loose terminals at the throttle body, the throttle actuator control module, and the ECM/PCM, then go to step",
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Start the engine.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Is DTC U0107 indicated? module relay, the throttle actuator control module, and the ECM/PCM.",
+          "yes": "Go to step 46.",
+          "no": "Intermittent failure, system is OK at this time. Check for poor connections or loose terminals at the throttle body, the throttle actuator control"
+        },
+        {
+          "step": 6,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Disconnect the intake air duct from the throttle body.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Press the accelerator pedal to the floor.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Check the throttle valve operation. Does it open after the throttle valve closes?",
+          "yes": "Go to step 12.",
+          "no": "Go to step 13."
+        },
+        {
+          "step": 12,
+          "instruction": "Check the throttle valve again. Does the throttle valve open fully?",
+          "yes": "Go to step 40.",
+          "no": "Go to step 34."
+        },
+        {
+          "step": 13,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "Disconnect the throttle actuator control module 16P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "Check for continuity between throttle actuator control module 16P connector terminal No. 7 and body ground. Is there continuity?",
+          "yes": "Go to step 16.",
+          "no": "Repair open in the wire between the throttle body, the throttle actuator control module, and G101, then go to step 50."
+        },
+        {
+          "step": 16,
+          "instruction": "Remove the throttle actuator control module relay (A).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 17,
+          "instruction": "Measure voltage between throttle actuator control module relay 4P connector terminal No. 1 and body ground. Is there battery voltage?",
+          "yes": "Go to step 19.",
+          "no": "Go to step 18."
+        },
+        {
+          "step": 18,
+          "instruction": "Check the No. 1 THROTTLE ACTUATOR CONTROL (15 A) fuse in the under-dash fuse/relay box. Is the fuse OK? 15 A) fuse, then go to step 50. 15 A) fuse. Also replace the fuse, then go to step 50.",
+          "yes": "Repair open in the wire between the throttle actuator control module relay (+B line) and the No. 1 THROTTLE ACTUATOR CONTROL (",
+          "no": "Repair short in the wire between the throttle actuator control module relay (+B line) and the No. 1 THROTTLE ACTUATOR CONTROL ("
+        },
+        {
+          "step": 19,
+          "instruction": "Install the throttle actuator control module relay.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 20,
+          "instruction": "Measure voltage between throttle actuator control module 16P connector terminal No. 2 and body ground.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 21,
+          "instruction": "Turn the ignition switch ON (II). Is there battery voltage for about 2 seconds? original throttle actuator control module, then go to step 50.",
+          "yes": "Substitute a known-good throttle actuator control module, then go to step 50 and recheck. If DTC U0107 is not indicated, replace the",
+          "no": "Go to step 22."
+        },
+        {
+          "step": 22,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 23,
+          "instruction": "Remove the throttle actuator control module relay (A).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 24,
+          "instruction": "Check the throttle actuator control module relay. Is the throttle actuator control module relay OK?",
+          "yes": "Go to step 25.",
+          "no": "Replace the throttle actuator control module relay, then go to step 50."
+        },
+        {
+          "step": 25,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 26,
+          "instruction": "Measure voltage between throttle actuator control module relay 4P connector terminal No. 4 and body ground. Is there battery voltage?",
+          "yes": "Go to step 27.",
+          "no": "Repair open in the wire between the throttle actuator control module relay and PGM-FI main relay 1 (FI MAIN), then go to step 50."
+        },
+        {
+          "step": 27,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 28,
+          "instruction": "Jump the SCS line with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 29,
+          "instruction": "Disconnect ECM/PCM connector D (17P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 30,
+          "instruction": "Check for continuity between ECM/PCM connector terminal D15 and throttle actuator control module relay 4P connector terminal No. 3. Is there continuity?",
+          "yes": "Go to step 31.",
+          "no": "Repair open in the wire between the ECM/PCM (D15) and the throttle actuator control module relay, then go to step 50."
+        },
+        {
+          "step": 31,
+          "instruction": "Check for continuity between throttle actuator control module 16P connector terminal No. 2 and body ground. Is there continuity? 50.",
+          "yes": "Repair short in the wire between the throttle actuator control module and the throttle actuator control module relay (+B line), then go to step",
+          "no": "Go to step 32."
+        },
+        {
+          "step": 32,
+          "instruction": "Connect throttle actuator control module relay 4P connector terminal No. 2 to body ground with a jumper wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 33,
+          "instruction": "Check for continuity between throttle actuator control module 16P connector terminal No. 2 and body ground. Is there continuity? 50.",
+          "yes": "Go to step 56.",
+          "no": "Repair open in the wire between the throttle actuator control module and the throttle actuator control module relay (+B line), then go to step"
+        },
+        {
+          "step": 34,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 35,
+          "instruction": "Jump the SCS line with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 36,
+          "instruction": "Disconnect the throttle actuator control module 16P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 37,
+          "instruction": "Disconnect ECM/PCM connector B (24P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 38,
+          "instruction": "Check for continuity between ECM connector terminal B19 and body ground. Is there continuity?",
+          "yes": "Repair short in the wire between the ECM/PCM (B19) and the throttle actuator control module, then go to step 50.",
+          "no": "Go to step 39."
+        },
+        {
+          "step": 39,
+          "instruction": "Check for continuity between ECM/PCM connector terminal B19 and throttle actuator control module 16P connector terminal No. 6. Is there continuity? original throttle actuator control module, then go to step 50. If DTC U0107 is indicated, go to step 56.",
+          "yes": "Substitute a known-good throttle actuator control module, then go to step 50 and recheck. If DTC U0107 is not indicated, replace the",
+          "no": "Repair open in the wire between the ECM/PCM (B19) and the throttle actuator control module, then go to step 50."
+        },
+        {
+          "step": 40,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 41,
+          "instruction": "Jump the SCS line with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 42,
+          "instruction": "Disconnect the throttle actuator control module 16P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 43,
+          "instruction": "Disconnect ECM/PCM connector B (24P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 44,
+          "instruction": "Check for continuity between ECM/PCM connector terminal B20 and body ground. Is there continuity?",
+          "yes": "Repair short in the wire between the ECM/PCM (B20) and the throttle actuator control module, then go to step 50.",
+          "no": "Go to step 45."
+        },
+        {
+          "step": 45,
+          "instruction": "Check for continuity between ECM/PCM connector terminal B20 and throttle actuator control module 16P connector terminal No. 14. Is there continuity? original throttle actuator control module, then go to step 50. If DTC U0107 is indicated, go to step 56.",
+          "yes": "Substitute a known-good throttle actuator control module, then go to step 50 and recheck. If DTC U0107 is not indicated, replace the",
+          "no": "Repair open in the wire between the ECM/PCM (B20) and the throttle actuator control module, then go to step 50."
+        },
+        {
+          "step": 46,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 47,
+          "instruction": "Jump the SCS line with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 48,
+          "instruction": "Disconnect ECM/PCM connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 49,
+          "instruction": "Check for continuity between body ground and ECM/PCM connector terminals A8 and A9 individually. Is there continuity? module, and the ECM/PCM. Then reconnect all connectors, and go to step 6.",
+          "yes": "Check for poor connections or loose terminals at the throttle body, the throttle actuator control module relay, the throttle actuator control",
+          "no": "Repair open in the wire between the ECM/PCM (A8, A9) and G101, then go to step 50."
+        },
+        {
+          "step": 50,
+          "instruction": "If the connections are OK, go to step 6.",
+          "yes": null,
+          "no": "Go to step 4."
+        },
+        {
+          "step": 51,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 52,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 53,
+          "instruction": "Reset the ECM/PCM with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 54,
+          "instruction": "Do the ECM/PCM idle learn procedure.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 55,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Are any Temporary DTCs or DTCs indicated? throttle actuator control module, and the ECM/PCM, then go to step 1. If any other Temporary DTCs or DTCs are indicated, go to the indicated DTC's troubleshooting.",
+          "yes": "If DTC U0107 is indicated, check for poor connections or loose terminals at the throttle body, the throttle actuator control module relay, the",
+          "no": "Troubleshooting is complete."
+        },
+        {
+          "step": 56,
+          "instruction": "Update the ECM/PCM if it does not have the latest software, or substitute a known-good ECM/PCM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 57,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Are any Temporary DTCs or DTCs indicated? throttle actuator control module, and the ECM/PCM, then go to step 1. If any other Temporary DTCs or DTCs are indicated, go to the indicated DTC's troubleshooting. With Navigation System",
+          "yes": "If DTC U0107 is indicated, check for poor connections or loose terminals at the throttle body, the throttle actuator control module relay, the",
+          "no": "If the ECM/PCM was updated, troubleshooting is complete. If the ECM/PCM was substituted, replace the original ECM/PCM."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0155",
+      "description": "F-CAN Malfunction (Gauge Control Module-ECM/PCM) (2006 model)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1102",
+      "description": "F-CAN Malfunction (Bus-off) (2006 model) Without Navigation System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Is DTC U0155 and/or U1102 indicated? unit, and the ECM/PCM.",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, system is OK at this time. Check for poor connections or loose terminals at the gauge control module, the navigation"
+        },
+        {
+          "step": 4,
+          "instruction": "Check for Body Electrical DTCs in the DTCs MENU with the HDS. Is DTC B1168, B1169 and/or B1178 indicated?",
+          "yes": "Go to step 5.",
+          "no": "Do the gauge control module input test."
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Jump the SCS line with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Remove the gauge control module.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Disconnect the gauge control module 36P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect the navigation unit 20P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Check for continuity between gauge control module 36P connector terminals No. 1, No. 19 and body ground individually. Is there continuity? *: CANL line",
+          "yes": "Repair short in the wire between the gauge control module and the ECM/PCM (E11(E24)*), then go to step 13.",
+          "no": "Go to step 11."
+        },
+        {
+          "step": 11,
+          "instruction": "Check for continuity between gauge control module 36P connector terminals No. 1, No. 19 and body ground individually. Is there continuity? *:CANL line",
+          "yes": "Repair short in the wire between the gauge control module, the navigation unit, and the ECM/PCM (E11(E24)*), then go to step 18.",
+          "no": "Go to step 12."
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between gauge control module 36P connector terminal No. 1 and ECM/PCM connector terminal E11, and between gauge control module 36P connector terminal No. 19 and ECM/PCM connector terminal E24 individually. Is there continuity? *: CANL line",
+          "yes": "Go to step 13.",
+          "no": "Repair open in the wire between the gauge control module and the ECM/PCM (E11(E24)*), then go to step 18."
+        },
+        {
+          "step": 13,
+          "instruction": "Check for continuity between ECM/PCM connector terminals E11 and E24. Is there continuity?",
+          "yes": "Repair short in the wires between ECM/PCM connector terminals E11 and E24, then go to step 18.",
+          "no": "Go to step 14."
+        },
+        {
+          "step": 14,
+          "instruction": "Reconnect ECM/PCM connector E (31P) and the gauge control module 36P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 16,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 17,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Is DTC U0155 and/or U1102 indicated?",
+          "yes": "Go to step 23.",
+          "no": "Replace the navigation unit, then go to step 18."
+        },
+        {
+          "step": 18,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 19,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Are any Temporary DTCs or DTCs indicated? then go to step 1. If any other Temporary DTCs or DTCs are indicated, go to the indicated DTC's troubleshooting. With Navigation System",
+          "yes": "If DTC U0155 and/or U1102 is indicated, check for poor connections or loose terminals at the gauge control module and the ECM/PCM,",
+          "no": "If the ECM/PCM was updated, troubleshooting is complete. If the ECM/PCM was substituted, replace the original ECM/PCM."
+        },
+        {
+          "step": 20,
+          "instruction": "Reset the ECM/PCM with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 21,
+          "instruction": "Do the ECM/PCM idle learn procedure.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 22,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Are any Temporary DTCs or DTCs indicated? and the ECM/PCM, then go to step 1. If any other Temporary DTCs or DTCs are indicated, go to the indicated DTC's troubleshooting.",
+          "yes": "If DTC U0155 and/or U1102 is indicated, check for poor connections or loose terminals at the gauge control module, the navigation unit,",
+          "no": "Troubleshooting is complete."
+        },
+        {
+          "step": 23,
+          "instruction": "Update the ECM/PCM if it does not have the latest software, or substitute a known-good ECM/PCM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 24,
+          "instruction": "Check for Temporary DTCs or DTCs with the HDS. Are any Temporary DTCs or DTCs indicated? and the ECM/PCM, then go to step 1. If any other Temporary DTCs or DTCs are indicated, go to the indicated DTC's troubleshooting. Without Navigation System",
+          "yes": "If DTC U0155 and/or U1102 is indicated, check for poor connections or loose terminals at the gauge control module, the navigation unit,",
+          "no": "If the ECM/PCM was updated, troubleshooting is complete. If the ECM/PCM was substituted, replace the original ECM/PCM."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

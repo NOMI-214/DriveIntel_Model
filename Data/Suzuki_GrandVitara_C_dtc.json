@@ -1,0 +1,681 @@
+{
+  "source_file": "Suzuki_GrandVitara_C.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 44,
+  "dtcs": [
+    {
+      "dtc_code": "C1015",
+      "description": "G Sensor Circuit Failure (4WD Model) For vehicle equipped with ESP, go to DTC C1015 / C1017 / C1023: Longitudinal G Sensor / Lateral G Sensor / Yaw Rate Sensor in Yaw Rate / G Sensor Assembly Failure. If the signal voltage of G sensor while at a stop does not vary from that while running, this DTC is set. (for 4WD vehicle) Therefore, this DTC may be set when a vehicle is lifted up and its wheel(s) is turned. In such case, clear the DTC and check again.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Check for proper connection from harness to control module.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "If OK, substitute an ABS hydraulic unit/control module assembly with correct part number.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Recheck system. Electronic Stability Program (ESP)",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1016",
+      "description": "Brake Light Switch Circuit Failure Step 1-5 Step 5",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1018",
+      "description": "Brake Fluid Level Switch Failure Step 1-6",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1020",
+      "description": "Master Cylinder Pressure Sensor Power Supply Failure",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch to OFF position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Check for proper connection from harness to ESP(R) control module.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "If OK, substitute an ESP(R) hydraulic unit / control module assembly with correct part number.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Recheck system.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1021",
+      "description": ", C1022 / C1025, C1026 / C1031, C1032 / C1035, C1036: Right-Front / Left-Front / Right-Rear / Left-Rear Wheel Speed Sensor Circuit or Encoder Failure Step 1-3 Step 3-7",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1022",
+      "description": "C1021, C1022 / C1025, C1026 / C1031, C1032 / C1035, C1036: Right-Front / Left-Front / Right-Rear / Left-Rear Wheel Speed Sensor Circuit or Encoder Failure Step 1-3 Step 3-7",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1024",
+      "description": "Steering Angle Sensor Circuit Failure Step 1-4",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1025",
+      "description": "C1021, C1022 / C1025, C1026 / C1031, C1032 / C1035, C1036: Right-Front / Left-Front / Right-Rear / Left-Rear Wheel Speed Sensor Circuit or Encoder Failure Step 1-3 Step 3-7",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1026",
+      "description": "C1021, C1022 / C1025, C1026 / C1031, C1032 / C1035, C1036: Right-Front / Left-Front / Right-Rear / Left-Rear Wheel Speed Sensor Circuit or Encoder Failure Step 1-3 Step 3-7",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1027",
+      "description": "ESP(R) OFF Switch Circuit Failure Step 1-4",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1028",
+      "description": "Master Cylinder Pressure Sensor Circuit Failure Step 1-3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1031",
+      "description": "C1021, C1022 / C1025, C1026 / C1031, C1032 / C1035, C1036: Right-Front / Left-Front / Right-Rear / Left-Rear Wheel Speed Sensor Circuit or Encoder Failure Step 1-3 Step 3-7",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1032",
+      "description": "C1021, C1022 / C1025, C1026 / C1031, C1032 / C1035, C1036: Right-Front / Left-Front / Right-Rear / Left-Rear Wheel Speed Sensor Circuit or Encoder Failure Step 1-3 Step 3-7",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1034",
+      "description": "Yaw Rate / G Sensor Assembly Power Supply Failure Step 1-2 Step 2-6 Step 6",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1035",
+      "description": "C1021, C1022 / C1025, C1026 / C1031, C1032 / C1035, C1036: Right-Front / Left-Front / Right-Rear / Left-Rear Wheel Speed Sensor Circuit or Encoder Failure Step 1-3 Step 3-7",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1036",
+      "description": "C1021, C1022 / C1025, C1026 / C1031, C1032 / C1035, C1036: Right-Front / Left-Front / Right-Rear / Left-Rear Wheel Speed Sensor Circuit or Encoder Failure Step 1-3 Step 3-7",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1037",
+      "description": "Steering Angle Sensor Power Supply Failure Step 1-6",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1038",
+      "description": "Steering Angle Sensor Detect Rolling Counter Failure from ESP(R) Control Module Step 1-3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1039",
+      "description": "Yaw Rate / G Sensor Assembly Internal Failure Step 1-4",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1040",
+      "description": "Stability Control System Function Failure Step 1-2",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1041",
+      "description": "Inlet Solenoid Circuit Failure, Outlet Solenoid Circuit Failure, Master Cylinder Cut Solenoid Circuit Failure, Low Pressure Solenoid Circuit Failure (DTC C1041 / C1045 / C1051 / C1055: Right-Front / Left-Front / Right-Rear / Left-Rear Inlet Solenoid Circuit Failure) (DTC C1042 / C1046 / C1052 / C1056: Right-Front / Left-Front / Right-Rear / Left-Rear Outlet Solenoid Circuit Failure) (DTC C1043 / C1044: Master Cylinder Cut Solenoid Circuit No. 1 / No. 2 Failure) (DTC C1053 / C1054: Low Pressure Solenoid Circuit No. 1 / No. 2 Failure) Step 1-2",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1057",
+      "description": "ABS (ESP) Control Module Power Supply Circuit Failure Step 1-5",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1061",
+      "description": "Pump Motor and/or Motor Driver Circuit Step 1-3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1063",
+      "description": "Solenoid Valve Power Supply Driver Circuit Failure Step 1-4",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1065",
+      "description": "Brake Light Relay Circuit Failure Step 1-2 Step 2-7 Step 7-8",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1071",
+      "description": "ABS (ESP) Control Module Internal Defect Step 1-3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1073",
+      "description": "Lost Communication With Yaw Rate / G Sensor Assembly Step 1-5",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1075",
+      "description": "1076 / 1077 / 1078: Steering Angle Sensor / Master Cylinder Pressure Sensor / Longitudinal G Sensor / Lateral G Sensor in Yaw Rate / G Sensor Assembly Calibration Incomplete Step 1-3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1079",
+      "description": "Steering Angle Sensor Calibration Failure Step 1-3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1090",
+      "description": "ECM Detect Rolling Counter Failure from ESP(R) Control Module Step 1-3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1091",
+      "description": "1092 / 1093: ECM / TCM / 4WD Control Module Data in CAN Line Failure Step 1-2",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1094",
+      "description": "Torque Request Reject Status Step 1-3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1213",
+      "description": "Transfer Switch Circuit Open",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select transfer switch to \"4H\" position and keep its position for 10 seconds. Similarly select transfer switch to \"4H-lock\", \"N\" and \"4L-lock\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check DTC. Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1214",
+      "description": "Transfer Switch Circuit Short",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select transfer switch to \"4H\" position and keep its position for 10 seconds. Similarly select transfer switch to \"4H-lock\", \"N\" and \"4L-lock\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check DTC. Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1223",
+      "description": "Transfer Shift Actuator Motor Position Switch 1 Circuit Open / Transfer Shift Actuator Motor Position Switch 2 Circuit Open",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select transfer switch to \"4H\" position and keep its position for 10 seconds. Similarly select transfer switch to \"4H-lock\", \"N\" and \"4L-lock\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check DTC. Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1224",
+      "description": "Transfer Shift Actuator Motor Position Switch 1 Circuit Short / Transfer Shift Actuator Motor Position Switch 2 Circuit Short",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select transfer switch to \"4H\" position and keep its position for 10 seconds. Similarly select transfer switch to \"4H-lock\", \"N\" and \"4L-lock\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check DTC. Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1227",
+      "description": "4L/N Switch Circuit Open",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select transfer switch to \"4L-lock\" position and keep its position for 1 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check DTC. Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1228",
+      "description": "4L/N Switch Circuit Short",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select transfer switch to \"4L-lock\" position and keep its position for 1 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check DTC. Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1230",
+      "description": "Transfer Actuator Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select transfer switch to \"4H\" position and keep its position for 10 seconds. Similarly select transfer switch to \"4H-lock\", \"N\" and \"4L-lock\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check DTC. Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1237",
+      "description": "Center Differential Lock Switch Circuit Open",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select transfer switch to \"4H\" position and keep its position for 1 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check DTC. Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1238",
+      "description": "Center Differential Lock Switch Circuit Short",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select transfer switch to \"4L-lock\" position and keep its position for 1 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check DTC. Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1240",
+      "description": "4WD Control Module Power Supply Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Start engine and drive vehicle at 30 km/h (19 mph) or more vehicle speed at least for 1 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Stop vehicle and check DTC. Step 1-2",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1243",
+      "description": "Internal Circuit Malfunction of 4WD Control Module",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn ignition switch to ON position for 60 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check DTC. Substitute a known-good 4WD control module and recheck.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1246",
+      "description": "Clutch Pedal Position (CPP) Switch Circuit Short",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Start engine and drive vehicle at 50 km/h (31 mile/h) or more vehicle speed at least for 1 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Stop vehicle and check DTC. Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

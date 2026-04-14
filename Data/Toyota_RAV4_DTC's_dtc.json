@@ -1,0 +1,41 @@
+{
+  "source_file": "Toyota_RAV4_DTC's.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 1,
+  "dtcs": [
+    {
+      "dtc_code": "U140F",
+      "description": "AUTOMATIC TRANSAXLE: AUTOMATIC TRANSAXLE SYSTEM: DIAGNOSTIC TROUBLE CODE CHART If a DTC is displayed during the DTC check, check the circuit listed in the table below and proceed to the \"See page\" given. HINT * *1: \"Comes on\" means the Malfunction Indicator Lamp (MIL) illuminates. * *2: \"DTC stored\" means the ECM memorizes the malfunction code if the ECM detects the DTC detection condition. * These DTCs may be output when the clutch, brake, gear components, etc., inside the automatic transaxle are damaged. Automatic Transaxle System CAN Communication System CAN COMMUNICATION: CAN COMMUNICATION SYSTEM: DIAGNOSTIC TROUBLE CODE CHART CAN Communication System Cruise Control System CRUISE CONTROL: CRUISE CONTROL SYSTEM: DIAGNOSTIC TROUBLE CODE CHART HINT If a trouble code is displayed during the DTC check, check the trouble areas listed for that code in the table below and refer to the \"See page\" below. Cruise control system Engine Immobiliser System (w/ Smart Key System) ENGINE IMMOBILISER: ENGINE IMMOBILISER SYSTEM (w/ Smart Key System): DIAGNOSTIC TROUBLE CODE CHART",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CERTIFICATION ECU DTC CHART Certification ECU:",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "ECM DTC CHART HINT The DTCs for the engine immobiliser system are specified above. If other codes are output, check the DTC chart for the engine control system. ECM: Engine Immobiliser System (w/o Smart Key System) ENGINE IMMOBILISER: ENGINE IMMOBILISER SYSTEM (w/o Smart Key System): DIAGNOSTIC TROUBLE CODE CHART",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 1,
+          "instruction": "TRANSPONDER KEY ECU DTC CHART Transponder key ECU:",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "ECM DTC CHART HINT The DTCs for the engine immobiliser system are specified above. If other codes are output, check the DTC chart for the engine control system. ECM: Lighting System LIGHTING: LIGHTING SYSTEM: DIAGNOSTIC TROUBLE CODE CHART HINT If a trouble code is displayed during the DTC check, check the suspected area listed for that code in the table below and proceed to the \"See page\". Lighting System Meter / Gauge System METER: METER / GAUGE SYSTEM: DIAGNOSTIC TROUBLE CODE CHART Combination meter Navigation System (w/ CD Player) NAVIGATION: NAVIGATION SYSTEM (w/ CD Player): DIAGNOSTIC TROUBLE CODE CHART HINT If a trouble code is output during the DTC check, inspect the trouble areas. Communication Diagnosis SW SW with Name SW Converting Command SW Front Monitor Navi Radio Unit CD Player GPS Navigation System (w/ DVD Player) NAVIGATION: NAVIGATION SYSTEM (w/ DVD Player): DIAGNOSTIC TROUBLE CODE CHART HINT If a trouble code is output during the DTC check, inspect the trouble areas. Navigation System Occupant Classification System SUPPLEMENTAL RESTRAINT SYSTEM: OCCUPANT CLASSIFICATION SYSTEM: DIAGNOSTIC TROUBLE CODE CHART If a trouble code is displayed during the DTC check, check the circuit listed for the code in the table below (proceed to the page listed for that circuit). Occupant Classification System: Power Steering System POWER STEERING: POWER STEERING SYSTEM: DIAGNOSTIC TROUBLE CODE CHART HINT If any DTCs are displayed during the DTC check, inspect the circuit listed for these DTCs. For details of each DTC, refer to the \"See page\" indicated in the DTC chart. Electric Power Steering System HINT o: Warning light comes on X: Warning light turns off (normal reset) Power Window Control System WINDSHIELD / WINDOWGLASS: POWER WINDOW CONTROL SYSTEM: DIAGNOSTIC TROUBLE CODE CHART SFI System 2AR-FE ENGINE CONTROL SYSTEM: SFI SYSTEM: DIAGNOSTIC TROUBLE CODE CHART HINT Parameters listed in the chart may not be exactly the same as yours depending on the type of instrument and other factors. If any DTCs are output during a check mode DTC check, check the circuit for the DTCs listed in the table below. For details of each DTC, refer to the \"See page\" indicated. SFI SYSTEM * *1: The MIL flashes when a catalyst-damaging misfire is detected. * *2: Only for Mexico Models Sliding Roof System SLIDING ROOF: SLIDING ROOF SYSTEM: DIAGNOSTIC TROUBLE CODE CHART Starting - Smart Key System 2AR-FE STARTING: SMART KEY SYSTEM: DIAGNOSTIC TROUBLE CODE CHART Smart Key System Steering Lock System STEERING COLUMN: STEERING LOCK SYSTEM: DIAGNOSTIC TROUBLE CODE CHART Steering lock system Tire Pressure Warning System TIRE AND WHEEL: TIRE PRESSURE WARNING SYSTEM: DIAGNOSTIC TROUBLE CODE CHART HINT If a trouble code is displayed during the DTC check, check the circuit listed for that code in the table below. Then proceed to the appropriate page. Tire Pressure Warning System Vehicle Stability Control System BRAKE CONTROL: VEHICLE STABILITY CONTROL SYSTEM: DIAGNOSTIC TROUBLE CODE CHART NOTICE: Turn the ignition switch off before removing any parts. HINT * If no abnormality is found when inspecting parts, inspect the skid control ECU and ground points for poor connections. * If a trouble code is output during the DTC check, check the circuit indicated by the DTC. For details of each code, refer to the \"See page\" for the respective \"DTC Code\" in the DTC chart. * When 2 or more DTCs are output, perform circuit inspection one by one until the problem is identified. * For DTCs indicated by the warning light or indicator light, refer to the DTC charts in DTC Check/Clear. * Inspect the fuses and relays before inspecting the trouble areas as shown in the table below. DTC Chart for ABS: (*1 to *3): Even after the trouble areas are repaired, the ABS warning light will not turn off unless one of the following operations is performed: * (*1): a. Drive the vehicle at 20 km/h (12 mph) for 30 seconds or more and check that the ABS warning light turns off. b. Clear the DTCs. * (*2): a. Turn the ignition switch to ON. b. Keep the vehicle stationary for 5 seconds or more and depress the brake pedal lightly 2 or 3 times. c. Drive the vehicle at the vehicle speed of 50 km/h (31 mph) and depress and hold the brake pedal firmly for approximately 3 seconds. d. Repeat the above operation 3 times or more and check that the ABS warning light turns off. e. Clear the DTCs. * (*3): a. Turn the ignition switch to ON. b. Depress the brake pedal. c. Clear the DTCs. HINT In some cases, the Techstream cannot be used when the ABS warning light remains on. DTC Chart for VSC: HINT In some cases, the Techstream cannot be used when the slip indicator light remains on. Test Mode DTC for ABS: Test Mode DTC for VSC: *: w/ Downhill Assist Control Wireless Door Lock Control System (w/ Smart Key System) DOOR LOCK: WIRELESS DOOR LOCK CONTROL SYSTEM (w/ Smart Key System): DIAGNOSTIC TROUBLE CODE CHART Wireless Door Lock Control System: Wireless Door Lock Control System (w/o Smart Key System) DOOR LOCK: WIRELESS DOOR LOCK CONTROL SYSTEM (w/o Smart Key System): DIAGNOSTIC TROUBLE CODE CHART Wireless Door Lock Control System:",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

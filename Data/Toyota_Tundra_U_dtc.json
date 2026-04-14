@@ -1,0 +1,314 @@
+{
+  "source_file": "Toyota_Tundra_U.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 8,
+  "dtcs": [
+    {
+      "dtc_code": "U0073",
+      "description": "94, U0100/65, U0114/27, U0123/62, U0124/69, U0126/63: Control Module Communication Bus OFF",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0126",
+      "description": "63 - Lost Communication with Steering Angle Sensor Module The skid control ECU exchanges signals with the ECM, steering angle sensor, yaw rate and deceleration sensor, power steering ECU, main body ECU and combination meter via CAN communication. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "RECONFIRM DTC (a) Clear the DTC(s)    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. (b) Check if the same DTC(s) is output    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. Result B --  USE SIMULATION METHOD TO CHECK  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/How To Proceed With Troubleshooting A --  GO TO CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With Meter / Gauge System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100",
+      "description": "Lost Communication with ECM / PCM \"A\" The combination meter communicates with the ECM via the CAN line. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK FOR DTC (a) Check for DTCs and note any codes that are output    See: Instrument Panel, Gauges and Warning Indicators/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. (b) Clear the DTC    See: Instrument Panel, Gauges and Warning Indicators/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. (c) Recheck for DTC    See: Instrument Panel, Gauges and Warning Indicators/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. Result HINT If the CAN communication system DTC U0100 and another DTC are output at the same time, perform troubleshooting for the CAN communication system DTC U0100 first. B --  Go to CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Service Precautions A --  USE SIMULATION METHOD TO CHECK  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/How To Proceed With Troubleshooting Vehicle Stability Control System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0129",
+      "description": "Lost Communication with Brake System Control Module The combination meter communicates with the skid control ECU via the CAN line. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK FOR DTC (a) Check for DTCs and note any codes that are output    See: Instrument Panel, Gauges and Warning Indicators/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. (b) Clear the DTC    See: Instrument Panel, Gauges and Warning Indicators/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. (c) Recheck for DTC    See: Instrument Panel, Gauges and Warning Indicators/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. Result HINT If the CAN communication system DTC U0129 and another DTC are output at the same time, perform troubleshooting for the CAN communication system DTC U0129 first. B --  Go to CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Service Precautions A --  USE SIMULATION METHOD TO CHECK  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/How To Proceed With Troubleshooting",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0199",
+      "description": "Lost Communication with \"Door Control Module A\" HINT Operating the ignition switch, any other switches or any doors triggers related ECU and sensor communication with the CAN, which",
+      "detection_condition": [],
+      "possible_causes": [
+        "resistance variation.",
+        "PROCEDURE"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "DISCONNECT CABLE FROM NEGATIVE BATTERY TERMINAL (a) Disconnect the cable from the negative (-) battery terminal before measuring the resistances of the main wire and the branch wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK FOR OPEN IN CAN BUS WIRE (OUTER MIRROR CONTROL ECU BRANCH WIRE) (a) Disconnect the N8 outer mirror control ECU connector. (b) Measure the resistance according to the value(s) in the table below. Standard resistance: NG --  REPAIR OR REPLACE OUTER MIRROR CONTROL ECU BRANCH WIRE OR CONNECTOR (CAN, CGND) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK HARNESS AND CONNECTOR (OUTER MIRROR CONTROL ECU - BATTERY AND BODY GROUND) (a) Reconnect the cable from the negative (-) battery terminal before measuring the resistances of the main wire and the branch wire. (b) Disconnect the N7 outer mirror control ECU connector. (c) Measure the resistance according to the value(s) in the table below. Standard resistance: (d) Measure the voltage according to the value(s) in the table below. Standard voltage: NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK --  REPLACE OUTER MIRROR CONTROL ECU  See: Body and Frame/Doors, Hood and Trunk/Doors/Front Door/Service and Repair/Front Door (for Double Cab)/Disassembly",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0208",
+      "description": "Lost Communication with \"Seat Control Module A\" HINT Operating the ignition switch, any other switches or any doors triggers related ECU and sensor communication with the CAN, which",
+      "detection_condition": [],
+      "possible_causes": [
+        "resistance variation.",
+        "PROCEDURE"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "DISCONNECT CABLE FROM NEGATIVE BATTERY TERMINAL (a) Disconnect the cable from the negative (-) battery terminal before measuring the resistances of the main wire and the branch wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK FOR OPEN IN CAN BUS WIRE (FRONT POWER SEAT CONTROL ECU AND SWITCH LH BRANCH WIRE) (a) Disconnect the Z10 front power seat control ECU and switch LH connector. (b) Measure the resistance according to the value(s) in the table below. Standard resistance: NG --  REPAIR OR REPLACE FRONT POWER SEAT CONTROL ECU AND SWITCH LH BRANCH WIRE OR CONNECTOR (CANH, CANL) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK HARNESS AND CONNECTOR (FRONT POWER SEAT CONTROL ECU AND SWITCH LH - BATTERY AND BODY GROUND) (a) Reconnect the cable from the negative (-) battery terminal before measuring the resistances of the main wire and the branch wire. (b) Disconnect the Z9 front power seat control ECU and switch LH connector. (c) Measure the resistance according to the value(s) in the table below. Standard resistance: (d) Measure the voltage according to the value(s) in the table below. Standard voltage: NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK --  REPLACE POSITION CONTROL ECU AND SWITCH ASSEMBLY  See: Body and Frame/Seats/Service and Repair/Overhaul/Front Seat Assembly (for Power Seat)/Disassembly",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1002",
+      "description": "Lost Communication with Gateway Module If 2 or more DTCs are output during the DTC check, one side of the CAN branch wire may be open. (One side of the CANH [branch wire]/CANL [branch wire] of the ECU and/or sensor is open.) HINT Operating the ignition switch, any other switches or any doors triggers related ECU and sensor communication with the CAN, which",
+      "detection_condition": [],
+      "possible_causes": [
+        "resistance variation.",
+        "PROCEDURE"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "DISCONNECT CABLE FROM NEGATIVE BATTERY TERMINAL (a) Disconnect the cable from the negative (-) battery terminal before measuring the resistances of the main wire and the branch wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK CAN BUS WIRE (MAIN WIRE FOR DISCONNECTION, BUS LINES FOR SHORT CIRCUIT) (a) Measure the resistance according to the value(s) in the table below. Standard resistance: Result C --  CHECK HARNESS AND CONNECTOR (MAIN BODY ECU - BATTERY AND BODY GROUND) B --  CHECK FOR SHORT IN CAN BUS WIRES (NO. 3 JUNCTION CONNECTOR - FRONT POWER SEAT CONTROL ECU AND SWITCH LH) A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK FOR OPEN IN CAN BUS WIRE (NO. 3 JUNCTION CONNECTOR - MAIN BODY ECU) (a) Disconnect the J114 No. 3 junction connector. (b) Measure the resistance according to the value(s) in the table below. Standard resistance: NG --  CONNECT CONNECTOR OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "CHECK FOR OPEN IN CAN BUS WIRE (NO. 3 JUNCTION CONNECTOR - COMBINATION METER ECU) (a) Measure the resistance according to the value(s) in the table below. Standard resistance: NG --  CONNECT CONNECTOR OK --  REPLACE NO. 3 JUNCTION CONNECTOR",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "CONNECT CONNECTOR (a) Reconnect the J114 No. 3 junction connector. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "CHECK FOR OPEN IN CAN BUS WIRE (COMBINATION METER ECU - NO. 3 JUNCTION CONNECTOR) (a) Disconnect the J28 combination meter ECU connector. (b) Measure the resistance according to the value(s) in the table below. Standard resistance: NG --  REPAIR OR REPLACE CAN MAIN WIRE CONNECTED TO COMBINATION METER ECU (COMBINATION METER ECU - NO. 3 JUNCTION CONNECTOR) OK --  REPLACE COMBINATION METER ASSEMBLY See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Service and Repair/Combination Meter/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "CONNECT CONNECTOR (a) Reconnect the J114 No. 3 junction connector. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "CHECK FOR OPEN IN CAN BUS WIRE (MAIN BODY ECU - NO. 3 JUNCTION CONNECTOR) (a) Disconnect the J2 main body ECU connector. (b) Measure the resistance according to the value(s) in the table below. Standard resistance: NG --  REPAIR OR REPLACE CAN MAIN WIRE CONNECTED TO MAIN BODY ECU (MAIN BODY ECU - NO. 3 JUNCTION CONNECTOR) OK --  REPLACE MAIN BODY ECU",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "CHECK FOR SHORT IN CAN BUS WIRES (NO. 3 JUNCTION CONNECTOR - FRONT POWER SEAT CONTROL ECU AND SWITCH LH) (a) Disconnect the J114 No. 3 junction connector. (b) Measure the resistance according to the value(s) in the table below. Standard resistance: NG --  CONNECT CONNECTOR OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "CHECK FOR SHORT IN CAN BUS WIRES (NO. 3 JUNCTION CONNECTOR - MULTIPLEX TILT AND TELESCOPIC ECU) (a) Measure the resistance according to the value(s) in the table below. Standard resistance: NG --  CONNECT CONNECTOR OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "CHECK FOR SHORT IN CAN BUS WIRES (NO. 3 JUNCTION CONNECTOR - OUTER MIRROR CONTROL ECU) (a) Measure the resistance according to the value(s) in the table below. Standard resistance: NG --  CONNECT CONNECTOR OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "CHECK FOR SHORT IN CAN BUS WIRES (NO. 3 JUNCTION CONNECTOR - COMBINATION METER ECU) (a) Measure the resistance according to the value(s) in the table below. Standard resistance: NG --  CONNECT CONNECTOR OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "CHECK FOR SHORT IN CAN BUS WIRES (NO. 3 JUNCTION CONNECTOR - MAIN BODY ECU) (a) Measure the resistance according to the value(s) in the table below. Standard resistance: NG --  CONNECT CONNECTOR OK --  REPAIR OR REPLACE NO. 3 JUNCTION CONNECTOR",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "CONNECT CONNECTOR (a) Reconnect the J114 No. 3 junction connector. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "CHECK FOR SHORT IN CAN BUS WIRES (FRONT POWER SEAT CONTROL ECU AND SWITCH LH) (a) Disconnect the Z10 front power seat control ECU and switch LH connector. (b) Measure the resistance according to the value(s) in the table below. Standard resistance: NG --  REPAIR OR REPLACE CAN BRANCH WIRE CONNECTED TO FRONT POWER SEAT CONTROL ECU AND SWITCH LH (CANH, CANL) OK --  REPLACE POSITION CONTROL ECU AND SWITCH ASSEMBLY  See: Body and Frame/Seats/Service and Repair/Overhaul/Front Seat Assembly (for Power Seat)/Disassembly",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 16,
+          "instruction": "CONNECT CONNECTOR (a) Reconnect the J114 No. 3 junction connector. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 17,
+          "instruction": "CHECK FOR SHORT IN CAN BUS WIRES (MULTIPLEX TILT AND TELESCOPIC ECU) (a) Disconnect the J47 multiplex tilt and telescopic ECU connector. (b) Measure the resistance according to the value(s) in the table below. Standard resistance: NG --  REPAIR OR REPLACE CAN BRANCH WIRE CONNECTED TO MULTIPLEX TILT AND TELESCOPIC ECU (CANH, CANL) OK --  REPLACE MULTIPLEX TILT AND TELESCOPIC ECU  See: Steering and Suspension/Steering/Steering Column/Service and Repair/Overhaul/Steering Column Assembly (for Power Tilt and Power Telescopic Steering Column)/Disassembly",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 18,
+          "instruction": "CONNECT CONNECTOR (a) Reconnect the J114 No. 3 junction connector. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 19,
+          "instruction": "CHECK FOR SHORT IN CAN BUS WIRES (OUTER MIRROR CONTROL ECU) (a) Disconnect the N8 outer mirror control ECU connector. (b) Measure the resistance according to the value(s) in the table below. Standard resistance: NG --  REPAIR OR REPLACE CAN BRANCH WIRE CONNECTED TO OUTER MIRROR CONTROL ECU (CAN, CGND) OK --  REPLACE OUTER MIRROR CONTROL ECU  See: Body and Frame/Doors, Hood and Trunk/Doors/Front Door/Service and Repair/Front Door (for Double Cab)/Disassembly",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 20,
+          "instruction": "CONNECT CONNECTOR (a) Reconnect the J114 No. 3 junction connector. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 21,
+          "instruction": "CHECK FOR SHORT IN CAN BUS WIRES (COMBINATION METER ECU) (a) Disconnect the J28 combination meter ECU connector. (b) Measure the resistance according to the value(s) in the table below. Standard resistance: NG --  REPAIR OR REPLACE CAN MAIN WIRE CONNECTED TO COMBINATION METER ECU (NO. 3 JUNCTION CONNECTOR - COMBINATION METER ECU) OK --  REPLACE COMBINATION METER ASSEMBLY  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Service and Repair/Combination Meter/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 22,
+          "instruction": "CONNECT CONNECTOR (a) Reconnect the J114 No. 3 junction connector. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 23,
+          "instruction": "CHECK FOR SHORT IN CAN BUS WIRES (MAIN BODY ECU) (a) Disconnect the J2 main body ECU connector. (b) Measure the resistance according to the value(s) in the table below. Standard resistance: NG --  REPAIR OR REPLACE CAN MAIN WIRE CONNECTED TO MAIN BODY ECU (NO. 3 JUNCTION CONNECTOR - MAIN BODY ECU) OK --  REPLACE MAIN BODY ECU",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 24,
+          "instruction": "CHECK HARNESS AND CONNECTOR (MAIN BODY ECU - BATTERY AND BODY GROUND) (a) Reconnect the cable to the negative (-) battery terminal before measuring the resistances of the main wire and the branch wire. (b) Disconnect the DA, DB and DD main body ECU connectors. (c) Measure the resistance according to the value(s) in the table below. Standard resistance: (d) Measure the voltage according to the value(s) in the table below. Standard voltage: NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK --  REPLACE MAIN BODY ECU",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1115",
+      "description": "Lost Communication with Tilt and Telescopic Module HINT Operating the ignition switch, any other switches or any doors triggers related ECU and sensor communication with the CAN, which",
+      "detection_condition": [],
+      "possible_causes": [
+        "resistance variation.",
+        "PROCEDURE"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "DISCONNECT CABLE FROM NEGATIVE BATTERY TERMINAL (a) Disconnect the cable from the negative (-) battery terminal before measuring the resistances of the main wire and the branch wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK FOR OPEN IN CAN BUS WIRE (MULTIPLEX TILT AND TELESCOPIC ECU BRANCH WIRE) (a) Disconnect the J47 multiplex tilt and telescopic ECU connector. (b) Measure the resistance according to the value(s) in the table below. Standard resistance: NG --  REPAIR OR REPLACE MULTIPLEX TILT AND TELESCOPIC ECU BRANCH WIRE OR CONNECTOR (CANH, CANL) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK HARNESS AND CONNECTOR (MULTIPLEX TILT AND TELESCOPIC ECU - BATTERY AND BODY GROUND) (a) Reconnect the cable from the negative (-) battery terminal before measuring the resistances of the main wire and the branch wire. (b) Measure the resistance according to the value(s) in the table below. Standard resistance: (c) Measure the voltage according to the value(s) in the table below. Standard voltage: NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK --  REPLACE MULTIPLEX TILT AND TELESCOPIC ECU  See: Steering and Suspension/Steering/Steering Column/Service and Repair/Overhaul/Steering Column Assembly (for Power Tilt and Power Telescopic Steering Column)/Disassembly",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

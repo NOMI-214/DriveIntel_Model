@@ -1,0 +1,43 @@
+{
+  "source_file": "Civic_Si_ABS.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 4,
+  "dtcs": [
+    {
+      "dtc_code": "P0010",
+      "description": "P0304",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0325",
+      "description": "P0607",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1106",
+      "description": "P1362",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1456",
+      "description": "P2A00 Index Index Part 1 Index Part 2",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

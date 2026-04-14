@@ -1,0 +1,3126 @@
+{
+  "source_file": "Suzuki_GrandVitara_P.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 105,
+  "dtcs": [
+    {
+      "dtc_code": "P2A01",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Drive vehicle at 50 - 80 km/h (31 - 50 mile/h) for 5 min. at 5th gear or D range. (Keep throttle valve opening constantly in this step.)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Release accelerator pedal, and keep vehicle coasting for 10 sec. with engine braking applied. (fuel cut condition.)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Stop vehicle and run engine at idle speed for 5 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check whether O2 sensor readiness/monitoring test has completed or not by using scan tool. If O2 sensor readiness/monitoring test has not completed, check vehicle conditions (environmental) and repeat Steps 2) through 4). Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0010",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Run engine at idle speed for 5 min. Step 1-3",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0011",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Accelerate vehicle to 80 km/h (50 mile/h) or more. Step 1-3 Step 4-11",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P011B",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn OFF ignition switch and leave for 5 hours. Step 1-5",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0139",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Drive vehicle at 80 - 100 km/h (50 - 62 mile/h) for 6 min. (keep throttle valve opening constantly in this step.)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Release accelerator pedal, and keep vehicle coasting for 10 sec. with engine braking applied. (fuel cut condition). Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0016",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Run engine at idle speed for 1 min. Step 1-6",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0031",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch to ON position for 10 sec. Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0037",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Run engine at idle speed for 1 min. Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P050A",
+      "description": "of Throttle Body System of Electric Throttle Control System The electric throttle control system consists of the following. - Throttle body assembly incorporated with the throttle valve, throttle motor and throttle position (TP) sensors (main/sub) - Accelerator pedal assembly incorporated with accelerator pedal position (APP) sensors (main/sub) - Throttle motor control relay - ECM Operation Description ECM (5) detects depressed extent of the accelerator pedal based on the signal voltage of the APP sensor (1). Using that data and engine operation condition, ECM calculates the optimum throttle valve opening. On the other hand, it detects the throttle valve opening based on the signal voltage of the TP sensor (3) in the throttle body assembly (2) and compares it with the above calculated optimum throttle valve opening. When there is a difference between them, ECM controls the duty ratio (100% - 0%) of throttle motor control according to this difference to drive the throttle motor (4) in the throttle body. When there is no difference, ECM controls the duty ratio of throttle motor control to about 15% to maintain the throttle valve opening. In this way, the throttle valve (17) is opened and closed to achieve the optimum throttle valve opening. In this system, TP sensor and APP sensor have 2 sensors (main and sub) each to assure highly accurate and highly reliable control and abnormality detection. Also, when ECM detects an abnormality in the system, it turns off the throttle motor control relay (8) to stop controlling the throttle motor. When the throttle motor control relay is turned off, the throttle valve is fixed at the opening of about 7° (default opening) from its completely closed position by the balance of the return spring and open spring in the throttle body. This throttle body is not equipped with IAC valve for idle speed control. Idle speed control is performed by the throttle motor by adjusting the throttle valve opening. of Air Intake System Refer to Air Intake System Description:J24B.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Run engine at idle speed for 2 min. Step 1-6 Step 7-10",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0601",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch to ON position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Start engine, if possible. Step 1-2 4-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0602",
+      "description": "Control Module Programming Error / Internal Control Module EEPROM Error / Internal Control Module Memory Check Sum Error System Description Internal control module is installed in TCM.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Start engine and run it at idle if possible.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check DTC. Step 1 5-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0101",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Drive vehicle at 60 - 100 km/h (37 - 62 mile/h) for 1 min. Step 1-5 Step 6-8",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0102",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch to ON position for 10 sec. Step 1-3",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0111",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Drive vehicle at 60 - 100 km/h (37 - 62 mile/h) for 10 min. Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0112",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch to ON position for 10 sec. Step 1-3",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0116",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Run engine at idle speed for 15 min. DTC P0125:",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0117",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch to ON position for 10 sec. Step 1-3",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0122",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch to ON position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Keep accelerator pedal at fully depressed position for 2 sec.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Keep accelerator pedal at release position for 2 sec.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Repeat Step 2) through 3) for 3 times. Step 1-4 Step 5-6",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0131",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Run engine at idle speed for 1 min.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0134",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Run engine at idle speed for 2 min.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P2195",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Drive vehicle at 50 - 60 km/h (31 - 37 mile/h) (engine speed: 1,500 - 3,000 rpm) for 3 min. (Keep throttle valve opening constantly in this step.) Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0133",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Drive vehicle at 60 - 100 km/h (37 - 62 mile/h) for 6 min. (Keep throttle valve opening constantly in this step.) Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0137",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Drive vehicle at 50 - 60 km/h (31 - 37 mile/h) for 3 min. (Keep throttle valve opening constantly in this step.) Step 1-3 Step 4-6",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0171",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Drive vehicle at 50 - 60 km/h (31 - 37 mile/h) for 3 min. (Keep throttle valve opening constantly in this step.) Step 1-8",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0222",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch to ON position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Keep accelerator pedal at fully depressed position for 2 sec.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Keep accelerator pedal at release position for 2 sec.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Repeat Step 2) through 3) for 3 times. Step 1-4 Step 5-6",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0300",
+      "description": "",
+      "detection_condition": [
+        ", it determine the cylinder where the misfire occurred and output it as DTC."
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Drive vehicle at 80 - 100 km/h (50 - 62 mile/h) for 10 min. (Keep engine speed at 2,500 - 4,000 rpm in this step.) Step 1-6",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0327",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Run engine at idle speed for 1 min. Step 1-3",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0335",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Crank engine for 5 sec. (Ignition switch: ST position) Step 1-3 Step 4-5",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0340",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Crank engine for 5 sec. (Ignition switch: ST position). Step 1-3 Step 4-5",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0420",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Drive vehicle at 80 - 100 km/h (50 - 62 mile/h) for 10 min. (Keep throttle valve opening constantly and engine speed at 2,500 - 3,000 rpm in this step.) Step 1-8",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0441",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm it up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Drive vehicle at 50 - 100 km/h (30 - 60 mile/h) for 1 min. Step 1-5",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0443",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Drive vehicle at 30 - 50 km/h (19 - 31 mile/h) for 5 min. at 5th gear or D range. (Keep throttle valve opening constantly in this step.) Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0449",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Drive vehicle at 40 km/h (25 mile/h) for 15 min. (Keep throttle valve operating constantly in this step.) Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0456",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [
+        "d by a 0.5 mm (0.02 in.) diameter orifice.",
+        "If the fuel is charged to vehicle during EVAP system monitoring, ECM stops EVAP system monitoring.",
+        "If ECM detects EVAP leak check module malfunction, ECM stops EVAP system monitoring and store the applicable DTC. When starting the",
+        "engine after detecting the DTC, ECM turns on the MIL.",
+        "System Diagram"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "ECM measures EVAP system initial pressure (P1) by EVAP leak check pressure sensor while EVAP canister vent valve is opened (OFF) and EVAP leak detection pump is not operated (OFF).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "ECM measures vacuum as reference pressure (P2) which is generated by getting suction air of EVAP leak detection pump through reference orifice (equivalent of 0.5 mm (0.02 in.) diameter hole) while EVAP canister vent valve opened (OFF) [A] and EVAP leak detection pump operated (ON).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "ECM measures tank pressure as EVAP system maximum pressure (P3) when EVAP canister vent valve is closed (ON) [B] with EVAP leak detection pump operated.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "ECM measures vacuum as EVAP system minimum pressure (P4) while EVAP canister vent valve is closed (ON) with EVAP leak detection pump operated.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "ECM compares reference pressure to minimum pressure in EVAP system. If the EVAP system minimum pressure is higher than the reference pressure, the system contains a leak which is greater than or equal to a leak",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0461",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Drive vehicle at 50 - 100 km/h (31 - 62 mile/h) for 1 hour. Step 1-2 Step 3 Step 4-6",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0462",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch to ON position for 10 sec. Step 1-5",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0480",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Keep engine at idle speed until engine coolant temperature reaches 102.5 °C (216.5 °F) or more. Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0481",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Keep engine at idle speed until engine coolant temperature reaches 104 °C (219.2 °F) or more. Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0482",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Keep engine at idle speed until engine coolant temperature reaches 104 °C (219.2 °F) or more. Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0500",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Drive vehicle at 100 km/h (62 mile/h) for 1 min. (Keep throttle valve opening constantly in this step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Release accelerator pedal, and keep vehicle coasting for 10 sec. with engine braking applied. (fuel cut condition) Step 1-3",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0504",
+      "description": "Brake Switch \"A\"/\"B\" Correlation",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "With ignition switch turned OFF, connect scan tool to DLC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn ON ignition switch and clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Drive vehicle at 50 km/h (31 mph) or higher for 3 min. or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Stop vehicle.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Depress brake pedal for 3 times.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check DTC. N32A. Step 1-2 Step 3",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0506",
+      "description": "of Throttle Body System of Electric Throttle Control System The electric throttle control system consists of the following. - Throttle body assembly incorporated with the throttle valve, throttle motor and throttle position (TP) sensors (main/sub) - Accelerator pedal assembly incorporated with accelerator pedal position (APP) sensors (main/sub) - Throttle motor control relay - ECM Operation Description ECM (5) detects depressed extent of the accelerator pedal based on the signal voltage of the APP sensor (1). Using that data and engine operation condition, ECM calculates the optimum throttle valve opening. On the other hand, it detects the throttle valve opening based on the signal voltage of the TP sensor (3) in the throttle body assembly (2) and compares it with the above calculated optimum throttle valve opening. When there is a difference between them, ECM controls the duty ratio (100% - 0%) of throttle motor control according to this difference to drive the throttle motor (4) in the throttle body. When there is no difference, ECM controls the duty ratio of throttle motor control to about 15% to maintain the throttle valve opening. In this way, the throttle valve (17) is opened and closed to achieve the optimum throttle valve opening. In this system, TP sensor and APP sensor have 2 sensors (main and sub) each to assure highly accurate and highly reliable control and abnormality detection. Also, when ECM detects an abnormality in the system, it turns off the throttle motor control relay (8) to stop controlling the throttle motor. When the throttle motor control relay is turned off, the throttle valve is fixed at the opening of about 7° (default opening) from its completely closed position by the balance of the return spring and open spring in the throttle body. This throttle body is not equipped with IAC valve for idle speed control. Idle speed control is performed by the throttle motor by adjusting the throttle valve opening.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Run engine at idle speed for 45 sec. Step 1-7",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0532",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and operate A/C for 10 sec. Step 1-3 Step 4 Step 5-6",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0560",
+      "description": "Battery voltage is supplied so that DTC memory, values for engine control learned by ECM, etc. are kept in ECM even when the ignition switch is turned OFF.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Run engine at idle speed for 10 sec. Step 1-2",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0575",
+      "description": "Cruise Control Input Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "With ignition switch turned OFF, connect scan tool to DLC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn ON ignition switch and clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Press cruise MAIN (ON/OFF) switch once.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Drive vehicle at 40 km/h (25 mph) or higher for 3 min. or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Stop vehicle.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check DTC. N32A Step 1-2",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0616",
+      "description": "Engine start signal is sent from starting motor relay signal circuit (A1) while engine cranking.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Run engine at idle speed for 5 min. Step 1-3",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0620",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Check to make sure that the following conditions are met. - Blower fan: OFF - Headlight switch: OFF - Rear defogger switch: OFF",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Run engine at idle speed for 5 min. and check to make sure that the following conditions are met. - Blower fan: ON - Headlight switch: ON - Rear defogger switch: ON",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Run engine speed at 4,000 rpm and keep it for 30 sec. Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0625",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Check to make sure that the following conditions are met. - Blower fan: ON - Headlight switch: ON - Rear defogger switch: ON",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Run engine at idle speed for 5 min. Step 1-3",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0630",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch to ON position for 10 sec. Step 1-3",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0649",
+      "description": "Speed Control Lamp Control Circuit Step 1",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0660",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Run engine at idle speed for 5 min. Step 1-4 4-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0705",
+      "description": "Transmission Range Sensor Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and shift select lever to \"D\" range.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Keep engine running at idle speed for 25 seconds or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check DTC, pending DTC and freeze-frame data. Step 1-5 Step 5-7 5-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0707",
+      "description": "Transmission Range Sensor Circuit Low",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and shift select lever to \"D\" range.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Start vehicle and increase vehicle speed to 50 km/h (31 mile/h) or more for 2 minutes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Stop vehicle and turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Repeat Step 3) to 5) one time.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Stop vehicle.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Check DTC, pending DTC and freeze-frame data. Step 1-3 Step 4-7 5-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0711",
+      "description": "Transmission Fluid Temperature Sensor \"A\" Circuit Range / Performance",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and warm it up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Shift select lever to \"D\" range.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Start vehicle and increase vehicle speed to 50 km/h (31 mile/h) or more with throttle position 10% for 30 minutes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Stop vehicle and turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Repeat Step 3) to 5) one time.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Stop vehicle.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Check DTC, pending DTC and freeze-frame data. Step 1-2 5-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0712",
+      "description": "Transmission Fluid Temperature Sensor \"A\" Circuit Low",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Keep engine running at idle speed for 1 minute or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Repeat Step 3) to 5) one time.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check DTC, pending DTC and freeze-frame data. Step 1-3 5-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0713",
+      "description": "Transmission Fluid Temperature Sensor \"A\" Circuit High",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Keep engine running at idle speed for 1 minute or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Repeat Step 3) to 5).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check DTC, pending DTC and freeze-frame data. Step 1-4 5-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0717",
+      "description": "Input / Turbine Speed Sensor \"A\" Circuit No Signal",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and shift select lever to \"D\" range.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Start vehicle and increase vehicle speed to about 40 km/h (25 mile/h) for 3 minutes or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Stop vehicle.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check DTC, pending DTC and freeze-frame data. Step 1-4 5-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0722",
+      "description": "Output Speed Sensor Circuit No Signal",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and shift select lever to \"D\" range.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Start vehicle and increase vehicle speed to about 40 km/h (25 mile/h) for 3 minutes or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Stop vehicle.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check DTC, pending DTC and freeze-frame data. Step 1-4 5-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0741",
+      "description": "Torque Converter Clutch Circuit Performance or Stuck OFF / Stuck ON",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and warm it up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Shift select lever to \"N\" and \"D\" range for each 10 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Drive vehicle with 4th in \"D\" range and lock-up ON for 20 seconds or longer referring to \"Automatic Gear Shift Table\" in Road Test: 4 A/T. See: Transmission and Drivetrain/Automatic Transmission/Transaxle/Testing and Inspection/Component Tests and General Diagnostics/Road Test",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Drive vehicle with 2nd or 3rd gear in \"D\" range, 15 - 20% throttle opening and at vehicle speed of 40 km/h (25 mile/h).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Stop vehicle and turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Repeat Step 3) to 6) one time.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Stop vehicle.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Check DTC, pending DTC and freeze-frame data. Step 1-2 5-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0751",
+      "description": "Shift Solenoid \"A\" Performance or Stuck OFF / Stuck ON",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and warm it up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Shift select lever to \"N\" and \"D\" range for each 10 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Start vehicle and increase vehicle speed to 65 km/h (40 mile/h) with throttle position 10% or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Stop vehicle and turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Repeat Step 3) to 5) one time.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Stop vehicle.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Check DTC, pending DTC and freeze-frame data. Step 1-2 5-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0756",
+      "description": "Shift Solenoid \"B\" Performance or Stuck OFF / Stuck ON",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and warm it up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Shift select lever to \"N\" and \"D\" range for each 10 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Start vehicle and increase vehicle speed to 65 km/h (40 mile/h) with throttle position 10% or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Stop vehicle and turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Repeat Step 3) to 5) one time.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Stop vehicle.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Check DTC, pending DTC and freeze-frame data. Step 1-2 5-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0771",
+      "description": "Shift Solenoid \"E\" Performance or Stuck OFF / Stuck ON",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and warm it up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Shift select lever to \"N\" and \"D\" range for each 10 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Start vehicle and increase vehicle speed to 65 km/h (40 mile/h) with throttle position 10% or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Stop vehicle.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Start vehicle and increase vehicle speed to 65 km/h (40 mile/h) with throttle position 10% or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Stop vehicle and turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Repeat Step 3) to 7) one time.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Stop vehicle.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Check DTC, pending DTC and freeze-frame data. Step 1-2",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0781",
+      "description": "1-2 Shift",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and warm it up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Shift select lever to \"N\" and \"D\" range for each 10 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Start vehicle and increase vehicle speed to 65 km/h (40 mile/h) with throttle position 10% or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Stop vehicle.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Start vehicle and increase vehicle speed to 65 km/h (40 mile/h) with throttle position 10% or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Stop vehicle and turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Repeat Step 3) to 7) one time.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Stop vehicle.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Check DTC, pending DTC and freeze-frame data. Step 1",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0797",
+      "description": "Pressure Control Solenoid \"C\" Stuck ON",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and warm it up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Shift select lever to \"N\" and \"D\" range for each 10 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Start vehicle and increase vehicle speed to 65 km/h (40 mile/h) with throttle position 10% or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Stop vehicle and turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Repeat Step 3) to 5) one time.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Stop vehicle.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Check DTC, pending DTC and freeze-frame data. Step 1-2 4-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0961",
+      "description": "Pressure Control Solenoid \"A\" / \"B\" / \"C\" Control Circuit Range / Performance",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and warm it up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Keep engine running at idle speed for 30 seconds or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check DTC, pending DTC and freeze-frame data. Step 1-3 5-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0962",
+      "description": "Pressure Control Solenoid \"A\" Control Circuit Low / Pressure Control Solenoid \"B\" Control Circuit Low Pressure Control Solenoid \"C\" Control Circuit Low",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Keep engine running at idle speed for 30 seconds or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check DTC, pending DTC and freeze-frame data. Step 1-4 5-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0963",
+      "description": "Pressure Control Solenoid \"A\" Control Circuit High / Pressure Control Solenoid \"B\" Control Circuit High Pressure Control Solenoid \"C\" Control Circuit High",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Keep engine running at idle speed for 10 seconds or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check DTC, pending DTC and freeze-frame data. Step 1-3 5-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0973",
+      "description": "Shift Solenoid \"A\" Control Circuit Low / Shift Solenoid \"B\" Control Circuit Low / Shift Solenoid \"E\" Control Circuit Low",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and shift select lever to \"D\" range.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Start vehicle and increase vehicle speed to 60 km/h (37 mile/h) in \"D\" range.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Keep on driving in the speed for 20 seconds and decrease vehicle speed gradually.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Stop vehicle.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check DTC, pending DTC and freeze-frame data. Step 1-3 5-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0974",
+      "description": "Shift Solenoid \"A\" Control Circuit High Shift Solenoid \"B\" Control Circuit High Shift Solenoid \"E\" Control Circuit High",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and shift select lever to \"D\" range.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Start vehicle and increase vehicle speed to 60 km/h (37 mile/h) in \"D\" range.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Keep on driving in the speed for 20 seconds and decrease vehicle speed gradually.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Stop vehicle.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check DTC, pending DTC and freeze-frame data. Step 1-4 5-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1614",
+      "description": "Transponder Response Error Step 1-5",
+      "detection_condition": [
+        "and Trouble Area"
+      ],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1615",
+      "description": "Steering Lock Unit Communication Error (for Vehicle with Keyless Start System) When the transponder code in the ignition key is registered in ECM, the remote controller ID code is registered in both ECM and keyless start control module at the same time. This DTC is detected only in case that the remote controller ID code cannot be registered in both ECM and keyless start control module when the transponder code in the ignition key is registered in ECM. Step 1-2 Step 2 (Continued)-6 Step 6 (Continued)-9 Step 9 (Continued)",
+      "detection_condition": [
+        "and Trouble Area"
+      ],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1616",
+      "description": "is detected when ECM detects different ID codes registered in ECM and keyless start control module after turning engine start knob to ON position. Normally, when keyless start control module is replaced with new one, ECM automatically registers the applicable code in keyless start control module after turning ignition switch to ON position. However, when keyless start control module is replaced with used one, ECM does not automatically register the applicable code in keyless start control module even if ignition switch is turned to ON position. Step 1-4",
+      "detection_condition": [
+        "and Trouble Area"
+      ],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1618",
+      "description": "Keyless Start Control Module CAN Communication Error (for Vehicle with Keyless Start System) Refer to Troubleshooting for Lost Communication. See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Component Tests and General Diagnostics/Troubleshooting For Lost Communication",
+      "detection_condition": [
+        "and Trouble Area"
+      ],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1621",
+      "description": "Immobilizer Communication Line Error Step 1-4 Step 4 (Continued)-8 Step 8 (Continued)-11",
+      "detection_condition": [
+        "and Trouble Area"
+      ],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1622",
+      "description": "EEPROM Error",
+      "detection_condition": [
+        "and Trouble Area"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC(s) referring to DTC Clearance.  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/DTC Clearance",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn ignition switch to OFF position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check if DTC P1622 is still detected referring to DTC Check.  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/DTC Check If still detected, go to the next step. If not, the troubleshooting is completed.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Replace ECM with new one.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Perform Procedure after ECM Replacement.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1623",
+      "description": "Unregistered Transponder Step 1-4",
+      "detection_condition": [
+        "and Trouble Area"
+      ],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1625",
+      "description": "Immobilizer Antenna Error Step 1-2",
+      "detection_condition": [
+        "and Trouble Area"
+      ],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1636",
+      "description": "Immobilizer Information Registration Failure Step 1-5",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1638",
+      "description": "Immobilizer Information Mismatched Step 1-4 Step 4 (Continued)-7",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1645",
+      "description": "ID Code Communication Error Step 1-2",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1646",
+      "description": "ID Code Incorrectness Step 1-4 4-Speed Automatic Transmission",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1706",
+      "description": "Torque Request Communication Error from TCM Step 1-2 5-Speed Automatic Transmission",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch to ON position. Step 1-2 4-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1723",
+      "description": "Range Select Switch Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and run it for 20 sec. or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check DTC, pending DTC and freeze-frame data. Step 1-3 5-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1874",
+      "description": "4WD Low Switch Circuit Malfunction (Short)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and transfer position switch to \"4H\" position (motor-shift type 4WD model).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Keep engine running at idle speed for 10 seconds or more with select lever \"D\" range.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Start vehicle and increase vehicle speed to about 60 km/h (37 mile/h) for 2 minutes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Stop vehicle.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check DTC, pending DTC and freeze frame data. Step 1-5 Step 5-6 5-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1875",
+      "description": "4WD Low Switch Circuit Malfunction (Open)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and transfer position switch to \"4L\" position (motor-shift type 4WD model).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Keep engine running at idle speed for 10 seconds or more with select lever \"D\" range.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Start vehicle and increase vehicle speed to about 50 km/h (31 mile/h) in \"4L\" position for 2 minutes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Stop vehicle.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check DTC, pending DTC and freeze-frame data. Step 1-3 Step 3-6 5-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1878",
+      "description": "Torque Converter Clutch Shudder",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and warm it up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Drive vehicle with 3rd or 4th gear in \"D\" range and slip controlled lock-up ON for 20 seconds or longer referring to \"Automatic Gear Shift Table\" in Road Test: 4 A/T. See: Transmission and Drivetrain/Automatic Transmission/Transaxle/Testing and Inspection/Component Tests and General Diagnostics/Road Test",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Stop vehicle.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check DTC, pending DTC and freeze-frame data. Step 1-2 5-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P2004",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Run engine at idle speed for 20 sec. 2.Run engine at 3,500 rpm for 20 sec. Step 1-2 Step 3-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P2008",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Run engine at idle speed for 20 sec.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Run engine at 3,500 rpm for 20 sec. Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P2016",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch to ON position for 10 sec. Step 1-4 Step 5-6",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P2096",
+      "description": "System and Wiring Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Drive vehicle at 60 km/h (40 mile/h) or higher for 4 min. Step 1-3 Step 4-8 Step 9-13",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P2101",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch to ON position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Keep the accelerator pedal at fully depressed position for 2 sec.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Keep the accelerator pedal at idle position for 2 sec.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Repeat Step 2) through 3) for 3 times. Step 1-3",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P2102",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch to ON position for 10 sec.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn OFF ignition switch for 10 sec. Step 1-3 Step 4 (P2103) Step 1-3",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P2111",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch to ON position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn OFF ignition switch for 20 sec.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Repeat Step 1) through 2) for 3 times. Step 1-3",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P2119",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Run engine at idle speed for 20 sec.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Run engine at 3,000 rpm for 20 sec.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Repeat Step 2) through 3) for 3 times. Step 1-4 Step 5-6",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P2122",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch to ON position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Keep accelerator pedal at fully depressed position for 2 sec.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Keep accelerator pedal at release position for 2 sec.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Repeat Step 2) through 3) for 3 times. Step 1-4 Step 5 Step 6-7",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P2127",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch to ON position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Keep accelerator pedal at fully depressed position for 2 sec.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Keep accelerator pedal at release position for 2 sec.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Repeat Step 2) through 3) for 3 times. Step 1-3 Step 4-5 Step 6-7",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P2135",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch to ON position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Keep accelerator pedal at fully depressed position for 2 sec.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Keep accelerator pedal at release position for 2 sec.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Repeat Step 2) through 3) for 3 times. Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P2138",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch to ON position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Keep accelerator pedal at fully depressed position for 2 sec.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Keep accelerator pedal at idle position for 2 sec.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Repeat Step 2) through 3) for 3 times. Step 1-4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P2227",
+      "description": "(Non-EVAP-Leak-Check Model)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Run engine at idle speed for 1 min.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P2228",
+      "description": "(EVAP-Leak-Check Model)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Run engine at idle speed for 1 min. Step 1-2 EVAP-Leak-Check Model",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P2400",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [
+        "d by a 0.5 mm (0.02 in.) diameter orifice.",
+        "If the fuel is charged to vehicle during EVAP system monitoring, ECM stops EVAP system monitoring.",
+        "If ECM detects EVAP leak check module malfunction, ECM stops EVAP system monitoring and store the applicable DTC. When starting the",
+        "engine after detecting the DTC, ECM turns on the MIL."
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "ECM measures EVAP system initial pressure (P1) by EVAP leak check pressure sensor while EVAP canister vent valve is opened (OFF) and EVAP leak detection pump is not operated (OFF).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "ECM measures vacuum as reference pressure (P2) which is generated by getting suction air of EVAP leak detection pump through reference orifice (equivalent of 0.5 mm (0.02 in.) diameter hole) while EVAP canister vent valve opened (OFF) [A] and EVAP leak detection pump operated (ON).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "ECM measures tank pressure as EVAP system maximum pressure (P3) when EVAP canister vent valve is closed (ON) [B] with EVAP leak detection pump operated.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "ECM measures vacuum as EVAP system minimum pressure (P4) while EVAP canister vent valve is closed (ON) with EVAP leak detection pump operated.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "ECM compares reference pressure to minimum pressure in EVAP system. If the EVAP system minimum pressure is higher than the reference pressure, the system contains a leak which is greater than or equal to a leak",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P2404",
+      "description": "",
+      "detection_condition": [],
+      "possible_causes": [
+        "d by a 0.5 mm (0.02 in.) diameter orifice.",
+        "If the fuel is charged to vehicle during EVAP system monitoring, ECM stops EVAP system monitoring.",
+        "If ECM detects EVAP leak check module malfunction, ECM stops EVAP system monitoring and store the applicable DTC. When starting the",
+        "engine after detecting the DTC, ECM turns on the MIL.",
+        "System Diagram"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "ECM measures EVAP system initial pressure (P1) by EVAP leak check pressure sensor while EVAP canister vent valve is opened (OFF) and EVAP leak detection pump is not operated (OFF).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "ECM measures vacuum as reference pressure (P2) which is generated by getting suction air of EVAP leak detection pump through reference orifice (equivalent of 0.5 mm (0.02 in.) diameter hole) while EVAP canister vent valve opened (OFF) [A] and EVAP leak detection pump operated (ON).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "ECM measures tank pressure as EVAP system maximum pressure (P3) when EVAP canister vent valve is closed (ON) [B] with EVAP leak detection pump operated.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "ECM measures vacuum as EVAP system minimum pressure (P4) while EVAP canister vent valve is closed (ON) with EVAP leak detection pump operated.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "ECM compares reference pressure to minimum pressure in EVAP system. If the EVAP system minimum pressure is higher than the reference pressure, the system contains a leak which is greater than or equal to a leak",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P2762",
+      "description": "Torque Converter Clutch Pressure Control Solenoid Control Circuit Range / Performance",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and warm it up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Keep engine running at idle speed for 30 seconds or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check DTC, pending DTC and freeze-frame data. Step 1-3 5-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P2763",
+      "description": "Torque Converter Clutch Pressure Control Solenoid Control Circuit High",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Keep engine running at idle speed in \"P\" range for 10 seconds or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check DTC, pending DTC and freeze-frame data. Step 1-3 5-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P2764",
+      "description": "Torque Converter Clutch Pressure Control Solenoid Control Circuit Low",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTCs in TCM and ECM memories by using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Keep engine running at idle speed in \"P\" range for 20 seconds or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check DTC, pending DTC and freeze-frame data. Step 1-4 5-Speed Automatic Transmission",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

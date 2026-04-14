@@ -1,0 +1,115 @@
+{
+  "source_file": "Suzuki_GrandVitara_U.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 12,
+  "dtcs": [
+    {
+      "dtc_code": "U0073",
+      "description": "Control Module Communication Bus Off Refer to CAN DTC (Lost Communication and Communication Bus Off) Table. See: Diagnostic Trouble Code Descriptions/Communication System Air Conditioning System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100",
+      "description": "Lost Communication with ECM (Reception Error) Refer to CAN DTC (Lost Communication and Communication Bus Off) Table. Lost Communication With ECM DTC U0100 (No. 0100): Lost Communication with ECM Refer to CAN DTC (Lost Communication and Communication Bus Off) Table See: Diagnostic Trouble Code Descriptions/Communication System Transfer Case",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0101",
+      "description": "Lost Communication with TCM (Reception Error) Refer to CAN DTC (Lost Communication and Communication Bus Off) Table. Lost Communication With Tcm DTC U0101 (No. 0101): Lost Communication with TCM Refer to CAN DTC (Lost Communication and Communication Bus Off) Table See: Diagnostic Trouble Code Descriptions/Communication System Transfer Case",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0114",
+      "description": "Lost Communication with 4WD Control Module (Reception Error) Refer to CAN DTC (Lost Communication and Communication Bus Off) Table.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0121",
+      "description": "Lost Communication with ABS / ESP(R) / Control Module Refer to CAN DTC (Lost Communication and Communication Bus Off) Table.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0126",
+      "description": "Lost Communication with Steering Angle Sensor (Reception Error) Refer to CAN DTC (Lost Communication and Communication Bus Off) Table.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0140",
+      "description": "Lost Communication with BCM Refer to CAN DTC table. See: Diagnostic Trouble Code Descriptions/Communication System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0144",
+      "description": "(No. 0144): Lost Communication with Keyless Start Control Module Refer to CAN DTC (Lost Communication and Communication Bus Off) Table See: Diagnostic Trouble Code Descriptions/Communication System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0151",
+      "description": "(No. 0151): Lost Communication with Restraints Control Module Refer to CAN DTC (Lost Communication and Communication Bus Off) Table See: Diagnostic Trouble Code Descriptions/Communication System Lost Communication With Instrument Panel Cluster (IPC) Control Module DTC U0155 (No. 0155): Lost Communication with Instrument Panel Cluster (IPC) Control Module Refer to CAN DTC (Lost Communication and Communication Bus Off) Table See: Diagnostic Trouble Code Descriptions/Communication System Transfer Case",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0155",
+      "description": "Lost Communication with Instrument Panel Cluster (IPC) Control Module Refer to CAN DTC (Lost Communication and Communication Bus Off) Table.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0164",
+      "description": "(No. 0164): Lost Communication with HVAC Control Module Refer to CAN DTC (Lost Communication and Communication Bus Off) Table See: Diagnostic Trouble Code Descriptions/Communication System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1100",
+      "description": "Lost Communication with ECM (Reception Error) Refer to CAN DTC (Lost Communication and Communication Bus Off) Table.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

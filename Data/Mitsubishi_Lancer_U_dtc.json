@@ -1,0 +1,2298 @@
+{
+  "source_file": "Mitsubishi_Lancer_U.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 70,
+  "dtcs": [
+    {
+      "dtc_code": "U0001",
+      "description": "Bus Off HINTS (The most likely causes for this code to be set are:) - CAN line harness damage or connector damage. - ECM failed. DIAGNOSIS Required Special Tools: - MB991958: Scan tool (M.U.T.-III Sub Assembly) - MB991824: V.C.I. - MB991827: USB Cable - MB991910: Main Harness A STEP 1. Using scan tool MB991958, diagnose CAN bus line.",
+      "detection_condition": [
+        "Check Conditions",
+        "-",
+        "Always",
+        "Judgement Criteria",
+        "Bus off error detected",
+        "This DTC is set when ASC-ECU has ceased the CAN communication (bus off).",
+        "COMMENTS ON TROUBLE SYMPTOM",
+        "Malfunction of wiring harness, connector (s), or ASC-ECU may be present."
+      ],
+      "possible_causes": [
+        "^",
+        "Wiring harness or connector failure of CAN bus line",
+        "ASC-ECU malfunction",
+        "Other ECU malfunction",
+        "DIAGNOSIS",
+        "Required Special Tools:",
+        "MB991958: Scan Tool (M.U.T.-III Sub Assembly)",
+        "MB991824: Vehicle Communication Interface (V.C.I.)",
+        "MB991827: M.U.T.-III USB Cable",
+        "MB991910: M.U.T.-III Main Harness A",
+        "STEP 1. Using scan tool MB991958, diagnose the CAN bus lines.",
+        "Use scan tool to diagnose the CAN bus lines.",
+        "Q: Is the check result normal?",
+        "YES: Go to Step 2.",
+        "NO: Repair the CAN bus lines (Refer to Diagnosis - CAN Bus Diagnostic Table See: Powertrain Management/Computers and Control",
+        "Systems/Information Bus/Testing and Inspection/Scan Tool Testing and Procedures/CAN Bus Diagnostics Table). On completion, go to Step 3.",
+        "STEP 2. Check whether the DTC is reset.",
+        "Q: Is DTC U0001 set?",
+        "YES: Replace the hydraulic unit (ASC-ECU), and then go to Step 3.",
+        "NO: If the trouble symptom is resolved, an intermittent malfunction such as poorly engaged connector(s) or wiring harness is suspected.",
+        "STEP 3. Check whether the DTC is reset.",
+        "YES: Return to Step 1.",
+        "NO: The procedure is complete.",
+        "CVT"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Diagnose CAN bus line.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch the \"LOCK\" (OFF) position. Q: Is the CAN bus line normal? STEP 2. Recheck for diagnostic trouble code. Check again if the DTC is set.",
+          "yes": "Go to Step 2.",
+          "no": "Repair the CAN bus line. Then go to Step 3."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0019",
+      "description": "will be stored when the A/C-ECU or heater control unit [vehicles without A/C] ceases CAN communication (bus off) and then resumes the communication when the ignition switch is turned to the \"LOCK\" (OFF) position. TECHNICAL DESCRIPTION (COMMENT) The wiring harness wire or connectors may have loose, corroded, or damage terminals, or terminals pushed back in the connector, or the A/C-ECU or heater control unit [vehicles without A/C] may be defective. HINTS - Defective connector(s) or wiring harness - Malfunction of the A/C-ECU or heater control unit [vehicles without A/C] DIAGNOSIS Required Special Tools: - MB991223: Harness Set - MB992006: Extra Fine Probe - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: V.C.I. - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A STEP 1. Using scan tool MB991958, diagnose the CAN bus line",
+      "detection_condition": [
+        "If the CAN-B circuit malfunctions, the WCM sets DTC U0019.",
+        "TECHNICAL DESCRIPTION (COMMENT)",
+        "If WCM cannot perform the data transmission in normal conditions due to a malfunction of the CAN-B bus circuit, WCM determines that there is a",
+        "problem."
+      ],
+      "possible_causes": [
+        "-",
+        "The hands free module may be defective.",
+        "The CAN bus line may be defective.",
+        "DIAGNOSIS",
+        "Required Special Tools:",
+        "MB991958: Scan Tool (M.U.T.-III Sub Assembly)",
+        "MB991824: Vehicles Communication Interface (V.C.I.)",
+        "MB991827: M.U.T.-III USB Cable",
+        "MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system)",
+        "STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+        "Use scan tool MB991958 to diagnose the CAN bus lines.",
+        "Malfunctions of radio and CD player",
+        "Malfunction of CAN bus line wiring harness and connector",
+        "MB991824: Vehicle Communication Interface (V.C.I.)",
+        "MB991910: M.U.T.-III Main Harness A"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Erase the DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch from \"LOCK\" (OFF) position to \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? Manual A/C Diagnosis",
+          "yes": "Replace the combination meter.",
+          "no": "The trouble can be an intermittent malfunction."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? Multiport Fuel Injection (MFI)",
+          "yes": "Replace the ETACS-ECU.",
+          "no": "The trouble can be an intermittent malfunction."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0703",
+      "description": "Malfunction of stoplight switch ^",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0705",
+      "description": "Malfunction of transmission range switch ^",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0715",
+      "description": "Malfunction of primary pulley speed sensor ^",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0720",
+      "description": "Malfunction of secondary pulley speed sensor ^",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0725",
+      "description": "Malfunction of engine speed ^",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0741",
+      "description": "Abnormality in lockup function ^",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0746",
+      "description": "Abnormality in hydraulic control system function ^",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0841",
+      "description": "Abnormality in line pressure sensor function ^",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0868",
+      "description": "Secondary pressure drop Sensor (The sensor below is determined to be normal) ^ Not applicable LOGIC FLOW CHARTS (Monitor Sequence) STEP 1. M.U.T.-III CAN bus diagnostics Use M.U.T-III to perform the CAN bus diagnosis. Q: Is the check result normal? YES: Go to Step 2. NO: Repair the CAN bus lines (Refer to Troubleshooting Diagnosis Code Chart See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Scan Tool Testing and Procedures/CAN Bus Diagnostics Table). STEP 2. M.U.T.-III diagnosis code Check if the engine-related diagnosis code is set. Q: Is the engine-related diagnosis code set? YES: Carry out the appropriate troubleshooting. NO: Go to Step 3. STEP 3. Symptom recheck after erasing diagnosis code Q: Is the check result normal? YES: Intermittent malfunction NO: Replace TCM. TCS or ASC",
+      "detection_condition": [
+        "Check Conditions",
+        "^",
+        "Time after TCM start: more than 1.05 seconds.",
+        "Voltage of battery: 9 volts or more",
+        "Voltage of battery: 16 volts or less",
+        "Judgment Criteria",
+        "CAN communication with ECM: fail. (500 millisecond)",
+        "OBD-II DRIVE CYCLE PATTERN",
+        "Ignition switch : ON (start the engine and keep it for 10 seconds or more)"
+      ],
+      "possible_causes": [
+        "^",
+        "Malfunction of the CAN bus",
+        "Engine ECU malfunction",
+        "Malfunction of TCM"
+      ],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1706",
+      "description": "Malfunction of throttle signal ^",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1773",
+      "description": "Malfunction of ABS ^",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100",
+      "description": "CAN time-out error (Engine) Sensor (The sensor below is determined to be normal) ^ Stoplight switch ^ Transmission range switch ^ Primary pulley speed sensor ^ Secondary pulley speed sensor LOGIC FLOW CHARTS (Monitor Sequence) STEP 1. M.U.T.-III CAN bus diagnostics Use M.U.T-III to perform the CAN bus diagnosis. Q: Is the check result normal? YES: Intermittent malfunction NO: Repair the CAN bus lines (Refer to Troubleshooting Diagnosis Code Chart See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Scan Tool Testing and Procedures/CAN Bus Diagnostics Table). Combination Meter",
+      "detection_condition": [
+        "Check Conditions",
+        "^",
+        "Time after TCM start: more than 1.05 seconds.",
+        "^",
+        "Voltage of battery: 9 volts or more",
+        "^",
+        "Voltage of battery: 16 volts or less",
+        "Judgment Criteria",
+        "^",
+        "CAN communication: fail",
+        "OBD-II DRIVE CYCLE PATTERN",
+        "Ignition switch : ON (start the engine and keep it for 10 seconds or more)"
+      ],
+      "possible_causes": [
+        "^",
+        "Malfunction of the CAN bus",
+        "-",
+        "The CAN bus line may be defective.",
+        "The combination meter may be defective.",
+        "The engine control module may be defective.",
+        "DIAGNOSIS",
+        "Required Special Tools:",
+        "MB991958: Scan Tool (M.U.T.-III Sub Assembly)",
+        "MB991824: Vehicles Communication Interface (V.C.I.)",
+        "MB991827: M.U.T.-III USB Cable",
+        "MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system)",
+        "STEP 1. Using scan tool MB991958, diagnose the CAN bus line"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958. Refer to See: Body and Frame/Body Control Systems/Body Control Module/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/How to Connect the Scan Tool (M.U.T.-III)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Diagnose the CAN bus line.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? STEP 2. Using scan tool MB991958, read the engine control module diagnostic trouble code. Check if DTC is set to the engine control module. Q: Is the DTC set? Diagnostic trouble code chart [2.0L Engine Turbo],  See: Diagnostic Trouble Code Descriptions or Diagnostic trouble code chart [2.4L Engine]). See: Diagnostic Trouble Code Descriptions STEP 3. Using scan tool MB991958, read the CVT diagnostic trouble code. Check if DTC U0100 is set to the CVT-ECU. Q: Is the DTC set? STEP 4. Recheck for diagnostic trouble code. Check again if the DTC is set to the ETACS-ECU.",
+          "yes": "Go to Step 4.",
+          "no": "Go to Step 5."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0020",
+      "description": "CAN-B Bus Off Performance",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0021",
+      "description": "CAN-B Bus (HI) Circuit Open",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0022",
+      "description": "CAN-B Bus (HI) Shorted to Circuit Ground",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0023",
+      "description": "CAN-B Bus (HI) Shorted to Circuit Power Supply",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0024",
+      "description": "CAN-B Bus (LO) Circuit Open",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0025",
+      "description": "CAN-B Bus (LO) Shorted to Circuit Ground",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0026",
+      "description": "CAN-B Bus (LO) Shorted to Circuit Power Supply HINTS The CAN bus line may be defective DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicles Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958. Refer to  See: Restraints and Safety Systems/Air Bag Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/How To Connect The Scan Tool (M.U.T.-III)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? STEP 2. Recheck for diagnostic trouble code Check again if the DTC is set to the occupant classification-ECU.",
+          "yes": "Go to Step 2.",
+          "no": "Repair the CAN bus line."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set?",
+          "yes": "Replace the front seat cushion frame (RH).",
+          "no": "There is an intermittent malfunction such as poor engaged connector(s) or open circuit."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0101",
+      "description": "TCM Time-out [CVT] S OF MONITOR METHODS There is no data from TCM for the specified time. (Meter also detect communication error with ECM.) HINTS (The most likely causes for this code to be set are:) - CAN line harness damage or connector damage. - TCM failed. - ECM failed. DIAGNOSIS Required Special Tools: - MB991958: Scan tool (M.U.T.-III Sub Assembly) - MB991824: V.C.I. - MB991827: USB Cable - MB991910: Main Harness A STEP 1. Using scan tool MB991958, diagnose CAN bus line.",
+      "detection_condition": [
+        "Logic Flow Chart",
+        "Check Condition",
+        "-",
+        "Battery positive voltage is between 10 and 16.5 volts.",
+        "Judgement Criterion",
+        "Unable to receive TCM signals through the CAN bus line for 4 seconds.",
+        "COMMENT",
+        "Current Trouble",
+        "Some of the possible causes are a harness or connector damage between the ECM and the TCM on the CAN bus line, a failure in the TCM power",
+        "supply system, a failure in the TCM, or a failure in the ECM.",
+        "Past Trouble",
+        "Proceed to troubleshoot based on a harness or connector damage on the CAN bus line between the ECM and TCM, and a failure in the TCM",
+        "power supply system."
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958. Refer to See: Body and Frame/Body Control Systems/Body Control Module/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/How to Connect the Scan Tool (M.U.T.-III)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CVT-DTC set? STEP 3. Using scan tool MB991958, read the diagnostic trouble code (DTC).",
+          "yes": "Refer to Diagnosis - Diagnostic Trouble Code Chart.  See: Diagnostic Trouble Code Descriptions",
+          "no": "Go to Step 3."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? STEP 2. Using scan tool MB991958, read the CVT or TC-SST diagnostic trouble code. Check if DTC is set to the CVT or TC-SST. Q: Is the DTC set? Diagnostic Trouble Code Descriptions STEP 3. Using scan tool MB991958, read the engine control module diagnostic trouble code. Check if the DTC U0101 is set to the engine control module. Q: Is the DTC set? STEP 4. Recheck for diagnostic trouble code. Check again if the DTC is set to the ETACS-ECU.",
+          "yes": "Go to Step 4.",
+          "no": "Go to Step 5."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0126",
+      "description": "Steering wheel sensor CAN timeout HINTS - The steering wheel sensor may be defective. - The ETACS-ECU may be defective. - The CAN bus may be defective. DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicle Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958. Refer to See: Body and Frame/Body Control Systems/Body Control Module/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/How to Connect the Scan Tool (M.U.T.-III)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Diagnose the CAN bus line.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? STEP 2. Using scan tool MB991958, read the steering wheel sensor diagnostic trouble code Check if DTC is set to the steering wheel sensor. Q: Is the DTC set? STEP 3. Using scan tool MB991958, read the ASC-ECU diagnostic trouble code. Check if the DTC U0126 is set to the ASC-ECU. Q: Is the DTC set? STEP 4. Recheck for diagnostic trouble code. Check again if the DTC is set to the ETACS-ECU.",
+          "yes": "Go to Step 4.",
+          "no": "Go to Step 5."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0141",
+      "description": "CAN Time-out Error (ETACS) DIAGNOSTIC FUNCTION TCM determines that malfunction is present if the periodic communication data sent from ETACS-ECU via the CAN bus lines is abnormal. JUDGEMENT CRITERIA TCM cannot receive the periodic communication data from ETACS-ECU. STEP 1. M.U.T.-III CAN bus diagnostics Use M.U.T-III to perform the CAN bus diagnosis. Q: Is the check result normal? YES: Go to Step 2. NO: Repair the CAN bus lines. (Refer to Troubleshooting, Diagnosis Code Chart See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Scan Tool Testing and Procedures/CAN Bus Diagnostics Table.) STEP 2. M.U.T.-III diagnosis code Check if ETACS-related diagnosis code is set. Q: Is the ECU-related diagnosis code set? YES: Carry out the appropriate troubleshooting. NO: Go to Step 3. STEP 3. Symptom recheck after erasing diagnosis code Q: Is the check result normal? YES: Intermittent malfunction NO: Replace TCM. Combination Meter",
+      "detection_condition": [
+        "Logic Flow Chart",
+        "Check Condition",
+        "-",
+        "Battery positive voltage is between 10 and 16.5 volts.",
+        "Judgement Criterion",
+        "Unable to receive ETACS-ECU signals through the CAN bus line for 4 seconds.",
+        "COMMENT",
+        "Current Trouble",
+        "Some of the possible causes are a harness or connector damage between the ECM and the ETACS-ECU on the CAN bus line, a failure in the",
+        "ETACS-ECU power supply system, a failure in the ETACS-ECU, or a failure in the ECM.",
+        "Past Trouble",
+        "Proceed to troubleshoot based on a harness or connector damage on the CAN bus line between the ECM and ETACS-ECU, and a failure in the",
+        "ETACS power supply system."
+      ],
+      "possible_causes": [
+        "^",
+        "Malfunction of the CAN bus",
+        "Malfunction of ETACS-ECU",
+        "Malfunction of TCM"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958. Refer to  See: Accessories and Optional Equipment/Cellular Phone/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/How to Connect the Scan Tool (M.U.T.-III)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the ETACS-DTC set? STEP 3. Using scan tool MB991958, read the diagnostic trouble code (DTC).",
+          "yes": "Refer to ETACS - Diagnostic Trouble Code Chart.  See: Diagnostic Trouble Code Descriptions",
+          "no": "Go to Step 3."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? STEP 2. Using scan tool MB991958, read the ETACS-ECU diagnostic trouble code. Check again if the DTC is set to the ETACS-ECU. Q: Is the DTC set? STEP 3. Using scan tool MB991958, read the combination meter diagnostic trouble code. Check if DTC U0141 is set to the combination meter. Q: Is the DTC set? STEP 4. Recheck for diagnostic trouble code. Check again if the DTC is set to the hands free module.",
+          "yes": "Go to Step 4.",
+          "no": "Go to Step 5."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0114",
+      "description": "^ Wiring harness or connector failure of CAN bus line ^ Malfunction of AWC-ECU ^ ASC-ECU malfunction DIAGNOSIS Required Special Tools: ^ MB991958: Scan Tool (M.U.T.-III Sub Assembly) ^ MB991824: Vehicle Communication Interface (V.C.I.) ^ MB991827: M.U.T.-III USB Cable ^ MB991910: M.U.T.-III Main Harness A STEP 1. Using scan tool MB991958, diagnose the CAN bus lines. Use scan tool to diagnose the CAN bus lines. Q: Is the check result normal? YES: Go to Step 2. NO: Repair the CAN bus lines (Refer to Diagnosis - CAN Bus Diagnostic Table See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Scan Tool Testing and Procedures/CAN Bus Diagnostics Table). On completion, go to Step 4. STEP 2. Check whether the DTC is reset. Q: Is DTC U0100, U0101, U0126, U0141 or U0114 set? YES: Go to Step 3. NO: The procedure is complete. STEP 3. Using scan tool MB991958, check read the DTC other system. Use scan tool to check that other DTC is set in the ECU corresponding to the relevant diagnosis. Q: Is other DTC set? YES: Troubleshoot for the relevant DTC. NO: Go to Step 4. STEP 4. Using scan tool MB991958, check read the DTC other system. Use scan tool to check if the same DTC (time-out) is set in the other ECU (CAN-C). Q: Is any DTC set? YES (DTC U0100 is set): Replace the engine control module (ECM), and then go to Step 5. YES (DTC U0101 is set): Replace the TCM or TC-SST-ECU, and then go to Step 5. YES (DTC U0126 is set): Replace steering wheel sensor, and then go to Step 5. YES (DTC U0141 is set): Replace the ETACS-ECU, and then go to Step 5. YES (DTC U0114 is set): Replace the AWC-ECU, and then go to Step 5. NO (No DTC is set.): The procedure is complete. STEP 5. Check whether the DTC is reset. Q: Is DTC U0100, U0101, U0126, U0141 or U0114 set? YES: Replace the hydraulic unit (ASC-ECU). NO: The procedure is complete. Steering Wheel Sensor CAN Timeout",
+      "detection_condition": [
+        "This DTC is set if ASC-ECU cannot receive the signal sent from other ECU for a certain period.",
+        "OPERATION",
+        "ASC-ECU communicates with the engine control module (ECM), TCM or TC-SST-ECU the steering wheel sensor, ETACS-ECU and AWC-ECU via",
+        "the CAN bus lines."
+      ],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0103",
+      "description": "Shift lever CAN timeout HINTS - The shift lever may be defective. - The ETACS-ECU may be defective. - The CAN bus may be defective. DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicle Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958. Refer to See: Body and Frame/Body Control Systems/Body Control Module/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/How to Connect the Scan Tool (M.U.T.-III)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Diagnose the CAN bus line.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? STEP 2. Using scan tool MB991958, read the shift lever diagnostic trouble code Check if DTC is set to the shift lever. Q: Is the DTC set? STEP 3. Using scan tool MB991958, read the TC-SST-ECU diagnostic trouble code. Check if the DTC U0103 is set to the TC-SST-ECU. Q: Is the DTC set? STEP 4. Recheck for diagnostic trouble code. Check again if the DTC is set to the ETACS-ECU.",
+          "yes": "Go to Step 4.",
+          "no": "Go to Step 5."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0121",
+      "description": "CAN Time-out Error (ABS) DIAGNOSTIC FUNCTION TCM determines that malfunction is present if the periodic communication data sent from the ABS-ECU via CAN bus lines is abnormal. JUDGEMENT CRITERIA TCM cannot receive the periodic communication data from ABS-ECU. STEP 1. M.U.T.-III CAN bus diagnostics Use M.U.T-III to perform the CAN bus diagnosis. Q: Is the check result normal? YES: Go to Step 2. NO: Repair the CAN bus lines (Refer to Troubleshooting Diagnosis Code Chart See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Scan Tool Testing and Procedures/CAN Bus Diagnostics Table). STEP 2. M.U.T.-III diagnosis code Check if the ABS-related diagnosis code is set. Q: Is the ABS-related diagnosis code set? YES: Carry out the appropriate troubleshooting. NO: Go to Step 3. STEP 3. Symptom recheck after erasing diagnosis code Q: Is the check result normal? YES: Intermittent malfunction NO: Replace TCM. Multiport Fuel Injection (MFI)",
+      "detection_condition": [
+        "Check Conditions",
+        "-",
+        "Battery positive voltage is 10 volts or higher.",
+        "At least 2 seconds have passed since the ignition switch is turned to \"ON\" position.",
+        "Judgement Criterion",
+        "Unable to receive ASC-ECU signals through the CAN bus line for 4 seconds.",
+        "COMMENT",
+        "Current Trouble",
+        "Some of the possible causes are a harness or connector damage between the ECM and the ASC-ECU on the CAN bus line, a failure in the",
+        "ASC-ECU power supply system, a failure in the ASC-ECU, or a failure in the ECM.",
+        "Past Trouble",
+        "Proceed to troubleshoot based on a harness or connector damage on the CAN bus line between the ECM and ASC-ECU, and a failure in the",
+        "ASC-ECU power supply system."
+      ],
+      "possible_causes": [
+        "^",
+        "Malfunction of the CAN bus",
+        "ABS-ECU malfunction",
+        "Malfunction of TCM"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Erase the DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch from \"LOCK\" (OFF) position to \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the ASC-DTC set? STEP 3. Using scan tool MB991958, read the diagnostic trouble code (DTC).",
+          "yes": "Refer to Diagnosis - Diagnostic Trouble Code Chart.  See: Diagnostic Trouble Code Descriptions",
+          "no": "Go to Step 3."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? the ETACS-ECU. Continuously Variable Transaxle (CVT)",
+          "yes": "Replace the ETACS-ECU.",
+          "no": "The trouble can be an intermittent malfunction such as a poor connection or open circuit in the CAN bus lines between the ASC-ECU and"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0125",
+      "description": "G and yaw rate sensor message time-out error/message error",
+      "detection_condition": [
+        "This DTC is set when the ASC-ECU cannot receive the signal from the G and yaw rate sensor although there is no abnormality in ASC-ECU supply",
+        "voltage."
+      ],
+      "possible_causes": [
+        "^",
+        "Wiring harness or connector failure for the special CAN bus lines between ASC-ECU and the G and yaw rate sensor",
+        "G and yaw rate sensor malfunction",
+        "ASC-ECU malfunction",
+        "External noise interference",
+        "DIAGNOSIS",
+        "Required Special Tools:",
+        "MB991958: Scan Tool (M.U.T.-III Sub Assembly)",
+        "MB991824: Vehicle Communication Interface (V.C.I.)",
+        "MB991827: M.U.T.-III USB Cable",
+        "MB991910: M.U.T.-III Main Harness A",
+        "STEP 1. Using scan tool MB991958, diagnose the CAN bus lines.",
+        "Use M.U.T.-III to diagnose the CAN bus lines.",
+        "Q: Is the check result normal?",
+        "YES: Go to Step 3.",
+        "NO: Repair the CAN bus lines. (Refer to Diagnosis - CAN Bus Diagnostic Table See: Powertrain Management/Computers and Control",
+        "Systems/Information Bus/Testing and Inspection/Scan Tool Testing and Procedures/CAN Bus Diagnostics Table.) On completion, go to Step 2.",
+        "STEP 2. DTC recheck after resetting CAN bus lines",
+        "Q: Is DTC U0125 set?",
+        "NO: The procedure is complete.",
+        "STEP 3. Connector check: A-51 ASC-ECU connector, C-137 G and yaw rate sensor connector",
+        "YES: Go to Step 4.",
+        "NO: Repair the connector, and then go to Step 7.",
+        "STEP 4. Wiring harness check between A-51 ASC-ECU connector terminal No.18 and C-137 G and yaw rate sensor connector terminal No.2 as",
+        "well as between A-51 ASC-ECU connector terminal No.19 and C-137 G and yaw rate sensor connector terminal No.3",
+        "Check the communication circuit for open and short circuit.",
+        "YES: Go to Step 5.",
+        "NO: Repair the wiring harness, and then go to Step 7.",
+        "STEP 5. DTC recheck",
+        "YES: Replace the G and yaw rate sensor. Then go to Step 6.",
+        "NO: Intermittent malfunction.",
+        "STEP 6. DTC recheck",
+        "YES: Replace the hydraulic unit (ASC-ECU). Then go to Step 7.",
+        "STEP 7. DTC recheck",
+        "YES: Return to Step 1.",
+        "TCS or ASC"
+      ],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0136",
+      "description": "AWC-ECU CAN time-out HINTS - The AWC-ECU may be defective. - The ETACS-ECU may be defective. - The CAN bus may be defective. DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicle Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958. Refer to See: Body and Frame/Body Control Systems/Body Control Module/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/How to Connect the Scan Tool (M.U.T.-III)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Diagnose the CAN bus line.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? STEP 2. Using scan tool MB991958, read the AWC-ECU diagnostic trouble code Check if DTC is set to the AWC-ECU. Q: Is the DTC set? STEP 3. Using scan tool MB991958, read the ASC-ECU diagnostic trouble code. Check if the DTC U0136 is set to the ASC-ECU. Q: Is the DTC set? STEP 4. Recheck for diagnostic trouble code. Check again if the DTC is set to the ETACS-ECU.",
+          "yes": "Go to Step 4.",
+          "no": "Go to Step 5."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U141A",
+      "description": "The signal from a weight sensor (front: RH) is unusual",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1419",
+      "description": "The signal from a weight sensor (front: LH) is unusual",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U141B",
+      "description": "The signal from a weight sensor (rear: LH) is unusual",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U141C",
+      "description": "The signal from a weight sensor (rear: RH) is unusual",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1423",
+      "description": "The signal from a weight sensor is unusual HINTS - Malfunction of weight sensor - The occupant classification-ECU may be defective. DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicle Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Recheck for diagnostic trouble code. Check again if the DTC is set.",
+      "detection_condition": [
+        "There DTCs are set if communication between the weight sensor and the occupant classification-ECU is not possible or faulty."
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Erase the DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? STEP 2. Check the weight sensor. Replace weight sensor Check the diagnostic trouble code. Q: Is DTC U1419, U141A, U141B, U141C, U1423 set?",
+          "yes": "Replace the front seat cushion frame (RH).",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U150B",
+      "description": "Column SW checksum error TROUBLE JUDGEMENT The ETACS-ECU will set DTC U150B when abnormal signals are received from the column switch (column- ECU). HINTS - The lighting switch may be defective. DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicles Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) Recheck for diagnostic trouble code. Check again if the DTC is set to the ETACS-ECU.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958. Refer to  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Local Interconnect Network (LIN)/How to Connect the Scan Tool (M.U.T.-III)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Erase the DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set?",
+          "yes": "Replace the lighting switch.",
+          "no": "A poor connection, open circuit, or other intermittent malfunctions in the LIN bus lines between the column switch and the ETACS-ECU."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U150C",
+      "description": "P/W SW (DR) checksum error TROUBLE JUDGEMENT The ETACS-ECU will set DTC U150C when abnormal signals are received from the power window main switch. HINTS - The power window main switch may be defective. DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicles Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) Recheck for diagnostic trouble code. Check again if the DTC is set to the ETACS-ECU.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958. Refer to  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Local Interconnect Network (LIN)/How to Connect the Scan Tool (M.U.T.-III)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Erase the DTC. Turn the ignition switch to the \"ON\" position. 3.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? ETACS-ECU. SRS-ECU",
+          "yes": "Replace the power window main switch.",
+          "no": "A poor connection, open circuit, or other intermittent malfunctions in the LIN bus lines between the power window main switch and the"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0151",
+      "description": "SRS-ECU CAN timeout HINTS - The CAN bus line may be defective - The SRS-ECU may be defective - The occupant classification-ECU may be defective DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicles Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Erase the DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch from \"LOCK\" (OFF) position to \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? STEP 3. Using scan tool MB991958, check for any diagnostic trouble code. Check if a DTC, which relates to CAN communication-linked systems below, is set. - ETACS-ECU DTC indicating a time-out error related to the SRS-ECU system",
+          "yes": "Diagnose the SRS-ECU.  See: Diagnostic Trouble Code Descriptions",
+          "no": "Go to Step 3."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? Combination Meter",
+          "yes": "Replace the front seat cushion frame (RH).",
+          "no": "There is an intermittent malfunction such as poor engaged connector(s) or open circuit."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0154",
+      "description": "OCM (occupant classification-ECU) CAN timeout HINTS - The CAN bus line may be defective. - The satellite radio tuner may be defective. - The occupant classification-ECU may be defective. DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicles Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Erase the DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch from \"LOCK\" (OFF) position to \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? STEP 3. Using scan tool MB991958, check for any diagnostic trouble code. Check if a DTC, which relates to CAN communication linked systems below, is set. - ETACS-ECU DTC indicating a time-out error related to the SRS-ECU system",
+          "yes": "Diagnose the SRS-ECU.  See: Diagnostic Trouble Code Descriptions",
+          "no": "Go to Step 3."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? classification-ECU and the combination meter. Manual A/C Diagnosis",
+          "yes": "Replace the combination meter.",
+          "no": "The trouble can be an intermittent malfunction such as a poor connection or open circuit in the CAN bus lines between the occupant"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0155",
+      "description": "Combination Meter CAN Timeout HINTS - The CAN bus line may be defective - The combination meter may be defective - The occupant classification-ECU may be defective DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicles Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? Hands Free Cellular Phone System",
+          "yes": "Replace the A/C-ECU or heater control unit [vehicles without A/C]. On completion, check that the DTC is not reset.",
+          "no": "There is an intermittent malfunction such as poor engaged connector(s) or open circuit."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? STEP 2. Using scan tool MB991958 read the combination meter diagnostic trouble code. Check whether a combination meter DTCs are set or not.",
+          "yes": "Go to Step 2.",
+          "no": "Repair the CAN bus line"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0164",
+      "description": "A/C/Heater Control Unit CAN Timeout HINTS - The CAN bus line may be defective. - The A/C-ECU [vehicles with A/C] or heater control unit [vehicles without A/C] may be defective. - The heater control unit may be defective. - The combination meter may be defective. DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicles Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Erase the DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch from \"LOCK\" (OFF) position to \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check if DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? [vehicles with A/C] or heater control unit [vehicles without A/C] and the combination meter. Hands Free Cellular Phone System",
+          "yes": "Replace the combination meter.",
+          "no": "The trouble can be an intermittent malfunction such as a poor connection or open circuit in the CAN bus lines between the A/C-ECU"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0167",
+      "description": "Immobilizer Communication Error HINTS (The most likely causes for this code to be set are:) - CAN line harness damage or connector damage. - KOS-ECU/WCM (immobilizer-ECU) failed. - ECM failed. DIAGNOSIS Required Special Tools: - MB991958: Scan tool (M.U.T.-III Sub Assembly) - MB991824: V.C.I. - MB991827: USB Cable - MB991910: Main Harness A STEP 1. Using scan tool MB991958, diagnose CAN bus line.",
+      "detection_condition": [
+        "Check Conditions",
+        "-",
+        "Ignition switch is in \"ON\" position.",
+        "Battery positive voltage is 8 volts or higher.",
+        "Judgement Criterion",
+        "Unable to receive KOS-ECU/WCM (immobilizer-ECU) signals through the CAN bus line.",
+        "COMMENT",
+        "Current Trouble",
+        "Some of the possible causes are a harness or connector damage between the ECM and the KOS-ECU/WCM (immobilizer-ECU) on the CAN bus",
+        "line, a failure in the KOS-ECU/WCM (immobilizer-ECU) power supply system, a failure in the KOS-ECU/WCM (immobilizer-ECU), or a failure",
+        "in the ECM.",
+        "Past Trouble",
+        "Proceed to troubleshoot based on a harness or connector damage on the CAN bus line between the ECM and KOS-ECU/WCM",
+        "(immobilizer-ECU), and a failure in the KOS-ECU/WCM (immobilizer-ECU) power supply system."
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the immobilizer-DTC set? Wireless Control Module - Diagnosis Trouble Code Chart [Vehicles with WCM].  See: Diagnostic Trouble Code Descriptions STEP 3. Using scan tool MB991958, read the diagnostic trouble code (DTC).",
+          "yes": "Refer to Keyless Operation System - Diagnosis Trouble Code Chart [Vehicles with KOS]  See: Diagnostic Trouble Code Descriptions or",
+          "no": "Go to Step 3."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line normal? STEP 2. Using scan tool MB991958, read the diagnostic trouble code (DTC).",
+          "yes": "Go to Step 2.",
+          "no": "Repair the CAN bus line. Then go to Step 3."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0168",
+      "description": "WCM/KOS CAN timeout HINTS - Malfunction of CAN bus line may be defective. - Malfunction of the KOS-ECU may be defective. [vehicles with KOS] - Malfunction of the WCM may be defective. [vehicles with WCM] - Malfunction of satellite radio tuner may be defective. DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicles Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Erase the DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch from \"LOCK\" (OFF) position to \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? STEP 3. Using scan tool MB991958, check for any diagnostic trouble code. Check if a DTC, which relates to CAN communication-linked systems below, is set. - ETACS-ECU DTC indicating a time-out error related to the WCM-ECU system",
+          "yes": "Go to Step 3.",
+          "no": "Diagnose the WCM-ECU.  See: Diagnostic Trouble Code Descriptions"
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? KOS-ECU and the combination meter. Manual A/C Diagnosis",
+          "yes": "Replace the combination meter.",
+          "no": "The trouble can be an intermittent malfunction such as a poor connection or open circuit in the CAN bus lines between the WCM or"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0169",
+      "description": "Sunroof LIN time-out [Vehicles with sunroof] HINTS - The sunroof motor assembly may be defective. - The wiring harness or connectors may have loose, corroded, or damaged terminals, or terminals pushed back in the connector. DIAGNOSIS Required Special Tools: - MB991958 Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicles Communication Interface (V.C.I.) - MB991827 M.U.T.-III USB Cable - MB991910 M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Check ETACS-ECU connector C-316 and sunroof motor assembly connector D-05 for loose, corroded or damaged terminals, or terminals pushed back in the connector. Q: Are ETACS-ECU connector C-316 and sunroof motor assembly connector D-05 in good condition? YES: Go to Step 2. NO: Repair or replace the damaged component(s). STEP 2. Check the ground circuit to the sunroof motor assembly. Measure the resistance at sunroof motor assembly connector D-05.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Disconnect sunroof motor assembly connector D-05 and measure the resistance available at the wiring harness side of the connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Measure the resistance value between sunroof motor assembly connector D-05 terminal 2 and ground. - The resistance should be 2 ohms or less. Q: Is the measured resistance 2 ohms or less? STEP 3. Check the wiring harness between sunroof motor assembly connector D-05 (terminal 2) and the ground. - Check the ground wires for open circuit. Q: Is the wiring harness between sunroof motor assembly connector D-05 (terminal 2) and the ground in good condition? connector. Repair the wiring harness as necessary. STEP 4. Check the battery power supply circuit to the sunroof motor assembly. Measure the voltage at sunroof motor assembly connector D-05. Q: Is the measured voltage approximately 12 volts (battery STEP 5. Check the wiring harness between ETACS-ECU connector C-316 (terminal 2) and sunroof motor assembly connector D-05 (terminal 6). - Check the power supply line (battery supply) for open circuit and short circuit. Q: Is the wiring harness between ETACS-ECU connector C-316 (terminal 2) and sunroof motor assembly connector D-05 (terminal 6) in good condition? connector. Repair the wiring harness as necessary. STEP 6. Check the wiring harness between ETACS-ECU connector C-316 (terminal 1) and sunroof motor assembly connector D-05 (terminal 7). Check the communication lines for open circuit. Q: Is the wiring harness between ETACS-ECU connector C-316 (terminal 1) and sunroof motor assembly connector D-05 (terminal 7) in good condition? connector. Repair the wiring harness as necessary. STEP 7. Recheck for diagnostic trouble code. Check again if the DTC is set to the ETACS-ECU.",
+          "yes": "Go to Step 7.",
+          "no": "The wiring harness may be damaged or the connector(s) may have loose, corroded or damaged terminals, or terminals pushed back in the"
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? ETACS-ECU.",
+          "yes": "Replace the sunroof motor assembly.",
+          "no": "A poor connection, open circuit or other intermittent malfunction is present in the LIN bus lines between the sunroof motor assembly and the"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0170",
+      "description": "Front Impact Sensor (LH) Communication Error Front Impact Sensor (LH) Circuit HINTS - Damaged wiring harnesses or connectors - Malfunction of the front impact sensor (LH) - Malfunction of the SRS-ECU DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicle Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [
+        "These DTCs are set if communication between the front impact sensor (LH) and the SRS-ECU is not possible or faulty."
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958. Refer to  See: Restraints and Safety Systems/Air Bag Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/How To Connect The Scan Tool (M.U.T.-III)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Diagnose the CAN bus line.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? STEP 2. Recheck for diagnostic trouble code. Check again if the DTC is set.",
+          "yes": "Go to Step 3.",
+          "no": "There is an intermittent malfunction such as poor engaged connector(s) or open circuit."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0171",
+      "description": "Front Impact Sensor (RH) Communication Error Front Impact Sensor (RH) Circuit HINTS - Damaged wiring harnesses or connectors - Malfunction of the front impact sensor (RH) - Malfunction of the SRS-ECU DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicle Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [
+        "These DTCs are set if communication between the front impact sensor (RH) and the SRS-ECU is not possible or faulty."
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958. Refer to  See: Restraints and Safety Systems/Air Bag Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/How To Connect The Scan Tool (M.U.T.-III)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Diagnose the CAN bus line.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? STEP 2. Recheck for diagnostic trouble code. Check again if the DTC is set.",
+          "yes": "Go to Step 2.",
+          "no": "Repair the CAN bus line."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0172",
+      "description": "Side Impact Sensor (LH) Communication Error Side Impact Sensor (LH) Circuit HINTS - Damaged wiring harnesses or connectors - Malfunction of the side impact sensor (LH) - Malfunction of the SRS-ECU DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicle Communication Interface (V.C.I.) - B991827: M.U.T.-III USB Cable - B991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [
+        "These DTCs are set if communication between the side impact sensor (LH) and the SRS-ECU is not possible or faulty."
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958. Refer to  See: Restraints and Safety Systems/Air Bag Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/How To Connect The Scan Tool (M.U.T.-III)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "in good condition? STEP 5. Recheck for diagnostic trouble code. Check again if the DTC is set.",
+          "yes": "Go to Step 5.",
+          "no": "Repair the harness wires between SRS-ECU connector C-30 and side impact sensor (LH) connector D-22."
+        },
+        {
+          "step": 3,
+          "instruction": "Diagnose the CAN bus line.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? STEP 2. Recheck for diagnostic trouble code. Check again if the DTC is set.",
+          "yes": "Go to Step 2.",
+          "no": "Repair the CAN bus line."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0175",
+      "description": "Side Impact Sensor (RH) Communication Error Side Impact Sensor (RH) Circuit HINTS - Damaged wiring harnesses or connectors - Malfunction of the side impact sensor (RH) - Malfunction of the SRS-ECU DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicle Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [
+        "These DTCs are set if communication between the side impact sensor (RH) and the SRS-ECU is not possible or faulty."
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "in good condition? STEP 5. Recheck for diagnostic trouble code. Check again if the DTC is set.",
+          "yes": "Go to Step 5.",
+          "no": "Repair the harness wires between SRS-ECU connector C-30 and side impact sensor (RH) connector D-37."
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Diagnose the CAN bus line.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? STEP 2. Recheck for diagnostic trouble code. Check again if the DTC is set.",
+          "yes": "Go to Step 2.",
+          "no": "Repair the CAN bus line."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0184",
+      "description": "Audio CAN Timeout HINTS - The CAN bus line may be defective - The radio and CD player or CD changer may be defective - The occupant classification-ECU may be defective DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicles Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Erase the DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch from \"LOCK\" (OFF) position to \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? STEP 3. Using scan tool MB991958, check for any diagnostic trouble code. Check if a DTC, which relates to CAN communication-linked systems below, is set. - ETACS-ECU DTC indicating a time-out error related to the Audio system",
+          "yes": "Diagnose the Audio.  See: Diagnostic Trouble Code Descriptions",
+          "no": "Go to Step 3."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? player or CD changer and the combination meter. Manual A/C Diagnosis",
+          "yes": "Replace the combination meter.",
+          "no": "The trouble can be an intermittent malfunction such as a poor connection or open circuit in the CAN bus lines between the radio and CD"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0195",
+      "description": "Satellite Radio Tuner CAN Timeout HINTS - The CAN bus may be defective. - The satellite radio tuner may be defective. - The occupant classification-ECU may be defective. DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicles Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? Hands Free Cellular Phone System",
+          "yes": "Replace the A/C-ECU or heater control unit [vehicles without A/C]. On completion, check that the DTC is not reset.",
+          "no": "There is an intermittent malfunction such as poor engaged connector(s) or open circuit."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? STEP 2. Using scan tool MB991958 read the Satellite Radio diagnostic trouble code. Check whether an satellite radio DTCs are set or not.",
+          "yes": "Go to Step 2.",
+          "no": "Repair the CAN bus line"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0197",
+      "description": "Hands Free Module CAN Timeout HINTS - The CAN bus line may be defective. - The hands free module may be defective. - The occupant classification-ECU may be defective. DIAGNOSIS DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicles Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Erase the DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch from \"LOCK\" (OFF) position to \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? STEP 3. Using scan tool MB991958, check for any diagnostic trouble code. Check if a DTC, which relates to CAN communication-linked systems below, is set. - ETACS-ECU DTC indicating a time-out error related to the hands free module system",
+          "yes": "Diagnose the hands free module.  See: Diagnostic Trouble Code Descriptions",
+          "no": "Go to Step 3."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? and the combination meter. Manual A/C Diagnosis",
+          "yes": "Replace the combination meter.",
+          "no": "The trouble can be an intermittent malfunction such as a poor connection or open circuit in the CAN bus lines between the hands free module"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0215",
+      "description": "P/W SW (DR) LIN time-out HINTS - The power window main switch may be defective. - The wiring harness or connectors may have loose, corroded, or damaged terminals, or terminals pushed back in the connector. DIAGNOSIS Required Special Tools: - MB991958 Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicles Communication Interface (V.C.I.) - MB991827 M.U.T.-III USB Cable - MB991910 M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Check ETACS-ECU connectors C-301, C-315 and power window main switch connector E-28 for loose, corroded or damaged terminals, or terminals pushed back in the connector. Q: Are ETACS-ECU connector C-301, C-315 and power window main switch connector E-28 in good condition? YES: Go to Step 2. NO: Repair or replace the damaged component(s). STEP 2. Check the ground circuit to the power window main switch. Measure the resistance at power window main switch connector E-28.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Disconnect power window main switch connector E-28 and measure the resistance available at the wiring harness side of the connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Measure the resistance value between power window main switch connector E-28 terminal 10 and ground. - The resistance should be 2 ohms or less. Q: Is the measured resistance 2 ohms or less? STEP 3. Check the wiring harness between power window main switch connector E-28 (terminal 10) and the ground. - Check the ground wires for open circuit.",
+          "yes": "No action is necessary and testing is complete.",
+          "no": "The wiring harness may be damaged or the connector(s) may have loose, corroded or damaged terminals, or terminals pushed back in the"
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? the ETACS-ECU.",
+          "yes": "Replace the power window main switch.",
+          "no": "A poor connection, open circuit or other intermittent malfunction is present in the LIN bus lines between the power window main switch and"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0231",
+      "description": "Lighting control sensor LIN time-out [Vehicles with auto light function] HINTS - The lighting control sensor may be defective. - The wiring harness or connectors may have loose, corroded, or damaged terminals, or terminals pushed back in the connector. STEP 1. Check ETACS-ECU connectors C-316, C-317 and lighting control sensor connector D-42 for loose, corroded or damaged terminals, or terminals pushed back in the connector. Q: Are ETACS-ECU connectors C-316, C-317 and lighting control sensor connector D-42 in good condition? YES: Go to Step 2. NO: Repair or replace the damaged component(s). STEP 2. Check the ground circuit to the lighting control sensor. Measure the resistance at lighting control sensor connector D-42.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Disconnect power window main switch connector D-42 and measure the resistance available at the wiring harness side of the connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Measure the resistance value between power window main switch connector D-42 terminal 2 and ground. - The resistance should be 2 ohms or less. Q: Is the measured resistance 2 ohms or less? STEP 3. Check the wiring harness between lighting control sensor connector D-42 (terminal 2) and the ground. - Check the ground wires for open circuit. Q: Is the wiring harness between lighting control sensor connector D-42 (terminal 2) and the ground in good condition? connector. Repair the wiring harness as necessary. STEP 4. Check the battery power supply circuit to the lighting control sensor. Measure the voltage at lighting control sensor connector D-42.",
+          "yes": "No action is necessary and testing is complete.",
+          "no": "The wiring harness may be damaged or the connector(s) may have loose, corroded or damaged terminals, or terminals pushed back in the"
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? ETACS-ECU. Combination Meter",
+          "yes": "Replace the lighting control sensor.",
+          "no": "A poor connection, open circuit or other intermittent malfunction is present in the LIN bus lines between the lighting control sensor and the"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0245",
+      "description": "Audio Visual Navigation Unit CAN timeout HINTS - The CAN bus line may be defective. - The occupant classification-ECU may be defective. - The audio visual navigation unit may be defective. DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicles Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Erase the DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch from \"LOCK\" (OFF) position to \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check if DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? (audio visual navigation unit) and the combination meter. ETACS",
+          "yes": "Replace the combination meter.",
+          "no": "The trouble can be an intermittent malfunction such as a poor connection or open circuit in the CAN bus lines between the CAN box unit"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0331",
+      "description": "ECU internal error TROUBLE JUDGEMENT If the ETACS-ECU error counter value is detected to be \"255,\" DTC U0331 is set, and the ETACS-ECU is reset. The DTC U0331 exists only as past trouble. HINTS - The ETACS-ECU may be defective. DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicle Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) Recheck for diagnostic trouble code. Check again if the DTC is set to the ETACS-ECU.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958. Refer to See: Body and Frame/Body Control Systems/Body Control Module/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/How to Connect the Scan Tool (M.U.T.-III)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Erase the DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch from \"LOCK\" (OFF) position to \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check if DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set?",
+          "yes": "Replace the ETACS-ECU",
+          "no": "The diagnosis is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0401",
+      "description": "Engine signal malfunction detected",
+      "detection_condition": [
+        "This DTC is set when the engine control module (ECM) malfunction has been detected."
+      ],
+      "possible_causes": [
+        "^",
+        "Malfunction of engine system",
+        "Malfunction of engine control module (ECM)",
+        "Malfunction of ASC-ECU",
+        "External noise interference",
+        "DIAGNOSIS",
+        "Required Special Tools:",
+        "MB991958: Scan Tool (M.U.T.-III Sub Assembly)",
+        "MB991824: Vehicle Communication Interface (V.C.I.)",
+        "MB991827: M.U.T.-III USB Cable",
+        "MB991910: M.U.T.-III Main Harness A",
+        "STEP 1. Using scan tool MB991958, diagnose the CAN bus lines.",
+        "Use scan tool to diagnose the CAN bus lines.",
+        "Q: Is the check result normal?",
+        "YES: Go to Step 2.",
+        "NO: Repair the CAN bus lines (Refer to Diagnosis - CAN Bus Diagnostic Table See: Powertrain Management/Computers and Control",
+        "Systems/Information Bus/Testing and Inspection/Scan Tool Testing and Procedures/CAN Bus Diagnostics Table). On completion, go to Step 5.",
+        "STEP 2. Using scan tool MB991958, check the DTC",
+        "Use scan tool to check that any DTC other than the DTC U0401 is set in ASC-ECU.",
+        "Q: Is the DTC set?",
+        "YES: Troubleshoot the relevant DTC, and then go to Step 5.",
+        "NO: Go to Step 3.",
+        "STEP 3. Using scan tool MB991958, check the other system DTC",
+        "Use scan tool to check that the DTC is set by the engine control module (ECM).",
+        "NO: Go to Step 4.",
+        "STEP 4. Check whether the DTC is reset.",
+        "Q: Is DTC U0401 set?",
+        "YES: Replace the hydraulic unit (ASC-ECU), and then go to Step 5.",
+        "NO: Intermittent malfunction.",
+        "STEP 5. Check whether the DTC is reset.",
+        "YES: Return to Step 1.",
+        "NO: The procedure is complete."
+      ],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0428",
+      "description": "Communication error in steering wheel sensor",
+      "detection_condition": [
+        "This DTC is set when ASC-ECU has detected the communication error in the steering wheel sensor."
+      ],
+      "possible_causes": [
+        "^",
+        "Steering wheel sensor malfunction",
+        "ASC-ECU malfunction",
+        "External noise interference",
+        "DIAGNOSIS",
+        "Required Special Tools:",
+        "MB991958: Scan Tool (M.U.T.-III Sub Assembly)",
+        "MB991824: Vehicle Communication Interface (V.C.I.)",
+        "MB991827: M.U.T.-III USB Cable",
+        "MB991910: M.U.T.-III Main Harness A",
+        "STEP 1. Using scan tool MB991958, diagnose the CAN bus lines.",
+        "Use scan tool to diagnose the CAN bus lines.",
+        "Q: Is the check result normal?",
+        "YES: Replace the steering wheel sensor. Then go to Step 2.",
+        "NO: Repair the CAN bus lines (Refer to Diagnosis - CAN Bus Diagnostic Table See: Powertrain Management/Computers and Control",
+        "Systems/Information Bus/Testing and Inspection/Scan Tool Testing and Procedures/CAN Bus Diagnostics Table). On completion, go to Step 3.",
+        "STEP 2. Check whether the DTC is reset.",
+        "Q: Is DTC U0428 set?",
+        "YES: Replace the hydraulic unit (ASC-ECU).",
+        "NO: The procedure is complete.",
+        "STEP 3. Check whether the DTC is reset.",
+        "YES: Return to Step 1."
+      ],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1003",
+      "description": "G and yaw rate sensor bus-off",
+      "detection_condition": [
+        "This DTC is set when the communication error occurs in the exclusive CAN bus communication between the ASC-ECU and the G and yaw rate",
+        "sensor."
+      ],
+      "possible_causes": [
+        "^",
+        "Wiring harness or connector failure for the special CAN bus lines between ASC-ECU and the G and yaw rate sensor",
+        "Malfunction of the G and yaw rate sensor",
+        "ASC-ECU malfunction",
+        "DIAGNOSIS",
+        "Required Special Tools:",
+        "MB991958: Scan Tool (M.U.T.-III Sub Assembly)",
+        "MB991824: Vehicle Communication Interface (V.C.I.)",
+        "MB991827: M.U.T.-III USB Cable",
+        "MB991910: M.U.T.-III Main Harness A",
+        "STEP 1. Using scan tool MB991958, diagnose the CAN bus lines.",
+        "Use scan tool to diagnose the CAN bus lines.",
+        "Q: Is the check result normal?",
+        "YES: Go to Step 3.",
+        "NO: Repair the CAN bus lines. (Refer to Diagnosis - CAN Bus Diagnostic Table See: Powertrain Management/Computers and Control",
+        "Systems/Information Bus/Testing and Inspection/Scan Tool Testing and Procedures/CAN Bus Diagnostics Table.) On completion, go to Step 2.",
+        "STEP 2. DTC recheck after resetting CAN bus lines",
+        "Q: Is DTC U1003 set?",
+        "NO: The procedure is complete.",
+        "STEP 3. Connector check: A-51 ASC-ECU connector, C-137 G and yaw rate sensor connector",
+        "YES: Go to Step 4.",
+        "NO: Repair the connector, and then go to Step 7.",
+        "STEP 4. Wiring harness check between A-51 ASC-ECU connector terminal No.18 and C-137 G and yaw rate sensor connector terminal No.2 as",
+        "well as between A-51 ASC-ECU connector terminal No.19 and C-137 G and yaw rate sensor connector terminal No.3",
+        "Check the communication circuit for open and short circuit.",
+        "YES: Go to Step 5.",
+        "NO: Repair the wiring harness, and then go to Step 7.",
+        "STEP 5. DTC recheck",
+        "YES: Replace the G and yaw rate sensor. Then go to Step 6.",
+        "NO: Intermittent malfunction.",
+        "STEP 6. DTC recheck",
+        "YES: Replace the hydraulic unit (ASC-ECU). Then go to Step 7.",
+        "STEP 7. DTC recheck",
+        "YES: Return to Step 1."
+      ],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1108",
+      "description": "Excess CAN-B ECU Detection HINTS - The ETACS-ECU may be defective. - The CAN bus may be defective. DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicle Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958. Refer to See: Body and Frame/Body Control Systems/Body Control Module/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/How to Connect the Scan Tool (M.U.T.-III)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Diagnose the CAN bus line.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? STEP 2. Variant code check. Check the variant code written to the ETACS-ECU, and check whether it matches the ECU connected to the CAN-B line. Q: Is the check result normal? STEP 3. Recheck for diagnostic trouble code. Check again if the DTC is set to the ETACS-ECU.",
+          "yes": "Go to Step 3.",
+          "no": "Make a correction so that the ECU connected to the CAN-B line matches with the variant code information, and then go to Step 3."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1109",
+      "description": "Column SW LIN time-out HINTS - The lighting switch may be defective. - The wiring harness or connectors may have loose, corroded, or damaged terminals, or terminals pushed back in the connector. DIAGNOSIS Required Special Tools: - MB991958 Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicles Communication Interface (V.C.I.) - MB991827 M.U.T.-III USB Cable - MB991910 M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Check ETACS-ECU connectors C-301, C-317 and column switch connector C-201 for loose, corroded or damaged terminals, or terminals pushed back in the connector. Q: Are ETACS-ECU connectors C-301, C-317 and column switch connector C-201 in good condition? YES: Go to Step 2. NO: Repair or replace the damaged component(s). STEP 2. Check the ground circuit to the column switch. Measure the resistance at column switch connector C-201.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Disconnect column switch connector C-201 and measure the resistance available at the wiring harness side of the connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Measure the resistance value between column switch connector C-201 terminal 4 and ground. - The resistance should be 2 ohms or less. Q: Is the measured resistance 2 ohms or less? STEP 3. Check the wiring harness between column switch connector C-201 (terminal 4) and the ground. - Check the ground wires for open circuit. Q: Is the wiring harness between column switch connector C-201 (terminal 4) and the ground in good condition? connector. Repair the wiring harness as necessary. STEP 4. Check the battery power supply circuit to the column switch. Measure the voltage at column switch connector C-201.",
+          "yes": "No action is necessary and testing is complete.",
+          "no": "The wiring harness may be damaged or the connector(s) may have loose, corroded or damaged terminals, or terminals pushed back in the"
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? ETACS-ECU.",
+          "yes": "Replace the lighting switch.",
+          "no": "A poor connection, open circuit or other intermittent malfunction is present in the LIN bus lines between the column switch and the"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1120",
+      "description": "Bus line (CAN-C) low input",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1121",
+      "description": "Bus line (CAN-C) high input TROUBLE JUDGEMENT When the CAN bus line voltage is in the following states, the ETACS-ECU set the DTC. - If the CAN bus line voltage is 0.3 volt or less, DTCU1120isset. - If the CAN bus line voltage is 4.7 volts or more, DTCU1121 is set. HINTS - The CAN bus line may be defective. DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicle Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Erase the DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch from \"LOCK\" (OFF) position to \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check if DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set?",
+          "yes": "Replace the ETACS-ECU",
+          "no": "The diagnosis is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1180",
+      "description": "Combination Meter Time-out S OF MONITOR METHODS There is no data from combination meter for the specified time. (Meter also detect communication error with ECM.) HINTS (The most likely causes for this code to be set are:) - CAN line harness damage or connector damage. - Combination meter failed. - ECM failed. DIAGNOSIS Required Special Tools: - MB991958: Scan tool (M.U.T.-III Sub Assembly) - MB991824: V.C.I. - MB991827: USB Cable - MB991910: Main Harness A STEP 1. Using scan tool MB991958, diagnose CAN bus line.",
+      "detection_condition": [
+        "Logic Flow Chart",
+        "Check Condition",
+        "-",
+        "Battery positive voltage is between 10 and 16.5 volts.",
+        "Judgement Criterion",
+        "Unable to receive combination meter signals through the CAN bus line for 4 seconds.",
+        "COMMENT",
+        "Current Trouble",
+        "Some of the possible causes are a harness or connector damage between the ECM and the combination meter on the CAN bus line, a failure in the",
+        "combination meter power supply system, a failure in the combination meter, or a failure in the ECM.",
+        "Past Trouble",
+        "Proceed to troubleshoot based on a harness or connector damage on the CAN bus line between the ECM and combination meter, and a failure in",
+        "the combination meter power supply system."
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the combination meter-DTC set? STEP 3. Using scan tool MB991958, read the diagnostic trouble code (DTC).",
+          "yes": "Refer to Combination Meter - Diagnostic Trouble Code Chart.  See: Diagnostic Trouble Code Descriptions",
+          "no": "Go to Step 3."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line normal? STEP 2. Using scan tool MB991958, read the diagnostic trouble code (DTC).",
+          "yes": "Go to Step 2.",
+          "no": "Repair the CAN bus line. Then go to Step 4."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1412",
+      "description": "Implausible vehicle speed signal received HINTS The most likely causes for this DTC to set are: - Damaged wiring harness and connector - Malfunction of ASC-ECU - Malfunction of KOS-ECU - Malfunction of ETACS-ECU DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicle Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A STEP 1. M.U.T.-III CAN bus diagnostics Use scan tool to diagnose the CAN bus lines. Q: Is the check result normal? YES : Go to Step 3. NO : Repair the CAN bus lines. On completion, go to Step 2. STEP 2. Diagnostic trouble code recheck after resetting CAN bus lines",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC U1412 reset? Keyless Operation System (KOS)",
+          "yes": "Start over at Step 1.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1414",
+      "description": "Defective Coding Data HINTS - The CAN bus line may be defective - The ETACS-ECU may be defective - The SRS-ECU may be defective DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicles Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Using scan tool MB991958, diagnose the CAN bus line",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958. Refer to  See: Restraints and Safety Systems/Air Bag Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/How To Connect The Scan Tool (M.U.T.-III)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Diagnose the CAN bus line.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? STEP 2. Using scan tool MB991958, read the ETACS-ECU diagnostic trouble code Check if DTC Nos. U0331, B1761, B222C, B2206, or B2215 is set to the ETACS-ECU. Q: Is the DTC set? STEP 3. Recheck for diagnostic trouble code. Check again if the DTC is set to the SRS-ECU.",
+          "yes": "Diagnose the ETACS-ECU.",
+          "no": "Go to Step 3."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1415",
+      "description": "Coding Not Completed/Data Fail HINTS - The CAN bus line may be defective. - The combination meter may be defective. - The ETACS-ECU may be defective. DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicles Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [
+        "This DTC is set when the variant coding for ETACS-ECU has not been implemented."
+      ],
+      "possible_causes": [
+        "^",
+        "Variant coding for ETACS-ECU has not been implemented.",
+        "^",
+        "ASC-ECU malfunction",
+        "DIAGNOSIS",
+        "Required Special Tools:",
+        "^",
+        "MB991958: Scan Tool (M.U.T.-III Sub Assembly)",
+        "^",
+        "MB991824: Vehicle Communication Interface (V.C.I.)",
+        "^",
+        "MB991827: M.U.T.-III USB Cable",
+        "^",
+        "MB991910: M.U.T.-III Main Harness A",
+        "STEP 1. Using scan tool MB991958, diagnose the CAN bus lines.",
+        "Use scan tool to diagnose the CAN bus lines.",
+        "Q: Is the check result normal?",
+        "YES: Go to Step 2.",
+        "NO: Repair the CAN bus lines (Refer to Diagnosis - CAN Bus Diagnostic Table See: Powertrain Management/Computers and Control",
+        "Systems/Information Bus/Testing and Inspection/Scan Tool Testing and Procedures/CAN Bus Diagnostics Table). On completion, go to Step 4.",
+        "STEP 2.Using scan tool MB991958, check the other system DTC.",
+        "Use scan tool to check that the DTC B222C is set in the ETACS-ECU.",
+        "Q: Is the DTC set?",
+        "YES: Troubleshoot the relevant DTC, and then go to Step 4.",
+        "NO: Go to Step 3.",
+        "STEP 3. Check whether the DTC is reset."
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Erase the DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"OFF\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? STEP 3. Using scan tool MB991958, check for any diagnostic trouble code. Check if a DTC, which relates to CAN communication-linked systems below, is set. - WCM [vehicles with WCM] B2204: Coding data unmatched - KOS [vehicles with KOS] B2204: Coding data unmatched",
+          "yes": "Diagnose the ETACS-ECU.  See: Diagnostic Trouble Code Descriptions",
+          "no": "Go to Step 3."
+        },
+        {
+          "step": 4,
+          "instruction": "Check that the ABS warning light goes out when the ignition switch is turned to the \"ON\" position.",
+          "yes": "Return to Step 1.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1417",
+      "description": "Variant coding value invalid (includes faulty installation) HINTS - Malfunction of ETACS-ECU - Engine control module malfunction - ETACS-ECUs have been interchanged between two vehicles. - CAN box unit malfunction - External noise interference DIAGNOSIS Required Special Tools: - MB991958 Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicle Communication Interface (V.C.I.) - MB991827 M.U.T.-III USB Cable - MB991910 M.U.T.-III Main Harness A STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [
+        "ASC-ECU communicates with ETACS-ECU via CAN bus lines. This DTC is set when the vehicle information received from the ETACS-ECU is",
+        "invalid.",
+        "WCM communicates with ETACS-ECU via CAN bus lines. This diagnostic trouble code is set when the vehicle information received from the",
+        "ETACS-ECU is invalid.",
+        "KOS-ECU communicates with ETACS-ECU via CAN bus lines. This diagnostic trouble code is set when the vehicle information received from the"
+      ],
+      "possible_causes": [
+        "^",
+        "Malfunction of ETACS-ECU",
+        "^",
+        "Malfunction of engine control module (ECM)",
+        "^",
+        "ETACS-ECUs have been interchanged between two vehicles.",
+        "^",
+        "Malfunction of ASC-ECU",
+        "^",
+        "External noise interference",
+        "^",
+        "ASC-ECUs have been interchanged between two vehicles.",
+        "DIAGNOSIS",
+        "Required Special Tools:",
+        "^",
+        "MB991958: Scan Tool (M.U.T.-III Sub Assembly)",
+        "^",
+        "MB991824: Vehicle Communication Interface (V.C.I.)",
+        "^",
+        "MB991827: M.U.T.-III USB Cable",
+        "^",
+        "MB991910: M.U.T.-III Main Harness A",
+        "STEP 1. Using scan tool MB991958, diagnose the CAN bus lines.",
+        "Use scan tool to diagnose the CAN bus lines.",
+        "Q: Is the check result normal?",
+        "YES: Go to Step 3.",
+        "NO: Repair the CAN bus lines (Refer to Diagnosis - CAN Bus Diagnostic Table See: Powertrain Management/Computers and Control",
+        "Systems/Information Bus/Testing and Inspection/Scan Tool Testing and Procedures/CAN Bus Diagnostics Table). On completion, go to Step 2.",
+        "STEP 2. DTC recheck after resetting CAN bus lines",
+        "Q: Is DTC U1417 set?",
+        "YES: Go to Step 3.",
+        "NO: The procedure is complete.",
+        "STEP 3. Using scan tool MB991958, other system diagnostic trouble code",
+        "Use scan tool to check whether any diagnostic trouble code related to vehicles information is set or not by the ETACS-ECU or engine control module",
+        "(ECM).",
+        "Q: Is the DTC set?",
+        "YES: Troubleshoot for the relevant DTC.",
+        "NO: Go to Step 4.",
+        "STEP 4. ETACS-ECU coding data check",
+        "Vehicle line",
+        "OK: LANCER",
+        "Transmission",
+        "OK (M/T): 5MT",
+        "OK (CVT): CVT",
+        "OK (TC-SST): TC-SST",
+        "Engine type",
+        "OK (2.4L engine): 2.4L D4 MPI VVT",
+        "OK (2.0L Non-Turbo engine): 2.0L D4 MPI VVT",
+        "OK (2.0L Turbo engine): 2.0L D4 VVT T/C",
+        "Engine power",
+        "OK: Normal",
+        "Chassis type for A.S.C.",
+        "OK (2.4L engine, 2.0L Non-Turbo engine): Type 4",
+        "OK (2.0L Turbo engine): Type 6",
+        "Final drive",
+        "OK (2.4L engine, 2.0L Non-Turbo engine): Front Drive",
+        "OK (2.0L Turbo engine): AWD FF Base",
+        "Transfer",
+        "OK (2.4L engine, 2.0L Non-Turbo engine): 2WD",
+        "OK (2.0L Turbo engine): ACD",
+        "SAS",
+        "OK: Present",
+        "4WD/AWD",
+        "OK: Not present",
+        "TCM",
+        "OK (M/T): Not present",
+        "OK (CVT, TC-SST): Present",
+        "ACDAYC",
+        "OK (2.4L engine, 2.0L Non-Turbo engine): Not present",
+        "OK (2.0L Turbo engine): Present",
+        "Q: Is the check result normal?",
+        "YES: Go to Step 5.",
+        "NO: Replace the ETACS-ECU and then go to Step 7.",
+        "STEP 5. Engine control module (ECM) coding data check",
+        "Q: Is the check result normal?",
+        "YES: Go to Step 6.",
+        "NO [2.0L engine-turbo]: Replace the engine control module (ECM) and then go to Step 7.",
+        "NO [2.4L engine]: Replace the engine control module (ECM) and then go to Step 7.",
+        "NO [2.0L engine non-turbo]: Replace the engine control module (ECM) and then go to Step 7.",
+        "STEP 6. Check the part number of ETACS-ECU",
+        "Check the part number of ETACS-ECU.",
+        "Q: Is the check result normal?",
+        "YES: Go to Step 7.",
+        "NO: Replace the ETACS-ECU and then go to Step 7.",
+        "STEP 7. Check the part number of ASC-ECU",
+        "Check the part number of ASC-ECU.",
+        "Q: Is the check result normal?",
+        "YES: Go to Step 8.",
+        "NO: Replace the hydraulic unit (ASC-ECU), and then go to Step 9.",
+        "STEP 8. Check whether the DTC is reset.",
+        "Q: Is DTC U1417 set?",
+        "YES: Replace the ASC-ECU, and then go to Step 9.",
+        "NO: The trouble can be an intermittent malfunction.",
+        "STEP 9. Check whether the DTC is reset.",
+        "Q: Is DTC U1417 set?",
+        "YES: Return to Step 1.",
+        "NO: The procedure is complete.",
+        "MMCS",
+        "DTC No.U1417 Implausible coding data",
+        "-",
+        "Malfunction of ETACS-ECU",
+        "-",
+        "Engine control module malfunction",
+        "-",
+        "ETACS-ECUs have been interchanged between two vehicles.",
+        "-",
+        "WCM malfunction",
+        "-",
+        "External noise interference",
+        "-",
+        "WCMs have been interchanged between two vehicles.",
+        "DIAGNOSIS",
+        "Required Special Tools:",
+        "-",
+        "MB991958: Scan Tool (M.U.T.-III Sub Assembly)",
+        "-",
+        "MB991824: Vehicle Communication Interface (V.C.I.)",
+        "-",
+        "MB991827: M.U.T.-III USB Cable",
+        "-",
+        "MB991910: M.U.T.-III Main Harness A",
+        "STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+        "KOS-ECU malfunction"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Erase the DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch from \"LOCK\" (OFF) position to \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check if DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? Keyless Operation System (KOS)",
+          "yes": "Replace WCM and register the ID codes.",
+          "no": "The trouble can be an intermittent malfunction."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1511",
+      "description": "Sunroof checksum error [Vehicles with sunroof] TROUBLE JUDGEMENT The ETACS-ECU will set DTC U1511 when abnormal signals are received from the sunroof motor assembly (sunroof-ECU). HINTS - The sunroof motor assembly may be defective. DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicles Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) Recheck for diagnostic trouble code. Check again if the DTC is set to the ETACS-ECU.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958. Refer to  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Local Interconnect Network (LIN)/How to Connect the Scan Tool (M.U.T.-III)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Erase the DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? ETACS-ECU.",
+          "yes": "Replace the sunroof motor assembly.",
+          "no": "A poor connection, open circuit, or other intermittent malfunctions in the LIN bus lines between the sunroof motor assembly and the"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1512",
+      "description": "Lighting control sensor checksum error [Vehicles with auto light function] TROUBLE JUDGMENT The ETACS-ECU will set DTC U1512 when abnormal signals are received from the lighting control sensor. HINTS - The lighting control sensor may be defective. DIAGNOSIS Required Special Tools: - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicles Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) Recheck for diagnostic trouble code. Check again if the DTC is set to the ETACS-ECU.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958. Refer to  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Local Interconnect Network (LIN)/How to Connect the Scan Tool (M.U.T.-III)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Erase the DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? ETACS-ECU.",
+          "yes": "Replace the lighting control sensor.",
+          "no": "A poor connection, open circuit, or other intermittent malfunctions in the LIN bus lines between the lighting control sensor and the"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1514",
+      "description": "Bit error (LIN) TROUBLE JUDGEMENT The ETACS-ECU receives and sends data simultaneously. If the data contains a fault, the ETACS-ECU will set DTC U1514. HINTS - The slave ECU may be defective. - The ETACS-ECU may be defective. - Electrical noise generated in the LIN bus lines Recheck for diagnostic trouble code. Check again if the DTC is set to the ETACS-ECU.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ensure that the ignition switch is at the \"LOCK\" (OFF) position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Start up the personal computer.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Connect special tool MB991827 to special tool MB991824 and the personal computer.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Connect special tool MB991910 to special tool MB991824.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Connect special tool MB991910 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Erase the DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Connect special tool MB991827 to special tool MB991824 and the personal computer. YES [A DTC other than U1514 is set.]: Replace the YES [The DTC U1514 is set.]: Replace the ETACS-ECU. NO [The DTC is not set.]: The trouble can be an intermittent malfunction.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1515",
+      "description": "No-Bus activity error (LIN) LIN Communication Circuit (Part 1) LIN Communication Circuit (Part 2) TROUBLE JUDGMENT The ETACS-ECU will set DTC U1515 when no communication has been carried out for more than a certain period after the slave task received last valid data. HINTS - The ETACS-ECU may be defective. - The slave ECU may be defective. - LIN bus lines shorted to power supply - LIN bus lines shorted to ground DIAGNOSIS Required Special Tools: - MB991223: Harness Set - MB992006: Extra Fine Probe - MB991958: Scan Tool (M.U.T.-III Sub Assembly) - MB991824: Vehicles Communication Interface (V.C.I.) - MB991827: M.U.T.-III USB Cable - MB991910: M.U.T.-III Main Harness A (Vehicles with CAN communication system) STEP 1. Check the following connectors. Check the following connectors: - Column switch connector C-201 - ETACS-ECU connectors C-301 and C-316 - Sunroof motor assembly connector D-05 [Vehicles with sunroof] - Lighting control sensor connector D-42 [Vehicles with auto light function] - Power window main switch connector E-28 [Vehicles with central door locking system] Q: Are all the connectors in good condition? YES: Go to Step 2. NO: Repair or replace the damaged component(s). STEP 2. Check the following wiring harness. Check the wiring harness for open circuit between the following connectors: - Wiring harness from ETACS-ECU connector C-301 (terminal 1) to column switch connector C-201 (terminal 3) - Wiring harness from ETACS-ECU connector C-316 (terminal 1) to lighting control sensor connector D-42 (terminal 3) [Vehicles with auto light function] - Wiring harness from ETACS-ECU connector C-316 (terminal 1) to sunroof motor assembly connector D-05 (terminal 7) [Vehicles with sunroof] - Wiring harness from ETACS-ECU connector C-301 (terminal 1) to power window main switch connector E-28 (terminal 7) [Vehicles with central door locking system]",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Disconnect all the ECU connectors which are connected to the LIN bus lines.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch from \"LOCK\" (OFF) to \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Measure the voltage between column switch connector C-201 (terminal 3) and ground. - The voltmeter needle does not swing.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure the resistance value between lighting control sensor connector D-42 (terminal 3) and ground. [Vehicles with auto light function] - No continuity (1 k Ohms or more) Q: Is the check result normal? connector. Repair the wiring harness as necessary. STEP 5. Check the column switch. Disconnect column switch connector C-201, and recheck whether DTC U1515 is set.",
+          "yes": "Go to Step 5.",
+          "no": "The wiring harness may be damaged or the connector(s) may have loose, corroded or damaged terminals, or terminals pushed back in the"
+        },
+        {
+          "step": 5,
+          "instruction": "Measure the voltage between lighting control sensor connector D-42 (terminal 3) and ground. [Vehicles with auto light function] - The voltmeter needle does not swing.",
+          "yes": "Go to Step 4.",
+          "no": "The wiring harness may be damaged or the connector(s) may have loose, corroded or damaged terminals, or terminals pushed back in the"
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC U1515 set? STEP 6. Check the power window main switch. Disconnect power window main switch connector E-28, and recheck whether DTC U1515 is set.",
+          "yes": "Reconnect the column switch connector, and go to Step 6.",
+          "no": "Replace the column switch."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

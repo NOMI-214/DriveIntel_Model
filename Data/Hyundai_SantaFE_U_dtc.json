@@ -1,0 +1,3389 @@
+{
+  "source_file": "Hyundai_SantaFE_U.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 82,
+  "dtcs": [
+    {
+      "dtc_code": "C1101",
+      "description": "Battery Voltage High The ABS ECU(Electronic Control Unit) checks the battery voltage and alternator output voltage to determine, as a safety issue, whether the ABS system can operate normally or not. The normal battery voltage range is essential for controlling the ABS system as intended. The ABS ECU monitors battery voltage and alternator output voltage by reading the value of voltage. When the voltage is higher than the expected normal value, this code is set, and the ABS/EBD/ESC functions are prohibited. If the voltage recovers, to within normal operating range, then the controller returns to normal operation as well. DTC Detecting Condition Diagnostic Circuit Diagram ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Monitor the \"BATTERY VOLTAGE\" parameter on the scantool. Specification :Below. 16.7V Fig.1) Normal Data at Ignition \"ON\"",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is parameter displayed within specifications? W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1102",
+      "description": "Battery Voltage Low The ABS ECU(Electronic Control Unit) checks the battery voltage and alternator output voltage to determine, as a safety issue, whether the ABS system can operate normally or not. The normal battery voltage range is essential for controlling the ABS system as intended. The HECU monitors the battery voltage by reading the value of voltage. When the voltage is lower than the expected normal value, this code is set. The ABS/TCS/ESC functions are prohibited and the EBD function is allowed on LOW VOLTAGE CONDITION, the ABS/EBD/TCS/ESC function are prohibited on UNDER VOLTAGE CONDITION. If the voltage recovers, to within normal operating ranges, then the controller returns to normal operations as well. DTC Detecting Condition Diagnostic Circuit Diagram ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Monitor the \"BATTERY VOLTAGE\" parameter on the scantool. Specification :Above. 9.7± 0.3V Fig.1) Normal Data at Ignition \"ON\"",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is parameter displayed within specifications? W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1121",
+      "description": "Sensor 1 Battery Voltage Low [Wheel Electronic (WE) sensor unit]- TPMS sensor Each vehicle wheel is fitted with a Wheel Electronic (WE) sensor unit attached to the valve on the inside of the wheel. The WE unit is powered with a self-contained battery utilizing a high temperature rated CR (Manganese Dioxide Lithium) chemistry. The operating voltage range for the WE module is 2.2Vdc to 3.6Vdc, and the operating temperature range is -40°F to 257°F(-40°C ~125°C). The WE measures tire pressure, temperature, and acceleration periodically. The pressure, temperature, and acceleration information is converted to digital form within the MCU inside the WE sensor. The WE sensor is equipped with a Radio Frequency (RF) transmitter circuit which is used to periodically broadcast information from inside the tire. All WE sensor units operate on the same RF channel frequency, and each broadcast message includes pressure and temperature data, a unique ID code, operating state data, status information, and digital error-detection data. The pressure measured by the WE sensor is an absolute pressure value. The pressure measurement range is 100kPa to 450kPa. The acceleration data is used within the WE sensor to determine whether the vehicle is moving or stationary. The acceleration status is the decision maker within the WE module that determines if the tire is moving or stationary. This measurement is used within the WE module to enable different operating modes depending on the status of the acceleration value. Over the fully specified operating temperature range, if the acceleration measurement is greater than or equal to 20G, the WE module assumes the tire is moving. The basic operation of the L/L WE sensor is to transmit 3 frames every 3 minutes in both stationary and rolling modes. This DTC indicates that the Front Left WE sensor battery voltage is below 2.2Vdc. The most likely cause is battery passing it's expected life / sensor failure. DTC Detecting Condition Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect 'TPMS exciter' or scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"TPMS DIAGNOSIS\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"FULL\" mode of \"TPM DATA VALUES\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the parameter of \"S1 BATTERY\" on the 'TPMS exciter' or scantool. Specification :'S1 BATTERY' is 'NORMAL'. Fig 1) Sensor current data (normal) Fig 2) Connect the DLC for 'TPMS exciter'",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter within specifications? Verification of Vehicle Repair Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1122",
+      "description": "Sensor 2 Battery Voltage Low [Wheel Electronic (WE) sensor unit]- TPMS sensor Each vehicle wheel is fitted with a Wheel Electronic (WE) sensor unit attached to the valve on the inside of the wheel. The WE unit is powered with a self-contained battery utilizing a high temperature rated CR (Manganese Dioxide Lithium) chemistry. The operating voltage range for the WE module is 2.2Vdc to 3.6Vdc, and the operating temperature range is -40°F to 257°F(-40°C ~125°C). The WE measures tire pressure, temperature, and acceleration periodically. The pressure, temperature, and acceleration information is converted to digital form within the MCU inside the WE sensor. The WE sensor is equipped with a Radio Frequency (RF) transmitter circuit which is used to periodically broadcast information from inside the tire. All WE sensor units operate on the same RF channel frequency, and each broadcast message includes pressure and temperature data, a unique ID code, operating state data, status information, and digital error-detection data. The pressure measured by the WE sensor is an absolute pressure value. The pressure measurement range is 100kPa to 450kPa. The acceleration data is used within the WE sensor to determine whether the vehicle is moving or stationary. The acceleration status is the decision maker within the WE module that determines if the tire is moving or stationary. This measurement is used within the WE module to enable different operating modes depending on the status of the acceleration value. Over the fully specified operating temperature range, if the acceleration measurement is greater than or equal to 20G, the WE module assumes the tire is moving. The basic operation of the L/L WE sensor is to transmit 3 frames every 3 minutes in both stationary and rolling modes. This DTC indicates that the Front Right WE sensor battery voltage is below 2.2Vdc. The most likely cause is battery passing it's expected life / sensor failure. DTC Detecting Condition Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect 'TPMS exciter' or scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"TPMS DIAGNOSIS\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"FULL\" mode of \"TPM DATA VALUES\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the parameter of \"S2 BATTERY\" on the 'TPMS exciter' or scantool. Specification :'S2 BATTERY' is 'NORMAL'. Fig 1) Sensor current data (normal) Fig 2) Connect the DLC for 'TPMS exciter'",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter within specifications? Verification of Vehicle Repair Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1123",
+      "description": "Sensor 3 Battery Voltage Low [Wheel Electronic (WE) sensor unit]- TPMS sensor Each vehicle wheel is fitted with a Wheel Electronic (WE) sensor unit attached to the valve on the inside of the wheel. The WE unit is powered with a self-contained battery utilizing a high temperature rated CR (Manganese Dioxide Lithium) chemistry. The operating voltage range for the WE module is 2.2Vdc to 3.6Vdc, and the operating temperature range is -40°F to 257°F(-40°C ~125°C). The WE measures tire pressure, temperature, and acceleration periodically. The pressure, temperature, and acceleration information is converted to digital form within the MCU inside the WE sensor. The WE sensor is equipped with a Radio Frequency (RF) transmitter circuit which is used to periodically broadcast information from inside the tire. All WE sensor units operate on the same RF channel frequency, and each broadcast message includes pressure and temperature data, a unique ID code, operating state data, status information, and digital error-detection data. The pressure measured by the WE sensor is an absolute pressure value. The pressure measurement range is 100kPa to 450kPa. The acceleration data is used within the WE sensor to determine whether the vehicle is moving or stationary. The acceleration status is the decision maker within the WE module that determines if the tire is moving or stationary. This measurement is used within the WE module to enable different operating modes depending on the status of the acceleration value. Over the fully specified operating temperature range, if the acceleration measurement is greater than or equal to 20G, the WE module assumes the tire is moving. The basic operation of the L/L WE sensor is to transmit 3 frames every 3 minutes in both stationary and rolling modes. This DTC indicates that the Rear Left WE sensor battery voltage is below 2.2Vdc. The most likely cause is battery passing it's expected life / sensor failure. DTC Detecting Condition Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect 'TPMS exciter' or scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"TPMS DIAGNOSIS\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"FULL\" mode of \"TPM DATA VALUES\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the parameter of \"S3 BATTERY\" on the 'TPMS exciter' or scantool. Specification :'S3 BATTERY' is 'NORMAL'. Fig 1) Sensor current data (normal) Fig 2) Connect the DLC for 'TPMS exciter'",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter within specifications? Verification of Vehicle Repair Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1124",
+      "description": "Sensor 4 Battery Voltage Low [Wheel Electronic (WE) sensor unit]- TPMS sensor Each vehicle wheel is fitted with a Wheel Electronic (WE) sensor unit attached to the valve on the inside of the wheel. The WE unit is powered with a self-contained battery utilizing a high temperature rated CR (Manganese Dioxide Lithium) chemistry. The operating voltage range for the WE module is 2.2Vdc to 3.6Vdc, and the operating temperature range is -40°F to 257°F(-40°C ~125°C). The WE measures tire pressure, temperature, and acceleration periodically. The pressure, temperature, and acceleration information is converted to digital form within the MCU inside the WE sensor. The WE sensor is equipped with a Radio Frequency (RF) transmitter circuit which is used to periodically broadcast information from inside the tire. All WE sensor units operate on the same RF channel frequency, and each broadcast message includes pressure and temperature data, a unique ID code, operating state data, status information, and digital error-detection data. The pressure measured by the WE sensor is an absolute pressure value. The pressure measurement range is 100kPa to 450kPa. The acceleration data is used within the WE sensor to determine whether the vehicle is moving or stationary. The acceleration status is the decision maker within the WE module that determines if the tire is moving or stationary. This measurement is used within the WE module to enable different operating modes depending on the status of the acceleration value. Over the fully specified operating temperature range, if the acceleration measurement is greater than or equal to 20G, the WE module assumes the tire is moving. The basic operation of the L/L WE sensor is to transmit 3 frames every 3 minutes in both stationary and rolling modes. This DTC indicates that the Rear Right WE sensor battery voltage is below 2.2Vdc. The most likely cause is battery passing it's expected life / sensor failure. DTC Detecting Condition Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect 'TPMS exciter' or scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"TPMS DIAGNOSIS\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"FULL\" mode of \"TPM DATA VALUES\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the parameter of \"S4 BATTERY\" on the 'TPMS exciter' or scantool. Specification :'S4 BATTERY' is 'NORMAL'. Fig 1) Sensor current data (normal) Fig 2) Connect the DLC for 'TPMS exciter' Connect the DLC for 'TPMS exciter'",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter within specifications? Verification of Vehicle Repair Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1126",
+      "description": "TPMS ECU Battery Voltage Low TPM Receiver is integrated with the TPM module installed in the center console (behind the audio). The operating battery of TPM module is supplied from the vehicle battery. The LOW-LINE TPMS Receiver unit's MCU and RF receiver circuits are active while the vehicle's ignition circuit is energized. It continuously monitors for RF broadcasts from nearby WE units. The TPMS Receiver unit has nonvolatile memory in which the ID codes of the WE units fitted to that particular vehicle are stored. When the TPMS Receiver unit receives an information broadcast, it checks to see if the ID code contained within that broadcast matches one of the ID codes stored within its nonvolatile memory. If this is the case, the TPMS Receiver applies the information contained within that broadcast to the TPMS This DTC indicates that the Vehicle/receiver battery level is Low. DTC Detecting Condition Diagnostic Circuit Diagram Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and turn headight and rear defroster on.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect 'TPMS exciter' or scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select \"TPMS DIAGNOSIS\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Select the \"INPUT VALUES\" mode of \"CURRENT DATA\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Maintaining ENG. RPM at 2,500RPM(idle) over 2 minutes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Monitor the parameter of 'BATTARY VOLTAGE' on the 'TPMS exciter' or scantool. Specification :'BATTARY VOLTAGE' is more than 10 V",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Is parameter within specifications? W/Harness Inspection Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1127",
+      "description": "TPMS ECU Battery Voltage High TPM Receiver is integrated with the TPM module installed in the center console (behind the audio). The operating battery of TPM module is supplied from the vehicle battery. The LOW-LINE TPMS Receiver unit's MCU and RF receiver circuits are active while the vehicle's ignition circuit is energized. It continuously monitors for RF broadcasts from nearby WE units. The TPMS Receiver unit has nonvolatile memory in which the ID codes of the WE units fitted to that particular vehicle are stored. When the TPMS Receiver unit receives an information broadcast, it checks to see if the ID code contained within that broadcast matches one of the ID codes stored within its nonvolatile memory. If this is the case, the TPMS Receiver applies the information contained within that broadcast to the TPMS This DTC indicates that the Vehicle/receiver battery level is High. DTC Detecting Condition Diagnostic Circuit Diagram Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and turn headight and rear defroster on.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect 'TPMS exciter' or scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select \"TPMS DIAGNOSIS\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Select the \"INPUT VALUES\" mode of \"CURRENT DATA\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Maintaining ENG. RPM at 2,500RPM(idle) over 2 minutes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Monitor the parameter of 'BATTARY VOLTAGE' on the 'TPMS exciter' or scantool. Specification :'BATTARY VOLTAGE' is less than 16.5 V",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Is parameter within specifications? W/Harness Inspection Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1200",
+      "description": "Wheel Speed Sensor Front-LH Open/Short The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor circuit continuously. A direct current is supplied in the wheel speed sensor by a power source in the input amplifier of the control unit. If the WSS circuit is broken, in that case a fault is detected by detecting abnormal input current. HECU cuts off the voltage supply to wheel sensor channel which had a fault and prevent vehicle's damage due to super heated harness. If one or more defects has detected, DTC code of defected wheel will be stored. Mutual short between sensors is detected by executing self diagnosis successively at corresconding wheel when ignition ON. ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 10km/h. (6.2mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPD SENSOR-FL\" parameter on the Scantool. Specification :Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1201",
+      "description": "Wheel Speed Sensor Front-LH Range / Performance / Intermittent The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. This code is set when an abnormal signal due to air gap problem or an abnormal speed change ratio are detected at the vehicle speed between 10km/h to 80km/h. ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 12km/h. (7.5mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPD SENSOR-FL\" parameter on the Scantool. Specification :Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1202",
+      "description": "Wheel Speed Sensor Front-LH Invalid/no Signal The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. This code is set when there is no wheel speed signals within 10 ms to 20 ms at a vehicle speed > 43.2 km/h or a deviation between sensors exceed the threshold or one or two wheels are at 2.75km/h while the vehicle speed is at 12 km/h. ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 50km/h. (31.1mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPD SENSOR-FL\" parameter on the Scantool. Specification :Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1203",
+      "description": "Wheel Speed Sensor Front-RH Open/Short The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor circuit continuously. A direct current is supplied in the wheel speed sensor by a power source in the input amplifier of the control unit. If the WSS circuit is broken, in that case a fault is detected by detecting abnormal input current. HECU cuts off the voltage supply to wheel sensor channel which had a fault and prevent vehicle's damage due to super heated harness. If one or more defects has detected, DTC code of defected wheel will be stored. Mutual short between sensors is detected by executing self diagnosis successively at corresconding wheel when ignition ON. ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 10km/h. (6.2mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPD SENSOR-FR\" parameter on the Scantool. Specification :Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1204",
+      "description": "Wheel Speed Sensor Front-RH Range / Performance / Intermittent The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. This code is set when an abnormal signal due to air gap problem or an abnormal speed change ratio are detected at the vehicle speed between 10km/h to 80km/h. ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 12km/h. (7.5mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPD SENSOR-FR\" parameter on the Scantool. Specification :Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1205",
+      "description": "Wheel Speed Sensor Front-RH Invalid/no Signal The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. This code is set when there is no wheel speed signals within 10 ms to 20 ms at a vehicle speed > 43.2 km/h or a deviation between sensors exceed the threshold or one or two wheels are at 2.75km/h while the vehicle speed is at 12 km/h.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 50km/h. (31.1mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPD SENSOR-FR\" parameter on the Scantool. Specification :Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1206",
+      "description": "Wheel Speed Sensor Rear-LH Open/Short The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor circuit continuously. A direct current is supplied in the wheel-speed sensor by a power source in the input amplifier of the control unit. If the WSS circuit is broken, in that case a fault is detected by detecting abnormal input current. HECU cut off the voltage supply to wheel sensor channel which had a fault and prevent vehicle's damage due to super heated harness. If one or more defects has detected, DTC code of defected wheel will be stored. Mutual short between sensors is detected by executing self diagnosis successively at corresponding wheel when ignition ON.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 10km/h. (6.2mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPD SENSOR-RL\" parameter on the Scantool. Specification :Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1207",
+      "description": "Wheel Speed Sensor Rear-LH Range / Performance / Intermittent The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. This code is set when an abnormal signal due to air gap problem or an abnormal speed change ratio are detected at the vehicle speed between 10km/h to 80km/h.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 12km/h. (7.5mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPD SENSOR-RL\" parameter on the Scantool. Specification :Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1208",
+      "description": "Wheel Speed Sensor Rear-LH Invalid/no Signal The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. This code is set when there is no wheel speed signals within 10 ms to 20 ms at a vehicle speed > 43.2 km/h or a deviation between sensors exceed the threshold or one or two wheels are at 2.75km/h while the vehicle speed is at 12 km/h.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 50km/h. (31.1mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPD SENSOR-RL\" parameter on the Scantool. Specification :Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1209",
+      "description": "Wheel Speed Sensor Rear-RH Open/Short The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor circuit continuously. A direct current is supplied in the wheel-speed sensor by a power source in the input amplifier of the control unit. If the WSS circuit is broken, in that case a fault is detected by detecting abnormal input current. HECU cut off the voltage supply to wheel sensor channel which had a fault and prevent vehicle's damage due to super heated harness. If one or more defects has detected, DTC code of defected wheel will be stored. Mutual short between sensors is detected by executing self diagnosis successively at corresponding wheel when ignition ON.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 10km/h. (6.2mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPD SENSOR-RR\" parameter on the Scantool. Specification :Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1210",
+      "description": "Wheel Speed Sensor Rear-RH Range / Performance / Intermittent The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. This code is set when an abnormal signal due to air gap problem or an abnormal speed change ratio are detected at the vehicle speed between 10km/h to 80km/h.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 12km/h. (7.5mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPD SENSOR-RR\" parameter on the Scantool. Specification :Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1211",
+      "description": "Wheel Speed Sensor Rear-RH Invalid/no Signal The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. This code is set when there is no wheel speed signals within 10 ms to 20 ms at a vehicle speed > 43.2 km/h or a deviation between sensors exceed the threshold or one or two wheels are at 2.75km/h while the vehicle speed is at 12 km/h.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 50km/h. (31.1mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPD SENSOR-RR\" parameter on the Scantool. Specification :Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1212",
+      "description": "Vehicle Speed Sensor Failure AHLS provides driver with the best visibility by adjusting vertical direction of the headlamp. It consists of ECM, Linkage and actuator. The ECM detects the vehicle speed to use it a compensation factor for the actuator control. In other words, when the vehicle speed is low the acutator needs to repond slowly though the linkage of height sensor moves quickly ( reponse filter value is high ).But when the vehicle speed is high, ECM operates the actuator quickly in proportion to the height sensor variation. The ECM sets DTC C1212 if the speed signal line carries a higher frequency than defined maximum value(approx. 420Hz) for 2 seconds. DTC Detecting Condition Diagnostic Circuit Diagram Auto Headlamp Leveling",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminal condition. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check all connectors (and connections) for looseness, bending, corrosion, contamination, deterioration, and/or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Signal Circuit Inspection [Chcek Open]",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the measured resistance within specifications? Verification of Vehicle Repair Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is \"waveform\" measured near the specified form in General information? Verification of Vehicle Repair Auto Headlamp Leveling",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1213",
+      "description": "Wheel Speed Frequency Error The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. If power supply of the WSS input amplifier is not normal or the ABS control cycle is continued abnormally, if the exact fault location among 4 WSS can not be determined, This code is set. DTC Detecting Condition Specifications Diagnostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 50km/h. (31mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPD SENSOR\" parameter on the Scantool. Specification :Compare with another parameters related to wheel speed sensor. If it is the same as another parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1235",
+      "description": "Primary Pressure Sensor-Electrical The pressure sensor ,installed in the HECU, sense the brake oil pressure to judge driver's brake intention when ESC is operating. If pressure of master cyclinder is applied to pressure sensor, the strain of the piezo element is changed and then the resistance of brige circuit is chanded according to changed strain. Therefore this changed resistance changes output voltage of brige circuit and output voltage changes linearly. The sensor output is a analog signal in proportion to supply voltage, and the HECU recognizes a pressure value according to signal ratio about supply voltage. Each unfiltered input signal voltage is monitored to be in the range of 4.7V < input signal voltage < 5.3V. A failure is detected if the output signal value is out of specified range for more than 100ms or pressure sensor self test form is against to specification during self test. DTC Detecting Condition Diagnostic Circuit Diagram Monitor Scantool Data ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Press the brake pedal.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"Pressure Sensor\" parameter on the Scantool. Specification :Approx. 60bar ~150bar (There is difference in displayed parameter according to braking force) Fig 1) Normal data at pressing the break pedal(There is difference in displayed parameter according to braking force)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Whenever brake pedal is pushed down, is the pressure sensor's scantool data changed? Component Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1237",
+      "description": "Primary Pressure Sensor-Signal The pressure sensor ,installed in the HECU, sense the brake oil pressure to judge driver's brake intention when ESC is operating. If pressure of master cyclinder is applied to pressure sensor, the strain of the piezo element is changed and then the resistance of brige circuit is chanded according to changed strain. Therefore this changed resistance changes output voltage of brige circuit and output voltage changes linearly. The sensor output is a analog signal in proportion to supply voltage, and the HECU recognizes a pressure value according to signal ratio about supply voltage. With the driver torque demand and the lateral acceleration a driver braking demand is calculated. Unless the pump motor is opreating or there is a brake signal, The offset compensation is executed. A failure is detected if offset value exceeded ±15 bar. DTC Detecting Condition Diagnostic Circuit Diagram Monitor Scantool Data ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Press the brake pedal.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"Pressure Sensor\" parameter on the Scantool. Specification :Approx. 60bar ~150bar (There is difference in displayed parameter according to braking force) Fig 1) Normal data at pressing the break pedal(There is difference in displayed parameter according to braking force)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Whenever brake pedal is pushed down, is the pressure sensor's scantool data changed? Component Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1255",
+      "description": "Rear Height Sensor AHLS provides driver with the best visibility by adjusting vertical direction of the headlamp. It consists of ECM, Linkage and actuator. The height sensor measures the angular displacement of lever by measuring the magnetic field of stator parts formed by rotation of rotor. The ECM sets DTC C1255 if the useable range of 45° is overridden caused by separation of actuator clamping bolt or lifting of vehicle. DTC Detecting Condition Diagnostic Circuit Diagram Auto Headlamp Leveling",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Park the vehicle in a flat land and remove all the loads from the vehicle.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Monitor DTC(Diagnostics Trouble Code) on the scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"SENSOR ANGLE\" Parameter on the Scantool. Specification :Below - 0.4 ± 2 DEG (Unloaded Vehicle Condition)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within the Specification? Component Inspection Auto Headlamp Leveling",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1260",
+      "description": "Steering Angle Sensor Circuit-Signal The Steering angle sensor(SAS) is installed below the clock spring and it sends messages to HECU through CAN communication line. The SAS is used to determine turning direction and speed of the steering wheel. The HECU uses the signals from the SAS when performing ESC-related calculations. If the SAS signal is different from calculated value by yaw-rate sensor and wheel speed sensor, mechanically impossible SAS signal is detected, there is a difference between SAS signal and driving condition of the vehicle calculated from yaw-rate sensor and lateral G sensor, a failure is detected. DTC Detecting Condition Diagnostic Circuit Diagram Monitor Scantool data ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the steering wheel to the left or right.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"Steering Angle Sensor\" parameters on the Scantool. Fig 1) Test Condition : Ignition \"ON\" & Engine \"ON\". Normal Data",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Whenever steering wheel is turned, is the steering sensor's scantool data changed? YES (1) Connect scantool to Data Link Connector(DLC). (2) Ignition \"ON\" & Engine \"ON\". (3) Keep the steering wheel in ceter position. (4) Monitor the \"STEERING ANGLE SNSR\" parameters on the Scantool. Specification :Approx. 0 DEG (5) Is parameter displayed within specifications? NO > Go to \"Terminal and Connector Inspection\" procedure.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Perform steering angle sensor calibration. (1) Ignition \"ON\" & Engine \"OFF\". (2) (3) Connect scantool to Data Link Connector(DLC). (4) Go in Elec. Power Steering system. (5) Perform ASP calibration. (figure 2). (6) Go to \"Component Inspection\" Precedure. W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1261",
+      "description": "Steering Angle Sensor Not Calibrated The Steering angle sensor(SAS) is installed below the clock spring and it sends messages to HECU through CAN communication line. The SAS is used to determine turning direction and speed of the steering wheel. The HECU uses the signals from the SAS when performing ESC-related calculations. The SAS used for ESC control needs 0 set because the SAS measures an absolute angle. 0 set is done by using the scantool device. If abnormal 0 set is detected or no information in SAS is detected, a failure is recognized. DTC Detecting Condition Diagnostic Circuit Diagram Monitor Scantool data ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Monitor the \"Steering Angle Sensor Calibrated\" parameters on the Scantool. Specification :YES or ON Fig.1) SAS Calibrate normal data",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is parameter displayed within specifications? Component Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check the condition of \"SAS 0 SET\" by oprerating the vehicle (turn right and left at least 1 time)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Is \"SAS 0 SET\" completed normally? Verification of Vehicle Repair ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1283",
+      "description": "Yaw Rate & Lateral G Sensor-Signal The yaw-rate sensor and later G sensor is installed on the lower floor. The yaw-rate sensor detects acceleration of the vehicle around its vertical axis, while the G sensor detects lateral acceleration of the vehicle. It sends messages to HECU through CAN communcation line. A lateral acceleration reference signal is calculated from the wheel speeds, the steering angle and the yaw rate signals to observe the lateral acceleration sensor signal. The difference between the reference signal and the sensor signal is evaluated for failure detection. A yaw rate reference signal is calculated from the wheel speeds, the steering angle and the lateral acceleration signals to observe the yaw rate sensor signal. The difference between the reference signal and the sensor signal, and the gradient of the measured sensor signal is evaluated for the failure detection. If the difference between estimated value and measured value of the sensor is larger than predefined value for predefined time, the failure is recognized. Plauibility faults (signals received which fall outside of the sensor characteristics) are also recognized. DTC Detecting Condition Diagnostic Circuit Diagram Monitor Scantool data ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Maintain the vehicle standing still.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"Lateral Acceleration Sensor, Yaw Rate Sensor\" parameter on the Scantool. Specification :Approx. Lateral Acceleration Sensor : 0G Approx. Yaw Rate Sensor : -0 deg/s Fig.1) Test Condition : Ignition \"ON\" & Engine \"OFF\". Normal data",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Select \"Diagnostic Trouble Codes(DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1301",
+      "description": "Unmonitored Tire Installed [Wheel Electronic (WE) sensor unit]- TPMS sensor Each vehicle wheel is fitted with a Wheel Electronic (WE) sensor unit attached to the valve on the inside of the wheel. The WE unit is powered with a self-contained battery utilizing a high temperature rated CR (Manganese Dioxide Lithium) chemistry. The operating voltage range for the WE module is 2.2Vdc to 3.6Vdc, and the operating temperature range is -40°F to 257°F(-40°C ~125°C). The WE measures tire pressure, temperature, and acceleration periodically. The pressure, temperature, and acceleration information is converted to digital form within the MCU inside the WE sensor. The WE sensor is equipped with a Radio Frequency (RF) transmitter circuit which is used to periodically broadcast information from inside the tire. All WE sensor units operate on the same RF channel frequency, and each broadcast message includes pressure and temperature data, a unique ID code, operating state data, status information, and digital error-detection data. The pressure measured by the WE sensor is an absolute pressure value. The pressure measurement range is 100kPa to 450kPa. The acceleration data is used within the WE sensor to determine whether the vehicle is moving or stationary. The acceleration status is the decision maker within the WE module that determines if the tire is moving or stationary. This measurement is used within the WE module to enable different operating modes depending on the status of the acceleration value. Over the fully specified operating temperature range, if the acceleration measurement is greater than or equal to 20G, the WE module assumes the tire is moving. The basic operation of the L/L WE sensor is to transmit 3 frames every 3 minutes in both stationary and rolling modes. This DTC indicates that an unmonitored tire is detected. DTC Detecting Condition Monitor Scantool Data Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect 'TPMS exciter' or scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"TPMS DIAGNOSIS\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"FULL\" mode of \"TPM DATA VALUES\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check current data about S1~S4 on the 'TPMS exciter' or scantool. Specification :All current data for S1~S4 is displayed normally Fig 1) Sensor current data (normal) Fig 2) Connect the DLC for 'TPMS exciter'",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter within specifications? Verification of Vehicle Repair Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1312",
+      "description": "Sensor 1 Radio Frequency Channel Failure [Wheel Electronic (WE) sensor unit]- TPMS sensor Each vehicle wheel is fitted with a Wheel Electronic (WE) sensor unit attached to the valve on the inside of the wheel. The WE unit is powered with a self-contained battery utilizing a high temperature rated CR (Manganese Dioxide Lithium) chemistry. The operating voltage range for the WE module is 2.2Vdc to 3.6Vdc, and the operating temperature range is -40°F to 257°F(-40°C ~125°C). The WE measures tire pressure, temperature, and acceleration periodically. The pressure, temperature, and acceleration information is converted to digital form within the MCU inside the WE sensor. The WE sensor is equipped with a Radio Frequency (RF) transmitter circuit which is used to periodically broadcast information from inside the tire. All WE sensor units operate on the same RF channel frequency, and each broadcast message includes pressure and temperature data, a unique ID code, operating state data, status information, and digital error-detection data. The pressure measured by the WE sensor is an absolute pressure value. The pressure measurement range is 100kPa to 450kPa. The acceleration data is used within the WE sensor to determine whether the vehicle is moving or stationary. The acceleration status is the decision maker within the WE module that determines if the tire is moving or stationary. This measurement is used within the WE module to enable different operating modes depending on the status of the acceleration value. Over the fully specified operating temperature range, if the acceleration measurement is greater than or equal to 20G, the WE module assumes the tire is moving. The basic operation of the L/L WE sensor is to transmit 3 frames every 3 minutes in both stationary and rolling modes. This DTC indicates that the sensor has either failed to learn or has successfully learned and the receiver did not receive messages from the learned sensor for 9 minutes. DTC Detecting Condition Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect 'TPMS exciter' or scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"TPMS DIAGNOSIS\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"FULL\" mode of \"TPM DATA VALUES\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the parameters of 'Front Left WE sensor(S1)' on the 'TPMS exciter' or scantool. Fig 1) Sensor current data (normal) Fig 2) Sensor current data (failure) Fig 3) Connect the DLC for 'TPMS exciter'",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Are parameters normal? Verification of Vehicle Repair Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1313",
+      "description": "Sensor 2 Radio Frequency Channel Failure [Wheel Electronic (WE) sensor unit]- TPMS sensor Each vehicle wheel is fitted with a Wheel Electronic (WE) sensor unit attached to the valve on the inside of the wheel. The WE unit is powered with a self-contained battery utilizing a high temperature rated CR (Manganese Dioxide Lithium) chemistry. The operating voltage range for the WE module is 2.2Vdc to 3.6Vdc, and the operating temperature range is -40°F to 257°F(-40°C ~125°C). The WE measures tire pressure, temperature, and acceleration periodically. The pressure, temperature, and acceleration information is converted to digital form within the MCU inside the WE sensor. The WE sensor is equipped with a Radio Frequency (RF) transmitter circuit which is used to periodically broadcast information from inside the tire. All WE sensor units operate on the same RF channel frequency, and each broadcast message includes pressure and temperature data, a unique ID code, operating state data, status information, and digital error-detection data. The pressure measured by the WE sensor is an absolute pressure value. The pressure measurement range is 100kPa to 450kPa. The acceleration data is used within the WE sensor to determine whether the vehicle is moving or stationary. The acceleration status is the decision maker within the WE module that determines if the tire is moving or stationary. This measurement is used within the WE module to enable different operating modes depending on the status of the acceleration value. Over the fully specified operating temperature range, if the acceleration measurement is greater than or equal to 20G, the WE module assumes the tire is moving. The basic operation of the L/L WE sensor is to transmit 3 frames every 3 minutes in both stationary and rolling modes. This DTC indicates that the sensor has either failed to learn or has successfully learned and the receiver did not receive messages from the learned sensor for 9 minutes. DTC Detecting Condition Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect 'TPMS exciter' or scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"TPMS DIAGNOSIS\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"FULL\" mode of \"TPM DATA VALUES\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the parameters of 'Front Right WE sensor(S2)' on the 'TPMS exciter' or scantool. Fig 1) Sensor current data (normal) Fig 2) Sensor current data (failure) Fig 3) Connect the DLC for 'TPMS exciter'",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Are parameters normal? Verification of Vehicle Repair Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1314",
+      "description": "Sensor 3 Radio Frequency Channel Failure [Wheel Electronic (WE) sensor unit]- TPMS sensor Each vehicle wheel is fitted with a Wheel Electronic (WE) sensor unit attached to the valve on the inside of the wheel. The WE unit is powered with a self-contained battery utilizing a high temperature rated CR (Manganese Dioxide Lithium) chemistry. The operating voltage range for the WE module is 2.2Vdc to 3.6Vdc, and the operating temperature range is -40°F to 257°F(-40°C ~125°C). The WE measures tire pressure, temperature, and acceleration periodically. The pressure, temperature, and acceleration information is converted to digital form within the MCU inside the WE sensor. The WE sensor is equipped with a Radio Frequency (RF) transmitter circuit which is used to periodically broadcast information from inside the tire. All WE sensor units operate on the same RF channel frequency, and each broadcast message includes pressure and temperature data, a unique ID code, operating state data, status information, and digital error-detection data. The pressure measured by the WE sensor is an absolute pressure value. The pressure measurement range is 100kPa to 450kPa. The acceleration data is used within the WE sensor to determine whether the vehicle is moving or stationary. The acceleration status is the decision maker within the WE module that determines if the tire is moving or stationary. This measurement is used within the WE module to enable different operating modes depending on the status of the acceleration value. Over the fully specified operating temperature range, if the acceleration measurement is greater than or equal to 20G, the WE module assumes the tire is moving. The basic operation of the L/L WE sensor is to transmit 3 frames every 3 minutes in both stationary and rolling modes. This DTC indicates that the sensor has either failed to learn or has successfully learned and the receiver did not receive messages from the learned sensor for 9 minutes. DTC Detecting Condition Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect 'TPMS exciter' or scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"TPMS DIAGNOSIS\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"FULL\" mode of \"TPM DATA VALUES\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the parameters of 'Rear Left WE sensor(S3)' on the 'TPMS exciter' or scantool. Fig 1) Sensor current data (normal) Fig 2) Sensor current data (failure) Fig 3) Connect the DLC for 'TPMS exciter'",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Are parameters normal? Verification of Vehicle Repair Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1315",
+      "description": "Sensor 4 Radio Frequency Channel Failure [Wheel Electronic (WE) sensor unit]- TPMS sensor Each vehicle wheel is fitted with a Wheel Electronic (WE) sensor unit attached to the valve on the inside of the wheel. The WE unit is powered with a self-contained battery utilizing a high temperature rated CR (Manganese Dioxide Lithium) chemistry. The operating voltage range for the WE module is 2.2Vdc to 3.6Vdc, and the operating temperature range is -40°F to 257°F(-40°C ~125°C). The WE measures tire pressure, temperature, and acceleration periodically. The pressure, temperature, and acceleration information is converted to digital form within the MCU inside the WE sensor. The WE sensor is equipped with a Radio Frequency (RF) transmitter circuit which is used to periodically broadcast information from inside the tire. All WE sensor units operate on the same RF channel frequency, and each broadcast message includes pressure and temperature data, a unique ID code, operating state data, status information, and digital error-detection data. The pressure measured by the WE sensor is an absolute pressure value. The pressure measurement range is 100kPa to 450kPa. The acceleration data is used within the WE sensor to determine whether the vehicle is moving or stationary. The acceleration status is the decision maker within the WE module that determines if the tire is moving or stationary. This measurement is used within the WE module to enable different operating modes depending on the status of the acceleration value. Over the fully specified operating temperature range, if the acceleration measurement is greater than or equal to 20G, the WE module assumes the tire is moving. The basic operation of the L/L WE sensor is to transmit 3 frames every 3 minutes in both stationary and rolling modes. This DTC indicates that the sensor has either failed to learn or has successfully learned and the receiver did not receive messages from the learned sensor for 9 minutes. DTC Detecting Condition Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect 'TPMS exciter' or scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"TPMS DIAGNOSIS\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"FULL\" mode of \"TPM DATA VALUES\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the parameters of 'Rear Right WE sensor(S4)' on the 'TPMS exciter' or scantool. Fig 1) Sensor current data (normal) Fig 2) Sensor current data (failure) Fig 3) Connect the DLC for 'TPMS exciter'",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Are parameters normal? Verification of Vehicle Repair Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1317",
+      "description": "Sensor 1 Wrong Type Installed [Wheel Electronic (WE) sensor unit]- TPMS sensor Each vehicle wheel is fitted with a Wheel Electronic (WE) sensor unit attached to the valve on the inside of the wheel. The WE unit is powered with a self-contained battery utilizing a high temperature rated CR (Manganese Dioxide Lithium) chemistry. The operating voltage range for the WE module is 2.2Vdc to 3.6Vdc, and the operating temperature range is -40°F to 257°F(-40°C ~125°C). The WE measures tire pressure, temperature, and acceleration periodically. The pressure, temperature, and acceleration information is converted to digital form within the MCU inside the WE sensor. The WE sensor is equipped with a Radio Frequency (RF) transmitter circuit which is used to periodically broadcast information from inside the tire. All WE sensor units operate on the same RF channel frequency, and each broadcast message includes pressure and temperature data, a unique ID code, operating state data, status information, and digital error-detection data. The pressure measured by the WE sensor is an absolute pressure value. The pressure measurement range is 100kPa to 450kPa. The acceleration data is used within the WE sensor to determine whether the vehicle is moving or stationary. The acceleration status is the decision maker within the WE module that determines if the tire is moving or stationary. This measurement is used within the WE module to enable different operating modes depending on the status of the acceleration value. Over the fully specified operating temperature range, if the acceleration measurement is greater than or equal to 20G, the WE module assumes the tire is moving. The basic operation of the L/L WE sensor is to transmit 3 frames every 3 minutes in both stationary and rolling modes. This DTC indicates that \"H/Line WE sensor\" was installed to a L/Line system incorrectly. DTC Detecting Condition Verification of Vehicle Repair Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ON 'TPMS exciter'.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"TIRE SNSR CONFIG (EXCITER)\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Execute \"SET SENSOR STATUS\" of Front Left WE sensor.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the parameter of Front Left WE sensor on the 'TPMS exciter'. Specification :'SENSOR OPTION' is 'LOW'. Fig 1) Sensor status (normal) Fig 2) Executing \"SET SENSOR STATUS\"",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter within specifications? General Information Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1318",
+      "description": "Sensor 2 Wrong Type Installed [Wheel Electronic (WE) sensor unit]- TPMS sensor Each vehicle wheel is fitted with a Wheel Electronic (WE) sensor unit attached to the valve on the inside of the wheel. The WE unit is powered with a self-contained battery utilizing a high temperature rated CR (Manganese Dioxide Lithium) chemistry. The operating voltage range for the WE module is 2.2Vdc to 3.6Vdc, and the operating temperature range is -40°F to 257°F(-40°C ~125°C). The WE measures tire pressure, temperature, and acceleration periodically. The pressure, temperature, and acceleration information is converted to digital form within the MCU inside the WE sensor. The WE sensor is equipped with a Radio Frequency (RF) transmitter circuit which is used to periodically broadcast information from inside the tire. All WE sensor units operate on the same RF channel frequency, and each broadcast message includes pressure and temperature data, a unique ID code, operating state data, status information, and digital error-detection data. The pressure measured by the WE sensor is an absolute pressure value. The pressure measurement range is 100kPa to 450kPa. The acceleration data is used within the WE sensor to determine whether the vehicle is moving or stationary. The acceleration status is the decision maker within the WE module that determines if the tire is moving or stationary. This measurement is used within the WE module to enable different operating modes depending on the status of the acceleration value. Over the fully specified operating temperature range, if the acceleration measurement is greater than or equal to 20G, the WE module assumes the tire is moving. The basic operation of the L/L WE sensor is to transmit 3 frames every 3 minutes in both stationary and rolling modes. This DTC indicates that \"H/Line WE sensor\" was installed to a L/Line system incorrectly. DTC Detecting Condition Verification of Vehicle Repair Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ON 'TPMS exciter'.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"TIRE SNSR CONFIG (EXCITER)\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Execute \"SET SENSOR STATUS\" of Front Right WE sensor.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the parameter of Front Right WE sensor on the 'TPMS exciter'. Specification :'SENSOR OPTION' is 'LOW'. Fig 1) Sensor status (normal) Fig 2) Executing \"SET SENSOR STATUS\"",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter within specifications? General Information Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1319",
+      "description": "Sensor 3 Wrong Type Installed [Wheel Electronic (WE) sensor unit]- TPMS sensor Each vehicle wheel is fitted with a Wheel Electronic (WE) sensor unit attached to the valve on the inside of the wheel. The WE unit is powered with a self-contained battery utilizing a high temperature rated CR (Manganese Dioxide Lithium) chemistry. The operating voltage range for the WE module is 2.2Vdc to 3.6Vdc, and the operating temperature range is -40°F to 257°F(-40°C ~125°C). The WE measures tire pressure, temperature, and acceleration periodically. The pressure, temperature, and acceleration information is converted to digital form within the MCU inside the WE sensor. The WE sensor is equipped with a Radio Frequency (RF) transmitter circuit which is used to periodically broadcast information from inside the tire. All WE sensor units operate on the same RF channel frequency, and each broadcast message includes pressure and temperature data, a unique ID code, operating state data, status information, and digital error-detection data. The pressure measured by the WE sensor is an absolute pressure value. The pressure measurement range is 100kPa to 450kPa. The acceleration data is used within the WE sensor to determine whether the vehicle is moving or stationary. The acceleration status is the decision maker within the WE module that determines if the tire is moving or stationary. This measurement is used within the WE module to enable different operating modes depending on the status of the acceleration value. Over the fully specified operating temperature range, if the acceleration measurement is greater than or equal to 20G, the WE module assumes the tire is moving. The basic function of the High Line(H/L) WE Sensor is to transmit 4 frames every minute when awake. The H/L WE sensor enters a low power sleep state where it does not transmit RF messages if it does not receive an LF Code 3 or is not rolling for more than 10 minutes. This DTC indicates that \"L/Line WE sensor\" was installed to a H/Line system incorrectly. DTC Detecting Condition Verification of Vehicle Repair Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ON 'TPMS exciter'.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"TIRE SNSR CONFIG (EXCITER)\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Execute \"SET SENSOR STATUS\" of Rear Left WE sensor.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the parameter of Rear Left WE sensor on the 'TPMS exciter'. Specification :'SENSOR OPTION' is 'LOW'. Fig 1) Sensor status (normal) Fig 2) Executing \"SET SENSOR STATUS\"",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter within specifications? General Information Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1320",
+      "description": "Sensor 4 Wrong Type Installed [Wheel Electronic (WE) sensor unit]- TPMS sensor Each vehicle wheel is fitted with a Wheel Electronic (WE) sensor unit attached to the valve on the inside of the wheel. The WE unit is powered with a self-contained battery utilizing a high temperature rated CR (Manganese Dioxide Lithium) chemistry. The operating voltage range for the WE module is 2.2Vdc to 3.6Vdc, and the operating temperature range is -40°F to 257°F(-40°C ~125°C). The WE measures tire pressure, temperature, and acceleration periodically. The pressure, temperature, and acceleration information is converted to digital form within the MCU inside the WE sensor. The WE sensor is equipped with a Radio Frequency (RF) transmitter circuit which is used to periodically broadcast information from inside the tire. All WE sensor units operate on the same RF channel frequency, and each broadcast message includes pressure and temperature data, a unique ID code, operating state data, status information, and digital error-detection data. The pressure measured by the WE sensor is an absolute pressure value. The pressure measurement range is 100kPa to 450kPa. The acceleration data is used within the WE sensor to determine whether the vehicle is moving or stationary. The acceleration status is the decision maker within the WE module that determines if the tire is moving or stationary. This measurement is used within the WE module to enable different operating modes depending on the status of the acceleration value. Over the fully specified operating temperature range, if the acceleration measurement is greater than or equal to 20G, the WE module assumes the tire is moving. The basic operation of the L/L WE sensor is to transmit 3 frames every 3 minutes in both stationary and rolling modes. This DTC indicates that \"H/Line WE sensor\" was installed to a L/Line system incorrectly. DTC Detecting Condition Verification of Vehicle Repair Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ON 'TPMS exciter'.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"TIRE SNSR CONFIG (EXCITER)\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Execute \"SET SENSOR STATUS\" of Rear Right WE sensor.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the parameter of Rear Right WE sensor on the 'TPMS exciter'. Specification :'SENSOR OPTION' is 'LOW'. Fig 1) Sensor status (normal) Fig 2) Executing \"SET SENSOR STATUS\"",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter within specifications? General Information Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1322",
+      "description": "Sensor 1 Over Temperature [Wheel Electronic (WE) sensor unit]- TPMS sensor Each vehicle wheel is fitted with a Wheel Electronic (WE) sensor unit attached to the valve on the inside of the wheel. The WE unit is powered with a self-contained battery utilizing a high temperature rated CR (Manganese Dioxide Lithium) chemistry. The operating voltage range for the WE module is 2.2Vdc to 3.6Vdc, and the operating temperature range is -40°F to 257°F(-40°C ~125°C). The WE measures tire pressure, temperature, and acceleration periodically. The pressure, temperature, and acceleration information is converted to digital form within the MCU inside the WE sensor. The pressure measured by the WE sensor is an absolute pressure value. The pressure measurement range is 100kPa to 450kPa. The acceleration data is used within the WE sensor to determine whether the vehicle is moving or stationary. The acceleration status is the decision maker within the WE module that determines if the tire is moving or stationary. This measurement is used within the WE module to enable different operating modes depending on the status of the acceleration value. Over the fully specified operating temperature range, if the acceleration measurement is greater than or equal to 20G, the WE module assumes the tire is moving. The basic operation of the L/L WE sensor is to transmit 3 frames every 3 minutes in both stationary and rolling modes. This DTC indicates that the Front Left WE sensor has seen a temperature in excess of 248°F(120°C). This warning is to notify the driver that there is a problem that may affect sensor performance. DTC Detecting Condition Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect 'TPMS exciter' or scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"TPMS DIAGNOSIS\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"FULL\" mode of \"TPM DATA VALUES\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the parameter of \"S1 TEMP.\" on the 'TPMS exciter' or scantool. Specification :'S1 TEMP.' is Less than 248°F(120°C) Fig 1) Sensor current data (normal) Fig 2) Executing \"SET SENSOR STATUS\"",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter within specifications? Component Inspection Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1323",
+      "description": "Sensor 2 Over Temperature [Wheel Electronic (WE) sensor unit]- TPMS sensor Each vehicle wheel is fitted with a Wheel Electronic (WE) sensor unit attached to the valve on the inside of the wheel. The WE unit is powered with a self-contained battery utilizing a high temperature rated CR (Manganese Dioxide Lithium) chemistry. The operating voltage range for the WE module is 2.2Vdc to 3.6Vdc, and the operating temperature range is -40°F to 257°F(-40°C ~125°C). The WE measures tire pressure, temperature, and acceleration periodically. The pressure, temperature, and acceleration information is converted to digital form within the MCU inside the WE sensor. The WE sensor is equipped with a Radio Frequency (RF) transmitter circuit which is used to periodically broadcast information from inside the tire. All WE sensor units operate on the same RF channel frequency, and each broadcast message includes pressure and temperature data, a unique ID code, operating state data, status information, and digital error-detection data. The pressure measured by the WE sensor is an absolute pressure value. The pressure measurement range is 100kPa to 450kPa. The acceleration data is used within the WE sensor to determine whether the vehicle is moving or stationary. The acceleration status is the decision maker within the WE module that determines if the tire is moving or stationary. This measurement is used within the WE module to enable different operating modes depending on the status of the acceleration value. Over the fully specified operating temperature range, if the acceleration measurement is greater than or equal to 20G, the WE module assumes the tire is moving. The basic operation of the L/L WE sensor is to transmit 3 frames every 3 minutes in both stationary and rolling modes. This DTC indicates that the Front Right WE sensor has seen a temperature in excess of 248°F(120°C). This warning is to notify the driver that there is a problem that may affect sensor performance. DTC Detecting Condition Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect 'TPMS exciter' or scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"TPMS DIAGNOSIS\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"FULL\" mode of \"TPM DATA VALUES\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the parameter of \"S2 TEMP.\" on the 'TPMS exciter' or scantool. Specification :'S2 TEMP.' is Less than 248°F(120°C) Fig 1) Sensor current data (normal) Fig 2) Executing \"SET SENSOR STATUS\"",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter within specifications? Component Inspection Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1324",
+      "description": "Sensor 3 Over Temperature [Wheel Electronic (WE) sensor unit]- TPMS sensor Each vehicle wheel is fitted with a Wheel Electronic (WE) sensor unit attached to the valve on the inside of the wheel. The WE unit is powered with a self-contained battery utilizing a high temperature rated CR (Manganese Dioxide Lithium) chemistry. The operating voltage range for the WE module is 2.2Vdc to 3.6Vdc, and the operating temperature range is -40°F to 257°F(-40°C ~125°C). The WE measures tire pressure, temperature, and acceleration periodically. The pressure, temperature, and acceleration information is converted to digital form within the MCU inside the WE sensor. The WE sensor is equipped with a Radio Frequency (RF) transmitter circuit which is used to periodically broadcast information from inside the tire. All WE sensor units operate on the same RF channel frequency, and each broadcast message includes pressure and temperature data, a unique ID code, operating state data, status information, and digital error-detection data. The pressure measured by the WE sensor is an absolute pressure value. The pressure measurement range is 100kPa to 450kPa. The acceleration data is used within the WE sensor to determine whether the vehicle is moving or stationary. The acceleration status is the decision maker within the WE module that determines if the tire is moving or stationary. This measurement is used within the WE module to enable different operating modes depending on the status of the acceleration value. Over the fully specified operating temperature range, if the acceleration measurement is greater than or equal to 20G, the WE module assumes the tire is moving. The basic operation of the L/L WE sensor is to transmit 3 frames every 3 minutes in both stationary and rolling modes. This DTC indicates that the Rear Left WE sensor has seen a temperature in excess of 248°F(120°C). This warning is to notify the driver that there is a problem that may affect sensor performance. DTC Detecting Condition Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect 'TPMS exciter' or scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"TPMS DIAGNOSIS\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"FULL\" mode of \"TPM DATA VALUES\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the parameter of \"S3 TEMP.\" on the 'TPMS exciter' or scantool. Specification :'S3 TEMP.' is Less than 248°F(120°C) Fig 1) Sensor current data (normal) Fig 2) Executing \"SET SENSOR STATUS\"",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter within specifications? Component Inspection Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1325",
+      "description": "Sensor 4 Over Temperature [Wheel Electronic (WE) sensor unit]- TPMS sensor Each vehicle wheel is fitted with a Wheel Electronic (WE) sensor unit attached to the valve on the inside of the wheel. The WE unit is powered with a self-contained battery utilizing a high temperature rated CR (Manganese Dioxide Lithium) chemistry. The operating voltage range for the WE module is 2.2Vdc to 3.6Vdc, and the operating temperature range is -40°F to 257°F(-40°C ~125°C). The WE measures tire pressure, temperature, and acceleration periodically. The pressure, temperature, and acceleration information is converted to digital form within the MCU inside the WE sensor. The WE sensor is equipped with a Radio Frequency (RF) transmitter circuit which is used to periodically broadcast information from inside the tire. All WE sensor units operate on the same RF channel frequency, and each broadcast message includes pressure and temperature data, a unique ID code, operating state data, status information, and digital error-detection data. The pressure measured by the WE sensor is an absolute pressure value. The pressure measurement range is 100kPa to 450kPa. The acceleration data is used within the WE sensor to determine whether the vehicle is moving or stationary. The acceleration status is the decision maker within the WE module that determines if the tire is moving or stationary. This measurement is used within the WE module to enable different operating modes depending on the status of the acceleration value. Over the fully specified operating temperature range, if the acceleration measurement is greater than or equal to 20G, the WE module assumes the tire is moving. The basic operation of the L/L WE sensor is to transmit 3 frames every 3 minutes in both stationary and rolling modes. This DTC indicates that the Rear Right WE sensor has seen a temperature in excess of 248°F(120°C). This warning is to notify the driver that there is a problem that may affect sensor performance. DTC Detecting Condition Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect 'TPMS exciter' or scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"TPMS DIAGNOSIS\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"FULL\" mode of \"TPM DATA VALUES\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the parameter of \"S4 TEMP.\" on the 'TPMS exciter' or scantool. Specification :'S4 TEMP.' is Less than 248°F(120°C) Fig 1) Sensor current data (normal) Fig 2) Executing \"SET SENSOR STATUS\"",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter within specifications? Component Inspection Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1332",
+      "description": "Sensor 1 Fault [Wheel Electronic (WE) sensor unit]- TPMS sensor Each vehicle wheel is fitted with a Wheel Electronic (WE) sensor unit attached to the valve on the inside of the wheel. The WE unit is powered with a self-contained battery utilizing a high temperature rated CR (Manganese Dioxide Lithium) chemistry. The operating voltage range for the WE module is 2.2Vdc to 3.6Vdc, and the operating temperature range is -40°F to 257°F(-40°C ~125°C). The WE measures tire pressure, temperature, and acceleration periodically. The pressure, temperature, and acceleration information is converted to digital form within the MCU inside the WE sensor. The WE sensor is equipped with a Radio Frequency (RF) transmitter circuit which is used to periodically broadcast information from inside the tire. All WE sensor units operate on the same RF channel frequency, and each broadcast message includes pressure and temperature data, a unique ID code, operating state data, status information, and digital error-detection data. The pressure measured by the WE sensor is an absolute pressure value. The pressure measurement range is 100kPa to 450kPa. The acceleration data is used within the WE sensor to determine whether the vehicle is moving or stationary. The acceleration status is the decision maker within the WE module that determines if the tire is moving or stationary. This measurement is used within the WE module to enable different operating modes depending on the status of the acceleration value. Over the fully specified operating temperature range, if the acceleration measurement is greater than or equal to 20G, the WE module assumes the tire is moving. The basic operation of the L/L WE sensor is to transmit 3 frames every 3 minutes in both stationary and rolling modes. This DTC indicates that the Front Left sensor has detected that it has an internal fault (measurement diagnosis or hardware diagnosis status). The most likely cause is sensor failure. DTC Detecting Condition Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect 'TPMS exciter' or scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"TPMS DIAGNOSIS\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"FULL\" mode of \"TPM DATA VALUES\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the parameters of 'Front Left WE sensor(S1)' on the 'TPMS exciter' or scantool. Fig 1) Sensor current data (normal) Fig 2) Sensor current data (failure) Fig 3) Executing \"SET SENSOR STATUS\"",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Are parameter normal? Verification of Vehicle Repair Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1333",
+      "description": "Sensor 2 Fault [Wheel Electronic (WE) sensor unit]- TPMS sensor Each vehicle wheel is fitted with a Wheel Electronic (WE) sensor unit attached to the valve on the inside of the wheel. The WE unit is powered with a self-contained battery utilizing a high temperature rated CR (Manganese Dioxide Lithium) chemistry. The operating voltage range for the WE module is 2.2Vdc to 3.6Vdc, and the operating temperature range is -40°F to 257°F(-40°C ~125°C). The WE measures tire pressure, temperature, and acceleration periodically. The pressure, temperature, and acceleration information is converted to digital form within the MCU inside the WE sensor. The WE sensor is equipped with a Radio Frequency (RF) transmitter circuit which is used to periodically broadcast information from inside the tire. All WE sensor units operate on the same RF channel frequency, and each broadcast message includes pressure and temperature data, a unique ID code, operating state data, status information, and digital error-detection data. The pressure measured by the WE sensor is an absolute pressure value. The pressure measurement range is 100kPa to 450kPa. The acceleration data is used within the WE sensor to determine whether the vehicle is moving or stationary. The acceleration status is the decision maker within the WE module that determines if the tire is moving or stationary. This measurement is used within the WE module to enable different operating modes depending on the status of the acceleration value. Over the fully specified operating temperature range, if the acceleration measurement is greater than or equal to 20G, the WE module assumes the tire is moving. The basic operation of the L/L WE sensor is to transmit 3 frames every 3 minutes in both stationary and rolling modes. This DTC indicates that the Front Right sensor has detected that it has an internal fault (measurement diagnosis or hardware diagnosis status). The most likely cause is sensor failure. DTC Detecting Condition Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect 'TPMS exciter' or scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"TPMS DIAGNOSIS\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"FULL\" mode of \"TPM DATA VALUES\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the parameters of 'Front Right WE sensor(S2)' on the 'TPMS exciter' or scantool. Fig 1) Sensor current data (normal) Fig 2) Sensor current data (failure) Fig 3) Executing \"SET SENSOR STATUS\"",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Are parameter normal? Verification of Vehicle Repair Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1334",
+      "description": "Sensor 3 Fault [Wheel Electronic (WE) sensor unit]- TPMS sensor Each vehicle wheel is fitted with a Wheel Electronic (WE) sensor unit attached to the valve on the inside of the wheel. The WE unit is powered with a self-contained battery utilizing a high temperature rated CR (Manganese Dioxide Lithium) chemistry. The operating voltage range for the WE module is 2.2Vdc to 3.6Vdc, and the operating temperature range is -40°F to 257°F(-40°C ~125°C). The WE measures tire pressure, temperature, and acceleration periodically. The pressure, temperature, and acceleration information is converted to digital form within the MCU inside the WE sensor. The WE sensor is equipped with a Radio Frequency (RF) transmitter circuit which is used to periodically broadcast information from inside the tire. All WE sensor units operate on the same RF channel frequency, and each broadcast message includes pressure and temperature data, a unique ID code, operating state data, status information, and digital error-detection data. The pressure measured by the WE sensor is an absolute pressure value. The pressure measurement range is 100kPa to 450kPa. The acceleration data is used within the WE sensor to determine whether the vehicle is moving or stationary. The acceleration status is the decision maker within the WE module that determines if the tire is moving or stationary. This measurement is used within the WE module to enable different operating modes depending on the status of the acceleration value. Over the fully specified operating temperature range, if the acceleration measurement is greater than or equal to 20G, the WE module assumes the tire is moving. The basic operation of the L/L WE sensor is to transmit 3 frames every 3 minutes in both stationary and rolling modes. This DTC indicates that the Rear Left sensor has detected that it has an internal fault (measurement diagnosis or hardware diagnosis status). The most likely cause is sensor failure. DTC Detecting Condition Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect 'TPMS exciter' or scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"TPMS DIAGNOSIS\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"FULL\" mode of \"TPM DATA VALUES\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the parameters of 'Rear Left WE sensor(S3)' on the 'TPMS exciter' or scantool. Fig 1) Sensor current data (normal) Fig 2) Sensor current data (normal) Fig 3) Executing \"SET SENSOR STATUS\"",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Are parameter normal? Verification of Vehicle Repair Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1335",
+      "description": "Sensor 4 Fault [Wheel Electronic (WE) sensor unit]- TPMS sensor Each vehicle wheel is fitted with a Wheel Electronic (WE) sensor unit attached to the valve on the inside of the wheel. The WE unit is powered with a self-contained battery utilizing a high temperature rated CR (Manganese Dioxide Lithium) chemistry. The operating voltage range for the WE module is 2.2Vdc to 3.6Vdc, and the operating temperature range is -40°F to 257°F(-40°C ~125°C). The WE measures tire pressure, temperature, and acceleration periodically. The pressure, temperature, and acceleration information is converted to digital form within the MCU inside the WE sensor. The WE sensor is equipped with a Radio Frequency (RF) transmitter circuit which is used to periodically broadcast information from inside the tire. All WE sensor units operate on the same RF channel frequency, and each broadcast message includes pressure and temperature data, a unique ID code, operating state data, status information, and digital error-detection data. The pressure measured by the WE sensor is an absolute pressure value. The pressure measurement range is 100kPa to 450kPa. The acceleration data is used within the WE sensor to determine whether the vehicle is moving or stationary. The acceleration status is the decision maker within the WE module that determines if the tire is moving or stationary. This measurement is used within the WE module to enable different operating modes depending on the status of the acceleration value. Over the fully specified operating temperature range, if the acceleration measurement is greater than or equal to 20G, the WE module assumes the tire is moving. The basic operation of the L/L WE sensor is to transmit 3 frames every 3 minutes in both stationary and rolling modes. This DTC indicates that the Rear Right sensor has detected that it has an internal fault (measurement diagnosis or hardware diagnosis status). The most likely cause is sensor failure. DTC Detecting Condition Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect 'TPMS exciter' or scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"TPMS DIAGNOSIS\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"FULL\" mode of \"TPM DATA VALUES\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the parameters of 'Rear Right WE sensor(S4)' on the 'TPMS exciter' or scantool. Fig 1) Sensor current data (normal) FiG 2) Sensor current data (failure) FiG 3) Executing \"SET SENSOR STATUS\"",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Are parameter normal? Verification of Vehicle Repair Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1503",
+      "description": "TCS/ESC(ESP) Switch Error The ESC switch is used to temporarily deactivate ESC control. Trouble code is set when the condition that the level of ESC switch is high is continued for 60sec. When the ESC switch failure is set, Warning lamps won't illuminate and HECU allow the ABS/EBD/ESC control. DTC Detecting Condition Specification Diagnostic Circuit Diagram Monitor Scantool data ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Press the ESC(ESP) SWITCH.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"ESC(ESP) Off Switch\" parameter on the scantool. Fig 1) Test Condition : Ignition \"ON\" & Engine \"OFF\". Normal data",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Whenever the switch is pushed up/down, is the ESC off switch's scantool data changed ON/OFF? W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1513",
+      "description": "Brake Switch Error The brake light switch indicates brake pedal status to the ABS control unit. The switch is turned on when brake is depressed. The brake light switch is a normally-open contact which runs to battery voltage when active (brake depressed). The brake light signal is a reference to judge driver's intention for braking and The HECU checks open or short circuit of brake light switch for normal ABS/ESC control. If an error is present, the warning lamp will illuminate. DTC Detecting Condition Specification Diagnostic Circuit Diagram Monitor Scantool data ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Press the brake pedal.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"BRAKE LAMP SWITCH\" parameter on the scantool. Fig.1) Test Condition : Ignition \"ON\" & Engine \"OFF\". Normal data",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Whenever brake pedal is pushed down, is the brake switch's scantool data changed ON/OFF? W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1522",
+      "description": "Head lamp Switch Fault AHLS provides driver with the best visibility by adjusting vertical direction of the headlamp. It consists of ECM, Linkage and actuator. ECM detects the signal of headlamp switch which is operated by multi-function switch to diagnose the Headlamp light singal line. AHLS ECM sets DTC C1522 if AHLS ECM detects HEAD Lamp signal circuit is open. DTC Detecting Condition Diagnostic Circuit Diagram Auto Headlamp Leveling",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool with Diagnostic Connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Engine \"ON\" and Turn on the auto head light system.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check \"HEAD LAMP status\" parameter on Scantool. Specification :When Head Lamp is ON : \"ON\"",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the current data normal ? W/Harness Inspection Auto Headlamp Leveling",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is \"voltage\" display near the specified value? Verification of Vehicle Repair Auto Headlamp Leveling",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1604",
+      "description": "ECU Hardware Error The HECU consists of an ECU (Electronic Control Unit ) and a HCU( Hydraulic Control Unit). The HCU portion of the assembly contains a pump motor, solenoid valves, and accumulator. Increase and decrease of hydraulic pressure is opreated by electronic motor, according to a measured signal by wheel speed sensor. The function of HCU is to increase, decrease or maintain the hydralic pressure supplied to a wheel cylinder by operating return pump according to HECU control signal while ABS control is active. The ECU monitors various sensor and switch inputs. These inputs are used to make decisions regarding HCU component operation. The HECU monitors the operation of the IC components such as memory, register, A/D converter and so on. The ECU sets this code when the EEPROM data read by the master processor is different than prior data written, or when the master/slave processor detects abnormal operation in RAM, Status Register, Interrupt, Timer, A/D converter or cycle time. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminal condition. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Component Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a scantool, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes(DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1605",
+      "description": "CAN Hardware Error The HECU send requirement data, such as Torque reduction, the number of fuel cut cylinders, and ESP control requests, to the Engine PCM(ECM & TCM) through CAN bus line. The Engine PCM(ECM) performs fuel cut functions according to requests from the HECU and retards ignition timing by torque reduction requests. The PCM(TCM) maintains current gear positions during ESP control time, in order not to increase power which causes a Kickdown shift. The HECU checks the CAN control module for normal ESP control, and sets this code if CAN control module malfunction is detected. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminal condition. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Component Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a scantool, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes(DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1606",
+      "description": "ECU Software Error AHLS provides driver with the best visibility by adjusting vertical direction of the headlamp. It consists of AHLS ECU, Linkage and Headlamp actuator. AHLS ECU is composed of many IC components, such as A/D(AD converter), EEPROM, ROM, RAM and others.It also contains several different parameter-sets which defines the behavior in different car types and respect different mounting places. For efficient operation of system, The internal components of ECM ( A/D , EEPROM, ROM, RAM ) are checked internally during every start-up sequence. The ECM sets DTC C1606 if the parameter-sets are incompletely coded. DTC Detecting Condition Component Inspection Auto Headlamp Leveling",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Engine \"ON\" and Head lamp\"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Erase the DTC with scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is it possible to erase the DTC with Scantool ?",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1611",
+      "description": "CAN Time-out ECM The HECU send requirement data, such as Torque reduction, the number of fuel cut cylinders, and ESP control requests, to the Engine PCM(ECM & TCM) through CAN bus line. The Engine PCM(ECM) performs fuel cut functions according to requests from the HECU and retards ignition timing by torque reduction requests. The PCM(TCM) maintains current gear positions during ESP control time, in order not to increase power which causes a Kickdown shift. The HECU checks the CAN communcation lines for normal ESP control, and sets this code if a PCM(ECM) message is not received within predefined time. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminal condition. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Signal Circuit Inspection Open Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the measured resistance within specifications? Component Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes(DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1612",
+      "description": "CAN Time-out TCM The HECU send requirement data, such as Torque reduction, the number of fuel cut cylinders, and ESC control requests, to the Engine PCM(ECM & TCM) through CAN bus line. The Engine PCM(ECM) performs fuel cut functions according to requests from the HECU and retards ignition timing by torque reduction requests. The PCM(TCM) maintains current gear positions during ESC control time, in order not to increase power which causes a Kickdown shift. The HECU checks the CAN communcation lines for normal ESC control, and sets this code if an PCM(TCM) message is not received within predefined time. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminal condition. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Signal Circuit Inspection Open Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the measured resistance within specifications? Component Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes(DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1616",
+      "description": "CAN Bus Off The HECU send requirement data, such as Torque reduction, the number of fuel cut cylinders, and ESC control requests, to the Engine PCM(ECM & TCM) through CAN bus line. The Engine PCM(ECM) performs fuel cut functions according to requests from the HECU and retards ignition timing by torque reduction requests. The PCM(TCM) maintains current gear positions during ESC control time, in order not to increase power which causes a Kickdown shift. The HECU checks the CAN communication lines for normal ESC control, and sets this code if re-initialization is tried for 15 times in sequence without success. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminal condition. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? CAN Signal Circuit Inspection Short Check (to ground)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the measured value within specifications? CAN BUS Resistance Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes(DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1620",
+      "description": "First Setup Not Completed AHLS provides driver with the best visibility by adjusting vertical direction of the headlamp.To ensure an optimum operation of the system, The HLS ( Headlamp Levelling System) has to be adjusted at end-of line procedure.The mechanical basic setting of the headlamps is to be performed with ignition being switched ON. It is important to adjust the system electronically and mechanically at the same place. Only by this way it is quaranteed that the car is in the same suspension condition. The ECM sets DTC C1620 if the headlamp leveling system has not been adjusted since installation. DTC Detecting Condition Auto Headlamp Leveling",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool with Diagnostic Connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Perform vehicle selection and Level Initialization with scantool as follows. And then, check \"Actuator\" parameter on scantool (It must be unloaded vehicle condition) Specification :20%±2% Fig.1) Vehicle Selection and Level Initialization Fig.2) KEY ON",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Are \"Vehicle selection & Level Initalization\" and current data normal ?",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Are any DTCs present ? General Information Auto Headlamp Leveling",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1621",
+      "description": "EXCESSIVE OPERATING TEMP. AHLS provides driver with the best visibility by adjusting vertical direction of the headlamp. It consists of ECM, Linkage and actuator. The SIECM which is mounted in rear wheel suspention detects the change of vehicle vertical location and control actuator ( which changes the vertical direction of the headlamp) based on the driving and load condition.The EEPROM is equipped with a temperatutre sensor which is used to avoid damage related to overtemperature. The ECM sets DTC C1621 if measured temperature at temperature sensor in EEPROM is over 120 degree C for 2 seconds. DTC Detecting Condition Component Inspection Auto Headlamp Leveling",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool with Diagnostic Connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Engine 'ON\" and Turn On the auto head light system.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Erase the DTC with Scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is it possible to erase the DTC with Scantool ?",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1623",
+      "description": "CAN Time-out Steering Angle Sensor The Steering angle sensor(SAS) is installed below the clock spring and it sends messages to HECU through CAN communication line. The SAS is used to determine turning direction and speed of the steering wheel. The HECU uses the signals from the SAS when performing ESC-related calculations. The HECU checks the CAN communcation lines for normal ESC control, and sets this code if an SAS message is not received within predefined time. DTC Detecting Condition Diagnostic Circuit Diagram Monitor Scantool data ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the steering wheel to the left or right.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"STEERING ANGLE SNSR\" parameters on the Scantool. Fig 1) Test Condition : Ignition \"ON\" & Engine \"ON\". Normal Data",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Whenever steering wheel is turned, is the steering sensor's scantool data changed? W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1625",
+      "description": "CAN Time-out ABS/ESC(ESP) The HECU send requirement data, such as Torque reduction, the number of fuel cut cylinders, and ESC control requests, to the Engine PCM(ECM & TCM) through CAN bus line. The Engine PCM(ECM) performs fuel cut functions according to requests from the HECU and retards ignition timing by torque reduction requests. The PCM(TCM) maintains current gear positions during ESC control time, in order not to increase power which causes a Kickdown shift. The HECU checks the CAN communcation lines for normal ESC control, and sets this code if a CAN message is not transmitted within predefined time. DTC Detecting Condition W/Harness Inspection ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminal condition. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Component Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a scantool, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes(DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1626",
+      "description": "Implausible Control Under normal conditions, the inlet valves of all four wheels are not closed during control for longer than 1.28s or If the controller requests pressure-hold or pressure-decrease for longer than 1.28s, a fault is detected. The ABS/ESC warning lamp is turned ON and the EBD warning lamp is turned OFF. DTC Detecting Condition W/Harness Inspection ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminal condition. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Component Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a scantool, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes(DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1627",
+      "description": "CAN Time-out 4WD The HECU interchanges requirement data with the 4WD ECU through CAN bus line for normal ABS control. For example the HECU sends a control inhibition signal to 4WD ECU for normal ABS control in case of the ABS and 4WD control requested at the same time because wheel speed difference between front and rear wheel occurs. The HECU checks absence of the 4WD message from the 4WD ECU for normal ABS control, and sets this code if an 4WD ECU message is not received within predefined time. The HECU checks the presence and specific contents of the 4WD1 message from the 4WD ECU, and sets this code if there is an error in 4WD ECU message1. DTC Detecting Condition W/Harness Inspection ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminal condition. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Power Circuit Inspection Power Supply Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the measured value within specifications? Ground Circuit Inspection Open Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes(DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1643",
+      "description": "CAN Time-out Yaw Rate & Lateral G Sensor The yaw-rate sensor and later G sensor is installed on the lower floor. The yaw-rate sensor detects acceleration of the vehicle around its vertical axis, while the G sensor detects lateral acceleration of the vehicle. It sends messages to HECU through CAN communcition line. The HECU checks the CAN communcation lines for normal ESC control, and sets this code if an Yaw Rate & Lateral G Sensor message is not received within redefined time. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminal condition. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Power Supply Circuit Inspection Power Supply Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the measured value within specifications? Ground Circuit inspection Open Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes(DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1660",
+      "description": "Receiver Radio Frequency Circuit Failure TPMS Receiver is integrated with the TPMS module installed in the center console (behind the audio). The operating battery of TPMS module is supplied from the vehicle battery. The LOW-LINE TPMS Receiver unit's MCU and RF receiver circuits are active while the vehicle's ignition circuit is energized. It continuously monitors for RF broadcasts from nearby WE units. The TPMS Receiver unit has nonvolatile memory in which the ID codes of the WE units fitted to that particular vehicle are stored. When the TPMS Receiver unit receives an information broadcast, it checks to see if the ID code contained within that broadcast matches one of the ID codes stored within its nonvolatile memory. If this is the case, the TPMS Receiver applies the information contained within that broadcast to the TPMS This DTC indicates that the RF receiver circuit fails. The most likely cause is a transmission obstacle. DTC Detecting Condition Diagnostic Circuit Diagram Component Inspection Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect 'TPMS exciter' or scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "IG OFF & IG ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Execute \"Diagnostic Trouble Codes(DTCs)\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is 'C1660' present ? Verification of Vehicle Repair Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1661",
+      "description": "Receiver EEPROM Failure TPMS Receiver is integrated with the TPMS module installed in the center console (behind the audio). The operating battery of TPMS module is supplied from the vehicle battery. The LOW-LINE TPMS Receiver unit's MCU and RF receiver circuits are active while the vehicle's ignition circuit is energized. It continuously monitors for RF broadcasts from nearby WE units. The TPMS Receiver unit has nonvolatile memory in which the ID codes of the WE units fitted to that particular vehicle are stored. When the TPMS Receiver unit receives an information broadcast, it checks to see if the ID code contained within that broadcast matches one of the ID codes stored within its nonvolatile memory. If this is the case, the TPMS Receiver applies the information contained within that broadcast to the TPMS This DTC indicates that the receiver has a problem reading or writing to EEPROM. The most likely cause is TPMS Receiver failure. DTC Detecting Condition Diagnostic Circuit Diagram Component Inspection Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect 'TPMS exciter' or scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "IG OFF & IG ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Execute \"Diagnostic Trouble Codes(DTCs)\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is 'C1661' present ? Verification of Vehicle Repair Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1668",
+      "description": "Internal failure detection TPMS Receiver is integrated with the TPMS module installed in the center console (behind the audio). The operating battery of TPMS module is supplied from the vehicle battery. The LOW-LINE TPMS Receiver unit's MCU and RF receiver circuits are active while the vehicle's ignition circuit is energized. It continuously monitors for RF broadcasts from nearby WE units. The TPMS Receiver unit has nonvolatile memory in which the ID codes of the WE units fitted to that particular vehicle are stored. When the TPMS Receiver unit receives an information broadcast, it checks to see if the ID code contained within that broadcast matches one of the ID codes stored within its nonvolatile memory. If this is the case, the TPMS Receiver applies the information contained within that broadcast to the TPMS This DTC indicates that the receiver has detected an internal error. The most likely cause is TPMS Receiver failure. DTC Detecting Condition Diagnostic Circuit Diagram Component Inspection Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect 'TPMS exciter' or scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "IG OFF & IG ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Execute \"Diagnostic Trouble Codes(DTCs)\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is 'C1668' present ? Verification of Vehicle Repair Tire Pressure Monitoring System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1702",
+      "description": "Variant Coding Error There is no hardware difference of the HECU according to the vehicle's specification, just software is changed by the vehicle parameter used for ESC control. The HECU stores a classified variant code value according to the received data(a kind of engine, engine displacement, a kind of T/M). After then the HECU reads various parameters according to the stored variant value in the memory to use for the ESC control. The HECU checks the varient code after ignition. If a inappropriate varient code is detected or there is no varient code, a fault is detected. DTC Detecting Condition W/Harness Inspection ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminal condition. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Variant Coding",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Perform variant coding. (Figure 1).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Disconnect scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Ignition \"OFF\" and then ignition \"ON\". Go to \"Component Inspection\" Procedure. Component Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2112",
+      "description": "Valve Relay Error The HECU supplies battery power to all solonid valves with a valve relay which is controlled by the Electronic Control UNIT(ECU). The valve relay and all solenoid valves are installed inside the HECU (Hydraulic and Electronic Control Unit ). The HECU monitors voltage of the valve relay to check if the HECU can perform ABS control normally. When the valve relay is switched to ON, the HECU will set this code if the solenoid drive voltage is below permissible voltage ranges for a period of time. When the valve relay is switched to OFF, the HECU sets this code if the solenoid drive voltage is over the permissible voltage range for a period of time. DTC Detecting Condition Diagnostic Circuit Diagram Monitor Actuation Test ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"Actuation Test\" mode on the scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Inspect opearating status of all vlaves with Actuation Test. Specification :It's normal if operating sound is heard.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Do all valves operate normally? W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2226",
+      "description": "Output Voltage Short to Battery or Short to Ground AHLS provides driver with the best visibility by adjusting vertical direction of the headlamp. It consists of ECM, Linkage and actuator. ECM ouputs the singal based on the driving and loading condition and delivers it to actuator, and then the actuator changes vertical direction of the headlamp. AHLS ECM sets DTC C2226 If AHLS ECM detects Signal circuit of Actuator is short to ground or battery. DTC Detecting Condition Diagnostic Circuit Diagram Auto Headlamp Leveling",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool with Diagnostic Connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Engine \"ON\" and Turn on the auto head light system.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check \"Actuator\" parameter on the scantool(It must be checked while vehicle is unloaded condition) Specification :20%±2% Fig.1) KEY ON",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the \"actuator\" parameter normal ? W/Harness Inspection Auto Headlamp Leveling",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured resistance within specification? Verification of Vehicle Repair Auto Headlamp Leveling",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2308",
+      "description": "Front-LH Valve error (Inlet Valve) The HECU is composed of a ECU (Electronic Control Unit ) and an HCU(Hydraulic Control Unit), so the HECU hardware includes all solenoid valves inside the unit as well as the ECU. Solenoid valves are switched to ON, OFF by HECU when the ABS is activated. Solenoid valves function is to increase, decrease or maintain the hydralic pressure supplied to a wheel cylinder. The HECU monitors the operation of the valves by checking the drive circuit of the solenid valves, and then sets this code when the unexpcted drive voltage is detected. For example, the HECU sets the DTC if the electrical feedback signal does not match the actuation signal for the corresconding valve. DTC Detecting Condition Monitor Actuation Test ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"Actuation Test\" mode on the scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Inspect opearating status of Front left valve(in) with Actuation Test. Specification :It's normal if operating sound is heard. Fig.1) Test Condition : Ignition \"ON\" & Engine \"OFF\". Ex) Actuation Test on Front left valve(in)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Does a Front left valve(in) operate normally? W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2312",
+      "description": "Front-LH Valve error (Outlet Valve) The HECU is composed of a ECU (Electronic Control Unit ) and an HCU(Hydraulic Control Unit), so the HECU hardware includes all solenoid valves inside the unit as well as the ECU. Solenoid valves are switched to ON, OFF by HECU when the ABS is activated. Solenoid valves function is to increase, decrease or maintain the hydralic pressure supplied to a wheel cylinder. The HECU monitors the operation of the valves by checking the drive circuit of the solenid valves, and then sets this code when the unexpcted drive voltage is detected. For example, the HECU sets the DTC if the electrical feedback signal does not match the actuation signal for the corresconding valve. DTC Detecting Condition Monitor Actuation Test ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"Actuation Test\" mode on the scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Inspect opearating status of Front left valve(out) with Actuation Test. Specification :It's normal if operating sound is heard. Fig.1) Test Condition : Ignition \"ON\" & Engine \"OFF\". Ex) Actuation Test on Front left valve(out)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Does a Front left valve(out) operate normally? W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2316",
+      "description": "Front-RH Valve error (Inlet Valve) The HECU is composed of a ECU (Electronic Control Unit ) and an HCU(Hydraulic Control Unit), so the HECU hardware includes all solenoid valves inside the unit as well as the ECU. Solenoid valves are switched to ON, OFF by HECU when the ABS is activated. Solenoid valves function is to increase, decrease or maintain the hydralic pressure supplied to a wheel cylinder. The HECU monitors the operation of the valves by checking the drive circuit of the solenid valves, and then sets this code when the unexpcted drive voltage is detected. For example, the HECU sets the DTC if the electrical feedback signal does not match the actuation signal for the corresconding valve. DTC Detecting Condition Monitor Actuation Test ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"Actuation Test\" mode on the scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Inspect opearating status of Front right valve(in) with Actuation Test. Specification :It's normal if operating sound is heard. Fig.1) Test Condition : Ignition \"ON\" & Engine \"OFF\". Ex) Actuation Test on Front right valve(in)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Does a Front right valve(in) operate normally? W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2320",
+      "description": "Front-RH Valve error (Outlet Valve) The HECU is composed of a ECU (Electronic Control Unit ) and an HCU(Hydraulic Control Unit), so the HECU hardware includes all solenoid valves inside the unit as well as the ECU. Solenoid valves are switched to ON, OFF by HECU when the ABS is activated. Solenoid valves function is to increase, decrease or maintain the hydralic pressure supplied to a wheel cylinder. The HECU monitors the operation of the valves by checking the drive circuit of the solenid valves, and then sets this code when the unexpcted drive voltage is detected. For example, the HECU sets the DTC if the electrical feedback signal does not match the actuation signal for the corresconding valve. DTC Detecting Condition Monitor Actuation Test ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"Actuation Test\" mode on the scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Inspect opearating status of Front right valve(out)) with Actuation Test. Specification :It's normal if operating sound is heard. Fig.1) Test Condition : Ignition \"ON\" & Engine \"OFF\". Ex) Actuation Test on Front right valve(out)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Does a Front right valve(out) operate normally? W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2324",
+      "description": "Rear-LH Valve error (Inlet Valve) The HECU is composed of a ECU (Electronic Control Unit ) and an HCU(Hydraulic Control Unit), so the HECU hardware includes all solenoid valves inside the unit as well as the ECU. Solenoid valves are switched to ON, OFF by HECU when the ABS is activated. Solenoid valves function is to increase, decrease or maintain the hydralic pressure supplied to a wheel cylinder. The HECU monitors the operation of the valves by checking the drive circuit of the solenid valves, and then sets this code when the unexpcted drive voltage is detected. For example, the HECU sets the DTC if the electrical feedback signal does not match the actuation signal for the corresconding valve. DTC Detecting Condition Monitor Actuation Test ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"Actuation Test\" mode on the scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Inspect opearating status of Rear left valve(in) with Actuation Test. Specification :It's normal if operating sound is heard. Fig.1) Test Condition : Ignition \"ON\" & Engine \"OFF\". Ex) Actuation Test on Rear left valve(in)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Does a Rear left valve(in) operate normally? W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2328",
+      "description": "Rear-LH Valve error (Outlet Valve) The HECU is composed of a ECU (Electronic Control Unit ) and an HCU(Hydraulic Control Unit), so the HECU hardware includes all solenoid valves inside the unit as well as the ECU. Solenoid valves are switched to ON, OFF by HECU when the ABS is activated. Solenoid valves function is to increase, decrease or maintain the hydralic pressure supplied to a wheel cylinder. The HECU monitors the operation of the valves by checking the drive circuit of the solenid valves, and then sets this code when the unexpcted drive voltage is detected. For example, the HECU sets the DTC if the electrical feedback signal does not match the actuation signal for the corresconding valve. DTC Detecting Condition Monitor Actuation Test ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"Actuation Test\" mode on the scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Inspect opearating status of Rear left valve(out) with Actuation Test. Specification :It's normal if operating sound is heard. Fig.1) Test Condition : Ignition \"ON\" & Engine \"OFF\". Ex) Actuation Test on Rear left valve(out)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Does a Rear left valve(out) operate normally? W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2332",
+      "description": "Rear-RH Valve error (Inlet Valve) The HECU is composed of a ECU (Electronic Control Unit ) and an HCU(Hydraulic Control Unit), so the HECU hardware includes all solenoid valves inside the unit as well as the ECU. Solenoid valves are switched to ON, OFF by HECU when the ABS is activated. Solenoid valves function is to increase, decrease or maintain the hydralic pressure supplied to a wheel cylinder. The HECU monitors the operation of the valves by checking the drive circuit of the solenid valves, and then sets this code when the unexpcted drive voltage is detected. For example, the HECU sets the DTC if the electrical feedback signal does not match the actuation signal for the corresconding valve. DTC Detecting Condition Monitor Actuation Test ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"Actuation Test\" mode on the scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Inspect opearating status of Rear right valve(in) with Actuation Test. Specification :It's normal if operating sound is heard. Fig.1) Test Condition : Ignition \"ON\" & Engine \"OFF\". Ex) Actuation Test on Rear right valve(in)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Does a Rear right valve(in) operate normally? W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2336",
+      "description": "Rear-RH Valve error (Outlet Valve) The HECU is composed of a ECU (Electronic Control Unit ) and an HCU(Hydraulic Control Unit), so the HECU hardware includes all solenoid valves inside the unit as well as the ECU. Solenoid valves are switched to ON, OFF by HECU when the ABS is activated. Solenoid valves function is to increase, decrease or maintain the hydralic pressure supplied to a wheel cylinder. The HECU monitors the operation of the valves by checking the drive circuit of the solenid valves, and then sets this code when the unexpcted drive voltage is detected. For example, the HECU sets the DTC if the electrical feedback signal does not match the actuation signal for the corresconding valve. DTC Detecting Condition Monitor Actuation Test ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"Actuation Test\" mode on the scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Inspect opearating status of Rear right valve(out) with Actuation Test. Specification :It's normal if operating sound is heard. Fig.1) Test Condition : Ignition \"ON\" & Engine \"OFF\". Ex) Actuation Test on Rear right valve(out)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Does a Rear right valve(out) operate normally? W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2366",
+      "description": "TC Valve Primary (USV1) Error The HECU is composed of a ECU (Electronic Control Unit ) and an HCU(Hydraulic Control Unit), so the HECU hardware includes all solenoid valves inside the unit as well as the ECU. Solenoid valves are switched to ON, OFF by HECU when the ABS is activated. Solenoid valves function is to increase, decrease or maintain the hydralic pressure supplied to a wheel cylinder. The HECU monitors the operation of the valves by checking the drive circuit of the solenid valves, and then sets this code when the unexpcted drive voltage is detected. For example, the HECU sets the DTC if the electrical feedback signal does not match the actuation signal for the corresconding valve. DTC Detecting Condition Monitor Actuation Test ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"Actuation Test\" mode on the scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Inspect opearating status of TCS(USV) valve #1 with Actuation Test. Specification :It's normal if operating sound is heard. Fig.1) Test Condition : Ignition \"ON\" & Engine \"OFF\". Ex) Actuation Test on TCS(USV) valve #1",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Does a TCS(USV) valve #1 operate normally? W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2370",
+      "description": "TC Valve Secondary (USV2) Error The HECU is composed of a ECU (Electronic Control Unit ) and an HCU(Hydraulic Control Unit), so the HECU hardware includes all solenoid valves inside the unit as well as the ECU. Solenoid valves are switched to ON, OFF by HECU when the ABS is activated. Solenoid valves function is to increase, decrease or maintain the hydralic pressure supplied to a wheel cylinder. The HECU monitors the operation of the valves by checking the drive circuit of the solenid valves, and then sets this code when the unexpcted drive voltage is detected. For example, the HECU sets the DTC if the electrical feedback signal does not match the actuation signal for the corresconding valve. DTC Detecting Condition Monitor Actuation Test ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"Actuation Test\" mode on the scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Inspect opearating status of TCS(USV) valve #2 with Actuation Test. Specification :It's normal if operating sound is heard. Fig.1) Test Condition : Ignition \"ON\" & Engine \"OFF\". Ex) Actuation Test on TCS(USV) valve #2",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Does a TCS(USV) valve #2 operate normally? W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2372",
+      "description": "Electronic Shuttle Valve Primary (HSV1) Error The HECU is composed of a ECU (Electronic Control Unit ) and an HCU(Hydraulic Control Unit), so the HECU hardware includes all solenoid valves inside the unit as well as the ECU. Solenoid valves are switched to ON, OFF by HECU when the ABS is activated. Solenoid valves function is to increase, decrease or maintain the hydralic pressure supplied to a wheel cylinder. The HECU monitors the operation of the valves by checking the drive circuit of the solenid valves, and then sets this code when the unexpcted drive voltage is detected. For example, the HECU sets the DTC if the electrical feedback signal does not match the actuation signal for the corresconding valve. DTC Detecting Condition Monitor Actuation Test ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"Actuation Test\" mode on the scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Inspect opearating status of ESP(HSV) valve #1 with Actuation Test. Specification :It's normal if operating sound is heard. Fig.1) Test Condition : Ignition \"ON\" & Engine \"OFF\". Ex) Actuation Test on ESP(HSV) valve #1",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Does a ESP(HSV) valve #1 operate normally? W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2374",
+      "description": "Electronic Shuttle Valve Secondary (HSV2) Error The HECU is composed of a ECU (Electronic Control Unit ) and an HCU(Hydraulic Control Unit), so the HECU hardware includes all solenoid valves inside the unit as well as the ECU. Solenoid valves are switched to ON, OFF by HECU when the ABS is activated. Solenoid valves function is to increase, decrease or maintain the hydralic pressure supplied to a wheel cylinder. The HECU monitors the operation of the valves by checking the drive circuit of the solenid valves, and then sets this code when the unexpcted drive voltage is detected. For example, the HECU sets the DTC if the electrical feedback signal does not match the actuation signal for the corresconding valve. DTC Detecting Condition Monitor Actuation Test ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"Actuation Test\" mode on the scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Inspect opearating status of ESP(HSV) valve #2 with Actuation Test. Specification :It's normal if operating sound is heard. Fig.1) Test Condition : Ignition \"ON\" & Engine \"OFF\". Ex) Actuation Test on ESP(HSV) valve #2",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Does a ESP(HSV) valve #2 operate normally? W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2402",
+      "description": "Motor Electrical The ABS ECU supplies battery power to the electric motor by way of a motor relay which is controlled by the Electronic Control Unit(ECU). The electric motor pump supplies hydraulic pressure to all wheel brake calipers by operating the piston inside the pump. The ABS ECU monitors the pump motor relay or fuse open, open or short in motor or motor lock and then sets this code if a malfunction is detected. The ABS ECU monitors the pump motor continuously. (Self check by actuating the pump motor at 15km/h isn't performed). DTC Detecting Condition Diagnostic Circuit Diagram Monitor Actuation Test ABS/ESC",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"Actuation Test\" mode on the scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Inspect operating status of Motor with Actuation Test. Specification :It's normal if operating sound is heard. Fig.1) Test Condition : Ignition \"ON\" & Engine \"OFF\". Ex) Actuation Test on Motor",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Does motor operate normally? W/Harness Inspection ABS/ESC",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2510",
+      "description": "TREAD LAMP open/short circuit The TPMS display device is located on the instrument cluster to provide information about TPMS operating conditions and tire pressure. The TPMS display device is consist of TREAD indicator lamp and TPMS Warning indicator lamp. The TREAD indicator lamp is turned on when pressure of one or more tires are below the warning limit level. The TPMS Warning indicator lamp is turned on if there is the failure in the system. This DTC indicates that the TPMS lamp control circuit short to battery when lamp is on. TPMS lamp control circuit short to ground or open when lamp is off. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminal condition. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check all connectors (and connections) for looseness, bending, corrosion, contamination, deterioration, and/or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Control Circuit Inspection Chcek Short to battery",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure voltage between tread lamp control terminal of TPMS receiver harness connector and chassis ground. Specification :Approx. 0 V",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured voltage within specifications? Chcek Short to ground",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2511",
+      "description": "Diagnostic(TPMS) Lamp Short Circuit to 12V The TPMS display device is located on the instrument cluster to provide information about TPMS operating conditions and tire pressure. The TPMS display device is consist of TREAD indicator lamp and TPMS Warning indicator lamp. The TREAD indicator lamp is turned on when pressure of one or more tires are below the warning limit level. The TPMS Warning indicator lamp is turned on if there is the failure in the system. This DTC indicates that the TPMS lamp control circuit short to battery when lamp is on. -OR- TPMS lamp control circuit short to ground or open when lamp is off. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection Tire Pressure Monitoring System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminal condition. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check all connectors (and connections) for looseness, bending, corrosion, contamination, deterioration, and/or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Control Circuit Inspection Chcek Short to battery",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure voltage between TPMS check lamp control terminal of TPMS receiver harness connector and chassis ground. Specification :Approx. 0 V",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured voltage within specifications? Chcek Short to ground",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

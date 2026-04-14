@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "bundle_id": "252d0efe-c6a4-4de3-9e1e-6877e1084008",
+  "created_at": "2026-04-14T08:04:11.518000+00:00",
+  "trigger_session": "initial_training",
+  "models": {
+    "dtc_classifier": {
+      "filename": "dtc_classifier_int8.onnx",
+      "original_file": "dtc_classifier.onnx",
+      "size_mb": 0.003,
+      "sha256": "91f394fc716f19497db03d5876728bfa782cfb6f2bb5af936797c37e8f35f72e",
+      "input_names": [
+        "features"
+      ],
+      "output_names": [
+        "severity_logits",
+        "category_logits"
+      ],
+      "quantization": "float32_fallback",
+      "reduction_pct": 0.0,
+      "ort_validated": true
+    },
+    "sensor_anomaly": {
+      "filename": "sensor_anomaly_int8.onnx",
+      "original_file": "sensor_anomaly.onnx",
+      "size_mb": 0.469,
+      "sha256": "86b1000d7b5982c86aecb2ea2072024141c363a0d47a8b106167951c765802b2",
+      "input_names": [
+        "sensor_sequence"
+      ],
+      "output_names": [
+        "reconstructed_sequence"
+      ],
+      "quantization": "INT8_dynamic",
+      "reduction_pct": -3507.7,
+      "ort_validated": true
+    },
+    "health_scorer": {
+      "filename": "health_scorer_int8.onnx",
+      "original_file": "health_scorer.onnx",
+      "size_mb": 0.002,
+      "sha256": "b27d454ca163092584ff0e9d613321e9a9ff56a2e3d3065e0d7c428140339bc3",
+      "input_names": [
+        "health_features"
+      ],
+      "output_names": [
+        "health_score"
+      ],
+      "quantization": "float32_fallback",
+      "reduction_pct": 0.0,
+      "ort_validated": true
+    }
+  },
+  "training_metrics": {
+    "dtc_val_acc": 0.9840862422997947,
+    "sensor_auc": 0.9956166666666667,
+    "health_val_mae": 0.7322532928907155,
+    "health_val_r2": 0.990522310991969,
+    "drift_check_passed": true,
+    "total_bundle_mb": 0.474,
+    "training_records": 12984
+  },
+  "validation_requirements": {
+    "max_accuracy_drop_pct": 2.0,
+    "description": "New model bundle must not drop >2% accuracy on held-out validation set before replacing live model."
+  },
+  "deployment_notes": {
+    "platform": [
+      "Android API 21+",
+      "iOS 12+"
+    ],
+    "runtime": "ONNX Runtime Mobile",
+    "max_bundle_mb": 5.0,
+    "inference_ms": "<100ms on mid-range device",
+    "offline": true
+  }
+}

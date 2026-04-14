@@ -1,0 +1,2490 @@
+{
+  "dataset_name": "Pakistan Automotive DTC Reference Dataset",
+  "version": "1.0",
+  "description": "Comprehensive OBD-II Diagnostic Trouble Code (DTC) dataset targeting vehicles used in Pakistan. Covers generic SAE J2012 codes and manufacturer-specific codes for Toyota, Honda, Suzuki, Hyundai, Kia, Changan, Haval/GWM, MG, Daihatsu, and Nissan.",
+  "market_context": {
+    "top_brands_market_share": {
+      "Suzuki (Pak Suzuki)": "~48%",
+      "Toyota (Indus Motors)": "~23%",
+      "Honda (Honda Atlas)": "~12%",
+      "Haval (Sazgar Engineering)": "fastest growing",
+      "Hyundai (Nishat Motors)": "growing",
+      "Kia (Lucky Motors)": "growing",
+      "Changan (Master Motor)": "growing"
+    },
+    "pakistan_specific_fault_patterns": [
+      "Low-quality / low-octane petrol causing knock, injector, catalyst and O2 sensor damage",
+      "CNG kit conversions (extremely common) causing lean codes P0171, misfire P0300, and MAF sensor issues P0101",
+      "Dusty road conditions clogging MAF sensors (P0101 is #1 sensor fault in Pakistan)",
+      "Neglected engine oil changes causing VVT faults P0010/P0011, VTEC P1259, and bearing damage P1326",
+      "Extreme summer heat (45°C+) causing overheating, sensor failures, and ECM water ingress during monsoon",
+      "Rough roads (potholes) damaging wheel speed sensors C0010–C0040",
+      "Neglected ATF/CVT fluid causing transmission codes P0730, P0750, P0780",
+      "AGS (AMT) clutch issues P1652–P1655 very common in city traffic on Suzuki Alto/Cultus/WagonR",
+      "Old HV battery on imported Toyota Prius/Aqua (P0A80 very common)",
+      "Loose fuel cap EVAP codes P0455/P0457 very common",
+      "Immobilizer issues B2799 on imported JDM vehicles with ownership changes"
+    ],
+    "jdm_import_note": "A significant portion of Pakistan's used car market are JDM (Japanese Domestic Market) imports including Toyota Prius, Aqua, Vitz, Premio, Axio, Daihatsu Mira, Nissan Dayz – these often arrive with existing fault codes or age-related sensor failures. CVT fluid is often not changed on these imports."
+  },
+  "code_type_legend": {
+    "Generic": "SAE J2012 standard OBD-II code – applies to all OBD-II compliant vehicles",
+    "Toyota-Specific": "Toyota/Lexus manufacturer-specific (P1xxx/P3xxx/P0Axxx)",
+    "Honda-Specific": "Honda/Acura manufacturer-specific code",
+    "Suzuki-Specific": "Suzuki manufacturer-specific code",
+    "Hyundai-Specific": "Hyundai/Kia manufacturer-specific code",
+    "Haval-Specific": "Haval/GWM platform-specific note",
+    "Changan-Specific": "Changan manufacturer-specific code",
+    "Daihatsu-Specific": "Daihatsu manufacturer-specific code",
+    "Nissan-Specific": "Nissan manufacturer-specific code"
+  },
+  "total_dtc_codes": 175,
+  "total_vehicle_profiles": 38,
+  "system_summary": {
+    "Fuel & Air": 5,
+    "VVT/Camshaft": 8,
+    "O2 Sensor": 18,
+    "Fuel Pressure": 3,
+    "MAF Sensor": 4,
+    "MAP Sensor": 3,
+    "Temperature Sensors": 7,
+    "Cooling System": 1,
+    "Throttle/Pedal": 3,
+    "Fuel Trim": 4,
+    "Fuel Injectors": 15,
+    "Ignition/Misfire": 7,
+    "CKP Sensor": 3,
+    "Knock Sensor": 4,
+    "CMP Sensor": 4,
+    "Ignition Coils": 4,
+    "EGR": 3,
+    "Catalytic Converter": 2,
+    "EVAP": 7,
+    "Cooling Fan": 1,
+    "Idle Control": 2,
+    "ECM Power": 3,
+    "ECM": 7,
+    "Throttle": 1,
+    "Sensor Voltage": 4,
+    "Transmission": 17,
+    "Turbocharger": 5,
+    "ABS/Brakes": 8,
+    "Immobilizer": 2,
+    "CAN Bus": 10,
+    "Hybrid": 4,
+    "VTEC": 2,
+    "Engine": 1,
+    "Idle": 1,
+    "CVT": 1,
+    "Cooling": 1
+  },
+  "vehicles": [
+    {
+      "make": "Suzuki",
+      "model": "Alto",
+      "variant": "660cc VVT K10C",
+      "years": "2019–present",
+      "engine": "K10C 0.66L 3-cyl VVT",
+      "transmission": "5MT / AGS (AMT)",
+      "segment": "Budget hatchback",
+      "sales_rank_pakistan": 1
+    },
+    {
+      "make": "Suzuki",
+      "model": "Ravi",
+      "variant": "0.8 Pickup",
+      "years": "2000–present",
+      "engine": "F8B 0.8L 3-cyl",
+      "transmission": "4MT",
+      "segment": "Commercial mini pickup",
+      "sales_rank_pakistan": 2
+    },
+    {
+      "make": "Suzuki",
+      "model": "Bolan (Carry)",
+      "variant": "0.8",
+      "years": "1986–present",
+      "engine": "F8B 0.8L 3-cyl",
+      "transmission": "4MT",
+      "segment": "Commercial van",
+      "sales_rank_pakistan": 5
+    },
+    {
+      "make": "Suzuki",
+      "model": "Cultus",
+      "variant": "1.0 VXR/VXL",
+      "years": "2017–present",
+      "engine": "K10B 1.0L 3-cyl",
+      "transmission": "5MT / AGS",
+      "segment": "Premium hatchback",
+      "sales_rank_pakistan": 6
+    },
+    {
+      "make": "Suzuki",
+      "model": "Swift",
+      "variant": "1.3 GL/GX",
+      "years": "2010–present",
+      "engine": "M13A 1.3L 4-cyl",
+      "transmission": "5MT / 4AT",
+      "segment": "Sport hatchback",
+      "sales_rank_pakistan": 7
+    },
+    {
+      "make": "Suzuki",
+      "model": "WagonR",
+      "variant": "1.0 VXR/VXL",
+      "years": "2014–present",
+      "engine": "K10B 1.0L 3-cyl",
+      "transmission": "5MT / AGS",
+      "segment": "Tall hatchback",
+      "sales_rank_pakistan": 8
+    },
+    {
+      "make": "Suzuki",
+      "model": "Mehran",
+      "variant": "800cc",
+      "years": "1988–2019",
+      "engine": "F8B 0.8L 3-cyl",
+      "transmission": "4MT",
+      "segment": "Budget hatchback (large used car market)",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "Suzuki",
+      "model": "Jimny",
+      "variant": "1.5 JLX",
+      "years": "2019–present",
+      "engine": "K15B 1.5L 4-cyl",
+      "transmission": "5MT / 4AT",
+      "segment": "Compact SUV",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Corolla",
+      "variant": "1.6 XLI/GLI / 1.8 Altis",
+      "years": "2009–present",
+      "engine": "1ZR-FE 1.6L / 2ZR-FE 1.8L",
+      "transmission": "5MT / 4AT / CVT",
+      "segment": "Mid-size sedan",
+      "sales_rank_pakistan": 2
+    },
+    {
+      "make": "Toyota",
+      "model": "Yaris",
+      "variant": "1.3 / 1.5 ATIV",
+      "years": "2020–present",
+      "engine": "1NR-FE 1.3L / 2NR-FE 1.5L",
+      "transmission": "5MT / 4AT",
+      "segment": "Sub-compact sedan",
+      "sales_rank_pakistan": 4
+    },
+    {
+      "make": "Toyota",
+      "model": "Fortuner",
+      "variant": "2.7 Petrol / 2.8 Diesel",
+      "years": "2016–present",
+      "engine": "2TR-FE 2.7L / 1GD-FTV 2.8L",
+      "transmission": "6AT",
+      "segment": "SUV",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Hilux Revo",
+      "variant": "2.8 Diesel",
+      "years": "2016–present",
+      "engine": "1GD-FTV 2.8L turbo diesel",
+      "transmission": "6MT / 6AT",
+      "segment": "Pickup truck",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Vitz",
+      "variant": "1.0/1.3 (JDM import)",
+      "years": "2005–2019",
+      "engine": "1KR-FE 1.0L / 1NR-FE 1.3L",
+      "transmission": "CVT",
+      "segment": "JDM import hatchback",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Prius",
+      "variant": "1.8 Hybrid (JDM import)",
+      "years": "2009–2022",
+      "engine": "2ZR-FXE 1.8L Hybrid",
+      "transmission": "ECVT",
+      "segment": "JDM import hybrid",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Aqua / Prius C",
+      "variant": "1.5 Hybrid (JDM import)",
+      "years": "2012–2021",
+      "engine": "1NZ-FXE 1.5L Hybrid",
+      "transmission": "CVT",
+      "segment": "JDM import compact hybrid",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Premio / Allion",
+      "variant": "1.5/1.8 (JDM import)",
+      "years": "2007–2021",
+      "engine": "1NZ-FE 1.5L / 2ZR-FE 1.8L",
+      "transmission": "CVT",
+      "segment": "JDM import sedan",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Corolla Axio",
+      "variant": "1.3/1.5 (JDM import)",
+      "years": "2006–2019",
+      "engine": "1NZ-FE 1.5L",
+      "transmission": "CVT",
+      "segment": "JDM import compact sedan",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "Honda",
+      "model": "City",
+      "variant": "1.2 / 1.5",
+      "years": "2009–present",
+      "engine": "L12B 1.2L / L15A 1.5L",
+      "transmission": "5MT / CVT",
+      "segment": "Sub-compact sedan",
+      "sales_rank_pakistan": 3
+    },
+    {
+      "make": "Honda",
+      "model": "Civic",
+      "variant": "1.5 Turbo / 1.8",
+      "years": "2012–present",
+      "engine": "L15B2 1.5T / R18A 1.8L",
+      "transmission": "CVT / 6MT",
+      "segment": "Compact sedan",
+      "sales_rank_pakistan": 3
+    },
+    {
+      "make": "Honda",
+      "model": "BR-V",
+      "variant": "1.5 S/E/V",
+      "years": "2017–present",
+      "engine": "L15A 1.5L",
+      "transmission": "6MT / CVT",
+      "segment": "Compact crossover/MPV",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "Hyundai",
+      "model": "Tucson",
+      "variant": "2.0 AWD/FWD",
+      "years": "2018–present",
+      "engine": "Nu 2.0L MPI",
+      "transmission": "6AT",
+      "segment": "Mid-size SUV",
+      "sales_rank_pakistan": 6
+    },
+    {
+      "make": "Hyundai",
+      "model": "Elantra",
+      "variant": "1.6 GL/GLS",
+      "years": "2021–present",
+      "engine": "Gamma 1.6L",
+      "transmission": "6AT",
+      "segment": "Compact sedan",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "Hyundai",
+      "model": "Sonata",
+      "variant": "2.0/2.4 (import)",
+      "years": "2010–2020",
+      "engine": "Theta II 2.0L",
+      "transmission": "6AT",
+      "segment": "Import full-size sedan",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "Kia",
+      "model": "Sportage",
+      "variant": "2.0 AWD/FWD",
+      "years": "2019–present",
+      "engine": "Nu 2.0L MPI",
+      "transmission": "6AT",
+      "segment": "Compact SUV",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "Kia",
+      "model": "Stonic",
+      "variant": "1.4 T-GDi",
+      "years": "2022–present",
+      "engine": "Kappa 1.4T",
+      "transmission": "7DCT",
+      "segment": "Sub-compact SUV",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "Kia",
+      "model": "Picanto",
+      "variant": "1.0",
+      "years": "2021–present",
+      "engine": "Kappa 1.0L",
+      "transmission": "5MT / 4AT",
+      "segment": "City car",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "Changan",
+      "model": "Alsvin",
+      "variant": "1.5 MT/AT",
+      "years": "2020–present",
+      "engine": "JL473Q2 1.5L",
+      "transmission": "5MT / CVT",
+      "segment": "Budget sedan",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "Changan",
+      "model": "Oshan X7",
+      "variant": "1.5T AWD",
+      "years": "2021–present",
+      "engine": "SQR481F 1.5T",
+      "transmission": "CVT",
+      "segment": "Mid-size SUV",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "Haval",
+      "model": "H6",
+      "variant": "1.5T AWD/FWD",
+      "years": "2021–present",
+      "engine": "GW4B15A 1.5T",
+      "transmission": "7DCT",
+      "segment": "Mid-size SUV – fastest growing in Pakistan",
+      "sales_rank_pakistan": 3
+    },
+    {
+      "make": "Haval",
+      "model": "Jolion",
+      "variant": "1.5T",
+      "years": "2022–present",
+      "engine": "GW4B15A 1.5T",
+      "transmission": "7DCT",
+      "segment": "Compact SUV",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "MG",
+      "model": "HS",
+      "variant": "1.5T AWD",
+      "years": "2021–present",
+      "engine": "15S4G 1.5T",
+      "transmission": "DCT",
+      "segment": "Compact SUV",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "MG",
+      "model": "ZS",
+      "variant": "1.5 MT/AT",
+      "years": "2021–present",
+      "engine": "15S4U 1.5L",
+      "transmission": "5MT / CVT",
+      "segment": "Sub-compact SUV",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "Daihatsu",
+      "model": "Mira",
+      "variant": "0.66 L/X/G (JDM import)",
+      "years": "2013–present",
+      "engine": "KF-VE 0.66L",
+      "transmission": "CVT",
+      "segment": "JDM kei car import",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "Daihatsu",
+      "model": "Move",
+      "variant": "0.66 (JDM import)",
+      "years": "2010–2020",
+      "engine": "KF-VE 0.66L",
+      "transmission": "CVT",
+      "segment": "JDM kei tall hatch import",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "Daihatsu",
+      "model": "Cuore",
+      "variant": "0.85 CX",
+      "years": "2000–2012",
+      "engine": "EF-EL 0.85L",
+      "transmission": "5MT",
+      "segment": "Old budget city car (used market)",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "Nissan",
+      "model": "Sunny",
+      "variant": "1.5 (JDM import)",
+      "years": "2011–2019",
+      "engine": "HR15DE 1.5L",
+      "transmission": "CVT",
+      "segment": "JDM import compact sedan",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "Nissan",
+      "model": "Dayz",
+      "variant": "0.66 (JDM import)",
+      "years": "2013–2019",
+      "engine": "3B20 0.66L",
+      "transmission": "CVT",
+      "segment": "JDM kei car import",
+      "sales_rank_pakistan": null
+    },
+    {
+      "make": "Nissan",
+      "model": "Navara",
+      "variant": "2.5 Diesel (import)",
+      "years": "2005–2020",
+      "engine": "YD25DDTi 2.5L diesel",
+      "transmission": "6MT",
+      "segment": "Pickup truck import",
+      "sales_rank_pakistan": null
+    }
+  ],
+  "dtc_codes": [
+    {
+      "code": "P0001",
+      "type": "Generic",
+      "system": "Fuel & Air",
+      "description": "Fuel Volume Regulator Control Circuit Open",
+      "diagnostic_procedure": [
+        "Check fuel volume regulator wiring for open circuit.",
+        "Inspect ECM fuel regulator output pin.",
+        "Check regulator solenoid resistance (2–5 Ω)."
+      ],
+      "pak_vehicles": "Toyota Fortuner 2.8D, Hilux Revo 2.8D, Nissan Navara 2.5D"
+    },
+    {
+      "code": "P0002",
+      "type": "Generic",
+      "system": "Fuel & Air",
+      "description": "Fuel Volume Regulator Control Circuit Range/Performance",
+      "diagnostic_procedure": [
+        "Check fuel pressure with scan tool.",
+        "Inspect high-pressure pump metering valve.",
+        "Check for fuel contamination."
+      ],
+      "pak_vehicles": "Toyota Fortuner 2.8D, Hilux Revo 2.8D"
+    },
+    {
+      "code": "P0003",
+      "type": "Generic",
+      "system": "Fuel & Air",
+      "description": "Fuel Volume Regulator Control Circuit Low",
+      "diagnostic_procedure": [
+        "Check regulator circuit for short to ground.",
+        "Inspect wiring harness for chafing near exhaust."
+      ],
+      "pak_vehicles": "Diesel vehicles"
+    },
+    {
+      "code": "P0004",
+      "type": "Generic",
+      "system": "Fuel & Air",
+      "description": "Fuel Volume Regulator Control Circuit High",
+      "diagnostic_procedure": [
+        "Check regulator circuit for short to battery or open.",
+        "Test ECM driver output."
+      ],
+      "pak_vehicles": "Diesel vehicles"
+    },
+    {
+      "code": "P0010",
+      "type": "Generic",
+      "system": "VVT/Camshaft",
+      "description": "Intake (A) Camshaft Position Actuator Circuit / Open Bank 1",
+      "diagnostic_procedure": [
+        "Check VVT solenoid wiring and connector.",
+        "Measure solenoid resistance (6.9–7.9 Ω typical).",
+        "Check oil level and quality – low oil is major VVT fault cause in Pakistan.",
+        "Perform VVT solenoid activation test with scan tool.",
+        "Inspect oil galleries for sludge blocking VVT flow."
+      ],
+      "pak_vehicles": "Toyota Corolla 1.6/1.8, Yaris, Vitz, Prius, Honda City 1.5, Civic 1.5T, Hyundai Tucson, Kia Sportage"
+    },
+    {
+      "code": "P0011",
+      "type": "Generic",
+      "system": "VVT/Camshaft",
+      "description": "Intake (A) Camshaft Position Timing Over-Advanced Bank 1",
+      "diagnostic_procedure": [
+        "Change engine oil if overdue – #1 cause in Pakistan.",
+        "Check VVT solenoid (OCV) for sticking or contamination.",
+        "Inspect timing chain stretch or worn tensioner.",
+        "Check camshaft position sensor signal.",
+        "Perform VVT actuator test."
+      ],
+      "pak_vehicles": "Toyota Corolla, Yaris, Vitz, Honda City, Civic, Hyundai Tucson, Kia Sportage"
+    },
+    {
+      "code": "P0012",
+      "type": "Generic",
+      "system": "VVT/Camshaft",
+      "description": "Intake (A) Camshaft Position Timing Over-Retarded Bank 1",
+      "diagnostic_procedure": [
+        "Check VVT solenoid and oil condition.",
+        "Inspect timing chain for excessive wear."
+      ],
+      "pak_vehicles": "Toyota Corolla, Honda City/Civic, Hyundai Tucson/Elantra"
+    },
+    {
+      "code": "P0013",
+      "type": "Generic",
+      "system": "VVT/Camshaft",
+      "description": "Exhaust (B) Camshaft Position Actuator Circuit / Open Bank 1",
+      "diagnostic_procedure": [
+        "Check exhaust VVT solenoid wiring and resistance.",
+        "Inspect ECM exhaust cam control circuit."
+      ],
+      "pak_vehicles": "Honda Civic 1.5T, Toyota Corolla 1.8 Dual VVT-i"
+    },
+    {
+      "code": "P0014",
+      "type": "Generic",
+      "system": "VVT/Camshaft",
+      "description": "Exhaust (B) Camshaft Position Timing Over-Advanced Bank 1",
+      "diagnostic_procedure": [
+        "Check exhaust VVT solenoid for sticking.",
+        "Check oil condition and level.",
+        "Inspect timing chain system."
+      ],
+      "pak_vehicles": "Honda Civic 1.5T, Toyota Corolla Altis, Hyundai Tucson, Kia Sportage"
+    },
+    {
+      "code": "P0015",
+      "type": "Generic",
+      "system": "VVT/Camshaft",
+      "description": "Exhaust (B) Camshaft Position Timing Over-Retarded Bank 1",
+      "diagnostic_procedure": [
+        "Check exhaust cam VVT solenoid.",
+        "Check oil pressure and quality."
+      ],
+      "pak_vehicles": "Honda Civic 1.5T, Toyota Corolla Altis 1.8"
+    },
+    {
+      "code": "P0016",
+      "type": "Generic",
+      "system": "VVT/Camshaft",
+      "description": "Crankshaft Position – Camshaft Position Correlation Bank 1 Sensor A",
+      "diagnostic_procedure": [
+        "Inspect timing chain for stretch.",
+        "Check crankshaft (CKP) and camshaft (CMP) sensor signals.",
+        "Verify timing chain tensioner operation.",
+        "Check if timing chain has been correctly set after service.",
+        "On Haval H6/Jolion: known timing chain wear issue – inspect tensioner."
+      ],
+      "pak_vehicles": "All multi-cylinder petrol engines including Haval H6/Jolion 1.5T"
+    },
+    {
+      "code": "P0017",
+      "type": "Generic",
+      "system": "VVT/Camshaft",
+      "description": "Crankshaft Position – Camshaft Position Correlation Bank 1 Sensor B",
+      "diagnostic_procedure": [
+        "Check exhaust camshaft position vs. crankshaft.",
+        "Inspect timing chain system for stretch.",
+        "Check exhaust CMP sensor wiring."
+      ],
+      "pak_vehicles": "Toyota Corolla 1.8 Altis, Honda Civic 1.5T"
+    },
+    {
+      "code": "P0030",
+      "type": "Generic",
+      "system": "O2 Sensor",
+      "description": "HO2S Heater Control Circuit Bank 1 Sensor 1 (Upstream)",
+      "diagnostic_procedure": [
+        "Check upstream O2 sensor heater fuse.",
+        "Measure heater resistance (2–30 Ω when warm).",
+        "Check ECM heater PWM output.",
+        "Common in older high-mileage Pakistan cars – replace O2 sensor."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0031",
+      "type": "Generic",
+      "system": "O2 Sensor",
+      "description": "HO2S Heater Control Circuit Low Bank 1 Sensor 1",
+      "diagnostic_procedure": [
+        "Check O2 sensor heater circuit for short to ground.",
+        "Check heater relay if equipped."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0032",
+      "type": "Generic",
+      "system": "O2 Sensor",
+      "description": "HO2S Heater Control Circuit High Bank 1 Sensor 1",
+      "diagnostic_procedure": [
+        "Check O2 sensor heater circuit for short to battery.",
+        "Test ECM heater driver."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0036",
+      "type": "Generic",
+      "system": "O2 Sensor",
+      "description": "HO2S Heater Control Circuit Bank 1 Sensor 2 (Downstream)",
+      "diagnostic_procedure": [
+        "Check downstream O2 sensor heater circuit.",
+        "Measure heater resistance.",
+        "Check fuse for downstream heater circuit."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0037",
+      "type": "Generic",
+      "system": "O2 Sensor",
+      "description": "HO2S Heater Control Circuit Low Bank 1 Sensor 2",
+      "diagnostic_procedure": [
+        "Check downstream sensor heater for short to ground."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0038",
+      "type": "Generic",
+      "system": "O2 Sensor",
+      "description": "HO2S Heater Control Circuit High Bank 1 Sensor 2",
+      "diagnostic_procedure": [
+        "Check downstream sensor heater for short to battery."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0068",
+      "type": "Generic",
+      "system": "Fuel & Air",
+      "description": "MAP/MAF – Throttle Position Correlation",
+      "diagnostic_procedure": [
+        "Check MAP sensor vacuum line for leaks.",
+        "Inspect MAF sensor for contamination (common in dusty Pakistan roads).",
+        "Clean MAF sensor with approved cleaner spray.",
+        "Check throttle body for carbon deposits."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0087",
+      "type": "Generic",
+      "system": "Fuel Pressure",
+      "description": "Fuel Rail/System Pressure Too Low",
+      "diagnostic_procedure": [
+        "Check fuel pump delivery pressure (min 3 bar GDI, 0.3 bar MPI).",
+        "Inspect fuel filter – may be clogged with low-quality Pakistan petrol.",
+        "Check fuel pump current draw.",
+        "Inspect HPFP and cam follower wear (GDI engines).",
+        "Check fuel injector leakdown.",
+        "Note: CNG kit conversions can starve fuel system – check CNG regulator."
+      ],
+      "pak_vehicles": "All fuel-injected vehicles – common with CNG kits in Pakistan"
+    },
+    {
+      "code": "P0088",
+      "type": "Generic",
+      "system": "Fuel Pressure",
+      "description": "Fuel Rail/System Pressure Too High",
+      "diagnostic_procedure": [
+        "Check fuel pressure relief valve.",
+        "Inspect HPFP solenoid valve.",
+        "Check fuel pressure sensor accuracy."
+      ],
+      "pak_vehicles": "Toyota Corolla GDI, Honda Civic 1.5T, Haval H6 1.5T"
+    },
+    {
+      "code": "P0089",
+      "type": "Generic",
+      "system": "Fuel Pressure",
+      "description": "Fuel Pressure Regulator 1 Performance",
+      "diagnostic_procedure": [
+        "Check fuel pressure sensor and HPFP metering valve.",
+        "Inspect low-pressure fuel pump supply."
+      ],
+      "pak_vehicles": "GDI/TGDI engines: Honda Civic 1.5T, Haval H6 1.5T, Kia Stonic 1.4T"
+    },
+    {
+      "code": "P0100",
+      "type": "Generic",
+      "system": "MAF Sensor",
+      "description": "Mass Air Flow Sensor Circuit Malfunction",
+      "diagnostic_procedure": [
+        "Clean MAF sensor (very common fix in Pakistan due to dust).",
+        "Inspect air filter for excessive clogging.",
+        "Check MAF sensor wiring and connector.",
+        "Verify intake system for cracks or leaks."
+      ],
+      "pak_vehicles": "All petrol vehicles – extremely common in Pakistan"
+    },
+    {
+      "code": "P0101",
+      "type": "Generic",
+      "system": "MAF Sensor",
+      "description": "Mass Air Flow Sensor Circuit Range/Performance",
+      "diagnostic_procedure": [
+        "Clean MAF sensor hot wire element.",
+        "Check for air leaks between MAF and throttle body.",
+        "Inspect air filter – replace if heavily soiled.",
+        "On CNG-converted vehicles: check CNG mixer effect on MAF signal."
+      ],
+      "pak_vehicles": "All petrol vehicles – #1 sensor fault in Pakistan"
+    },
+    {
+      "code": "P0102",
+      "type": "Generic",
+      "system": "MAF Sensor",
+      "description": "Mass Air Flow Sensor Circuit Low Input",
+      "diagnostic_procedure": [
+        "Check MAF circuit for short to ground or open.",
+        "Inspect sensor connector for moisture (common in monsoon season).",
+        "Measure 5V reference at MAF."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0103",
+      "type": "Generic",
+      "system": "MAF Sensor",
+      "description": "Mass Air Flow Sensor Circuit High Input",
+      "diagnostic_procedure": [
+        "Check MAF circuit for short to voltage.",
+        "Test sensor output signal with multimeter."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0106",
+      "type": "Generic",
+      "system": "MAP Sensor",
+      "description": "Manifold Absolute Pressure Sensor Range/Performance",
+      "diagnostic_procedure": [
+        "Check MAP sensor vacuum hose for cracks or blockage.",
+        "Measure sensor output at idle vs. WOT.",
+        "Inspect for intake manifold leaks."
+      ],
+      "pak_vehicles": "All vehicles with MAP sensor"
+    },
+    {
+      "code": "P0107",
+      "type": "Generic",
+      "system": "MAP Sensor",
+      "description": "Manifold Absolute Pressure Sensor Circuit Low Input",
+      "diagnostic_procedure": [
+        "Check MAP sensor circuit for short to ground.",
+        "Measure 5V supply at sensor."
+      ],
+      "pak_vehicles": "All vehicles with MAP sensor"
+    },
+    {
+      "code": "P0108",
+      "type": "Generic",
+      "system": "MAP Sensor",
+      "description": "Manifold Absolute Pressure Sensor Circuit High Input",
+      "diagnostic_procedure": [
+        "Check MAP sensor circuit for short to battery.",
+        "Inspect sensor for internal failure."
+      ],
+      "pak_vehicles": "All vehicles with MAP sensor"
+    },
+    {
+      "code": "P0111",
+      "type": "Generic",
+      "system": "Temperature Sensors",
+      "description": "Intake Air Temperature Sensor Circuit Range/Performance",
+      "diagnostic_procedure": [
+        "Check IAT sensor (often integrated in MAF).",
+        "Compare IAT vs. ambient temperature at cold start."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0112",
+      "type": "Generic",
+      "system": "Temperature Sensors",
+      "description": "Intake Air Temperature Sensor Circuit Low",
+      "diagnostic_procedure": [
+        "Check IAT circuit for short to ground.",
+        "Inspect MAF/IAT sensor connector."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0113",
+      "type": "Generic",
+      "system": "Temperature Sensors",
+      "description": "Intake Air Temperature Sensor Circuit High",
+      "diagnostic_procedure": [
+        "Check IAT circuit for open or short to voltage.",
+        "Inspect sensor element for damage."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0116",
+      "type": "Generic",
+      "system": "Temperature Sensors",
+      "description": "Engine Coolant Temperature Sensor Circuit Range/Performance",
+      "diagnostic_procedure": [
+        "Verify thermostat is opening correctly.",
+        "Compare ECT vs. IAT at cold soak.",
+        "Check coolant level – low coolant causes erratic ECT.",
+        "Common with overheating issues in Pakistan summer."
+      ],
+      "pak_vehicles": "All vehicles"
+    },
+    {
+      "code": "P0117",
+      "type": "Generic",
+      "system": "Temperature Sensors",
+      "description": "Engine Coolant Temperature Sensor Circuit Low Input",
+      "diagnostic_procedure": [
+        "Check ECT sensor circuit for short to ground.",
+        "Measure sensor resistance (2.5 kΩ at 20°C, 300 Ω at 80°C)."
+      ],
+      "pak_vehicles": "All vehicles"
+    },
+    {
+      "code": "P0118",
+      "type": "Generic",
+      "system": "Temperature Sensors",
+      "description": "Engine Coolant Temperature Sensor Circuit High Input",
+      "diagnostic_procedure": [
+        "Check ECT sensor circuit for open or short to voltage.",
+        "Inspect sensor connector for corrosion."
+      ],
+      "pak_vehicles": "All vehicles"
+    },
+    {
+      "code": "P0119",
+      "type": "Generic",
+      "system": "Temperature Sensors",
+      "description": "Engine Coolant Temperature Sensor Circuit Intermittent",
+      "diagnostic_procedure": [
+        "Wiggle test ECT harness for intermittent connection.",
+        "Check connector terminal tension."
+      ],
+      "pak_vehicles": "All vehicles"
+    },
+    {
+      "code": "P0128",
+      "type": "Generic",
+      "system": "Cooling System",
+      "description": "Coolant Temperature Below Thermostat Regulating Temperature",
+      "diagnostic_procedure": [
+        "Check thermostat – stuck open is common cause.",
+        "Verify ECT sensor accuracy.",
+        "Common in cold mornings in Islamabad/Lahore."
+      ],
+      "pak_vehicles": "All vehicles"
+    },
+    {
+      "code": "P0121",
+      "type": "Generic",
+      "system": "Throttle/Pedal",
+      "description": "Throttle Position Sensor/Switch A Circuit Range/Performance",
+      "diagnostic_procedure": [
+        "Perform throttle body adaptation/reset with scan tool.",
+        "Check TPS voltage sweep (0.3–4.7V).",
+        "Inspect throttle body for carbon deposits – common with low-quality fuel.",
+        "Check for sticking throttle plate."
+      ],
+      "pak_vehicles": "All drive-by-wire vehicles"
+    },
+    {
+      "code": "P0122",
+      "type": "Generic",
+      "system": "Throttle/Pedal",
+      "description": "Throttle Position Sensor/Switch A Circuit Low Input",
+      "diagnostic_procedure": [
+        "Check TPS circuit for short to ground.",
+        "Inspect throttle body connector."
+      ],
+      "pak_vehicles": "All drive-by-wire vehicles"
+    },
+    {
+      "code": "P0123",
+      "type": "Generic",
+      "system": "Throttle/Pedal",
+      "description": "Throttle Position Sensor/Switch A Circuit High Input",
+      "diagnostic_procedure": [
+        "Check TPS circuit for short to voltage or open.",
+        "Perform throttle body adaptation after repair."
+      ],
+      "pak_vehicles": "All drive-by-wire vehicles"
+    },
+    {
+      "code": "P0171",
+      "type": "Generic",
+      "system": "Fuel Trim",
+      "description": "System Too Lean Bank 1",
+      "diagnostic_procedure": [
+        "Check for vacuum leaks – inspect all hoses and intake manifold gasket.",
+        "Clean MAF sensor.",
+        "Check fuel pressure.",
+        "Inspect O2 sensor for accuracy.",
+        "On CNG-converted vehicles (very common in Pakistan): check CNG mixture ratio, leaking gas mixer, or faulty CNG ECU causing lean condition when switching fuel modes.",
+        "Check fuel injectors for clogging."
+      ],
+      "pak_vehicles": "All petrol vehicles – very common in Pakistan especially with CNG kits"
+    },
+    {
+      "code": "P0172",
+      "type": "Generic",
+      "system": "Fuel Trim",
+      "description": "System Too Rich Bank 1",
+      "diagnostic_procedure": [
+        "Check for flooding injector or stuck-open injector.",
+        "Inspect fuel pressure regulator for failure.",
+        "Check MAF sensor for over-reading.",
+        "Inspect for coolant or oil entering combustion."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0174",
+      "type": "Generic",
+      "system": "Fuel Trim",
+      "description": "System Too Lean Bank 2",
+      "diagnostic_procedure": [
+        "Check Bank 2 for vacuum leaks.",
+        "Check Bank 2 injectors.",
+        "Check MAF sensor."
+      ],
+      "pak_vehicles": "Toyota Fortuner 2.7 V6"
+    },
+    {
+      "code": "P0175",
+      "type": "Generic",
+      "system": "Fuel Trim",
+      "description": "System Too Rich Bank 2",
+      "diagnostic_procedure": [
+        "Check Bank 2 for rich conditions.",
+        "Inspect injectors and fuel pressure."
+      ],
+      "pak_vehicles": "Toyota Fortuner 2.7 V6"
+    },
+    {
+      "code": "P0130",
+      "type": "Generic",
+      "system": "O2 Sensor",
+      "description": "O2 Sensor Circuit Malfunction Bank 1 Sensor 1 (Upstream)",
+      "diagnostic_procedure": [
+        "Check upstream O2 sensor wiring and connector.",
+        "Verify sensor is reaching operating temperature.",
+        "Check for exhaust leaks upstream of sensor.",
+        "Test sensor switching frequency at idle."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0131",
+      "type": "Generic",
+      "system": "O2 Sensor",
+      "description": "O2 Sensor Circuit Low Voltage Bank 1 Sensor 1",
+      "diagnostic_procedure": [
+        "Check for lean misfire or vacuum leaks.",
+        "Inspect sensor circuit for short to ground."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0132",
+      "type": "Generic",
+      "system": "O2 Sensor",
+      "description": "O2 Sensor Circuit High Voltage Bank 1 Sensor 1",
+      "diagnostic_procedure": [
+        "Check for rich mixture or oil burning.",
+        "Check fuel pressure."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0133",
+      "type": "Generic",
+      "system": "O2 Sensor",
+      "description": "O2 Sensor Circuit Slow Response Bank 1 Sensor 1",
+      "diagnostic_procedure": [
+        "Replace upstream O2 sensor – common in high-mileage Pakistan vehicles.",
+        "Check exhaust leaks near sensor.",
+        "Verify sensor heater operation."
+      ],
+      "pak_vehicles": "All petrol vehicles – common >80,000 km"
+    },
+    {
+      "code": "P0134",
+      "type": "Generic",
+      "system": "O2 Sensor",
+      "description": "O2 Sensor Circuit No Activity Bank 1 Sensor 1",
+      "diagnostic_procedure": [
+        "Check sensor heater circuit.",
+        "Inspect wiring for open circuit.",
+        "Replace O2 sensor if dead."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0135",
+      "type": "Generic",
+      "system": "O2 Sensor",
+      "description": "O2 Sensor Heater Circuit Malfunction Bank 1 Sensor 1",
+      "diagnostic_procedure": [
+        "Measure O2 sensor heater resistance.",
+        "Check heater fuse and relay.",
+        "Check ECM heater control output."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0136",
+      "type": "Generic",
+      "system": "O2 Sensor",
+      "description": "O2 Sensor Circuit Malfunction Bank 1 Sensor 2 (Downstream)",
+      "diagnostic_procedure": [
+        "Check downstream O2 sensor and wiring.",
+        "Verify catalytic converter is not destroyed."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0137",
+      "type": "Generic",
+      "system": "O2 Sensor",
+      "description": "O2 Sensor Circuit Low Voltage Bank 1 Sensor 2",
+      "diagnostic_procedure": [
+        "Check downstream sensor circuit for short to ground.",
+        "Inspect wiring near hot exhaust pipe."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0138",
+      "type": "Generic",
+      "system": "O2 Sensor",
+      "description": "O2 Sensor Circuit High Voltage Bank 1 Sensor 2",
+      "diagnostic_procedure": [
+        "Check downstream sensor for contamination.",
+        "Inspect catalytic converter efficiency."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0139",
+      "type": "Generic",
+      "system": "O2 Sensor",
+      "description": "O2 Sensor Circuit Slow Response Bank 1 Sensor 2",
+      "diagnostic_procedure": [
+        "Replace downstream O2 sensor.",
+        "Check catalytic converter for damage."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0140",
+      "type": "Generic",
+      "system": "O2 Sensor",
+      "description": "O2 Sensor Circuit No Activity Bank 1 Sensor 2",
+      "diagnostic_procedure": [
+        "Check downstream sensor wiring for open circuit.",
+        "Replace sensor if failed."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0141",
+      "type": "Generic",
+      "system": "O2 Sensor",
+      "description": "O2 Sensor Heater Circuit Malfunction Bank 1 Sensor 2",
+      "diagnostic_procedure": [
+        "Measure downstream O2 heater resistance.",
+        "Check heater supply and ECM control circuit."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0201",
+      "type": "Generic",
+      "system": "Fuel Injectors",
+      "description": "Injector Circuit / Open – Cylinder 1",
+      "diagnostic_procedure": [
+        "Check injector 1 resistance (11–17 Ω MPI, 0.3–1.5 Ω GDI).",
+        "Inspect injector connector and wiring.",
+        "Swap injector with known-good unit to confirm."
+      ],
+      "pak_vehicles": "All fuel-injected vehicles"
+    },
+    {
+      "code": "P0202",
+      "type": "Generic",
+      "system": "Fuel Injectors",
+      "description": "Injector Circuit / Open – Cylinder 2",
+      "diagnostic_procedure": [
+        "Check injector 2 resistance and wiring.",
+        "Swap with known-good injector."
+      ],
+      "pak_vehicles": "All fuel-injected vehicles"
+    },
+    {
+      "code": "P0203",
+      "type": "Generic",
+      "system": "Fuel Injectors",
+      "description": "Injector Circuit / Open – Cylinder 3",
+      "diagnostic_procedure": [
+        "Check injector 3 resistance and wiring."
+      ],
+      "pak_vehicles": "All 3+ cylinder fuel-injected vehicles"
+    },
+    {
+      "code": "P0204",
+      "type": "Generic",
+      "system": "Fuel Injectors",
+      "description": "Injector Circuit / Open – Cylinder 4",
+      "diagnostic_procedure": [
+        "Check injector 4 resistance and wiring."
+      ],
+      "pak_vehicles": "All 4-cylinder fuel-injected vehicles"
+    },
+    {
+      "code": "P0261",
+      "type": "Generic",
+      "system": "Fuel Injectors",
+      "description": "Cylinder 1 Injector Circuit Low",
+      "diagnostic_procedure": [
+        "Check injector 1 for short to ground.",
+        "Inspect ECM injector driver output."
+      ],
+      "pak_vehicles": "All fuel-injected vehicles"
+    },
+    {
+      "code": "P0262",
+      "type": "Generic",
+      "system": "Fuel Injectors",
+      "description": "Cylinder 1 Injector Circuit High",
+      "diagnostic_procedure": [
+        "Check injector 1 for short to battery."
+      ],
+      "pak_vehicles": "All fuel-injected vehicles"
+    },
+    {
+      "code": "P0263",
+      "type": "Generic",
+      "system": "Fuel Injectors",
+      "description": "Cylinder 1 Contribution/Balance Fault",
+      "diagnostic_procedure": [
+        "Perform injector balance test.",
+        "Inspect compression on cylinder 1.",
+        "Check for air leak at cylinder 1 intake port."
+      ],
+      "pak_vehicles": "All fuel-injected vehicles"
+    },
+    {
+      "code": "P0264",
+      "type": "Generic",
+      "system": "Fuel Injectors",
+      "description": "Cylinder 2 Injector Circuit Low",
+      "diagnostic_procedure": [
+        "Check injector 2 for short to ground."
+      ],
+      "pak_vehicles": "All fuel-injected vehicles"
+    },
+    {
+      "code": "P0265",
+      "type": "Generic",
+      "system": "Fuel Injectors",
+      "description": "Cylinder 2 Injector Circuit High",
+      "diagnostic_procedure": [
+        "Check injector 2 for short to battery."
+      ],
+      "pak_vehicles": "All fuel-injected vehicles"
+    },
+    {
+      "code": "P0266",
+      "type": "Generic",
+      "system": "Fuel Injectors",
+      "description": "Cylinder 2 Contribution/Balance Fault",
+      "diagnostic_procedure": [
+        "Perform injector balance test on cylinder 2.",
+        "Check compression."
+      ],
+      "pak_vehicles": "All fuel-injected vehicles"
+    },
+    {
+      "code": "P0267",
+      "type": "Generic",
+      "system": "Fuel Injectors",
+      "description": "Cylinder 3 Injector Circuit Low",
+      "diagnostic_procedure": [
+        "Check injector 3 for short to ground."
+      ],
+      "pak_vehicles": "All 3+ cylinder vehicles"
+    },
+    {
+      "code": "P0268",
+      "type": "Generic",
+      "system": "Fuel Injectors",
+      "description": "Cylinder 3 Injector Circuit High",
+      "diagnostic_procedure": [
+        "Check injector 3 for short to battery."
+      ],
+      "pak_vehicles": "All 3+ cylinder vehicles"
+    },
+    {
+      "code": "P0270",
+      "type": "Generic",
+      "system": "Fuel Injectors",
+      "description": "Cylinder 4 Injector Circuit Low",
+      "diagnostic_procedure": [
+        "Check injector 4 for short to ground."
+      ],
+      "pak_vehicles": "All 4-cylinder vehicles"
+    },
+    {
+      "code": "P0271",
+      "type": "Generic",
+      "system": "Fuel Injectors",
+      "description": "Cylinder 4 Injector Circuit High",
+      "diagnostic_procedure": [
+        "Check injector 4 for short to battery."
+      ],
+      "pak_vehicles": "All 4-cylinder vehicles"
+    },
+    {
+      "code": "P0272",
+      "type": "Generic",
+      "system": "Fuel Injectors",
+      "description": "Cylinder 4 Contribution/Balance Fault",
+      "diagnostic_procedure": [
+        "Perform injector balance test on cylinder 4.",
+        "Check compression."
+      ],
+      "pak_vehicles": "All 4-cylinder vehicles"
+    },
+    {
+      "code": "P0300",
+      "type": "Generic",
+      "system": "Ignition/Misfire",
+      "description": "Random/Multiple Cylinder Misfire Detected",
+      "diagnostic_procedure": [
+        "Replace spark plugs – use OEM, not cheap Chinese copies.",
+        "Inspect ignition coils – swap to isolate.",
+        "Check fuel injectors for clogging.",
+        "Check compression on all cylinders.",
+        "Inspect timing chain/belt condition.",
+        "On CNG-converted vehicles: check CNG injectors, spark plug gap (use tighter gap for CNG), and gas pressure regulator.",
+        "Note: Most common check-engine light code in Pakistan."
+      ],
+      "pak_vehicles": "All petrol vehicles – #1 most common code in Pakistan"
+    },
+    {
+      "code": "P0301",
+      "type": "Generic",
+      "system": "Ignition/Misfire",
+      "description": "Cylinder 1 Misfire Detected",
+      "diagnostic_procedure": [
+        "Check/replace Cylinder 1 spark plug.",
+        "Swap ignition coil 1 to another cylinder to diagnose.",
+        "Check injector 1 spray pattern.",
+        "Perform compression test on cylinder 1."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0302",
+      "type": "Generic",
+      "system": "Ignition/Misfire",
+      "description": "Cylinder 2 Misfire Detected",
+      "diagnostic_procedure": [
+        "Check/replace Cylinder 2 spark plug.",
+        "Swap ignition coil 2 to diagnose.",
+        "Check injector 2.",
+        "Perform compression test on cylinder 2."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0303",
+      "type": "Generic",
+      "system": "Ignition/Misfire",
+      "description": "Cylinder 3 Misfire Detected",
+      "diagnostic_procedure": [
+        "Check/replace Cylinder 3 spark plug.",
+        "Swap ignition coil 3 to diagnose.",
+        "Check injector 3.",
+        "Perform compression test on cylinder 3."
+      ],
+      "pak_vehicles": "All 3+ cylinder petrol vehicles"
+    },
+    {
+      "code": "P0304",
+      "type": "Generic",
+      "system": "Ignition/Misfire",
+      "description": "Cylinder 4 Misfire Detected",
+      "diagnostic_procedure": [
+        "Check/replace Cylinder 4 spark plug.",
+        "Swap ignition coil 4 to diagnose.",
+        "Check injector 4.",
+        "Perform compression test on cylinder 4."
+      ],
+      "pak_vehicles": "All 4-cylinder petrol vehicles"
+    },
+    {
+      "code": "P0305",
+      "type": "Generic",
+      "system": "Ignition/Misfire",
+      "description": "Cylinder 5 Misfire Detected",
+      "diagnostic_procedure": [
+        "Check Cylinder 5 spark plug and coil.",
+        "Test compression."
+      ],
+      "pak_vehicles": "Toyota Fortuner 2.7 (6-cyl)"
+    },
+    {
+      "code": "P0306",
+      "type": "Generic",
+      "system": "Ignition/Misfire",
+      "description": "Cylinder 6 Misfire Detected",
+      "diagnostic_procedure": [
+        "Check Cylinder 6 spark plug and coil.",
+        "Test compression."
+      ],
+      "pak_vehicles": "Toyota Fortuner 2.7 (6-cyl)"
+    },
+    {
+      "code": "P0320",
+      "type": "Generic",
+      "system": "CKP Sensor",
+      "description": "Ignition/Distributor Engine Speed Input Circuit Malfunction",
+      "diagnostic_procedure": [
+        "Check crankshaft position sensor (CKP) and tone wheel.",
+        "Inspect air gap between sensor and ring gear."
+      ],
+      "pak_vehicles": "All vehicles"
+    },
+    {
+      "code": "P0321",
+      "type": "Generic",
+      "system": "CKP Sensor",
+      "description": "Ignition/Distributor Engine Speed Input Circuit Range/Performance",
+      "diagnostic_procedure": [
+        "Check CKP sensor and tone wheel for damage.",
+        "Inspect sensor air gap (0.5–1.5 mm)."
+      ],
+      "pak_vehicles": "All vehicles"
+    },
+    {
+      "code": "P0322",
+      "type": "Generic",
+      "system": "CKP Sensor",
+      "description": "Ignition/Distributor Engine Speed Input Circuit No Signal",
+      "diagnostic_procedure": [
+        "Check CKP sensor wiring for open circuit.",
+        "Test sensor supply voltage.",
+        "Check for metal debris on sensor tip."
+      ],
+      "pak_vehicles": "All vehicles"
+    },
+    {
+      "code": "P0324",
+      "type": "Generic",
+      "system": "Knock Sensor",
+      "description": "Knock Control System Error",
+      "diagnostic_procedure": [
+        "Check knock sensor wiring and mounting torque.",
+        "Note: Low-octane petrol in Pakistan causes genuine knock – use premium fuel."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0325",
+      "type": "Generic",
+      "system": "Knock Sensor",
+      "description": "Knock Sensor 1 Circuit Malfunction Bank 1",
+      "diagnostic_procedure": [
+        "Check knock sensor wiring and connector.",
+        "Measure sensor resistance.",
+        "Check ECM knock detection circuit.",
+        "Low-octane petrol in Pakistan can cause genuine knock."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0327",
+      "type": "Generic",
+      "system": "Knock Sensor",
+      "description": "Knock Sensor 1 Circuit Low Input Bank 1",
+      "diagnostic_procedure": [
+        "Check knock sensor circuit for short to ground."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0328",
+      "type": "Generic",
+      "system": "Knock Sensor",
+      "description": "Knock Sensor 1 Circuit High Input Bank 1",
+      "diagnostic_procedure": [
+        "Check knock sensor circuit for short to battery."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0340",
+      "type": "Generic",
+      "system": "CMP Sensor",
+      "description": "Camshaft Position Sensor Circuit Malfunction Bank 1",
+      "diagnostic_procedure": [
+        "Check CMP sensor wiring and connector.",
+        "Test sensor power supply (5V) and ground.",
+        "Measure sensor air gap.",
+        "Replace sensor if no output."
+      ],
+      "pak_vehicles": "All vehicles"
+    },
+    {
+      "code": "P0341",
+      "type": "Generic",
+      "system": "CMP Sensor",
+      "description": "Camshaft Position Sensor Circuit Range/Performance Bank 1",
+      "diagnostic_procedure": [
+        "Check CMP sensor trigger wheel for damage.",
+        "Compare CMP vs. CKP signal timing."
+      ],
+      "pak_vehicles": "All vehicles"
+    },
+    {
+      "code": "P0342",
+      "type": "Generic",
+      "system": "CMP Sensor",
+      "description": "Camshaft Position Sensor Circuit Low Input Bank 1",
+      "diagnostic_procedure": [
+        "Check CMP sensor circuit for short to ground."
+      ],
+      "pak_vehicles": "All vehicles"
+    },
+    {
+      "code": "P0343",
+      "type": "Generic",
+      "system": "CMP Sensor",
+      "description": "Camshaft Position Sensor Circuit High Input Bank 1",
+      "diagnostic_procedure": [
+        "Check CMP sensor circuit for short to voltage or open."
+      ],
+      "pak_vehicles": "All vehicles"
+    },
+    {
+      "code": "P0351",
+      "type": "Generic",
+      "system": "Ignition Coils",
+      "description": "Ignition Coil A Primary/Secondary Circuit Malfunction",
+      "diagnostic_procedure": [
+        "Check ignition coil 1 primary resistance (0.3–1.5 Ω).",
+        "Swap coil to another cylinder to confirm fault."
+      ],
+      "pak_vehicles": "All COP ignition vehicles"
+    },
+    {
+      "code": "P0352",
+      "type": "Generic",
+      "system": "Ignition Coils",
+      "description": "Ignition Coil B Primary/Secondary Circuit Malfunction",
+      "diagnostic_procedure": [
+        "Check ignition coil 2. Swap to confirm."
+      ],
+      "pak_vehicles": "All COP ignition vehicles"
+    },
+    {
+      "code": "P0353",
+      "type": "Generic",
+      "system": "Ignition Coils",
+      "description": "Ignition Coil C Primary/Secondary Circuit Malfunction",
+      "diagnostic_procedure": [
+        "Check ignition coil 3. Swap to confirm."
+      ],
+      "pak_vehicles": "All 3+ cylinder COP ignition vehicles"
+    },
+    {
+      "code": "P0354",
+      "type": "Generic",
+      "system": "Ignition Coils",
+      "description": "Ignition Coil D Primary/Secondary Circuit Malfunction",
+      "diagnostic_procedure": [
+        "Check ignition coil 4. Swap to confirm."
+      ],
+      "pak_vehicles": "All 4-cylinder COP ignition vehicles"
+    },
+    {
+      "code": "P0400",
+      "type": "Generic",
+      "system": "EGR",
+      "description": "Exhaust Gas Recirculation Flow Malfunction",
+      "diagnostic_procedure": [
+        "Check EGR valve operation and wiring.",
+        "Inspect EGR passages for carbon clogging – very common in Pakistan with low-quality fuel.",
+        "Clean EGR valve with EGR cleaner."
+      ],
+      "pak_vehicles": "Toyota Fortuner 2.8D, Hilux Revo 2.8D"
+    },
+    {
+      "code": "P0401",
+      "type": "Generic",
+      "system": "EGR",
+      "description": "Exhaust Gas Recirculation Insufficient Flow Detected",
+      "diagnostic_procedure": [
+        "Clean EGR valve and passages – typically heavily carbon-clogged in Pakistan.",
+        "Check EGR control solenoid."
+      ],
+      "pak_vehicles": "Diesel vehicles with EGR"
+    },
+    {
+      "code": "P0402",
+      "type": "Generic",
+      "system": "EGR",
+      "description": "Exhaust Gas Recirculation Excessive Flow Detected",
+      "diagnostic_procedure": [
+        "Check EGR valve for sticking in open position.",
+        "Inspect EGR solenoid."
+      ],
+      "pak_vehicles": "Diesel vehicles with EGR"
+    },
+    {
+      "code": "P0420",
+      "type": "Generic",
+      "system": "Catalytic Converter",
+      "description": "Catalyst System Efficiency Below Threshold Bank 1",
+      "diagnostic_procedure": [
+        "Check for misfires causing catalyst damage.",
+        "Verify O2 sensor accuracy upstream and downstream.",
+        "Inspect catalytic converter for physical damage.",
+        "Note: Low-quality fuel and leaded fuel additives in Pakistan can contaminate catalyst.",
+        "Replace catalytic converter if efficiency confirmed low."
+      ],
+      "pak_vehicles": "All petrol vehicles – common >100,000 km in Pakistan"
+    },
+    {
+      "code": "P0430",
+      "type": "Generic",
+      "system": "Catalytic Converter",
+      "description": "Catalyst System Efficiency Below Threshold Bank 2",
+      "diagnostic_procedure": [
+        "Same as P0420 for Bank 2."
+      ],
+      "pak_vehicles": "Toyota Fortuner 2.7 V6"
+    },
+    {
+      "code": "P0441",
+      "type": "Generic",
+      "system": "EVAP",
+      "description": "Evaporative Emission Control System Incorrect Purge Flow",
+      "diagnostic_procedure": [
+        "Check EVAP purge valve for proper opening.",
+        "Inspect EVAP purge vacuum hose."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0442",
+      "type": "Generic",
+      "system": "EVAP",
+      "description": "Evaporative Emission Control System Leak Detected (Small)",
+      "diagnostic_procedure": [
+        "Check fuel cap seal – replace if cracked (common in Pakistan heat).",
+        "Perform smoke test on EVAP system.",
+        "Check EVAP hoses and canister."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0443",
+      "type": "Generic",
+      "system": "EVAP",
+      "description": "Evaporative Emission Control System Purge Control Valve Circuit",
+      "diagnostic_procedure": [
+        "Check EVAP purge valve wiring and solenoid resistance."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0455",
+      "type": "Generic",
+      "system": "EVAP",
+      "description": "Evaporative Emission Control System Large Leak Detected",
+      "diagnostic_procedure": [
+        "Check fuel cap – loose or damaged cap is #1 cause in Pakistan.",
+        "Inspect EVAP lines and canister.",
+        "Perform EVAP smoke test."
+      ],
+      "pak_vehicles": "All petrol vehicles – very common in Pakistan"
+    },
+    {
+      "code": "P0456",
+      "type": "Generic",
+      "system": "EVAP",
+      "description": "Evaporative Emission Control System Very Small Leak Detected",
+      "diagnostic_procedure": [
+        "Inspect fuel cap seal.",
+        "Perform precision EVAP smoke test."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0457",
+      "type": "Generic",
+      "system": "EVAP",
+      "description": "EVAP Leak Detected – Fuel Cap Loose or Off",
+      "diagnostic_procedure": [
+        "Tighten or replace fuel cap – almost always the cause.",
+        "Verify cap clicks 3 times when tightened."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0480",
+      "type": "Generic",
+      "system": "Cooling Fan",
+      "description": "Cooling Fan 1 Control Circuit Malfunction",
+      "diagnostic_procedure": [
+        "Check cooling fan motor and relay.",
+        "Verify ECM fan control output.",
+        "Critical in Pakistan summers (45°C+) – overheating risk without fan."
+      ],
+      "pak_vehicles": "All vehicles with electric cooling fan"
+    },
+    {
+      "code": "P0506",
+      "type": "Generic",
+      "system": "Idle Control",
+      "description": "Idle Air Control System RPM Too Low",
+      "diagnostic_procedure": [
+        "Clean throttle body – carbon deposits on IAC passage very common in Pakistan.",
+        "Perform throttle body adaptation.",
+        "Check for vacuum leaks at idle."
+      ],
+      "pak_vehicles": "All petrol vehicles – very common in Pakistan"
+    },
+    {
+      "code": "P0507",
+      "type": "Generic",
+      "system": "Idle Control",
+      "description": "Idle Air Control System RPM Too High",
+      "diagnostic_procedure": [
+        "Check for vacuum leaks causing uncontrolled air.",
+        "Inspect idle air control valve for sticking open.",
+        "Check throttle blade for sticking."
+      ],
+      "pak_vehicles": "All petrol vehicles"
+    },
+    {
+      "code": "P0560",
+      "type": "Generic",
+      "system": "ECM Power",
+      "description": "System Voltage Malfunction",
+      "diagnostic_procedure": [
+        "Check battery voltage (13.5–14.5V running).",
+        "Inspect alternator output.",
+        "Check ECM main fuse and relay.",
+        "Inspect battery terminals for corrosion – common in Pakistan heat."
+      ],
+      "pak_vehicles": "All vehicles"
+    },
+    {
+      "code": "P0562",
+      "type": "Generic",
+      "system": "ECM Power",
+      "description": "System Voltage Low",
+      "diagnostic_procedure": [
+        "Check battery condition and charge.",
+        "Test alternator charging voltage.",
+        "Check for high resistance in charging circuit."
+      ],
+      "pak_vehicles": "All vehicles"
+    },
+    {
+      "code": "P0563",
+      "type": "Generic",
+      "system": "ECM Power",
+      "description": "System Voltage High",
+      "diagnostic_procedure": [
+        "Check alternator voltage regulator.",
+        "Inspect for overcharging condition >15V."
+      ],
+      "pak_vehicles": "All vehicles"
+    },
+    {
+      "code": "P0600",
+      "type": "Generic",
+      "system": "ECM",
+      "description": "Serial Communication Link Malfunction",
+      "diagnostic_procedure": [
+        "Check OBD-II DLC communication pins.",
+        "Inspect CAN bus wiring for short or open."
+      ],
+      "pak_vehicles": "All OBD-II vehicles"
+    },
+    {
+      "code": "P0601",
+      "type": "Generic",
+      "system": "ECM",
+      "description": "Internal Control Module Memory Check Sum Error",
+      "diagnostic_procedure": [
+        "Reflash ECM with latest firmware.",
+        "Check ECM power supply and ground connections.",
+        "Replace ECM if reflash fails."
+      ],
+      "pak_vehicles": "All vehicles"
+    },
+    {
+      "code": "P0604",
+      "type": "Generic",
+      "system": "ECM",
+      "description": "Internal Control Module RAM Error",
+      "diagnostic_procedure": [
+        "Reflash ECM.",
+        "Replace ECM if fault persists."
+      ],
+      "pak_vehicles": "All vehicles"
+    },
+    {
+      "code": "P0605",
+      "type": "Generic",
+      "system": "ECM",
+      "description": "Internal Control Module ROM Error",
+      "diagnostic_procedure": [
+        "Reflash ECM.",
+        "Replace ECM if fault persists."
+      ],
+      "pak_vehicles": "All vehicles"
+    },
+    {
+      "code": "P0606",
+      "type": "Generic",
+      "system": "ECM",
+      "description": "ECM/PCM Processor Fault",
+      "diagnostic_procedure": [
+        "Check ECM power supply and ground.",
+        "Check for ECM water ingress (common during Pakistan monsoon flooding).",
+        "Reflash or replace ECM."
+      ],
+      "pak_vehicles": "All vehicles"
+    },
+    {
+      "code": "P0638",
+      "type": "Generic",
+      "system": "Throttle",
+      "description": "Throttle Actuator Control Range/Performance Bank 1",
+      "diagnostic_procedure": [
+        "Check throttle body motor and wiring.",
+        "Perform throttle body adaptation.",
+        "Clean throttle body if carbon-bound."
+      ],
+      "pak_vehicles": "All drive-by-wire vehicles"
+    },
+    {
+      "code": "P0641",
+      "type": "Generic",
+      "system": "Sensor Voltage",
+      "description": "Sensor Reference Voltage 'A' Circuit Open",
+      "diagnostic_procedure": [
+        "Check 5V reference circuit for open.",
+        "Disconnect sensors one by one to find the one pulling down the reference."
+      ],
+      "pak_vehicles": "All vehicles"
+    },
+    {
+      "code": "P0642",
+      "type": "Generic",
+      "system": "Sensor Voltage",
+      "description": "Sensor Reference Voltage 'A' Circuit Low",
+      "diagnostic_procedure": [
+        "Check 5V reference circuit for short to ground.",
+        "Disconnect sensors to isolate short."
+      ],
+      "pak_vehicles": "All vehicles"
+    },
+    {
+      "code": "P0651",
+      "type": "Generic",
+      "system": "Sensor Voltage",
+      "description": "Sensor Reference Voltage 'B' Circuit Open",
+      "diagnostic_procedure": [
+        "Check 5V reference B circuit for open."
+      ],
+      "pak_vehicles": "All vehicles"
+    },
+    {
+      "code": "P0652",
+      "type": "Generic",
+      "system": "Sensor Voltage",
+      "description": "Sensor Reference Voltage 'B' Circuit Low",
+      "diagnostic_procedure": [
+        "Check 5V reference B for short to ground."
+      ],
+      "pak_vehicles": "All vehicles"
+    },
+    {
+      "code": "P0700",
+      "type": "Generic",
+      "system": "Transmission",
+      "description": "Transmission Control System Malfunction (TCM DTC Present)",
+      "diagnostic_procedure": [
+        "Scan TCM for specific transmission codes.",
+        "Check transmission fluid level and condition – dark/burnt fluid very common in Pakistan.",
+        "Inspect transmission wiring harness."
+      ],
+      "pak_vehicles": "All AT/CVT vehicles"
+    },
+    {
+      "code": "P0706",
+      "type": "Generic",
+      "system": "Transmission",
+      "description": "Transmission Range Sensor Circuit Range/Performance",
+      "diagnostic_procedure": [
+        "Check transmission range sensor and wiring.",
+        "Verify shifter mechanism engagement."
+      ],
+      "pak_vehicles": "All AT/CVT vehicles"
+    },
+    {
+      "code": "P0711",
+      "type": "Generic",
+      "system": "Transmission",
+      "description": "Transmission Fluid Temperature Sensor Circuit Range/Performance",
+      "diagnostic_procedure": [
+        "Check ATF temperature sensor.",
+        "Inspect transmission fluid level."
+      ],
+      "pak_vehicles": "All AT/CVT vehicles"
+    },
+    {
+      "code": "P0730",
+      "type": "Generic",
+      "system": "Transmission",
+      "description": "Incorrect Gear Ratio Detected",
+      "diagnostic_procedure": [
+        "Change ATF/CVT fluid – typically dark/burnt in Pakistan market.",
+        "Check transmission solenoids.",
+        "Inspect for mechanical transmission wear.",
+        "This is one of the most common AT faults in Pakistan due to neglected fluid service."
+      ],
+      "pak_vehicles": "All AT/CVT vehicles – extremely common in Pakistan"
+    },
+    {
+      "code": "P0731",
+      "type": "Generic",
+      "system": "Transmission",
+      "description": "Gear 1 Incorrect Ratio",
+      "diagnostic_procedure": [
+        "Check transmission fluid and solenoids.",
+        "Inspect 1st gear clutch pack."
+      ],
+      "pak_vehicles": "All AT vehicles"
+    },
+    {
+      "code": "P0732",
+      "type": "Generic",
+      "system": "Transmission",
+      "description": "Gear 2 Incorrect Ratio",
+      "diagnostic_procedure": [
+        "Check transmission fluid and solenoids."
+      ],
+      "pak_vehicles": "All AT vehicles"
+    },
+    {
+      "code": "P0740",
+      "type": "Generic",
+      "system": "Transmission",
+      "description": "Torque Converter Clutch Circuit Malfunction",
+      "diagnostic_procedure": [
+        "Check TCC solenoid and wiring.",
+        "Inspect transmission fluid condition."
+      ],
+      "pak_vehicles": "All AT vehicles"
+    },
+    {
+      "code": "P0741",
+      "type": "Generic",
+      "system": "Transmission",
+      "description": "Torque Converter Clutch Circuit Performance or Stuck Off",
+      "diagnostic_procedure": [
+        "Check TCC solenoid valve for sticking.",
+        "Change ATF if degraded.",
+        "Change CVT fluid for Daihatsu/Nissan imports – often neglected."
+      ],
+      "pak_vehicles": "All AT/CVT vehicles – also Daihatsu Mira, Nissan Sunny imports"
+    },
+    {
+      "code": "P0750",
+      "type": "Generic",
+      "system": "Transmission",
+      "description": "Shift Solenoid 'A' Malfunction",
+      "diagnostic_procedure": [
+        "Check shift solenoid A resistance (20–30 Ω typical).",
+        "Change ATF if contaminated.",
+        "Replace solenoid if stuck."
+      ],
+      "pak_vehicles": "All AT vehicles"
+    },
+    {
+      "code": "P0755",
+      "type": "Generic",
+      "system": "Transmission",
+      "description": "Shift Solenoid 'B' Malfunction",
+      "diagnostic_procedure": [
+        "Check shift solenoid B and wiring.",
+        "Change ATF if needed."
+      ],
+      "pak_vehicles": "All AT vehicles"
+    },
+    {
+      "code": "P0780",
+      "type": "Generic",
+      "system": "Transmission",
+      "description": "Shift Malfunction",
+      "diagnostic_procedure": [
+        "Perform transmission fluid service.",
+        "Scan for specific solenoid codes."
+      ],
+      "pak_vehicles": "All AT vehicles"
+    },
+    {
+      "code": "P0850",
+      "type": "Generic",
+      "system": "Transmission",
+      "description": "Park/Neutral Position Switch Input Circuit Malfunction",
+      "diagnostic_procedure": [
+        "Check PNP/inhibitor switch and wiring.",
+        "Adjust or replace switch."
+      ],
+      "pak_vehicles": "All AT vehicles"
+    },
+    {
+      "code": "P0234",
+      "type": "Generic",
+      "system": "Turbocharger",
+      "description": "Turbocharger/Supercharger A Overboost Condition",
+      "diagnostic_procedure": [
+        "Check wastegate solenoid valve.",
+        "Inspect boost control hoses.",
+        "Verify boost pressure sensor accuracy."
+      ],
+      "pak_vehicles": "Honda Civic 1.5T, Haval H6 1.5T, Jolion 1.5T, Kia Stonic 1.4T, Changan Oshan X7 1.5T, MG HS 1.5T"
+    },
+    {
+      "code": "P0235",
+      "type": "Generic",
+      "system": "Turbocharger",
+      "description": "Turbocharger Boost Sensor A Circuit Malfunction",
+      "diagnostic_procedure": [
+        "Check boost pressure sensor wiring.",
+        "Measure 5V supply and ground.",
+        "Replace sensor if faulty."
+      ],
+      "pak_vehicles": "All turbocharged vehicles"
+    },
+    {
+      "code": "P0236",
+      "type": "Generic",
+      "system": "Turbocharger",
+      "description": "Turbocharger Boost Sensor A Circuit Range/Performance",
+      "diagnostic_procedure": [
+        "Check boost sensor accuracy.",
+        "Inspect intake for leaks."
+      ],
+      "pak_vehicles": "All turbocharged vehicles"
+    },
+    {
+      "code": "P0243",
+      "type": "Generic",
+      "system": "Turbocharger",
+      "description": "Turbocharger Wastegate Solenoid A Circuit Malfunction",
+      "diagnostic_procedure": [
+        "Check wastegate solenoid resistance and wiring.",
+        "Test solenoid operation with scan tool."
+      ],
+      "pak_vehicles": "Honda Civic 1.5T, Haval H6, Kia Stonic, MG HS"
+    },
+    {
+      "code": "P0299",
+      "type": "Generic",
+      "system": "Turbocharger",
+      "description": "Turbocharger/Supercharger A Underboost Condition",
+      "diagnostic_procedure": [
+        "Check for boost leaks in intercooler piping – very common in Pakistan due to heat cycling.",
+        "Check wastegate for sticking open.",
+        "Inspect turbocharger vanes for damage.",
+        "Verify air filter is not severely clogged."
+      ],
+      "pak_vehicles": "Honda Civic 1.5T, Haval H6/Jolion 1.5T, Kia Stonic, Changan Oshan X7, MG HS"
+    },
+    {
+      "code": "C0010",
+      "type": "Generic",
+      "system": "ABS/Brakes",
+      "description": "Left Front Wheel Speed Sensor Circuit Malfunction",
+      "diagnostic_procedure": [
+        "Check LF wheel speed sensor wiring and connector.",
+        "Measure sensor resistance and air gap.",
+        "Inspect tone ring for damage or missing teeth.",
+        "Note: Common on rough Pakistani roads due to sensor damage from potholes."
+      ],
+      "pak_vehicles": "All ABS-equipped vehicles"
+    },
+    {
+      "code": "C0020",
+      "type": "Generic",
+      "system": "ABS/Brakes",
+      "description": "Right Front Wheel Speed Sensor Circuit Malfunction",
+      "diagnostic_procedure": [
+        "Check RF wheel speed sensor and wiring.",
+        "Inspect tone ring."
+      ],
+      "pak_vehicles": "All ABS-equipped vehicles"
+    },
+    {
+      "code": "C0030",
+      "type": "Generic",
+      "system": "ABS/Brakes",
+      "description": "Left Rear Wheel Speed Sensor Circuit Malfunction",
+      "diagnostic_procedure": [
+        "Check LR wheel speed sensor.",
+        "Inspect tone ring.",
+        "Check for wiring damage near rear axle."
+      ],
+      "pak_vehicles": "All ABS-equipped vehicles"
+    },
+    {
+      "code": "C0040",
+      "type": "Generic",
+      "system": "ABS/Brakes",
+      "description": "Right Rear Wheel Speed Sensor Circuit Malfunction",
+      "diagnostic_procedure": [
+        "Check RR wheel speed sensor.",
+        "Inspect tone ring and wiring."
+      ],
+      "pak_vehicles": "All ABS-equipped vehicles"
+    },
+    {
+      "code": "C0045",
+      "type": "Generic",
+      "system": "ABS/Brakes",
+      "description": "Right Rear Wheel Speed Sensor Circuit Range/Performance",
+      "diagnostic_procedure": [
+        "Check RR sensor output.",
+        "Inspect tone ring."
+      ],
+      "pak_vehicles": "All ABS-equipped vehicles"
+    },
+    {
+      "code": "C0110",
+      "type": "Generic",
+      "system": "ABS/Brakes",
+      "description": "ABS Motor Relay Circuit Malfunction",
+      "diagnostic_procedure": [
+        "Check ABS pump motor relay and fuse.",
+        "Test ABS motor operation."
+      ],
+      "pak_vehicles": "All ABS-equipped vehicles"
+    },
+    {
+      "code": "C0161",
+      "type": "Generic",
+      "system": "ABS/Brakes",
+      "description": "ABS/TCS Brake Switch Circuit Malfunction",
+      "diagnostic_procedure": [
+        "Check brake light switch and wiring.",
+        "Adjust or replace brake switch."
+      ],
+      "pak_vehicles": "All ABS-equipped vehicles"
+    },
+    {
+      "code": "C1201",
+      "type": "Generic",
+      "system": "ABS/Brakes",
+      "description": "Engine Control System Malfunction (ABS Inhibit)",
+      "diagnostic_procedure": [
+        "Diagnose engine system first.",
+        "Check communication between ECM and ABS module."
+      ],
+      "pak_vehicles": "All ABS-equipped vehicles"
+    },
+    {
+      "code": "B1600",
+      "type": "Generic",
+      "system": "Immobilizer",
+      "description": "PATS Key Not Programmed / Non-Transponder Key Used",
+      "diagnostic_procedure": [
+        "Program key using scan tool with immobilizer function.",
+        "Verify correct key type.",
+        "Check transponder antenna ring wiring.",
+        "Note: Key cloning is common in Pakistan – use genuine keys only."
+      ],
+      "pak_vehicles": "All vehicles with transponder keys"
+    },
+    {
+      "code": "B2799",
+      "type": "Generic",
+      "system": "Immobilizer",
+      "description": "Engine Immobilizer System Malfunction",
+      "diagnostic_procedure": [
+        "Re-register key with immobilizer ECU.",
+        "Check immobilizer antenna and receiver.",
+        "Very common issue with second-hand/imported JDM vehicles in Pakistan with ownership changes."
+      ],
+      "pak_vehicles": "All vehicles – especially imported JDM vehicles"
+    },
+    {
+      "code": "U0001",
+      "type": "Generic",
+      "system": "CAN Bus",
+      "description": "High Speed CAN Communication Bus – No Feedback",
+      "diagnostic_procedure": [
+        "Check CAN bus wiring – measure resistance between CAN-H and CAN-L (~60 Ω with ECM unplugged).",
+        "Inspect all module connectors on CAN bus.",
+        "Check for broken, shorted, or corroded CAN wires.",
+        "Measure battery voltage (low voltage can cause CAN faults)."
+      ],
+      "pak_vehicles": "All CAN-equipped vehicles (2005+)"
+    },
+    {
+      "code": "U0073",
+      "type": "Generic",
+      "system": "CAN Bus",
+      "description": "Control Module Communication Bus 'A' Off",
+      "diagnostic_procedure": [
+        "Check CAN-H and CAN-L wiring.",
+        "Measure bus resistance at DLC.",
+        "Locate short in CAN bus."
+      ],
+      "pak_vehicles": "All CAN-equipped vehicles"
+    },
+    {
+      "code": "U0100",
+      "type": "Generic",
+      "system": "CAN Bus",
+      "description": "Lost Communication with ECM/PCM 'A'",
+      "diagnostic_procedure": [
+        "Check ECM power supply and ground.",
+        "Inspect CAN bus wiring from ECM.",
+        "Verify ECM is powered."
+      ],
+      "pak_vehicles": "All CAN-equipped vehicles"
+    },
+    {
+      "code": "U0101",
+      "type": "Generic",
+      "system": "CAN Bus",
+      "description": "Lost Communication with TCM",
+      "diagnostic_procedure": [
+        "Check TCM power supply and CAN wiring.",
+        "Inspect TCM connector for corrosion."
+      ],
+      "pak_vehicles": "All AT/CVT vehicles"
+    },
+    {
+      "code": "U0121",
+      "type": "Generic",
+      "system": "CAN Bus",
+      "description": "Lost Communication with ABS Control Module",
+      "diagnostic_procedure": [
+        "Check ABS module power supply.",
+        "Inspect CAN bus wiring to ABS module.",
+        "Test ABS module connector for corrosion."
+      ],
+      "pak_vehicles": "All ABS-equipped vehicles"
+    },
+    {
+      "code": "U0140",
+      "type": "Generic",
+      "system": "CAN Bus",
+      "description": "Lost Communication with Body Control Module",
+      "diagnostic_procedure": [
+        "Check BCM power supply and CAN wiring.",
+        "Inspect BCM connector for water ingress."
+      ],
+      "pak_vehicles": "All vehicles with BCM"
+    },
+    {
+      "code": "U0155",
+      "type": "Generic",
+      "system": "CAN Bus",
+      "description": "Lost Communication with Instrument Panel Cluster",
+      "diagnostic_procedure": [
+        "Check IPC power supply and CAN bus connection.",
+        "Inspect IPC connector."
+      ],
+      "pak_vehicles": "All CAN-equipped vehicles"
+    },
+    {
+      "code": "U0401",
+      "type": "Generic",
+      "system": "CAN Bus",
+      "description": "Invalid Data Received from ECM/PCM",
+      "diagnostic_procedure": [
+        "Check CAN bus integrity.",
+        "Look for intermittent connections.",
+        "Update ECM software if available."
+      ],
+      "pak_vehicles": "All CAN-equipped vehicles"
+    },
+    {
+      "code": "U0422",
+      "type": "Generic",
+      "system": "CAN Bus",
+      "description": "Invalid Data Received from Body Control Module",
+      "diagnostic_procedure": [
+        "Check BCM software and CAN communication.",
+        "Update BCM if applicable."
+      ],
+      "pak_vehicles": "All vehicles with BCM"
+    },
+    {
+      "code": "P0A80",
+      "type": "Toyota-Specific",
+      "system": "Hybrid",
+      "description": "Replace Hybrid Battery Pack",
+      "diagnostic_procedure": [
+        "Check individual HV battery module voltages.",
+        "Identify weak/failed modules.",
+        "Replace complete HV battery or individual modules.",
+        "Very common in Pakistan with 10+ year old Prius/Aqua imports – most common hybrid code."
+      ],
+      "pak_vehicles": "Toyota Prius (Gen 2/3), Aqua/Prius C – very common in Pakistan"
+    },
+    {
+      "code": "P0A0F",
+      "type": "Toyota-Specific",
+      "system": "Hybrid",
+      "description": "Drive Motor 'A' Performance",
+      "diagnostic_procedure": [
+        "Check MG2 traction motor wiring and inverter.",
+        "Scan hybrid system with Toyota Techstream.",
+        "Check for coolant leak in inverter."
+      ],
+      "pak_vehicles": "Toyota Prius, Aqua"
+    },
+    {
+      "code": "P0C73",
+      "type": "Toyota-Specific",
+      "system": "Hybrid",
+      "description": "Hybrid Battery Pack Cooling Fan Malfunction",
+      "diagnostic_procedure": [
+        "Clean or replace HV battery cooling fan.",
+        "Check fan duct for blockage.",
+        "Common in Pakistan due to dust clogging the fan."
+      ],
+      "pak_vehicles": "Toyota Prius Gen 2/3, Aqua – very common in Pakistan"
+    },
+    {
+      "code": "P3190",
+      "type": "Toyota-Specific",
+      "system": "Hybrid",
+      "description": "Poor Engine Power (Hybrid System)",
+      "diagnostic_procedure": [
+        "Check hybrid battery state of charge.",
+        "Inspect MG1/MG2 inverter for fault codes.",
+        "Check 12V auxiliary battery condition."
+      ],
+      "pak_vehicles": "Toyota Prius, Aqua"
+    },
+    {
+      "code": "P1604",
+      "type": "Toyota-Specific",
+      "system": "ECM",
+      "description": "Startability Malfunction",
+      "diagnostic_procedure": [
+        "Check fuel system pressure.",
+        "Check crankshaft position sensor.",
+        "Verify immobilizer is not active."
+      ],
+      "pak_vehicles": "Toyota Corolla, Yaris"
+    },
+    {
+      "code": "P1780",
+      "type": "Toyota-Specific",
+      "system": "Transmission",
+      "description": "Park/Neutral Position Switch Malfunction",
+      "diagnostic_procedure": [
+        "Check PNP switch adjustment and wiring.",
+        "Test switch continuity in each position."
+      ],
+      "pak_vehicles": "Toyota Corolla AT, Fortuner AT"
+    },
+    {
+      "code": "P1259",
+      "type": "Honda-Specific",
+      "system": "VTEC",
+      "description": "VTEC System Malfunction Bank 1",
+      "diagnostic_procedure": [
+        "Check oil pressure (VTEC needs minimum 40 PSI).",
+        "Inspect VTEC spool valve for sticking.",
+        "Change engine oil if long overdue – very common in Pakistan.",
+        "Check oil pressure switch wiring."
+      ],
+      "pak_vehicles": "Honda Civic 1.8 R18A, City 1.5, BR-V – very common in Pakistan"
+    },
+    {
+      "code": "P1078",
+      "type": "Honda-Specific",
+      "system": "VTEC",
+      "description": "VTEC System Malfunction – Rocker Arm Oil Pressure Switch",
+      "diagnostic_procedure": [
+        "Check engine oil level and pressure.",
+        "Inspect VTEC solenoid filter for clogging.",
+        "Test VTEC solenoid resistance and operation."
+      ],
+      "pak_vehicles": "Honda Civic, City, BR-V"
+    },
+    {
+      "code": "P1456",
+      "type": "Honda-Specific",
+      "system": "EVAP",
+      "description": "EVAP System Leak – Fuel Tank Side",
+      "diagnostic_procedure": [
+        "Check fuel cap seal.",
+        "Inspect fuel tank EVAP lines.",
+        "Perform EVAP leak test."
+      ],
+      "pak_vehicles": "Honda Civic, City, BR-V"
+    },
+    {
+      "code": "P1326",
+      "type": "Hyundai-Specific",
+      "system": "Engine",
+      "description": "Knock Sensor Detection System (KSDS) – Engine Bearing Wear CRITICAL",
+      "diagnostic_procedure": [
+        "STOP ENGINE IMMEDIATELY – this code indicates severe engine bearing wear.",
+        "Check rod/main bearing condition.",
+        "Perform oil pressure test.",
+        "Engine rebuild required if bearings worn.",
+        "Common with neglected oil changes.",
+        "Hyundai Theta II engine recall-related code."
+      ],
+      "pak_vehicles": "Hyundai Tucson (Theta II engine), Sonata 2.0/2.4 – SERIOUS FAULT"
+    },
+    {
+      "code": "P1652",
+      "type": "Suzuki-Specific",
+      "system": "Transmission",
+      "description": "AGS (Automated Manual Transmission) Clutch Actuator Fault",
+      "diagnostic_procedure": [
+        "Check AGS clutch actuator motor and wiring.",
+        "Perform AGS calibration procedure with scan tool.",
+        "Inspect AGS clutch engagement.",
+        "Note: AGS faults are very common in Pakistan due to high traffic and frequent stop-start driving."
+      ],
+      "pak_vehicles": "Suzuki Alto AGS, Cultus AGS, WagonR AGS – very common in Pakistan"
+    },
+    {
+      "code": "P1653",
+      "type": "Suzuki-Specific",
+      "system": "Transmission",
+      "description": "AGS Gear Shift Actuator Fault",
+      "diagnostic_procedure": [
+        "Check AGS gear shift actuator motor and position sensor.",
+        "Perform AGS calibration."
+      ],
+      "pak_vehicles": "Suzuki Alto AGS, Cultus AGS, WagonR AGS"
+    },
+    {
+      "code": "P1654",
+      "type": "Suzuki-Specific",
+      "system": "Transmission",
+      "description": "AGS Clutch Not Engaging Properly",
+      "diagnostic_procedure": [
+        "Check AGS clutch wear.",
+        "Perform AGS clutch point learning procedure.",
+        "Inspect hydraulic actuator."
+      ],
+      "pak_vehicles": "Suzuki Alto AGS, Cultus AGS"
+    },
+    {
+      "code": "P1655",
+      "type": "Suzuki-Specific",
+      "system": "Transmission",
+      "description": "AGS Gear Position Sensor Fault",
+      "diagnostic_procedure": [
+        "Check AGS gear position sensor wiring and output in each gear."
+      ],
+      "pak_vehicles": "Suzuki Alto AGS, Cultus AGS"
+    },
+    {
+      "code": "P1501",
+      "type": "Daihatsu-Specific",
+      "system": "Idle",
+      "description": "ISC Valve Circuit Malfunction (KF Engine)",
+      "diagnostic_procedure": [
+        "Clean throttle body and ISC passages.",
+        "Check ISC valve resistance.",
+        "Perform throttle body adaptation."
+      ],
+      "pak_vehicles": "Daihatsu Mira, Move"
+    },
+    {
+      "code": "P0741",
+      "type": "Daihatsu-Specific",
+      "system": "CVT",
+      "description": "Torque Converter Clutch Stuck Off (D-CVT) – JDM Import",
+      "diagnostic_procedure": [
+        "Change CVT fluid – Pakistani importers rarely change CVT fluid on JDM imports.",
+        "Check CVT fluid level and condition.",
+        "Inspect torque converter operation."
+      ],
+      "pak_vehicles": "Daihatsu Mira, Move, Hijet"
+    },
+    {
+      "code": "P1217",
+      "type": "Nissan-Specific",
+      "system": "Cooling",
+      "description": "Engine Over-Temperature Condition",
+      "diagnostic_procedure": [
+        "Check coolant level and for leaks.",
+        "Test thermostat operation.",
+        "Inspect cooling fan operation.",
+        "Critical in Pakistan summers – check radiator for blockage."
+      ],
+      "pak_vehicles": "Nissan Sunny, Dayz"
+    },
+    {
+      "code": "U1100",
+      "type": "Changan-Specific",
+      "system": "CAN Bus",
+      "description": "CAN Bus Communication Error (Changan Proprietary)",
+      "diagnostic_procedure": [
+        "Check all module CAN connections.",
+        "Verify battery voltage is above 11V.",
+        "Inspect CAN bus wiring harness."
+      ],
+      "pak_vehicles": "Changan Alsvin, Oshan X7, Uni-T"
+    },
+    {
+      "code": "P062F",
+      "type": "Generic",
+      "system": "ECM",
+      "description": "Internal Control Module EEPROM Error",
+      "diagnostic_procedure": [
+        "Reflash ECM with latest software.",
+        "Replace ECM if fault persists after reflash."
+      ],
+      "pak_vehicles": "Changan Alsvin, Oshan X7, MG HS/ZS (common on Chinese brand ECMs in Pakistan)"
+    }
+  ]
+}

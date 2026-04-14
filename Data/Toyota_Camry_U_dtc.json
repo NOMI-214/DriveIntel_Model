@@ -1,0 +1,403 @@
+{
+  "source_file": "Toyota_Camry_U.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 23,
+  "dtcs": [
+    {
+      "dtc_code": "U0001",
+      "description": "High Speed CAN Communication Circuit There are two primary control roles for the hybrid vehicle control ECU. One role is engine control, the other role is hybrid system control. In the hybrid vehicle control ECU, there is a section equivalent to the ECM which is responsible for engine control, and a section referred to as the hybrid vehicle control ECU that is responsible for hybrid system control. These two exchange signals using CAN communication. If there is a problem with this communication, a DTC is set. MONITOR STRATEGY TYPICAL ENABLING CONDITIONS TYPICAL MALFUNCTION THRESHOLDS PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK OTHER DTC OUTPUT (IN ADDITION TO DTC U0001) (a) Connect the Techstream to the DLC3. (b) Turn the power switch on (IG). (c) Turn the tester on. (d) Enter the following menus: Powertrain / Engine / Trouble Code. (e) Read the DTCs. Result: B --  GO TO DTC CHART  See: Diagnostic Trouble Code Descriptions/Engine Control System - SFI System A --  REPLACE HYBRID VEHICLE CONTROL ECU  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U029A-123",
+      "description": "Lost Communication with Hybrid Battery Pack Sensor Module The battery smart unit detects the HV battery conditions (voltage, current, and temperature) and the battery cooling fan voltages, and sends the detected information to the hybrid vehicle control ECU via serial communication. MONITOR DESCRIPTION If the battery smart unit detects a malfunction in serial communication with the hybrid vehicle control ECU, it will illuminate the MIL and set a DTC. MONITOR STRATEGY TYPICAL ENABLING CONDITIONS TYPICAL MALFUNCTION THRESHOLDS COMPONENT OPERATING RANGE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK HARNESS AND CONNECTOR (VOLTAGE)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK HARNESS AND CONNECTOR (HYBRID VEHICLE CONTROL ECU - BATTERY SMART UNIT)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK WAVEFORM",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0073",
+      "description": "Control Module Communication Bus Off This DTC is stored when a CAN communication circuit malfunction is detected by navigation receiver assembly self check. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK DTC (a) Clear the DTCs    See: Accessories and Optional Equipment/Navigation System/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. (b) Recheck for DTCs and check if the same trouble occurs again. OK: No DTCs are output. NG --  GO TO CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With OK --  USE SIMULATION METHOD TO CHECK  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/How To Proceed With Troubleshooting Lost Communication with HV ECU - Electronic Power Steering System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": [
+        "U0100",
+        "U0129",
+        "U0293"
+      ]
+    },
+    {
+      "dtc_code": "U0293",
+      "description": "Lost Communication with HV ECU The power steering ECU assembly receives signals from the hybrid vehicle control ECU, skid control ECU and steering control ECU via CAN communication. HINT * When two or more DTCs starting with \"U\" are output simultaneously, inspect the connectors and wire harness of each ECU. * If the power steering ECU assembly detects DTC U0129 only, it adjusts the amount of power assistance for driving at a speed of 100 km/h (62 mph) and continues system control. Refer to the U0073 (CAN communication system) See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With Troubleshooting. Refer to the U0100 (CAN communication system) See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview. Refer to the U0129 (CAN communication system) See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview. Refer to the U0293 (CAN communication system) See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview. Communication Error from HV ECU - Electronically Controlled Brake System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK HARNESS AND CONNECTOR (MOMENTARY INTERRUPTION) (a) Using Techstream, check for any momentary interruption in the wire harness and connector corresponding to a DTC    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Component Tests and General Diagnostics/Electronically Controlled Brake System/Check For Intermittent Problems. ABS / VSC / TRAC: ABS / VSC / TRAC: Result: HINT Perform the above inspection before removing the sensor and connector. C --  REPAIR OR REPLACE HARNESS OR CONNECTOR B --  RECONFIRM DTC A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK IF EACH SENSOR AND ECU CONNECTOR IS SECURELY CONNECTED (a) Turn the power switch off. (b) Check if each sensor and ECU connector is securely connected. OK: The connector should be securely connected. NG --  CONNECT CONNECTOR TO EACH SENSOR OR ECU CORRECTLY OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "RECONFIRM DTC (a) Turn the power switch off. (b) Record the output DTCs (for ABS, VSC, Electronically Controlled Brake, and CAN communication). HINT If the CAN communication system DTC and the relevant sensor DTCs are output simultaneously, troubleshoot the relevant sensor DTCs (for ABS, VSC and Electronically Controlled Brake) after the CAN communication system returns to normal. Result: C --  CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION) B --  REPAIR CIRCUIT INDICATED BY OUTPUT DTC  See: Diagnostic Trouble Code Descriptions/Electronically Controlled Brake System A --  INSPECT CAN COMMUNICATION SYSTEM",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "REPAIR OR REPLACE HARNESS OR CONNECTOR (a) Turn the power switch off. (b) Repair or replace the harness or connector. (c) Check for any momentary interruption between the skid control ECU and each sensor or ECU    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Component Tests and General Diagnostics/Electronically Controlled Brake System/Check For Intermittent Problems. (d) Check that there is no momentary interruption. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "RECONFIRM DTC (a) Turn the power switch off. (b) Clear the DTC    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. (c) Turn the power switch on (READY). (d) Drive the vehicle and turn the steering wheel to the right and left at a speed of 15 km/h (9 mph) or more. (e) Check that no CAN communication system DTC is output. (f) If ABS, VSC and Electronically Controlled Brake DTCs are output, record them. Result: HINT The CAN communication system must be normal when repairing each sensor DTC (for ABS, VSC and Electronically Controlled Brake). C --  END B --  REPAIR CIRCUIT INDICATED BY OUTPUT DTC  See: Diagnostic Trouble Code Descriptions/Electronically Controlled Brake System A --  INSPECT CAN COMMUNICATION SYSTEM Control Module Communication Bus OFF - Navigation System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100",
+      "description": "Lost Communication with ECM / PCM \"A\" The combination meter assembly communicates with the hybrid vehicle control ECU via the CAN communication lines (CAN No. 1 Bus). PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CONFIRM DTC OUTPUT (a) Connect Techstream to the DLC3. (b) Turn the power switch on (READY). (c) Turn the tester on. (d) Clear the stored DTCs by selecting the following menu items on the tester: Body Electrical / Trouble Codes. (e) Drive the vehicle at more than 5 km/h (3.1 mph) for at least 60 seconds. (f) Stop the vehicle. (g) Check for DTCs    See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/Diagnosis System. Result: HINT HINT: If the CAN communication system DTC U0100 and another DTC are output at the same time, perform troubleshooting for the CAN communication system DTC U0100 first. B --  USE SIMULATION METHOD TO CHECK A --  GO TO CAN COMMUNICATION SYSTEM Lost Communication with HV ECU - Electronic Power Steering System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100-211",
+      "description": "P311 HYBRID VEHICLE CONTROL: HYBRID CONTROL SYSTEM: U0100-211,U0100-212,U0100-530,U0100-774,U0100-784,U0129-220,U0129-222,U0129-528,U0129-529,U0140-146: Lost Communication with ECM / PCM \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0140-146",
+      "description": "Lost Communication with Body Control Module * The hybrid vehicle control ECU transmits and receives signals to and from the ECM, skid control ECU assembly, absorber control ECU, and network gateway ECU via CAN communication. MONITOR DESCRIPTION If the hybrid vehicle control ECU detects a problem with CAN communication between the ECU and ECM, the hybrid vehicle control ECU will illuminate the MIL and set a DTC. MONITOR STRATEGY TYPICAL ENABLING CONDITIONS TYPICAL MALFUNCTION THRESHOLDS COMPONENT OPERATING RANGE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK DTC OUTPUT (a) Connect the Techstream to the DLC3. (b) Turn the power switch on (IG). (c) Check for DTCs of all systems by following the prompts on the Techstream screen. HINT If DTCs other than CAN communication DTCs are output simultaneously, first repair the CAN communication problem, and then perform troubleshooting for other DTCs. NEXT --  GO TO CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100-212",
+      "description": "P311 HYBRID VEHICLE CONTROL: HYBRID CONTROL SYSTEM: U0100-211,U0100-212,U0100-530,U0100-774,U0100-784,U0129-220,U0129-222,U0129-528,U0129-529,U0140-146: Lost Communication with ECM / PCM \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100-530",
+      "description": "P311 HYBRID VEHICLE CONTROL: HYBRID CONTROL SYSTEM: U0100-211,U0100-212,U0100-530,U0100-774,U0100-784,U0129-220,U0129-222,U0129-528,U0129-529,U0140-146: Lost Communication with ECM / PCM \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100-774",
+      "description": "P311 HYBRID VEHICLE CONTROL: HYBRID CONTROL SYSTEM: U0100-211,U0100-212,U0100-530,U0100-774,U0100-784,U0129-220,U0129-222,U0129-528,U0129-529,U0140-146: Lost Communication with ECM / PCM \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100-784",
+      "description": "P311 HYBRID VEHICLE CONTROL: HYBRID CONTROL SYSTEM: U0100-211,U0100-212,U0100-530,U0100-774,U0100-784,U0129-220,U0129-222,U0129-528,U0129-529,U0140-146: Lost Communication with ECM / PCM \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0110-159",
+      "description": "Lost Communication with Driver Motor Control Module",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": [
+        "U0110-160",
+        "U0110-656",
+        "U0110-657"
+      ]
+    },
+    {
+      "dtc_code": "U0110-657",
+      "description": "Lost Communication with Driver Motor Control Module * For a description of the inverter with converter assembly, See: P Code Charts/P0A78. * The inverter with converter assembly (MG ECU) controls MG2 based on commands from the hybrid vehicle control ECU via serial communication. * The inverter with converter assembly (MG ECU) monitors communication data and detects malfunctions.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CLEAR DTC (HV) (a) Connect the Techstream to the DLC3. (b) Turn the power switch on (IG). (c) Read and record the DTCs and freeze frame data. (d) Select the following menu items: Powertrain / Hybrid Control / Trouble Codes. (e) Clear DTCs and freeze frame data. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "RECONFIRM DTC OUTPUT (HV) (a) Connect the Techstream to the DLC3. (b) Turn the power switch on (IG). (c) Select the following menu items: Powertrain / Hybrid Control / Trouble Codes. (d) Check if DTCs are output. Result: DTC U0110-159, 160, 656 or 657 is output. General Diagnostics/Hybrid Control System",
+          "yes": "- Continue to next step.",
+          "no": "-  CHECK FOR INTERMITTENT PROBLEMS  See: Hybrid Drive Systems/Testing and Inspection/Component Tests and"
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK CONNECTOR CONNECTION CONDITION (INVERTER WITH CONVERTER ASSEMBLY CONNECTOR)   See: P Code Charts/P0343 NG --  CONNECT SECURELY OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "CHECK HARNESS AND CONNECTOR (INVERTER WITH CONVERTER ASSEMBLY POWER SOURCE CIRCUIT)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "CHECK CONNECTOR CONNECTION CONDITION (HYBRID VEHICLE CONTROL ECU CONNECTOR)   See: P Code Charts/P0343 NG --  CONNECT SECURELY OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "CHECK HARNESS AND CONNECTOR (HV CONTROL ECU - INVERTER WITH CONVERTER ASSEMBLY) (a) Turn the power switch off. (b) Disconnect the A61 hybrid vehicle control ECU connector. (c) Turn the power switch on (IG). (d) Measure the voltage according to the value(s) in the table below. Standard voltage: NOTICE: Turning the power switch on (IG) with the low voltage connector of the inverter with converter assembly or hybrid vehicle control ECU connector disconnected causes other DTCs to be stored. Clear the DTCs after performing this inspection. (e) Turn the power switch off. (f) Measure the resistance according to the value(s) in the table below. Standard resistance (Check for open): Standard resistance (Check for short): NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "CHECK HYBRID VEHICLE CONTROL ECU (a) Turn the power switch off. (b) Connect the hybrid vehicle control ECU connector. (c) Measure the resistance according to the value(s) in the table below. Standard resistance: NG --  REPLACE HYBRID VEHICLE CONTROL ECU  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair/Components OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "CHECK INVERTER WITH CONVERTER ASSEMBLY (a) Turn the power switch off. (b) Connect the inverter with converter assembly connector. (c) Disconnect the A61 hybrid vehicle control ECU connector. (d) Measure the resistance according to the value(s) in the table below. Standard resistance: NG --  REPLACE INVERTER WITH CONVERTER ASSEMBLY  See: Hybrid Drive Systems/Power Control System/Voltage Converter/Service and Repair/Inverter With Converter/Components OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "CHECK NOISE SOURCE HINT Using non-genuine parts may cause electrical noise to be introduced. Result: Electrical noise is introduced.",
+          "yes": "-  REPAIR OR REPLACE NOISE SOURCE",
+          "no": "- Continue to next step."
+        },
+        {
+          "step": 10,
+          "instruction": "REPLACE HYBRID VEHICLE CONTROL ECU NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "CLEAR DTC (a) Connect the Techstream to the DLC3. (b) Turn the power switch on (IG). (c) Select the following menu items: Powertrain / Hybrid Control / Trouble Codes. (d) Clear DTCs and freeze frame data. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "RECONFIRM DTC OUTPUT (HV) (a) Connect the Techstream to the DLC3. (b) Turn the power switch on (IG). (c) Select the following menu items: Powertrain / Hybrid Control / Trouble Codes. (d) Check if DTCs are output. Result: DTC U0110-159, 160, 656 or 657 is output. Converter/Service and Repair/Inverter With Converter/Components",
+          "yes": "-  REPLACE INVERTER WITH CONVERTER ASSEMBLY  See: Hybrid Drive Systems/Power Control System/Voltage",
+          "no": "-  COMPLETED"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0129",
+      "description": "Lost Communication with Skid Control ECU The combination meter assembly communicates with the skid control ECU via the CAN communication system (CAN No. 1 Bus). PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CONFIRM DTC OUTPUT (a) Connect Techstream to the DLC3. (b) Turn the power switch on (READY). (c) Turn the tester on. (d) Clear the stored DTCs by selecting the following menu items on the tester: Body Electrical / Trouble Codes. (e) Drive the vehicle at more than 5 km/h (3.1 mph) for at least 60 seconds. (f) Stop the vehicle. (g) Check for DTCs    See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/Diagnosis System. Result: HINT If the CAN communication system DTC U0129 and another DTC are output at the same time, perform troubleshooting for the CAN communication system DTC U0129 first. B --  USE SIMULATION METHOD TO CHECK A --  GO TO CAN COMMUNICATION SYSTEM",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0129-220",
+      "description": "P311 HYBRID VEHICLE CONTROL: HYBRID CONTROL SYSTEM: U0100-211,U0100-212,U0100-530,U0100-774,U0100-784,U0129-220,U0129-222,U0129-528,U0129-529,U0140-146: Lost Communication with ECM / PCM \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0129-222",
+      "description": "P311 HYBRID VEHICLE CONTROL: HYBRID CONTROL SYSTEM: U0100-211,U0100-212,U0100-530,U0100-774,U0100-784,U0129-220,U0129-222,U0129-528,U0129-529,U0140-146: Lost Communication with ECM / PCM \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0129-528",
+      "description": "P311 HYBRID VEHICLE CONTROL: HYBRID CONTROL SYSTEM: U0100-211,U0100-212,U0100-530,U0100-774,U0100-784,U0129-220,U0129-222,U0129-528,U0129-529,U0140-146: Lost Communication with ECM / PCM \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0129-529",
+      "description": "P311 HYBRID VEHICLE CONTROL: HYBRID CONTROL SYSTEM: U0100-211,U0100-212,U0100-530,U0100-774,U0100-784,U0129-220,U0129-222,U0129-528,U0129-529,U0140-146: Lost Communication with ECM / PCM \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0140",
+      "description": "P311 HYBRID VEHICLE CONTROL: HYBRID CONTROL SYSTEM: U0100-211,U0100-212,U0100-530,U0100-774,U0100-784,U0129-220,U0129-222,U0129-528,U0129-529,U0140-146: Lost Communication with ECM / PCM \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0151-763",
+      "description": "Lost Communication with Airbag ECU Since the center airbag sensor is connected to the BEAN, signals sent to the hybrid vehicle control ECU on the CAN move from one network to the other via the network gateway ECU.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK DTC OUTPUT (a) Connect the Techstream to the DLC3. (b) Turn the power switch on (IG). (c) Check for and record DTCs of all systems by following the prompts on the Techstream screen. NEXT --  GO TO CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0164-594",
+      "description": "Lost Communication with A/C ECU",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": [
+        "U0164-827"
+      ]
+    },
+    {
+      "dtc_code": "U0164-827",
+      "description": "Lost Communication with A/C ECU Since the A/C amplifier is connected to the BEAN, signals sent to the hybrid vehicle control ECU on the CAN move from one network to the other via the network gateway ECU.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK DTC OUTPUT (a) Connect the Techstream to the DLC3. (b) Turn the power switch on (IG). (c) Check for and record DTCs of all systems by following the prompts on the Techstream screen. NEXT --  GO TO CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With Lost Communication with HV ECU - Electronic Power Steering System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0424-537",
+      "description": "Invalid Data Received from HVAC Control Module If there is a malfunction in the air conditioning amplifier assembly, DTC U0424-537 will be output.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK DTC OUTPUT (AIR CONDITIONING SYSTEM) (a) Connect the Techstream to the DLC3. (b) Turn the power switch on (IG). (c) Select the following menu items: Body Electrical / Air Conditioner / Trouble Codes. (d) Check if DTCs are output. Result: Air conditioning system DTCs are output.",
+          "yes": "-  GO TO AIR CONDITIONING SYSTEM  See: Diagnostic Trouble Code Descriptions/Air Conditioning System",
+          "no": "-  REPLACE AIR CONDITIONING AMPLIFIER ASSEMBLY"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

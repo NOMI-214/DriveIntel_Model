@@ -1,0 +1,283 @@
+{
+  "source_file": "KIA_Sorento_U.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 6,
+  "dtcs": [
+    {
+      "dtc_code": "U0001",
+      "description": "High Speed CAN Communication Bus off General Information This vehicle has a Control Area Network CAN bus system. CAN is a method of communication between the PCM and other control units. Some of the other control units that could be on the CAN lines are PCM, TCM, ESP PCM, ABS and BCM. The CAN consist of a 2 wire network, a high and a low wire. A vehicle can have two CAN systems. A High Speed CAN for engine, trans and ABS and a Low Speed CAN for BCM and windows. Checking CAN communication, under detecting condition, if an error within the detecting condition is detected for more than 1.5 sec., PCM sets U0001. DTC Detecting Condition Specification Diagnostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect GDS to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select \"Current Data\" mode and monitor \"Inhibitor switch\" parameter.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"CAN COMMUNICATION SERVICE DATA (ENGINE RPM, VEHICLE SPEED SENSOR, THROTTLE P. SENSOR)\" parameters on the GDS. Fig 1) Low-RPM Fig 2) High-RPM",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is measured current data within specification? W/Harness Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100",
+      "description": "Lost Communication With ECM/PCM \\'A\\' General Information CAN communication is a parallel circuit to interchange information among each units. CAN communication can share much information with units more faster and more efficiently by using specified language. CAN-High line is twisted with CAN-Low line as a purpose in preventing from a noise. The operating duty of EMC is maintained at 100 : 0 (2WD) for guaranteeing stabilized driving force, accuracy of the control during inside ABS, FTCS, ESP control. The 4WD ECM sets DTC U0100 if it doesn't receive APS signals from ECM. DTC Detecting Condition Specification Diagnostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Self-diagnose 4WD ECM with scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check the change of the sensor's value as the throttle position sensor's value varies according to the change of accelerator.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "If the sensor's value is stuck, self-diagnose ECM with scantool. So if there are any DTCs related to the sensor, inspect it at first and check if the DTCs have been erased.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "In a case that there is no DTC, select \"Accelerator pedal sensor\" item among the service data.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check the sensor's change according to the accelerator pedal's change. Specification :  It varies according to the accelerator pedal's change. Fig.1) Throttle Position (4WD) Fig.2) Throttle Position (ECM)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Is parameter within specifications? W/Harness Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0121",
+      "description": "Lost Communication With Anti-Lock Brake System (ABS) Control Module General Information CAN communication is a parallel circuit to interchange information among each units. CAN communication can share much information with units more faster and more efficiently by using specified language. CAN-High line is twisted with CAN-Low line as a purpose in preventing from a noise. The operating duty of EMC is maintained at 100 : 0 (2WD) for guaranteeing stabilized driving force, accuracy of the control during inside ABS, FTCS, ESP control.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Self-diagnose 4WD ECM with scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check the change of each wheel speed sensor's value according to the change of vehicle speed.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "If the sensor's value is stuck, self-diagnose ABS ECM with scantool. So if there are any DTCs related to the sensor, inspect it at first and check if the DTCs have been erased.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "In a case that there is no DTC, select \"RPM\" item among the service data.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check the change of the sensor's value according to a vehicle's speed. Specification :  It varies according to a vehicle's speed. Fig.1) Wheel Speed Velocity (4WD) Fig.2) Wheel Speed Sensor (ABS)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Is parameter displayed within specifications? W/Harness Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0122",
+      "description": "Lost Communication With Vehicle Dynamics Control Module General Information CAN communication is a parallel circuit to interchange information among each units. CAN communication can share much information with units more faster and more efficiently by using specified language. CAN-High line is twisted with CAN-Low line as a purpose in preventing from a noise. The operating duty of EMC is maintained at 100 : 0 (2WD) for guaranteeing stabilized driving force, accuracy of the control during inside ABS, FTCS, ESP control.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Self-diagnose 4WD ECM with scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check the change of each wheel speed sensor's value according to the change of vehicle speed.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "If the sensor's value is stuck, self-diagnose VDC ECM with scantool. So if there are any DTCs related to the sensor, inspect it at first and check if the DTCs have been erased.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "In a case that there is no DTC, select \"RPM\" item among the service data.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check the change of the sensor's value according to a vehicle's speed. Specification :  It varies according to a vehicle's speed. Fig.1) Wheel Speed Velocity (4WD) Fig.2) Wheel Speed Sensor (VDC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Is parameter displayed within specifications? W/Harness Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U",
+      "description": "Battery Sensor fault detected by ECU General Information Battery sensor is mounted on the battery (-) terminal. It transmits battery voltage, current, temperature information to PCM. PCM controls the generating output by changing the duty cycle to the generator based on these signals. PCM sets this code when error bit in LIN messages from battery sensor indicates \"1\" DTC Detecting Condition Diagnostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect GDS to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "IG \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select \"DTC\" button, and then Press \"DTC Status\" to check DTC's information from the DTCs menu.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Read \"DTC Status\" parameter.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed \"Present fault\"? W/Harness Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1112",
+      "description": "LIN Communication Error General Information Battery sensor is mounted on the battery (-) terminal. It transmits battery voltage, current, temperature information to PCM. PCM controls the generating output by changing the duty cycle to the generator based on these signals. PCM sets this code when there is an error in LIN communication line. DTC Detecting Condition Diagnostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect GDS to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "IG \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select \"DTC\" button, and then Press \"DTC Status\" to check DTC's information from the DTCs menu.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Read \"DTC Status\" parameter.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed \"Present fault\"? W/Harness Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

@@ -1,0 +1,2422 @@
+{
+  "source_file": "Suzuki_Swift_P.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 53,
+  "dtcs": [
+    {
+      "dtc_code": "P0106",
+      "description": "This sensor senses pressure change in the intake manifold and converts it into voltage change. It consists of a semi-conductor type pressure converting element which converts a pressure change into an electrical change and an integrated circuit which amplifies and corrects the electric change. The ECM (PCM) sends a 5-volt reference voltage to the pressure sensor. As the manifold pressure changes, the electrical resistance of the sensor also changes. By monitoring the sensor output voltage, ECM (PCM) knows the manifold pressure (intake air volume). ECM (PCM) uses the voltage signal from the pressure sensor as one of the signals to control various devices.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF Clear DTC with ignition switch ON, check vehicle and environmental condition for: - Indication of fuel level meter in combination meter: 1/4 or more - Altitude (barometric pressure): 2400 m, 8000 ft or less (560 mm Hg, 75 kPa or more) - Ambient temp.: -10 °C, 14 °F or higher - Intake air temp.: 70 °C, 158 °F or lower - Engine coolant temp.: 70 - 110 °C, 158 - 230 °F",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Start engine and keep it at idle for 2 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Increase engine speed to 4000 r/min and release accelerator pedal so that engine is in fuel cut condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check DTC in \"DTC\" mode and pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode. Step 1 - 4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0107",
+      "description": "This sensor senses pressure change in the intake manifold and converts it into voltage change. It consists of a semi-conductor type pressure converting element which converts a pressure change into an electrical change and an integrated circuit which amplifies and corrects the electric change. The ECM (PCM) sends a 5-volt reference voltage to the pressure sensor. As the manifold pressure changes, the electrical resistance of the sensor also changes. By monitoring the sensor output voltage, ECM (PCM) knows the manifold pressure (intake air volume). ECM (PCM) uses the voltage signal from the pressure sensor as one of the signals to control various devices.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC, start engine and keep it at idle for 1 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"DTC\" mode on scan tool and check DTC. Step 1 - 4 MAP Sensor Individual Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 1,
+          "instruction": "Disconnect coupler from MAP sensor.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Remove MAP sensor.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Arrange 3 new 1.5 V batteries in series (check that total voltage is 4.5 - 5.0 V) and connect its positive terminal to \"Vin\" terminal of sensor and negative terminal to \"Ground\" terminal. Then check voltage between \"Vout\" and \"Ground\". Also, check if voltage reduces when vacuum is applied up to 400 mm Hg by using vacuum pump. If check result is not satisfactory, replace MAP sensor.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Install MAP sensor securely.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Connect MAP sensor coupler securely.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0108",
+      "description": "This sensor senses pressure change in the intake manifold and converts it into voltage change. It consists of a semi-conductor type pressure converting element which converts a pressure change into an electrical change and an integrated circuit which amplifies and corrects the electric change. The ECM (PCM) sends a 5-volt reference voltage to the pressure sensor. As the manifold pressure changes, the electrical resistance of the sensor also changes. By monitoring the sensor output voltage, ECM (PCM) knows the manifold pressure (intake air volume). ECM (PCM) uses the voltage signal from the pressure sensor as one of the signals to control various devices.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC, start engine and keep it at idle for 1 min",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"DTC\" mode on scan tool and check DTC. Step 1 - 4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0111",
+      "description": "Located on the air cleaner hose, this sensor constantly measures the temperature of the air entering there and converts a change in the air temperature into that in resistance through its thermistor. That is, as air temperature lowers, resistance increases and as it rises, resistance decreases. As air density of the intake air varies with variation in temperature, ECM (PCM) by monitoring the resistance, adjusts the amount of fuel injection according to the air temperature.",
+      "detection_condition": [
+        "/ Possible Cause",
+        "Step 1 - 3"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC and turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Confirm that engine coolant temp. is lower than 30 °C (86 °F). If it is the specified temp. or higher, cool engine.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and run it for 10 min. or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check DTC and pending DTC.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0112",
+      "description": "Located on the air cleaner hose, this sensor constantly measures the temperature of the air entering there and converts a change in the air temperature into that in resistance through its thermistor. That is, as air temperature lowers, resistance increases and as it rises, resistance decreases. As air density of the intake air varies with variation in temperature, ECM (PCM) by monitoring the resistance, adjusts the amount of fuel injection according to the air temperature.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC, start engine and keep it at idle for 1 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"DTC\" mode on scan tool and check DTC. Step 1 - 3",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0113",
+      "description": "Located on the air cleaner hose, this sensor constantly measures the temperature of the air entering there and converts a change in the air temperature into that in resistance through its thermistor. That is, as air temperature lowers, resistance increases and as it rises, resistance decreases. As air density of the intake air varies with variation in temperature, ECM (PCM) by monitoring the resistance, adjusts the amount of fuel injection according to the air temperature.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC, start engine and keep it at idle for 1 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"DTC\" mode on scan tool and check DTC. Step 1 - 4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0116",
+      "description": "Incorporated with coolant temp. gauge and installed to thermostat case, this sensor measures the temperature of the engine coolant and converts its change into that in resistance through the thermistor like the air temperature sensor. That is, as coolant temperature lowers, resistance increases and as it rises, resistance decreases. By monitoring the resistance of the coolant temperature sensor, ECM (PCM) detects the engine coolant temperature and that affects most systems under the control of ECM (PCM).",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF. Clear DTC with ignition switch ON, check vehicle and environmental condition for: - Indicator of fuel level meter in combination meter: within 1/4 - 3/4 - Altitude (barometric pressure): 2400 m, 8000 ft or less (560 mm Hg, 75 kPa or more) - Ambient temp. : -10 °C, 14 °F or higher - Intake air temp.: 70 °C, 158 °F or lower",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Start engine and increase vehicle speed to about 40 mph (60 kph).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Reduce vehicle speed about 30 mph (50 kph) and then increase it to about 40 mph (60 kph) within about 1 minute. (Under driving condition other than high-load, high-engine speed, rapid accelerating and decelerating)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Repeat above step 3.for 29 minutes including stops at traffic lights. After every stop, restore vehicle speed as described in above step 3.quickly.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Stop vehicle (do not turn ignition switch OFF).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check pending DTC in \"PENDING DTC\" mode and DTC in \"DTC\" mode Step 1 - 4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0117",
+      "description": "Incorporated with coolant temp. gauge and installed to thermostat case, this sensor measures the temperature of the engine coolant and converts its change into that in resistance through the thermistor like the air temperature sensor. That is, as coolant temperature lowers, resistance increases and as it rises, resistance decreases. By monitoring the resistance of the coolant temperature sensor, ECM (PCM) detects the engine coolant temperature and that affects most systems under the control of ECM (PCM).",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC, start engine and keep it at idle for 1 min",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"DTC\" mode on scan tool and check DTC.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0118",
+      "description": "Incorporated with coolant temp. gauge and installed to thermostat case, this sensor measures the temperature of the engine coolant and converts its change into that in resistance through the thermistor like the air temperature sensor. That is, as coolant temperature lowers, resistance increases and as it rises, resistance decreases. By monitoring the resistance of the coolant temperature sensor, ECM (PCM) detects the engine coolant temperature and that affects most systems under the control of ECM (PCM).",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC start engine and keep it at idle for 1 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"DTC\" mode on scan tool and check DTC. Step 1 - 4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0121",
+      "description": "The throttle position sensor is connected to the throttle valve shaft on the throttle body, and detects the throttle valve opening. The throttle opening is detected by the potentiometer as follows. A 5-volt reference voltage is applied to the sensor from ECM (PCM) and as its brush moves over the print resistance according to the throttle valve opening, the output voltage varies accordingly. By monitoring sensor output voltage, ECM (PCM) detects the throttle valve opening. ECM (PCM) uses the signal from TP sensor as one of the signals to control various devices.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF. Clear DTC with ignition switch ON, check vehicle and environmental condition for: - Indication of fuel level meter in combination meter: 1/4 or more - Altitude (barometric pressure): 2400 m, 8000 ft or less (560 mm Hg, 75 kPa or more) - Ambient temp.: -10 °C, 14 °F or higher - Intake air temp.: 70 °C, 158 °F or lower - Engine coolant temp.: 70 - 110 °C, 158 - 230 °F",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Warm up engine to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Increase vehicle speed to 30 - 40 mph, 50 - 60 kph in 3rd gear or \"D\" range and hold throttle valve at that opening position for 1 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Stop vehicle.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check DTC in \"DTC\" mode and pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode. Step 1 - 4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0122",
+      "description": "The throttle position sensor is connected to the throttle valve shaft on the throttle body, and detects the throttle valve opening. The throttle opening is detected by the potentiometer as follows. A 5-volt reference voltage is applied to the sensor from ECM (PCM) and as its brush moves over the print resistance according to the throttle valve opening, the output voltage varies accordingly. By monitoring sensor output voltage, ECM (PCM) detects the throttle valve opening. ECM (PCM) uses the signal from TP sensor as one of the signals to control various devices.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC, start engine and keep it at idle for 1 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"DTC\" mode on scan tool and check DTC. Step 1 - 4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0123",
+      "description": "The throttle position sensor is connected to the throttle valve shaft on the throttle body, and detects the throttle valve opening. The throttle opening is detected by the potentiometer as follows. A 5-volt reference voltage is applied to the sensor from ECM (PCM) and as its brush moves over the print resistance according to the throttle valve opening, the output voltage varies accordingly. By monitoring sensor output voltage, ECM (PCM) detects the throttle valve opening. ECM (PCM) uses the signal from TP sensor as one of the signals to control various devices.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC, start engine and keep it at idle for 1 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"DTC\" mode on scan tool and check DTC. Step 1 - 4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0125",
+      "description": "Incorporated with coolant temp. gauge and installed to thermostat case, this sensor measures the temperature of the engine coolant and converts its change into that in resistance through the thermistor like the air temperature sensor. That is, as coolant temperature lowers, resistance increases and as it rises, resistance decreases. By monitoring the resistance of the coolant temperature sensor, ECM (PCM) detects the engine coolant temperature and that affects most systems under the control of ECM (PCM).",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF. Clear DTC with ignition switch ON, check vehicle and environmental condition for: - Indication of fuel level meter in combination meter: 1/4 or more - Altitude (barometric pressure): 2400 m, 8000 ft or less (560 mm Hg, 75 kPa or more) - Ambient temp. : -10 °C, 14 °F or higher - Intake air temp.: 70 °C, 156 °F or lower",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Drive vehicle at 30 - 40 mph, 50 - 60 kph for 5 min. (or till engine coolant temperature rises to 40 °C, 104 °F or higher.)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Stop vehicle (do not turn ignition switch OFF).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check DTC in \"DTC\" mode and pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0131",
+      "description": "The oxygen sensor-1 is installed on the exhaust manifold (precatalyst) and the oxygen sensor-2 is installed on the exhaust pipe (post catalyst). Each sensor detect the concentration of oxygen in the exhaust gases. ECM (PCM) detects the air-fuel ratio of the mixture supplied to the engine by monitoring the signal (output voltage) from sensor-1.The signal (output voltage) from sensor-2 is used to detect malfunction of the three way catalytic converter. Each oxygen sensor heater promotes activation of the oxygen sensor.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF. Clear DTC with ignition switch ON, check vehicle and environmental condition for: - Indication of fuel level meter in combination meter: 1/4 or more - Altitude (barometric pressure): 2400 m, 8000 ft or less (560 mm Hg, 75 kPa or more) - Ambient temp. : -10 °C, 14 °F or higher - Intake air temp.: 70 °C, 158 °F or lower",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Warm up engine to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Drive vehicle at 30 - 40 mph, 50 - 60 kph for 2 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Stop vehicle and run engine at idle for 2 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check DTC in \"DTC\" mode and pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode. Step 1 - 3",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0132",
+      "description": "The oxygen sensor-1 is installed on the exhaust manifold (precatalyst) and the oxygen sensor-2 is installed on the exhaust pipe (post catalyst). Each sensor detect the concentration of oxygen in the exhaust gases. ECM (PCM) detects the air-fuel ratio of the mixture supplied to the engine by monitoring the signal (output voltage) from sensor-1.The signal (output voltage) from sensor-2 is used to detect malfunction of the three way catalytic converter. Each oxygen sensor heater promotes activation of the oxygen sensor.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF. Clear DTC with ignition switch ON, check vehicle and environmental condition for: - Indication of fuel level meter in combination meter: 1/4 or more - Altitude (barometric pressure): 2400 m, 8000 ft or less (560 mm Hg, 75 kPa or more) - Ambient temp. : -10 °C, 14 °F or higher - Intake air temp.: 70 °C, 158 °F or lower",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Warm up engine to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Drive vehicle at 30 - 40 mph, 50 - 60 kph for 2 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Stop vehicle and run engine at idle for 2 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check DTC in \"DTC\" mode and pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode. Step 1 - 3",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0133",
+      "description": "The oxygen sensor-1 is installed on the exhaust manifold (precatalyst) and the oxygen sensor-2 is installed on the exhaust pipe (post catalyst). Each sensor detect the concentration of oxygen in the exhaust gases. ECM (PCM) detects the air-fuel ratio of the mixture supplied to the engine by monitoring the signal (output voltage) from sensor-1.The signal (output voltage) from sensor-2 is used to detect malfunction of the three way catalytic converter. Each oxygen sensor heater promotes activation of the oxygen sensor.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF. Clear DTC with ignition switch ON, check vehicle and environmental condition for: - Indication of fuel level meter in combination meter: 1/4 or more - Altitude (barometric pressure): 2400 m, 8000 ft or less (560 mm Hg, 75 kPa or more) - Ambient temp. : -10 °C, 14 °F or higher - Intake air temp.: 70 °C, 158 °F or lower",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Warm up engine to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Drive vehicle at 30 - 40 mph, 50 - 60 kph for 2 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Stop vehicle and run engine at idle for 2 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check DTC in \"DTC\" mode and pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode. Step 1 - 2",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0134",
+      "description": "The oxygen sensor-1 is installed on the exhaust manifold (precatalyst) and the oxygen sensor-2 is installed on the exhaust pipe (post catalyst). Each sensor detect the concentration of oxygen in the exhaust gases. ECM (PCM) detects the air-fuel ratio of the mixture supplied to the engine by monitoring the signal (output voltage) from sensor-1.The signal (output voltage) from sensor-2 is used to detect malfunction of the three way catalytic converter. Each oxygen sensor heater promotes activation of the oxygen sensor.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF. Clear DTC with ignition switch ON, check vehicle and environmental condition for: - Indication of fuel level meter in combination meter: 1/4 or more - Altitude (barometric pressure): 2400 m, 8000 ft or less (560 mm Hg, 75 kPa or more) - Ambient temp. : -10 °C, 14 °F or higher - Intake air temp.: 70 °C, 158 °F or lower",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Warm up engine to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Drive vehicle at 30 - 40 mph, 50 - 60 kph for 2 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Stop vehicle and run engine at idle for 2 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check DTC in \"DTC\" mode and pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode. Step 1 - 3",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0135",
+      "description": "This system controls operation (ON/OFF) of each heater which assists activation of each oxygen sensor. ECM (PCM) turns the each heater of oxygen sensor-1 and -2 ON (to allow the electric current to flow to the oxygen sensor heater) when the engine is running without high-load condition after specified time from engine start.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON, start engine and keep it at idle for 1 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start vehicle and depress accelerator pedal fully for 5 sec. or longer.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Stop vehicle",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check DTC in \"DTC\" mode and pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode. Step 1 - 3",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0136",
+      "description": "The oxygen sensor-1 is installed on the exhaust manifold (precatalyst) and the oxygen sensor-2 is installed on the exhaust pipe (post catalyst). Each sensor detect the concentration of oxygen in the exhaust gases. ECM (PCM) detects the air-fuel ratio of the mixture supplied to the engine by monitoring the signal (output voltage) from sensor-1.The signal (output voltage) from sensor-2 is used to detect malfunction of the three way catalytic converter. Each oxygen sensor heater promotes activation of the oxygen sensor.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF. Clear DTC with ignition switch ON, check vehicle and environmental condition for: - Indication of fuel level meter in combination meter: 1/4 or more - Altitude (barometric pressure): 2400 m, 8000 ft or less (560 mm Hg, 75 kPa or more) - Ambient temp.: -10 °C, 14 °F or higher - Intake air temp.: 70 °C, 158 °F or lower - No exhaust gas leakage and loose connection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Warm up engine to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Drive vehicle under usual driving condition for 5 min. and check HO(2)S-2 output voltage and \"short term fuel trim\" with \"Data List\" mode on scan tool, and write it down.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Stop vehicle (don't turn ignition switch OFF).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Increase vehicle speed to higher than 20 mph, 32 kph and then stop vehicle.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Repeat above steps 5.4 times.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Increase vehicle speed to about 50 mph (80 kph) in 3rd gear or 2 range",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Release accelerator pedal and with engine brake applied, keep vehicle coasting (fuel cut condition) for 10 sec. or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Stop vehicle (don't turn ignition switch OFF) and run engine at idle for  2 min. After this step 9), if \"Oxygen Sensor Monitoring TEST COMPLETED\" is displayed in \"READINESS TESTS\" mode and DTC is not displayed in \"DTC\" mode, confirmation test is completed. If \"TEST NOT COMPLETED\" is still being displayed, proceed to next step 10).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Drive vehicle under usual driving condition for 10 min. (or vehicle is at a stop and run engine at idle for 10 min. or longer)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Stop vehicle (don't turn ignition switch OFF). Confirm test results according to \"Test Result Confirmation Flow Table\" of DTC P0420. Step 1 - 4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0141",
+      "description": "This system controls operation (ON/OFF) of each heater which assists activation of each oxygen sensor. ECM (PCM) turns the each heater of oxygen sensor -1 and -2 ON (to allow the electric current to flow to the oxygen sensor heater) when the engine is running without high-load condition after specified time from engine start.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF once and then ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC, start engine and warm up engine to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Keep it at 2000 r/min for 2 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode and DTC in \"DTC\" mode. Step 1 - 3",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0171",
+      "description": "The oxygen sensor-1 is installed on the exhaust manifold (precatalyst) and the oxygen sensor-2 is installed on the exhaust pipe (post catalyst). Each sensor detect the concentration of oxygen in the exhaust gases. ECM (PCM) detects the air-fuel ratio of the mixture supplied to the engine by monitoring the signal (output voltage) from sensor-1.The signal (output voltage) from sensor-2 is used to detect malfunction of the three way catalytic converter. Each oxygen sensor heater promotes activation of the oxygen sensor.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check vehicle and environmental condition for: - Indication of fuel level meter in combination meter: 1/4 or more - Altitude (barometric pressure): 2400 m, 8000 ft or less (560 mm Hg, 75 kPa or more) - Ambient temp. : -10 °C, 14 °F or higher - Intake air temp.: 70 °C, 158 °F or lower",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Start engine and drive vehicle under usual driving condition (for 5 min or longer and until engine is warmed up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "keep vehicle speed at 30 - 40 mph, 50 - 60 kph in 5th gear or \"D\" range for 5 min. or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Stop vehicle (do not turn ignition switch OFF).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode and DTC in \"DTC\" mode. Step 1 - 7 Step 8 - 11 Fig. 1, 2, 3, 4, 5, 6, For Step 3, 4, 5, 6",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0172",
+      "description": "The oxygen sensor-1 is installed on the exhaust manifold (precatalyst) and the oxygen sensor-2 is installed on the exhaust pipe (post catalyst). Each sensor detect the concentration of oxygen in the exhaust gases. ECM (PCM) detects the air-fuel ratio of the mixture supplied to the engine by monitoring the signal (output voltage) from sensor-1.The signal (output voltage) from sensor-2 is used to detect malfunction of the three way catalytic converter. Each oxygen sensor heater promotes activation of the oxygen sensor.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check vehicle and environmental condition for: - Indication of fuel level meter in combination meter: 1/4 or more - Altitude (barometric pressure): 2400 m, 8000 ft or less (560 mm Hg, 75 kPa or more) - Ambient temp. : -10 °C, 14 °F or higher - Intake air temp.: 70 °C, 158 °F or lower",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Start engine and drive vehicle under usual driving condition for 5 min or longer and until engine is warmed up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "keep vehicle speed at 30 - 40 mph, 50 - 60 kph in 5th gear or \"D\" range for 5 min. or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Stop vehicle (do not turn ignition switch OFF).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode and DTC in \"DTC\" mode. Step 1 - 7 Step 8 - 11 Fig. 1, 2, 3, 4, 5, 6, For Step 3, 4, 5, 6",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0300",
+      "description": "ECM monitors crankshaft revolution speed and engine speed via the crankshaft position sensor and cylinder No. via the camshaft position sensor. Then it calculates the change in the crankshaft revolution speed and from how many times such change occurred in every 200 or 1000 engine revolutions, it detects occurrence of misfire. When ECM detests a misfire (misfire rate per 200 revolutions) which can cause overheat and damage to the three way catalytic converter, it makes the malfunction indicator lamp (MIL) flash as long as misfire occurs at that rate. After that, however, when the misfire rate drops, MIL remains ON until it has been judged as normal 3 times under the same driving conditions. Also, when ECM detects a misfire (misfire rate per 1000 revolutions) which will not cause damage to three way catalytic converter but can cause exhaust emission to be deteriorated, it makes MIL light according to the 2 driving cycle detection logic.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check vehicle and environmental condition for: - Indication of fuel level meter in combination meter: 1/4 or more - Altitude (barometric pressure): 2400 m, 5000 ft or less (560 mm Hg, 75 kPa or more) - Ambient temp.: -10 °C, 14 °F or higher - Intake air temp.: 70 °C, 158 °F or lower - Engine coolant temp.: -10 - 110 °C, 14 - 230 °F",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Start engine and keep it at idle for 2 min. or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check DTC in \"DTC\" mode and pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "If DTC is not detected at idle, consult usual driving based on information obtained in \"Customer complaint analysis\" and \"Freeze frame data check\". Reference Step 1 - 5 Step 6 - 10 Fig. 1, 2, 3, 4, 5, 6, 7 For Step 3, 4, 5, 7",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0301",
+      "description": "ECM monitors crankshaft revolution speed and engine speed via the crankshaft position sensor and cylinder No. via the camshaft position sensor. Then it calculates the change in the crankshaft revolution speed and from how many times such change occurred in every 200 or 1000 engine revolutions, it detects occurrence of misfire. When ECM detests a misfire (misfire rate per 200 revolutions) which can cause overheat and damage to the three way catalytic converter, it makes the malfunction indicator lamp (MIL) flash as long as misfire occurs at that rate. After that, however, when the misfire rate drops, MIL remains ON until it has been judged as normal 3 times under the same driving conditions. Also, when ECM detects a misfire (misfire rate per 1000 revolutions) which will not cause damage to three way catalytic converter but can cause exhaust emission to be deteriorated, it makes MIL light according to the 2 driving cycle detection logic.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check vehicle and environmental condition for: - Indication of fuel level meter in combination meter: 1/4 or more - Altitude (barometric pressure): 2400 m, 5000 ft or less (560 mm Hg, 75 kPa or more) - Ambient temp.: -10 °C, 14 °F or higher - Intake air temp.: 70 °C, 158 °F or lower - Engine coolant temp.: -10 - 110 °C, 14 - 230 °F",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Start engine and keep it at idle for 2 min. or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check DTC in \"DTC\" mode and pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "If DTC is not detected at idle, consult usual driving based on information obtained in \"Customer complaint analysis\" and \"Freeze frame data check\". Reference Step 1 - 5 Step 6 - 10 Fig. 1, 2, 3, 4, 5, 6, 7 For Step 3, 4, 5, 7",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0302",
+      "description": "ECM monitors crankshaft revolution speed and engine speed via the crankshaft position sensor and cylinder No. via the camshaft position sensor. Then it calculates the change in the crankshaft revolution speed and from how many times such change occurred in every 200 or 1000 engine revolutions, it detects occurrence of misfire. When ECM detests a misfire (misfire rate per 200 revolutions) which can cause overheat and damage to the three way catalytic converter, it makes the malfunction indicator lamp (MIL) flash as long as misfire occurs at that rate. After that, however, when the misfire rate drops, MIL remains ON until it has been judged as normal 3 times under the same driving conditions. Also, when ECM detects a misfire (misfire rate per 1000 revolutions) which will not cause damage to three way catalytic converter but can cause exhaust emission to be deteriorated, it makes MIL light according to the 2 driving cycle detection logic.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check vehicle and environmental condition for: - Indication of fuel level meter in combination meter: 1/4 or more - Altitude (barometric pressure): 2400 m, 5000 ft or less (560 mm Hg, 75 kPa or more) - Ambient temp.: -10 °C, 14 °F or higher - Intake air temp.: 70 °C, 158 °F or lower - Engine coolant temp.: -10 - 110 °C, 14 - 230 °F",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Start engine and keep it at idle for 2 min. or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check DTC in \"DTC\" mode and pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "If DTC is not detected at idle, consult usual driving based on information obtained in \"Customer complaint analysis\" and \"Freeze frame data check\". Reference Step 1 - 5 Step 6 - 10 Fig. 1, 2, 3, 4, 5, 6, 7 For Step 3, 4, 5, 7",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0303",
+      "description": "ECM monitors crankshaft revolution speed and engine speed via the crankshaft position sensor and cylinder No. via the camshaft position sensor. Then it calculates the change in the crankshaft revolution speed and from how many times such change occurred in every 200 or 1000 engine revolutions, it detects occurrence of misfire. When ECM detests a misfire (misfire rate per 200 revolutions) which can cause overheat and damage to the three way catalytic converter, it makes the malfunction indicator lamp (MIL) flash as long as misfire occurs at that rate. After that, however, when the misfire rate drops, MIL remains ON until it has been judged as normal 3 times under the same driving conditions. Also, when ECM detects a misfire (misfire rate per 1000 revolutions) which will not cause damage to three way catalytic converter but can cause exhaust emission to be deteriorated, it makes MIL light according to the 2 driving cycle detection logic.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check vehicle and environmental condition for: - Indication of fuel level meter in combination meter: 1/4 or more - Altitude (barometric pressure): 2400 m, 5000 ft or less (560 mm Hg, 75 kPa or more) - Ambient temp.: -10 °C, 14 °F or higher - Intake air temp.: 70 °C, 158 °F or lower - Engine coolant temp.: -10 - 110 °C, 14 - 230 °F",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Start engine and keep it at idle for 2 min. or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check DTC in \"DTC\" mode and pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "If DTC is not detected at idle, consult usual driving based on information obtained in \"Customer complaint analysis\" and \"Freeze frame data check\". Reference Step 1 - 5 Step 6 - 10 Fig. 1, 2, 3, 4, 5, 6, 7 For Step 3, 4, 5, 7",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0304",
+      "description": "ECM monitors crankshaft revolution speed and engine speed via the crankshaft position sensor and cylinder No. via the camshaft position sensor. Then it calculates the change in the crankshaft revolution speed and from how many times such change occurred in every 200 or 1000 engine revolutions, it detects occurrence of misfire. When ECM detests a misfire (misfire rate per 200 revolutions) which can cause overheat and damage to the three way catalytic converter, it makes the malfunction indicator lamp (MIL) flash as long as misfire occurs at that rate. After that, however, when the misfire rate drops, MIL remains ON until it has been judged as normal 3 times under the same driving conditions. Also, when ECM detects a misfire (misfire rate per 1000 revolutions) which will not cause damage to three way catalytic converter but can cause exhaust emission to be deteriorated, it makes MIL light according to the 2 driving cycle detection logic.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check vehicle and environmental condition for: - Indication of fuel level meter in combination meter: 1/4 or more - Altitude (barometric pressure): 2400 m, 5000 ft or less (560 mm Hg, 75 kPa or more) - Ambient temp.: -10 °C, 14 °F or higher - Intake air temp.: 70 °C, 158 °F or lower - Engine coolant temp.: -10 - 110 °C, 14 - 230 °F",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Start engine and keep it at idle for 2 min. or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check DTC in \"DTC\" mode and pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "If DTC is not detected at idle, consult usual driving based on information obtained in \"Customer complaint analysis\" and \"Freeze frame data check\". Reference Step 1 - 5 Step 6 - 10 Fig. 1, 2, 3, 4, 5, 6, 7 For Step 3, 4, 5, 7",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0335",
+      "description": "The sensor consists of magnet and coil. It is mounted on oil pan with specified air gap between the sensor core end and crankshaft timing belt pulley tooth. As the crankshaft turns, AC voltage (pulse) is generated in the sensor. ECM (PCM) uses this signal as; - a data to calculate the engine speed - one of the signals for cylinder identification - one of the signals to monitor occurrence of a misfire Engine Start Signal This signal is sent from the engine starter circuit. By receiving it, ECM (PCM) judges whether the engine is cranking or not and uses it as one of the signals to control the fuel injector and fuel pump relay.",
+      "detection_condition": [
+        "/ Possible Cause",
+        "Reference",
+        "Connect oscilloscope between terminals C22-3 (+) and C22-11 (-) of ECM connector connected to ECM and check CKP sensor signal."
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC and crank engine for 2 sec.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"DTC\" mode on scan tool and check DTC. Step 1 - 4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0340",
+      "description": "The sensor is mounted on the sensor case (distributorless ignition case) on the camshaft left side. The signal rotor is press-fitted onto the camshaft. As the sensor has a built-in hall element (element which generates voltage from changes in the magnetic flux) and a waveform forming circuit, it converts changes in the magnetic flux caused by rotation of the signal rotor into electric pulse signals. Using this signal and the signal from the CKP sensor, ECM (PCM) identifies the cylinder whose piston is in the compression stroke. Cylinder Identification ECM monitors oxygen concentration in the exhaust gas which has passed the three way catalytic converter by HO(2)S-2. When the catalyst is functioning properly, the variation cycle of HO(2)S-2 output voltage (oxygen concentration) is slower than that of HO(2)S-1 output voltage because of the amount of oxygen in the exhaust gas which has been stored in the catalyst. Reference",
+      "detection_condition": [
+        "/ Possible Cause",
+        "Reference",
+        "Connect oscilloscope between terminals C22-2 and C21-1 (ground) of ECM connector connected to ECM and check CMP sensor signal.",
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Start engine and keep it at idle for 1 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select \"DTC\" mode on scan tool and check DTC. Step 1 - 6 Step 7 Fig. 1 , 2, 3, 4 For 3, 6, 7 Diagnostic Trouble Code",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF Clear DTC with ignition switch ON, check vehicle and environmental condition for: - Indication of fuel level meter in combination meter: 1/4 or more - Altitude (barometric pressure): 2400 m, 8000 ft or less (560 mm Hg, 75 kPa or more) - Ambient temp.: -10 °C, 14 °F or higher - Intake air temp.: 70 °C, 158 °F or lower - Engine coolant temp.: 70 - 110 °C, 158 - 230 °F",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Start engine and drive vehicle at 35 - 45 mph, 55 - 65 kph for 8 min. or longer. While this driving, if \"Catalyst Monitoring TEST COMPLETED\" is displayed in \"READINESS TESTS\" mode and DTC is not displayed in \"DTC\" mode, confirmation test is completed. If \"TEST NOT COMPLETED\" is still being displayed, continue test driving.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Decrease vehicle speed at 30 - 40 mph, 50 - 60 kph, hold throttle valve at that opening position for 2 min. and confirm that short term fuel trim vary within -20% - +20% range. Test Result Confirmation Flow Table (Steps 1 - 2)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Stop vehicle (do not turn ignition switch OFF) and confirm test results according to following \"Test Result Confirmation Flow Table\". Step 1 - 3 Inspection and Troubleshooting",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0440",
+      "description": "Refer to Evaporative Emission System.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check vehicle and environmental condition for: - Indication of fuel level meter in combination meter: within 1/4 - 3/4 - Altitude (barometric pressure): 2400 m, 8000 ft or less (560 mm Hg, 75 kPa or more) - Ambient temp.: -10 °C, 14 °F or higher - Intake air temp.: 70 °C, 158 °F or lower - Engine coolant temp.: 70 - 110 °C, 158 - 230 °F",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Drive vehicle under usual driving condition, driving at 30 - 40 mph (50 - 60 kph) including short stop to traffic signal (under driving condition other than high-load, high-engine speed, rapid accelerating and decelerating), for 15 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Keep vehicle speed at 30 - 40 mph, 50 - 60 kph and hold throttle valve at that opening position for 3 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Step vehicle (do not turn ignition switch OFF) and confirm test results according to \"Test Result Confirmation Flow Table\" of DTC P0420. Step 1 - 10 Step 11 - 17",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 1,
+          "instruction": "Connect SUZUKI scan tool to DLC with ignition switch OFF and disconnect vacuum hoses from each pipe.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn ignition switch ON, clear DTC and select \"MISC TEST\" mode on SUZUKI scan tool. When not using SUZUKI scan tool:",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 1,
+          "instruction": "Disconnect vacuum hoses from each pipe.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn ignition switch ON. Using service wire, ground C21-7 terminal of ECM connector (valve ON) and unground it (valve OFF).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check purge valve for operation and vacuum passage for clog when valve is switched ON and OFF by using SUZUKI scan tool or service wire. Valve OFF: When blowing into hose \"A\", air should not come out of hose \"B\". Valve ON: When blowing into hose \"A\", air should come out of hose \"B\". If check result is not described, check vacuum hoses, purge valve, wire harness and connections. EVAP Canister Purge Valve Inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 1,
+          "instruction": "With ignition switch OFF, disconnect coupler from canister purge valve.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Check resistance of EVAP canister purge valve. Resistance between two terminals : 30 - 34 ohms at 20 °C (68 °F) Resistance between terminal and body : 1 M ohm or higher If resistance is as specified, proceed to next operation check. If not, replace.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Disconnect vacuum hoses.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "With coupler disconnected, blow into hose \"A\". Air should not come out of hose \"B\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Connect 12 V-battery to EVAP canister purge valve terminals. In this state, blow hose \"A\". Air should come out of hose \"B\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 1,
+          "instruction": "Connect SUZUKI scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn ignition switch ON, clear DTC and select \"MISC TEST\" mode on SUZUKI scan tool. When not using SUZUKI scan tool:",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Using service wire, ground C21-16 terminal of ECM connector (valve ON) and unground it (valve OFF).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check pressure control solenoid valve for operating sound when valve is switched ON and OFF by using SUZUKI scan tool or service wire. If no sound is heard, check wire harnesses, connections and tank pressure control solenoid valve. EVAP Canister Air Valve and Its Circuit Inspection When using SUZUKI scan tool:",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 1,
+          "instruction": "Connect SUZUKI scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn ignition switch ON, clear DTC and select \"MISC TEST\" mode on SUZUKI scan tool. When not using SUZUKI scan tool:",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Using service wire, ground C21-3 terminal of ECM connector (valve ON) and unground it (valve OFF).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check air valve for operating sound when valve is switched ON and OFF by using SUZUKI scan tool or service wire. If no sound is heard, check wire harnesses, connections and canister air valve. EVAP Leakage Inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 1,
+          "instruction": "Disconnect purge hose from purge valve.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Disconnect EVAP canister air suction hose from body and plug it.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Connect SUZUKI scan tool to DLC with ignition switch OFF",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn tank pressure control solenoid valve ON (Valve open) by grounding C21-16 terminal of ECM connector connected to ECM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "While observing tank pressure displayed on SUZUKI scan tool, apply 3.5 kPa, 14 in.Aq, 26 mm Hg pressure into purge hose and fuel tank and seal it. After 15 sec., check to make sure that pressure is higher than 3.3 kpa, 13.6 in.Aq, 24.5 mm Hg. If check result is not satisfactory, locate pressure leaking point by using soap water or leak detector. If no pressure leakage exists in vapor purge line, fuel filler cap, filler neck and etc., remove fuel tank from vehicle and check for leakage from installation face of parts installed on fuel tank, hose joint, EVAP canister, tank pressure solenoid valve and air valve.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0450",
+      "description": "The sensor is installed on the fuel tank. It senses the fuel vapor pressure in the fuel tank as compared with barometric pressure and converts it into voltage signal. ECM (PCM) uses this signal as one of the signals to detect the EVAP system malfunction.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check that indication of fuel level meter in combination meter is within 1/4 - 3/4.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Drive vehicle at 10 - 30 mph (15 - 50 kph) including short stop for 5 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode and DTC in \"DTC\" mode. Step 1 - 5 Fuel Tank Pressure Sensor Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 1,
+          "instruction": "Remove fuel tank pressure sensor from fuel tank.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Check sensor air vent hole and pressure passage for clog. Clean if clogged.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Arrange 3 new 1.5 V batteries in series (check that total voltage is 4.5 - 5.0 V) and connect its positive terminal to \"Vin\" terminal of sensor and negative terminal to \"Ground\" terminal. Then check voltage between \"Vout\" and \"Ground\". Also, check if voltage reduces when vacuum is applied up to 6.6 kPa (50 mm Hg) by using vacuum pump and if it increases when positive pressure applied up to 6.6 kPa (50 mm Hg) by using hand pump. If measured voltage doesn't show such characteristic as shown in figure, replace.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0451",
+      "description": "The sensor is installed on the fuel tank. It senses the fuel vapor pressure in the fuel tank as compared with barometric pressure and converts it into voltage signal. ECM (PCM) uses this signal as one of the signals to detect the EVAP system malfunction.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check vehicle and environmental condition for: - Indication of fuel level meter in combination meter: within 1/4 - 3/4 - Altitude (barometric pressure).: 2400 m, 8000 ft or less (560 mm Hg, 75 kPa or more) - Ambient temp.: -10 °C, 14 °F or higher - Intake air temp.: 70 °C, 158 °F or lower - Engine coolant temp.: 70 - 110 °C, 158 - 230 °F",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Drive vehicle under usual driving condition (described in DTC P0136) for 15 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Keep vehicle speed at 30 - 40 mph, 50 - 60 kph and hold throttle valve at that opening position for 3 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Stop vehicle (do not turn ignition switch OFF) and confirm that \"EVAP system TEST COMPLETED\" is displayed in \"READINESS TESTS\" mode on scan tool. If \"TEST NOT COMPLETED\" is still being displayed, repeat above steps 3.to 5).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Run engine at idle for 2 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Check DTC in \"DTC\" mode and pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode. Step 1 - 6",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0455",
+      "description": "Refer to Evaporative Emission System.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check vehicle and environmental condition for: - Indication of fuel level meter in combination meter: within 1/4 - 3/4 - Altitude (barometric pressure): 2400 m, 8000 ft or less (560 mm Hg, 75 kPa or more) - Ambient temp.: -10 °C, 14 °F or higher - Intake air temp.: 70 °C, 158 °F or lower - Engine coolant temp.: 70 - 110 °C, 158 - 230 °F",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Drive vehicle under usual driving condition, driving at 30 - 40 mph (50 - 60 kph) including short stop to traffic signal (under driving condition other than high-load, high-engine speed, rapid accelerating and decelerating), for 15 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Keep vehicle speed at 30 - 40 mph, 50 - 60 kph and hold throttle valve at that opening position for 3 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Step vehicle (do not turn ignition switch OFF) and confirm test results according to \"Test Result Confirmation Flow Table\" of DTC P0420. Step 1 - 10 Step 11 - 17",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 1,
+          "instruction": "Connect SUZUKI scan tool to DLC with ignition switch OFF and disconnect vacuum hoses from each pipe.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn ignition switch ON, clear DTC and select \"MISC TEST\" mode on SUZUKI scan tool. When not using SUZUKI scan tool:",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 1,
+          "instruction": "Disconnect vacuum hoses from each pipe.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn ignition switch ON. Using service wire, ground C21-7 terminal of ECM connector (valve ON) and unground it (valve OFF).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check purge valve for operation and vacuum passage for clog when valve is switched ON and OFF by using SUZUKI scan tool or service wire. Valve OFF: When blowing into hose \"A\", air should not come out of hose \"B\". Valve ON: When blowing into hose \"A\", air should come out of hose \"B\". If check result is not described, check vacuum hoses, purge valve, wire harness and connections. EVAP Canister Purge Valve Inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 1,
+          "instruction": "With ignition switch OFF, disconnect coupler from canister purge valve.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Check resistance of EVAP canister purge valve. Resistance between two terminals : 30 - 34 ohms at 20 °C (68 °F) Resistance between terminal and body : 1 M ohm or higher If resistance is as specified, proceed to next operation check. If not, replace.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Disconnect vacuum hoses.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "With coupler disconnected, blow into hose \"A\". Air should not come out of hose \"B\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Connect 12 V-battery to EVAP canister purge valve terminals. In this state, blow hose \"A\". Air should come out of hose \"B\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 1,
+          "instruction": "Connect SUZUKI scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn ignition switch ON, clear DTC and select \"MISC TEST\" mode on SUZUKI scan tool. When not using SUZUKI scan tool:",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Using service wire, ground C21-16 terminal of ECM connector (valve ON) and unground it (valve OFF).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check pressure control solenoid valve for operating sound when valve is switched ON and OFF by using SUZUKI scan tool or service wire. If no sound is heard, check wire harnesses, connections and tank pressure control solenoid valve. EVAP Canister Air Valve and Its Circuit Inspection When using SUZUKI scan tool:",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 1,
+          "instruction": "Connect SUZUKI scan tool to DLC with ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn ignition switch ON, clear DTC and select \"MISC TEST\" mode on SUZUKI scan tool. When not using SUZUKI scan tool:",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Using service wire, ground C21-3 terminal of ECM connector (valve ON) and unground it (valve OFF).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check air valve for operating sound when valve is switched ON and OFF by using SUZUKI scan tool or service wire. If no sound is heard, check wire harnesses, connections and canister air valve. EVAP Leakage Inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 1,
+          "instruction": "Disconnect purge hose from purge valve.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Disconnect EVAP canister air suction hose from body and plug it.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Connect SUZUKI scan tool to DLC with ignition switch OFF",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn tank pressure control solenoid valve ON (Valve open) by grounding C21-16 terminal of ECM connector connected to ECM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "While observing tank pressure displayed on SUZUKI scan tool, apply 3.5 kPa, 14 in.Aq, 26 mm Hg pressure into purge hose and fuel tank and seal it. After 15 sec., check to make sure that pressure is higher than 3.3 kpa, 13.6 in.Aq, 24.5 mm Hg. If check result is not satisfactory, locate pressure leaking point by using soap water or leak detector. If no pressure leakage exists in vapor purge line, fuel filler cap, filler neck and etc., remove fuel tank from vehicle and check for leakage from installation face of parts installed on fuel tank, hose joint, EVAP canister, tank pressure solenoid valve and air valve.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0461",
+      "description": "This signal is sent from the fuel level sensor (gauge) installed in the fuel tank. ECM (PCM) uses this signal as one of the monitoring conditions for detecting diagnostic trouble code (DTC) and ECM (PCM) also uses this signal to control tank pressure control solenoid valve. System circuit confirmation inspection is included in DTC P0461 Diag. Flow Table. Step 1 - 5 Fig. 1, 2, 3, 4, 5, For Step 3, 4, 5",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0463",
+      "description": "This signal is sent from the fuel level sensor (gauge) installed in the fuel tank. ECM (PCM) uses this signal as one of the monitoring conditions for detecting diagnostic trouble code (DTC) and ECM (PCM) also uses this signal to control tank pressure control solenoid valve.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC, start engine and run engine at idle for 1 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Check pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode and DTC in \"DTC\" mode. Step 1 - 4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0480",
+      "description": "This system controls operation (ON/OFF) of the radiator fan motor. Radiator fan motor is turned ON and OFF by its relay which ECM (PCM) controls. Radiator fan motor is turned ON/OFF under following engine coolant temp. Detectign Condition / Possible Cause",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Warm up engine until radiator cooling tan starts to operate.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode and DTC in \"DTC\" mode. Step 1 - 3",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0500",
+      "description": "The speed sensor consists of the reed switch and magnet. It is built in the speedometer. As the magnet turns with the speedometer cable, its magnetic force causes the reed switch to turn ON and OFF. Such ON/OFF frequency increases or decreases in proportion with the vehicle speed and is sent to ECM (PCM) as pulse signals. ECM (PCM) uses it as one of the signals to control various devices.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF and then ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC and warm up engine to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Increase vehicle speed to 50 mph, 80 kph in \"2\" range.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Release accelerator pedal and with engine brake applied, keep vehicle coasting (fuel cut condition) for 4 sec. or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Stop vehicle and check DTC and pending DTC. Step 1 - 3",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0505",
+      "description": "This system controls the bypass air flow by means of ECM (PCM) and idle air control valve (IAC valve) for the following purposes. - To keep the engine idle speed as specified at all times. The engine idle speed can vary due to following reasons. - Load applied to engine (when electric load is applied, automatic transmission is shifted to \"R\", \"D\", \"2\" or \"L\" range, A/C is turned ON, etc.) - Change in engine itself with passage of time - Other factors causing idle speed to change - To improve starting performance of engine - To compensate air/fuel mixture ratio when decelerating (Dash-pot effect) - To improve driveability while engine is warmed up. Operation IAC valve operates according to duty signal sent from ECM (PCM). ECM (PCM) detects the engine condition by using the signals from various sensors and switches and controls the bypass air flow by changing IAC valve opening. When the vehicle is at a stop, the throttle valve is at the idle position and the engine is running, the engine speed is kept at a specified idle speed. Engine idle speed : 750 ± 50 r/min. at A/C OFF. 875 ± 50 r/min. at A/C ON.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and run it at idle for 1 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check DTC and pending DTC. Step 1 - 3",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0506",
+      "description": "This system controls the bypass air flow by means of ECM (PCM) and idle air control valve (IAC valve) for the following purposes. - To keep the engine idle speed as specified at all times. The engine idle speed can vary due to following reasons. - Load applied to engine (when electric load is applied, automatic transmission is shifted to \"R\", \"D\", \"2\" or \"L\" range, A/C is turned ON, etc.) - Change in engine itself with passage of time - Other factors causing idle speed to change - To improve starting performance of engine - To compensate air/fuel mixture ratio when decelerating (Dash-pot effect) - To improve driveability while engine is warmed up. Operation IAC valve operates according to duty signal sent from ECM (PCM). ECM (PCM) detects the engine condition by using the signals from various sensors and switches and controls the bypass air flow by changing IAC valve opening. When the vehicle is at a stop, the throttle valve is at the idle position and the engine is running, the engine speed is kept at a specified idle speed. Engine idle speed : 750 ± 50 r/min. at A/C OFF. 875 ± 50 r/min. at A/C ON.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check vehicle and environmental condition for: - Indication of fuel level meter in combination meter: 1/4 or more - Altitude (barometric pressure): 2400 m, 8000 ft or less (560 mm Hg, 75 kPa or more) - Ambient temp.: -10 °C, 14 °F or higher - Intake air temp.:  70 °C, 158 °F or lower - Engine coolant temp.: 70 - 110 °C, 158 - 230 °F",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Start engine and warm up engine to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Run engine at idle for 2 min. or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode and DTC in \"DTC\" mode. Step 1 - 8",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0507",
+      "description": "This system controls the bypass air flow by means of ECM (PCM) and idle air control valve (IAC valve) for the following purposes. - To keep the engine idle speed as specified at all times. The engine idle speed can vary due to following reasons. - Load applied to engine (when electric load is applied, automatic transmission is shifted to \"R\", \"D\", \"2\" or \"L\" range, A/C is turned ON, etc.) - Change in engine itself with passage of time - Other factors causing idle speed to change - To improve starting performance of engine - To compensate air/fuel mixture ratio when decelerating (Dash-pot effect) - To improve driveability while engine is warmed up. Operation IAC valve operates according to duty signal sent from ECM (PCM). ECM (PCM) detects the engine condition by using the signals from various sensors and switches and controls the bypass air flow by changing IAC valve opening. When the vehicle is at a stop, the throttle valve is at the idle position and the engine is running, the engine speed is kept at a specified idle speed. Engine idle speed : 750 ± 50 r/min. at A/C OFF. 875 ± 50 r/min. at A/C ON.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check vehicle and environmental condition for: - Indication of fuel level meter in combination meter: 1/4 or more - Altitude (barometric pressure): 2400 m, 8000 ft or less (560 mm Hg, 75 kPa or more) - Ambient temp.: -10 °C, 14 °F or higher - Intake air temp.:  70 °C, 158 °F or lower - Engine coolant temp.: 70 - 110 °C, 158 - 230 °F",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Start engine and warm up engine to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Run engine at idle for 2 min. or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check pending DTC in \"ON  BOARD TEST\" or \"PENDING DTC\" mode and DTC in \"DTC\" mode. Step 1 - 8",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0601",
+      "description": "",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON and then turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and run it at idle if possible.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode and DTC in \"DTC\" mode. INSPECTION Substitute a known-good ECM and recheck.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0603",
+      "description": "",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON and then turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and run it at idle if possible.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode and DTC in \"DTC\" mode. INSPECTION Substitute a known-good ECM and recheck.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0705",
+      "description": "TRANSMISSION RANGE SENSOR (SWITCH) CIRCUIT MALFUNCTION Refer to \"General Description\".",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF and then ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC and warm up engine to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Shift selector lever to each of P, R, N, D, 2 and L ranges and hold it there for longer than 5 seconds each.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTC and if no DTC appears on display, proceed to the next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Drive vehicle at 40 mph, 60 km/h or more in 3rd gear of \"D\" range for longer than 5 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Stop vehicle and check DTC. INSPECTION Part 1 of 2 Part 2 of 2",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0720",
+      "description": "OUTPUT SPEED SENSOR (VSS) CIRCUIT MALFUNCTION Refer to \"General Description\".",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF and then ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC, shift selector lever to \"2\" range and drive vehicle at 3500 r/min engine speed for 3.5 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Stop vehicle and check DTC.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0751",
+      "description": "SHIFT SOLENOID-A (#1) PERFORMANCE OR STUCK OFF PCM monitors throttle opening, engine speed, vehicle speed and gear position and compares the actual engine speed and its specified value (i.e., engine speed obtained by PCM through calculation using the throttle opening/gear position and vehicle speed).",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON and warm up engine to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Shift selector lever to \"D\" range.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Start vehicle and increase vehicle speed to 25 - 35 mph, 40 - 55 km/h by depressing accelerator pedal half a stroke.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Keep vehicle at above speed for 5 seconds or longer.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Increase vehicle speed to 45 - 55 mph, 75 - 90 km/h by depressing accelerator pedal half a stroke and keep it at that speed for 5 seconds or longer.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Stop vehicle and check pending DTC and DTC.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0753",
+      "description": "SHIFT SOLENOID-A (#1) ELECTRICAL Refer to \"General Description\".",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON and warm up engine to normal operating temperature at \"P\" range.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Shift selector lever to \"D\" range for 1 seconds or longer.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Shift it to \"P\" range and check DTC.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0756",
+      "description": "SHIFT SOLENOID-B (#2) PERFORMANCE OR STUCK OFF PCM monitors throttle opening, engine speed, vehicle speed and gear position and compares the actual engine speed and its specified value (i.e., engine speed obtained by PCM through calculation using the throttle opening/gear position and vehicle speed).",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON and warm up engine to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Shift selector lever to \"D\" range.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Start vehicle and increase vehicle speed to 25 - 35 mph, 40 - 55 km/h by depressing accelerator pedal half a stroke.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Keep vehicle at above speed for 5 seconds or longer.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Increase vehicle speed to 45 - 55 mph, 75 - 90 km/h by depressing accelerator pedal half a stroke and keep it at that speed for 5 seconds or longer.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Stop vehicle and check pending DTC and DTC.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0758",
+      "description": "SHIFT SOLENOID-B (#2) ELECTRICAL Refer to \"General Description\".",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON and warm up engine to normal operating temperature at \"P\" range.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Shift selector lever to \"D\" range for 1 seconds or longer.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Shift it to \"P\" range and check DTC.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1410",
+      "description": "Refer to Evaporative Emission Control System. When fuel level meter indicates 3/4 or more, perform the following procedure. When it indicates lower than 3/4, go to Step 2 (system circuit inspection) in DTC P1410 Diag. Flow Table.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and vehicle stops.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode and DTC in \"DTC\" mode. Step 1 - 4",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1450",
+      "description": "",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn ignition switch ON for 2 sec., crank engine for 2 sec. and run it at idle for 1 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode and DTC in \"DTC\" mode. INSPECTION Substitute a known-good ECM and recheck",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1451",
+      "description": "",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn ignition switch ON for 2 sec., crank engine for 2 sec. and run it at idle for 1 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode and DTC in \"DTC\" mode. Step 1",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1500",
+      "description": "This signal is sent from the engine starter circuit. By receiving it, ECM (PCM) judges whether the engine is cranking or not and uses it as one of the signals to control the fuel injector and fuel pump relay.",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear DTC with ignition switch ON, crank engine and run it at idle for 3 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check pending DTC in \"ON BOARD TEST\" or \"PENDING DTC\" mode and DTC in \"DTC\" mode. Step 1 - 2",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1510",
+      "description": "Battery voltage is supplied so that diagnostic trouble code memory, values for engine control learned by ECM, etc. are kept in ECM even when the ignition switch is turned OFF",
+      "detection_condition": [
+        "/ Possible Cause"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear DTC, start engine and run it at idle for 1 min.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"DTC\" mode on scan tool and check DTC. Step 1",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

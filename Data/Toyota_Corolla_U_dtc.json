@@ -1,0 +1,262 @@
+{
+  "source_file": "Toyota_Corolla_U.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 7,
+  "dtcs": [
+    {
+      "dtc_code": "U0073",
+      "description": "94 - Control Module Communication Bus OFF The skid control ECU receives signals sent from the ECM via the CAN communication system. When DTCs indicating a CAN communication system malfunction are output, repair the CAN communication system before repairing each corresponding sensor. Proceed to CAN communication system See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With Troubleshooting. HINT When DTCs indicating a CAN communication system malfunction are output, repair the CAN communication system before performing troubleshooting for each corresponding sensor. Vehicle Stability Control System BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM: U0073, U0100, U0123, U0124,",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0126",
+      "description": "Lost Communication with Steering Angle Sensor Module The skid control ECU receives signals from the ECM, steering angle sensor, and yaw rate and acceleration sensor via the CAN communication system. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK HARNESS AND CONNECTOR (MOMENTARY INTERRUPTION) (a) Using the Techstream, check for any momentary interruption in the wire harness and connector corresponding to the DTC    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Component Tests and General Diagnostics/Vehicle Stability Control System/Check for Intermittent Problems. ABS/VSC/TRAC Result: HINT Perform the above inspection before removing the sensor and connector. B --  RECONFIRM DTC C --  REPAIR OR REPLACE HARNESS OR CONNECTOR A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK IF EACH SENSOR AND ECM CONNECTOR IS SECURELY CONNECTED (a) Turn the ignition switch off. (b) Check if each sensor or ECM connector is securely connected. OK: Each connector is securely connected. NG --  CONNECT CONNECTOR TO EACH SENSOR OR ECM CORRECTLY OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "RECONFIRM DTC (a) Turn the ignition switch off. (b) Record the output DTCs (for ABS, VSC system and/or CAN communication system)    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System for ABS and VSC system, or    See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/Diagnosis System for CAN communication system). HINT If CAN communication system DTCs and the relevant sensor DTCs are output simultaneously, troubleshoot the relevant sensor DTCs (for ABS and/or VSC system) after the CAN communication system returns to normal. Result: B --  REPAIR CIRCUIT INDICATED BY OUTPUT DTC  See: Diagnostic Trouble Code Descriptions/Vehicle Stability Control System C --  INSPECT CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With A --  CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Initial Inspection and Diagnostic Overview/Vehicle Stability Control System/Diagnosis System",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "REPAIR OR REPLACE HARNESS OR CONNECTOR (a) Turn the ignition switch off. (b) Repair or replace the harness or connector. (c) Check for any momentary interruption between the skid control ECU and each sensor or ECM    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Component Tests and General Diagnostics/Vehicle Stability Control System/Check for Intermittent Problems. (d) Check that there are no momentary interruptions. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "RECONFIRM DTC (a) Turn the ignition switch off. (b) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System. (c) Start the engine. (d) Drive the vehicle and turn the steering wheel to the right and left at a speed of 15 km/h (9 mph) or more. (e) Check that no CAN communication system DTC is output    See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/Diagnosis System. (f) If ABS and/or VSC system DTCs are output, record them    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System. Result: HINT The CAN communication system must be normal when performing troubleshooting for each sensor DTC (for ABS and/or VSC system). B --  REPAIR CIRCUIT INDICATED BY OUTPUT DTC  See: Diagnostic Trouble Code Descriptions/Vehicle Stability Control System C --  INSPECT CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With A --  END Meter / Gauge System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100",
+      "description": "Lost Communication with ECM / PCM \"A\" The combination meter communicates with the ECM via the CAN communication line (CAN No. 1 Bus). PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CONFIRM DTC OUTPUT (a) Connect the Techstream to the DLC3. (b) Turn the ignition switch to ON. (c) Turn the tester on. (d) Clear the stored DTCs by entering the following menus on the Techstream: Body Electrical / Trouble Codes. (e) Drive the vehicle at more than 5 km/h (3.1 mph) for at least 60 seconds. (f) Stop the vehicle. (g) Check for DTCs    See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/Diagnosis System. Result: HINT If the CAN communication system DTC U0100 and another DTC are output at the same time, perform troubleshooting for the CAN communication system DTC U0100 first. B --  USE SIMULATION METHOD TO CHECK  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/How To Proceed With Troubleshooting A --  GO TO CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With Power Steering System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": [
+        "U0129"
+      ]
+    },
+    {
+      "dtc_code": "U0129",
+      "description": "Lost Communication with Brake System Control Module The power steering ECU receives signals from the ECM and the skid control ECU via the CAN communication system. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK FOR DTC (a) Clear the DTCs    See: Steering and Suspension/Steering/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. (b) Check for DTCs    See: Steering and Suspension/Steering/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. OK: DTC is not output. NG --  GO TO CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With OK --  CHECK INTERMITTENT PROBLEMS Vehicle Stability Control System BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM: U0073, U0100, U0123, U0124,",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0123",
+      "description": "BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM: U0073, U0100, U0123, U0124,",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0124",
+      "description": "BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM: U0073, U0100, U0123, U0124,",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0327",
+      "description": "Software Incompatibility with Vehicle Security Control Module The main body ECU will store this DTC when no signals can be received from the certification ECU while the CAN MS main bus is normal. NOTICE: * Turn the ignition switch off before measuring the resistance between CAN bus main wires and CAN bus branch wires. * After the ignition switch is turned off, check that the key reminder warning system and light reminder warning system are not operating. * Before measuring the resistance, leave the vehicle as is for at least 1 minute and do not operate the ignition switch, any other switches or the doors. If any doors need to be opened in order to check the connectors, open the doors and leave them open. HINT * Operating the ignition switch, any other switches or a door triggers related ECU and sensor communication on the CAN. This communication will cause the resistance value to change. * Even after DTCs are cleared, if a DTC is stored again after driving the vehicle for a while, the malfunction may be occurring due to vibration of the vehicle. In such a case, wiggling the ECUs or wire harness while performing the inspection below may help determine the cause of the malfunction. PROCEDURE * The main body ECU will store this DTC when no signals can be received from the ECUs that have been memorized as those that are connected to the CAN MS bus. * When the main body ECU receives a response signal from the ECUs connected to the CAN MS bus, the main body ECU recognizes and memorizes that the ECU is connected to the CAN MS bus. Based on this memorized data, the main body ECU monitors for malfunctions in the ECUs connected to the CAN MS bus when communicating with those ECUs. If the main body ECU cannot receive response signals from the ECUs that have been memorized as those connected to the CAN MS bus, the main body ECU determines that a malfunction exists.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK DTC (a) Check for DTCs. HINT If the CAN MS bus communication error DTC U1002 is output, troubleshoot for U1002 and check for malfunctions in the CAN MS main bus circuit    See: U1002. Result: B --  GO TO DTC CHART  See: Diagnostic Trouble Code Descriptions/CAN Communication System A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK CAN MS BUS WIRE (CERTIFICATION ECU) (a) Turn the ignition switch off. (b) Disconnect the certification ECU connector from the certification ECU. (c) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration NG --  REPAIR OR REPLACE CAN MS BUS BRANCH WIRE OR CONNECTOR (CERTIFICATION ECU) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK HARNESS AND CONNECTOR (POWER SOURCE CIRCUIT) (a) Measure the resistance according to the value(s) in the table below. Standard Resistance: (b) Measure the voltage according to the value(s) in the table below. Standard Voltage: Text in Illustration NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK --  REPLACE CERTIFICATION ECU Part 1 NETWORKING: CAN COMMUNICATION SYSTEM: U1002 (CAN MS BUS): Lost Communication with Gateway Module (Main body ECU) U1002 (CAN MS BUS) - Lost Communication with Gateway Module (Main body ECU) NOTICE: * Turn the ignition switch off before measuring the resistance between CAN bus main wires and CAN bus branch wires. * After the ignition switch is turned off, check that the key reminder warning system and light reminder warning system are not operating. * Before measuring the resistance, leave the vehicle as is for at least 1 minute and do not operate the ignition switch, any other switches or the doors. If any doors need to be opened in order to check the connectors, open the doors and leave them open. HINT * Operating the ignition switch, any other switches or a door triggers related ECU and sensor communication on the CAN. This communication will cause the resistance value to change. * Even after DTCs are cleared, if a DTC is stored again after driving the vehicle for a while, the malfunction may be occurring due to vibration of the vehicle. In such a case, wiggling the ECUs or wire harness while performing the inspection below may help determine the cause of the malfunction. PROCEDURE",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "CHECK FOR OPEN IN CAN MS BUS WIRE (CAN MS BUS BRANCH WIRE) (a) Check for open in the certification ECU CAN MS bus branch wire    See: U0327. NG --  REPAIR OR REPLACE CAN MS BUS BRANCH WIRE OR CONNECTOR (CAN NO. 3 JUNCTION CONNECTOR - CERTIFICATION ECU) OK --  REPLACE INSTRUMENT PANEL JUNCTION BLOCK (MAIN BODY ECU)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "CHECK FOR OPEN IN CAN MS BUS MAIN WIRE (COMBINATION METER MAIN WIRE) (a) Disconnect the CAN No. 3 junction connector. Text in Illustration (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: NG --  CHECK FOR OPEN IN CAN MS BUS MAIN WIRE (COMBINATION METER - CAN NO. 3 JUNCTION CONNECTOR) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "CHECK FOR OPEN IN CAN MS BUS MAIN WIRE (MAIN BODY ECU MAIN WIRE) (a) Disconnect the CAN No. 3 junction connector. Text in Illustration (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: NG --  CHECK FOR OPEN IN CAN MS BUS MAIN WIRE (MAIN BODY ECU - CAN NO. 3 JUNCTION CONNECTOR) OK --  REPLACE CAN NO. 3 JUNCTION CONNECTOR",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "CHECK FOR OPEN IN CAN MS BUS MAIN WIRE (MAIN BODY ECU - CAN NO. 3 JUNCTION CONNECTOR) (a) Reconnect the CAN No. 3 junction connector. Text in Illustration (b) Disconnect the main body ECU connector from the main body ECU. (c) Measure the resistance according to the value(s) in the table below. Standard Resistance: NG --  REPAIR OR REPLACE CAN MS BUS MAIN WIRE OR CONNECTOR (CAN NO. 3 JUNCTION CONNECTOR - MAIN BODY ECU) OK --  REPLACE INSTRUMENT PANEL JUNCTION BLOCK (MAIN BODY ECU)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "CHECK FOR OPEN IN CAN MS BUS MAIN WIRE (COMBINATION METER - CAN NO. 3 JUNCTION CONNECTOR) (a) Reconnect the CAN No. 3 junction connector. (b) Disconnect the combination meter connector. Text in Illustration (c) Measure the resistance according to the value(s) in the table below. Standard Resistance: NG --  REPAIR OR REPLACE CAN MS BUS MAIN WIRE OR CONNECTOR (CAN NO. 3 JUNCTION CONNECTOR - COMBINATION METER) OK --  REPLACE COMBINATION METER ASSEMBLY  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Service and Repair/Removal and Replacement/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "CHECK FOR SHORT IN CAN MS BUS WIRES (MAIN BODY ECU MAIN WIRE) (a) Disconnect the CAN No. 3 junction connector. Text in Illustration (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: NG --  CHECK FOR SHORT IN CAN MS BUS MAIN WIRE (MAIN BODY ECU - CAN NO. 3 JUNCTION CONNECTOR) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "CHECK FOR SHORT IN CAN MS BUS WIRES (COMBINATION METER MAIN WIRE) (a) Disconnect the CAN No. 3 junction connector. Text in Illustration (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: NG --  CHECK FOR SHORT IN CAN MS BUS WIRES (COMBINATION METER - CAN NO. 3 JUNCTION CONNECTOR) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "CHECK FOR SHORT IN CAN MS BUS WIRES (CAN NO. 3 JUNCTION CONNECTOR - CERTIFICATION ECU) (a) Disconnect the certification ECU connector. Text in Illustration (b) Disconnect the CAN No. 3 junction connector. Text in Illustration (c) Measure the resistance according to the value(s) in the table below. Standard Resistance: NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR (CAN NO. 3 JUNCTION CONNECTOR - CERTIFICATION ECU) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "CHECK FOR SHORT IN CAN MS BUS WIRES (CAN No. 3 JUNCTION CONNECTOR) (a) Reconnect the CAN No. 3 junction connector. (b) Measure the resistance according to the value(s) in the table below. Text in Illustration NOTICE: The resistance must be measured after the main body ECU, combination meter and No. 3 junction connectors are reconnected. Standard Resistance: NG --  REPLACE CAN NO. 3 JUNCTION CONNECTOR OK --  REPLACE CERTIFICATION ECU",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "CHECK FOR SHORT IN CAN MS BUS MAIN WIRE (MAIN BODY ECU - CAN NO. 3 JUNCTION CONNECTOR) (a) Disconnect the main body ECU connector from the main body ECU. (b) Reconnect the CAN No. 3 junction connector. Text in Illustration (c) Measure the resistance according to the value(s) in the table below. Standard Resistance: NG --  REPAIR OR REPLACE CAN MS BUS MAIN WIRE OR CONNECTOR (CAN NO. 3 JUNCTION CONNECTOR - MAIN BODY ECU) OK --  REPLACE INSTRUMENT PANEL JUNCTION BLOCK (MAIN BODY ECU)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "CHECK FOR SHORT IN CAN MS BUS WIRES (COMBINATION METER - CAN NO. 3 JUNCTION CONNECTOR) (a) Disconnect the combination meter connector. (b) Reconnect the CAN No. 3 junction connector. Text in Illustration (c) Measure the resistance according to the value(s) in the table below. Standard Resistance: NG --  REPAIR OR REPLACE CAN MS BUS MAIN WIRE OR CONNECTOR (CAN NO. 3 JUNCTION CONNECTOR - COMBINATION METER) OK --  REPLACE COMBINATION METER ASSEMBLY  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Service and Repair/Removal and Replacement/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "CHECK FOR SHORT TO +B IN CAN MS BUS WIRE (MAIN BODY ECU MAIN WIRE) (a) Disconnect the CAN No. 3 junction connector. Text in Illustration (b) Measure the resistance according to the value(s) in the table below. Text in Illustration Standard Resistance: NG --  CHECK FOR SHORT TO +B IN CAN MS BUS WIRE (CAN NO. 3 JUNCTION CONNECTOR - MAIN BODY ECU) OK -- Continue to next step. Part 2 NETWORKING: CAN COMMUNICATION SYSTEM: U1002 (CAN MS BUS): Lost Communication with Gateway Module (Main body ECU) U1002 (CAN MS BUS) - Lost Communication with Gateway Module (Main body ECU) (Continued..)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 16,
+          "instruction": "CHECK FOR SHORT TO +B IN CAN MS BUS WIRE (COMBINATION METER MAIN WIRE) (a) Disconnect the CAN No. 3 junction connector. Text in Illustration (b) Measure the resistance according to the value(s) in the table below. Text in Illustration Standard Resistance: NG --  CHECK FOR SHORT TO +B IN CAN MS BUS WIRE (CAN NO. 3 JUNCTION CONNECTOR - COMBINATION METER) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 17,
+          "instruction": "CHECK FOR SHORT TO +B IN CAN MS BUS WIRE (CAN NO. 3 JUNCTION CONNECTOR - CERTIFICATION ECU) (a) Disconnect the certification ECU connector. (b) Disconnect the CAN No. 3 junction connector. Text in Illustration (c) Measure the resistance according to the value(s) in the table below. Text in Illustration Standard Resistance: NG --  REPAIR OR REPLACE CAN MS BUS BRANCH WIRE OR CONNECTOR (CAN NO. 3 JUNCTION CONNECTOR - CERTIFICATION ECU) OK --  REPLACE CERTIFICATION ECU",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 18,
+          "instruction": "CHECK FOR SHORT TO +B IN CAN MS BUS WIRE (CAN NO. 3 JUNCTION CONNECTOR - MAIN BODY ECU) (a) Disconnect the main body ECU connector from the main body ECU. Text in Illustration (b) Measure the resistance according to the value(s) in the table below. Text in Illustration Standard Resistance: NG --  REPAIR OR REPLACE CAN MS BUS MAIN WIRE OR CONNECTOR (CAN NO. 3 JUNCTION CONNECTOR - MAIN BODY ECU) OK --  REPLACE INSTRUMENT PANEL JUNCTION BLOCK (MAIN BODY ECU)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 19,
+          "instruction": "CHECK FOR SHORT TO +B IN CAN MS BUS WIRE (CAN NO. 3 JUNCTION CONNECTOR - COMBINATION METER) (a) Disconnect the CAN No. 3 junction connector. Text in Illustration (b) Disconnect the combination meter connector. (c) Measure the resistance according to the value(s) in the table below. Text in Illustration Standard Resistance: NG --  REPAIR OR REPLACE CAN MS BUS MAIN WIRE OR CONNECTOR (CAN NO. 3 JUNCTION CONNECTOR - COMBINATION METER) OK --  REPLACE COMBINATION METER ASSEMBLY  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Service and Repair/Removal and Replacement/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 20,
+          "instruction": "CHECK FOR SHORT TO GND IN CAN MS BUS WIRE (MAIN BODY ECU MAIN WIRE) (a) Disconnect the CAN No. 3 junction connector. Text in Illustration (b) Measure the resistance according to the value(s) in the table below. Text in Illustration Standard Resistance: NG --  CHECK FOR SHORT TO GND IN CAN MS BUS WIRE (CAN NO. 3 JUNCTION CONNECTOR - MAIN BODY ECU) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 21,
+          "instruction": "CHECK FOR SHORT TO GND IN CAN MS BUS WIRE (COMBINATION METER MAIN WIRE) (a) Disconnect the CAN No. 3 junction connector. Text in Illustration (b) Measure the resistance according to the value(s) in the table below. Text in Illustration Standard Resistance: NG --  CHECK FOR SHORT TO GND IN CAN MS BUS WIRE (CAN NO. 3 JUNCTION CONNECTOR - COMBINATION METER) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 22,
+          "instruction": "CHECK FOR SHORT TO GND IN CAN MS BUS WIRE (CAN NO. 3 JUNCTION CONNECTOR - CERTIFICATION ECU) (a) Disconnect the certification ECU connector. (b) Disconnect the CAN No. 3 junction connector. Text in Illustration (c) Measure the resistance according to the value(s) in the table below. Text in Illustration Standard Resistance: NG --  REPAIR OR REPLACE CAN MS BUS BRANCH WIRE OR CONNECTOR (CAN NO. 3 JUNCTION CONNECTOR - CERTIFICATION ECU) OK --  REPLACE CERTIFICATION ECU",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 23,
+          "instruction": "CHECK FOR SHORT TO GND IN CAN MS BUS WIRE (CAN NO. 3 JUNCTION CONNECTOR - COMBINATION METER) (a) Disconnect the combination meter connector. Text in Illustration (b) Measure the resistance according to the value(s) in the table below. Text in Illustration Standard Resistance: NG --  REPAIR OR REPLACE CAN MS BUS MAIN WIRE OR CONNECTOR (CAN NO. 3 JUNCTION CONNECTOR - COMBINATION METER) OK --  REPLACE COMBINATION METER ASSEMBLY  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Service and Repair/Removal and Replacement/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 24,
+          "instruction": "CHECK FOR SHORT TO GND IN CAN MS BUS WIRE (CAN NO. 3 JUNCTION CONNECTOR - MAIN BODY ECU) (a) Disconnect the main body ECU connector from the main body ECU. Text in Illustration (b) Measure the resistance according to the value(s) in the table below. Text in Illustration Standard Resistance: NG --  REPAIR OR REPLACE CAN MS BUS MAIN WIRE OR CONNECTOR (CAN NO. 3 JUNCTION CONNECTOR - MAIN BODY ECU) OK --  REPLACE INSTRUMENT PANEL JUNCTION BLOCK (MAIN BODY ECU)",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

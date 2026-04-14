@@ -1,0 +1,1575 @@
+{
+  "source_file": "Mitsubishi_Eclipse_C.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 58,
+  "dtcs": [
+    {
+      "dtc_code": "C1200",
+      "description": "is set: Between terminal 34 and terminal 33 Standard Value: 1.24 - 1.64 kOhms Q: Is the resistance between terminals 34 and 33 within the standard value? YES (When resistances between all terminals are within the standard value): Go to Step 10. NO (When resistance between terminals 34 and 33 is not within the standard value): Go to Step 7. STEP 7. Check TCL/ASC-ECU connector A-38 and wheel speed sensor [front: RH] connector A-01 for loose, corroded or damaged terminals, or terminals pushed back in the connector. Q: Are TCL/ASC-ECU connector A-38 and wheel speed sensor [front: RH] connector A-01 damaged? YES: Repair or replace the damaged component(s). Then go to Step 11. NO: Go to Step 8. STEP 8. Check the harness wires between TCL/ASC-ECU connector A-38 (terminal 34, 33) and wheel speed sensor [front: RH] connector A-01 (terminal 1, 2). Q: Is the harness wire between TCL/ASC-ECU connector A-38 (terminal 34, 33) and wheel speed sensor [front: RH] connector A-01 (terminal 1, 2) damaged? YES: Repair the wiring harness. Then go to Step 11. NO: Go to Step 9. STEP 9. Inspect the wheel speed sensor. Check the wheel speed sensor relevant to the DTC code. For the applicable inspection procedure, refer to See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Wheel Speed Sensor/Testing and Inspection/Wheel Speed Sensor Check. ^ When DTC code C1200 is set: Front right wheel speed sensor Q: Is the wheel speed sensor damaged? YES: Replace the wheel speed sensor. Then go to Step 11. NO: It can be assumed that this malfunction is intermittent. STEP 10. Recheck for diagnostic trouble code. Check again if the DTC is set.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Disconnect the connector A-38, and connect special tool MB991997 to the wiring harness-side connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Measure the voltage between the relevant signal and ground terminals in the wheel speed sensor circuit and body ground. It should be less than 1V. ^",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Does the speedometer indication match the scan tool indication? STEP 4. Measure the voltage at TCL/ASC-ECU connector A-38.",
+          "yes": "Go to Step 10.",
+          "no": "Go to Step 4."
+        },
+        {
+          "step": 5,
+          "instruction": "Drive the vehicle at 9 mph (15 km/h) or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1200 set? STEP 3. Using scan tool MB991958, check data list.",
+          "yes": "Go to Step 3.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1201",
+      "description": "is set: Between signal terminal 34 and ground terminal 33 Standard Value: 1.24 - 1.64 kOhms Q: Is the resistance between terminals 34 and 33 within the standard value? YES (When resistances between all terminals are within the standard value): Go to Step 13. NO (When resistance between terminals 34 and 33 is not within the standard value): Go to Step 11. STEP 11. Inspect the wheel speed sensor. Check the front right wheel speed sensor relevant to the DTC. For the applicable inspection procedure, refer to Wheel Speed Sensor Check. See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Wheel Speed Sensor/Testing and Inspection/Wheel Speed Sensor Check Q: Is the wheel speed sensor damaged? YES: Replace the wheel speed sensor. NO: Go to Step 12. STEP 12. Check TCL/ASC-ECU connector A-38 and wheel speed sensor [front: RH] connector A-01 for loose, corroded or damaged terminals, or terminals pushed back in the connector. Q: Are TCL/ASC-ECU connector A-38 and wheel speed sensor [front: RH] connector A-01 damaged? YES: Repair or replace the damaged component(s). Then go to Step 14. NO: Open or short circuit may be present in the front right wheel speed sensor circuit. Repair the wiring harness between TCL/ASC-ECU connector A-38 (terminals 34 and 33) and front right wheel speed sensor A-01 (terminals 1 and 2). Then go to Step 14. STEP 13. Recheck for diagnostic trouble code. Check again if the DTC is set.",
+      "detection_condition": [
+        "The TCL/ASC-ECU monitors the signals from each wheel speed sensor while the vehicle is being driven. If any faults below are found in these sensor",
+        "signals, the ECU will set the relevant diagnostic trouble code.",
+        "^",
+        "Missing sensor signal",
+        "Sensor signal, which will not be created under normal operation",
+        "Significant difference among the wheel speed sensor signals"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Diagnose the CAN bus line.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? Inspection/Scan Tool Testing and Procedures/How to Diagnose the CAN Bus Line. Then go to Step 2. STEP 2. Recheck for diagnostic trouble code.",
+          "yes": "Go to Step 3.",
+          "no": "Repair the CAN bus line (Refer to Diagnosis) See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1200 set? STEP 4. Check the installation condition of the wheel speed sensors. For the wheel speed sensor, which the DTC indicates, check whether the sensor or its mounting bolts are loosened. ^",
+          "yes": "Carry out diagnosis relevant to DTC C1200 (Refer to See: C1200).",
+          "no": "Go to Step 4."
+        },
+        {
+          "step": 6,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1201 set? STEP 3. Using scan tool MB991958, read the diagnostic trouble code.",
+          "yes": "Go to Step 3.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1205",
+      "description": "is set: Between terminal 45 and terminal 46 Standard Value: 1.24 - 1.64 kOhms Q: Is the resistance between terminals 45 and 46 within the standard value? YES (When resistances between all terminals are within the standard value): Go to Step 10. NO (When resistance between terminals 45 and 46 is not within the standard value): Go to Step 7. STEP 7. Check TCL/ASC-ECU connector A-38 and wheel speed sensor [front: LH] connector A-06 for loose, corroded or damaged terminals, or terminals pushed back in the connector. Q: Are TCL/ASC-ECU connector A-38 and wheel speed sensor [front: LH] connector A-06 damaged? YES: Repair or replace the damaged component(s). Then go to Step 11. NO: Go to Step 8. STEP 8. Check the harness wires between TCL/ASC-ECU connector A-38 (terminal 45, 46) and wheel speed sensor [front: LH] connector A-06 (terminal 1, 2). Q: Is the harness wire between TCL/ASC-ECU connector A-38 (terminal 45, 46) and wheel speed sensor [front: LH] connector A-06 (terminal 1, 2) damaged? YES: Repair the wiring harness. Then go to Step 11. NO: Go to Step 9. STEP 9. Inspect the wheel speed sensor. Check the wheel speed sensor relevant to the DTC code. For the applicable inspection procedure, refer to Wheel Speed Sensor Check. See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Wheel Speed Sensor/Testing and Inspection/Wheel Speed Sensor Check ^ When DTC code C1205 is set: Front left wheel speed sensor Q: Is the wheel speed sensor damaged? YES: Replace the wheel speed sensor. Then go to Step 11. NO: It can be assumed that this malfunction is intermittent. STEP 10. Recheck for diagnostic trouble code. Check again if the DTC is set.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Diagnose the CAN bus line.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? Inspection/Scan Tool Testing and Procedures/How to Diagnose the CAN Bus Line). Then go to Step 2. STEP 2. Recheck for diagnostic trouble code.",
+          "yes": "Go to Step 3.",
+          "no": "Repair the CAN bus line (Refer to Diagnosis See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        },
+        {
+          "step": 5,
+          "instruction": "Drive the vehicle at 9 mph (15 km/h) or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1205 set? STEP 3. Using scan tool MB991958, check data list.",
+          "yes": "Go to Step 3.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1206",
+      "description": "is set: Between signal terminal 45 and ground terminal 46 Standard Value: 1.24 - 1.64 kOhms Q: Is the resistance between terminals 45 and 46 within the standard value? YES (When resistances between all terminals are within the standard value): Go to Step 13. NO (When resistance between terminals 45 and 46 is not within the standard value): Go to Step 11. STEP 11. Inspect the wheel speed sensor. Check the front left wheel speed sensor relevant to the DTC. For the applicable inspection procedure, refer to See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Wheel Speed Sensor/Testing and Inspection/Wheel Speed Sensor Check. Q: Is the wheel speed sensor damaged? YES: Replace the wheel speed sensor. NO: Go to Step 12. STEP 12. Check TCL/ASC-ECU connector A-38 and wheel speed sensor [front: LH] connector A-06 for loose, corroded or damaged terminals, or terminals pushed back in the connector. Q: Are TCL/ASC-ECU connector A-38 and wheel speed sensor [front: LH] connector A-06 damaged? YES: Repair or replace the damaged component(s). Then go to Step 14. NO: Open or short circuit may be present in the front right wheel speed sensor circuit. Repair the wiring harness between TCL/ASC-ECU connector A-38 (terminals 45 and 46) and front left wheel speed sensor A-06 (terminals 1 and 2). Then go to Step 14. STEP 13. Recheck for diagnostic trouble code. Check again if the DTC is set.",
+      "detection_condition": [
+        "The TCL/ASC-ECU monitors the signals from each wheel speed sensor while the vehicle is being driven. If any faults below are found in these sensor",
+        "signals, the ECU will set the relevant diagnostic trouble code.",
+        "^",
+        "Missing sensor signal",
+        "Sensor signal, which will not be created under normal operation",
+        "Significant difference among the wheel speed sensor signals"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Diagnose the CAN bus line.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? Inspection/Scan Tool Testing and Procedures/How to Diagnose the CAN Bus Line). Then go to Step 2. STEP 2. Recheck for diagnostic trouble code.",
+          "yes": "Go to Step 3.",
+          "no": "Repair the CAN bus line (Refer to Diagnosis See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1205 set? STEP 4. Check the installation condition of the wheel speed sensors. For the wheel speed sensor, which the DTC indicates, check whether the sensor or its mounting bolts are loosened. ^",
+          "yes": "Carry out diagnosis relevant to DTC C1205 (Refer to See: C1205).",
+          "no": "Go to Step 4."
+        },
+        {
+          "step": 6,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1206 set? STEP 3. Using scan tool MB991958, read the diagnostic trouble code.",
+          "yes": "Go to Step 3.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1210",
+      "description": "is set: Between terminal 43 and terminal 42 Standard Value: 1.24 - 1.64 kOhms Q: Is the resistance between terminals 43 and 42 within the standard value? YES (When resistances between all terminals are within the standard value): Go to Step 10. NO (When resistance between terminals 43 and 42 is not within the standard value): Go to Step 7. STEP 7. Check TCL/ASC-ECU connector A-38, intermediate connector C-26 and wheel speed sensor [rear: RH] connector F-08 for loose, corroded or damaged terminals, or terminals pushed back in the connector. Q: Are TCL/ASC-ECU connector A-38, intermediate connector C-26 and wheel speed sensor [rear: RH] connector F-08 damaged? YES: Repair or replace the damaged component(s). Then go to Step 11. NO: Go to Step 8. STEP 8. Check the harness wires between TCL/ASC-ECU connector A-38 (terminal 43, 42) and wheel speed sensor [rear: RH] connector F-08 (terminal 1, 2). Q: Is the harness wire between TCL/ASC-ECU connector A-38 (terminal 43, 42) and wheel speed sensor [rear: RH] connector F-08 (terminal 1, 2) damaged? YES: Repair the wiring harness. Then go to Step 11. NO: Go to Step 9. STEP 9. Inspect the wheel speed sensor. Check the wheel speed sensor relevant to the DTC code. For the applicable inspection procedure, refer to See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Wheel Speed Sensor/Testing and Inspection/Wheel Speed Sensor Check. ^ When DTC code C1210 is set: Rear right wheel speed sensor Q: Is the wheel speed sensor damaged? YES: Replace the wheel speed sensor. Then go to Step 11. NO: It can be assumed that this malfunction is intermittent. STEP 10. Recheck for diagnostic trouble code. Check again if the DTC is set.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Diagnose the CAN bus line.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? Inspection/Scan Tool Testing and Procedures/How to Diagnose the CAN Bus Line). Then go to Step 2. STEP 2. Recheck for diagnostic trouble code.",
+          "yes": "Go to Step 3.",
+          "no": "Repair the CAN bus line (Refer to Diagnosis See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        },
+        {
+          "step": 5,
+          "instruction": "Drive the vehicle at 9 mph (15 km/h) or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1210 set? STEP 3. Using scan tool MB991958, check data list.",
+          "yes": "Go to Step 3.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1211",
+      "description": "is set: Between signal terminal 43 and ground terminal 42 Standard Value: 1.24 - 1.64 kOhms Q: Is the resistance between terminals 43 and 42 within the standard value? YES (When resistances between all terminals are within the standard value): Go to Step 13. NO (When resistance between terminals 43 and 42 is not within the standard value): Go to Step 11. STEP 11. Inspect the wheel speed sensor. Check the rear right wheel speed sensor relevant to the DTC. For the applicable inspection procedure, refer to See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Wheel Speed Sensor/Testing and Inspection/Wheel Speed Sensor Check. Q: Is the wheel speed sensor damaged? YES: Replace the wheel speed sensor. NO: Go to Step 12. STEP 12. Check TCL/ASC-ECU connector A-38, intermediate connector C-26 and wheel speed sensor [rear: RH] connector F-08 for loose, corroded or damaged terminals, or terminals pushed back in the connector. Q: Are TCL/ASC-ECU connector A-38, intermediate connector C-26 and wheel speed sensor [rear: RH] connector F-08 damaged? YES: Repair or replace the damaged component(s). Then go to Step 14. NO: Open or short circuit may be present in the rear right wheel speed sensor circuit. Repair the wiring harness between TCL/ASC-ECU connector A-38 (terminals 43 and 42) and rear right wheel speed sensor F-08 (terminals 1 and 2). Then go to Step 14. STEP 13. Recheck for diagnostic trouble code. Check again if the DTC is set.",
+      "detection_condition": [
+        "The TCL/ASC-ECU monitors the signals from each wheel speed sensor while the vehicle is being driven. If any faults below are found in these sensor",
+        "signals, the ECU will set the relevant diagnostic trouble code.",
+        "^",
+        "Missing sensor signal",
+        "Sensor signal, which will not be created under normal operation",
+        "Significant difference among the wheel speed sensor signals"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Diagnose the CAN bus line.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? Inspection/Scan Tool Testing and Procedures/How to Diagnose the CAN Bus Line). Then go to Step 2. STEP 2. Recheck for diagnostic trouble code.",
+          "yes": "Go to Step 3.",
+          "no": "Repair the CAN bus line (Refer to Diagnosis See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1210 set? STEP 4. Check the installation condition of the wheel speed sensors. For the wheel speed sensor, which the DTC indicates, check whether the sensor or its mounting bolts are loosened. ^",
+          "yes": "Carry out diagnosis relevant to DTC C1210 (Refer to See: C1210).",
+          "no": "Go to Step 4."
+        },
+        {
+          "step": 6,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1211 set? STEP 3. Using scan tool MB991958, read the diagnostic trouble code.",
+          "yes": "Go to Step 3.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1215",
+      "description": "is set: Between terminal 36 and terminal 37 Standard Value: 1.24 - 1.64 kOhms Q: Is the resistance between terminals 36 and 37 within the standard value? YES (When resistances between all terminals are within the standard value): Go to Step 10. NO (When resistance between terminals 36 and 37 is not within the standard value): Go to Step 7. STEP 7. Check TCL/ASC-ECU connector A-38, intermediate connector C-26 and wheel speed sensor [rear: LH] connector F-12 for loose, corroded or damaged terminals, or terminals pushed back in the connector. Q: Are TCL/ASC-ECU connector A-38, intermediate connector C-26 and wheel speed sensor [rear: LH] connector F-12 damaged? YES: Repair or replace the damaged component(s). Then go to Step 11. NO: Go to Step 8. STEP 8. Check the harness wires between TCL/ASC-ECU connector A-38 (terminal 36, 37) and wheel speed sensor [rear: LH] connector F-12 (terminal 1, 2). Q: Is the harness wire between TCL/ASC-ECU connector A-38 (terminal 36, 37) and wheel speed sensor [rear: LH] connector F-12 (terminal 1, 2) damaged? YES: Repair the wiring harness. Then go to Step 11. NO: Go to Step 9. STEP 9. Inspect the wheel speed sensor. Check the wheel speed sensor relevant to the DTC code. For the applicable inspection procedure, refer to See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Wheel Speed Sensor/Testing and Inspection/Wheel Speed Sensor Check. ^ When DTC code C1215 is set: Rear left wheel speed sensor Q: Is the wheel speed sensor damaged? YES: Replace the wheel speed sensor. Then go to Step 11. NO: It can be assumed that this malfunction is intermittent. STEP 10. Recheck for diagnostic trouble code. Check again if the DTC is set.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Diagnose the CAN bus line.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? Inspection/Scan Tool Testing and Procedures/How to Diagnose the CAN Bus Line). Then go to Step 2. STEP 2. Recheck for diagnostic trouble code.",
+          "yes": "Go to Step 3.",
+          "no": "Repair the CAN bus line (Refer to Diagnosis See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        },
+        {
+          "step": 5,
+          "instruction": "Drive the vehicle at 9 mph (15 km/h) or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1215 set?",
+          "yes": "Repeat the troubleshooting from Step 1.",
+          "no": "The procedure is complete."
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1215 set? STEP 3. Using scan tool MB991958, check data list.",
+          "yes": "Go to Step 3.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1216",
+      "description": "is set: Between signal terminal 36 and ground terminal 37 Standard Value: 1.24 - 1.64 kOhms Q: Is the resistance between terminals 36 and 37 within the standard value? YES (When resistances between all terminals are within the standard value): Go to Step 13. NO (When resistance between terminals 36 and 37 is not within the standard value): Go to Step 11. STEP 11. Inspect the wheel speed sensor. Check the rear left wheel speed sensor relevant to the DTC. For the applicable inspection procedure, refer to See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Wheel Speed Sensor/Testing and Inspection/Wheel Speed Sensor Check. Q: Is the wheel speed sensor damaged? YES: Replace the wheel speed sensor. NO: Go to Step 12. STEP 12. Check TCL/ASC-ECU connector A-38, intermediate connector C-26 and wheel speed sensor [rear: LH] connector F-12 for loose, corroded or damaged terminals, or terminals pushed back in the connector. Q: Are TCL/ASC-ECU connector A-38, intermediate connector C-26 and wheel speed sensor [rear: LH] connector F-12 damaged? YES: Repair or replace the damaged component(s). Then go to Step 14. NO: Open or short circuit may be present in the rear left wheel speed sensor circuit. Repair the wiring harness between TCL/ASC-ECU connector A-38 (terminals 36 and 37) and rear left wheel speed sensor F-12 (terminals 1 and 2). Then go to Step 14. STEP 13. Recheck for diagnostic trouble code. Check again if the DTC is set.",
+      "detection_condition": [
+        "The TCL/ASC-ECU monitors the signals from each wheel speed sensor while the vehicle is being driven. If any faults below are found in these sensor",
+        "signals, the ECU will set the relevant diagnostic trouble code.",
+        "^",
+        "Missing sensor signal",
+        "Sensor signal, which will not be created under normal operation",
+        "Significant difference among the wheel speed sensor signals"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Diagnose the CAN bus line.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? Inspection/Scan Tool Testing and Procedures/How to Diagnose the CAN Bus Line). Then go to Step 2. STEP 2. Recheck for diagnostic trouble code.",
+          "yes": "Go to Step 3.",
+          "no": "Repair the CAN bus line (Refer to Diagnosis See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1215 set? STEP 4. Check the installation condition of the wheel speed sensors. For the wheel speed sensor, which the DTC indicates, check whether the sensor or its mounting bolts are loosened. ^",
+          "yes": "Carry out diagnosis relevant to DTC C1215 (Refer to See: C1215).",
+          "no": "Go to Step 4."
+        },
+        {
+          "step": 6,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1216 set? STEP 3. Using scan tool MB991958, read the diagnostic trouble code.",
+          "yes": "Go to Step 3.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1226",
+      "description": "FR inlet valve",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1231",
+      "description": "FR outlet valve",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1236",
+      "description": "FL inlet valve",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1241",
+      "description": "FL outlet valve",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1246",
+      "description": "RR inlet valve",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1251",
+      "description": "RR outlet valve",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1256",
+      "description": "RL inlet valve",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1261",
+      "description": "RL outlet valve",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1300",
+      "description": "FR cut valve",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1305",
+      "description": "FR suction valve",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1310",
+      "description": "FL cut valve",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1315",
+      "description": "FL suction valve HINTS (The most likely causes for these DTCs are to set are:) Current trouble ^ Malfunction of the hydraulic unit (integrated with TCL/ASC-ECU) Past trouble ^ Carry out diagnosis with particular emphasis on connector(s) or wiring harness in the power supply circuit (terminal 32) to the TCL/ASC-ECU solenoid valve or ground circuit (terminal 16, 47). DIAGNOSIS Required Special Tools: ^ MB991958: Scan Tool (M.U.T.-III Sub Assembly) ^ MB991824: Vehicle Communication Interface (V.C.I.) ^ MB991827: M.U.T.-III USB Cable ^ MB991910: M.U.T.-III Main Harness A ^ MB991997: ASC Check Harness STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [
+        "These diagnostic trouble codes will be set under the cases below.",
+        "^",
+        "The solenoid valve is not energized even after the TCL/ASC-ECU has turned on the driving transistor (Open circuit is present in the power supply",
+        "circuit to the TCL/ASC-ECU solenoid valve, or the valve relay has failed).",
+        "^",
+        "The solenoid valve is not energized even after the TCL/ASC-ECU has turned on the driving transistor (Open circuit is present in the solenoid",
+        "valve circuit inside the TCL/ASC-ECU, or the valve relay has failed).",
+        "^",
+        "After the TCL/ASC-ECU has turned off the driving transistor, the solenoid valve still remains energized (short in the solenoid valve circuit).",
+        "^",
+        "When a solenoid valve failure is detected"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Erase the DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? Inspection/Scan Tool Testing and Procedures/How to Diagnose the CAN Bus Line). Then go to Step 2. STEP 2. Recheck for diagnostic trouble code.",
+          "yes": "Go to Step 3.",
+          "no": "Repair the CAN bus line (Refer to Diagnosis See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        },
+        {
+          "step": 5,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is C1226, C1231, C1236, C1241, C1246, C1251, C1256, C1261, C1300, C1305, C1310 or C1315 set?",
+          "yes": "Go to Step 1.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1271",
+      "description": "Motor drive circuit HINTS (THE MOST LIKELY CAUSES FOR THESE DTCS ARE TO SET ARE:) Current trouble ^ Defective battery ^ Charging system failed ^ Damaged wiring harness or connector ^ Malfunction of the hydraulic unit (integrated with TCL/ASC-ECU) PAST TROUBLE ^ Carry out diagnosis with particular emphasis on connector(s) or wiring harness in the power supply circuit (terminal 1) to the TCL/ASC-ECU motor or ground circuit (terminal 16, 47). DIAGNOSIS Required Special Tools: ^ MB991958: Scan Tool (M.U.T.-III Sub Assembly) ^ MB991824: Vehicle Communication Interface (V.C.I.) ^ MB991827: M.U.T.-III USB Cable ^ MB991910: M.U.T.-III Main Harness A ^ MB991997: ASC Check Harness STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Measure the resistance between terminal 16, 47 and ground. It should be 2 ohms or less. Q: Is the measured resistance 2 ohms or less? STEP 8. Check TCL/ASC-ECU connector A-38 for loose, corroded or damaged terminals, or terminals pushed back in the connector. Q: Is TCL/ASC-ECU connector A-38 damaged? the body ground. Then go to Step 10 . STEP 9. Recheck for diagnostic trouble code. Check again if the DTC is set.",
+          "yes": "Repair or replace the damaged component(s). Then go to Step 10.",
+          "no": "An open circuit may be present in the ground circuit. Repair the wiring harness between TCL/ASC-ECU connector A-38 terminal 16, 47 and"
+        },
+        {
+          "step": 3,
+          "instruction": "Measure the voltage between terminal 1 and ground. It should be approximately 12 volts (battery positive voltage). Q: Is the voltage approximately 12 volts (battery positive voltage)? STEP 6. Check TCL/ASC-ECU connector A-38 for loose, corroded or damaged terminals, or terminals pushed back in the connector. Q: Is TCL/ASC-ECU connector A-38 damaged? connector A-38 terminal 1 and fusible link No.3. Then go to Step 10. STEP 7. Measure the resistance at TCL/ASC-ECU connector A-38.",
+          "yes": "Repair or replace the damaged component(s). Then go to Step 10.",
+          "no": "An open or short circuit may be present in the solenoid valve power supply circuit. Repair the wiring harness between TCL/ASC-ECU"
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? Inspection/Scan Tool Testing and Procedures/How to Diagnose the CAN Bus Line). Then go to Step 2. STEP 2. Recheck for diagnostic trouble code.",
+          "yes": "Go to Step 3.",
+          "no": "Repair the CAN bus line (Refer to Diagnosis See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        },
+        {
+          "step": 5,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1271 set ?",
+          "yes": "Go to Step 1.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1276",
+      "description": "Valve Power Supply Circuit HINTS (THE MOST LIKELY CAUSES FOR THESE DTCS ARE TO SET ARE:) Current trouble ^ Defective battery ^ Charging system failed ^ Damaged wiring harness or connector ^ Malfunction of the hydraulic unit (integrated with TCL/ASC- ECU) PAST TROUBLE Carry out diagnosis with particular emphasis on connector(s) or wiring harness in the power supply circuit (terminal 32) to the TCL/ASC-ECU solenoid valve or ground circuit (terminal 16, 47). DIAGNOSIS Required Special Tools: ^ MB991958: Scan Tool (M.U.T.-III Sub Assembly) ^ MB991824: Vehicle Communication Interface (V.C.I.) ^ MB991827: M.U.T.-III USB Cable ^ MB991910: M.U.T.-III Main Harness A ^ MB991997: ASC Check Harness STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Measure the resistance between terminal 16, 47 and ground. It should be 2 ohms or less. Q: Is the measured resistance 2 ohms or less? STEP 8. Check TCL/ASC-ECU connector A-38 for loose, corroded or damaged terminals, or terminals pushed back in the connector. Q: Is TCL/ASC-ECU connector A-38 damaged? the body ground. Then go to Step 10 . STEP 9. Recheck for diagnostic trouble code. Check again if the DTC is set.",
+          "yes": "Repair or replace the damaged component(s). Then go to Step 10.",
+          "no": "An open circuit may be present in the ground circuit. Repair the wiring harness between TCL/ASC-ECU connector A-38 terminal 16, 47 and"
+        },
+        {
+          "step": 3,
+          "instruction": "Measure the voltage between terminal 32 and ground. It should be approximately 12 volts (battery positive voltage). Q: Is the voltage approximately 12 volts (battery positive voltage)? STEP 6. Check TCL/ASC-ECU connector A-38 for loose, corroded or damaged terminals, or terminals pushed back in the connector. Q: Is TCL/ASC-ECU connector A-38 damaged? connector A-38 terminal 32 and fusible link No.3. Then go to Step 10. STEP 7. Measure the resistance at TCL/ASC-ECU connector A-38.",
+          "yes": "Repair or replace the damaged component(s). Then go to Step 10.",
+          "no": "An open or short circuit may be present in the solenoid valve power supply circuit. Repair the wiring harness between TCL/ASC-ECU"
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? Inspection/Scan Tool Testing and Procedures/How to Diagnose the CAN Bus Line). Then go to Step 2. STEP 2. Recheck for diagnostic trouble code.",
+          "yes": "Go to Step 2.",
+          "no": "Repair the CAN bus line (Refer to Diagnosis See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        },
+        {
+          "step": 5,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1276 set? STEP 3. Battery check Refer to Battery Test See: Starting and Charging/Battery/Testing and Inspection/Battery Test. Q: Is the battery in good condition? STEP 4. Charging system check Refer to Charging System See: Starting and Charging/Charging System/Testing and Inspection/Initial Inspection and Diagnostic Overview. Q: Is the charging system in good condition? STEP 5. Measure the voltage at TCL/ASC-ECU connector A-38.",
+          "yes": "Go to Step 5.",
+          "no": "Repair or replace the charging system component(s). Then go to Step 10."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1340",
+      "description": "Stoplight switch HINTS (THE MOST LIKELY CAUSES FOR THESE DTCS ARE TO SET ARE:) Current trouble ^ Malfunction of the stoplight switch ^ Incorrect positioning of stoplight switch ^ Damaged wiring harness or connector ^ Malfunction of the hydraulic unit (integrated with TCL/ASC- ECU) PAST TROUBLE Carry out diagnosis with particular emphasis on connector(s) or wiring harness between the TCL/ASC-ECU and the stoplight switch. DIAGNOSIS Required Special Tools: ^ MB991958 Scan Tool (M.U.T.-III Sub Assembly) ^ MB991824: Vehicle Communication Interface (V.C.I.) ^ MB991827 M.U.T.-III USB Cable ^ MB991910 M.U.T.-III Main Harness A ^ MB991997: ASC Check Harness STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [
+        "Diagnosis code No.1340 is set in the following cases:",
+        "^",
+        "Stoplight switch is not operating properly and remains ON state and vehicle speed exceeds 12mph (20km/h) for more than 6 minutes.",
+        "Stoplight switch system harness is damaged and no signal is input to TCL/ASC-ECU."
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Check the operation of the stoplight when the brake pedal is operated. OK: Brake pedal depressed: ON Brake pedal released: OFF Q: Is the check result normal? STEP 4. Connector check: A-38 TCL/ASC-ECU connector, C-28 joint connector (1). Q: Is the check result normal? STEP 5. Measure the resistance at the C-28 joint connector (1).",
+          "yes": "Go to Step 5.",
+          "no": "Repair or replace the damaged component(s). Then go to Step 16."
+        },
+        {
+          "step": 3,
+          "instruction": "Measure the resistance between the C-103 stoplight switch connector terminal 2 and body ground. OK: No continuity Q: Is the check result normal? Then, replace fuse No. 11.Then go to Step 16 . STEP 11. Measure the resistance at the C-103 stoplight switch connector.",
+          "yes": "Go to Step 11.",
+          "no": "The wiring harness between fuse No. 11 and C-103 stoplight switch connector terminal 2 is shorted to ground. Repair the wiring harness."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? Inspection/Scan Tool Testing and Procedures/How to Diagnose the CAN Bus Line). Then go to Step 2. STEP 2. Recheck for diagnostic trouble code.",
+          "yes": "Go to Step 3.",
+          "no": "Repair the CAN bus line (Refer to Diagnosis See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        },
+        {
+          "step": 5,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1340 set? STEP 3. Check the stoplight operation.",
+          "yes": "Go to Step 3.",
+          "no": "The procedure is complete."
+        },
+        {
+          "step": 7,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1340 set?",
+          "yes": "Go to Step 1.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1361",
+      "description": "M/C pressure SNSR. stuck/low gain",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1364",
+      "description": "M/C pressure SNSR. malfunction HINTS (The most likely causes for these DTCs are to set are:) ^ The CAN bus line is defective. ^ Malfunction of the hydraulic unit (integrated with TCL/ASC-ECU) DIAGNOSIS Required Special Tools: ^ MB991958: Scan Tool (M.U.T.-III Sub Assembly) ^ MB991824: Vehicle Communication Interface (V.C.I.) ^ MB991827: M.U.T.-III USB Cable ^ MB991910: M.U.T.-III Main Harness A STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Erase the DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? Inspection/Scan Tool Testing and Procedures/How to Diagnose the CAN Bus Line). Then go to Step 2. STEP 2. Recheck for diagnostic trouble code.",
+          "yes": "Go to Step 2.",
+          "no": "Repair the CAN bus line (Refer to Diagnosis See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        },
+        {
+          "step": 5,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1361 or C1364 set ?",
+          "yes": "Replace the hydraulic unit (integrated with TCL/ASC-ECU).",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1366",
+      "description": "Lateral G SNSR. stuck/low gain (seizure or abnormal output signal) ^ Lateral acceleration value from the sensor is abnormal, or the value does not fluctuate during driving.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1371",
+      "description": "Yaw rate SNSR. stuck/low gain (seizure, abnormal output signal or oscillation) ^ Yaw rate value from the sensor is abnormal, or the value does not fluctuate during driving.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1377",
+      "description": "Communication error G and yaw rate SNSR. (seizure or abnormal output signal) ^ When communication error of the G and yaw rate sensor occurs",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1864",
+      "description": "G and yaw rate SNSR. power supply voltage (abnormal output or poor performance) ^ When the G and yaw rate sensor power supply voltage is abnormal HINTS (THE MOST LIKELY CAUSES FOR THESE DTCS ARE TO SET ARE:) Current trouble ^ Malfunction of the G and yaw late wiring harness or connector ^ Malfunction of the hydraulic unit (integrated with TCL/ASC-ECU) PAST TROUBLE Carry out diagnosis with particular emphasis on connector(s) or wiring harness between the TCL/ASC-ECU and the G and yaw late sensor. DIAGNOSIS Required Special Tools: ^ MB991958 Scan Tool (M.U.T.-III Sub Assembly) ^ MB991824: Vehicle Communication Interface (V.C.I.) ^ MB991827 M.U.T.-III USB Cable ^ MB991910 M.U.T.-III Main Harness A ^ MB991997: ASC Check Harness STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Measure the resistance between terminal 6 and body ground. ^ Resistance should measure no continuity. Q: Is the measured resistance no continuity? A-38 (terminal 6) and G and yaw rate sensor connector C-32 (terminal 1). Then go to Step 14. STEP 8. Check for continuity of the wiring harness between A-38 TCL/ASC-ECU connector and C-32 G and yaw rate sensor connector.",
+          "yes": "Replace the hydraulic unit (integrated with TCL/ASC-ECU). Then go to Step 14.",
+          "no": "Short circuit may be present in the G and yaw rate sensor power supply lines. Repair the wiring harness between TCL/ASC-ECU connector"
+        },
+        {
+          "step": 3,
+          "instruction": "Use scan tool MB991958 to read the following data list (Refer to See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Scan Tool Testing and Procedures). ^ Item 8: Lateral G sensor ^ Item 12: Yaw rate sensor Q: Is the G and yaw rate sensor output normal? STEP 4. Check the following connectors. ^ G and yaw rate sensor connector C-32 ^ TCL/ASC-ECU connector A-38 Check the connectors, for loose, corroded or damaged terminals, or terminals pushed back in the connector. Q: Are the connectors and terminals in good condition? STEP 5. Measure the voltage at G and yaw rate sensor connector C-32.",
+          "yes": "Go to Step 5.",
+          "no": "Repair or replace the damaged component(s)."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? Inspection/Scan Tool Testing and Procedures/How to Diagnose the CAN Bus Line). Then go to Step 2. STEP 2. Recheck for diagnostic trouble code.",
+          "yes": "Go to Step 3.",
+          "no": "Repair the CAN bus line (Refer to Diagnosis See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        },
+        {
+          "step": 5,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1366, C1371, C1377 or C1864 set? STEP 3. Using scan tool MB991958, check data list item 8: Lateral G sensor and item 12: Yaw rate sensor.",
+          "yes": "Go to Step 3.",
+          "no": "The procedure is complete."
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1366, C1371, C1377 or C1864 set? STEP 13. Recheck for diagnostic trouble code. Check again if the DTC is set.",
+          "yes": "Replace the G and yaw rate sensor. Then go to Step 13.",
+          "no": "It can be assumed that this malfunction is intermittent."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1394",
+      "description": "INCOMP. learn neutral (SAS) HINTS (THE MOST LIKELY CAUSES FOR THESE DTCS ARE TO SET ARE:) ^ The CAN bus line is defective. ^ Malfunction of the hydraulic unit (integrated with TCL/ASC-ECU) DIAGNOSIS Required Special Tools: ^ MB991958: Scan Tool (M.U.T.-III Sub Assembly) ^ MB991824: Vehicle Communication Interface (V.C.I.) ^ MB991827: M.U.T.-III USB Cable ^ MB991910: M.U.T.-III Main Harness A STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [
+        "This DTC is set if the steering wheel sensor has not been initialized."
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Diagnose the CAN bus line.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? Inspection/Scan Tool Testing and Procedures/How to Diagnose the CAN Bus Line). Then go to Step 2. STEP 2. Recheck for diagnostic trouble code.",
+          "yes": "Go to Step 2.",
+          "no": "Repair the CAN bus line (Refer to Diagnosis See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        },
+        {
+          "step": 5,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1394 set? STEP 3. Recheck for diagnostic trouble code. Check again if the DTC is set.",
+          "yes": "Initialize the steering wheel sensor. Then go to Step 3.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1395",
+      "description": "INCOMP. Brake fluid filling HINTS (THE MOST LIKELY CAUSES FOR THESE DTCS ARE TO SET ARE:) ^ The CAN bus line is defective. ^ Malfunction of the hydraulic unit (integrated with TCL/ASC-ECU) DIAGNOSIS Required Special Tools: ^ MB991958: Scan Tool (M.U.T.-III Sub Assembly) ^ MB991824: Vehicle Communication Interface (V.C.I.) ^ MB991827: M.U.T.-III USB Cable ^ MB991910: M.U.T.-III Main Harness A STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Diagnose the CAN bus line.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? Inspection/Scan Tool Testing and Procedures/How to Diagnose the CAN Bus Line). Then go to Step 2. STEP 2. Recheck for diagnostic trouble code.",
+          "yes": "Go to Step 2.",
+          "no": "Repair the CAN bus line (Refer to Diagnosis See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        },
+        {
+          "step": 5,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1395 set? STEP 3. Recheck for diagnostic trouble code. Check again if the DTC is set.",
+          "yes": "Perform air-bleeding. Then go to Step 3.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1505",
+      "description": "Steering Angle Sensor (signal seizure or abnormal neutral point) ^ The steering wheel sensor output value does not fluctuate for more than 20 seconds although the vehicle speed is 15 km/h or more and the G and yaw rate sensor output value is fluctuating. ^ The neutral point has been ±180 deg or more and the vehicle speed remains 10 km/h or more for at least one second.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1506",
+      "description": "Steering Angle Sensor (abnormal steering angle) ^ When the steering wheel sensor sets a DTC, the TCL/ASC-ECU receives the information and sets this code. HINTS (THE MOST LIKELY CAUSES FOR THESE DTCS ARE TO SET ARE:) Current trouble ^ Damaged wiring harness or connector ^ Malfunction of the steering wheel sensor ^ Malfunction of the hydraulic unit (integrated with TCL/ASC- ECU) PAST TROUBLE Carry out diagnosis with particular emphasis on connector(s) or wiring harness between the TCL/ASC-ECU and the steering sensor. DIAGNOSIS Required Special Tools: ^ MB991958 Scan Tool (M.U.T.-III Sub Assembly) ^ MB991824: Vehicle Communication Interface (V.C.I.) ^ MB991827 M.U.T.-III USB Cable ^ MB991910 M.U.T.-III Main Harness A STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Set scan tool MB991958 to data reading mode for item 11, Steering angle. ^ Correct angle is displayed as the steering wheel is turned. Q: Does the steering wheel sensor send correct steering angle? STEP 4. Recheck for diagnostic trouble code. Check again if the DTC is set.",
+          "yes": "Go to step 6.",
+          "no": "Align the steering wheel sensor neutral point and carry out calibration. Then go to Step 4."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? Inspection/Scan Tool Testing and Procedures/How to Diagnose the CAN Bus Line). Then go to Step 2. STEP 2. Recheck for diagnostic trouble code.",
+          "yes": "Go to Step 3.",
+          "no": "Repair the CAN bus line (Refer to Diagnosis See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        },
+        {
+          "step": 5,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1505 or C1506 set? STEP 3. Using scan tool MB991958, check data list item 11: Steering angle.",
+          "yes": "[C1506 is set]: Check the steering wheel sensor DTC, and diagnose the DTC (Refer to See: C1551).",
+          "no": "The procedure is complete."
+        },
+        {
+          "step": 7,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1505 set? STEP 6. Recheck for diagnostic trouble code. Check again if the DTC is set.",
+          "yes": "Replace the hydraulic unit (integrated with TCL/ASC-ECU). Then go to Step 7.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1551",
+      "description": "Hall-IC output voltage ^ The Hall cell sends incorrect voltage signal for at least one second.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1552",
+      "description": "Hall-IC output pattern ^ Invalid Hall cell pattern fluctuates at least once.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1553",
+      "description": "Optical sensor ^ The optical sensor output is invalid.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1554",
+      "description": "Speed sensor is out of range ^ The sensor speed is 25°/10 ms or more.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1555",
+      "description": "Steering angle SNS. out of range ^ The sensor is out of a predetermined operation range.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1608",
+      "description": "will be set if there is any fault in the TPMS receiver's EEPROM. At the same time this DTC is set, the TPMS warning light flashes for about 1 minute and then remain illuminated. HINT Replace the TPMS receiver. DIAGNOSIS Required Special Tools: ^ MB991958: Scan Tool (M.U.T.-III Sub Assembly) ^ MB991824: Vehicle Communication Interface (V.C.I.) ^ MB991827: M.U.T.-III USB Cable ^ MB991910: M.U.T.-III Main Harness A STEP 1. Check the illumination condition of the TPMS warning light after the following procedures.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Diagnose the CAN bus line.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? Inspection/Scan Tool Testing and Procedures/How to Diagnose the CAN Bus Line). Then go to Step 2. STEP 2. Recheck for steering wheel sensor diagnostic trouble code.",
+          "yes": "Go to Step 2.",
+          "no": "Repair the CAN bus line (Refer to Diagnosis See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        },
+        {
+          "step": 5,
+          "instruction": "Check the illumination condition of the TPMS warning light. Q: Is the TPMS warning light flash for about 1 minute and then remain illuminated? STEP 2.Recheck for diagnostic trouble code. Q: Does diagnostic trouble code C1608 reset? TCS or ACS",
+          "yes": "Repeat the troubleshooting from Step 1.",
+          "no": "The procedure is complete."
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1551, C1552, C1553, C1554, C1555 or C1608 set?",
+          "yes": "Replace steering wheel sensor.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1607",
+      "description": "ECU failure HINTS (The most likely causes for these DTCs are to set are:) ^ Malfunction of the hydraulic unit (integrated with TCL/ASC-ECU) DIAGNOSIS Required Special Tools: ^ MB991958: Scan Tool (M.U.T.-III Sub Assembly) ^ MB991824: Vehicle Communication Interface (V.C.I.) ^ MB991827: M.U.T.-III USB Cable ^ MB991910: M.U.T.-III Main Harness A STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Diagnose the CAN bus line.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? Inspection/Scan Tool Testing and Procedures/How to Diagnose the CAN Bus Line). Then go to Step 2. STEP 2. Recheck for diagnostic trouble code.",
+          "yes": "Go to Step 2.",
+          "no": "Repair the CAN bus line (Refer to Diagnosis See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        },
+        {
+          "step": 5,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1607 set? TPMS Abnormality (EEPROM Failure)",
+          "yes": "Replace the hydraulic unit (integrated with TCL/ASC-ECU).",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1640",
+      "description": "Coding not completed HINTS (The most likely causes for these DTCs are to set are:) ^ A different hydraulic unit is used. (integrated with TCL/ASC-ECU) ^ Malfunction of the hydraulic unit (integrated with TCL/ASC-ECU) DIAGNOSIS Required Special Tools: ^ MB991958: Scan Tool (M.U.T.-III Sub Assembly) ^ MB991824: Vehicle Communication Interface (V.C.I.) ^ MB991827: M.U.T.-III USB Cable ^ MB991910: M.U.T.-III Main Harness A STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Diagnose the CAN bus line.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? Inspection/Scan Tool Testing and Procedures/How to Diagnose the CAN Bus Line). Then go to Step 2. STEP 2. Recheck for diagnostic trouble code.",
+          "yes": "Go to Step 2.",
+          "no": "Repair the CAN bus line (Refer to Diagnosis See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        },
+        {
+          "step": 5,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1640 set?",
+          "yes": "Replace the hydraulic unit (integrated with TCL/ASC-ECU).",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1641",
+      "description": "Coding not completed HINTS (THE MOST LIKELY CAUSES FOR THESE DTCS ARE TO SET ARE:) ^ A different hydraulic unit is used. (integrated with TCL/ASC-ECU) ^ Malfunction of the hydraulic unit (integrated with TCL/ASC-ECU) DIAGNOSIS Required Special Tools: ^ MB991958: Scan Tool (M.U.T.-III Sub Assembly) ^ MB991824: Vehicle Communication Interface (V.C.I.) ^ MB991827: M.U.T.-III USB Cable ^ MB991910: M.U.T.-III Main Harness A STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Diagnose the CAN bus line.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? Inspection/Scan Tool Testing and Procedures/How to Diagnose the CAN Bus Line). Then go to Step 2. STEP 2. Recheck for diagnostic trouble code.",
+          "yes": "Go to Step 2.",
+          "no": "Repair the CAN bus line (Refer to Diagnosis See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        },
+        {
+          "step": 5,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1641 set?",
+          "yes": "Replace the hydraulic unit (integrated with TCL/ASC-ECU).",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1860",
+      "description": "will be set when the power supply voltage to the TCL/ASC-ECU became more than 18.0 ± 1.0 volts during a run in more than 12mph (20 km/h). C1861 will be set when the power supply voltage to the TCL/ASC-ECU became less than 9.7 ± 0.3 volts during a run in more than 12mph (20 km/h). HINTS (THE MOST LIKELY CAUSES FOR THESE DTCS ARE TO SET ARE:) Current trouble ^ Excessive electrical load ^ Defective battery ^ Damaged wiring harness or connector ^ Malfunction of the hydraulic unit (integrated with TCL/ASC-ECU) ^ Charging system failed PAST TROUBLE Carry out diagnosis with particular emphasis on connector(s) or wiring harness in the power supply circuit (terminal 4) to the TCL/ASC-ECU. DIAGNOSIS Required Special Tools: ^ MB991958: Scan Tool (M.U.T.-III Sub Assembly) ^ MB991824: Vehicle Communication Interface (V.C.I.) ^ MB991827: M.U.T.-III USB Cable ^ MB991910: M.U.T.-III Main Harness A ^ MB991997: ASC Check Harness STEP 1. Using scan tool MB991958, diagnose the CAN bus line.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Measure the voltage between terminal 4 and ground. It should be approximately 12 volts (battery positive voltage). Q: Is the voltage approximately 12 volts (battery positive voltage)? STEP 6. Check the following connectors. ^ TCL/ASC-ECU connector A-38 ^ Junction block connectors C-202 and C-203 ^ Intermediate connector C-24 ^ Ignition switch connector C-308 Check the connectors, for loose, corroded or damaged terminals, or terminals pushed back in the connector. Q: Are the connectors and terminals in good condition? connector A-38 terminal 4 and ignition switch connector C-308 terminal 4. Then go to Step 8. STEP 7. Recheck for diagnostic trouble code. Check again if the DTC is set.",
+          "yes": "An open or short circuit may be present in the power supply line to the TCL/ASC-ECU. Repair the wiring harness between TCL/ASC-ECU",
+          "no": "Repair or replace the damaged component(s). Then go to Step 8."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the CAN bus line found to be normal? Inspection/Scan Tool Testing and Procedures/How to Diagnose the CAN Bus Line). Then go to Step 2. STEP 2. Recheck for diagnostic trouble code.",
+          "yes": "Go to Step 3.",
+          "no": "Repair the CAN bus line (Refer to Diagnosis See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        },
+        {
+          "step": 5,
+          "instruction": "Check if the DTC is set.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is DTC C1860 or C1861 set? STEP 3. Check the battery. Check the battery (Refer to Battery test See: Starting and Charging/Battery/Testing and Inspection/Battery Test). Q: Is the battery in good condition? STEP 4. Check the charging system. Check the charging system (Refer to Charging system diagnosis See: Starting and Charging/Charging System/Testing and Inspection/Initial Inspection and Diagnostic Overview). Q: Is the charging system in good condition? STEP 5. Measure the voltage at TCL/ASC-ECU connector A-38.",
+          "yes": "Go to Step 5.",
+          "no": "Repair or replace the charging system component(s)."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1861",
+      "description": "Abnormality in battery voltage (low voltage)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1900",
+      "description": "will be set if the tire pressure sensor IDs are not registered correctly in the TPMS receiver. At the same time this DTC is set, the TPMS HINT Execute \"Tire Pressure Sensor ID Registration\" on scan tool MB991958 \"Special Function.\" DIAGNOSIS Required Special Tools: ^ MB991958: Scan Tool (M.U.T.-III Sub Assembly) ^ MB991824: Vehicle Communication Interface (V.C.I.) ^ MB991827: M.U.T.-III USB Cable ^ MB991910: M.U.T.-III Main Harness A STEP 1. Execute \"Tire Pressure Sensor ID Registration\" on scan tool MB991958 \"Special Function.\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Execute \"Tire Pressure Sensor ID Registration\" (Refer to See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Testing and Inspection/Programming and Relearning/Tire Pressure Sensor ID Registration). Q: Is the \"Tire Pressure Sensor ID Registration\" complete? STEP 2. Check the diagnostic trouble code.",
+          "yes": "Replace the TPMS receiver, Then go to Step 1.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1901",
+      "description": "will be set if the TPMS receiver does not receive vehicle speed signal of 5 km/h (3 mph) or more during driving. At the same time this DTC is set, the TPMS warning light flashes for about 1 minute and then remain illuminated. TPMS receiver senses the vehicle's driving state by a driving G sensor inside the TPMS transmitter. HINTS (THE MOST LIKELY CAUSES FOR THIS DTC TO SET ARE:) ^ Damaged wiring harness or connector ^ Malfunction of the powertrain control module ^ Malfunction of the TPMS receiver DIAGNOSIS Required Special Tools: ^ MB991958: Scan Tool (M.U.T.-III Sub Assembly) ^ MB991824: Vehicle Communication Interface (V.C.I.) ^ MB991827: M.U.T.-III USB Cable ^ MB991910: M.U.T.-III Main Harness A STEP 1. Using scan tool MB991958, read the MFI system diagnostic trouble code. Check if an MFI system diagnostic trouble code is set.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Read the diagnostic trouble code.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the DTC set? ENGINE] or MFI Diagnosis - Diagnostic Trouble Code Chart See: Diagnostic Trouble Code Descriptions [3.8L ENGINE]. Then go to Step 4. STEP 2. Using scan tool MB991958, diagnose the CAN bus line. Use scan tool MB991958 to diagnose the CAN bus lines.",
+          "yes": "Diagnose the MFI system by referring to MFI Diagnosis - Diagnostic Trouble Code Chart See: Diagnostic Trouble Code Descriptions [2.4L",
+          "no": "Go to Step 2."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to the \"LOCK\" (OFF) position. Q: Is the check result satisfactory? Systems/Information Bus/Testing and Inspection/Scan Tool Testing and Procedures/CAN Bus Diagnostics Table). Then go to Step 3. STEP 3. Using scan tool MB991958, recheck the TPMS diagnostic trouble code. Check that the TPMS receiver sets a diagnostic trouble code.",
+          "yes": "Go to Step 3.",
+          "no": "Repair the CAN bus lines (Refer to Diagnosis - Can Bus Diagnostic Chart See: Powertrain Management/Computers and Control"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1910",
+      "description": "TPMS Transmitter 1 Abnormality (Transmitter Battery Voltage)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1920",
+      "description": "TPMS Transmitter 2 Abnormality (Transmitter Battery Voltage)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1930",
+      "description": "TPMS Transmitter 3 Abnormality (Transmitter Battery Voltage)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1940",
+      "description": "TPMS Transmitter 4 Abnormality (Transmitter Battery Voltage) TPMS DTC SET CONDITION DTC C1910, C1920, C1930 or C1940 is set if the battery in the TPMS transmitter is discharged. At the same time this DTC is set, the TPMS warning light flash for about 1 minute and then remain illuminated. HINT Replace the TPMS transmitter if its battery is discharged. . Required Special Tools: ^ MB991958: Scan Tool (M.U.T.-III Sub Assembly) ^ MB991824: Vehicle Communication Interface (V.C.I.) ^ MB991827: M.U.T.-III USB Cable ^ MB991910: M.U.T.-III Main Harness A STEP 1. Execute \"Tire Pressure Sensor Check\" on scan tool MB991958 \"Special Function.\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Execute \"Tire Pressure Sensor Check\" for all the TPMS transmitter-fitted tires (Refer to See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Testing and Inspection/Component Tests and General Diagnostics/Tire Pressure Sensor Check). Q: Is information on the tire pressure sensor displayed on scan tool MB991958 after the TPMS transmitter is activated? Pressure Sensor ID Registration\" (Refer to See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Testing and Inspection/Programming and Relearning/Tire Pressure Sensor ID Registration). And then go to Step 2. Gauges and Warning Indicators/Tire Monitoring System/Testing and Inspection/Programming and Relearning/Tire Pressure Sensor ID Registration). Then go to Step 2. (If the TPMS transmitter is not activated and no data is displayed, the TPMS transmitter battery is completely flat). STEP 2. Recheck for the diagnostic trouble code. Q: Does diagnostic trouble code C1910, C1920, C1930 or C1940 reset?",
+          "yes": "Repeat the troubleshooting from Step 1.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1911",
+      "description": "TPMS Transmitter 1 Abnormality (Tire Pressure Sensor ID Reception Failure)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1921",
+      "description": "TPMS Transmitter 2 Abnormality (Tire Pressure Sensor ID Reception Failure)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1931",
+      "description": "TPMS Transmitter 3 Abnormality (Tire Pressure Sensor ID Reception Failure)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1941",
+      "description": "TPMS Transmitter 4 Abnormality (Tire Pressure Sensor ID Reception Failure) CIRCUIT OPERATION The TPMS receiver receives data from the TPMS transmitters through the TPMS antenna. TPMS DTC SET CONDITION DTC C1911, C1921, C1931 or C1941 is set if the TPMS receiver cannot receive data from the TPMS transmitters normally, even when the tire pressure sensor IDs have been registered. At the same time this DTC is set, the TPMS warning light flash for about 1 minute and then remain illuminated. HINTS (THE MOST LIKELY CAUSES FOR THIS DTC TO SET ARE:) ^ Installing a tire/wheel that does not contain the TPMS transmitter ^ Tire pressure sensor ID is not registered yet ^ Damaged feeder cable or connector ^ Malfunction of the TPMS transmitter ^ Malfunction of the TPMS receiver DIAGNOSIS",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Execute \"Tire Pressure Sensor Check\" for all the TPMS transmitter-fitted tires to check each tire pressure sensor ID (Refer to See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Testing and Inspection/Component Tests and General Diagnostics/Tire Pressure Sensor Check). Q: Is the tire pressure sensor ID, which DTC indicates, shown on the scan tool? driving G sensor. Replace the TPMS transmitter of the road wheel, which the DTC indicates and execute \"Tire Pressure Sensor ID Registration\" on scan tool (Refer to See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Testing and Inspection/Programming and Relearning/Tire Pressure Sensor ID Registration). Then go to Step 3. NO [when one (or more) of the tire pressure sensor IDs cannot be recognized]: Execute \"Tire Pressure Sensor ID Registration\" (Refer to See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Testing and Inspection/Programming and Relearning/Tire Pressure Sensor ID Registration). STEP 3. Recheck for diagnostic trouble code. Q: Does diagnostic trouble code C1911, C1921, C1931 or C1941 reset?",
+          "yes": "Repeat the troubleshooting from Step 1.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1912",
+      "description": "TPMS Transmitter 1 Abnormality (Tire Air Pressure Low)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1922",
+      "description": "TPMS Transmitter 2 Abnormality (Tire Air Pressure Low)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1932",
+      "description": "TPMS Transmitter 3 Abnormality (Tire Air Pressure Low)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1942",
+      "description": "TPMS Transmitter 4 Abnormality (Tire Air Pressure Low) TPMS DTC SET CONDITION DTC C1912, C1922, C1932 or C1942 is set when the TPMS receiver recognized a low tire pressure from one or more of the TPMS transmitters. At the same time this DTC is set, the TPMS warning light illuminates. TIRE PRESSURE THRESHOLD VALUES HINTS (THE MOST LIKELY CAUSES FOR THIS DTC TO SET ARE:) ^ Low tire inflation pressure ^ Punctured tire ^ Damaged tire valve grommet and/or valve core ^ Defective TPMS transmitter ^ Malfunction of the TPMS receiver DIAGNOSIS",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Use an accurate tire pressure gauge to measure the tire inflation pressure of the TPMS transmitter-fitted tires, and note the inflation pressures.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect scan tool MB991958 to the data link connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to the \"ON\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Execute \"Tire Pressure Sensor Check\" for all the TPMS transmitter-fitted tires (Refer to See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Testing and Inspection/Component Tests and General Diagnostics/Tire Pressure Sensor Check). Q: Is the tire inflation pressure shown on scan tool MB991958 within ± 20 kPa (3 psi) from the actual inflation pressure? [Ambient temperature during measurement must be 0 - 50°C (32 - 122°F)] MB991958 (Refer to See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Testing and Inspection/Component Tests and General Diagnostics/Tire Pressure Sensor Check) to update the tire inflation pressure data on scan tool MB991958. Make sure that the pressures displayed on scan tool MB991958 correspond to the value specified on the tire pressure label. Then go to Step 2. inflation pressure. Replace the TPMS transmitter, where the tire pressure sensor is inaccurate. Then execute \"Tire Pressure Sensor ID Registration\" (Refer to See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Testing and Inspection/Programming and Relearning/Tire Pressure Sensor ID Registration). Then go to Step 3. STEP 2. Recheck for the diagnostic trouble code. Q: Does diagnostic trouble code C1912, C1922, C1932 or C1942 reset? (Refer to See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Testing and Inspection/Programming and Relearning/Tire Pressure Sensor ID Registration). Then go to Step 3. STEP 3.Recheck for diagnostic trouble code. Q: Does diagnostic trouble code C1912, C1922, C1932 or C1942 reset?",
+          "yes": "Repeat the troubleshooting from Step 1.",
+          "no": "The procedure is complete."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

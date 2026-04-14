@@ -1,0 +1,11 @@
+{
+  "source_file": "BMW_2.pdf",
+  "format_detected": "bmw_legacy",
+  "dtc_count": 1,
+  "dtcs": [
+    {
+      "dtc_code": "1992",
+      "description": "BMW 325i (E36) L6-2494cc 2.5L DOHC (M50) Copyright © 2013, ALLDATA 10.52SS Page 1"
+    }
+  ]
+}

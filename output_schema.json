@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DriveIntel Inference Output",
+  "type": "object",
+  "required": ["session_id", "dtc_analysis", "sensor_analysis", "health", "severity_summary", "workshop_query"],
+  "properties": {
+    "session_id": { "type": "string", "format": "uuid" },
+    "model_version": { "type": "string" },
+    "inference_timestamp": { "type": "string", "format": "date-time" },
+
+    "dtc_analysis": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["dtc_code", "description", "severity", "severity_label", "category", "confidence"],
+        "properties": {
+          "dtc_code":       { "type": "string" },
+          "description":    { "type": "string" },
+          "root_cause":     { "type": "string" },
+          "repair_steps":   { "type": "array", "items": { "type": "string" } },
+          "severity":       { "type": "integer", "minimum": 0, "maximum": 3 },
+          "severity_label": { "type": "string", "enum": ["LOW", "MEDIUM", "HIGH", "VERY_CRITICAL"] },
+          "severity_why":   { "type": "string" },
+          "category":       { "type": "string" },
+          "confidence":     { "type": "number", "minimum": 0, "maximum": 1 },
+          "severity_probs": {
+            "type": "array", "items": { "type": "number" }, "minItems": 4, "maxItems": 4
+          }
+        }
+      }
+    },
+
+    "sensor_analysis": {
+      "type": "object",
+      "description": "Keyed by sensor channel name",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["status", "anomaly_score"],
+        "properties": {
+          "status":        { "type": "string", "enum": ["NORMAL", "MARGINAL", "ABNORMAL"] },
+          "anomaly_score": { "type": "number", "minimum": 0, "maximum": 1 },
+          "days_to_alert": { "type": ["integer", "null"] },
+          "trend":         { "type": "string", "enum": ["stable", "increasing", "decreasing"] },
+          "explanation":   { "type": "string" }
+        }
+      }
+    },
+
+    "health": {
+      "type": "object",
+      "required": ["score", "status", "summary"],
+      "properties": {
+        "score":   { "type": "number", "minimum": 0, "maximum": 100 },
+        "status":  { "type": "string", "enum": ["EXCELLENT", "GOOD", "FAIR", "POOR", "CRITICAL"] },
+        "summary": { "type": "string" }
+      }
+    },
+
+    "severity_summary": {
+      "type": "object",
+      "required": ["highest_severity", "justification", "user_action"],
+      "properties": {
+        "highest_severity": { "type": "string", "enum": ["LOW", "MEDIUM", "HIGH", "VERY_CRITICAL"] },
+        "justification":    { "type": "string" },
+        "user_action":      { "type": "string" }
+      }
+    },
+
+    "workshop_query": {
+      "type": "object",
+      "required": ["lat", "lng", "fault_categories", "severity_level", "urgency"],
+      "properties": {
+        "lat":              { "type": "number" },
+        "lng":              { "type": "number" },
+        "radius_km":        { "type": "integer", "default": 15 },
+        "fault_categories": { "type": "array", "items": { "type": "string" } },
+        "severity_level":   { "type": "string" },
+        "urgency":          { "type": "string", "enum": ["immediate", "within_week", "routine"] },
+        "filters": {
+          "type": "object",
+          "properties": {
+            "min_rating": { "type": "number" },
+            "open_now":   { "type": "boolean" }
+          }
+        }
+      }
+    }
+  }
+}

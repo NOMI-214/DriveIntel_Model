@@ -1,0 +1,327 @@
+{
+  "source_file": "Hyundai_Sonata_U.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 8,
+  "dtcs": [
+    {
+      "dtc_code": "U0001",
+      "description": "High Speed CAN Communication Bus off Several control units are applied to electronically controlled vehicles. These units perform each control with informations from various sensors. Thus, sharing signal information from sensors is needed, so CAN communication type whose communication speed is high and insensitive to electrical noise by spark generation is adopted to controlling power-train(ECM, TCM,ESP ECM, ABS ECM) As sharing signals of engine speed, APS, gear shifting, torque reduction in ESP and various modules, active control is performed. Several control units are applied to electronically controlled vehicles. These units perform each control with informations from various sensors. Thus, sharing signal information from sensors is needed, so CAN communication type whose communication speed is high and insensitive to electrical noise by spark generation is adopted to controlling power-train(ECM, TCM,ESP ECM, ABS ECM) As sharing signals of engine speed, APS, gear shifting, torque reduction in ESP and various modules, active control is performed. DTC Detecting Condition Specification Diagnostic Circuit Diagram Engine Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "IG \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select \"DTC\" button, and then Press \"DTC Status\" to check DTC's information from the DTCs menu.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Read \"DTC Status\" parameter.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed \"Present fault\"? W/Harness Inspection Engine Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100",
+      "description": "Lost Communication With ECM/PCM CAN communication is a parallel circuit to interchange information among each units. CAN communication can share much information with units more faster and more efficiently by using specified language. CAN-High line is twisted with CAN-Low line as a purpose in preventing from a noise. ITM-ECU performs active control by sharing signals of engine RPM, APS, shift position, torque reduction. This code related to communication line between PCU, ABS, ESP and 4WD ECM( = TCCU : Transfer Case Control Unit) is set when CAN signal from PCU, ABS, ESP can't received for more than 1sec or ECU internal error occur. If failure is detected ITM-ECU prohibits the ITM control and cuts the current to control coil. DTC Detecting Condition Dignostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration,or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? CAN Signal Inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Shift to N Range. Specification :Signal Waveform & Data",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is CAN Signal display near the specified value? CAN comm. Line Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0101",
+      "description": "Lost Communication With TCM CAN communication is a parallel circuit to interchange information among each units. CAN communication can share much information with units more faster and more efficiently by using specified language. CAN-High line is twisted with CAN-Low line as a purpose in preventing from a noise. ITM-ECU performs active control by sharing signals of engine RPM, APS, shift position, torque reduction. This code related to communication line between ECU and 4WD ECM( = TCCU : Transfer Case Control Unit) is set when CAN signal from ECU can't received for more than 1sec or ECU internal error occur. If failure is detected 4WD ECM prohibits the ITM control and cuts the current to control coil. DTC Detecting Condition Dignostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration,or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? CAN Signal Inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Shift to N Range. Specification :Signal Waveform & Data",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is CAN Signal display near the specified value? CAN comm. Line Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0121",
+      "description": "Lost Communication With Anti-Lock Brake System (ABS) Control Module CAN communication is a parallel circuit to interchange information among each units. CAN communication can share much information with units more faster and more efficiently by using specified language. CAN-High line is twisted with CAN-Low line as a purpose in preventing from a noise. ITM-ECU performs active control by sharing signals of engine RPM, APS, shift position, torque reduction. This code related to communication line between ECU(ABS) and 4WD ECM(= TCCU : Transfer Case Control Unit) is set when CAN signal from ECU can't received for more than 1sec or ECU internal error occur. If failure is detected ITM-ECU prohibits the ITM control and cuts the current to control coil. DTC Detecting Condition Dignostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration,or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? CAN Signal Inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed approx. 10km/h or less(6mph or less) Specification :Signal Waveform & Data",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is CAN(FLSS)comm. Line Signal display near the specified value? CAN comm. Line Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0122",
+      "description": "Lost Communication With Vehicle Dynamics Control Module CAN communication is a parallel circuit to interchange information among each units. CAN communication can share much information with units more faster and more efficiently by using specified language. CAN-High line is twisted with CAN-Low line as a purpose in preventing from a noise. ITM-ECU performs active control by sharing signals of engine RPM, APS, shift position, torque reduction. This code related to communication line between ECU(ESP) and 4WD ECM( = TCCU : Transfer Case Control Unit) is set when CAN signal from ECU can't received for more than 1sec or ECU internal error occur. If failure is detected 4WD ECM prohibits the ITM control. If failure is detected ITM-ECU prohibits the ITM control and cuts the current to control coil. DTC Detecting Condition Dignostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration,or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? CAN Signal Inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed approx. 10km/h or less(6mph or less) Specification :Signal Waveform & Data",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is CAN(FLSS)comm. Line Signal display near the specified value? CAN comm. Line Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0126",
+      "description": "Lost Communication With Steering Angle Sensor Module Steering Wheel Angle Sensor installed in steering wheel prevents a state of TCB(Tight Corner Braking) by sensing the rotating direction & straight driving of vehicle and is used for EMC(=Electric Magnetic Clutch) duty control. In case of ESP system applied 4WD ECM(=TCCU : Transfer Case Control Unit)receives this signal through CAN line, If it is not the case 4WD ECM receives this signal from Steering Wheel Angle Sensor directly. ** TCB(Tight Corner Braking) : TCB is that the vehicle makes an abnormal noise and hesistation when the vehicle turns left / right fully with low speed on a paved road. This code related to communication line between ECU and 4WD ECM is set when CAN signal from ECU can't received for more than 1sec or ECU internal error occur. If failure is detected 4WD ECM prohibits the ITM control. DTC Detecting Condition Dignostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration,or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? CAN Signal Inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn steering Wheel to the right or left. Specification :Signal Waveform & Data",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is CAN Signal display near the specified value? CAN comm. Line Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U",
+      "description": "Battery Sensor fault detected by ECU Many control units have applied to vehicle as it becomes more eletrolnical. These units control their own system based on information from diverse sensors. Therefore necessity of common use of diverse sensor information and importance of stable power supply are gathering strength. Battery sensor is mounted on battery (-) terminal. It transmits battery voltage, current, temperature information to ECM. ECM controls generating voltage by duty cycle based on these signals. ECM sets this code when error bit in LIN messages from battery sensor indicates \"1\" DTC Detecting Condition Diagnostic Circuit Diagram Engine Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "IG \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select \"DTC\" button, and then Press \"DTC Status\" to check DTC's information from the DTCs menu.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Read \"DTC Status\" parameter.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed \"Present fault\"? W/Harness Inspection Engine Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1112",
+      "description": "LIN Communication Error Many control units have applied to vehicle as it becomes more eletrolnical. These units control their own system based on information from diverse sensors. Therefore necessity of common use of diverse sensor information and importance of stable power supply are gathering strength. Battery sensor is mounted on battery (-) terminal. It transmits battery voltage, current, temperature information to ECM. ECM controls generating voltage by duty cycle based on these signals. ECM sets this code when there is an error in LIN communication line. DTC Detecting Condition Diagnostic Circuit Diagram Engine Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "IG \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select \"DTC\" button, and then Press \"DTC Status\" to check DTC's information from the DTCs menu.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Read \"DTC Status\" parameter.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed \"Present fault\"? W/Harness Inspection Engine Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

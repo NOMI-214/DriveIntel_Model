@@ -1,0 +1,127 @@
+{
+  "source_file": "Toyota_RAV4_U.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 7,
+  "dtcs": [
+    {
+      "dtc_code": "U0073",
+      "description": "86,U0100/85,U0126/84,U0129/83: Control Module Communication Bus OFF",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": [
+        "U0100",
+        "U0123",
+        "U0124",
+        "U0126"
+      ]
+    },
+    {
+      "dtc_code": "U0129",
+      "description": "42 - Lost Communication with Brake System Control Module The power steering ECU receives signals from the ECM and the skid control ECU via the CAN communication system. HINT * When 2 or more DTCs starting with [U] are output simultaneously, inspect the connectors and wire harness of each ECU. * If DTC U0100/41 is output, first erase the DTCs. Then turn the ignition switch from off to ON. If DTC U0100/41 is not output again, there is no malfunction. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK FOR DTC (a) Check for DTC    See: Transmission and Drivetrain/Differential Assembly/Differential Lock/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. (b) Record the output DTC (4WD control system). HINT When DTCs indicating a CAN communication system malfunction are output, repair the CAN communication system before repairing each corresponding sensor. NEXT --  GO TO CAN COMMUNICATION SYSTEM Power Steering System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0126",
+      "description": "Lost Communication with Steering Angle Sensor Module The skid control ECU receives signals from the ECM, steering angle sensor, and yaw rate and deceleration sensor via the CAN communication system. PROCEDURE s/Vehicle Stability Control System for ABS and VSC system, or See: Diagnostic Trouble Code Descriptions/CAN Communication System for CAN communication system). HINT If CAN communication system DTCs and the relevant sensor DTCs are output simultaneously, troubleshoot the relevant sensor DTCs (for ABS and/or VSC system) after the CAN communication system returns to normal. Result: C -- INSPECT CAN COMMUNICATION SYSTEM See: Diagnostic Trouble Code Descriptions/CAN Communication System B -- REPAIR CIRCUIT INDICATED BY OUTPUT DTC See: Diagnostic Trouble Code Descriptions/Vehicle Stability Control System A -- CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION) See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/How To Proceed With Troubleshooting",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK HARNESS AND CONNECTOR (MOMENTARY INTERRUPTION) (a) Using the Techstream, check for any momentary interruption in the wire harness and connector corresponding to the DTC    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Component Tests and General Diagnostics/Check For Intermittent Problems. ABS/VSC/TRAC: Result: HINT Perform the above inspection before removing the sensor and connector. C --  REPAIR OR REPLACE HARNESS OR CONNECTOR B --  RECONFIRM DTC A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK IF EACH SENSOR AND ECM CONNECTOR IS SECURELY CONNECTED (a) Turn the ignition switch off. (b) Check if each sensor or ECM connector is securely connected. OK: Each connector is securely connected. NG --  CONNECT CONNECTOR TO EACH SENSOR OR ECM CORRECTLY OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "RECONFIRM DTC (a) Turn the ignition switch off. (b) Record the output DTCs (for ABS, VSC system and/or CAN communication system)    See: Diagnostic Trouble Code",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "REPAIR OR REPLACE HARNESS OR CONNECTOR (a) Turn the ignition switch off. (b) Repair or replace the harness or connector. (c) Check for any momentary interruption between the skid control ECU and each sensor or ECM    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Component Tests and General Diagnostics/Check For Intermittent Problems. (d) Check that there are no momentary interruptions. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "RECONFIRM DTC (a) Turn the ignition switch off. (b) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. (c) Start the engine. (d) Drive the vehicle at a speed of 15 km/h (9 mph) or more and turn the steering wheel to the right and left. (e) Check that no CAN communication system DTC is output    See: Diagnostic Trouble Code Descriptions/CAN Communication System. (f) If ABS and/or VSC system DTCs are output, record them. Result: HINT The CAN communication system must be normal when performing troubleshooting for each sensor DTC (for ABS and/or VSC system). C --  INSPECT CAN COMMUNICATION SYSTEM  See: Diagnostic Trouble Code Descriptions/CAN Communication System B --  REPAIR CIRCUIT INDICATED BY OUTPUT DTC  See: Diagnostic Trouble Code Descriptions/Vehicle Stability Control System A --  END Active Torque Control 4WD System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1631",
+      "description": "65,U0100/78: Communication Error from ECM to Skid Control ECU",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100",
+      "description": "78 - Communication Stop from ECM to Distance Control ECU, VSC Therefore, if the skid control ECU detects a communication error from the ECM, it sends a malfunction signal back to the ECM. HINT This circuit uses CAN communication. Therefore, if there are any malfunctions in the communication circuit, one or more DTCs in the CAN communication system are output. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK CAN COMMUNICATION SYSTEM Refer to HOW TO PROCEED WITH TROUBLESHOOTING    See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/How to Proceed With Troubleshooting. NEXT --  END Meter / Gauge System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0122",
+      "description": "82 - Communication Stop from VSC to ECM The skid control ECU sends signals such as cruise control cancel demand signals and brake operation demand from ECM response signals to the ECM when the cruise control system is in operation. HINT This circuit uses CAN communication. Therefore, if there are any malfunctions in the communication circuit, one or more DTCs in the CAN communication system are output. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK CAN COMMUNICATION SYSTEM Refer to HOW TO PROCEED WITH TROUBLESHOOTING    See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/How to Proceed With Troubleshooting. NEXT --  END",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P1630",
+      "description": "64,U0122/82: Communication Error from Skid Control ECU to ECM",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

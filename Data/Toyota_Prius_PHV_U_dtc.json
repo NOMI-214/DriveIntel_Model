@@ -1,0 +1,1303 @@
+{
+  "source_file": "Toyota_Prius_PHV_U.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 39,
+  "dtcs": [
+    {
+      "dtc_code": "U019B-440",
+      "description": "Lost Communication with Battery Charger Control Module If there is a malfunction in the plug-in charge control ECU assembly, DTC U019B-440 will be stored. MONITOR DESCRIPTION If the power management control ECU detects a problem with plug-in charge control system, it will illuminate the MIL and set a DTC. MONITOR STRATEGY TYPICAL ENABLING CONDITIONS TYPICAL MALFUNCTION THRESHOLDS COMPONENT OPERATING RANGE CONFIRMATION DRIVING PATTERN",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect the Techstream to the DLC3.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the power switch on (IG) and turn the Techstream on.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Clear the DTCs (even if no DTCs are stored, perform the clear DTC procedure).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the power switch off.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the power switch on (READY) and after a few seconds, turn the power switch off. [A]",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Repeat [A] 3 times. [B]",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the power switch on (IG) and turn the Techstream on.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Enter the following menus: Powertrain / Hybrid Control / Trouble Codes. [C]",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Check that permanent DTCs are cleared.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "If the permanent DTCs are not cleared, perform the universal trip, and then check for permanent DTCs again. HINT * If a permanent DTC is output, the system is malfunctioning. * If no permanent DTC is output, the system is normal. PROCEDURE",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U029A-123",
+      "description": "Lost Communication with Hybrid Battery Pack Sensor Module The battery smart unit detects the HV battery conditions (voltage, current, and temperature) and battery cooling fan voltage, and sends the detected signals to the power management control ECU via serial communication. MONITOR DESCRIPTION If the power management control ECU detects problem with serial communication with the battery smart unit, it will illuminate the MIL and set a DTC. MONITOR STRATEGY TYPICAL ENABLING CONDITIONS TYPICAL MALFUNCTION THRESHOLDS COMPONENT OPERATING RANGE CONFIRMATION DRIVING PATTERN",
+      "detection_condition": [],
+      "possible_causes": [
+        "other DTCs to be stored. Clear the DTCs after performing this inspection.",
+        "(h) Turn the power switch off.",
+        "(i) Disconnect the cable from the negative (-) auxiliary battery terminal.",
+        "(j) Measure the resistance according to the value(s) in the table below.",
+        "Standard Resistance:",
+        "HINT",
+        "Resistance becomes 2.0 kOhms or less when there is a short circuit in the power management control ECU.",
+        "(k) Connect the battery smart unit connector.",
+        "(l) Install the No. 1 hybrid battery intake duct",
+        "(m) Install the No. 1 hybrid vehicle battery shield panel.",
+        "NG -- REPLACE POWER MANAGEMENT CONTROL ECU See: Power and Ground Distribution/Power Distribution",
+        "Module/Service and Repair/Removal",
+        "OK -- REPLACE BATTERY SMART UNIT See: Hybrid Drive Systems/Battery System, Hybrid Drive/Battery Condition",
+        "Monitor/Service and Repair/Components",
+        "Audio And Visual System"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect the Techstream to the DLC3.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the power switch on (IG) and turn the Techstream on.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Clear the DTCs (even if no DTCs are stored, perform the clear DTC procedure).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the power switch off.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the power switch on (READY) and turn the Techstream on.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Perform a universal trip.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Enter the following menus: Powertrain / Hybrid Control / Trouble Codes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Check that permanent DTCs are cleared. HINT * If a permanent DTC is output, the system is malfunctioning. * If no permanent DTC is output, the system is normal.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0073",
+      "description": "Sending Malfunction (Navigation to APGS)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": [
+        "U0100",
+        "U0129",
+        "U0140",
+        "U0155",
+        "U0293",
+        "U1135"
+      ]
+    },
+    {
+      "dtc_code": "U1135",
+      "description": "Lost Communication with Plug-in Control Module These DTCs are stored when a malfunction occurs in the CAN communication circuit. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK DTC (a) Clear the DTCs    See: Accessories and Optional Equipment/Radio, Stereo, and Compact Disc/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. (b) Recheck for DTCs and check if the same DTC is output again. OK: No DTCs are output. NG --  GO TO CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With OK --  USE SIMULATION METHOD TO CHECK  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/How To Proceed With Troubleshooting Electronically Controlled Brake System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0124",
+      "description": "95, U0126/63, U0293/59: Control Module Communication Bus OFF",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0293",
+      "description": "Lost Communication with HV ECU * The power management control ECU communicates with the ECM and brake booster with master cylinder (skid control ECU). When the power management control ECU does not receive data from the ECM or brake booster with master cylinder (skid control ECU), the power management control ECU stores DTC U0100 or U0129. * The ECM communicates with the power management control ECU. When the ECM does not receive data from the power management control ECU, the ECM stores DTC U0293. * The brake booster with master cylinder (skid control ECU) communicates with the power management control ECU. When the brake booster with master cylinder (skid control ECU) does not receive data from the power management control ECU, the brake booster with master cylinder (skid control ECU) stores DTC U0293. HINT This diagnosis procedure is for when DTC U0100, U0129 and U0293 are output at the same time. NOTICE: * Turn the power switch off before measuring the resistances between CAN main bus wires and between CAN main bus branch wires. * Turn the power switch off before inspecting CAN bus wires for a ground short. * After the power switch is turned off, check that the key reminder warning system and light reminder warning system are not operating. * Before measuring the resistance, leave the vehicle as is for at least 1 minute and do not operate the power switch, any other switches or the doors. If any doors need to be opened in order to check connectors, open the doors and leave them open. HINT * Operating the power switch, any other switches or a door triggers related ECU and sensor communication on the CAN. This communication will cause the resistance value to change. * Even after DTCs are cleared, if a DTC is stored again after driving the vehicle for a while, the malfunction may be occurring due to vibration of the vehicle. In such a case, wiggling the ECUs or wire harness while performing the inspection below may help determine the cause of the malfunction. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK HARNESS AND CONNECTOR (MOMENTARY INTERRUPTION) (a) Using the Techstream, check for any momentary interruptions in the wire harness and connector corresponding to a DTC    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Initial Inspection and Diagnostic",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK IF EACH SENSOR AND ECU CONNECTOR ARE SECURELY CONNECTED (a) Turn the power switch off. (b) Check if each sensor and ECU connector are securely connected. OK: Each sensor and ECU connector are securely connected. NG --  CONNECT CONNECTOR TO EACH SENSOR OR ECU CORRECTLY OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "RECONFIRM DTC (a) Turn the power switch off. (b) Record the output DTCs (for ABS, VSC, electronically controlled brake system, and/or CAN communication system)    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes for ABS, VSC and/or electronically controlled brake system, or    See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/Diagnosis System for CAN communication system). HINT If the CAN communication system DTC and the relevant sensor DTCs are output simultaneously, troubleshoot the relevant sensor DTCs (for ABS, VSC and/or electronically controlled brake system) after the CAN communication system returns to normal. Result: B --  REPAIR CIRCUITS INDICATED BY OUTPUT DTCS  See: Diagnostic Trouble Code Descriptions/Electronically Controlled Brake System C --  INSPECT CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With A --  CHECK FOR INTERMITTENT PROBLEMS  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/How To Proceed With Troubleshooting",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "REPAIR OR REPLACE HARNESS OR CONNECTOR (a) Turn the power switch off. (b) Repair or replace the harness or connector. (c) Check for any momentary interruption between the skid control ECU and each sensor or ECU    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Initial Inspection and Diagnostic Overview/Check for Intermittent Problems. (d) Check that there are no momentary interruptions. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "RECONFIRM DTC (a) Turn the power switch off. (b) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. (c) Turn the power switch on (READY). (d) Drive the vehicle and turn the steering wheel to the right and left at a speed of 15 km/h (9 mph) or more. (e) Check that no CAN communication system DTC is output    See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/Diagnosis System. (f) If ABS, VSC and/or electronically controlled brake system DTCs are output, record them    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. Result: HINT The CAN communication system must be normal when repairing each sensor DTC (for ABS, VSC and/or electronically controlled brake system). B --  REPAIR CIRCUITS INDICATED BY OUTPUT DTCS  See: Diagnostic Trouble Code Descriptions/Electronically Controlled Brake System C --  INSPECT CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With A --  END Navigation System (for Navigation Receiver Type) NAVIGATION / MULTI INFO DISPLAY: NAVIGATION SYSTEM (for Navigation Receiver Type): U0073, U0100, U0129, U0140, U0155, U0293, U1135: Sending Malfunction (Navigation to APGS)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "CHECK FOR SHORT IN POWER MANAGEMENT BUS WIRES (POWER MANAGEMENT CONTROL ECU) (a) Disconnect the power management control ECU connector. (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration NG --  CHECK FOR SHORT IN POWER MANAGEMENT BUS WIRES (CAN NO. 5 J/C) OK --  REPLACE POWER MANAGEMENT CONTROL ECU  See: Power and Ground Distribution/Power Distribution Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "CHECK FOR SHORT IN POWER MANAGEMENT BUS WIRES (CAN NO. 5 J/C) (a) Reconnect the power management control ECU connector. (b) Disconnect the CAN No. 5 junction connector. (c) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration Result: B --  REPAIR OR REPLACE CAN MAIN BUS WIRE OR CONNECTOR (POWER MANAGEMENT CONTROL ECU - CAN NO. 5 J/C) C --  CHECK FOR SHORT IN POWER MANAGEMENT BUS WIRES (ECM - CAN NO. 5 J/C) D --  CHECK FOR SHORT IN POWER MANAGEMENT BUS WIRES (BRAKE BOOSTER WITH MASTER CYLINDER - CAN NO. 5 J/C) A --  REPLACE CAN NO. 5 JUNCTION CONNECTOR",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "CHECK FOR SHORT IN POWER MANAGEMENT BUS WIRES (ECM - CAN NO. 5 J/C) (a) Reconnect the CAN No. 5 junction connector. (b) Disconnect the ECM connector. (c) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration NG --  REPAIR OR REPLACE CAN MAIN BUS WIRE OR CONNECTOR (ECM - CAN NO. 5 J/C) OK --  REPLACE ECM  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "CHECK FOR SHORT IN POWER MANAGEMENT BUS WIRES (BRAKE BOOSTER WITH MASTER CYLINDER - CAN NO. 5 J/C) (a) Reconnect the CAN No. 5 junction connector. (b) Disconnect the brake booster with master cylinder (skid control ECU) connector. (c) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration NG --  REPAIR OR REPLACE CAN MAIN BUS BRANCH WIRE OR CONNECTOR (BRAKE BOOSTER WITH MASTER CYLINDER - CAN NO. 5 J/C) OK --  REPLACE BRAKE BOOSTER WITH MASTER CYLINDER  See: Brakes and Traction Control/Power Brake Assist/Vacuum Brake Booster/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "CHECK FOR SHORT IN POWER MANAGEMENT BUS WIRE (CAN NO. 5 J/C) (a) Disconnect the CAN No. 5 junction connector. (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration HINT * It is only necessary to perform the inspection in the above table for the result (short circuit) that was obtained in the Check Power Management Bus inspection. Find the necessary inspection from the Purpose column that matches the result in the Result column from the Check Power Management Bus inspection. * If the resistance changes to normal when the connector is disconnected from the ECU, there may be a short in the ECU. Result: B --  CHECK FOR SHORT IN POWER MANAGEMENT BUS WIRE (POWER MANAGEMENT CONTROL ECU - CAN NO. 5 J/C) C --  CHECK FOR SHORT IN POWER MANAGEMENT BUS WIRE (ECM - CAN NO. 5 J/C) D --  CHECK FOR SHORT IN POWER MANAGEMENT BUS WIRE (BRAKE BOOSTER WITH MASTER CYLINDER - CAN NO. 5 J/C) A --  REPLACE CAN NO. 5 JUNCTION CONNECTOR",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "CHECK FOR SHORT IN POWER MANAGEMENT BUS WIRE (POWER MANAGEMENT CONTROL ECU - CAN NO. 5 J/C) (a) Disconnect the power management control ECU connector. (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration HINT * It is only necessary to perform the inspection in the above table for the result (short circuit) that was obtained in the Check power management bus inspection. * Find the necessary inspection from the Purpose column that matches the result in the Result column from the Check power management bus inspection. NG --  REPAIR OR REPLACE CAN MAIN BUS WIRE OR CONNECTOR (POWER MANAGEMENT CONTROL ECU - CAN NO. 5 J/C) OK --  REPLACE POWER MANAGEMENT CONTROL ECU  See: Power and Ground Distribution/Power Distribution Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "CHECK FOR SHORT IN POWER MANAGEMENT BUS WIRE (ECM - CAN NO. 5 J/C) (a) Disconnect the ECM connector. (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration HINT * It is only necessary to perform the inspection in the above table for the result (short circuit) that was obtained in the Check Power Management Bus inspection. Find the necessary inspection from the Purpose column that matches the result in the Result column from the Check Power Management Bus inspection. * If the resistance changes to normal when the connector is disconnected from the ECU, there may be a short in the ECU. NG --  REPAIR OR REPLACE CAN MAIN BUS WIRE OR CONNECTOR (ECM - CAN NO. 5 J/C) OK --  REPLACE ECM  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "CHECK FOR SHORT IN POWER MANAGEMENT BUS WIRE (BRAKE BOOSTER WITH MASTER CYLINDER - CAN NO. 5 J/C) (a) Disconnect the brake booster with master cylinder (skid control ECU) connector. (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration HINT * It is only necessary to perform the inspection in the above table for the result (short circuit) that was obtained in the Check Power Management Bus inspection. Find the necessary inspection from the Purpose column that matches the result in the Result column from the Check Power Management Bus inspection. * If the resistance changes to normal when the connector is disconnected from the ECU, there may be a short in the ECU. NG --  REPAIR OR REPLACE CAN MAIN BUS BRANCH WIRE OR CONNECTOR (BRAKE BOOSTER WITH MASTER CYLINDER - CAN NO. 5 J/C) OK --  REPLACE BRAKE BOOSTER WITH MASTER CYLINDER  See: Brakes and Traction Control/Power Brake Assist/Vacuum Brake Booster/Service and Repair/Removal Meter / Gauge System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100",
+      "description": "Lost Communication with ECM / PCM \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": [
+        "U0129",
+        "U0293",
+        "U0131",
+        "U0151"
+      ]
+    },
+    {
+      "dtc_code": "U0151",
+      "description": "Lost Communication with Airbag ECU HINT The diagnosis procedure is for when DTC U0151 is output by the power management control ECU (Techstream display: PM1 Gateway). NOTICE: * Turn the power switch off before measuring the resistances between CAN main bus wires and between CAN main bus branch wires. * Turn the power switch off before inspecting CAN bus wires for a ground short. * After the power switch is turned off, check that the key reminder warning system and light reminder warning system are not operating. * Before measuring the resistance, leave the vehicle as is for at least 1 minute and do not operate the power switch, any other switches or the doors. If any doors need to be opened in order to check connectors, open the doors and leave them open. HINT * Operating the power switch, any other switches or a door triggers related ECU and sensor communication on the CAN. This communication will cause the resistance value to change. * Even after DTCs are cleared, if a DTC is stored again after driving the vehicle for a while, the malfunction may be occurring due to vibration of the vehicle. In such a case, wiggling the ECUs or wire harness while performing the inspection below may help determine the cause of the malfunction. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CONFIRM DTC OUTPUT (a) Check if CAN communication DTCs are output    See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/Diagnosis System. Result: HINT If CAN communication system DTC U0100, U0129, U0131 or U0151 and another DTC are output at the same time, perform for CAN communication system DTC U0100, U0129, U0131 or U0151 first. B --  USE SIMULATION METHOD TO CHECK  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/How To Proceed With Troubleshooting A --  GO TO CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With Navigation System (for Navigation Receiver Type) NAVIGATION / MULTI INFO DISPLAY: NAVIGATION SYSTEM (for Navigation Receiver Type): U0073, U0100, U0129, U0140, U0155, U0293, U1135: Sending Malfunction (Navigation to APGS)",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100-211",
+      "description": "HYBRID / BATTERY CONTROL: HYBRID CONTROL SYSTEM: U0100-211, U0100-212, U0100-530, U0129-220, U0129-222, U0129-527, U0129-528, U0140-146, U0151-763, U0164-594, U0164-827, U1107-436: Lost Communication with ECM / PCM \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1107-436",
+      "description": "Lost Communication with Power Management Module * The power management control ECU transmits and receives signals via CAN communication to and from the ECM, skid control ECU assembly, power steering ECU assembly, main body ECU, airbag ECU assembly, and air conditioning amplifier assembly. MONITOR DESCRIPTION If the power management control ECU detect problem with CAN communication with the ECU, it will illuminate the MIL and set a DTC. MONITOR STRATEGY TYPICAL ENABLING CONDITIONS TYPICAL MALFUNCTION THRESHOLDS COMPONENT OPERATING RANGE CONFIRMATION DRIVING PATTERN",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK DTC OUTPUT (ALL) (a) Connect the Techstream to the DLC3. (b) Turn the power switch on (IG). (c) Check for DTCs of all systems by following the prompts on the Techstream screen. (d) Check if DTCs are output. Result: (e) Turn the power switch off. B --  GO TO CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With A --  GO TO DTC CHART (P2532-772)  See: P Code Charts/P2532",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the power switch on (IG) and turn the Techstream on.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Clear the DTCs (even if no DTCs are stored, perform the clear DTC procedure).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the power switch off.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the power switch on (READY) and after a few seconds, turn the power switch off. [A]",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Repeat [A] 3 times. [B]",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the power switch on (IG) and turn the Techstream on.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Enter the following menus: Powertrain / Hybrid Control / Trouble Codes. [C]",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Check that permanent DTCs are cleared.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "If the permanent DTCs are not cleared, perform the universal trip, and then check for permanent DTCs again. HINT * If a permanent DTC is output, the system is malfunctioning. * If no permanent DTC is output, the system is normal. PROCEDURE",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100-212",
+      "description": "HYBRID / BATTERY CONTROL: HYBRID CONTROL SYSTEM: U0100-211, U0100-212, U0100-530, U0129-220, U0129-222, U0129-527, U0129-528, U0140-146, U0151-763, U0164-594, U0164-827, U1107-436: Lost Communication with ECM / PCM \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100-530",
+      "description": "HYBRID / BATTERY CONTROL: HYBRID CONTROL SYSTEM: U0100-211, U0100-212, U0100-530, U0129-220, U0129-222, U0129-527, U0129-528, U0140-146, U0151-763, U0164-594, U0164-827, U1107-436: Lost Communication with ECM / PCM \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0103",
+      "description": "Lost Communication with Gear Shift Module \"A\" HINT The diagnosis procedure is for when DTC U0103 is output by the power management control ECU (Techstream display: PM1 Gateway). NOTICE: * Turn the power switch off before measuring the resistances between CAN main bus wires and between CAN main bus branch wires. * Turn the power switch off before inspecting CAN bus wires for a ground short. * After the power switch is turned off, check that the key reminder warning system and light reminder warning system are not operating. * Before measuring the resistance, leave the vehicle as is for at least 1 minute and do not operate the power switch, any other switches or the doors. If any doors need to be opened in order to check connectors, open the doors and leave them open. HINT * Operating the power switch, any other switches or a door triggers related ECU and sensor communication on the CAN. This communication will cause the resistance value to change. * Even after DTCs are cleared, if a DTC is stored again after driving the vehicle for a while, the malfunction may be occurring due to vibration of the vehicle. In such a case, wiggling the ECUs or wire harness while performing the inspection below may help determine the cause of the malfunction. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "RECONFIRM DTC OUTPUT (a) Reconfirm DTCs. HINT If V2 bus DTC U1002 is output from the power management control ECU (Techstream display/PM1 Gateway), troubleshoot for",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1002",
+      "description": "Lost Communication with Gateway Module (Power Management1) * The power management control ECU will store this DTC when no signals can be received from the ECUs that have been memorized as those that are connected to the V2 bus. * When the power management control ECU receives a response signal from the ECUs connected to the V2 bus, the power management control ECU recognizes and memorizes that the ECU is connected to the V2 bus. Based on this memorized data, the power management control ECU monitors for malfunctions in the ECUs connected to the V2 bus when communicating with those ECUs. If the power management control ECU cannot receive response signals from the ECUs that have been memorized as those connected to the V2 bus, the power management control ECU determines that a malfunction exists. HINT The diagnosis procedure is for when DTC U1002 is output by the power management control ECU (Techstream display: PM1 Gateway). NOTICE: * Turn the power switch off before measuring the resistances between CAN main bus wires and between CAN main bus branch wires. * Turn the power switch off before inspecting CAN bus wires for a ground short. * After the power switch is turned off, check that the key reminder warning system and light reminder warning system are not operating. * Before measuring the resistance, leave the vehicle as is for at least 1 minute and do not operate the power switch, any other switches or the doors. If any doors need to be opened in order to check connectors, open the doors and leave them open. HINT * Operating the power switch, any other switches or a door triggers related ECU and sensor communication on the CAN. This communication will cause the resistance value to change. * Even after DTCs are cleared, if a DTC is stored again after driving the vehicle for a while, the malfunction may be occurring due to vibration of the vehicle. In such a case, wiggling the ECUs or wire harness while performing the inspection below may help determine the cause of the malfunction. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK V2 BUS WIRE (a) Disconnect the cable from the negative (-) auxiliary battery terminal. (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration (c) Measure the resistance according to the value(s) in the table below. Standard Resistance: Result: B --  CHECK FOR OPEN IN V2 MAIN BUS WIRE (POWER MANAGEMENT CONTROL ECU MAIN WIRE) C --  CHECK FOR SHORT IN V2 BUS WIRE (POWER MANAGEMENT CONTROL ECU) D --  CHECK FOR SHORT IN V2 BUS WIRE (POWER MANAGEMENT CONTROL ECU) A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK FOR OPEN IN CAN BUS WIRES (TRANSMISSION CONTROL ECU ASSEMBLY BRANCH WIRE) (a) Disconnect the cable from the negative (-) auxiliary battery terminal. (b) Disconnect the transmission control ECU assembly connector. (c) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration NG --  REPAIR OR REPLACE CAN MAIN BUS BRANCH WIRE OR CONNECTOR (TRANSMISSION CONTROL ECU ASSEMBLY BRANCH WIRE) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK HARNESS AND CONNECTOR (GROUND TERMINAL) (a) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR (GROUND CIRCUIT) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "CHECK HARNESS AND CONNECTOR (POWER SOURCE TERMINAL) (a) Connect the cable to the negative (-) auxiliary battery terminal. (b) Measure the voltage according to the value(s) in the table below. Standard Voltage: Text in Illustration NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR (POWER SOURCE CIRCUIT) OK --  REPLACE TRANSMISSION CONTROL ECU ASSEMBLY  See: Powertrain Management/Transmission Control Systems/Relays and Modules - Transmission and Drivetrain/Relays and Modules - CVT/Control Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "CHECK FOR OPEN IN V2 MAIN BUS WIRE (CAN NO. 4 J/C) (a) Reconnect the wire harness connector to the CAN No. 3 junction connector. (b) Disconnect the wire harness connector (L97) from the CAN No. 4 junction connector. Text in Illustration (c) Measure the resistance according to the value(s) in the table below. Standard Resistance: NG --  REPAIR OR REPLACE CAN MAIN BUS WIRE OR CONNECTOR (CAN NO. 4 J/C - CAN NO. 3 J/C) OK --  REPLACE CAN NO. 4 JUNCTION CONNECTOR",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "CHECK FOR SHORT IN V2 BUS WIRE (POWER MANAGEMENT CONTROL ECU) (a) Disconnect the power management control ECU connector. Text in Illustration (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: NG --  CHECK FOR SHORT IN V2 BUS WIRE (CAN NO. 3 J/C - POWER MANAGEMENT CONTROL ECU) OK --  REPLACE POWER MANAGEMENT CONTROL ECU  See: Power and Ground Distribution/Power Distribution Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "CHECK FOR SHORT IN V2 BUS WIRE (CAN NO. 3 J/C - POWER MANAGEMENT CONTROL ECU) (a) Reconnect the power management control ECU connector. (b) Disconnect the wire harness connector from the CAN No. 3 junction connector. Text in Illustration (c) Measure the resistance according to the value(s) in the table below. Standard Resistance: Result: B --  REPAIR OR REPLACE CAN MAIN BUS WIRE OR CONNECTOR (CAN NO. 3 J/C - POWER MANAGEMENT CONTROL ECU) C --  CHECK FOR SHORT IN V2 BUS WIRE (CAN NO. 4 J/C - CAN NO. 3 J/C) D --  CHECK FOR SHORT IN V2 BUS WIRE (ECUS) A --  REPLACE POWER MANAGEMENT CONTROL ECU  See: Power and Ground Distribution/Power Distribution Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "CHECK FOR SHORT IN V2 BUS WIRE (CAN NO. 4 J/C - CAN NO. 3 J/C) (a) Reconnect the wire harness connector to the CAN No. 3 junction connector. (b) Disconnect the wire harness connector (L97) from the CAN No. 4 junction connector. Text in Illustration (c) Measure the resistance according to the value(s) in the table below. Standard Resistance: NG --  REPAIR OR REPLACE CAN MAIN BUS WIRE OR CONNECTOR (CAN NO. 4 J/C - CAN NO. 3 J/C) OK --  REPLACE CAN NO. 4 JUNCTION CONNECTOR",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "CHECK FOR SHORT IN V2 BUS WIRE (CAN NO. 4 J/C) (a) Reconnect the power management control ECU main wire connector to the CAN No. 4 junction connector. (b) Connect the probes of an ohmmeter to terminals 34 (CA2H) and 35 (CA2L) of the power management control ECU. Text in Illustration (c) While observing the resistance value shown on the ohmmeter, disconnect branch wire connectors (except CC) from the CAN No. 4 junction connector until the resistance becomes normal (between 54 and 69 Ohms). Text in Illustration HINT * The connectors connected to the CAN junction connector can be distinguished by the colors of the bus wire. * Reconnecting the connectors to non-specified positions on the CAN junction connector does not affect system operation. Result: B --  CHECK FOR SHORT IN V2 BUS WIRE (ECUS) A --  REPLACE CAN NO. 4 JUNCTION CONNECTOR",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "CHECK FOR SHORT IN V2 BUS WIRE (ECUS) (a) Reconnect the connector for the short-circuited branch wire to the CAN junction connector (the connector that caused the bus wire resistance to become normal (between 54 and 69 Ohms) when it was disconnected). (b) Disconnect the connector that includes terminals CANH and CANL from the ECU to which the short-circuited branch wire is connected. (c) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration HINT If the resistance becomes normal (between 54 and 69 Ohms) when the connector is disconnected from the ECU, there may be a short in the ECU. NG --  REPAIR OR REPLACE CORRESPONDING ECU OR SENSOR BRANCH WIRE OR CONNECTOR OK --  REPLACE CORRESPONDING ECU OR SENSOR",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "CHECK FOR SHORT IN V2 BUS WIRE (POWER MANAGEMENT CONTROL ECU) (a) Disconnect the power management control ECU connector. Text in Illustration (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: HINT It is only necessary to perform the inspection in the above table for the result (short circuit) that was obtained in the Check V2 Bus Wire inspection. Find the necessary inspection from the Purpose column that matches the result in the Result column from the Check V2 Bus Wire inspection. NG --  CHECK FOR SHORT IN V2 BUS WIRE (CAN NO. 3 J/C - POWER MANAGEMENT CONTROL ECU) OK --  REPLACE POWER MANAGEMENT CONTROL ECU  See: Power and Ground Distribution/Power Distribution Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "CHECK FOR SHORT IN V2 BUS WIRE (CAN NO. 3 J/C - POWER MANAGEMENT CONTROL ECU) (a) Disconnect the wire harness connector from the CAN No. 3 junction connector. Text in Illustration (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration Result: HINT It is only necessary to perform the inspection in the above table for the result (short circuit) that was obtained in the Check V2 Bus Wire inspection. Find the necessary inspection from the Purpose column that matches the result in the Result column from the Check V2 Bus Wire inspection. B --  REPAIR OR REPLACE CAN MAIN BUS WIRE OR CONNECTOR (CAN NO. 3 J/C - POWER MANAGEMENT CONTROL ECU) C --  CHECK FOR SHORT IN V2 BUS WIRE (CAN NO. 4 J/C - CAN NO. 3 J/C) D --  CHECK FOR SHORT IN V2 BUS WIRE (ECUS) A --  REPLACE CAN NO. 3 JUNCTION CONNECTOR",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "CHECK FOR SHORT IN V2 BUS WIRE (CAN NO. 4 J/C - CAN NO. 3 J/C) (a) Reconnect the wire harness connector to the CAN No. 3 junction connector. (b) Disconnect the wire harness connector (L97) from the CAN No. 4 junction connector. Text in Illustration (c) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration HINT It is only necessary to perform the inspection in the above table for the result (short circuit) that was obtained in the Check V2 Bus Wire inspection. Find the necessary inspection from the Purpose column that matches the result in the Result column from the Check V2 Bus Wire inspection. NG --  REPAIR OR REPLACE CAN MAIN BUS WIRE OR CONNECTOR (CAN NO. 4 J/C - CAN NO. 3 J/C) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "CHECK FOR SHORT IN V2 BUS WIRE (CAN NO. 4 J/C) (a) Reconnect the wire harness connector (L97) to the CAN No. 4 junction connector. (b) Connect the probes of an ohmmeter to terminals CANH or CANL and GND or +B (AM22) of the power management control ECU. Text in Illustration HINT It is only necessary to perform the inspection for the result (short circuit) that was obtained in the Check V2 Bus Wire inspection. (c) While observing the resistance value shown on the ohmmeter, disconnect branch wire connector (except CC) from the CAN No. 4 junction connector until the resistance becomes normal (6 kOhms or higher (for +B short) or 200 Ohms or higher (for ground short)). Text in Illustration HINT * The connectors connected to the CAN junction connector can be distinguished by the colors of the bus wire. * Reconnecting the connectors to non-specified positions on the CAN junction connector does not affect system operation. Result: B --  CHECK FOR SHORT IN V2 BUS WIRE (ECUS) A --  REPLACE CAN NO. 4 JUNCTION CONNECTOR",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "CHECK FOR SHORT IN V2 BUS WIRE (ECUS) (a) Reconnect the connector for the bus wire that is shorted to +B or GND to the CAN junction connector (the connector that caused the bus wire resistance to change to 6 kOhms or higher (for +B short) or 200 Ohms or higher (for ground short) when it was disconnected). (b) Disconnect the connector that includes terminals CANH and CANL from the ECU to which the bus wire shorted to +B or GND is connected. (c) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration HINT It is only necessary to perform the inspection in the above table for the result (short circuit) that was obtained in the Check V2 Bus Wire inspection. Find the necessary inspection from the Purpose column that matches the result in the Result column from the Check V2 Bus Wire inspection. NG --  REPAIR OR REPLACE CORRESPONDING ECU OR SENSOR BRANCH WIRE OR CONNECTOR OK --  REPLACE CORRESPONDING ECU OR SENSOR Lost Communication With Gateway Module (Parking Assist Bus)",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0104",
+      "description": "Lost Communication with Driving Support ECU HINT The diagnosis procedure is for when DTC U0104 is output by the power management control ECU (Techstream display: PM1 Gateway). NOTICE: * Turn the power switch off before measuring the resistances between CAN main bus wires and between CAN main bus branch wires. * Turn the power switch off before inspecting CAN bus wires for a ground short. * After the power switch is turned off, check that the key reminder warning system and light reminder warning system are not operating. * Before measuring the resistance, leave the vehicle as is for at least 1 minute and do not operate the power switch, any other switches or the doors. If any doors need to be opened in order to check connectors, open the doors and leave them open. HINT * Operating the power switch, any other switches or a door triggers related ECU and sensor communication on the CAN. This communication will cause the resistance value to change. * Even after DTCs are cleared, if a DTC is stored again after driving the vehicle for a while, the malfunction may be occurring due to vibration of the vehicle. In such a case, wiggling the ECUs or wire harness while performing the inspection below may help determine the cause of the malfunction. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "RECONFIRM DTC OUTPUT (a) Reconfirm DTCs. HINT If V2 bus DTC U1002 is output from the power management control ECU (Techstream display/PM1 Gateway), troubleshoot for",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0110-159",
+      "description": "Lost Communication with Drive Motor Control Module \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": [
+        "U0110-656",
+        "U0110-657"
+      ]
+    },
+    {
+      "dtc_code": "U0110-657",
+      "description": "Lost Communication with Drive Motor Control Module \"A\" * For a description of the inverter See: P Code Charts/P0A78/P0A78-266. The inverter with converter assembly (MG ECU) controls MG2 based on commands from the power management control ECU. The inverter with converter assembly (MG ECU) monitors communication data and detects malfunctions. without considering DTC P324E-788. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK FUSE (PCU) (a) Remove the PCU fuse from the engine room relay block and junction block assembly. (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration (c) Install the PCU fuse. NG --  REPLACE FUSE (PCU) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CLEAR DTC   See: P Code Charts/P0A09/P0A09-591 NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK DTC OUTPUT (HYBRID CONTROL) (a) Connect the Techstream to the DLC3. (b) Turn the power switch on (IG). (c) Enter the following menus: Powertrain / Hybrid Control / Trouble Codes. (d) Check if DTCs are output. Result: (e) Turn the power switch off. B --  CHECK FOR INTERMITTENT PROBLEMS  See: Hybrid Drive Systems/Testing and Inspection/Initial Inspection and Diagnostic Overview/Hybrid Control System/Check for Intermittent Problems A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "CHECK INVERTER WITH CONVERTER ASSEMBLY (GENERATOR CABLE CONNECTION CONDITION)   See: P Code Charts/P0A78/P0A78-113 B --  REPLACE MALFUNCTIONING PARTS C --  CONNECT SECURELY A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "CHECK INVERTER WITH CONVERTER ASSEMBLY (MOTOR CABLE CONNECTION CONDITION)   See: P Code Charts/P0A78/P0A78-113 B --  REPLACE MALFUNCTIONING PARTS C --  CONNECT SECURELY A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "CHECK HYBRID VEHICLE TRANSAXLE ASSEMBLY (MG1)   See: P Code Charts/P0A78/P0A78-113 NG --  CHECK HYBRID VEHICLE TRANSAXLE ASSEMBLY (GENERATOR CABLE CONNECTION CONDITION) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "CHECK HYBRID VEHICLE TRANSAXLE ASSEMBLY (MG2)   See: P Code Charts/P0A78/P0A78-113 NG --  CHECK HYBRID VEHICLE TRANSAXLE ASSEMBLY (MOTOR CABLE CONNECTION CONDITION) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "CHECK HARNESS AND CONNECTOR (INVERTER WITH CONVERTER ASSEMBLY POWER SOURCE CIRCUIT)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "CHECK POWER MANAGEMENT CONTROL ECU (CHECK WAVEFORM) (a) Connect an oscilloscope between the power management control ECU terminals specified in the following table. (b) Turn the power switch on (IG). (c) Measure the waveform. Result: Text in Illustration HINT * Inspect with the connector connected. * If pulses are generated, the shape of the waveform can be assumed to be normal. * The shape of the waveform may vary according to communication conditions. (d) Turn the power switch off. B --  CHECK HARNESS AND CONNECTOR (POWER MANAGEMENT CONTROL ECU - INVERTER WITH CONVERTER ASSEMBLY) A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "CHECK POWER MANAGEMENT CONTROL ECU (CHECK WAVEFORM) (a) Connect an oscilloscope between the power management control ECU terminals specified in the following table. (b) Turn the power switch on (IG). (c) Measure the waveform. Result: Text in Illustration HINT * Inspect with the connector connected. * If pulses are generated, the shape of the waveform can be assumed to be normal. * The shape of the waveform may vary according to communication conditions. (d) Turn the power switch off. B --  CHECK HARNESS AND CONNECTOR (POWER MANAGEMENT CONTROL ECU - INVERTER WITH CONVERTER ASSEMBLY) A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "CHECK POWER MANAGEMENT CONTROL ECU (CHECK WAVEFORM) (a) Connect an oscilloscope between the power management control ECU terminals specified in the following table. (b) Turn the power switch on (IG). (c) Measure the waveform. Result: Text in Illustration HINT * Inspect with the connector connected. * If pulses are generated, the shape of the waveform can be assumed to be normal. * The shape of the waveform may vary according to communication conditions. (d) Turn the power switch off. B --  CHECK HARNESS AND CONNECTOR (POWER MANAGEMENT CONTROL ECU - INVERTER WITH CONVERTER ASSEMBLY) A --  REPLACE POWER MANAGEMENT CONTROL ECU  See: Power and Ground Distribution/Power Distribution Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "CHECK HARNESS AND CONNECTOR (POWER MANAGEMENT CONTROL ECU - INVERTER WITH CONVERTER ASSEMBLY)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "CHECK INVERTER WITH CONVERTER ASSEMBLY (a) Disconnect connector A86 from the power management control ECU. (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration (c) Connect the power management control ECU connector. NG --  REPLACE INVERTER WITH CONVERTER ASSEMBLY  See: Hybrid Drive Systems/Power Control System/Voltage Converter/Service and Repair/Components OK --  REPLACE POWER MANAGEMENT CONTROL ECU  See: Power and Ground Distribution/Power Distribution Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "CHECK HARNESS AND CONNECTOR (POWER MANAGEMENT CONTROL ECU - INVERTER WITH CONVERTER ASSEMBLY)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "CHECK INVERTER WITH CONVERTER ASSEMBLY (a) Disconnect connector A86 from the power management control ECU. (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration (c) Connect the power management control ECU connector. NG --  REPLACE INVERTER WITH CONVERTER ASSEMBLY  See: Hybrid Drive Systems/Power Control System/Voltage Converter/Service and Repair/Components OK --  REPLACE POWER MANAGEMENT CONTROL ECU  See: Power and Ground Distribution/Power Distribution Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 16,
+          "instruction": "CHECK HARNESS AND CONNECTOR (POWER MANAGEMENT CONTROL ECU - INVERTER WITH CONVERTER ASSEMBLY)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 17,
+          "instruction": "CHECK POWER MANAGEMENT CONTROL ECU",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 18,
+          "instruction": "REPLACE FUSE (PCU) (a) Replace the PCU fuse. Text in Illustration (b) Turn the power switch on (READY). (c) Check if there is an open circuit in the PCU fuse in engine room relay block and junction block assembly. OK: There is no open circuit in the PCU fuse. HINT If the fuse does not become open again after turning the power switch on (READY), it can be assumed that the previous fuse failed due to age. (d) Turn the power switch off. NG --  CHECK HARNESS AND CONNECTOR (INVERTER WITH CONVERTER ASSEMBLY - PCU FUSE) OK --  COMPLETED",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 19,
+          "instruction": "CHECK HARNESS AND CONNECTOR (INVERTER WITH CONVERTER ASSEMBLY - PCU FUSE)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 20,
+          "instruction": "REPLACE INVERTER WITH CONVERTER ASSEMBLY See: Hybrid Drive Systems/Power Control System/Voltage Converter/Service and Repair/Components NEXT --  REPLACE FUSE (PCU)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 21,
+          "instruction": "REPAIR OR REPLACE HARNESS OR CONNECTOR NEXT --  REPLACE FUSE (PCU)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 22,
+          "instruction": "CHECK HYBRID VEHICLE TRANSAXLE ASSEMBLY (GENERATOR CABLE CONNECTION CONDITION)   See: P Code Charts/P0A78/P0A78-113 B --  REPLACE MALFUNCTIONING PARTS C --  CONNECT SECURELY A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 23,
+          "instruction": "CHECK GENERATOR CABLE   See: P Code Charts/P0A78/P0A78-113 NG --  REPLACE GENERATOR CABLE  See: Transmission and Drivetrain/Continuously Variable Transmission/Transaxle/Service and Repair/Removal and Replacement/Generator Cable/Components OK --  REPLACE HYBRID VEHICLE TRANSAXLE ASSEMBLY  See: Transmission and Drivetrain/Continuously Variable Transmission/Transaxle/Service and Repair/Removal and Replacement/Hybrid Vehicle Transaxle/Components",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 24,
+          "instruction": "CHECK HYBRID VEHICLE TRANSAXLE ASSEMBLY (MOTOR CABLE CONNECTION CONDITION)   See: P Code Charts/P0A78/P0A78-113 B --  REPLACE MALFUNCTIONING PARTS C --  CONNECT SECURELY A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 25,
+          "instruction": "CHECK MOTOR CABLE   See: P Code Charts/P0A78/P0A78-113 NG --  REPLACE MOTOR CABLE  See: Transmission and Drivetrain/Continuously Variable Transmission/Transaxle/Service and Repair/Removal and Replacement/Motor Cable/Components OK --  REPLACE HYBRID VEHICLE TRANSAXLE ASSEMBLY  See: Transmission and Drivetrain/Continuously Variable Transmission/Transaxle/Service and Repair/Removal and Replacement/Hybrid Vehicle Transaxle/Components",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0110-160",
+      "description": "Lost Communication with Drive Motor Control Module \"A\" Refer to the description for DTC U0110-159 See: U0110/U0110-159.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CLEAR DTC   See: P Code Charts/P0A09/P0A09-591 NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK DTC OUTPUT (HYBRID CONTROL) (a) Connect the Techstream to the DLC3. (b) Turn the power switch on (IG). (c) Enter the following menus: Powertrain / Hybrid Control / Trouble Codes. (d) Check if DTCs are output. Result: (e) Turn the power switch off. B --  CHECK FOR INTERMITTENT PROBLEMS  See: Hybrid Drive Systems/Testing and Inspection/Initial Inspection and Diagnostic Overview/Hybrid Control System/Check for Intermittent Problems A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK INVERTER WITH CONVERTER ASSEMBLY (GENERATOR CABLE CONNECTION CONDITION)   See: P Code Charts/P0A78/P0A78-113 B --  REPLACE MALFUNCTIONING PARTS C --  CONNECT SECURELY A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "CHECK INVERTER WITH CONVERTER ASSEMBLY (MOTOR CABLE CONNECTION CONDITION)   See: P Code Charts/P0A78/P0A78-113 B --  REPLACE MALFUNCTIONING PARTS C --  CONNECT SECURELY A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "CHECK HYBRID VEHICLE TRANSAXLE ASSEMBLY (MG1)   See: P Code Charts/P0A78/P0A78-113 NG --  CHECK HYBRID VEHICLE TRANSAXLE ASSEMBLY (GENERATOR CABLE CONNECTION CONDITION) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "CHECK HYBRID VEHICLE TRANSAXLE ASSEMBLY (MG2)   See: P Code Charts/P0A78/P0A78-113 NG --  CHECK HYBRID VEHICLE TRANSAXLE ASSEMBLY (MOTOR CABLE CONNECTION CONDITION) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "CHECK POWER MANAGEMENT CONTROL ECU (CHECK WAVEFORM) (a) Connect an oscilloscope between the power management control ECU terminals specified in the following table. (b) Turn the power switch on (IG). (c) Measure the waveform. Result: Text in Illustration HINT * Inspect with the connector connected. * If pulses are generated, the shape of the waveform can be assumed to be normal. * The shape of the waveform may vary according to communication conditions. (d) Turn the power switch off. B --  CHECK HARNESS AND CONNECTOR (POWER MANAGEMENT CONTROL ECU - INVERTER WITH CONVERTER ASSEMBLY) A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "CHECK POWER MANAGEMENT CONTROL ECU (CHECK WAVEFORM)   See: U0110/U0110-159 B --  CHECK HARNESS AND CONNECTOR (POWER MANAGEMENT CONTROL ECU - INVERTER WITH CONVERTER ASSEMBLY) A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "CHECK POWER MANAGEMENT CONTROL ECU (CHECK WAVEFORM)   See: U0110/U0110-159 B --  CHECK HARNESS AND CONNECTOR (POWER MANAGEMENT CONTROL ECU - INVERTER WITH CONVERTER ASSEMBLY) A --  REPLACE INVERTER WITH CONVERTER ASSEMBLY  See: Hybrid Drive Systems/Power Control System/Voltage Converter/Service and Repair/Components",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "CHECK HARNESS AND CONNECTOR (POWER MANAGEMENT CONTROL ECU - INVERTER WITH CONVERTER ASSEMBLY) See: U0110/U0110-159 NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "CHECK INVERTER WITH CONVERTER ASSEMBLY   See: U0110/U0110-159 NG --  REPLACE INVERTER WITH CONVERTER ASSEMBLY  See: Hybrid Drive Systems/Power Control System/Voltage Converter/Service and Repair/Components OK --  REPLACE POWER MANAGEMENT CONTROL ECU  See: Power and Ground Distribution/Power Distribution Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "CHECK HARNESS AND CONNECTOR (POWER MANAGEMENT CONTROL ECU - INVERTER WITH CONVERTER ASSEMBLY) See: U0110/U0110-159 NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "CHECK INVERTER WITH CONVERTER ASSEMBLY   See: U0110/U0110-159 NG --  REPLACE INVERTER WITH CONVERTER ASSEMBLY  See: Hybrid Drive Systems/Power Control System/Voltage Converter/Service and Repair/Components OK --  REPLACE POWER MANAGEMENT CONTROL ECU  See: Power and Ground Distribution/Power Distribution Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "CHECK HARNESS AND CONNECTOR (POWER MANAGEMENT CONTROL ECU - INVERTER WITH CONVERTER ASSEMBLY)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "CHECK INVERTER WITH CONVERTER ASSEMBLY (a) Disconnect connector A86 from the power management control ECU. (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration (c) Connect the power management control ECU connector. NG --  REPLACE INVERTER WITH CONVERTER ASSEMBLY  See: Hybrid Drive Systems/Power Control System/Voltage Converter/Service and Repair/Components OK --  REPLACE POWER MANAGEMENT CONTROL ECU  See: Power and Ground Distribution/Power Distribution Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 16,
+          "instruction": "CHECK HYBRID VEHICLE TRANSAXLE ASSEMBLY (GENERATOR CABLE CONNECTION CONDITION)   See: P Code Charts/P0A78/P0A78-113 B --  REPLACE MALFUNCTIONING PARTS C --  CONNECT SECURELY A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 17,
+          "instruction": "CHECK GENERATOR CABLE   See: P Code Charts/P0A78/P0A78-113 NG --  REPLACE GENERATOR CABLE  See: Transmission and Drivetrain/Continuously Variable Transmission/Transaxle/Service and Repair/Removal and Replacement/Generator Cable/Components OK --  REPLACE HYBRID VEHICLE TRANSAXLE ASSEMBLY  See: Transmission and Drivetrain/Continuously Variable Transmission/Transaxle/Service and Repair/Removal and Replacement/Hybrid Vehicle Transaxle/Components",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 18,
+          "instruction": "CHECK HYBRID VEHICLE TRANSAXLE ASSEMBLY (MOTOR CABLE CONNECTION CONDITION)   See: P Code Charts/P0A78/P0A78-113 B --  REPLACE MALFUNCTIONING PARTS C --  CONNECT SECURELY A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 19,
+          "instruction": "CHECK MOTOR CABLE   See: P Code Charts/P0A78/P0A78-113 NG --  REPLACE MOTOR CABLE  See: Transmission and Drivetrain/Continuously Variable Transmission/Transaxle/Service and Repair/Removal and Replacement/Motor Cable/Components OK --  REPLACE HYBRID VEHICLE TRANSAXLE ASSEMBLY  See: Transmission and Drivetrain/Continuously Variable Transmission/Transaxle/Service and Repair/Removal and Replacement/Hybrid Vehicle Transaxle/Components",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0122",
+      "description": "Lost Communication with Vehicle Dynamics Control Module The vehicle speed sensors send vehicle speed signals to the brake booster with master cylinder (skid control ECU). Signals are then sent to the power management control ECU. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK CAN COMMUNICATION SYSTEM (a) Connect the Techstream to the DLC3. (b) Select \"Bus Check\" from the \"System Select\". (c) Select \"DTC\" from the \"Bus Check\" screen, and then select \"Enter\". Result: B --  GO TO CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With A --  USE SIMULATION METHOD TO CHECK  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/How To Proceed With Troubleshooting Dynamic Radar Cruise Control System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": [
+        "U0123",
+        "U0126",
+        "U0293",
+        "U1104",
+        "U0140",
+        "U0151",
+        "U0235",
+        "U1002",
+        "U1100"
+      ]
+    },
+    {
+      "dtc_code": "U1104",
+      "description": "Lost Communication with Driving Support ECU * The driving support ECU uses the millimeter wave radar sensor to detect obstacles in front of the vehicle. Based on this information, the driving support ECU sends pre-collision control operation signals. These DTCs are stored when a communication malfunction occurs between the sensors and ECUs that detect collisions, or between ECUs that perform the pre-collision control. * The driving support ECU sends vehicle speed and vehicle condition information to the millimeter wave radar sensor. The millimeter wave radar sensor then sends information on the presence, distance, and relative speed of objects ahead to the driving support ECU. The driving support ECU sends this information to the ECM and performs pre-collision system (DTC U1104). NOTICE: * When replacing the millimeter wave radar sensor with a new one, make sure to perform Adjust Millimeter Wave Radar Sensor Assembly See: Accessories and Optional Equipment/Collision Avoidance and Parking Assist Systems/Distance Sensor/Adjustments. * Confirm that the connector is securely connected, as a partially connected connector is suspected for the cause of this DTC. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK FOR DTCs (a) Connect the Techstream to the DLC3. (b) Turn the power switch on (IG). (c) Turn the tester on. (d) Enter the following menus: Powertrain / Radar Cruise / Trouble Codes. (e) Enter the following menus: Powertrain / Hybrid Control / Trouble Codes. (f) Check for DTCs. Result: B --  GO TO CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK CAN COMMUNICATION SYSTEM (a) Using the Techstream to check if the CAN communication system is functioning normally    See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With Troubleshooting. Result: B --  GO TO CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK HARNESS AND CONNECTOR (DRIVING SUPPORT ECU ASSEMBLY - BODY GROUND) (a) Disconnect the driving support ECU assembly connector. (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR (DRIVING SUPPORT ECU ASSEMBLY - BODY GROUND) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "REPLACE DRIVING SUPPORT ECU ASSEMBLY (a) Replace the driving support control ECU assembly    See: Cruise Control/Cruise Control Module/Service and Repair/Removal. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "CHECK FOR DTCs (DTC U1104) (a) Connect the Techstream to DLC3. (b) Turn the power switch on (IG). (c) Clear the DTCs    See: Cruise Control/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Dynamic Radar Cruise Control System. (d) Perform the following to make sure that the DTC detection conditions are met. HINT If the detection conditions are not met, the malfunction cannot be detected. (1) Drive the vehicle at a speed for which radar cruise control operation is possible. (2) Turn the cruise control system on using the cruise control switch (ON-OFF button). (3) Push the cruise control switch to -/SET to begin control of vehicle speed using the cruise control system. (e) Enter the following menus: Powertrain / Radar Cruise / Trouble Codes. (f) Check for DTCs. Result: B --  REPLACE MILLIMETER WAVE RADAR SENSOR ASSEMBLY  See: Accessories and Optional Equipment/Collision Avoidance and Parking Assist Systems/Distance Sensor/Service and Repair/Removal A --  END Pre-Collision System",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "CHECK DTC OUTPUT (a) Clear the DTCs    See: Accessories and Optional Equipment/Collision Avoidance and Parking Assist Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. (b) Turn the cruise control main switch on. (c) Drive the vehicle at the required speed (45km/h (28 mph) or higher). (d) Check if the same DTC is output    See: Accessories and Optional Equipment/Collision Avoidance and Parking Assist Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. Result: B --  REPLACE DRIVING SUPPORT ECU  See: Cruise Control/Cruise Control Module/Service and Repair/Removal A --  END (MILLIMETER WAVE RADAR SENSOR WAS DEFECTIVE) Dynamic Radar Cruise Control System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0129",
+      "description": "Lost Communication with Brake System Control Module HINT The diagnosis procedure is for when DTC U0129 is output by the power management control ECU (Techstream display: Hybrid Control). NOTICE: * Turn the power switch off before measuring the resistances between CAN main bus wires and between CAN main bus branch wires. * Turn the power switch off before inspecting CAN bus wires for a ground short. * After the power switch is turned off, check that the key reminder warning system and light reminder warning system are not operating. * Before measuring the resistance, leave the vehicle as is for at least 1 minute and do not operate the power switch, any other switches or the doors. If any doors need to be opened in order to check connectors, open the doors and leave them open. HINT * Operating the power switch, any other switches or a door triggers related ECU and sensor communication on the CAN. This communication will cause the resistance value to change. * Even after DTCs are cleared, if a DTC is stored again after driving the vehicle for a while, the malfunction may be occurring due to vibration of the vehicle. In such a case, wiggling the ECUs or wire harness while performing the inspection below may help determine the cause of the malfunction. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK DTC (BRAKE SYSTEM) (a) Connect the Techstream to the DLC3. (b) Turn the power switch on (IG). (c) Turn the Techstream on. (d) Enter the following menus: Chassis / ABS/VSC/TRAC / Trouble Codes. OK:",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": [
+        "U0140",
+        "U0155",
+        "U0164",
+        "U0293",
+        "U1135"
+      ]
+    },
+    {
+      "dtc_code": "C1241",
+      "description": "is not output. NG -- GO TO CIRCUITS INDICATED BY OUTPUT DTCS See: C Code Charts/C1241 OK -- Continue to next step.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 2,
+          "instruction": "RECONFIRM DTC OUTPUT (a) Check if Hybrid Control of the power management control ECU outputs only DTC U0129. HINT If the power management control ECU outputs DTC U0100 and DTC U0129, check the branch circuit of sub bus 15. Result: B --  GO TO DIAGNOSIS PROCEDURE INDICATED BY OUTPUT DTC  See: U0100/CAN Communication System A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK FOR OPEN IN CAN BUS WIRES (SKID CONTROL ECU BRANCH WIRE) (a) Disconnect the cable from the negative (-) auxiliary battery terminal. (b) Disconnect the brake booster with master cylinder (skid control ECU) connector. (c) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration NG --  REPAIR OR REPLACE CAN MAIN BUS BRANCH WIRE OR CONNECTOR (SKID CONTROL ECU BRANCH WIRE) OK --  REPLACE BRAKE BOOSTER WITH MASTER CYLINDER (SKID CONTROL ECU)  See: Brakes and Traction Control/Power Brake Assist/Vacuum Brake Booster/Service and Repair/Removal Meter / Gauge System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0129-220",
+      "description": "HYBRID / BATTERY CONTROL: HYBRID CONTROL SYSTEM: U0100-211, U0100-212, U0100-530, U0129-220, U0129-222, U0129-527, U0129-528, U0140-146, U0151-763, U0164-594, U0164-827, U1107-436: Lost Communication with ECM / PCM \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0129-222",
+      "description": "HYBRID / BATTERY CONTROL: HYBRID CONTROL SYSTEM: U0100-211, U0100-212, U0100-530, U0129-220, U0129-222, U0129-527, U0129-528, U0140-146, U0151-763, U0164-594, U0164-827, U1107-436: Lost Communication with ECM / PCM \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0129-527",
+      "description": "HYBRID / BATTERY CONTROL: HYBRID CONTROL SYSTEM: U0100-211, U0100-212, U0100-530, U0129-220, U0129-222, U0129-527, U0129-528, U0140-146, U0151-763, U0164-594, U0164-827, U1107-436: Lost Communication with ECM / PCM \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0129-528",
+      "description": "HYBRID / BATTERY CONTROL: HYBRID CONTROL SYSTEM: U0100-211, U0100-212, U0100-530, U0129-220, U0129-222, U0129-527, U0129-528, U0140-146, U0151-763, U0164-594, U0164-827, U1107-436: Lost Communication with ECM / PCM \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0140-146",
+      "description": "HYBRID / BATTERY CONTROL: HYBRID CONTROL SYSTEM: U0100-211, U0100-212, U0100-530, U0129-220, U0129-222, U0129-527, U0129-528, U0140-146, U0151-763, U0164-594, U0164-827, U1107-436: Lost Communication with ECM / PCM \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0142",
+      "description": "HEATING / AIR CONDITIONING: AIR CONDITIONING SYSTEM: U0100-U0142, U0155, U0293: Lost Communication with ECM",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0146",
+      "description": "Lost Communication with Body ECU The transmission control ECU assembly receives signals from the main body ECU via CAN communication. When a CAN communication malfunction is detected, the transmission control ECU assembly stores this DTC. PROCEDURE /CAN Communication System/How to Proceed With Troubleshooting NEXT -- END CAN Communication System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "GO TO CAN COMMUNICATION SYSTEM See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0151-763",
+      "description": "HYBRID / BATTERY CONTROL: HYBRID CONTROL SYSTEM: U0100-211, U0100-212, U0100-530, U0129-220, U0129-222, U0129-527, U0129-528, U0140-146, U0151-763, U0164-594, U0164-827, U1107-436: Lost Communication with ECM / PCM \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0164",
+      "description": "Lost Communication with A/C ECU HINT The diagnosis procedure is for when DTC U0164 is output by the power management control ECU (Techstream display: PM1 Gateway). NOTICE: * Turn the power switch off before measuring the resistances between CAN main bus wires and between CAN main bus branch wires. * Turn the power switch off before inspecting CAN bus wires for a ground short. * After the power switch is turned off, check that the key reminder warning system and light reminder warning system are not operating. * Before measuring the resistance, leave the vehicle as is for at least 1 minute and do not operate the power switch, any other switches or the doors. If any doors need to be opened in order to check connectors, open the doors and leave them open. HINT * Operating the power switch, any other switches or a door triggers related ECU and sensor communication on the CAN. This communication will cause the resistance value to change. * Even after DTCs are cleared, if a DTC is stored again after driving the vehicle for a while, the malfunction may be occurring due to vibration of the vehicle. In such a case, wiggling the ECUs or wire harness while performing the inspection below may help determine the cause of the malfunction. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "RECONFIRM DTC OUTPUT (a) Reconfirm DTCs. HINT If power management bus DTC U1002 is output from the power management control ECU (Techstream display/PM1 Gateway), troubleshoot for U1002 and check for malfunctions in the V2 main bus circuit. Result: B --  GO TO CIRCUITS INDICATED BY OUTPUT DTCS  See: U1002/CAN Communication System A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK FOR OPEN IN CAN BUS WIRES (AIR CONDITIONING AMPLIFIER ASSEMBLY BRANCH WIRE) (a) Disconnect the cable from the negative (-) auxiliary battery terminal. (b) Disconnect the air conditioning amplifier assembly connector. (c) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration NG --  REPAIR OR REPLACE CAN MAIN BUS BRANCH WIRE OR CONNECTOR (AIR CONDITIONING AMPLIFIER ASSEMBLY BRANCH WIRE) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK HARNESS AND CONNECTOR (GROUND TERMINAL) (a) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR (GROUND CIRCUIT) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "CHECK HARNESS AND CONNECTOR (POWER SOURCE TERMINAL) (a) Connect the cable to the negative (-) auxiliary battery terminal. (b) Measure the voltage according to the value(s) in the table below. Standard Voltage: Text in Illustration NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR (POWER SOURCE CIRCUIT) OK --  REPLACE AIR CONDITIONING AMPLIFIER ASSEMBLY  See: Heating and Air Conditioning/Control Module HVAC/Service and Repair/Removal Safety Connect System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0164-594",
+      "description": "HYBRID / BATTERY CONTROL: HYBRID CONTROL SYSTEM: U0100-211, U0100-212, U0100-530, U0129-220, U0129-222, U0129-527, U0129-528, U0140-146, U0151-763, U0164-594, U0164-827, U1107-436: Lost Communication with ECM / PCM \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0164-827",
+      "description": "HYBRID / BATTERY CONTROL: HYBRID CONTROL SYSTEM: U0100-211, U0100-212, U0100-530, U0129-220, U0129-222, U0129-527, U0129-528, U0140-146, U0151-763, U0164-594, U0164-827, U1107-436: Lost Communication with ECM / PCM \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0235",
+      "description": "Lost Communication with Cruise Control Front Distance Range Sensor The millimeter wave radar sensor assembly and driving support ECU assembly transmit data for general vehicle control and diagnosis functions using communication lines. The millimeter wave radar sensor assembly transmits information about the vehicle in front to the driving support ECU assembly. NOTICE: * When the millimeter wave radar sensor assembly is replaced with a new one, adjustment of the radar sensor beam axis must be performed See: Accessories and Optional Equipment/Collision Avoidance and Parking Assist Systems/Distance Sensor/Adjustments. * Inspect the fuses for circuits related to this system before performing the following inspection procedure. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK CAN COMMUNICATION SYSTEM (a) Using the Techstream to check if the CAN communication system is functioning normally    See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With Troubleshooting. Result: B --  GO TO CAN COMMUNICATION SYSTEM A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK HARNESS AND CONNECTOR (MILLIMETER WAVE RADAR SENSOR ASSEMBLY POWER SOURCE) (a) Disconnect the millimeter wave radar sensor assembly connector. (b) Turn the power switch on (IG). (c) Measure the voltage according to the value(s) in the table below. Standard Voltage: Text in Illustration NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR (MILLIMETER WAVE RADAR SENSOR ASSEMBLY - IG1 RELAY) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK HARNESS AND CONNECTOR (MILLIMETER WAVE RADAR SENSOR ASSEMBLY - BODY GROUND) (a) Measure the resistance according to the value(s) in the table below. Standard Resistance (Check for Open): Text in Illustration NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR (MILLIMETER WAVE RADAR SENSOR ASSEMBLY - BODY GROUND) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "REPLACE MILLIMETER WAVE RADAR SENSOR ASSEMBLY (a) Replace the millimeter wave radar sensor assembly    See: Accessories and Optional Equipment/Collision Avoidance and Parking Assist Systems/Distance Sensor/Service and Repair/Removal. (b) Adjust the millimeter wave radar sensor assembly    See: Accessories and Optional Equipment/Collision Avoidance and Parking Assist Systems/Distance Sensor/Adjustments. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "CHECK FOR DTCs (DTC U0235) (a) Connect the Techstream to the DLC3. (b) Turn the power switch on (IG). (c) Clear the DTCs    See: Cruise Control/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Dynamic Radar Cruise Control System. (d) Perform the following to make sure that the DTC detection conditions are met. HINT If the detection conditions are not met, the malfunction cannot be detected. (1) Drive the vehicle at a speed for which radar cruise control operation is possible. (2) Turn the cruise control system on using the cruise control switch (ON-OFF button). (3) Push the cruise control switch to -/SET to begin control of vehicle speed using the cruise control system. (e) Enter the following menus: Powertrain / Radar Cruise / Trouble Codes. (f) Check for DTCs. Result: B --  REPLACE DRIVING SUPPORT ECU ASSEMBLY  See: Cruise Control/Cruise Control Module/Service and Repair/Removal A --  END Pre-Collision System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0293-439",
+      "description": "Lost Communication with Hybrid Powertrain Control Module The plug-in charge control ECU assembly receives or sends a signal from or to the power management control ECU. MONITOR DESCRIPTION If the power switch is on (IG) and a CAN communication error occurs, the plug-in charge control ECU assembly illuminates the MIL and outputs this DTC. MONITOR STRATEGY TYPICAL ENABLING CONDITIONS TYPICAL MALFUNCTION THRESHOLDS COMPONENT OPERATING RANGE CONFIRMATION DRIVING PATTERN",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect the Techstream to the DLC3.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the power switch on (IG) and turn the Techstream on.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Clear the DTCs (even if no DTCs are stored, perform the clear DTC procedure).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the power switch off.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the power switch on (IG) and check that there are no abnormalities (abnormal sounds, coolant leaks, DTC output, etc). [A]",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the Techstream on.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Enter the following menus: Powertrain / Plug-in Control / Trouble Codes. [B]",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Check that permanent DTCs are cleared.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "If the permanent DTCs are not cleared, perform a universal trip, and then check for permanent DTCs again. HINT * If a permanent DTC is output, the system is malfunctioning. * If no permanent DTC is output, the system is normal. PROCEDURE",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0293-449",
+      "description": "Lost Communication with Hybrid Powertrain Control Module The plug-in charge control ECU assembly receives or sends a signal from or to the power management control ECU. MONITOR DESCRIPTION If the vehicle is being plug-in charged and a CAN communication error occurs, the plug-in charge control ECU assembly illuminates the MIL and outputs this DTC. MONITOR STRATEGY TYPICAL ENABLING CONDITIONS TYPICAL MALFUNCTION THRESHOLDS COMPONENT OPERATING RANGE CONFIRMATION DRIVING PATTERN",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect the Techstream to the DLC3.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the power switch on (IG) and turn the Techstream on.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Clear the DTCs (even if no DTCs are stored, perform the clear DTC procedure).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the power switch off.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the power switch on (READY), and drive in EV mode for 3 minutes at 40 km/h (25 mph), then turn the power switch off. [A]",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Plug-in the charger cable, and charge the vehicle for 10 minutes. Unplug the charger cable. [B]",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the power switch on (IG) and after 1 minute, turn the power switch off. [C]",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Turn the power switch on (IG) and turn the Techstream on. [D]",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Enter the following menus: Powertrain / Plug-in Control / Trouble Codes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Check that the permanent DTCs are cleared.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "If the permanent DTCs are not cleared, perform a universal trip, and then check for permanent DTCs again. HINT * If a permanent DTC is output, the system is malfunctioning. * If no permanent DTC is output, the system is normal. PROCEDURE",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0424-537",
+      "description": "Invalid Data Received from HVAC Control Module If there is a malfunction in the air conditioning amplifier assembly, DTC U0424-537 will be stored. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK DTC OUTPUT (AIR CONDITIONER) (a) Connect the Techstream to the DLC3. (b) Turn the power switch on (IG). (c) Enter the following menus: Body Electrical / Air Conditioner / Trouble Codes. (d) Check if DTCs related to the air conditioning system (A/C) are output. Result: (e) Turn the power switch off. B --  GO TO DTC CHART (AIR CONDITIONING SYSTEM)  See: Diagnostic Trouble Code Descriptions/Air Conditioning System A --  REPLACE AIR CONDITIONING AMPLIFIER ASSEMBLY  See: Heating and Air Conditioning/Control Module HVAC/Service and Repair/Removal Lost Communication With Gateway Module (Power Management 1)",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1100",
+      "description": "Lost Communication with Seat Belt Control ECU HINT The diagnosis procedure is for when DTC U1100 is output by the power management control ECU (Techstream display: PM1 Gateway). NOTICE: * Turn the power switch off before measuring the resistances between CAN main bus wires and between CAN main bus branch wires. * Turn the power switch off before inspecting CAN bus wires for a ground short. * After the power switch is turned off, check that the key reminder warning system and light reminder warning system are not operating. * Before measuring the resistance, leave the vehicle as is for at least 1 minute and do not operate the power switch, any other switches or the doors. If any doors need to be opened in order to check connectors, open the doors and leave them open. HINT * Operating the power switch, any other switches or a door triggers related ECU and sensor communication on the CAN. This communication will cause the resistance value to change. * Even after DTCs are cleared, if a DTC is stored again after driving the vehicle for a while, the malfunction may be occurring due to vibration of the vehicle. In such a case, wiggling the ECUs or wire harness while performing the inspection below may help determine the cause of the malfunction. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "RECONFIRM DTC OUTPUT (a) Reconfirm DTCs. HINT If V2 bus DTC U1002 is output from the power management control ECU (Techstream display/PM1 Gateway), troubleshoot for",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1107",
+      "description": "HYBRID / BATTERY CONTROL: HYBRID CONTROL SYSTEM: U0100-211, U0100-212, U0100-530, U0129-220, U0129-222, U0129-527, U0129-528, U0140-146, U0151-763, U0164-594, U0164-827, U1107-436: Lost Communication with ECM / PCM \"A\"",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

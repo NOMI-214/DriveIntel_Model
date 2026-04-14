@@ -1,0 +1,311 @@
+{
+  "source_file": "Toyota_Truck_4_Runner_U.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 9,
+  "dtcs": [
+    {
+      "dtc_code": "U0073",
+      "description": "Control Module Communication Bus Off The power steering ECU receives signals from the ECM, steering angle sensor and skid control ECU via the CAN communication system. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK FOR DTC (CAN COMMUNICATION SYSTEM) (a) Clear the DTC(s)    See: Steering and Suspension/Steering/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. (b) Check for DTCs    See: Steering and Suspension/Steering/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. Result B --  GO TO CAN COMMUNICATION SYSTEM (HOW TO PROCEED WITH TROUBLESHOOTING)  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With Troubleshooting A --  USE SIMULATION METHOD TO CHECK  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/How To Proceed With Troubleshooting Navigation System (for Navigation Receiver Type)",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": [
+        "U0155",
+        "U0140"
+      ]
+    },
+    {
+      "dtc_code": "U0155",
+      "description": "Lost Communication with Combination Meter The power management control ECU receives information from 2 sources. It receives information via a direct line and via the CAN communication line. If the information from these 2 sources is inconsistent, this DTC is stored. HINT When the power management control ECU is replaced with a new one and the cable is connected to the negative (-) battery terminal, the power source mode is reset to on (IG). When the battery is removed and reinstalled, the power source mode that was selected when the battery was removed is restored. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK FOR DTC (a) Clear the DTCs    See: Accessories and Optional Equipment/Navigation System/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Navigation System (for Navigation Receiver Type). (b) Check for DTCs and check if the same trouble occurs again. OK: No DTCs are output. NG --  GO TO CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With OK --  USE SIMULATION METHOD TO CHECK  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/How To Proceed With Troubleshooting Navigation System (for Radio and Display Type)",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0126",
+      "description": "71 - Lost Communication with Steering Angle Sensor Module PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "RECONFIRM DTC (a) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. (b) Check if the same DTCs are output    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. Result B --  USE SIMULATION METHOD TO CHECK  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/How To Proceed With Troubleshooting A --  GO TO CAN COMMUNICATION SYSTEM (HOW TO PROCEED WITH TROUBLESHOOTING)  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With Troubleshooting CAN Communication System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100",
+      "description": "Lost Communication with ECM / PCM \"A\" HINT For vehicles with a smart key system only. NOTICE: Inspect the fuses for circuits related to this system before performing the following inspection procedure. HINT Operating the ignition switch, any switches or any doors triggers related ECU and sensor communication with the CAN, which causes resistance variation. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "DISCONNECT CABLE FROM NEGATIVE BATTERY TERMINAL (a) Disconnect the cable from the negative (-) battery terminal before measuring the resistances of the main wire and branch wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK FOR OPEN IN CAN BUS MAIN WIRE (ECM MAIN WIRE) (a) Disconnect the F50 ECM connector. (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration NG --  REPAIR OR REPLACE ECM MAIN WIRE OR CONNECTOR (CANP, CANN) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK HARNESS AND CONNECTOR (ECM - BATTERY AND BODY GROUND) (a) Connect the cable to the negative (-) battery terminal. NOTICE: When disconnecting the cable, some systems need to be initialized after the cable is reconnected    See: Testing and Inspection/Repair Instruction - Initialization. Text in Illustration (b) Disconnect the B38, B39 and F51 ECM connectors. (c) Measure the resistance according to the value(s) in the table below. Standard Resistance: (d) Measure the voltage according to the value(s) in the table below. Standard Voltage: NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK --  REPLACE ECM  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Service and Repair/Removal Kinetic Dynamic Suspension System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": [
+        "U0142",
+        "U0155",
+        "U0129",
+        "U0131",
+        "U0151"
+      ]
+    },
+    {
+      "dtc_code": "U0151",
+      "description": "Lost Communication with Airbag ECU The combination meter assembly communicates with the ECM via the CAN communication system (CAN No. 1 Bus). PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CONFIRM DTC OUTPUT (a) Check for DTCs    See: Instrument Panel, Gauges and Warning Indicators/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. Result HINT If CAN communication system DTC U0100, U0129, U0131 or U0151 and another DTC are output at the same time, perform for CAN communication system DTC U0100, U0129, U0131 or U0151 first. B --  USE SIMULATION METHOD TO CHECK  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/How To Proceed With Troubleshooting A --  GO TO CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/CAN Communication System/How to Proceed With Smart Key System (for Start Function)",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1002",
+      "description": "Lost Communication with Gateway Module (Power Management2) * The power management control ECU stores this DTC when no signals can be received from the ECUs that are memorized as those connected to the power management bus. * When the power management control ECU receives a response signal from the ECUs connected to the power management bus, the power management ECU recognizes and memorizes that the ECU is connected to the power management bus. Based on this memorized data, the power management control ECU monitors for malfunctions in the ECUs connected to the power management bus when communicating with those ECUs. If the power management control ECU cannot receive response signals from the ECUs that are memorized as those connected to the power management bus, the power management control ECU determines that a malfunction exists. * If 2 or more DTCs are output during the DTC check, one side of the CAN branch wire may be open (one side of the CANH [branch wire]/CANL [branch wire] of the ECU and/or sensor is open). HINT For vehicles with a smart key system only. NOTICE: Inspect the fuses for circuits related to this system before performing the following inspection procedure. HINT Operating the ignition switch, any switches or any doors triggers related ECU and sensor communication with the CAN, which causes resistance variation. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "DISCONNECT CABLE FROM NEGATIVE BATTERY TERMINAL (a) Disconnect the cable from the negative (-) battery terminal before measuring the resistances of the main wire and branch wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK FOR CAN BUS WIRE (MAIN WIRE FOR DISCONNECTION, BUS LINE FOR SHORT CIRCUIT) (a) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration Result B --  CHECK FOR SHORT IN CAN BUS WIRES (NO. 3 JUNCTION CONNECTOR - AIR CONDITIONING AMPLIFIER ASSEMBLY) C --  CHECK HARNESS AND CONNECTOR (POWER MANAGEMENT CONTROL ECU - BATTERY AND GROUND) A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK FOR OPEN IN CAN BUS MAIN WIRE (NO. 3 JUNCTION CONNECTOR - ECM) (a) Disconnect the F83 No. 3 junction connector connector. (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration NG --  CONNECT CONNECTOR OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "CHECK FOR OPEN IN CAN BUS MAIN WIRE (NO. 3 JUNCTION CONNECTOR - POWER MANAGEMENT CONTROL ECU) (a) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration NG --  CONNECT CONNECTOR OK --  REPAIR OR REPLACE NO. 3 JUNCTION CONNECTOR",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "CONNECT CONNECTOR (a) Reconnect the F83 No. 3 junction connector connector. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "CHECK FOR OPEN IN CAN BUS MAIN WIRE (ECM - NO. 3 JUNCTION CONNECTOR) (a) Disconnect the F50 ECM connector. (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration NG --  REPAIR OR REPLACE CAN MAIN WIRE CONNECTED TO ECM (ECM - NO. 3 JUNCTION CONNECTOR) OK --  REPLACE ECM  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "CONNECT CONNECTOR (a) Reconnect the F83 No. 3 junction connector connector. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "CHECK FOR OPEN IN CAN BUS MAIN WIRE (POWER MANAGEMENT CONTROL ECU - NO. 3 JUNCTION CONNECTOR) (a) Disconnect the F80 power management control ECU connector. (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration NG --  REPAIR OR REPLACE CAN MAIN WIRE CONNECTED TO POWER MANAGEMENT CONTROL ECU (POWER MANAGEMENT CONTROL ECU - NO. 3 JUNCTION CONNECTOR) OK --  REPLACE POWER MANAGEMENT CONTROL ECU  See: Power and Ground Distribution/Power Distribution Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "CHECK FOR SHORT IN CAN BUS WIRES (NO. 3 JUNCTION CONNECTOR - AIR CONDITIONING AMPLIFIER ASSEMBLY) (a) Disconnect the F83 No. 3 junction connector connector. (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration NG --  CONNECT CONNECTOR OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "CHECK FOR SHORT IN CAN BUS WIRES (NO. 3 JUNCTION CONNECTOR - ECM) (a) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration NG --  CONNECT CONNECTOR OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "CHECK FOR SHORT IN CAN BUS WIRES (NO. 3 JUNCTION CONNECTOR - POWER MANAGEMENT CONTROL ECU) (a) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration NG --  CONNECT CONNECTOR OK --  REPAIR OR REPLACE NO. 3 JUNCTION CONNECTOR",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "CONNECT CONNECTOR (a) Reconnect the F83 No. 3 junction connector connector. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "CHECK FOR SHORT IN CAN BUS WIRES (AIR CONDITIONING AMPLIFIER ASSEMBLY) (a) Disconnect the F42 air conditioning amplifier assembly connector. (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration NG --  REPAIR OR REPLACE AIR CONDITIONING AMPLIFIER ASSEMBLY BRANCH WIRE OR CONNECTOR (CANH, CANL) OK --  REPLACE AIR CONDITIONING AMPLIFIER ASSEMBLY  See: Heating and Air Conditioning/Control Module HVAC/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "CONNECT CONNECTOR (a) Reconnect the F83 No. 3 junction connector connector. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "CHECK FOR SHORT IN CAN BUS WIRES (ECM) (a) Disconnect the F50 ECM connector. (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration NG --  REPAIR OR REPLACE ECM MAIN WIRE OR CONNECTOR (CANP, CANN) OK --  REPLACE ECM  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 16,
+          "instruction": "CONNECT CONNECTOR (a) Reconnect the F83 No. 3 junction connector connector. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 17,
+          "instruction": "CHECK FOR SHORT IN CAN BUS WIRES (POWER MANAGEMENT CONTROL ECU) (a) Disconnect the F80 power management control ECU connector. (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration NG --  REPAIR OR REPLACE POWER MANAGEMENT CONTROL ECU MAIN WIRE OR CONNECTOR (CA3P, CA3N) OK --  REPLACE POWER MANAGEMENT CONTROL ECU  See: Power and Ground Distribution/Power Distribution Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 18,
+          "instruction": "CHECK HARNESS AND CONNECTOR (POWER MANAGEMENT CONTROL ECU - BATTERY AND GROUND) (a) Connect the cable to the negative (-) battery terminal. NOTICE: When disconnecting the cable, some systems need to be initialized after the cable is reconnected    See: Testing and Inspection/Repair Instruction - Initialization. (b) Disconnect the F80 power management control ECU connector. (c) Measure the resistance according to the value(s) in the table below. Standard Resistance: (d) Measure the voltage according to the value(s) in the table below. Standard Voltage: Text in Illustration NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK --  REPLACE POWER MANAGEMENT CONTROL ECU  See: Power and Ground Distribution/Power Distribution Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": [
+        "U1114"
+      ]
+    },
+    {
+      "dtc_code": "U1114",
+      "description": "Lost Communication with Main Switch Module * The main body ECU (multiplex network body ECU) stores this DTC when no signals can be received from the ECUs that are memorized as those connected to the CAN MS bus. * When the main body ECU (multiplex network body ECU) receives a response signal from the ECUs connected to the CAN MS bus, the main body ECU (multiplex network body ECU) recognizes and memorizes that the ECU is connected to the CAN MS bus. Based on this memorized data, the main body ECU (multiplex network body ECU) monitors for malfunctions in the ECUs connected to the CAN MS bus when communicating with those ECUs. If the main body ECU (multiplex network body ECU) cannot receive response signals from the ECUs that are memorized as those connected to the CAN MS bus, the main body ECU (multiplex network body ECU) determines that a malfunction exists. * If 2 or more DTCs are output during the DTC check, one side of the CAN branch wire may be open (one side of the CANH [branch wire]/CANL [branch wire] of the ECU and/or sensor is open). HINT For vehicles with CRAWL control only. NOTICE: Inspect the fuses for circuits related to this system before performing the following inspection procedure. HINT Operating the ignition switch, any switches or any doors triggers related ECU and sensor communication with the CAN, which causes resistance variation. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "DISCONNECT CABLE FROM NEGATIVE BATTERY TERMINAL (a) Disconnect the cable from the negative (-) battery terminal before measuring the resistances of the main wire and branch wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK FOR OPEN IN CAN BUS MAIN WIRE (MAIN BODY ECU - DRIVE MONITOR SWITCH) (a) Disconnect the F10 main body ECU (multiplex network body ECU) connector. (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration NG --  CONNECT CONNECTOR OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK HARNESS AND CONNECTOR (MAIN BODY ECU - BATTERY AND BODY GROUND) (a) Connect the cable to the negative (-) battery terminal. Text in Illustration NOTICE: When disconnecting the cable, some systems need to be initialized after the cable is reconnected    See: Testing and Inspection/Repair Instruction - Initialization. (b) Remove the main body ECU (multiplex network body ECU)    See: Body and Frame/Body Control Systems/Body Control Module/Service and Repair/Removal. (c) Measure the resistance according to the value(s) in the table below. Standard Resistance: (d) Measure the voltage according to the value(s) in the table below. Standard Voltage: NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK --  REPLACE MAIN BODY ECU (MULTIPLEX NETWORK BODY ECU)  See: Body and Frame/Body Control Systems/Body Control Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "CONNECT CONNECTOR (a) Reconnect the F10 main body ECU (multiplex network body ECU) connector. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "CHECK FOR OPEN IN CAN BUS MAIN WIRE (DRIVE MONITOR SWITCH - MAIN BODY ECU) (a) Disconnect the U1 drive monitor switch connector. (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration NG --  REPAIR OR REPLACE CAN MAIN WIRE OR CONNECTOR (MAIN BODY ECU - DRIVE MONITOR SWITCH) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "CHECK HARNESS AND CONNECTOR (DRIVE MONITOR SWITCH - BATTERY AND BODY GROUND) (a) Connect the cable to the negative (-) battery terminal. NOTICE: When disconnecting the cable, some systems need to be initialized after the cable is reconnected    See: Testing and Inspection/Repair Instruction - Initialization. (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: (c) Measure the voltage according to the value(s) in the table below. Standard Voltage: Text in Illustration NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK --  REPLACE DRIVE MONITOR SWITCH  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Traction Control Switch/Service and Repair/Downhill Assist Control Switch/Removal Vehicle Stability Control System BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM: U0073, U0100, U0114, U0123, U0124, U0126: Control Module Communication Bus OFF",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0123",
+      "description": "BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM: U0073, U0100, U0114, U0123, U0124, U0126: Control Module Communication Bus OFF",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0164",
+      "description": "Lost Communication with A/C ECU HINT For vehicles with a smart key system only. NOTICE: Inspect the fuses for circuits related to this system before performing the following inspection procedure. HINT Operating the ignition switch, any switches or any doors triggers related ECU and sensor communication with the CAN, which causes resistance variation. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "DISCONNECT CABLE FROM NEGATIVE BATTERY TERMINAL (a) Disconnect the cable from the negative (-) battery terminal before measuring the resistances of the main wire and branch wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK FOR OPEN IN CAN BUS WIRE (AIR CONDITIONING AMPLIFIER ASSEMBLY BRANCH WIRE) (a) Disconnect the F42 air conditioning amplifier assembly connector. (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration NG --  REPAIR OR REPLACE AIR CONDITIONING AMPLIFIER ASSEMBLY BRANCH WIRE OR CONNECTOR (CANH, CANL) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK HARNESS AND CONNECTOR (AIR CONDITIONING AMPLIFIER ASSEMBLY - BATTERY AND BODY GROUND) (a) Connect the cable to the negative (-) battery terminal. NOTICE: When disconnecting the cable, some systems need to be initialized after the cable is reconnected    See: Testing and Inspection/Repair Instruction - Initialization. (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: (c) Measure the voltage according to the value(s) in the table below. Standard Voltage: Text in Illustration NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK --  REPLACE AIR CONDITIONING AMPLIFIER ASSEMBLY  See: Heating and Air Conditioning/Control Module HVAC/Service and Repair/Removal MS Bus",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

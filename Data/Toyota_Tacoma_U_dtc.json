@@ -1,0 +1,56 @@
+{
+  "source_file": "Toyota_Tacoma_U.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 2,
+  "dtcs": [
+    {
+      "dtc_code": "U0073",
+      "description": "94,U0100/65,U0123/62,U0124/95,U0126/63: Control Module Communication Bus OFF",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0126",
+      "description": "63 - Lost Communication with Steering Angle Sensor Module The skid control ECU exchanges signals with the ECM, steering angle sensor, yaw rate and deceleration sensor, power steering ECU, main body ECU and combination meter via CAN communication. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK HARNESS AND CONNECTOR (MOMENTARY INTERRUPTION) (a) Using the Techstream, check for any momentary interruption in the wire harness and connector corresponding to a DTC. ABS/VSC/TRAC Result HINT Perform the above inspection before removing the sensor and connector. C --  REPAIR OR REPLACE HARNESS OR CONNECTOR B --  RECONFIRM DTC A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK IF EACH SENSOR AND ECM CONNECTOR IS SECURELY CONNECTED (a) Turn the ignition switch off. (b) Check if each sensor or ECM connector is securely connected. OK: Each connector is securely connected. NG --  CONNECT CONNECTOR TO EACH SENSOR OR ECM CORRECTLY OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "RECONFIRM DTC (a) Clear the DTC(s)    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Hydraulic Brake Booster). (b) Record the output DTCs (for ABS, VSC, and CAN communication) (    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Hydraulic Brake Booster). HINT If the CAN communication system DTC and the relevant sensor DTCs are output simultaneously, troubleshoot the relevant sensor DTCs (for ABS and VSC) after the CAN communication system returns to normal. Result C --  CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/How To Proceed With Troubleshooting B --  REPAIR CIRCUIT INDICATED BY OUTPUT DTC  See: Diagnostic Trouble Code Descriptions/Vehicle Stability Control System (for Hydraulic Brake Booster) A --  CHECK CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/How to Proceed With Troubleshooting",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "REPAIR OR REPLACE HARNESS OR CONNECTOR (a) Turn the ignition switch off. (b) Repair or replace the harness or connector. (c) Check for any momentary interruption between the skid control ECU and each sensor or ECM    See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/How To Proceed With Troubleshooting. (d) Check that there is no momentary interruption. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "RECONFIRM DTC (a) Turn the ignition switch off. (b) Clear the DTC    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Hydraulic Brake Booster). (c) Start the engine. (d) Drive the vehicle and turn the steering wheel to the right and left at a speed of 15 km/h (9 mph) or more. (e) Check that no CAN communication system DTC is output    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Hydraulic Brake Booster). (f) If ABS and VSC DTCs are output, record them. Result HINT The CAN communication system must be normal when repairing each sensor DTC (for ABS and VSC). C --  END B --  REPAIR CIRCUIT INDICATED BY OUTPUT DTC  See: Diagnostic Trouble Code Descriptions/Vehicle Stability Control System (for Hydraulic Brake Booster) A --  CHECK CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/How to Proceed With Troubleshooting Vehicle Stability Control System (For Vacuum Brake Booster) BRAKE CONTROL: VEHICLE STABILITY CONTROL SYSTEM (for Vacuum Brake Booster):",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

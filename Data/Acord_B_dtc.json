@@ -1,0 +1,4303 @@
+{
+  "source_file": "Acord_B.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 91,
+  "dtcs": [
+    {
+      "dtc_code": "B1000",
+      "description": "Communication Bus Line Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1000 indicated? the battery condition and the charging system.",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure. The communication bus line is OK at this time. Check for loose or poor connections. If the connections are good, check"
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs using the HDS. Are DTC B1005, B1006, B1007, B1008, B1009 and B1010 indicated?",
+          "yes": "Go to step 5.",
+          "no": "Replace the MICU."
+        },
+        {
+          "step": 5,
+          "instruction": "Disconnect each control unit one at a time. Clear the DTC, then recheck for DTCs after each unit is disconnected. - Gauge control module - Relay control module (Under-hood fuse relay box connector I) - Driver's multiplex control unit - Climate control unit - Combination switch control unit Is DTC B1000 indicated with each unit disconnected? continuity to ground or short to power. Repair or replace the harness as necessary.",
+          "yes": "Check for a short to power or ground in the communication circuit by disconnecting the harness at each control unit and testing for",
+          "no": "Substitute a known-good control unit with the one that was disconnected, and did not set DTC B1000."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1001",
+      "description": ", B1002: Multiplex Integrated Control Unit (MICU) Internal Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Operate the door lock (LOCK/UNLOCK).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1001 or B1002 indicated? condition and the charging system.",
+          "yes": "Faulty MICU; replace the under-dash fuse/relay box.",
+          "no": "Intermittent failure, the MICU is OK at this time. Check for loose or poor connections. If the connections are good, check the battery"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1002",
+      "description": "B1001, B1002: Multiplex Integrated Control Unit (MICU) Internal Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Operate the door lock (LOCK/UNLOCK).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1001 or B1002 indicated? condition and the charging system.",
+          "yes": "Faulty MICU; replace the under-dash fuse/relay box.",
+          "no": "Intermittent failure, the MICU is OK at this time. Check for loose or poor connections. If the connections are good, check the battery"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1005",
+      "description": "MICU Lost Communication with Relay Control Module",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1005 indicated? condition and the charging system.",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, the relay module is OK at this time. Check for loose or poor connections. If the connections are good, check the battery"
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs in the gauge control module using the HDS. Is DTC B1158 also indicated? Inspection/Component Tests and General Diagnostics/Relay Control Module Input Test the circuit is bad, repair the open.",
+          "yes": "Go to Relay Control Module Input Test.  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and",
+          "no": "Check for an open in the communication circuit between the MICU and the relay control module. If the circuit is OK, replace the MICU. If"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1006",
+      "description": "MICU Lost Communication with Door Multiplex Control Unit (Door Lock Switch Message)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1006 indicated? check the battery condition and the charging system.",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, the door multiplex control unit is OK at this time. Check for loose or poor connections. If the connections are good,"
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs in the gauge control module and relay module using the HDS. Are DTCs B1160 and B1058 also indicated ? Inspection/Component Tests and General Diagnostics/Door Multiplex Control Unit Input Test MICU. If the circuit is bad, repair the open.",
+          "yes": "Go to Door Multiplex Control Unit Input Test.  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and",
+          "no": "Check for an open in the communication circuit between the MICU and the door multiplex control unit. If the circuit is OK, replace the"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1007",
+      "description": "MICU Lost Communication with the Combination Switch Control Unit (Headlight Switch Message)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1007 indicated? condition and the charging system.",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, the MICU is OK at this time. Check for loose or poor connections. If the connections are good, check the battery"
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs of the gauge control module and relay control module using the HDS. Are DTCs B1155 and B1062 also indicated? Bus/Testing and Inspection/Component Tests and General Diagnostics/Combination Switch Control Unit Input Test MICU. If the circuit is bad, repair the open.",
+          "yes": "Go to the Combination Switch Control Unit Input Test.  See: Powertrain Management/Computers and Control Systems/Information",
+          "no": "Check for an open in the communication circuit between the MICU and the combination switch control unit. If the circuit is OK, replace the"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1008",
+      "description": "MICU Lost Communication (A/T Message) with the Gauge Control Module",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1008 indicated? battery condition and the charging system.",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, the gauge control module is OK at this time. Check for loose or poor connections. If the connections are good, check the"
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs in the relay control module using the HDS. Is DTC B1161 also indicated? Inspection/Component Tests and General Diagnostics/Gauge Control Module Input Test the circuit is bad, repair the open.",
+          "yes": "Go to the Gauge Control Module Input Test.  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and",
+          "no": "Check for an open in the communication circuit between the MICU and the gauge control module. If the circuit is OK, replace the MICU. If"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1009",
+      "description": "MICU Lost Communication with the Combination Switch Control Unit (Wiper/Washer Switch Message)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1009 indicated? check the battery condition and the charging system.",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, the combination switch control unit is OK at this time. Check for loose or poor connections. If the connections are good,"
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs of the gauge control module and relay control module using the HDS. Are DTCs B1156 and B1063 also indicated? Bus/Testing and Inspection/Component Tests and General Diagnostics/Combination Switch Control Unit Input Test MICU. If the circuit is bad, repair the open.",
+          "yes": "Go to the Combination Switch Control Unit Input Test.  See: Powertrain Management/Computers and Control Systems/Information",
+          "no": "Check for an open in the communication circuit between the MICU and the combination switch control unit. If the circuit is OK, replace the"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1010",
+      "description": "MICU Lost Communication (Panic Message) with the Door Multiplex Control Unit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1010 indicated? check the battery condition and the charging system.",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, the door multiplex control unit is OK at this time. Cheek for loose or poor connections. If the connections are good,"
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs of the relay control module using the HDS. Is DTC B1059 also indicated? and Inspection/Component Tests and General Diagnostics/Door Multiplex Control Unit Input Test MICU. If the circuit is bad, repair the open.",
+          "yes": "Go to the Door Multiplex Control Unit Input Test.  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing",
+          "no": "Check for an open in the communication circuit between the MICU and the door multiplex control unit. If the circuit is OK.replace the"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1026",
+      "description": "Passenger's Door Lock Switch Signal Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Operate the passenger's door lock switch in the LOCK and UNLOCK positions for 2 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1026 indicated?",
+          "yes": "Go to step 5.",
+          "no": "Intermittent failure. The passenger's door lock system is OK at this time. Check pinfits and connections."
+        },
+        {
+          "step": 5,
+          "instruction": "With the door lock in UNLOCK position, select SECURITY from the HDS and enter the DATA LIST.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check the ON/OFF information of the Front Passenger's Door Lock Sw. (LOCK) and Front Psnger's Door Lock Sw. (UNLOCK) in the DATA LIST. Are both information indicators OFF?",
+          "yes": "Go to step 7.",
+          "no": "Go to step 9."
+        },
+        {
+          "step": 7,
+          "instruction": "Make sure the ON/OFF information of the Front Psnger's Door Lock Sw. (LOCK) and Front Psnger's Door Lock Sw. (UNLOCK) are changed when the passenger's door lock switch is in the LOCK and UNLOCK positions. Does the information show the correct ON and OFF indications when the door lock switch in the LOCK and UNLOCK positions?",
+          "yes": "Faulty MICU; replace it.",
+          "no": "Go to step 8."
+        },
+        {
+          "step": 8,
+          "instruction": "Check for a short between the door lock switch LOCK and UNLOCK wires. Are the wire harnesses OK?",
+          "yes": "Faulty passenger's door lock switch; replace",
+          "no": "A short in the wire, repair and recheck."
+        },
+        {
+          "step": 9,
+          "instruction": "Remove the passenger's inner handle.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect the 3P connector from the passenger's door lock switch.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Check the ON/OFF information of the Front Psnger's Door Lock Sw. (LOCK) and Front Psnger's Door Lock Sw. (UNLOCK) in the DATA LIST. Are both information indicators OFF?",
+          "yes": "Faulty passenger's door lock switch; replace it",
+          "no": "Go to step 12."
+        },
+        {
+          "step": 12,
+          "instruction": "Check for a short in the wire between the MICU and passenger's door lock switch at the security alarm/keyless door lock system control unit input test. Are the wire harnesses OK?",
+          "yes": "Faulty MICU; replace it",
+          "no": "A short in the wire, repair and recheck."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1027",
+      "description": "Trunk Key Cylinder Switch Signal Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Operate the trunk key cylinder switch for 2 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check the DTCs using the HDS. Is DTC B1027 indicated?",
+          "yes": "Go to step 5.",
+          "no": "Intermittent failure. The trunk key cylinder system is OK at this time."
+        },
+        {
+          "step": 5,
+          "instruction": "With the trunk key cylinder switch in the off (neutral) position, select the TEST MODE MENU from the HDS and enter the DATA LIST.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check the ON/OFF information of the Trunk Key Cylinder Switch (UNLOCK) in the DATA LIST. Is the information indicator OFF?",
+          "yes": "Go to step 7.",
+          "no": "Go to step 9."
+        },
+        {
+          "step": 7,
+          "instruction": "Make sure the ON/OFF information of the Trunk Key Cylinder Switch (UNLOCK) are changed when the trunk key cylinder switch is turned to UNLOCK position with the key. Does the information show ON when the trunk key cylinder switch is turned to UNLOCK position, and show OFF when the trunk key cylinder switch is returned to the off (neutral) position?",
+          "yes": "Faulty MICU; replace it.",
+          "no": "Go to step 8."
+        },
+        {
+          "step": 8,
+          "instruction": "Check for an open in the wire between the MICU and trunk key cylinder switch. Are the wire harnesses OK?",
+          "yes": "Faulty trunk key cylinder switch; replace it.",
+          "no": "An open in the wire, repair and recheck."
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect the 3P connector from the trunk key cylinder switch.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Check the ON/OFF information of the Trunk Key Cylinder Switch (UNLOCK) in the DATA LIST. Is the information indicator OFF?",
+          "yes": "Faulty trunk key cylinder switch; replace it.",
+          "no": "Go to step 11."
+        },
+        {
+          "step": 11,
+          "instruction": "Check for a short in the wire between the MICU and trunk key cylinder switch. Are the wire harnesses OK?",
+          "yes": "Faulty MICU; replace it.",
+          "no": "A short in the wire, repair and recheck."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1050",
+      "description": ", B1100, B1150, B1200, B1250: Communication Bus Line Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS. Are DTC(s) B1050, B1100, B1150, B1200 or B1250 indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, the system is OK at this time."
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs using the HDS. Is DTC(s) B1000 indicated?",
+          "yes": "Troubleshoot DTC B1000.",
+          "no": "If DTC B1050 is indicated, replace the relay control module. If DTC B1100 is indicated, replace the door multiplex control unit. If DTC"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1150",
+      "description": "is indicated, replace the gauge control module. If DTC B1200 is indicated, replace the climate control unit. If DTC B1250 is indicated, replace the combination switch control unit.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS. Are DTC(s) B1050, B1100, B1150, B1200 or B1250 indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, the system is OK at this time."
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs using the HDS. Is DTC(s) B1000 indicated?",
+          "yes": "Troubleshoot DTC B1000.",
+          "no": "If DTC B1050 is indicated, replace the relay control module. If DTC B1100 is indicated, replace the door multiplex control unit. If DTC"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1055",
+      "description": "Relay Control Module lost communication with MICU",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1056",
+      "description": "Relay Control Module lost communication with MICU",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1057",
+      "description": "Relay Control Module lost communication with MICU (door switch message)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1058",
+      "description": "Relay Control Module lost communication with Door Multiplex Control Unit (door lock switch message)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1059",
+      "description": "Relay Control Module lost communication with Door Multiplex Control Unit (panic message)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1060",
+      "description": "Relay Control Module lost communication with Gauge Control Module (VSP/NE message)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1061",
+      "description": "Relay Control Module lost communication with Gauge Control Module (A/T message)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1062",
+      "description": "Relay Control Module lost communication with Combination Switch Control Unit (headlight switch message)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1063",
+      "description": "Relay Control Module lost communication with Combination Switch Control Unit (wiper switch message)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch OFF then ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs by selecting the DTCs MENU (DTCs) from the HDS. Are DTCs B1055, B1056, B1057, B1058, B1059, B1060, B1061, B1062 and/or B1063 indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, the B-CAN communication line is OK at this time."
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs other than those listed above. Are any other DTCs present? Inspection/Component Tests and General Diagnostics/Relay Control Module Input Test Chart 1-4",
+          "yes": "Go to step 5.",
+          "no": "Perform Relay Control Module Input Test.  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        },
+        {
+          "step": 5,
+          "instruction": "Find the chart that contains at least one retrieved DTC in column A and one retrieved DTC in column B. Perform the input test for the ECU listed in that chart. If no DTC from column B is found, then continue to Relay Control Module input test. See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Component Tests and General Diagnostics",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1075",
+      "description": "Headlight Signal Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the headlights switch from the OFF position to the ON position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1075 indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, the headlight circuit is OK at this time. Check pinfits and connections."
+        },
+        {
+          "step": 4,
+          "instruction": "With the headlight switch OFF, select LIGHTING SYSTEM from the HDS, and enter the DATA LIST.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check the ON/OFF information of the Headlight Switch (BACK-UP) in the DATA LIST. Is the information indicator OFF?",
+          "yes": "Go to step 6.",
+          "no": "Go to step 10."
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the headlight switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check the ON/OFF information of the Headlight Switch (BACK-UP) in the DATA LIST. Is the information indicator ON?",
+          "yes": "Troubleshoot DTC B1278.",
+          "no": "Go to step 8."
+        },
+        {
+          "step": 8,
+          "instruction": "Disconnect the relay control module 10P connector (under-hood fuse/relay box connector I) and the wiper/washer switch 8P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Check for continuity between the No. 6 terminal of the relay control module 10P connector and the No. 1 terminal of the wiper/washer switch (combination switch control unit) 8P connector. Is there continuity?",
+          "yes": "Faulty combination switch control unit; replace the wiper/washer switch.",
+          "no": "Repair an open in the WHT wire."
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect the relay control module 10P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Check for continuity between the No. 6 terminal of the relay control module 10P connector I and body ground. Is there continuity?",
+          "yes": "Repair a short in the WHT wire.",
+          "no": "Faulty combination switch control unit; replace the wiper/washer switch."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1076",
+      "description": "Windshield Wiper Signal Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the wiper switch to INT, LOW, then HIGH for at least 2 seconds each.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1076 indicated?",
+          "yes": "Go to step 5.",
+          "no": "Intermittent failure. The windshield wiper system is OK at this time. Check pinfits and connections."
+        },
+        {
+          "step": 5,
+          "instruction": "With the wiper/washer switch OFF, select WINDSHIELD WIPERS from the HDS, and enter the DATA LIST.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check the ON/OFF information of the Windshield Wiper Switch (BACK-UP) in the DATA LIST. Is the information indicator OFF?",
+          "yes": "Go to step 7.",
+          "no": "Go to step 11."
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the wiper switch ON (low or high).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Check the ON/OFF information of the Windshield Wiper Switch (BACK-UP) in the DATA LIST. Is the information indicator ON?",
+          "yes": "Faulty relay control module; replace the under-hood fuse/relay box.",
+          "no": "Go to step 9."
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect the relay control module 10P connector and the wiper/washer switch 8P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Check for continuity between the No. 5 terminal of the relay control module 10P connector and the No. 5 terminal of the wiper/washer switch (combination switch control unit) 8P connector. Is there continuity?",
+          "yes": "Faulty combination switch control unit; replace the wiper/washer switch.",
+          "no": "Repair an open in the GRN/WHT wire."
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect the relay control module 10P connector and the wiper/washer switch 8P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between the No. 5 terminal of the relay control module 10P connector and body ground. Is there continuity?",
+          "yes": "Repair a short in the GRN/WHT wire.",
+          "no": "Faulty relay control module; replace the under-hood fuse/relay box."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1077",
+      "description": "Windshield Wiper (As) Signal Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the wiper switch to INT, LOW, then HIGH for at least 2 seconds each.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1077 indicated?",
+          "yes": "Go to step 5.",
+          "no": "Intermittent failure. The windshield wiper system is OK at this time. Check pinfits and connections."
+        },
+        {
+          "step": 5,
+          "instruction": "Check the No. 7 (10 A), No. 11 (30 A) and No. 21 (7.5 A) fuses in the under-dash fuse/relay box. Are the fuses OK?",
+          "yes": "Go to step 6.",
+          "no": "Replace the blown fuse and recheck the system."
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Select FUNCTIONAL TEST from the TEST MODE MENU, and operate the windshield wiper motor with FR WIPER (LOW) and FR WIPER (HIGH). Does the windshield wiper motor run?",
+          "yes": "Go to step 8.",
+          "no": "Go to step 15."
+        },
+        {
+          "step": 8,
+          "instruction": "Turn the windshield wiper switch OFF, and stop the wiper arms at the park position. (If the wiper arms do not stop at the park position, turn the ignition switch OFF and stop them at the park position correctly.)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Turn the ignition switch ON (II). Do the wipers begin to run as soon as the ignition switch is cycled ON?",
+          "yes": "Go to step 14.",
+          "no": "Go to step 10."
+        },
+        {
+          "step": 10,
+          "instruction": "Check the ON/OFF information of the Windshield Wiper Motor PARK Switch in the DATA LIST. Is the information indicator OFF?",
+          "yes": "Go to step 11.",
+          "no": "Faulty relay control module; replace the under-hood fuse/relay box."
+        },
+        {
+          "step": 11,
+          "instruction": "Turn the ignition switch ON (II), and turn the windshield wiper switch ON at low speed.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check the ON/OFF information of the Windshield Wiper Motor PARK Switch in the DATA LIST. Does the DATA LIST information indicate ON and OFF alternately as the wipers pass the PARK position?",
+          "yes": "Intermittent failure, the windshield wiper system is OK at this time. Check pinfits and connections.",
+          "no": "Go to step 13."
+        },
+        {
+          "step": 13,
+          "instruction": "Check for continuity between the No. 4 terminal of the windshield wiper motor 5P connector and No. 5 terminal of the under-hood fuse/relay box 5P connector J. Is there continuity ?",
+          "yes": "Faulty windshield wiper motor; replace it.",
+          "no": "Repair an open in the WHT wire."
+        },
+        {
+          "step": 14,
+          "instruction": "Check for continuity between the No. 5 terminal of the under-hood fuse/relay box 5P connector J and body ground. Is there continuity?",
+          "yes": "Repair a short in the WHT wire.",
+          "no": "Faulty windshield wiper motor; replace it."
+        },
+        {
+          "step": 15,
+          "instruction": "Turn the ignition switch OFF, and check the No. 11 (30 A) fuse in the under-dash fuse/relay box. Is the fuse OK?",
+          "yes": "Go to step 16.",
+          "no": "Replace the blown fuse and recheck the system."
+        },
+        {
+          "step": 16,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 17,
+          "instruction": "Check for voltage between the No. 2 terminal of the windshield wiper motor 5P connector and body ground. Is there battery voltage?",
+          "yes": "Go to step 18.",
+          "no": "Repair an open in the GRN wire."
+        },
+        {
+          "step": 18,
+          "instruction": "Check for continuity between the No. 3 and No. 5 terminals of the windshield wiper motor 5P connector and the No. 2 and No. 4 terminal of the under-hood fuse/relay box 5P connector J. Is there continuity?",
+          "yes": "Go to step 19.",
+          "no": "Repair an open in the BLU or YEL wire."
+        },
+        {
+          "step": 19,
+          "instruction": "Perform the wiper motor test.  See: Wiper and Washer Systems/Wiper Motor/Testing and Inspection Does the wiper motor operate correctly?",
+          "yes": "Faulty relay module; Replace the under-hood fuse/relay box.",
+          "no": "Replace the windshield wiper motor."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1078",
+      "description": "Daytime Running Lights malfunction (Canada)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Operate the parking brake lever.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1078 indicated?",
+          "yes": "Go to step 5.",
+          "no": "Intermittent failure, the daytime running lights system is OK at this time. Check pinfits and connections."
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the headlight switch ON, then push the combination light switch forward for high beams. Do both headlights come on?",
+          "yes": "Go to step 6.",
+          "no": "Go to step 9."
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the headlight switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Select LIGHTING SYSTEM from the HDS, and enter the DATA LIST.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Check the ON/OFF information of the DRL Relay Command (Canada) in the DATA LIST. Is the information indicator ON? Inspection/Component Tests and General Diagnostics/Relay Control Module Input Test",
+          "yes": "Replace the daytime running lights relay.",
+          "no": "Go to the relay control module input test.  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        },
+        {
+          "step": 9,
+          "instruction": "Check the No. 3 (10 A) or No. 5 (10 A) fuses in the under-hood fuse/relay box. Are both fuses OK?",
+          "yes": "Go to step 10.",
+          "no": "Replace the blown fuse and recheck the system."
+        },
+        {
+          "step": 10,
+          "instruction": "Check headlight bulbs. Are both bulbs OK?",
+          "yes": "Go to step 11.",
+          "no": "Replace the blown bulb and recheck the system."
+        },
+        {
+          "step": 11,
+          "instruction": "Check for continuity between the No. 2 terminal of the headlight (high beam) 2P connectors and the No. 8 (left headlight) or No. 10 (right headlight) terminals of the under-hood fuse/relay box 14P connector H. Is there continuity?",
+          "yes": "Go to step 12.",
+          "no": "Repair an open in the WHT/YEL (left headlight) or WHT/GRN (right headlight) wire."
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between the No. 1 terminal of the headlight (high beam) 2P connectors and body ground. Is there continuity?",
+          "yes": "Faulty relay control module; replace the under-hood fuse/relay box.",
+          "no": "Check the daytime running lights relay (left headlight). If OK, repair an open in the BLK wire or poor ground (G201, G301)."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1079",
+      "description": "Daytime Running Lights Malfunction (USA) ('06 model)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Make sure the brake pedal position switch is OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Make sure the headlight switch is OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check for DTCs with the HDS. Is DTC B1079 indicated?",
+          "yes": "Go to step 7.",
+          "no": "Intermittent failure. The daytime running light system is OK at this time. Check for loose or poor connections."
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the headlight switch ON, then push the combination light switch forward for high beams. Do both headlights come on? headlights don't come on, go to step 11.",
+          "yes": "Go to step 8.",
+          "no": "If one of the headlights doesn't come on, check the fuse and bulb, and for a poor ground (G201, G301) or an open in the wire. If both"
+        },
+        {
+          "step": 8,
+          "instruction": "Turn the headlight switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Select LIGHTING SYSTEM from the HDS, and enter the DATA LIST.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Check the ON/OFF information of the DRL Command in the DATA LIST. Is the information indicator ON? Inspection/Component Tests and General Diagnostics/Relay Control Module Input Test",
+          "yes": "Go to relay control module input test.  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and",
+          "no": "Substitute a known-good daytime running light control unit and recheck the system."
+        },
+        {
+          "step": 11,
+          "instruction": "Check the No. 3 (10 A) and No. 5 (10 A) fuses in the under-hood fuse/relay box. Are both fuses OK?",
+          "yes": "Go to step 12.",
+          "no": "Replace the blown fuse, and recheck the system."
+        },
+        {
+          "step": 12,
+          "instruction": "Check the headlight bulbs. Are both bulbs OK?",
+          "yes": "Go to step 13.",
+          "no": "Replace the blown bulb, and recheck the system."
+        },
+        {
+          "step": 13,
+          "instruction": "Disconnect the 2P connector from each headlight high beam.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "Disconnect under-hood fuse/relay box connector H (14P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "Check for continuity between left headlight high beam 2P connector terminal No. 2 and under-hood fuse/relay box connector H (14P) terminal No. 8, and between right headlight high beam 2P connector terminal No. 2 and under-hood fuse/relay box connector H (14P) terminal No. 10. Is there continuity?",
+          "yes": "Go to step 16.",
+          "no": "Repair an open in the wire."
+        },
+        {
+          "step": 16,
+          "instruction": "Check for continuity between each headlight high beam 2P connector terminal No. 1 and body ground. Is there continuity?",
+          "yes": "Faulty relay control module; replace the under-hood fuse/relay box.",
+          "no": "Repair an open in the wire or a poor ground (G201,G301)."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1080",
+      "description": "Power Supply Circuit (IG1 line) Input Error for Relay Control Module and MICU",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch ON (II) and wait for 2 seconds or more. Is DTC B1080 indicated again? battery condition and the charging system.",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, the relay control module is OK at this time. Check for loose or poor connections. If the connections are good, check the"
+        },
+        {
+          "step": 4,
+          "instruction": "Check the MICU IG1 power supply No. 21 (7.5 A) fuse in the under-dash fuse/relay box. Is the fuse OK? Inspection/Component Tests and General Diagnostics/MICU Input Test",
+          "yes": "Go to MICU Input Test.  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and",
+          "no": "Replace the fuse and recheck for DTCs."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1100",
+      "description": "B1050, B1100, B1150, B1200, B1250: Communication Bus Line Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS. Are DTC(s) B1050, B1100, B1150, B1200 or B1250 indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, the system is OK at this time."
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs using the HDS. Is DTC(s) B1000 indicated?",
+          "yes": "Troubleshoot DTC B1000.",
+          "no": "If DTC B1050 is indicated, replace the relay control module. If DTC B1100 is indicated, replace the door multiplex control unit. If DTC"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1102",
+      "description": "Door Multiplex Control Unit Internal Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Operate the power window (UP/DOWN).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1102 indicated? check the battery condition and the charging system.",
+          "yes": "Faulty door multiplex control unit; replace the power window master switch.",
+          "no": "Intermittent failure, the door multiplex control unit is OK at this time. Check for loose or poor connections. If the connections are good,"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1125",
+      "description": "Driver's Power Window Motor A Pulse Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1126",
+      "description": "Driver's Power Window Motor B Pulse Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Open and close the driver's power window by using the driver's switch manually.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "While the power window moving, select POWER WINDOWS from the HDS and enter the DATA LIST.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check the EXIST/NONE information of the P/W PLSA (B1125) or P/W PLSB (B1126) in the DATA LIST. Do the information indicators display EXIST?",
+          "yes": "Replace the power window master switch.",
+          "no": "Go to step 4."
+        },
+        {
+          "step": 4,
+          "instruction": "Refer to the power window master switch input test,  See: Sensors and Switches/Sensors and Switches - Windows and Glass/Power Window Switch/Testing and Inspection/Master Switch Input Test check for continuity between the driver's power window motor 6P connector and the power window master switch 23P connector. Are all the wire harnesses OK? DTC is still indicated, replace the driver's power window motor.",
+          "yes": "Substitute a known-good power window master switch, and recheck. If DTC is gone, the original master switch is faulty; replace it. If the",
+          "no": "Repair a short or an open in the wire."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1127",
+      "description": "Driver's Door Key Cylinder Switch Signal Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Operate the driver's door key cylinder in the LOCK and UNLOCK positions for 2 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1127 indicated?",
+          "yes": "Go to step 5.",
+          "no": "Intermittent failure. The driver's door key cylinder system is OK at this time. Check pinfits and connections."
+        },
+        {
+          "step": 5,
+          "instruction": "With no driver's door key cylinder operation, select SECURITY from the HDS, and enter the DATA LIST.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check the ON/OFF information of the Driver's Door Key Cylinder Switch (LOCK) and Driver's Door Key Cylinder Switch (UNLOCK) in the DATA LIST. Are both information indicators OFF?",
+          "yes": "Go to step 7.",
+          "no": "Go to step 10."
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the driver's door key cylinder to the LOCK and UNLOCK positions with the ignition key and check the ON/OFF information of the Driver's Door Key Cylinder Switch (LOCK) and Driver's Door Key Cylinder Switch (UNLOCK) in the DATA LIST. Is the Driver's Door Key Cylinder Switch (LOCK) (Driver's Door Key Cylinder Switch (UNLOCK)) information indicator ON when the key cylinder is in the LOCK (UNLOCK) position, and OFF when the key is returned to the neutral position?",
+          "yes": "Faulty door multiplex control unit; replace the power window master switch.",
+          "no": "Go to step 8."
+        },
+        {
+          "step": 8,
+          "instruction": "Disconnect the driver's door key cylinder switch 3P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Check for continuity between the No. 3 (LOCK) and No. 1 (UNLOCK) terminals of the driver's door key cylinder switch 3P connector and the No. 8 (LOCK) and No. 21 (UNLOCK) terminals of the power window master switch 23P connector. Is there continuity?",
+          "yes": "Faulty driver's door key cylinder switch.",
+          "no": "Repair an open in the WHT/RED (LOCK) or WHT (UNLOCK) wire."
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect the driver's door key cylinder switch 3P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Check the ON/OFF information of the Driver's Door Key Cylinder Switch (LOCK) and Driver's Door Key Cylinder Switch (UNLOCK) in the DATA LIST. Are both information indicators OFF?",
+          "yes": "Faulty driver's door key cylinder switch.",
+          "no": "Go to step 12."
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between the No. 3 (LOCK) and No. 1 (UNLOCK) terminals of the driver's door key cylinder switch 3P connector and body ground. Is there continuity?",
+          "yes": "Repair a short in the WHT/RED (LOCK) or WHT (UNLOCK) wire.",
+          "no": "Faulty door multiplex control unit; replace the power window master switch."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1128",
+      "description": "Driver's Door Lock Switch Signal Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Operate the driver's door look switch in the LOCK and UNLOCK positions for 2 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs using the HDS. Is DTCB1128 indicated?",
+          "yes": "Go to step 5.",
+          "no": "Intermittent failure. The driver's door lock switch system is OK at this time. Check pinfits and connections."
+        },
+        {
+          "step": 5,
+          "instruction": "With no driver's door lock switch operation, select SECURITY from the HDS, and enter the DATA LIST.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check the ON/OFF information of the Driver's Door Lock Switch (LOCK) and Driver's Door Lock Switch (UNLOCK) in the DATA LIST. Are both information indicators OFF? switch.",
+          "yes": "Go to step 7.",
+          "no": "Check the door lock switch. If the driver's door lock switch is OK, faulty door multiplex control unit;replace the power window master"
+        },
+        {
+          "step": 7,
+          "instruction": "Push the driver's door lock switch in LOCK and UNLOCK positions and check the ON/OFF information of the Driver's Door Lock Switch (LOCK) and Driver's Door Lock Switch (UNLOCK) in the DATA LIST. Is the Driver's Door Lock Switch (LOCK) (Driver's Door Lock Switch (UNLOCK)) information indicator ON when the door lock switch is pushed in each switch position, and OFF when the door lock switch is released?",
+          "yes": "Substitute known-good power window master switch. If code still present, replace the MICU.",
+          "no": "Faulty door multiplex control unit; replace the power window master switch."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1129",
+      "description": "Driver's Door Lock Knob Switch Signal Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Operate the driver's door lock knob switch in the LOCK and UNLOCK positions for 2 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1129 indicated?",
+          "yes": "Go to step 5.",
+          "no": "Intermittent failure. The driver's door lock knob switch system is OK at this time. Check pinfits and connections."
+        },
+        {
+          "step": 5,
+          "instruction": "Select SECURITY from the HDS, and enter the DATA LIST. Check the ON/OFF information of the Driver's Door Lock knob Switch (LOCK) and Driver's Door Lock knob Switch (UNLOCK) in the DATA LIST. Is the Driver's Door Lock knob Switch (LOCK) information indicator ON and Driver's Door Lock knob Switch (UNLOCK) information indicator OFF with the door lock knob switch in LOCK position, and is the Driver's Door Lock knob Switch (LOCK) information indicator OFF and Driver's Door Lock knob Switch (UNLOCK) information indicator ON with the door lock knob switch in UNLOCK position?",
+          "yes": "Substitute a known-good power window master switch. If code still present, replace the MICU.",
+          "no": "Go to step 6."
+        },
+        {
+          "step": 6,
+          "instruction": "Disconnect the driver's door lock knob switch 3P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check the ON/OFF information of the Driver's Door Lock knob Switch (LOCK) and Driver's Door Lock knob Switch (UNLOCK) in the DATA LIST. Are both information indicators OFF?",
+          "yes": "Faulty driver's door lock knob switch.",
+          "no": "Go to step 8."
+        },
+        {
+          "step": 8,
+          "instruction": "Check for continuity between the No. 2 (LOCK) and No. 1 (UNLOCK) terminals of the driver's door lock knob switch 3P connector and body ground. Is there continuity? Inspection/Keyless/Power Door Locks/Security System/Component Tests/Door Lock Knob Switch Test If the driver's door lock knob switch is OK, the door multiplex control unit is faulty; replace the power window master switch.",
+          "yes": "Repair a short in the YEL/RED (LOCK) or WHT/BLK (UNLOCK) wire.",
+          "no": "Go to driver's door lock knob switch test.  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Testing and"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1140",
+      "description": "Driver's Power Window Position Detect Circuit Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Open and close the driver's power window by using the driver's switch manually.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1125 or B1126 indicated?",
+          "yes": "Troubleshoot the DTC B1125 or B1126.",
+          "no": "Go to step 5."
+        },
+        {
+          "step": 5,
+          "instruction": "Reset the power window control unit.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check for DTCs again using the HDS. Is DTC B1140 indicated?",
+          "yes": "Faulty door multiplex control unit; replace the power window master switch.",
+          "no": "The system is recovered at this time."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1152",
+      "description": "Gauge Control Module EEPROM Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Start the engine.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs by selecting the DTCs MENU (DTCs) from the HDS. Is DTC B1152 indicated? battery condition , and the charging system.",
+          "yes": "Faulty gauge control module; replace the gauge control module.",
+          "no": "Intermittent failure, the gauge control module is OK at this time. Check pinfits and connections. If the connections are good, check the"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1155",
+      "description": "Gauge Control Module Lost Communication (Headlight Switch Message) with the Combination Switch Control Unit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs by selecting the DTCs MENU (DTCs) from the HDS. Is DTC B1155 indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure. The gauge control system is OK at this time. Check pinfits and connections."
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs by selecting the DTCs MENU (DTCs) from the HDS. Are DTCs B1007 or B1062 also indicated? Bus/Testing and Inspection/Component Tests and General Diagnostics/Combination Switch Control Unit Input Test Inspection/Component Tests and General Diagnostics/Gauge Control Module Input Test",
+          "yes": "Go to Combination Switch Control Unit Input Test.  See: Powertrain Management/Computers and Control Systems/Information",
+          "no": "Go to Gauge Control Module Input Test.  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1156",
+      "description": "Gauge Control Module Lost Communication (Wiper Switch Message) with the Combination Switch Control Unit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs by selecting the DTCs MENU (DTCs) from the HDS. Is DTC B1156 indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure. The gauge control system is OK at this time. Check pinfits and connections."
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs by selecting the DTCs MENU (DTCs) of the HDS. Are DTCs B1009 or B1063 also indicated? Bus/Testing and Inspection/Component Tests and General Diagnostics/Combination Switch Control Unit Input Test Inspection/Component Tests and General Diagnostics/Gauge Control Module Input Test",
+          "yes": "Go to Combination Switch Control Unit Input Test.  See: Powertrain Management/Computers and Control Systems/Information",
+          "no": "Go to Gauge Control Module Input Test.  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1157",
+      "description": "Gauge Control Module Lost Communication with Multiplex Integrated Control Unit (MICU)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs by selecting the DTCs MENU (DTCs) from the HDS. Is DTC B1157 indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure. The gauge control system is OK at this time. Check pinfits and connections."
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs by selecting the DTCs MENU (DTCs) from the HDS. Are DTCs B1055 and B1255 also indicated? Bus/Testing and Inspection/Component Tests and General Diagnostics/MICU Input Test Inspection/Component Tests and General Diagnostics/Gauge Control Module Input Test",
+          "yes": "Go to Multiplex Integrated Control Unit Input Test.  See: Powertrain Management/Computers and Control Systems/Information",
+          "no": "Go to Gauge Control Module Input Test.  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1158",
+      "description": "Gauge Control Module Lost Communication with Relay Module",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs by selecting the DTCs MENU (DTCs) from the HDS. Is DTC B1158 indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure. The gauge control system is OK at this time. Check pinfits and connections."
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs by the DTCs MENU (DTCs) of the HDS. Is DTC B1005 also indicated? Inspection/Component Tests and General Diagnostics/Relay Control Module Input Test Inspection/Component Tests and General Diagnostics/Gauge Control Module Input Test",
+          "yes": "Go to Relay Control Module Input Test.  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and",
+          "no": "Go to Gauge Control Module Input Test.  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1159",
+      "description": "Gauge Control Module Lost Communication (Door Switch Message) with the Multiplex Integrated Control Unit (MICU)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs by selecting the DTCs MENU (DTCs) from the HDS. Is DTC B1159 indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure. The gauge control system is OK at this time. Check pinfits and connections."
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs by selecting the DTCs MENU (DTCs) from the HDS. Is DTC B1057 also indicated? and Inspection/Component Tests and General Diagnostics/MICU Input Test Inspection/Component Tests and General Diagnostics/Gauge Control Module Input Test",
+          "yes": "Go to Multiplex Integrated Control Unit Input Test.See: Powertrain Management/Computers and Control Systems/Information Bus/Testing",
+          "no": "Go to Gauge Control Module Input Test.  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1160",
+      "description": "Gauge Control Module Lost Communication (Door Lock Switch Message) with the Door Multiplex Control Unit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs by selecting the DTCs MENU (DTCs) from the HDS. Is DTC B1160 indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure. The gauge control system is OK at this time. Check pinfits and connections."
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs by the DTCs MENU (DTCs) of the HDS. Are DTCs B1006 or B1058 also indicated? Inspection/Component Tests and General Diagnostics/Door Multiplex Control Unit Input Test Inspection/Component Tests and General Diagnostics/Gauge Control Module Input Test",
+          "yes": "Go to Door Multiplex Control Unit Input Test.  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and",
+          "no": "Go to Gauge Control Module Input Test.  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1168",
+      "description": "Gauge Control Module Lost Communication with PCM (Engine Messages)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1178",
+      "description": "F-CAN Communication Line Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1169",
+      "description": "Gauge Control Module Lost Communication with the PCM (A/T Messages)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch OFF then back to the ON (II),",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and run the engine for at least 5 seconds then turn the engine off.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1178, B1168 and/or B1169 indicated? check the battery condition and the charging system.",
+          "yes": "Go to step 5.",
+          "no": "Intermittent failure, the F-CAN communication line is OK at this time. Check for loose or poor connections. If the connections are good,"
+        },
+        {
+          "step": 5,
+          "instruction": "Check for DTCs in the PCM, ABS/TCS or Navigation. Are any DTCs indicated?",
+          "yes": "Troubleshoot the PCM, ABS/TCS or Navigation DTCs.",
+          "no": "Go to step 6."
+        },
+        {
+          "step": 6,
+          "instruction": "Perform the Gauge Control Module Input Test.  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Component Tests and General Diagnostics/Gauge Control Module Input Test Are all inputs OK?",
+          "yes": "Go to step 7.",
+          "no": "Repair the faulty input then recheck for DTCs."
+        },
+        {
+          "step": 7,
+          "instruction": "Substitute a known-good gauge control module.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Turn the ignition switch OFF then back to the ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Start and run the engine for at least 5 seconds then turn the engine off.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1178, B1168 and/or B1169 indicated?",
+          "yes": "Substitute a known-good PCM and retest. If the system/indication goes away, replace the original PCM.",
+          "no": "The original gauge control module is faulty; replace the gauge control module."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1175",
+      "description": "Fuel Gauge Sending Unit Signals Input Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Do the fuel gauge sending unit test. Is the fuel gauge sending unit OK?",
+          "yes": "Go to step 2.",
+          "no": "Replace the fuel gauge sending unit"
+        },
+        {
+          "step": 2,
+          "instruction": "Reconnect the 5P connector to the fuel gauge sending unit.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for voltage between the No. 3 and No. 4 terminals of the gauge control module 30P connector and No. 1 and No. 2 terminals of the fuel pump/fuel gauge sending unit 5P connector. Is there less than 1 V?",
+          "yes": "Go to step 5.",
+          "no": "Repair an open in the wire between the gauge control module and fuel gauge sending unit"
+        },
+        {
+          "step": 5,
+          "instruction": "Disconnect the gauge control module 30P and the fuel gauge sending unit 5P connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check for continuity between the No. 3 and No. 4 terminal of the gauge control module 30P connector and body ground. Is there continuity? control module with a known-good one. If the problem is gone, replace the gauge control module.",
+          "yes": "Repair a short in the wire.",
+          "no": "Inspect all pinfits between the gauge control module and the sending unit. If circuit integrity is good, and the problem still exist, swap gauge"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1177",
+      "description": "Abnormal Battery Voltage (7.5 V)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check the DTCs by selecting the DTCs MENU (DTCs) from the HDS. Is DTC B1177 indicated?",
+          "yes": "Go to step 5.",
+          "no": "Go to step 4."
+        },
+        {
+          "step": 4,
+          "instruction": "Crank the engine. Is DTC B1177 indicated? time.",
+          "yes": "Go to step 5.",
+          "no": "Intermittent failure. The gauge control module and power supply voltage (IG1) that is supplied to the gauge control module are OK at this"
+        },
+        {
+          "step": 5,
+          "instruction": "Check the battery, and the charging system. Is the battery condition and the charging system normal?",
+          "yes": "Go to step 6.",
+          "no": "Abnormal battery condition which needs a recharge or replacement, or a charging system repair."
+        },
+        {
+          "step": 6,
+          "instruction": "With the gauge control module 30P connector still connected, turn the ignition switch to ON, and check for voltage between the No. 5 terminal and body ground. Is there 7.5 V or more?",
+          "yes": "Go to step 7.",
+          "no": "Repair an open or high resistance in the YEL wire between the gauge control module and under-dash fuse/relay box."
+        },
+        {
+          "step": 7,
+          "instruction": "Check for voltage between the No. 5 and No. 21 terminals. Is there 7.5 V or more?",
+          "yes": "Faulty gauge control module; Replace the gauge control module.",
+          "no": "Repair an open or high resistance in the BLK wire between the gauge control module and ground."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1200",
+      "description": "B1050, B1100, B1150, B1200, B1250: Communication Bus Line Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS. Are DTC(s) B1050, B1100, B1150, B1200 or B1250 indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, the system is OK at this time."
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs using the HDS. Is DTC(s) B1000 indicated?",
+          "yes": "Troubleshoot DTC B1000.",
+          "no": "If DTC B1050 is indicated, replace the relay control module. If DTC B1100 is indicated, replace the door multiplex control unit. If DTC"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1202",
+      "description": "Climate Control Unit Internal Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1202 indicated?",
+          "yes": "The climate control unit is faulty, replace the audio-HVAC display panel.",
+          "no": "Intermittent failure, the audio-HVAC display panel is OK at this time."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1205",
+      "description": "Climate Control Unit Lost Communication with Gauge Control Module (VSP/NE messages)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1205 indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, check for loose wires or poor connections on the gauge control module circuit."
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs using the HDS. IS DTC B1011, B1060, B1408, B1610, B1805, or B2160 indicated? Inspection/Component Tests and General Diagnostics/Gauge Control Module Input Test",
+          "yes": "Go to the gauge control module input test.  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and",
+          "no": "The climate control unit is faulty, replace the audio-HVAC display panel."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1206",
+      "description": "Climate Control Unit Lost Communication with Gauge Control Module (ECT messages)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1206 indicated?",
+          "yes": "The audio-HVAC display panel is faulty, replace the audio-HVAC display panel.",
+          "no": "Intermittent failure, check for loose wires or poor connections on the gauge control module circuit."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1207",
+      "description": "Climate Control Unit Lost Communication with Gauge Control Module (ILLUMI messages)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1207 indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, check for loose wires or poor connections on the gauge control module circuit."
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs using the HDS. Is DTC B2157 indicated? Inspection/Component Tests and General Diagnostics/Gauge Control Module Input Test",
+          "yes": "Go to the gauge control module input test.  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and",
+          "no": "The audio-HVAC display panel is faulty, replace the audio-HVAC display panel."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1225",
+      "description": "or DTC indicator A: An Open in the In-car Temperature Sensor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B1225 or A indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, check for loose wires or poor connections on the in-car temperature sensor circuit."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Remove the in-car temperature sensor, and test it. Is the in-car temperature sensor OK ?",
+          "yes": "Go to step 6.",
+          "no": "Replace the in-car temperature sensor."
+        },
+        {
+          "step": 6,
+          "instruction": "Disconnect audio-HVAC display panel connector A(22P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check for continuity between the No. 11 terminal of audio-HVAC display panel connector A (22P) and the No. 1 terminal of the in-car temperature sensor 2P connector. Is there continuity?",
+          "yes": "Go to step 8.",
+          "no": "Repair open in the wire between the audio-HVAC display panel and the in-car temperature sensor."
+        },
+        {
+          "step": 8,
+          "instruction": "Check for continuity between the No. 15 terminal of audio-HVAC display panel connector A (22P) and the No. 2 terminal of the in-car temperature sensor 2P connector. Is there continuity? connector. If the connections are good, substitute a known-good climate control unit, and recheck. If the symptom/indication goes away, replace the original audio-HVAC display panel.",
+          "yes": "Check for loose wires or poor connections at audio-HVAC display panel connector A (22P) and at the in-car temperature sensor 2P",
+          "no": "Repair open in the wire between the audio-HVAC display panel and the in-car temperature sensor."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1226",
+      "description": "or DTC indicator B: A Short in the In-car Temperature Sensor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B1226 or B indicated?",
+          "yes": "Go to step 4",
+          "no": "Intermittent failure."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Remove the in-car temperature sensor, and test it. Is the in-car temperature sensor OK?",
+          "yes": "Go to step 6.",
+          "no": "Replace the in-car temperature sensor."
+        },
+        {
+          "step": 6,
+          "instruction": "Disconnect audio-HVAC display panel connector A (22P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check for continuity between the No. 11 terminal of audio-HVAC display panel connector A (22P) and body ground. Is there continuity?",
+          "yes": "Repair short to body ground in the wire between the audio-HVAC display panel and the in-car temperature sensor.",
+          "no": "Go to step 8."
+        },
+        {
+          "step": 8,
+          "instruction": "Check for continuity between the No. 11 terminal and the No 15 terminal of audio-HVAC display panel connector A (22P). Is there continuity? display panel.",
+          "yes": "Repair short in the wires between the audio-HVAC display panel and the in-car temperature sensor.",
+          "no": "Substitute a known-good audio-HVAC display panel, and recheck If the symptom/indication goes away, replace the original audio-HVAC"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1227",
+      "description": "or DTC indicator C: An Open in the Outside Air Temperature Sensor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B1227 or C indicated?",
+          "yes": "Go to step 4",
+          "no": "Intermittent failure, check for loose wires or poor connections on the outside air temperature sensor circuit."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Remove the outside air temperature sensor, and test it. Is the outside air temperature sensor OK?",
+          "yes": "Go to step 6.",
+          "no": "Replace the outside air temperature sensor."
+        },
+        {
+          "step": 6,
+          "instruction": "Disconnect audio-HVAC display panel connector A (22P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check for continuity between the No. 12 terminal of audio-HVAC display panel connector A (22P) and the No. 1 terminal of the outside air temperature sensor 2P connector. Is there continuity?",
+          "yes": "Go to step 8.",
+          "no": "Repair open in the wire between the audio-HVAC display panel and the outside air temperature sensor."
+        },
+        {
+          "step": 8,
+          "instruction": "Check for continuity between the No. 15 terminal of audio-HVAC display panel connector A (22P) and the No. 2 terminal of the outside air temperature sensor 2P connector. Is there continuity? connector. If the connections are good, substitute a known-good audio-HVAC display panel, and recheck. If the symptom/indication goes away, replace the original audio-HVAC display panel.",
+          "yes": "Check for loose wires or poor connections at audio-HVAC display panel connector A (22P) and at the outside air temperature sensor 2P",
+          "no": "Repair open in the wire between the audio-HVAC display panel and the outside air temperature sensor."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1228",
+      "description": "or DTC indicator D: A Short in the Outside Air Temperature Sensor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B1228 or D indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Remove the outside air temperature sensor, and test it. Is the outside air temperature sensor OK ?",
+          "yes": "Go to step 6.",
+          "no": "Replace the outside air temperature sensor."
+        },
+        {
+          "step": 6,
+          "instruction": "Disconnect audio-HVAC display panel connector A (22P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check for continuity between the No. 12 terminal of audio-HVAC display panel connector A (22P) and body ground. Is there continuity?",
+          "yes": "Repair short to body ground in the wire between the audio-HVAC display panel and the outside air temperature sensor.",
+          "no": "Go to step 8."
+        },
+        {
+          "step": 8,
+          "instruction": "Check for continuity between the No. 12 terminal and the No. 15 terminal of audio-HVAC display panel connector A (22P). Is there continuity? display panel.",
+          "yes": "Repair short in the wires between the audio-HVAC display panel and the outside air temperature sensor.",
+          "no": "Substitute a known-good audio-HVAC display panel, and recheck. If the symptom/indication goes away, replace the original audio-HVAC"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1229",
+      "description": "or DTC indicator E: An Open in the Sunlight Sensor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B1229 or E indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, check for loose wires or poor connections on the sunlight sensor circuit."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Disconnect the sunlight sensor 2P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Disconnect audio-HVAC display panel connector A (22P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check for continuity between the No. 13 terminal of audio-HVAC display panel connector A (22P) and the No. 2 terminal of the sunlight sensor 2P connector. Is there continuity?",
+          "yes": "Go to step 8.",
+          "no": "Repair open in the wire between the audio-HVAC display panel and the sunlight sensor."
+        },
+        {
+          "step": 8,
+          "instruction": "Check for continuity between the No. 15 terminal of audio-HVAC display panel connector A (22P) and the No. 1 terminal of the sunlight sensor 2P connector. Is there continuity?",
+          "yes": "Go to step 9.",
+          "no": "Repair open in the wire between the audio-HVAC display panel and the sunlight sensor."
+        },
+        {
+          "step": 9,
+          "instruction": "Reconnect the sunlight sensor 2P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Reconnect audio-HVAC display panel connector A (22P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Test the sunlight sensor. Is the sunlight sensor OK? connections are good, substitute a known-good audio-HVAC display panel, and recheck. If the symptom/indication goes away, replace the original audio-HVAC display panel.",
+          "yes": "Check for loose wires or poor connections at audio-HVAC display panel connector A (22P) and at the sunlight sensor 2P connector. If the",
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1230",
+      "description": "or DTC indicator F:A Short in the Sunlight Sensor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B1230 or F indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Disconnect the sunlight sensor 2P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Disconnect audio-HVAC display panel connector A (22P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check for continuity between the No. 13 terminal of audio-HVAC display panel connector A (22P) and body ground. Is there continuity?",
+          "yes": "Repair short to body ground in the wire between the audio-HVAC display panel and the sunlight sensor.",
+          "no": "Go to step 8."
+        },
+        {
+          "step": 8,
+          "instruction": "Check for continuity between the No. 13 terminal and the No. 15 terminal of audio-HVAC display panel connector A (22P). Is there continuity?",
+          "yes": "Repair short in the wires between the audio-HVAC display panel and the sunlight sensor.",
+          "no": "Go to step 9."
+        },
+        {
+          "step": 9,
+          "instruction": "Reconnect the sunlight sensor 2P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Reconnect audio-HVAC display panel connector A (22P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Test the sunlight sensor. Is the sunlight sensor OK ? display panel.",
+          "yes": "Substitute a known-good audio-HVAC display panel, and recheck. If the symptom/indication goes away, replace the original audio-HVAC",
+          "no": "Replace the sunlight sensor."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1231",
+      "description": "or DTC indicator G: An Open in the Evaporator Temperature Sensor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B1231 or G indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, check for loose wires or poor connections on the evaporator temperature sensor circuit."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Remove the evaporator temperature sensor, and test it. Is the evaporator temperature sensor OK?",
+          "yes": "Go to step 6.",
+          "no": "Replace the evaporator temperature sensor."
+        },
+        {
+          "step": 6,
+          "instruction": "Disconnect audio-HVAC display panel connector A (22P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check for continuity between the No. 14 terminal of audio-HVAC display panel connector A (22P) and the No. 1 terminal of the evaporator temperature sensor 2P connector. Is there continuity?",
+          "yes": "Go to step 8.",
+          "no": "Repair open in the wire between audio-HVAC display panel and the evaporator temperature sensor."
+        },
+        {
+          "step": 8,
+          "instruction": "Check for continuity between the No. 15 terminal of audio-HVAC display panel connector A (22P) and the No. 2 terminal of the evaporator temperature sensor 2P connector. Is there continuity? connector. If the connections are good, substitute a known-good audio-HVAC display panel, and recheck. If the symptom/indication goes away, replace the original audio-HVAC display panel.",
+          "yes": "Check for loose wire or poor connections at audio-HVAC display panel connector A (22P) and at the evaporator temperature sensor 2P",
+          "no": "Repair open in the wire between the audio-HVAC display panel and the evaporator temperature sensor."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1232",
+      "description": "or DTC indicator H: A Short in the Evaporator Temperature Sensor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B1232 or H indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Remove the evaporator temperature sensor, and test it. Is the evaporator temperature sensor OK?",
+          "yes": "Go to step 6.",
+          "no": "Replace the evaporator temperature sensor."
+        },
+        {
+          "step": 6,
+          "instruction": "Disconnect audio-HVAC display panel connector A (22P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check for continuity between the No. 14 terminal of audio-HVAC display panel connector A (22P) and body ground. Is there continuity?",
+          "yes": "Repair short to body ground in the wire between the audio-HVAC display panel and the evaporator temperature sensor.",
+          "no": "Go to step 8."
+        },
+        {
+          "step": 8,
+          "instruction": "Check for continuity between the No. 14 terminal and the No. 15 terminal of audio-HVAC display panel connector A (22P). Is there continuity? display panel.",
+          "yes": "Repair short in the wires between the audio-HVAC display panel and the evaporator temperature sensor.",
+          "no": "Substitute a known-good audio-HVAC display panel, and recheck. If the symptom/indication goes away, replace the original audio-HVAC"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1233",
+      "description": "or DTC indicator I: An Open in the Driver's Air Mix Control Motor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B1233 or I indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, check for loose wires or poor connections on the driver's air mix control motor circuit."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Test the driver's air mix control motor. Is the driver's air mix control motor OK?",
+          "yes": "Go to step 6.",
+          "no": "Replace the driver's air mix control motor."
+        },
+        {
+          "step": 6,
+          "instruction": "Disconnect the driver's air mix control motor 7P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Disconnect audio-HVAC display panel connector A (22P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Check for continuity between the following terminals of audio-HVAC display panel connector A (22P) and the driver's air mix control motor 7P connector. Is there continuity? connector. If the connections are good, substitute a known-good audio-HVAC display panel and recheck. If the symptom/indication goes away, replace the original audio-HVAC display panel.",
+          "yes": "Check for loose wire or poor connections at audio-HVAC display panel connector A (22P) and at the driver's air mix control motor 7P",
+          "no": "Repair any open in the wire(s) between the audio-HVAC display panel and the driver's air mix control motor."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1234",
+      "description": "or DTC indicator J: A Short in the Driver's Air Mix Control Motor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B1234 or J indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Test the driver's air mix control motor. Is the driver's air mix control motor OK?",
+          "yes": "Go to step 6.",
+          "no": "Replace the driver's air mix control motor."
+        },
+        {
+          "step": 6,
+          "instruction": "Disconnect the driver's air mix control motor 7P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Disconnect audio-HVAC display panel connector A (22P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Check for continuity between body ground and audio-HVAC display panel connector A (22P) terminals No. 1, 8,9, 15, and 20 individually. Is there continuity?",
+          "yes": "Repair any short to body ground in the wire(s) between the audio-HVAC display panel and the driver's air mix control motor.",
+          "no": "Go to step 9."
+        },
+        {
+          "step": 9,
+          "instruction": "Check for continuity between the terminals of audio-HVAC display panel connector A (22P) as follows. Is there continuity between any of the terminals?",
+          "yes": "Repair the short in the wires.",
+          "no": "Go to step 10."
+        },
+        {
+          "step": 10,
+          "instruction": "Turn the ignition switch ON (II), and check the same terminals for voltage. Is there any voltage? damage the audio-HVAC display panel. Repair the short to power before replacing the audio-HVAC display panel. display panel.",
+          "yes": "Repair any short to power in the wire(s) between the audio-HVAC display panel and the driver's air mix control motor. This short may also",
+          "no": "Substitute a known-good audio-HVAC display panel, and recheck. If the symptom/indication goes away, replace the original audio-HVAC"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1235",
+      "description": "or DTC indicator K: A Problem in the Driver's Air Mix Control Linkage, Door, or Motor",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B1235 or K indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Test the driver's air mix control motor. Is the driver's air mix control motor OK? display panel.",
+          "yes": "Substitute a known-good audio-HVAC display panel, and recheck. If the symptom/indication goes away, replace the original audio-HVAC",
+          "no": "Replace the driver's air mix control motor, or repair the driver's air mix control linkage or door."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1236",
+      "description": "or DTC indicator L: An Open in the Passenger's Air Mix Control Motor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B1236 or L indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, check for loose wires or poor connections on the passenger's air mix control motor circuit."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Test the passenger's air mix control motor. Is the passenger's air mix control motor OK?",
+          "yes": "Go to step 6.",
+          "no": "Replace the passenger's air mix control motor."
+        },
+        {
+          "step": 6,
+          "instruction": "Disconnect the passenger's air mix control motor 7P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Disconnect audio-HVAC display panel connector A (22P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Check for continuity between the following terminals of audio-HVAC display panel connector A (22P) and the passenger's air mix control motor 7P connector. Is there continuity? connector. If the connections are good, substitute a known-good audio-HVAC display panel, and recheck. If the symptom/indication goes away, replace the original audio-HVAC display panel.",
+          "yes": "Check for loose wire or poor connections at audio-HVAC display panel connector A (22P) and at the passenger's air mix control motor 7P",
+          "no": "Repair any open in the wire(s) between the audio-HVAC display panel and the passenger's air mix control motor"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1237",
+      "description": "or DTC indicator M: A Short in the Passenger's Air Mix Control Motor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B1237 or M indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Test the passenger's air mix control motor. Is the passenger's air mix control motor OK?",
+          "yes": "Go to step 6.",
+          "no": "Replace the passenger's air mix control motor."
+        },
+        {
+          "step": 6,
+          "instruction": "Disconnect the passenger's air mix control motor 7P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Disconnect audio-HVAC display panel connector A (22P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Check for continuity between body ground and audio-HVAC display panel connector A (22P) terminals No. 2, 10,15, 20, and 22 individually. Is there continuity?",
+          "yes": "Repair any short to body ground in the wire(s) between the audio-HVAC display panel and the passenger's air mix control motor.",
+          "no": "Go to step 9."
+        },
+        {
+          "step": 9,
+          "instruction": "Check for continuity between the terminals of audio-HVAC display panel connector A (22P) as follows. Is there continuity between any of the terminals? YES Repair the short in the wires.",
+          "yes": null,
+          "no": "Go to step 10."
+        },
+        {
+          "step": 10,
+          "instruction": "Turn the ignition switch ON (II), and check the same terminals for voltage. Is there any voltage? also damage the audio-HVAC display panel. Repair the short to power before replacing the audio-HVAC display panel. connector. If the connections are good, substitute a known-good audio-HVAC display panel, and recheck. If the symptom/indication goes away, replace the original audio-HVAC display panel.",
+          "yes": "Repair any short to power in the wire(s) between the audio-HVAC display panel and the passenger's air mix control motor. This short may",
+          "no": "Check for loose wire or poor connections at audio-HVAC display panel connector A (22P) and at the passenger's air mix control motor 7P"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1238",
+      "description": "or DTC indicator N: A Problem in the Passenger's Air Mix Control Linkage, Door, or Motor",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B1238 or N indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Test the passenger's air mix control motor. Is the passenger's air mix control motor OK? display panel.",
+          "yes": "Substitute a known-good audio-HVAC display panel, and recheck. If the symptom/indication goes away, replace the original audio-HVAC",
+          "no": "Replace the passenger's air mix control motor, or repair the passenger's air mix control linkage or door."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1239",
+      "description": "or DTC indicator O: An Open or Short in the Mode Control Motor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B1239 or O indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, check for loose wires or poor connections on the mode control motor circuit."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Test the mode control motor. Is the mode control motor OK?",
+          "yes": "Go to step 6.",
+          "no": "Replace the mode control motor."
+        },
+        {
+          "step": 6,
+          "instruction": "Disconnect the mode control motor 7P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Disconnect audio-HVAC display panel connector A (22P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Check for continuity between the following terminals of audio-HVAC display panel connector A (22P) and the mode control motor 7P connector. Is there continuity?",
+          "yes": "Go to step 9.",
+          "no": "Repair any open in the wire(s) between the audio-HVAC display panel and the mode control motor."
+        },
+        {
+          "step": 9,
+          "instruction": "Check for continuity between body ground and audio-HVAC display panel connector A (22P) terminals No. 6,7,15,16,17,18, and 19 individually. Is there continuity?",
+          "yes": "Repair any short to body ground in the wire(s) between the audio-HVAC display panel and the mode control motor.",
+          "no": "Go to step 10."
+        },
+        {
+          "step": 10,
+          "instruction": "Check for continuity between the terminals of audio-HVAC display panel connector A (22P) as follows. Is there continuity between any of the terminals?",
+          "yes": "Repair the short in the wires.",
+          "no": "Go to step 11."
+        },
+        {
+          "step": 11,
+          "instruction": "Turn the ignition switch ON (II), and check the same terminals for voltage. Is there any voltage? the audio-HVAC display panel. Repair the short to power before replacing the audio-HVAC display panel. the connections are good, substitute a known-good audio-HVAC display panel, and recheck. If the symptom/indication goes away, replace the original audio-HVAC display panel.",
+          "yes": "Repair any short to power in the wire(s) between the audio-HVAC display panel and the mode control motor. This short may also damage",
+          "no": "Check for loose wire or poor connections at audio-HVAC display panel connector A (22P) and at the mode control motor 7P connector. If"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1240",
+      "description": "or DTC indicator : A Problem in the Mode Control Linkage, Doors, or Motor",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B1240 or indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Test the mode control motor. Is the mode control motor OK? display panel.",
+          "yes": "Substitute a known-good audio-HVAC display panel, and recheck. If the symptom/indication goes away, replace the original audio-HVAC",
+          "no": "Replace the mode control motor, or repair the mode control linkage or doors."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1241",
+      "description": "or DTC indicator Q: A Problem in the Blower Motor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B1241 or Q indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, check for loose wires or poor connections on the blower motor circuit."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check the No. 21 (40 A) fuse in the under-hood fuse/relay box, and the No. 30 (7.5 A) fuse in the under-dash fuse/relay box. Are the fuses OK?",
+          "yes": "Go to step 6.",
+          "no": "Replace the fuse(s), and recheck."
+        },
+        {
+          "step": 6,
+          "instruction": "Connect the No. 2 terminal of the blower motor 2P connector to body ground with a jumper wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the ignition switch ON (II). Does the blower motor run?",
+          "yes": "Go to step 8.",
+          "no": "Go to step 23."
+        },
+        {
+          "step": 8,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect the jumper wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect the power transistor 4P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Check for continuity between the No. 2 terminal of the power transistor 4P connector and body ground. Is there continuity?",
+          "yes": "Go to step 12.",
+          "no": "Check for an open in the BLK wire between the power transistor and body ground. If the wire is OK, check for poor ground at G503."
+        },
+        {
+          "step": 12,
+          "instruction": "Connect the No. 2 and No. 4 terminals of the power transistor 4P connector with a jumper wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "Turn the ignition switch ON (II). Does the blower motor run at high speed?",
+          "yes": "Go to step 14.",
+          "no": "Repair open in the BLU/BLK wire between the power transistor and the blower motor."
+        },
+        {
+          "step": 14,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "Disconnect the jumper wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 16,
+          "instruction": "Disconnect audio-HVAC display panel connector B(16P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 17,
+          "instruction": "Check for continuity between the No. 1 and No. 2 terminals of audio-HVAC display panel connector B (16P) and body ground individually. Is there continuity?",
+          "yes": "Repair any short to body ground in the wire(s) between the audio-HVAC display panel and the power transistor.",
+          "no": "Go to step 18."
+        },
+        {
+          "step": 18,
+          "instruction": "Check for continuity between the following terminals of audio-HVAC display panel connector B (16P) and the power transistor 4P connector. Is there continuity?",
+          "yes": "Go to step 19.",
+          "no": "Repair any open in the wire(s) between the audio-HVAC display panel and the power transistor."
+        },
+        {
+          "step": 19,
+          "instruction": "Start the engine.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 20,
+          "instruction": "Check for voltage between the No. 1 and No. 2 terminals of audio-HVAC display panel connector B (16P) and body ground individually. Is there voltage?",
+          "yes": "Repair short to power in the wires.",
+          "no": "Go to step 21."
+        },
+        {
+          "step": 21,
+          "instruction": "Reconnect audio-HVAC display panel connector B(16P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 22,
+          "instruction": "Test the power transistor. Is the power transistor OK ? connections are good, substitute a known-good audio-HVAC display panel, and recheck. If the symptom/indication goes away, replace the original audio-HVAC display panel.",
+          "yes": "Check for loose wire or poor connections at audio-HVAC display panel connector B (16P) and at the power transistor 4P connector. If the",
+          "no": "Replace the power transistor."
+        },
+        {
+          "step": 23,
+          "instruction": "Disconnect the jumper wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 24,
+          "instruction": "Disconnect the blower motor 2P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 25,
+          "instruction": "Measure the voltage between the No. 1 terminal of the blower motor 2P connector and body ground. Is there battery voltage?",
+          "yes": "Replace the blower motor.",
+          "no": "Go to step 26."
+        },
+        {
+          "step": 26,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 27,
+          "instruction": "Remove the blower motor relay from the under-hood fuse/relay box, and test it. Is the relay OK?",
+          "yes": "Go to step 28.",
+          "no": "Replace the blower motor relay."
+        },
+        {
+          "step": 28,
+          "instruction": "Measure the voltage between the No. 2 terminal of the blower motor relay 4P socket and body ground. Is there battery voltage?",
+          "yes": "Go to step 29.",
+          "no": "Replace the under-hood fuse/relay box."
+        },
+        {
+          "step": 29,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 30,
+          "instruction": "Measure the voltage between the No. 4 terminal of the blower motor relay 4P socket and body ground. Is there battery voltage?",
+          "yes": "Go to step 31.",
+          "no": "Repair open in the wire between the No. 30 fuse in the under-dash fuse/relay box and the blower motor relay."
+        },
+        {
+          "step": 31,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 32,
+          "instruction": "Check for continuity between the No. 3 terminal of the blower motor relay 4P socket and body ground. Is there continuity?",
+          "yes": "Repair open in the WHT/BLU wire between the blower motor relay and the blower motor.",
+          "no": "Check for an open in the wire between the blower motor relay and body ground. If the wire is OK, check for poor ground at G302."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1250",
+      "description": "B1050, B1100, B1150, B1200, B1250: Communication Bus Line Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS. Are DTC(s) B1050, B1100, B1150, B1200 or B1250 indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, the system is OK at this time."
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs using the HDS. Is DTC(s) B1000 indicated?",
+          "yes": "Troubleshoot DTC B1000.",
+          "no": "If DTC B1050 is indicated, replace the relay control module. If DTC B1100 is indicated, replace the door multiplex control unit. If DTC"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1251",
+      "description": "Combination Switch Control Unit Internal Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1251 indicated? connections are good, check the battery condition and the charging system.",
+          "yes": "Faulty combination switch control unit; replace the wiper/washer switch.",
+          "no": "Intermittent failure, the CPU in the combination switch control unit is OK at this time. Check for loose or poor connections. If the"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1255",
+      "description": "Combination Switch Control Unit Lost Communication With MICU",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1255 indicated? and the charging system.",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, MICU is OK at this time. Check for loose or poor connections. If the connections are good, check the battery condition"
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs in the combination switch control using the HDS. Are DTCs B1055 and B1157 also indicated? Tests and General Diagnostics/MICU Input Test",
+          "yes": "Go to MICU input test.  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Component",
+          "no": "Replace the combination switch control unit."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1275",
+      "description": "Headlight Switch OFF Position Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1276",
+      "description": "Headlight Switch Parking (SMALL) Position Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1278",
+      "description": "Headlight Switch ON Position Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1275, B1276 or B1278 indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, the headlight system is OK at this time. Check pinfits and connections."
+        },
+        {
+          "step": 4,
+          "instruction": "Reset the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch ON (II) and wait for 2 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the parking (small) light switch ON and wait for 2 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the headlight light switch (LOW) ON and wait for 2 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Change the dimmer switch position from low beam to high beam and wait for 2 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Check the DTCs using the HDS. Is DTC B1275, B1276, B1278 indicated?",
+          "yes": "Go to step 10.",
+          "no": "Intermittent failure, the combination switch and the control unit are OK at this time. Check pinfits and connections."
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect the combination light switch 12P connector from the wiper/washer switch.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Perform the combination light switch test.  See: Lighting and Horns/Sensors and Switches - Lighting and Horns/Combination Switch/Testing and Inspection/Combination Light Switch Test/Replacement Is the combination light switch check OK?",
+          "yes": "Faulty combination switch control unit, replace the wiper/washer switch.",
+          "no": "Replace the combination light switch."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1279",
+      "description": "Headlight Switch DIMMER Position Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1279 indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure. The turn signal switch circuit is OK at this time. Check pinfits and connections."
+        },
+        {
+          "step": 4,
+          "instruction": "Reset the DTCs by CLEAR MENU (DTC CLEAR) of the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch ON (II), then turn the headlight switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Change the combination light switch from low beam to high beam and wait for 2 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Pull and hold the combination light switch lever and keep the passing switch position for more than 2 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Check for DTCs by selecting the DTCs MENU (DTCs) from the HDS. Is DTC B1279 indicated?",
+          "yes": "Go to step 9.",
+          "no": "Intermittent failure, the combination switch and the combination switch control unit are OK at this time. Check pinfits and connections."
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect the combination light switch 12P connector from the wiper/washer switch.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Perform the combination light switch test.  See: Lighting and Horns/Sensors and Switches - Lighting and Horns/Combination Switch/Testing and Inspection/Combination Light Switch Test/Replacement Is the combination light switch OK?",
+          "yes": "Faulty combination switch control unit, replace the wiper/washer switch.",
+          "no": "Replace the combination light switch."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1280",
+      "description": "Turn Signal Switch Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1280 indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure. The turn signal switch circuit is OK at this time. Check pinfits and connections."
+        },
+        {
+          "step": 4,
+          "instruction": "Reset the DTCs by CLEAR MENU (DTC CLEAR) of the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the turn signal switch to the left position and wait for 2 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the turn signal switch to the right position and wait for 2 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1280 indicated?",
+          "yes": "Go to step 9.",
+          "no": "Intermittent failure, the turn signal light switch and the combination switch control unit are OK at this time. Check pinfits and connections."
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect the combination light switch 12P connector from the wiper/washer switch.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Check for short in the turn signal light switch terminals in each switch position. Is there a short?",
+          "yes": "Faulty, turn signal light switch, replace the combination light switch.",
+          "no": "Faulty combination switch control unit, replace the wiper/washer switch."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1281",
+      "description": "Windshield Wiper Switch MIST Position Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1282",
+      "description": "Windshield Wiper Switch INT (AUTO) Position Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1283",
+      "description": "Windshield Wiper Switch LOW Position Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1284",
+      "description": "Windshield Wiper Switch HIGH Position Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs using the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Cycle the ignition switch to OFF and then back ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the windshield wiper switch in MIST and wait for 2 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the windshield wiper switch OFF and wait for 2 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the windshield wiper switch in INT (AUTO) and wait for 2 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the windshield wiper switch in LOW and wait for 2 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the windshield wiper switch in HIGH and wait for 2 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Check for DTCs using the HDS. Is DTC B1281, B1282, B1283, or B1284 indicated? connections.",
+          "yes": "Replace the windshield wiper/washer switch.",
+          "no": "Intermittent failure, the windshield wiper/washer switch and the combination switch control unit are OK at this time. Check pinfits and"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B2989",
+      "description": "or DTC indicator W: A Problem in the A/C Compressor Motor",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Check the No. 29 (7.5 A) fuse in the under-dash fuse/relay box. Is the fuse OK?",
+          "yes": "Go to step 2.",
+          "no": "Replace the fuse, and recheck."
+        },
+        {
+          "step": 2,
+          "instruction": "Stop the engine for at least 1 hour.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B2989 or W indicated?",
+          "yes": "Go to step 6.",
+          "no": "Intermittent failure."
+        },
+        {
+          "step": 6,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B2998 or Z indicated? symptom/indication goes away, replace the original A/C compressor.",
+          "yes": "Go to the troubleshooting DTC B2998 or DTC indicator Z.",
+          "no": "Stop the A/C compressor motor for refrigerant pressure abnormally high. Substitute a known-good A/C compressor, and recheck. If the"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B2990",
+      "description": "or DTC indicator X: A Problem in the A/C Compressor Driver",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Check the No. 29 (7.5 A) fuse in the under-dash fuse/relay box. Is the fuse OK?",
+          "yes": "Go to step 2.",
+          "no": "Replace the fuse, and recheck."
+        },
+        {
+          "step": 2,
+          "instruction": "Stop the engine for at least 1 hour.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B2990, B2998, X, or Y indicated? -",
+          "yes": "",
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B2998",
+      "description": "or Y indicated: go to the troubleshooting DTC B2998 or DTC indicator Y. NO - Intermittent failure.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Check the No. 29 (7.5 A) fuse in the under-dash fuse/relay box. Is the fuse OK?",
+          "yes": "Go to step 2.",
+          "no": "Replace the fuse, and recheck."
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B2998 or Y indicated? driver.",
+          "yes": "Substitute a known-good A/C compressor driver, and recheck. If the symptom/indication goes away, replace the original A/C compressor",
+          "no": "Intermittent failure."
+        },
+        {
+          "step": 6,
+          "instruction": "Remove the IPU lid.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check that the A/C compressor driver is properly connected. Is it connected properly?",
+          "yes": "Go to step 8.",
+          "no": "Reconnect the connector and cable, and recheck the function."
+        },
+        {
+          "step": 8,
+          "instruction": "Remove the high voltage cable (A) and A/C compressor driver cable (B), then wrap the high voltage cable with insulating tape (C).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Check the A/C compressor driver fuse (30 A) in the junction board, by checking for continuity between A and B terminals. Is there continuity?",
+          "yes": "Go to step 10.",
+          "no": "Replace the fuse and recheck. If the fuse blows again, replace the A/C compressor driver and fuse."
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect the A/C compressor power 3P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect A/C compressor power terminals.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between the A/C compressor power 3P connector and A/C compressor power terminals individually. Is there continuity?",
+          "yes": "Repair any open in the wire(s) between the A/C compressor power 3P connector and the A/C compressor power terminal.",
+          "no": "Replace the A/C compressor."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B2992",
+      "description": "or DTC indicator S: An Open in the Thermal Protector Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then start the engine.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B2992 or S indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, check for loose wires or poor connections on the thermal protector circuit."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Disconnect the A/C compressor clutch 3P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Connect the A/C compressor clutch 3P connector terminals No. 1 and No. 3 with a jumper wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Start the engine, and push the A/C ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B2992 or T indicated? compressor clutch and the thermal protector.",
+          "yes": "Go to step 9.",
+          "no": "Check for an open in the wire(s) between the A/C compressor clutch 3P connector female terminals No. 1 and No. 3 and check the A/C"
+        },
+        {
+          "step": 9,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect the jumper wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect audio-HVAC display panel connector A (22P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between the following terminals of audio-HVAC display panel connector A (22P) and the A/C compressor clutch 3P connector. Is there continuity? display panel.",
+          "yes": "Substitute a known-good audio-HVAC display panel, and recheck. If the symptom/indication goes away, replace the original audio-HVAC",
+          "no": "Repair open in the wire(s) between the audio-HVAC display panel and the A/C compressor."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B2993",
+      "description": "or DTC indicator T: A Short in the Thermal Protector Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then start the engine.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B2993 or T indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Disconnect the A/C compressor clutch 3P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Connect the A/C compressor clutch 3P connector terminals No. 1 and No. 3 with a jumper wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Start the engine, and turn on the A/C.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B2993 or T indicated? compressor clutch and the thermal protector.",
+          "yes": "Go to step 9.",
+          "no": "Check for a short to the wire(s) between the A/C compressor clutch 3P connector female terminals No. 1 and No. 3 and check the A/C"
+        },
+        {
+          "step": 9,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect the jumper wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect audio-HVAC display panel connector A (22P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between body ground and audio-HVAC display panel connector A (22P) terminals No. 3 and No. 4 individually. Is there continuity? display panel.",
+          "yes": "Repair any short to body ground in the wire(s) between the audio-HVAC display panel and the A/C compressor.",
+          "no": "Substitute a known-good audio-HVAC display panel, and recheck. If the symptom/indication goes away, replace the original audio-HVAC"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B2995",
+      "description": "or DTC indicator R: A Problem in the Auxiliary Electric Water Pump Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B2995 or R indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, check for loose wires or poor connections on the auxiliary electric water pump circuit."
+        },
+        {
+          "step": 4,
+          "instruction": "Check the No. 6 (7.5 A) and the No. 30 (7.5 A) fuses in the under-dash fuse/relay box. Are the fuses OK?",
+          "yes": "Go to step 5.",
+          "no": "Replace the fuse(s), and recheck."
+        },
+        {
+          "step": 5,
+          "instruction": "Warm up the engine (until the radiator fan comes on).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Set the temperature control on Max Hot. Does warm air come out ?",
+          "yes": "Go to step 8.",
+          "no": "Repair the heater valve."
+        },
+        {
+          "step": 8,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Remove the auxiliary electric water pump relay from the auxiliary under-hood relay box A, and test it. Is the relay OK ?",
+          "yes": "Go to step 10.",
+          "no": "Replace the auxiliary electric water pump relay."
+        },
+        {
+          "step": 10,
+          "instruction": "Measure the voltage between the auxiliary electric water pump relay 5P socket terminal No. 1 and body ground. Is there battery voltage?",
+          "yes": "Go to step 11.",
+          "no": "Repair open in the wire between the No. 6 fuse in the under-dash fuse/relay box and the auxiliary electric water pump relay."
+        },
+        {
+          "step": 11,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Measure the voltage between the auxiliary electric water pump relay 5P socket terminal No. 5 and body ground. Is there battery voltage?",
+          "yes": "Go to step 13.",
+          "no": "Repair open in the wire between the No. 30 fuse in the under-dash fuse/relay box and the auxiliary electric water pump relay."
+        },
+        {
+          "step": 13,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "Disconnect the auxiliary electric water pump 4P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "Check for continuity between the auxiliary electric water pump relay 5P socket terminal No. 2 and the auxiliary electric water pump 4P connector terminal No. 4. Is there continuity?",
+          "yes": "Go to step 16.",
+          "no": "Repair open in the wire between the auxiliary electric water pump relay and the auxiliary electric water pump."
+        },
+        {
+          "step": 16,
+          "instruction": "Check for continuity between the auxiliary electric water pump 4P connector terminal No. 3 and body ground. Is there continuity? G202.",
+          "yes": "Go to step 17.",
+          "no": "Check for an open in the wires between the auxiliary electric water pump and body ground. If the wire is OK, check for poor ground at"
+        },
+        {
+          "step": 17,
+          "instruction": "Reinstall the auxiliary electric water pump relay.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 18,
+          "instruction": "Disconnect audio-HVAC display panel connector B (16P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 19,
+          "instruction": "Turn the ignition switch ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 20,
+          "instruction": "Measure the voltage between audio-HVAC display panel connector B (16P) terminal No. 8 and body ground. Is there battery voltage?",
+          "yes": "Go to step 21.",
+          "no": "Repair open in the wire between the auxiliary electric water pump relay and the audio-HVAC display panel."
+        },
+        {
+          "step": 21,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 22,
+          "instruction": "Reconnect the auxiliary electric water pump 4P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 23,
+          "instruction": "Disconnect audio-HVAC display panel connector A (22P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 24,
+          "instruction": "Check for continuity between audio-HVAC display panel connector B (16P) terminals No. 15 and No. 16. Is there continuity?",
+          "yes": "Go to step 25.",
+          "no": "Repair an open in the wire(s) to auxiliary electric water pump signal line."
+        },
+        {
+          "step": 25,
+          "instruction": "Run the auxiliary electric water pump by selecting the CLIMATE CONTROL SELF TEST Menu from the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 26,
+          "instruction": "Check the auxiliary electric water pump operation by touching it with a flat-tip screw driver. Does the auxiliary electric water pump run? display panel.",
+          "yes": "Substitute a known-good audio-HVAC display panel, and recheck. If the symptom/indication goes away, replace the original audio-HVAC",
+          "no": "Replace the auxiliary electric water pump."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B2996",
+      "description": "or DTC indicator U: An Open in the Heater Core Temperature Sensor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B2996 or U indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure, check for loose wires or poor connections on the heater core temperature sensor circuit."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Disconnect heater core temperature sensor 2P connector. Check the resistance between heater core temperature sensor 2P connector terminals No. 1 and No. 2. Is the resistance as specified?",
+          "yes": "Go to step 6.",
+          "no": "Replace the heater core temperature sensor."
+        },
+        {
+          "step": 6,
+          "instruction": "Disconnect audio-HVAC display panel connector A (22P),",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check for continuity between audio-HVAC display panel connector A (22P) terminal No. 21 and heater core temperature sensor 2P connector terminal No. 1. Is there continuity?",
+          "yes": "Go to step 8.",
+          "no": "Repair open in the wire between the audio-HVAC display panel and the heater core temperature sensor."
+        },
+        {
+          "step": 8,
+          "instruction": "Check for continuity between audio-HVAC display panel connector A (22P) terminal No. 15 and heater core temperature sensor 2P connector terminal No.2. Is there continuity? connector. If the connections are good, substitute a known-good audio-HVAC display panel, and recheck. If the symptom/indication goes away, replace the original audio-HVAC display panel.",
+          "yes": "Check for loose wires or poor connections at audio-HVAC display panel connector A (22P) and at the heater core temperature sensor 2P",
+          "no": "Repair open in the wire between the audio-HVAC display panel and the heater core temperature sensor."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B2997",
+      "description": "or DTC indicator V: A Short in the Heater Core Temperature Sensor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTC by turning the ignition switch OFF, and then ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B2997 or V indicated?",
+          "yes": "Go to step 4.",
+          "no": "Intermittent failure."
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Disconnect heater core temperature sensor 2P connector. Check the resistance between heater core temperature sensor 2P connector terminals No. 1 and No. 2. Is the resistance as specified?",
+          "yes": "Go to step 6.",
+          "no": "Replace the heater core temperature sensor."
+        },
+        {
+          "step": 6,
+          "instruction": "Disconnect audio-HVAC display panel connector A (22P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check for continuity between the audio-HVAC display panel connector A (22P) terminal No. 21 and body ground. Is there continuity?",
+          "yes": "Repair short to body ground in the wire between the audio-HVAC display panel and the heater core temperature sensor.",
+          "no": "Go to step 8."
+        },
+        {
+          "step": 8,
+          "instruction": "Check for continuity between audio-HVAC display panel connector A (22P) terminals No. 15 and No.21. Is there continuity? display panel.",
+          "yes": "Repair short in the wires between the audio-HVAC display panel and the heater core temperature sensor.",
+          "no": "Substitute a known-good audio-HVAC display panel, and recheck. If the symptom/indication goes away, replace the original audio-HVAC"
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B2999",
+      "description": "or DTC indicator Z: A problem in the A/C Compressor Delivery Valve",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Check the No. 29 (7.5 A) fuse in the under-dash fuse/relay box. Is the fuse OK?",
+          "yes": "Go to step 2.",
+          "no": "Replace the fuse, and recheck."
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Operate the climate control system in several modes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs using the HDS or self-diagnostic. Is DTC B2999 or Z indicated?",
+          "yes": "Replace the A/C compressor.",
+          "no": "Intermittent failure."
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "source_file": "Acord_K24.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 5,
+  "dtcs": [
+    {
+      "dtc_code": "P0010",
+      "description": "P0172",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0222",
+      "description": "P0563",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P050A",
+      "description": "P2252",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P2270",
+      "description": "U1102 B Codes Index",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1200",
+      "description": "B1241 Checking the DTCs by HDS A - Q Checking the DTCs by DTC Indicator Index Part 1 Index Part 2 Index Part 3 Index Part 4 Index Part 5 Index Part 6 Index Part 1 Index Part 2 Index Part 3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

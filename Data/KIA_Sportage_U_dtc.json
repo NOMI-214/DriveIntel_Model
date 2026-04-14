@@ -1,0 +1,361 @@
+{
+  "source_file": "KIA_Sportage_U.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 9,
+  "dtcs": [
+    {
+      "dtc_code": "U0001",
+      "description": "High Speed CAN Communication Bus off A communication line exists between the Engine Control Module (PCM) and the Transaxle Control Module (TCM). The communication is through a Control Area Network (CAN). Without CAN communication, an independent pin and wiring is needed to receive a sensor information from a PCM. The more information to be communicated, the more wirings is required. In case of CAN communication type, all the information need to be communicated among control modules such as PCM and ABS control module use CAN lines. The PCM determines CAN communication error and sets DTC U0001 if communication with other control devices (e.g. ABS) via CAN is impossible or PCM detects that communication time via CAN exceeds threshold value. DTC Detecting Condition Diagnostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect GDS to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select \"Current Data\" mode and monitor \"Inhibitor switch\" parameter.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"CAN COMMUNICATION SERVICE DATA (ENGINE RPM, VEHICLE SPEED SENSOR, THROTTLE P. SENSOR)\" parameters on the GDS. Fig 1) Low-RPM Fig 2) High-RPM",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is measured current data within specification? W/Harness Inspection Automatic Transaxle",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100",
+      "description": "Lost Communication With ECM/PCM \\'A\\' Several control units are applied to electronically controlled vehicles. These units perform each control with information from various sensors. Thus, sharing signal information from sensors is needed, so CAN communication type whose communication speed is high and insensitive to electrical noise by spark generation is adopted to controlling power-train (PCM (TCM/ECM),CLUSTER,ESC,4WD,EPS). CAN communication consists of CAN BUS HIGH, CAN BUS LOW and two 120 Ohms resistances in circuit. If the 4WD ECU doesn't get some data from engine ECU, it sets U0100. DTC Detecting Condition Diagnostic Circuit Diagram CAN Signal : high & low 4WD Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect GDS to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select \"Current Data\" mode and monitor \"Inhibitor switch\" parameter.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"CAN COMMUNICATION SERVICE DATA (ENGINE RPM, VEHICLE SPEED SENSOR, THROTTLE P. SENSOR)\" parameters on the GDS. Fig 1) Low-RPM Fig 2) High-RPM",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is measured current data within specification? W/Harness Inspection Automatic Transaxle",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0101",
+      "description": "Lost Communication With TCM A communication line exists between the Engine Control Module (PCM) and the Transaxle Control Module (TCM). The communication is through a Control Area Network (CAN). Without CAN communication, an independent pin and wiring is needed to receive a sensor information from a PCM. The more information to be communicated, the more wirings is required. In case of CAN communication type, all the information need to be communicated among control modules such as PCM and ABS control module use CAN lines. The PCM determines CAN communication error and sets DTC U0101 if no message received from TCM. DTC Detecting Condition Diagnostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Measure resistance between High signal terminal and Low signal terminal of PCM connector (PCM side). Specification :  Approx. 110 - 130 Ohms",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Is resistance within the specification? W/Harness Inspection Engine Control",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure resistance between Low signal terminal of PCM and TCM. Specification :  Approx. 0 Ohms",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is voltage within the specification? Engine Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0121",
+      "description": "Lost Communication With Anti-Lock Brake System (ABS) Control Module Several control units are applied to electronically controlled vehicles. These units perform each control with information from various sensors. Thus, sharing signal information from sensors is needed, so CAN communication type whose communication speed is high and insensitive to electrical noise by spark generation is adopted to controlling power-train (PCM (TCM/ECM), CLUSTER,ESC,4WD, EPS). CAN communication consists of CAN BUS HIGH, CAN BUS LOW and two 120 Ohms resistances in circuit. If the 4WD ECU doesn't get some ABS/ESC signals from ABS/ESC module, it sets U0121. DTC Detecting Condition Diagnostic Circuit Diagram CAN Signal : high & low 4WD Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Warm up the engine to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Using scantool, check if there is an error in ABS/ESC system. If there is an error in ABS/ESC system, first do a troubleshooting for those system and then check 4WD system.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the same DTC displayed again? W/Harness Inspection 4WD Control",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured resistance within specification? Verification of Vehicle Repair 4WD Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0122",
+      "description": "Lost Communication With Vehicle Dynamics Control Module Several control units are applied to electronically controlled vehicles. These units perform each control with information from various sensors. Thus, sharing signal information from sensors is needed, so CAN communication type whose communication speed is high and insensitive to electrical noise by spark generation is adopted to controlling power-train (PCM (TCM/ECM), CLUSTER,ESC,4WD, EPS). CAN communication consists of CAN BUS HIGH, CAN BUS LOW and two 120 Ohms resistances in circuit. If the 4WD ECU doesn't get some TCS signals from TCS module, it sets U0122. DTC Detecting Condition Diagnostic Circuit Diagram CAN Signal : high & low 4WD Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Warm up the engine to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Using scantool, check if there is an error in TCS system. If there is an error in TCS system, first do a troubleshooting for those system and then check 4WD system.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the same DTC displayed again? W/Harness Inspection 4WD Control",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Measure voltage between CAN low terminal (#11) of diagnostic connector and chassis ground. Specification :  About 0 V Check short to ground in CAN communication line",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0164",
+      "description": "CAN Communication BUS with FATC (Timeout) A communication line exists between the Engine Control Module (PCM) and the Transaxle Control Module (TCM). The communication is through a Control Area Network (CAN). Without CAN communication, an independent pin and wiring is needed to receive a sensor information from a PCM. The more information to be communicated, the more wirings is required. In case of CAN communication type, all the information need to be communicated among control modules such as PCM and FATC control module use CAN lines. ECU shows U0164 when it doesn't get CAN signal from FATC module. DTC Detecting Condition Diagnostic Circuit Diagram Engine Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect GDS to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Warm up the engine to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Monitor the \"CAN\" parameters on the GDS. > Check the value of current data displayed normally. > Check \"Vehicle Speed\" and \"ECTS\" parameters among A/C ECU's current data.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Are the parameters displayed correctly? W/Harness Inspection Engine Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U",
+      "description": "Battery Sensor fault detected by ECU Many control units have applied to vehicle as it becomes more electronical. These units control their own system based on information from diverse sensors. Therefore necessity of common use of diverse sensor information and importance of stable power supply are gathering strength. Battery sensor is mounted on battery (-) terminal. It transmits battery voltage, current, temperature information to PCM. PCM controls generating voltage by duty cycle based on these signals. PCM sets this code when error bit in LIN messages from battery sensor indicates \"1\" DTC Detecting Condition Diagnostic Circuit Diagram Engine Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect GDS to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "IG \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select \"DTC\" button, and then Press \"DTC Status\" to check DTC's information from the DTCs menu.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Read \"DTC Status\" parameter.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed \"Present fault\"? W/Harness Inspection Engine Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1112",
+      "description": "LIN Communication Error Many control units have applied to vehicle as it becomes more electronical. These units control their own system based on information from diverse sensors. Therefore necessity of common use of diverse sensor information and importance of stable power supply are gathering strength. Battery sensor is mounted on battery (-) terminal. It transmits battery voltage, current, temperature information to PCM. PCM controls generating voltage by duty cycle based on these signals. PCM sets this code when there is an error in LIN communication line. DTC Detecting Condition Diagnostic Circuit Diagram Engine Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "IG \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select \"DTC\" button, and then Press \"DTC Status\" to check DTC's information from the DTCs menu.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Read \"DTC Status\" parameter.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed \"Present fault\"? W/Harness Inspection Engine Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1121",
+      "description": "Lost Communication With Electric Stability Program Module Several control units are applied to electronically controlled vehicles. These units perform each control with information from various sensors. Thus, sharing signal information from sensors is needed, so CAN communication type whose communication speed is high and insensitive to electrical noise by spark generation is adopted to controlling power-train (PCM (TCM/ECM), CLUSTER, ESC, 4WD, EPS). CAN communication consists of CAN BUS HIGH, CAN BUS LOW and two 120 Ohms resistances in circuit. If the 4WD ECU doesn't get some ESC signals from ESC module, it sets U1126. DTC Detecting Condition Diagnostic Circuit Diagram CAN Signal : high & low 4WD Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Warm up the engine to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Using scantool, check if there is an error in ESC system. If there is an error in ESC system, first do a troubleshooting for those system and then check 4WD system.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the same DTC displayed again? W/Harness Inspection 4WD Control",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured registance within specification? Check short to ground in CAN communication line",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

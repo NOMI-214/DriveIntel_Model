@@ -1,0 +1,607 @@
+{
+  "source_file": "Mazda_CX7_B.pdf",
+  "format_detected": "mazda_image",
+  "dtc_count": 120,
+  "dtcs": [
+    {
+      "dtc_code": "B1A89",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1D19",
+      "description": "71",
+      "system": ""
+    },
+    {
+      "dtc_code": "B10DA",
+      "description": "51",
+      "system": ""
+    },
+    {
+      "dtc_code": "B10D5",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B10D7",
+      "description": "05",
+      "system": ""
+    },
+    {
+      "dtc_code": "B10D8",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B10D9",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B116A",
+      "description": "12",
+      "system": ""
+    },
+    {
+      "dtc_code": "B118C",
+      "description": "11",
+      "system": ""
+    },
+    {
+      "dtc_code": "B118D",
+      "description": "11",
+      "system": ""
+    },
+    {
+      "dtc_code": "B257A",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B257B",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B257C",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1013",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1014",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1017",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1022",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1093",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1126",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1127",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1129",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1131",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1132",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1133",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1134",
+      "description": "DTC [ADVANCED KEYLESS ENTRY AND START SYSTEM]",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1144",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1145",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1146",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1147",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1188",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1213",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1231",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1238",
+      "description": "49",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1251",
+      "description": "DTC , B1253",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1255",
+      "description": "DTC , B1257",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1260",
+      "description": "DTC , B1261",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1274",
+      "description": "DTC , B1275",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1283",
+      "description": ", B1947, B2014",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1282",
+      "description": "DTC , B1283",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1317",
+      "description": "DTC [MULTI INFORMATION DISPLAY]",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1318",
+      "description": "DTC [AUTO LIGHT/WIPER CONTROL MODULE]",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "B1322",
+      "description": "",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "B1330",
+      "description": "",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "B1342",
+      "description": "DTC",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "B1484",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1502",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1506",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1520",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1566",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1600",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1601",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1602",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1614",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1681",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1868",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1873",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1877",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1878",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1879",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1881",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1882",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1883",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1884",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1885",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1886",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1890",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1893",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1913",
+      "description": "DTC , B1916, B1932, B1934",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1916",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1925",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1932",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1933",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1934",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1935",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1947",
+      "description": "DTC , B2014",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1992",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1993",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1994",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1995",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1996",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1997",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1998",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1999",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2103",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2139",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2141",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2170",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2175",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2218",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2228",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2229",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2230",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2231",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2232",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2233",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2234",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2235",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2290",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2296",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2431",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2444",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2445",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2475",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2477",
+      "description": "DTC",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2574",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2575",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2721",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2741",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2773",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2774",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2775",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2776",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2777",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2778",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2779",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2780",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2832",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2834",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2867",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2982",
+      "description": "",
+      "system": "Immobilizer"
+    }
+  ]
+}

@@ -1,0 +1,1489 @@
+{
+  "source_file": "Civic2012_B_Codes.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 45,
+  "dtcs": [
+    {
+      "dtc_code": "B121A",
+      "description": "or DTC indicator 49 : An Open in the Mode Control Motor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTCs with the HDS. -2. Turn the ignition switch to LOCK (0), and then back to ON (II). -3. Do the self-diagnostic with the HDS or the climate control unit  See: Heating and Air Conditioning/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The Climate Control System. -4. Check for DTCs. Is DTC B121A or 49 indicated? -YES- Go to step 2. -NO- Intermittent failure. Check for loose wires or poor connections on the mode control motor circuit.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "DTC check: DTC check -1. Check for DTCs. Is DTC B1233 or 40 and/or B2986 or 55 indicated? -YES- Repair an open in the wire between the climate control unit and the mode control motor. -NO- Go to step 3.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Open wire check (MODE-P line): Open wire check (MODE-P line) -1. Turn the ignition switch to LOCK (0). -2. Connect terminals A and B with a jumper wire. -3. Turn the ignition switch to ON (II). -4. Do the self-diagnostic with the HDS or the climate control unit  See: Heating and Air Conditioning/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The Climate Control System. -5. Check for DTCs. Is DTC B121A or 49 indicated? -YES- Repair an open in the wire between the climate control unit and the mode control motor. -NO- The MODE-P wire is OK. Replace the mode control motor  See: Heating and Air Conditioning/Air Door/Air Door Actuator / Motor/Service and Repair/Mode Control Motor Removal and Installation.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B121B",
+      "description": "or DTC indicator 4A : A Short in the Mode Control Motor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTCs with the HDS. -2. Turn the ignition switch to LOCK (0), and then back to ON (II). -3. Do the self-diagnostic with the HDS or the climate control unit  See: Heating and Air Conditioning/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The Climate Control System. -4. Check for DTCs. Is DTC B121B or 4A indicated? -YES- Go to step 2. -NO- Intermittent failure. Check for loose wires or poor connections on the mode control motor circuit.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "DTC check: DTC check -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Turn the ignition switch to ON (II). -4. Do the self-diagnostic with the HDS or the climate control unit  See: Heating and Air Conditioning/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The Climate Control System. -5. Check for DTCs with the HDS. Is DTC B121B or 4A indicated? -YES- Go to step 3. -NO- Replace the mode control motor  See: Heating and Air Conditioning/Air Door/Air Door Actuator / Motor/Service and Repair/Mode Control Motor Removal and Installation.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Mode control motor S5V line check: Mode control motor S5V line check -1. Measure the voltage between test points 1 and 2. Is there 5 V? -YES- Go to step 4. -NO- Go to step 5.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Shorted wire check (MDD-P line): Shorted wire check (MDD-P line) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check for continuity between test points 1 and 2. Is there continuity? -YES- Repair a short in the wire between the climate control unit and the mode control motor. -NO- The MDD-P wire is OK. Replace the climate control unit.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Shorted wire check (S_5V line): Shorted wire check (S_5V line) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check for continuity between test points 1 and 2. Is there continuity? -YES- Repair a short in the wire between the climate control unit and the mode control motor. -NO- The S_5V wire is OK. Replace the climate control unit.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B121D",
+      "description": "or DTC indicator 89 : Humidity/In-Car Temperature Sensor Communication Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTC with the HDS. -2. Turn the ignition switch to LOCK (0) and then back to ON (II). -3. Do the self-diagnostic with the HDS or the climate control unit  See: Heating and Air Conditioning/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The Climate Control System. -4. Check for DTCs. Is DTC B121D or 89 indicated? -YES- Go to step 2. -NO- Intermittent failure.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Humidity/in-car temperature sensor S_5V line check: Humidity/in-car temperature sensor S_5V line check -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Turn the ignition switch to ON (II). -4. Measure the voltage between test points 1 and 2. Is there about 5 V? -YES- Go to step 3. -NO- Go to step 7.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Open wire check (SENSOR_COM line): Open wire check (SENSOR_COM line) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check for continuity between test points 1 and 2. Is there continuity? -YES- The SENSOR_COM wire is OK. Go to step 4. -NO- Repair an open in the wire between the climate control unit and the humidity/in-car temperature sensor.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Climate control unit HUM_DATA, TR lines check: Climate control unit HUM_DATA, TR lines check -1. Connect terminals A and B with a jumper wire. -2. Check for continuity between test points 1 and 2. Is there continuity? -YES- Go to step 5. -NO- Go to step 8.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Climate control unit HUM_DATA line check: Climate control unit HUM_DATA line check -1. Check for continuity between test points 1 and 2. Is there continuity? -YES- Go to step 6. -NO- Go to step 9.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Shorted wire check (HUM_DATA line): Shorted wire check (HUM_DATA line) -1. Disconnect the jumper wire. -2. Check for continuity between test points 1 and 2. Is there continuity? -YES- Repair a short to body ground in the YEL wire between the climate control unit and the humidity/in-car temperature sensor. -NO- Repair a short to body ground in the LT BLU wire between the climate control unit and the humidity/in-car temperature sensor.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Open wire check (S_5V line): Open wire check (S_5V line) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check for continuity between test points 1 and 2. Is there continuity? -YES- Repair a short in the wires between the climate control unit and the humidity/in-car temperature sensor. -NO- Repair an open in the wire between the climate control unit and the humidity/in-car temperature sensor.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Open wire check (HUM_DATA line): Open wire check (HUM_DATA line) -1. Disconnect the jumper wire. -2. Check for continuity between test points 1 and 2. Is there continuity? -YES- Repair an open in the LT BLU wire between the climate control unit and the humidity/in-car temperature sensor. -NO- Repair an open in the YEL wire between the climate control unit and the humidity/in-car temperature sensor.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Shorted wire check (HUM_DATA, TR lines): Shorted wire check (HUM_DATA, TR lines) -1. Disconnect the jumper wire. -2. Check for continuity between test points 1 and 2. Is there continuity? -YES- Repair a short in the wires between the climate control unit and the humidity/in-car temperature sensor. -NO- Go to step 10.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Climate control unit check: Climate control unit check -1. Reconnect the climate control unit 32P connector. -2. Connect terminals A and B with a jumper wire. -3. Turn the ignition switch to ON (II). -4. Press and hold the AUTO and ON/OFF buttons. Does the mode indicator turn on? -YES- Replace the humidity/in-car temperature sensor  See: Heating and Air Conditioning/Cabin Temperature Sensor / Switch/Service and Repair. -NO- Replace the climate control unit.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1002",
+      "description": "MICU Internal (EEPROM) Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTCs with the HDS. -2. Turn the ignition switch to LOCK (0) and then back to ON (II). -3. Wait for at least 6 seconds. -4. Check for DTCs with the HDS. Is DTC B1002 indicated? -YES- Faulty MICU; replace the under-dash fuse/relay box  See: Maintenance/Fuses and Circuit Breakers/Relay Box/Service and Repair. -NO- Intermittent failure, the MICU is OK at this time.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1026",
+      "description": "Passenger's Door Lock Switch Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification (passenger's door lock switch in the neutral position): Problem verification (passenger's door lock switch in the neutral position) -1. With the front passenger's door lock switch in the neutral position, select KEYLESS TRANSMITTER from the BODY ELECTRICAL SYSTEM SELECT menu, and enter the DATA LIST. -2. Check the ON/OFF information of the FRONT PASSENGER'S DOOR LOCK SWITCH (LOCK) and FRONT PASSENGER'S DOOR LOCK SWITCH (UNLOCK) in the DATA LIST. Is either information indicator ON? -YES- Go to step 4. -NO- Go to step 2.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Problem verification (passenger's door lock switch in the lock position): Problem verification (passenger's door lock switch in the lock position) -1. With the front passenger's door lock switch in the lock position, check the ON/OFF information of the FRONT PASSENGER'S DOOR LOCK SWITCH (LOCK) and FRONT PASSENGER'S DOOR LOCK SWITCH (UNLOCK) in the DATA LIST. Are both information indicators ON? -YES- Go to step 3. -NO- Intermittent failure, the system is OK at this time.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Shorted wire check (AS_REMOTE_SW_LOCK to AS_REMOTE_SW_UNLOCK line): Shorted wire check (AS_REMOTE_SW_LOCK to AS_REMOTE_SW_ UNLOCK line) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Connect terminals A and B with a jumper wire. -4. Check the ON/OFF information of the FRONT PASSENGER'S DOOR LOCK SWITCH (LOCK) and FRONT PASSENGER'S DOOR LOCK SWITCH (UNLOCK) in the DATA LIST. Are both information indicators ON? -YES- Repair a short between the wires. -NO- Faulty door lock switch; replace the front passenger's power window switch  See: Sensors and Switches/Sensors and Switches - Windows and Glass/Power Window Switch/Service and Repair/Front Passengers Power Window Switch Removal and Installation (4-door).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Passenger's door lock switch check: Passenger's door lock switch check -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check the ON/OFF information of the FRONT PASSENGER'S DOOR LOCK SWITCH (LOCK) and FRONT PASSENGER'S DOOR LOCK SWITCH (UNLOCK) in the DATA LIST. Is either information indicator ON? -YES- Go to step 5. -NO- Faulty door lock switch; replace the front passenger's power window switch  See: Sensors and Switches/Sensors and Switches - Windows and Glass/Power Window Switch/Service and Repair/Front Passengers Power Window Switch Removal and Installation (4-door).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Shorted wire check (AS_REMOTE_SW_LOCK, AS_REMOTE_SW_UNLOCK lines): Shorted wire check (AS_REMOTE_SW_LOCK, AS_REMOTE_SW_ UNLOCK lines) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check for continuity between test points 1 and 2 individually. Is there continuity? -YES- Repair a short to ground in the wire. -NO- Faulty MICU; replace the under-dash fuse/relay box  See: Maintenance/Fuses and Circuit Breakers/Relay Box/Service and Repair.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1036",
+      "description": "IG1 Power Supply Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTCs with the HDS. -2. Turn the ignition switch to LOCK (0) and then back to ON (II). -3. Wait for at least 6 seconds. -4. Check for DTCs with the HDS. Is DTC B1036 indicated? -YES- Repair an open or high resistance in the wire between the under-dash fuse/relay box and the gauge control module (tach). -NO- Intermittent failure, the system is OK at this time. Check for loose or poor connections.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1077",
+      "description": "Wiper Switch (As) Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Determine possible failure area (windshield wiper motor and its drive circuit, FR_WIPER_AS line): Determine possible failure area (windshield wiper motor and its drive circuit, FR_WIPER_AS line) -1. Clear the DTCs with the HDS. -2. Turn the ignition switch to LOCK (0) and then back to ON (II). -3. Turn the windshield wiper switch to LOW or HIGH for 15 seconds or more, then turn the switch OFF. Does the wiper motor work? -YES- FR_WIPER_AS line: go to step 2. -NO- Windshield wiper motor and its drive circuit: go to step 5.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Problem verification (DTC): Problem verification (DTC) -1. Check for DTCs with the HDS. Is DTC B1077 indicated? -YES- Go to step 3. -NO- Intermittent failure, the system is OK at this time.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Windshield wiper motor check (AS signal): Windshield wiper motor check (AS signal) -1. Turn the ignition switch to LOCK (0). -2. Do the windshield wiper motor test. Does the wiper motor run and does it pulse normally? -YES- Go to step 4. -NO- Replace the windshield wiper motor  See: Wiper and Washer Systems/Wiper Motor/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Open or shorted wire check (FR_WIPER_AS line): Open or shorted wire check (FR_WIPER_AS line) -1. Disconnect the following connectors. -2. Check for continuity between test points 1 and 2. Is there continuity? -YES- Repair a short to ground in the wire. -NO- Repair an open or high resistance in the wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Fuse check: Fuse check -1. Check the following fuse. Is the fuse OK? -YES- Go to step 6. -NO- Replace the fuse. If the fuse blows again, repair the short to ground on the No. B46 (30 A) fuse circuit.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Open wire check (IG1_FR_WIPER line): Open wire check (IG1_FR_WIPER line) -1. Turn the ignition switch to ON (II). -2. Remove the windshield wiper intermittent relay. -3. Measure the voltage between test points 1 and 2. Is there battery voltage? -YES- Go to step 7. -NO- Repair an open or high resistance in the wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Windshield wiper intermittent relay and windshield wiper high/low relay check: Windshield wiper intermittent relay and windshield wiper high/low relay check -1. Do the power relay test  See: Power and Ground Distribution/Power Distribution Relay/Testing and Inspection. Are both relay OK? -YES- Go to step 8. -NO- Replace faulty relay.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Open wire check (GND line): Open wire check (GND line) -1. Turn the ignition switch to LOCK (0). -2. Check for continuity between test points 1 and 2. Is there continuity? -YES- Go to step 9. -NO- Repair an open or high resistance in the ground wire or poor ground (G401).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Open wire check (FR_WIPER_HI line): Open wire check (FR_WIPER_HI line) -1. Disconnect the following connector. -2. Remove the windshield wiper high/low relay. -3. Check for continuity between test points 1 and 2. Is there continuity? -YES- Go to step 10. -NO- Repair an open or high resistance in the wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Open wire check (FR_WIPER_LO line): Open wire check (FR_WIPER_LO line) -1. Check for continuity between test points 1 and 2. Is there continuity? -YES- Go to step 11. -NO- Repair an open or high resistance in the wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Windshield wiper motor check: Windshield wiper motor check -1. Do the windshield wiper motor test  See: Wiper and Washer Systems/Testing and Inspection/Wiper Motor Test. Does the wiper motor run and does it pulse normally? -YES- Faulty MICU; replace the under-dash fuse/relay box  See: Maintenance/Fuses and Circuit Breakers/Relay Box/Service and Repair. -NO- Replace the windshield wiper motor  See: Wiper and Washer Systems/Wiper Motor/Service and Repair.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1079",
+      "description": "Daytime Running Light Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Turn the headlights switch OFF, and apply the parking brake. -2. Clear the DTCs with the HDS. -3. Release the parking brake. -4. Turn the ignition switch to LOCK (0) and then back to ON (II). -5. Check for DTCs with the HDS. Is DTC B1079 indicated? -YES- Go to step 2. -NO- Intermittent failure, the system is OK at this time. Check for loose or poor connections.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Fuse check: Fuse check -1. Turn the ignition switch to LOCK (0). -2. Check the following fuses. Are the fuses OK? -YES- Go to step 3. -NO- Replace the fuse. If the fuse blows again, repair a short to ground on the No. B38 (10 A) and/or No. B39 (10 A) fuse circuit(s).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "MICU check: MICU check -1. Turn the headlight (high beam) ON. Do both headlights (high beam) come on? -YES- Faulty MICU; replace the under-dash fuse/relay box  See: Maintenance/Fuses and Circuit Breakers/Relay Box/Service and Repair. -NO- Go to step 4.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Headlight bulb visual check: Headlight bulb visual check -1. Check the headlight (high beam) bulbs. Are the headlight (high beam) bulbs OK? -YES- Go to step 5. -NO- Replace the faulty bulb.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Open wire check (L_H/L_HI line): Open wire check (L_H/L_HI line) -1. Disconnect the following connectors. -2. Check for continuity between test points 1 and 2. Is there continuity? -YES- Go to step 6. -NO- Repair an open or high resistance in the wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Open wire check (R_H/L_HI line): Open wire check (R_H/L_HI line) -1. Check for continuity between test points 1 and 2. Is there continuity? -YES- Go to step 7. -NO- Repair an open or high resistance in the wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Open wire check (GND line): Open wire check (GND line) -1. Check for continuity between test points 1 and 2 individually. Is there continuity? -YES- Faulty MICU; replace the under-dash fuse/relay box  See: Maintenance/Fuses and Circuit Breakers/Relay Box/Service and Repair. -NO- Repair an open or high resistance in the ground wire or poor ground (G201, G301).",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1127",
+      "description": "Driver's Door Key Cylinder Switch Input Circuit Malfunction (Simultaneous Input of Lock and Unlock Signal)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification (driver's door key cylinder switch in the neutral position): Problem verification (driver's door key cylinder switch in the neutral position) -1. With the driver's door key cylinder in the neutral position, select KEYLESS TRANSMITTER from the BODY ELECTRICAL SYSTEM SELECT menu, and enter the DATA LIST. -2. Check the ON/OFF information of the DRIVER'S DOOR KEY CYLINDER SWITCH (LOCK) and DRIVER'S DOOR KEY CYLINDER SWITCH (UNLOCK) in the DATA LIST. Is either information indicator ON? -YES- Go to step 4. -NO- Go to step 2.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Problem verification (driver's door key cylinder switch in the lock position): Problem verification (driver's door key cylinder switch in the lock position) -1. With the driver's door key cylinder in the lock position, check the ON/OFF information of the DRIVER'S DOOR KEY CYLINDER SWITCH (LOCK) and DRIVER'S DOOR KEY CYLINDER SWITCH (UNLOCK) in the DATA LIST. Are both information indicators ON? -YES- Go to step 3. -NO- Intermittent failure, the system is OK at this time.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Shorted wire check (DR_KEY_CYL_UNLOCK to DR_KEY_CYL_LOCK line): Shorted wire check (DR_KEY_CYL_UNLOCK to DR_KEY_CYL_LOCK line) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Connect terminals A and B with a jumper wire. -4. Check the ON/OFF information of the DRIVER'S DOOR KEY CYLINDER SWITCH (LOCK) and DRIVER'S DOOR KEY CYLINDER SWITCH (UNLOCK) in the DATA LIST. Are both information indicators ON? -YES- Repair a short between the wires. -NO- Faulty driver's door key cylinder switch; replace the driver's door latch  See: Body and Frame/Doors, Hood and Trunk/Doors/Front Door/Front Door Latch/Service and Repair/Front Door Latch Removal and Installation (4-door).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Determine possible failure area (driver's door latch, others): Determine possible failure area (driver's door latch, others) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check the ON/OFF information of the DRIVER'S DOOR KEY CYLINDER SWITCH (LOCK) and DRIVER'S DOOR KEY CYLINDER SWITCH (UNLOCK) in the DATA LIST. Is either information indicator ON? -YES- Go to step 5. -NO- Faulty driver's door key cylinder switch; replace the driver's door latch  See: Body and Frame/Doors, Hood and Trunk/Doors/Front Door/Front Door Latch/Service and Repair/Front Door Latch Removal and Installation (4-door).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Shorted wire check (DR_KEY_CYL_UNLOCK, DR_KEY_CYL_LOCK lines): Shorted wire check (DR_KEY_CYL_UNLOCK, DR_KEY_CYL_LOCK lines) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check for continuity between test points 1 and 2 individually. Is there continuity? -YES- Repair a short to ground in the wire. -NO- Faulty MICU; replace the under-dash fuse/relay box  See: Maintenance/Fuses and Circuit Breakers/Relay Box/Service and Repair.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1128",
+      "description": "Driver's Door Remote Switch Input Circuit Malfunction (Simultaneous Input of Lock and Unlock Signal)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Keyless/power door locks/security system check 1: Keyless/power door locks/security system check 1 -1. With the driver's door lock switch in the neutral position, select KEYLESS TRANSMITTER from the BODY ELECTRICAL SYSTEM SELECT menu, and enter the DATA LIST. -2. Check the ON/OFF information of the DRIVER'S DOOR LOCK SWITCH (LOCK) and DRIVER'S DOOR LOCK SWITCH (UNLOCK) in the DATA LIST. Is either information indicator ON? -YES- Go to step 4. -NO- Go to step 2.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Keyless/power door locks/security system check 2: Keyless/power door locks/security system check 2 -1. With the driver's door lock switch in the lock position, check the ON/OFF information of the DRIVER'S DOOR LOCK SWITCH (LOCK) and DRIVER'S DOOR LOCK SWITCH (UNLOCK) in the DATA LIST. Are both information indicators ON? -YES- Go to step 3. -NO- Intermittent failure, the system is OK at this time.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Shorted wire check (REMOTE_SW_UNLOCK to REMOTE_SW_LOCK line): Shorted wire check (REMOTE_SW_UNLOCK to REMOTE_SW_LOCK line) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Connect terminals A and B with a jumper wire. -4. Check the ON/OFF information of the DRIVER'S DOOR LOCK SWITCH (LOCK) and DRIVER'S DOOR LOCK SWITCH (UNLOCK) in the DATA LIST. Are both information indicators ON? -YES- Repair a short between the wires. -NO- Faulty door lock switch; replace the power window master switch  See: Sensors and Switches/Sensors and Switches - Windows and Glass/Power Window Switch/Service and Repair/Power Window Master Switch Removal and Installation (4-door).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Keyless/power door locks/security system check 2: Keyless/power door locks/security system check 2 -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check the ON/OFF information of the DRIVER'S DOOR LOCK SWITCH (LOCK) and DRIVER'S DOOR LOCK SWITCH (UNLOCK) in the DATA LIST. Is either information indicator ON? -YES- Go to step 5. -NO- Faulty door lock switch; replace the power window master switch  See: Sensors and Switches/Sensors and Switches - Windows and Glass/Power Window Switch/Service and Repair/Power Window Master Switch Removal and Installation (4-door).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Shorted wire check (REMOTE_SW_UNLOCK, REMOTE_SW_LOCK lines): Shorted wire check (REMOTE_SW_UNLOCK, REMOTE_SW_LOCK lines) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check for continuity between test points 1 and 2 individually. Is there continuity? -YES- Repair a short to ground in the wire. -NO- Faulty MICU; replace the under-dash fuse/relay box  See: Maintenance/Fuses and Circuit Breakers/Relay Box/Service and Repair.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1129",
+      "description": "Driver's Door Lock Knob Switch Input Circuit Malfunction (Simultaneous Input of Lock and Unlock Signal)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Keyless/power door locks/security system check 1: Keyless/power door locks/security system check 1 -1. Select KEYLESS TRANSMITTER from the BODY ELECTRICAL SYSTEM SELECT menu, and enter the DATA LIST. -2. With the driver's door lock knob switch in the lock position, check the ON/OFF information of the DRIVER'S DOOR LOCK KNOB SWITCH (LOCK) and the DRIVER'S DOOR LOCK KNOB SWITCH (UNLOCK). Are both information indicators ON? -YES- Go to step 2. -NO- Intermittent failure, the system is OK at this time.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Determine possible failure area (driver's door latch, others): Determine possible failure area (driver's door latch, others) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check the ON/OFF information of the DRIVER'S DOOR LOCK KNOB SWITCH (LOCK) and DRIVER'S DOOR LOCK KNOB SWITCH (UNLOCK) in the DATA LIST. Is either information indicator ON? -YES- Go to step 3. -NO- Faulty driver's door knob switch; replace the driver's door latch  See: Body and Frame/Doors, Hood and Trunk/Doors/Front Door/Front Door Latch/Service and Repair/Front Door Latch Removal and Installation (4-door).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Shorted wire check (DR_SILCON_UNLOCK, DR_SILCON_LOCK lines): Shorted wire check (DR_SILCON_UNLOCK, DR_SILCON_LOCK lines) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check for continuity between test points 1 and 2 individually. Is there continuity? -YES- Repair a short to ground in the wire. -NO- Faulty MICU; replace the under-dash fuse/relay box  See: Maintenance/Fuses and Circuit Breakers/Relay Box/Service and Repair.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1152",
+      "description": "Gauge Control Module Internal (EEPROM) Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTCs with the HDS. -2. Turn the ignition switch to LOCK (0) and then back to ON (II). -3. Wait for at least 6 seconds. -4. Check for DTCs with the HDS. Is DTC B1152 indicated? -YES- Replace the gauge control module (tach)  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair/Gauge Control Module (Tach) Removal and Installation. -NO- Intermittent failure, the system is OK at this time.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1175",
+      "description": "Fuel Level Sensor (Fuel Gauge Sending Unit) Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Check the fuel gauge. Does the gauge move to the empty position and the low fuel indicator blink? -YES- Go to step 2. -NO- Intermittent failure, the system is OK at this time. Check for loose or poor connections.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Fuel gauge operation check: Fuel gauge operation check -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Connect terminals A and B with a 2 Ohms resistor and a jumper wire. -4. Remove the No. A29 (10 A) fuse from the under-hood fuse/relay box for at least 10 seconds, then reinstall it. -5. Turn the ignition switch to ON (II). -6. Check the fuel gauge. Does the gauge move to the full position? -YES- Go to step 4. -NO- Go to step 3.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Open wire check (FUEL_GAGE+ line): Open wire check (FUEL_GAGE+ line) -1. Measure the voltage between test points 1 and 2. Is there battery voltage? -YES- Repair an open or high resistance in the wire. -NO- Replace the gauge control module (tach)  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair/Gauge Control Module (Tach) Removal and Installation.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Open wire check (FUEL_GAGE- line): Open wire check (FUEL_GAGE- line) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check for continuity between test points 1 and 2. Is there continuity? -YES- Replace the fuel gauge sending unit  See: Powertrain Management/Fuel Delivery and Air Induction/Fuel Pump/Service and Repair/Fuel Pump/Fuel Gauge Sending Unit Removal and Installation. -NO- Repair an open or high resistance in the wire.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1176",
+      "description": "Fuel Level Sensor (Fuel Gauge Sending Unit) Circuit Short",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Check the fuel gauge. Does the gauge move to the full position and the low fuel indicator blink? -YES- Go to step 2. -NO- Intermittent failure, the system is OK at this time. Check for loose or poor connections.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Fuel gauge operation check: Fuel gauge operation check -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Turn the ignition switch to ON (II). -4. Check the fuel gauge. Does the gauge move to the empty position? -YES- Replace the fuel gauge sending unit  See: Powertrain Management/Fuel Delivery and Air Induction/Fuel Pump/Service and Repair/Fuel Pump/Fuel Gauge Sending Unit Removal and Installation. -NO- Go to step 3.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Shorted wire check (FUEL_GAGE+ line): Shorted wire check (FUEL_GAGE+ line) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check for continuity between test points 1 and 2. Is there continuity? -YES- Repair a short to ground in the wire between the gauge control module (tach) and the fuel gauge sending unit. -NO- Replace the gauge control module (tach)  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair/Gauge Control Module (Tach) Removal and Installation.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1220",
+      "description": "or DTC indicator 56 : A Short in the Recirculation Control Motor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTC with the HDS. -2. Turn the ignition switch to LOCK (0), and then back to ON (II). -3. Do the self-diagnostic with the HDS or the climate control unit  See: Heating and Air Conditioning/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The Climate Control System. -4. Check for DTCs. Is DTC B1220 or 56 indicated? -YES- Go to step 2. -NO- Intermittent failure. Check for loose wires or poor connections on the recirculation control motor circuit.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Shorted wire check (RFD-P, S_5V lines): Shorted wire check (RFD-P, S_5V lines) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connectors. -3. Check for continuity between test points 1 and 2 individually. Is there continuity? -YES- Repair a short to body ground in the wire between the climate control unit and the recirculation control motor. -NO- The RFD-P and S_5V wires are OK. Go to step 3.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Recirculation control motor check: Recirculation control motor check -1. Test the recirculation control motor  See: Heating and Air Conditioning/Air Door/Air Door Actuator / Motor/Testing and Inspection/Recirculation Control Motor Test. Is the recirculation control motor OK? -YES- Replace the climate control unit. -NO- Replace the recirculation control motor  See: Heating and Air Conditioning/Air Door/Air Door Actuator / Motor/Service and Repair/Recirculation Control Motor Removal and Installation.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1227",
+      "description": "or DTC indicator 05 : An Open in the Outside Air Temperature Sensor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTC with the HDS. -2. Turn the ignition switch to LOCK (0), and then back to ON (II). -3. Do the self-diagnostic with the HDS or the climate control unit  See: Heating and Air Conditioning/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The Climate Control System. -4. Check for DTCs. Is DTC B1227 or 05 indicated? -YES- Go to step 2. -NO- Intermittent failure. Check for loose wires or poor connections on the outside air temperature sensor circuit.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Outside air temperature sensor check: Outside air temperature sensor check -1. Turn the ignition switch to LOCK (0). -2. Remove the outside air temperature sensor, and test it  See: Heating and Air Conditioning/Ambient Temperature Sensor / Switch HVAC/Service and Repair. Is the outside air temperature sensor OK? -YES- With the outside air temperature sensor disconnected, go to step 3. -NO- Replace the outside air temperature sensor  See: Heating and Air Conditioning/Ambient Temperature Sensor / Switch HVAC/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Open wire check (TAM line): Open wire check (TAM line) -1. Disconnect the following connector. -2. Check for continuity between test points 1 and 2. Is there continuity? -YES- The TAM wire is OK. Go to step 4. -NO- Repair an open in the wire between the climate control unit and the outside air temperature sensor.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Open wire check (SENSOR_COM line): Open wire check (SENSOR_COM line) -1. Check for continuity between test points 1 and 2. Is there continuity? -YES- The SENSOR_COM wire is OK. Replace the climate control unit . See: Heating and Air Conditioning/Control Assembly/Service and Repair -NO- Repair an open in the wire between the climate control unit and the outside air temperature sensor.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1228",
+      "description": "or DTC indicator 06 : A Short in the Outside Air Temperature Sensor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTC with the HDS. -2. Turn the ignition switch to LOCK (0), and then back to ON (II). -3. Do the self-diagnostic with the HDS or the climate control unit  See: Heating and Air Conditioning/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The Climate Control System. -4. Check for DTCs. Is DTC B1228 or 06 indicated? -YES- Go to step 2. -NO- Intermittent failure. Check for loose wires or poor connections on the outside air temperature circuit.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Outside air temperature sensor check: Outside air temperature sensor check -1. Turn the ignition switch to LOCK (0). -2. Remove the outside air temperature sensor, and test it  See: Heating and Air Conditioning/Ambient Temperature Sensor / Switch HVAC/Service and Repair. Is the outside air temperature sensor OK? -YES- With the outside air temperature sensor disconnected, go to step 3. -NO- Replace the outside air temperature sensor  See: Heating and Air Conditioning/Ambient Temperature Sensor / Switch HVAC/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Shorted wire check (TAM line): Shorted wire check (TAM line) -1. Disconnect the following connector. -2. Check for continuity between test points 1 and 2. Is there continuity? -YES- Repair a short to body ground in the wire between the climate control unit and the outside air temperature sensor. -NO- The TAM wire is OK. Replace the climate control unit . See: Heating and Air Conditioning/Control Assembly/Service and Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1229",
+      "description": "or DTC indicator 07 : An Open in the Sunlight Sensor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTC with the HDS. -2. Turn the ignition switch to LOCK (0) and then back to ON (II). -3. Do the self-diagnostic with the HDS or the climate control unit  See: Heating and Air Conditioning/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The Climate Control System. -4. Check for DTCs. Is DTC B1229 or 07 indicated? -YES- Go to step 2. -NO- Intermittent failure. Check for loose wires or poor connections on the sunlight sensor circuit.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Sunlight sensor check: Sunlight sensor check -1. Test the sunlight sensor  See: Heating and Air Conditioning/Sensors and Switches - HVAC/Solar Sensor/Testing and Inspection. Is the sunlight sensor OK? -YES- Go to step 3. -NO- Replace the sunlight sensor  See: Heating and Air Conditioning/Sensors and Switches - HVAC/Solar Sensor/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Open wire check (TSUN line): Open wire check (TSUN line) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connectors. -3. Check for continuity between test points 1 and 2. Is there continuity? -YES- The TSUN wire is OK. Go to step 4. -NO- Repair an open in the wire between the climate control unit and the sunlight sensor.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Open wire check (SENSOR_COM line): Open wire check (SENSOR_COM line) -1. Check for continuity between test points 1 and 2. Is there continuity? -YES- The SENSOR_COM wire is OK. Replace the climate control unit . See: Heating and Air Conditioning/Control Assembly/Service and Repair -NO- Repair an open in the wire between the climate control unit and the sunlight sensor.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1230",
+      "description": "or DTC indicator 08 : A Short in the Sunlight Sensor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTC with the HDS. -2. Turn the ignition switch to LOCK (0), and then back to ON (II). -3. Do the self-diagnostic with the HDS or the climate control unit  See: Heating and Air Conditioning/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The Climate Control System. -4. Check for DTCs. Is DTC B1230 or 08 indicated? -YES- Go to step 2. -NO- Intermittent failure. Check for loose wires or poor connections on the sunlight sensor circuit.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Sunlight sensor check: Sunlight sensor check -1. Test the sunlight sensor  See: Heating and Air Conditioning/Sensors and Switches - HVAC/Solar Sensor/Testing and Inspection. Is the sunlight sensor OK? -YES- Go to step 3. -NO- Replace the sunlight sensor  See: Heating and Air Conditioning/Sensors and Switches - HVAC/Solar Sensor/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Shorted wire check (TSUN line): Shorted wire check (TSUN line) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check for continuity between test points 1 and 2. Is there continuity? -YES- Repair a short to body ground in the wire between the climate control unit and the sunlight sensor. -NO- The TSUN wire is OK. Replace the climate control unit . See: Heating and Air Conditioning/Control Assembly/Service and Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1231",
+      "description": "or DTC indicator 09 : An Open in the Evaporator Temperature Sensor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTC with the HDS. -2. Turn the ignition switch to LOCK (0), and then back to ON (II). -3. Do the self-diagnostic with the HDS or the climate control unit  See: Heating and Air Conditioning/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The Climate Control System. -4. Check for DTCs. Is DTC B1231 or 09 indicated? -YES- Go to step 2. -NO- Intermittent failure. Check for loose wires or poor connections on the evaporator temperature sensor circuit.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Evaporator temperature sensor check: Evaporator temperature sensor check -1. Turn the ignition switch to LOCK (0). -2. Remove the evaporator temperature sensor, and test it  See: Heating and Air Conditioning/Evaporator Temperature Sensor / Switch/Service and Repair. Is the evaporator temperature sensor OK? -YES- With the evaporator temperature sensor disconnected, go step 3. -NO- Replace the evaporator temperature sensor  See: Heating and Air Conditioning/Evaporator Temperature Sensor / Switch/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Open wire check (TEVA line): Open wire check (TEVA line) -1. Disconnect the following connector. -2. Check for continuity between test points 1 and 2. Is there continuity? -YES- The TEVA wire is OK. Go to step 4. -NO- Repair an open in the wire between the climate control unit and the evaporator temperature sensor.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Open wire check (SENSOR_COM/SENS-COM lines): Open wire check (SENSOR_COM/SENS-COM lines) -1. Check for continuity between test points 1 and 2. Is there continuity? -YES- The SENSOR_COM/SENS-COM wires are OK. Replace the climate control unit . See: Heating and Air Conditioning/Control Assembly/Service and Repair -NO- Repair an open in the wire between the climate control unit and the evaporator temperature sensor.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1232",
+      "description": "or DTC indicator 0A : A Short in the Evaporator Temperature Sensor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTC with the HDS. -2. Turn the ignition switch to LOCK (0), and then back to ON (II). -3. Do the self-diagnostic with the HDS or the climate control unit  See: Heating and Air Conditioning/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The Climate Control System. -4. Check for DTCs. Is DTC B1232 or 0A indicated? -YES- Go to step 2. -NO- Intermittent failure. Check for loose wires or poor connections on the evaporator temperature sensor circuit.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Evaporator temperature sensor check: Evaporator temperature sensor check -1. Turn the ignition switch to LOCK (0). -2. Remove the evaporator temperature sensor, and test it  See: Heating and Air Conditioning/Evaporator Temperature Sensor / Switch/Service and Repair. Is the evaporator temperature sensor OK? -YES- With the evaporator temperature sensor disconnected, go to step 3. -NO- Replace the evaporator temperature sensor  See: Heating and Air Conditioning/Evaporator Temperature Sensor / Switch/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Shorted wire check (TEVA line): Shorted wire check (TEVA line) -1. Disconnect the following connector. -2. Check for continuity between test points 1 and 2. Is there continuity? -YES- Repair a short to body ground in the wire between the climate control unit and the evaporator temperature sensor. -NO- The TEVA wire is OK. Replace the climate control unit . See: Heating and Air Conditioning/Control Assembly/Service and Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1233",
+      "description": "or DTC indicator 40 : An Open in the Air Mix Control Motor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTC with the HDS. -2. Turn the ignition switch to LOCK (0), and then back to ON (II). -3. Do the self-diagnostic with the HDS or the climate control unit  See: Heating and Air Conditioning/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The Climate Control System. -4. Check for DTCs. Is DTC B1233 or 40 indicated? -YES- Go to step 2. -NO- Intermittent failure. Check for loose wires or poor connections on the air mix control motor circuit.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Open wire check (AMD-P, S_5V/S5V, SENSOR_COM/SENS-COM lines) Open wire check (AMD-P, S_5V/S5V, SENSOR_COM/SENS-COM lines) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connectors. -3. Check for continuity between test points 1 and 2 respectively. Is there continuity? -YES- The AMD-P, S_5V/S5V, and SENSOR_COM/SENS-COM wires are OK. Go to step 3. -NO- Repair an open in the wire(s) between the climate control unit and the air mix control motor.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Air mix control motor check Air mix control motor check -1. Test the air mix control motor  See: Heating and Air Conditioning/Air Door/Air Door Actuator / Motor/Testing and Inspection/Air Mix Control Motor Test. Is the air mix control motor OK? -YES- Replace the climate control unit . See: Heating and Air Conditioning/Control Assembly/Service and Repair -NO- Replace the air mix control motor  See: Heating and Air Conditioning/Air Door/Air Door Actuator / Motor/Service and Repair/Air Mix Control Motor Removal and Installation.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1234",
+      "description": "or DTC indicator 41 : A Short in the Air Mix Control Motor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTC with the HDS. -2. Turn the ignition switch to LOCK (0), and then back to ON (II). -3. Do the self-diagnostic with the HDS or the climate control unit  See: Heating and Air Conditioning/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The Climate Control System. -4. Check for DTCs. Is DTC B1234 or 41 indicated? -YES- Go to step 2. -NO- Intermittent failure. Check for loose wires or poor connections on the air mix control motor circuit.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Shorted wire check (AMD-P, S_5V lines): Shorted wire check (AMD-P, S_5V lines) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connectors. -3. Check for continuity between test points 1 and 2 individually. Is there continuity? -YES- Repair a short to body ground in the wire(s) between the climate control unit and the air mix control motor. -NO- The AMD-P and S_5V wires are OK. Go to step 3.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Air mix control motor check: Air mix control motor check -1. Test the air mix control motor  See: Heating and Air Conditioning/Air Door/Air Door Actuator / Motor/Testing and Inspection/Air Mix Control Motor Test. Is the air mix control motor OK? -YES- Replace the climate control unit . See: Heating and Air Conditioning/Control Assembly/Service and Repair -NO- Replace the air mix control motor  See: Heating and Air Conditioning/Air Door/Air Door Actuator / Motor/Service and Repair/Air Mix Control Motor Removal and Installation.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1235",
+      "description": "or DTC indicator 42 : A Problem in the Air Mix Control Motor Circuit, Linkage, Door, or Motor",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTCs with the HDS. -2. Turn the ignition switch to LOCK (0), and then back to ON (II). -3. Do the self-diagnostic with the HDS or the climate control unit  See: Heating and Air Conditioning/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The Climate Control System. -4. Check for DTCs. Is DTC B1235 or 42 indicated? -YES- Go to step 2. -NO- Intermittent failure. Check for loose wires or poor connections in the air mix control motor circuit.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Open wire check (M-HOT, M-COOL lines): Open wire check (M-HOT, M-COOL lines) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connectors. -3. Check for continuity between test points 1 and 2 respectively. Is there continuity? -YES- The M-HOT and M-COOL wires are OK. Go to step 3. -NO- Repair an open in the wire(s) between the climate control unit and the air mix control motor.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Shorted wire check (M-HOT, M-COOL lines): Shorted wire check (M-HOT, M-COOL lines) -1. Check for continuity between test points 1 and 2 individually. Is there continuity? -YES- Repair a short to body ground in the wire(s) between the climate control unit and the air mix control motor. -NO- The M-HOT and M-COOL wires are OK. Go to step 4.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Air mix control motor check: Air mix control motor check -1. Test the air mix control motor  See: Heating and Air Conditioning/Air Door/Air Door Actuator / Motor/Testing and Inspection/Air Mix Control Motor Test. Is the air mix control motor OK? -YES- Replace the climate control unit . See: Heating and Air Conditioning/Control Assembly/Service and Repair -NO- Replace the air mix control motor  See: Heating and Air Conditioning/Air Door/Air Door Actuator / Motor/Service and Repair/Air Mix Control Motor Removal and Installation, or repair the air mix control linkage or door.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1240",
+      "description": "or DTC indicator 4B : A Problem in the Mode Control Motor Circuit, Linkage, Doors, or Motor",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTCs with the HDS. -2. Turn the ignition switch to LOCK (0), and then to ON (II). -3. Do the self-diagnostic with the HDS or the climate control unit  See: Heating and Air Conditioning/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The Climate Control System. -4. Check for DTCs. Is DTC B1240 or 4B indicated? -YES- Go to step 2. -NO- Intermittent failure. Check for loose wires or poor connections on the mode control motor circuit.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Open wire check (MODE_MTR_DEF/M-DEF, MODE_MTR_VENT/M-VENT lines): Open wire check (MODE_MTR_DEF/M-DEF, MODE_MTR_VENT/M-VENT lines) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connectors. -3. Check for continuity between test points 1 and 2 respectively. Is there continuity? -YES- The MODE_MTR_DEF/M-DEF and MODE_MTR_VENT/M-VENT wires are OK. Go to step 3. -NO- Repair an open in the wire(s) between the climate control unit and the mode control motor.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Shorted wire check (MODE_MTR_DEF, MODE_MTR_VENT lines): Shorted wire check (MODE_MTR_DEF, MODE_MTR_VENT lines) -1. Check for continuity between test points 1 and 2 individually. Is there continuity? -YES- Repair a short to body ground in the wire between the climate control unit and the mode control motor. -NO- The MODE_MTR_DEF and MODE_MTR_VENT wires are OK. Go to step 4.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Mode control motor check: Mode control motor check -1. Test the mode control motor  See: Heating and Air Conditioning/Air Door/Air Door Actuator / Motor/Testing and Inspection/Mode Control Motor Test. Is the mode control motor OK? -YES- Replace the climate control unit . See: Heating and Air Conditioning/Control Assembly/Service and Repair -NO- Replace the mode control motor  See: Heating and Air Conditioning/Air Door/Air Door Actuator / Motor/Service and Repair/Mode Control Motor Removal and Installation, or repair the mode control linkage or doors.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1241",
+      "description": "or DTC indicator 59 : A Problem in the Blower Motor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTC with the HDS. -2. Turn the ignition switch to LOCK (0) and then back to ON (II). -3. Do the self-diagnostic with the HDS or the climate control unit  See: Heating and Air Conditioning/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The Climate Control System. -4. Check for DTCs. Is DTC B1241 or 59 indicated? -YES- Go to step 2. -NO- Intermittent failure. Check for loose wires or poor connections on the blower motor circuit.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Fuse check: Fuse check -1. Turn the ignition switch to LOCK (0). -2. Check the following fuses. Are the fuses OK? -YES- Go to step 3. -NO- Replace the fuse(s), and recheck. If fuse(s) blow again, check for a short in the No. A2-8 (40 A) fuse and/or the No. B22 (7.5 A) fuse circuit.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Blower motor power circuit check: Blower motor power circuit check -1. Disconnect the following connector. -2. Turn the ignition switch to ON (II). -3. Measure the voltage between test points 1 and 2. Is there battery voltage? -YES- Go to step 4. -NO- Go to step 10.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Blower motor operation check: Blower motor operation check -1. Turn the ignition switch to LOCK (0). -2. Reconnect the blower 2P connector. -3. Connect terminals A and B with a jumper wire. -4. Turn the ignition switch to ON (II). Does the blower motor run? -YES- Go to step 5. -NO- Replace the blower motor  See: Heating and Air Conditioning/Blower Motor/Service and Repair/Blower Motor Removal and Installation .",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Open wire check (GND line): Open wire check (GND line) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the jumper wire. -3. Disconnect the following connector. -4. Check for continuity between test points 1 and 2. Is there continuity? -YES- The GND wire is OK. Go to step 6. -NO- Repair an open in the wire between the power transistor and body ground. If the wire is OK, check for poor ground at G401.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Open wire check (BLW-M line): Open wire check (BLW-M line) -1. Connect terminals A and B with a jumper wire. -2. Turn the ignition switch to ON (II). Does the blower motor run at high speed? -YES- The BLW-M wire is OK. Go to step 7. -NO- Repair an open in the wire between the power transistor and the blower motor.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Shorted wire check (BLOWER_G, BLOWER_V lines): Shorted wire check (BLOWER_G, BLOWER_V lines) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the jumper wire. -3. Disconnect the following connector. -4. Check for continuity between test points 1 and 2 individually. Is there continuity? -YES- Repair a short to body ground in the wire between the climate control unit and the power transistor. -NO- The BLOWER_G and BLOWER_V wires are OK. Go to step 8.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Open wire check (BLOWER_G/BLW-G, BLOWER_V/BLW-V lines): Open wire check (BLOWER_G/BLW-G, BLOWER_V/BLW-V lines) -1. Check for continuity between test points 1 and 2 respectively. Is there continuity? -YES- The BLOWER_G/BLW-G and BLOWER_V/BLW-V wires are OK. Go to step 9. -NO- Repair an open in the wire between the climate control unit and the power transistor.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Power transistor check: Power transistor check -1. Reconnect the climate control unit 32P connector. -2. Test the power transistor  See: Heating and Air Conditioning/Power Transistor HVAC/Testing and Inspection/Blower Power Transistor Test (Climate Control). Is the power transistor OK? -YES- Replace the climate control unit . See: Heating and Air Conditioning/Control Assembly/Service and Repair -NO- Replace the power transistor  See: Heating and Air Conditioning/Power Transistor HVAC/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Blower motor relay check: Blower motor relay check -1. Turn the ignition switch to LOCK (0). -2. Remove the blower motor relay from the under-hood fuse/relay box, and test it  See: Power and Ground Distribution/Power Distribution Relay/Testing and Inspection. Is the relay OK? -YES- Go to step 11. -NO- Replace the blower motor relay.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Open wire check (+B_HTR_MTR line): Open wire check (+B_HTR_MTR line) -1. Measure the voltage between test points 1 and 2. Is there battery voltage? -YES- The +B_HTR MTR wire is OK. Go to step 12. -NO- Open in +B_HTR_MTR wire. Replace the under-hood fuse/relay box.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Open wire check (IG2_A/C line): Open wire check (IG2_A/C line) -1. Turn the ignition switch to ON (II). -2. Measure the voltage between test points 1 and 2. Is there battery voltage? -YES- The IG2_A/C wire is OK. Go to step 13. -NO- Repair an open in the wire between the No. B22 (7.5 A) fuse in the under-dash fuse/relay box and the blower motor relay.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "Open wire check (GND line): Open wire check (GND line) -1. Turn the ignition switch to LOCK (0). -2. Check for continuity between test points 1 and 2. Is there continuity? -YES- Repair an open in the wire between the blower motor relay and the blower motor. -NO- Repair an open in the wire between the blower motor relay and body ground. If the wire is OK, check for poor ground at G401.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1275",
+      "description": "Headlight Switch OFF Position Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1276",
+      "description": "Headlight Switch PARKING Position Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1277",
+      "description": "Headlight Switch AUTO Position Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1278",
+      "description": "Headlight Switch ON Position Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Select LIGHTING from the BODY ELECTRICAL SYSTEM SELECT menu, and enter the DATA LIST. -2. Check each combination light switch position value with the DATA LIST menu. Are all data list values correct? -YES- Intermittent failure, the system is OK at this time. Check for loose or poor connections. -NO- Go to step 2.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Exterior lights system check: Exterior lights system check -1. Check each combination light switch position value with the DATA LIST menu. Is data list value OFF, not ON? -YES- Go to step 5. -NO- Go to step 3.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Determine possible failure area (combination light switch, others): Determine possible failure area (combination light switch, others) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check each combination light switch position value with the DATA LIST menu. Has the data list value changed from ON to OFF? -YES- Replace the combination light switch. -NO- Go to step 4.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Shorted wire check (H/L_OFF_SW, H/L_ON_SW, PARKING_LT_SW lines): Shorted wire check (H/L_OFF_SW, H/L_ON_SW, PARKING_LT_SW lines) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check for continuity between test points 1 and 2 individually. Is there continuity? -YES- Repair a short to ground in the wire. -NO- Faulty MICU; replace the under-dash fuse/relay box  See: Maintenance/Fuses and Circuit Breakers/Relay Box/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Determine possible failure area (combination light switch, others): Determine possible failure area (combination light switch, others) -1. Connect terminals A and B with a jumper wire. Has the data list value changed from OFF to ON? -YES- Replace the combination light switch  See: Lighting and Horns/Sensors and Switches - Lighting and Horns/Combination Switch/Service and Repair. -NO- Go to step 6.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Open wire check (H/L_OFF_SW, H/L_ON_SW, PARKING_LT_SW, COMBI_SW_GND (LT) lines): Open wire check (H/L_OFF_SW, H/L_ON_SW, PARKING_LT_SW, COMBI_SW_GND (LT) lines) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check for continuity test points 1 and 2. Is there continuity? -YES- Faulty MICU; replace the under-dash fuse/relay box  See: Maintenance/Fuses and Circuit Breakers/Relay Box/Service and Repair. -NO- Repair an open or high resistance in the wire.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1279",
+      "description": "Dimmer Switch Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Exterior lights system check 1: Exterior lights system check 1 -1. With the headlight dimmer switch in the neutral position, select LIGHTING from the BODY ELECTRICAL SYSTEM SELECT menu, and enter the DATA LIST. -2. Check the ON/OFF information of the HEADLIGHT SWITCH (HIGH BEAM) and HEADLIGHT SWITCH (PASSING) in the DATA LIST. Is either information indicator ON? -YES- Go to step 4. -NO- Go to step 2.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Exterior lights system check 2: Exterior lights system check 2 -1. With the headlight dimmer switch in the high beam position, check the ON/OFF information of the HEADLIGHT SWITCH (HIGH BEAM) and HEADLIGHT SWITCH (PASSING) in the DATA LIST. Are both information indicators ON? -YES- Go to step 3. -NO- Intermittent failure, the system is OK at this time.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Shorted wire check (H/L_HI_SW to PASSING_SW line): Shorted wire check (H/L_HI_SW to PASSING_SW line) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Connect terminals A and B with a jumper wire. -4. Check the ON/OFF information of the HEADLIGHT SWITCH (HIGH BEAM) and HEADLIGHT SWITCH (PASSING) in the DATA LIST. Are both information indicators ON? -YES- Repair a short between the wires. -NO- Replace the combination light switch.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Determine possible failure area (combination light switch, others): Determine possible failure area (combination light switch, others) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check the ON/OFF information of the HEADLIGHT SWITCH (HIGH BEAM) and HEADLIGHT SWITCH (PASSING) in the DATA LIST. Is either information indicator ON? -YES- Go to step 5. -NO- Replace the combination light switch  See: Lighting and Horns/Sensors and Switches - Lighting and Horns/Combination Switch/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Shorted wire check (PASSING_SW, H/L_HI_SW lines): Shorted wire check (PASSING_SW, H/L_HI_SW lines) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check for continuity between test points 1 and 2 individually. Is there continuity? -YES- Repair a short to ground in the wire. -NO- Faulty MICU; replace the under-dash fuse/relay box  See: Maintenance/Fuses and Circuit Breakers/Relay Box/Service and Repair.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1280",
+      "description": "Turn Signal Switch Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn signal/hazard warning lights system check 1: Turn signal/hazard warning lights system check 1 -1. Select LIGHTING from the BODY ELECTRICAL SYSTEM SELECT menu, and enter the DATA LIST. -2. Check each turn signal switch position value with the DATA LIST menu. Are both data list values indicated OFF? -YES- Go to step 2. -NO- Go to step 4.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn signal/hazard warning lights system check 2: Turn signal/hazard warning lights system check 2 -1. Operate the turn signal switch to the left, then to the right position. -2. Check each turn signal switch position value with the DATA LIST menu. Are both data list values indicated ON? -YES- Go to step 3. -NO- Intermittent failure, the system is OK at this time.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Shorted wire check (R_TURN_SW to L_TURN_SW line): Shorted wire check (R_TURN_SW to L_TURN_SW line) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Connect terminals A and B with a jumper wire. -4. Check each turn signal switch position value with the DATA LIST menu. Are all data list values correct? -YES- Replace the combination light switch  See: Lighting and Horns/Sensors and Switches - Lighting and Horns/Combination Switch/Service and Repair. -NO- Repair a short between the wires.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn signal/hazard warning lights system check 2: Turn signal/hazard warning lights system check 2 -1. Check each turn signal switch position value with the DATA LIST menu. Is TURN SIGNAL SWITCH (LEFT) value ON? -YES- Go to step 6. -NO- Go to step 5.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Shorted wire check (R_TURN_SW line): Shorted wire check (R_TURN_SW line) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check turn signal switch position value with the DATA LIST menu. Is TURN SIGNAL SWITCH (RIGHT) value ON? -YES- Repair a short to ground in the wire. -NO- Replace the combination light switch  See: Lighting and Horns/Sensors and Switches - Lighting and Horns/Combination Switch/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Shorted wire check (L_TURN_SW line): Shorted wire check (L_TURN_SW line) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check turn signal switch position value with the DATA LIST menu. Is TURN SIGNAL SWITCH (LEFT) value ON? -YES- Repair a short to ground in the wire. -NO- Replace the combination light switch  See: Lighting and Horns/Sensors and Switches - Lighting and Horns/Combination Switch/Service and Repair.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1281",
+      "description": "Control System DTCs B1281, B1282, B1283, B1284",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1282",
+      "description": "Front Wiper INT (AUTO) Position Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1283",
+      "description": "Control System DTCs B1281, B1282, B1283, B1284",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1284",
+      "description": "Control System DTCs B1281, B1282, B1283, B1284",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Wiper/washers system check: Wiper/washers system check -1. Select WIPER from the BODY ELECTRICAL SYSTEM SELECT menu, and enter the DATA LIST. -2. Turn the windshield wiper switch to the OFF position. -3. Check each windshield wiper switch position value with the DATA LIST menu. Are all data list values correct? -YES- Go to step 4. -NO- Go to step 2.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Determine possible failure area (windshield wiper/washer switch, others): Determine possible failure area (windshield wiper/washer switch, others) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check each windshield wiper switch position value with the DATA LIST menu. Has the data list value changed from ON to OFF? -YES- Replace the windshield wiper/washer switch. -NO- Go to step 3.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Shorted wire check (FR_WIPER_INT&LO_SW, FR_WIPER_HI&LO_SW, FR_WIPER_MIST_SW lines): Shorted wire check (FR_WIPER_INT&LO_SW, FR_WIPER_HI&LO_SW, FR_WIPER_MIST_SW lines) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check for continuity between test points 1 and 2 individually. Is there continuity? -YES- Repair a short to ground in the wire. -NO- Faulty MICU; replace the under-dash fuse/relay box  See: Maintenance/Fuses and Circuit Breakers/Relay Box/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Shorted wire check (FR_WIPER_MIST_SW to FR_WIPER_HI&LO_SW, FR_WIPER_HI&LO_SW to FR_WIPER_INT&LO_SW, FR_WIPER_MIST_SW to FR_WIPER_INT&LO_SW lines): Shorted wire check (FR_WIPER_MIST_SW to FR_WIPER_HI&LO_SW, FR_WIPER_HI&LO_SW to FR_WIPER_INT&LO_SW, FR_WIPER_MIST_SW to FR_WIPER_INT&LO_SW lines) -1. Select WIPER from the BODY ELECTRICAL SYSTEM SELECT menu, and enter the DATA LIST. -2. Check each windshield wiper switch position value with the DATA LIST menu. Are all data list values correct? -YES- Intermittent failure, the system is OK at this time. Check for loose or poor connections. -NO- Repair a short between the wires.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1552",
+      "description": "Automatic Lighting Control Unit EEPROM Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTCs with the HDS. -2. Turn the ignition switch to LOCK (0) and then back to ON (II). -3. Check for DTCs with the HDS. Is DTC B1552 indicated? -YES- Replace the automatic lighting control unit  See: Lighting and Horns/Lamp Control Module/Service and Repair. -NO- Intermittent failure, the system is OK at this time.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1575",
+      "description": "Auto Light Sensor Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTCs with the HDS. -2. Turn the ignition switch to LOCK (0) and then back to ON (II). -3. Check for DTCs with the HDS. Is DTC B1575 indicated? -YES- Go to step 2. -NO- Intermittent failure, the system is OK at this time.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Open wire check (AUTO_LT_SIO, AUTO_LT_SIP, AUTO_LT_SIG lines): Open wire check (AUTO_LT_SIO, AUTO_LT_SIP, AUTO_LT_SIG lines) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connectors. -3. Check for continuity between test points 1 and 2 respectively. Is there continuity? -YES- Go to step 3. -NO- Repair an open or high resistance in the wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Shorted wire check (AUTO_LT_SIO to AUTO_LT_SIP line): Shorted wire check (AUTO_LT_SIO to AUTO_LT_SIP line) -1. Check for continuity between test points 1 and 2. Is there continuity? -YES- Repair a short between the wires. -NO- Go to step 4.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Open wire check (GND line): Open wire check (GND line) -1. Check for continuity between test points 1 and 2 individually. Is there continuity? -YES- Go to step 5. -NO- Repair an open or high resistance in the wire or poor ground (G504).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Automatic lighting sensor power circuit check: Automatic lighting sensor power circuit check -1. Reconnect the automatic lighting control unit 14P connector. -2. Turn the ignition switch to LOCK (0) and then back to ON (II). -3. Measure the voltage between test points 1 and 2. Is there about 5 V? -YES- Replace the automatic lighting sensor  See: Heating and Air Conditioning/Sensors and Switches - HVAC/Solar Sensor/Service and Repair. -NO- Replace the automatic lighting control unit  See: Lighting and Horns/Lamp Control Module/Service and Repair. With Moonroof Control System DTCs B1775",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1775",
+      "description": "Microphone input/output shorted to power or open (without moonroof)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Check for HFL DTCs  See: Accessories and Optional Equipment/Voice Activation System/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The HandsFreeLink System. Is DTC B1775 indicated? -YES- The failure is duplicated, go to step 2. -NO- Intermittent failure, the system is OK at this time.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Shorted wire check (MIC+ line to power): Shorted wire check (MIC+ line to power) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connectors. -3. Turn the ignition switch to ON (II). -4. Measure the voltage between test points 1 and 2. Is there voltage? -YES- There is a short to power in the wire between the HandsFreeLink control unit and the HFL microphone. Replace the affected shielded harness. -NO- Go to step 3.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Open wire check (MIC+ line, MIC- line): Open wire check (MIC+ line, MIC- line) -1. Turn the ignition switch to LOCK (0). -2. Check for continuity between test points 1 and 2. Is there continuity? -YES- Go to step 5. -YES- Go to step 4. -NO- There is an open in the wire(s) between the HandsFreeLink control unit and the HFL microphone. Replace the affected shielded harness.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "HandsFreeLink control unit check: HandsFreeLink control unit check -1. Substitute a known-good HFL microphone  See: Accessories and Optional Equipment/Voice Activation System/Voice Activation Microphone/Service and Repair/HFL Microphone Removal and Installation (Without Moonroof), and recheck. Does the symptom/indication go away? -YES- Replace the original HFL microphone. -NO- Replace the HandsFreeLink control unit  See: Accessories and Optional Equipment/Relays and Modules - Accessories and Optional Equipment/Voice Activation Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Shorted wire check (TELEM_SIG+ line to power): Shorted wire check (TELEM_SIG+ line to power) -1. Disconnect the following connector. -2. Turn the ignition switch to ON (II). -3. Measure the voltage between test points 1 and 2. Is there voltage? -YES- There is a short to power in the wire between the HandsFreeLink control unit and the audio-navigation unit. Replace the affected shielded harness. -NO- Go to step 6.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Determine possible failure area (audio-navigation unit, others): Determine possible failure area (audio-navigation unit, others) -1. Turn the ignition switch to LOCK (0). -2. Reconnect the HandsFreeLink control unit 32P connector and the HFL microphone 3P connector. -3. Turn the ignition switch to ON (II). -4. Do the HFL Self-Diagnostic Function  See: Accessories and Optional Equipment/Voice Activation System/Testing and Inspection/Initial Inspection and Diagnostic Overview/HandsFreeLink System Self-Diagnostic Function. Do you hear, \"The HFT is OK\"? -YES- Replace the audio-navigation unit  See: Accessories and Optional Equipment/Radio, Stereo, and Compact Disc/Service and Repair/Audio-Navigation Unit Removal and Installation. -NO- Go to step 7.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "HandsFreeLink control unit check: HandsFreeLink control unit check -1. Turn the ignition switch to LOCK (0). -2. Substitute a known-good HFL microphone  See: Accessories and Optional Equipment/Voice Activation System/Voice Activation Microphone/Service and Repair/HFL Microphone Removal and Installation (Without Moonroof), and recheck. Does the symptom/indication go away? -YES- Replace the original HFL microphone. -NO- Replace the HandsFreeLink control unit  See: Accessories and Optional Equipment/Relays and Modules - Accessories and Optional Equipment/Voice Activation Module/Service and Repair. Without Moonroof Control System DTCs B1775",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1776",
+      "description": "Microphone input/output shorted to ground",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Check for HFL DTCs  See: Accessories and Optional Equipment/Voice Activation System/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The HandsFreeLink System. Is DTC B1776 indicated? -YES- The failure is duplicated, go to step 2. -NO- Intermittent failure, the system is OK at this time.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Shorted wire check (MIC+ line): Shorted wire check (MIC+ line) -1. Disconnect the following connectors. -2. Check for continuity between test points 1 and 2. Is there continuity? -YES- There is a short to body ground in the wire between the HandsFreeLink control unit and the HFL microphone. Replace the affected shielded harness. -NO- Go to step 3.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Shorted wire check (MIC+ line to another lines): Shorted wire check (MIC+ line to another lines) -1. Check for continuity between test points 1 and 2. Is there continuity? -YES- There is a short in the wires between the HandsFreeLink control unit and the HFL microphone. Replace the affected shielded harness. -NO- Go to step 5. -NO- Go to step 4.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "HandsFreeLink control unit check: HandsFreeLink control unit check -1. Substitute a known-good HFL microphone (with moonroof)  See: Accessories and Optional Equipment/Voice Activation System/Voice Activation Microphone/Service and Repair/HFL Microphone Removal and Installation (Without Moonroof) or HFL microphone (without moonroof)  See: Accessories and Optional Equipment/Voice Activation System/Voice Activation Microphone/Service and Repair/HFL Microphone Removal and Installation (With Moonroof), and recheck. Does the symptom/indication go away? -YES- Replace the original HFL microphone. -NO- Replace the HandsFreeLink control unit  See: Accessories and Optional Equipment/Relays and Modules - Accessories and Optional Equipment/Voice Activation Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Shorted wire check (TELEM_SIG+ line): Shorted wire check (TELEM_SIG+ line) -1. Disconnect the following connector. -2. Check for continuity between test points 1 and 2. Is there continuity? -YES- There is a short to body ground in the wire between the HandsFreeLink control unit and the audio-navigation unit. Replace the affected shielded harness. -NO- Go to step 6.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Shorted wire check (TELEM_SIG+ line to TELEM_SIG- line): Shorted wire check (TELEM_SIG+ line to another lines) -1. Check for continuity between test points 1 and 2. Is there continuity? -YES- There is a short in the wires between the HandsFreeLink control unit and the audio-navigation unit. Replace the affected shielded harness. -NO- Go to step 7.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Determine possible failure area (audio-navigation unit, others): Determine possible failure area (audio-navigation unit, others) -1. Reconnect the HandsFreeLink control unit 32P connector and the HFL microphone 3P connector (with moonroof) or 10P connector (without moonroof). -2. Turn the ignition switch to ON (II). -3. Do the HFL Self-Diagnostic Function  See: Accessories and Optional Equipment/Voice Activation System/Testing and Inspection/Initial Inspection and Diagnostic Overview/HandsFreeLink System Self-Diagnostic Function. Do you hear, \"The HFT is OK\"? -YES- Replace the audio-navigation unit  See: Accessories and Optional Equipment/Radio, Stereo, and Compact Disc/Service and Repair/Audio-Navigation Unit Removal and Installation. -NO- Go to step 8.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "HandsFreeLink control unit check: HandsFreeLink control unit check -1. Turn the ignition switch to LOCK (0). -2. Substitute a known-good HFL microphone (with moonroof)  See: Accessories and Optional Equipment/Voice Activation System/Voice Activation Microphone/Service and Repair/HFL-Navigation Microphone Removal and Installation or HFL microphone (without moonroof)  See: Accessories and Optional Equipment/Voice Activation System/Voice Activation Microphone/Service and Repair/HFL Microphone Removal and Installation (With Moonroof), and recheck. Does the symptom/indication go away? -YES- Replace the original HFL microphone. -NO- Replace the HandsFreeLink control unit  See: Accessories and Optional Equipment/Relays and Modules - Accessories and Optional Equipment/Voice Activation Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1779",
+      "description": "HandsFreeLink steering wheel switch failure",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Check for HFL DTCs  See: Accessories and Optional Equipment/Voice Activation System/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The HandsFreeLink System. Is DTC B1779 indicated? -YES- The failure is duplicated, go to step 2. -NO- Intermittent failure, the system is OK at this time.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Determine possible failure area (HFL switch, others): Determine possible failure area (HFL switch, others) -1. Turn the ignition switch to LOCK (0). -2. Do the HFL Switch Test  See: Accessories and Optional Equipment/Sensors and Switches - Accessories and Optional Equipment/Voice Activation Switch/Service and Repair. Is the switch OK? -YES- Go to step 3. -NO- Replace the HFL switch  See: Accessories and Optional Equipment/Sensors and Switches - Accessories and Optional Equipment/Voice Activation Switch/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Shorted wire check (HFT_NAVI_REMOTE_SW line to power): Shorted wire check (HFT_NAVI_REMOTE_SW line to power) -1. Disconnect the following connectors. -2. Turn the ignition switch to ON (II). -3. Measure the voltage between test points 1 and 2. Is there voltage? -YES- Repair a short to power in the wire between the HandsFreeLink control unit, the cable reel, and the HFL switch. -NO- Go to step 4.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Open wire check (HFT_NAVI_REMOTE_SW line): Open wire check (HFT_NAVI_REMOTE_SW line) -1. Turn the ignition switch to LOCK (0). -2. Check for continuity between test points 1 and 2. Is there continuity? -YES- Go to step 5. -NO- Repair an open in the wire between the HandsFreeLink control unit, the cable reel, and the HFL switch.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Open wire check (GND line): Open wire check (GND line) -1. Check for continuity between test points 1 and 2. Is there continuity? -YES- Replace the HandsFreeLink control unit  See: Accessories and Optional Equipment/Relays and Modules - Accessories and Optional Equipment/Voice Activation Module/Service and Repair. -NO- Repair an open in the wire between the HFL switch and body ground (T5).",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1780",
+      "description": "HandsFreeLink steering wheel switch line short",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Check for HFL DTCs  See: Accessories and Optional Equipment/Voice Activation System/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The HandsFreeLink System. Is DTC B1780 indicated? -YES- The failure is duplicated, go to step 2. -NO- Intermittent failure, the system is OK at this time.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Determine possible failure area (HFL switch, others): Determine possible failure area (HFL switch, others) -1. Turn the ignition switch to LOCK (0). -2. Do the HFL Switch Test  See: Accessories and Optional Equipment/Sensors and Switches - Accessories and Optional Equipment/Voice Activation Switch/Service and Repair. Is the switch OK? -YES- Go to step 3. -NO- Replace the HFL switch  See: Accessories and Optional Equipment/Sensors and Switches - Accessories and Optional Equipment/Voice Activation Switch/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Shorted wire check (HFT_NAVI_REMOTE_SW line): Shorted wire check (HFT_NAVI_REMOTE_SW line) -1. Disconnect the following connectors. -2. Check for continuity between test points 1 and 2. Is there continuity? -YES- Repair a short to body ground in the wire between the HandsFreeLink control unit, the cable reel, and the HFL switch. -NO- Replace the HandsFreeLink control unit  See: Accessories and Optional Equipment/Relays and Modules - Accessories and Optional Equipment/Voice Activation Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1792",
+      "description": "HandsFreeLink control module error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Check for HFL DTCs  See: Accessories and Optional Equipment/Voice Activation System/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The HandsFreeLink System. Is DTC B1792 indicated? -YES- Replace the HandsFreeLink control unit  See: Accessories and Optional Equipment/Relays and Modules - Accessories and Optional Equipment/Voice Activation Module/Service and Repair. -NO- Intermittent failure, the system is OK at this time.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B2983",
+      "description": "or DTC indicator 57 : A Problem in the Recirculation Control Motor Circuit, Linkage, Door, or Motor",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTCs with the HDS. -2. Turn the ignition switch to LOCK (0). -3. Do the self-diagnostic with the HDS or the climate control unit  See: Heating and Air Conditioning/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The Climate Control System. -4. Check for DTCs. Is DTC B2983 or 57 indicated? -YES- Go to step 2. -NO- Intermittent failure. Check for loose wires or poor connections on the recirculation control motor circuit.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Open wire check (F/R_MTR (FRESH)/FRS, F/R_MTR (REC)/REC lines): Open wire check (F/R_MTR (FRESH)/FRS, F/R_MTR (REC)/REC lines) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connectors. -3. Check for continuity between test points 1 and 2 respectively. Is there continuity? -YES- The F/R_MTR (FRESH)/FRS and F/R_MTR (REC)/REC wires are OK. Go to step 3. -NO- Repair an open in the wire(s) between the climate control unit and the recirculation control motor.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Shorted wire check (F/R_MTR (FRESH), F/R_MTR (REC) lines): Shorted wire check (F/R_MTR (FRESH), F/R_MTR (REC) lines) -1. Check for continuity between test points 1 and 2 individually. Is there continuity? -YES- Repair a short to body ground in the wire between the climate control unit and the recirculation control motor. -NO- The F/R_MTR (FRESH) and F/R_MTR (REC) wires are OK. Go to step 4.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Recirculation control motor check: Recirculation control motor check -1. Test the recirculation control motor  See: Heating and Air Conditioning/Air Door/Air Door Actuator / Motor/Testing and Inspection/Recirculation Control Motor Test. Is the recirculation control motor OK? -YES- Replace the climate control unit . See: Heating and Air Conditioning/Control Assembly/Service and Repair -NO- Replace the recirculation control motor  See: Heating and Air Conditioning/Air Door/Air Door Actuator / Motor/Service and Repair/Recirculation Control Motor Removal and Installation, or repair the recirculation control linkage or door.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B2986",
+      "description": "or DTC indicator 55 : An Open in the Recirculation Control Motor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTC with the HDS. -2. Turn the ignition switch to LOCK (0) and then back to ON (II). -3. Do the self-diagnostic with the HDS or the climate control unit  See: Heating and Air Conditioning/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The Climate Control System. -4. Check for DTCs. Is DTC B2986 or 55 indicated? -YES- Go to step 2. -NO- Intermittent failure. Check for loose wires or poor connections on the recirculation control motor circuit.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Open wire check (RFD-P/FRD-P, S_5V/S5V, SENSOR_COM/SENS-COM lines): Open wire check (RFD-P/FRD-P, S_5V/S5V, SENSOR_COM/SENS-COM lines) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connectors. -3. Check for continuity between test points 1 and 2 respectively. Is there continuity? -YES- The RFD-P/FRD-P, S_5V/S5V, and SENSOR_COM/SENS-COM wires are OK. Go to step 3. -NO- Repair an open in the wire(s) between the climate control unit and the recirculation control motor.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Recirculation control motor check Recirculation control motor check -1. Test the recirculation control motor  See: Heating and Air Conditioning/Air Door/Air Door Actuator / Motor/Testing and Inspection/Recirculation Control Motor Test. Is the recirculation control motor OK? -YES- Replace the climate control unit . See: Heating and Air Conditioning/Control Assembly/Service and Repair -NO- Replace the recirculation control motor  See: Heating and Air Conditioning/Air Door/Air Door Actuator / Motor/Service and Repair/Recirculation Control Motor Removal and Installation.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

@@ -1,0 +1,1329 @@
+{
+  "source_file": "Suzuki_GrandVitara_B.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 98,
+  "dtcs": [
+    {
+      "dtc_code": "B1013",
+      "description": "SDM Internal Failure DTC Will be Set when An internal SDM fault is detected by SDM.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Replace SDM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Repeat Air Bag Diagnostic System Check:Advanced Air Bag.  See: Restraints and Safety Systems/Air Bag Systems/Testing and Inspection/Initial Inspection and Diagnostic Overview/Air Bag Diagnostic System Check Except Advanced Air Bag",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1014",
+      "description": "\"AIR BAG\" Warning Light Circuit Failure",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1015",
+      "description": "\"PASS AIR BAG OFF\" Indicator Light Circuit Failure Step 1-3 Step 4-5",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1016",
+      "description": "Power Source Voltage Too High Step 1-3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1017",
+      "description": "Power Source Voltage Low Step 1-3 Step 3 (Continued)-5",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1018",
+      "description": "OCM-SDM Serial Communication Problem Step 1-4",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1021",
+      "description": "Air Bag Module Exploded DTC Will be Set when The SDM detects a crash of sufficient force to warrant activation of the front (Driver, Passenger and both seat bolt pretensioner) air bag module. (SDM outputs a deployment command.) Flow Test Description STEP 2: Check that DTC B1021 has been set although front-air bag has not been deployed. STEP 3: Check that DTC has been set due to failure of SDM. Step 1-3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1024",
+      "description": "Driver / Passenger Side-Air Bag Module Exploded DTC Will be Set when The SDM detects a crash of sufficient force to warrant activation of the side-air bag module. (SDM outputs a deployment command.) Flow Test Description STEP 2: Check that DTC B1024 / B1025 has been set although side-air bag has not been deployed. STEP 3: Check that DTC has been set due to failure of SDM. Step 1-3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1026",
+      "description": "Pretensioner Module Exploded DTC Will be Set when The SDM detects a crash of sufficient force to warrant activation of the pretensioner module. (SDM outputs a activated command.) Flow Test Description STEP 2: Check that DTC B1026 has been set although pretensioner has not been activated. STEP 3: Check that DTC has been set due to failure of SDM. Step 1-3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1028",
+      "description": "Driver / Passenger Side Curtain Air Bag Module Exploded DTC Will be Set when The SDM detects a crash of sufficient force to warrant activation of the side curtain-air bag module. (SDM outputs a deployment command.) Flow Test Description STEP 2: Check that DTC B1028 / B1029 has been set although side curtain-air bag has not been deployed. STEP 3: Check that DTC has been set due to failure of SDM. Step 1-3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1031",
+      "description": "Driver Air Bag Initiator Circuit Resistance High Step 1-2 Step 2 (Continued)-3 Step 3 (Continued)-4 Step 4 (Continued)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1032",
+      "description": "Driver Air Bag Initiator Circuit Resistance Low Step 1-2 Step 2 (Continued)-3 Step 3 (Continued)-4 Step 4 (Continued)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1033",
+      "description": "Driver Air Bag Initiator Circuit Short to Ground Step 1-2 Step 2 (Continued)-3 Step 3 (Continued)-4 Step 4 (Continued)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1034",
+      "description": "Driver Air Bag Initiator Circuit Short to Power Circuit Step 1-2 Step 2 (Continued)-3 Step 3 (Continued)-4 Step 4 (Continued)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1035",
+      "description": "Driver Air Bag (2nd Stage) Circuit Resistance High Step 1-2 Step 3 Step 4",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1036",
+      "description": "Driver Air Bag (2nd Stage) Circuit Resistance Low Step 1-2 Step 3 Step 4",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1037",
+      "description": "Driver Air Bag (2nd Stage) Circuit Short to Ground Step 1-2 Step 3 Step 4",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1038",
+      "description": "Driver Air Bag (2nd Stage) Circuit Short to Power Circuit Step 1-2 Step 3 Step 4",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1041",
+      "description": "Passenger Air Bag Initiator Circuit Resistance High Step 1-2 Step 2 (Continued)-4 Step 4 (Continued)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1042",
+      "description": "Passenger Air Bag Initiator Circuit Resistance Low Step 1-2 Step 2 (Continued)-3 Step 3 (Continued)-4 Step 4 (Continued)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1043",
+      "description": "Passenger Air Bag Initiator Circuit Short to Ground Step 1-2 Step 2 (Continued)-3 Step 3 (Continued)-4 Step 4 (Continued)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1044",
+      "description": "Passenger Air Bag Initiator Circuit Short to Power Circuit Step 1-2 Step 2 (Continued)-3 Step 3 (Continued)-4 Step 4 (Continued)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1045",
+      "description": "Passenger Air Bag (2nd Stage) Circuit Resistance High Step 1-2 Step 3 Step 4",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1046",
+      "description": "Passenger Air Bag (2nd Stage) Circuit Resistance Low",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1047",
+      "description": "Passenger Air Bag (2nd Stage) Circuit Short to Ground Step 1-2 Step 3 Step 4",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1048",
+      "description": "Passenger Air Bag (2nd Stage) Circuit Short to Power Circuit Step 1-2 Step 3 Step 4",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1051",
+      "description": "Driver / Passenger Pretensioner Initiator Circuit Resistance High Step 1-3 Step 3 (Continued)-4 Step 4 (Continued)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1052",
+      "description": "Driver / Passenger Pretensioner Initiator Circuit Resistance Low Step 1-2 Step 2 (Continued)-3 Step 4",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1053",
+      "description": "Driver / Passenger Pretensioner Initiator Circuit Short to Ground Step 1-2 Step 2 (Continued)-3 Step 4",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1054",
+      "description": "Driver / Passenger Pretensioner Initiator Circuit Short to Power Circuit Step 1-2 Step 2 (Continued)-3 Step 4",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1061",
+      "description": "Driver / Passenger Side Air Bag Circuit Resistance High Step 1-2 Step 3 Step 4",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1062",
+      "description": "Driver / Passenger Side Air Bag Circuit Resistance Low Step 1-2 Step 3 Step 4",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1063",
+      "description": "Driver / Passenger Side Air Bag Circuit Short to Ground Step 1-2 Step 3 Step 4",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1064",
+      "description": "Driver / Passenger Side Air Bag Circuit Short to Power Circuit Step 1-2 Step 3 Step 4",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1071",
+      "description": "Driver / Passenger Side Forward Sensor Circuit Performance Problem DTC Will be Set when SDM receives internal fault signal or wrong ID (Part No.) signal from forward-sensor. Flow Test Description STEP 2: DTC check. Step 1-2",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1072",
+      "description": "Driver / Passenger Side Forward Sensor Circuit Communication Error DTC Will be Set when Forward-sensor abnormal signal is detected by SDM. Flow Test Description STEP 2: DTC check. Step 1-2",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1073",
+      "description": "Driver / Passenger Side Forward Sensor Circuit Short to Ground Step 1-3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1074",
+      "description": "Driver / Passenger Forward-Sensor Circuit Short to Power Circuit or Open Step 1-2 Step 2 (Continued)-3 Step 3 (Continued)-4",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1081",
+      "description": "Driver / Passenger Side-Sensor Circuit Performance Problem DTC Will be Set when SDM receives internal fault signal or wrong ID (Part No.) signal from side-sensor. Flow Test Description STEP 2: DTC check. Step 1-2",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1082",
+      "description": "Driver / Passenger Side-Sensor Circuit Communication Error DTC Will be Set when Side-sensor abnormal signal is detected by SDM. Flow Test Description Step 2: DTC check Step 1-2",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1083",
+      "description": "Driver / Passenger Side-Sensor Circuit Short to Ground Step 1-3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1084",
+      "description": "Driver / Passenger Side-Sensor Circuit Short to Power Circuit or Open Step 1-2 Step 2 (Continued)-3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1085",
+      "description": "Wrong Side-Sensor ID DTC Will be Set when SDM receives wrong ID (Part No.) signal from side-sensor.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Replace driver or passenger side-sensor.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1086",
+      "description": "Left / Right Side-Sensor Performance Problem DTC Will be Set when SDM receives internal fault signal from side-sensor.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Replace left or right side-sensor.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1087",
+      "description": "Left / Right Side-Sensor Communication Error Step 1-2 Step 2 (Continued)-4",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1133",
+      "description": "(No. 1133): Battery Voltage Too High Step 1",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1141",
+      "description": "(No. 1141 / No. 1142): Outside Air Temperature (Ambient Temp.) Sensor Circuit Malfunction Step 1-2",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1150",
+      "description": "(No. 1150): Air Bag Communication Circuit Malfunction Step 1-2",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1157",
+      "description": "(No. 1157): Air Bag Deployment Signal Input Step 1-2",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1170",
+      "description": "(No. 1170): EEPROM Access Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Replace BCM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Repeat BCM Check Flow Table.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1306",
+      "description": "CAN Vehicle Speed Date Invalid DTC Will be Set when The SDM received invalid vehicle speed date signal from ECM for specified counts. Step 1-2",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1311",
+      "description": "OCM ECU Fault DTC Will be Set When An internal OCM fault is detected by SDM.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Replace OCM with sensor mat.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1312",
+      "description": "OCM Sensor Mat Fault DTC Will be Set When SDM receives internal errors OCM electronics fault or/and sensor mat fault signal from OCM.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Replace OCM with sensor mat.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1313",
+      "description": "OCM Data Memory Damaged DTC Will be Set when FRAM memory in OCM can not be written or crash memory full.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Replace OCM with sensor mat.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1314",
+      "description": "OCM Battery Voltage Out of Range Step 1-4",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1315",
+      "description": "OCM Temperature Out of Range DTC Will be Set When When OCM internal temperature reaches to out of the performance guarantee temperature (-20 °C - 65 °C (4 - 149 °F)).",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Leave the vehicle for about an hour in the outside temperature 10 - 30 °C (50 - 86 °F) with all windows opened.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Check that the surface temperature of the front passenger seat is between -20 °C (4 °F) and 60 °C (149 °F).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn off the ignition switch once. Then turn it on and check if a trouble code is detected. If it is detected, replace OCM.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1316",
+      "description": "OCM Unexamined DTC Will be Set When OCM is not calibrated at product inspection at manufactory.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Replace OCM with sensor mat.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1317",
+      "description": "OCM Wrong ID DTC Will be Set When SDM receives wrong ID (Part No.) signal from OCM.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Replace OCM with sensor mat.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1318",
+      "description": "OCM Check Sum Error DTC Will be Set When SDM receives abnormality signal from OCM.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Replace OCM with sensor mat.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1319",
+      "description": "OCM External Faults Recorded DTC Will be Set When SDM has a history DTC for OCM (when DTC clearance has not been executed). Step 1-3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1321",
+      "description": "Left / Right Side-Air Bag Initiator Circuit Resistance High Step 1-3 Step 3 (Continued)-4 Step 4 (Continued)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1322",
+      "description": "Left / Right Side-Air Bag Initiator Circuit Resistance Low Step 1-2 Step 2 (Continued)-3 Step 3 (Continued)-4 Step 4 (Continued)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1323",
+      "description": "Left / Right Side-Air Bag Initiator Circuit Short to Ground Step 1-2 Step 2 (Continued)-3 Step 3 (Continued)-4 Step 4 (Continued)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1324",
+      "description": "Left / Right Side-Air Bag Initiator Circuit Short to Power Circuit Step 1-2 Step 2 (Continued)-3 Step 3 (Continued)-4 Step 4 (Continued)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1331",
+      "description": "Left / Right Side Curtain-Air Bag Initiator Circuit Resistance High Step 1-2 Step 3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1332",
+      "description": "Left / Right Side Curtain-Air Bag Initiator Circuit Resistance Low Step 1-2 Step 2 (Continued)-3 Step 3 (Continued)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1333",
+      "description": "Left / Right Side Curtain-Air Bag Initiator Circuit Short to Ground Step 1-2 Step 2 (Continued)-3 Step 3 (Continued)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1334",
+      "description": "Left / Right Side Curtain-Air Bag Initiator Circuit Short to Power Circuit Step 1-2 Step 2 (Continued)-3 Step 3 (Continued)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1361",
+      "description": "Driver / Passenger Side Curtain-Air Bag Circuit Resistance High Step 1-2 Step 3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1362",
+      "description": "Driver / Passenger Side Curtain-Air Bag Circuit Resistance Low Step 1-2 Step 2 (Continued)-3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1363",
+      "description": "Driver / Passenger Side Curtain-Air Bag Circuit Short to Ground Step 1-2 Step 2 (Continued)-3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1364",
+      "description": "Driver / Passenger Side Curtain-Air Bag Circuit Short to Power Circuit Step 1-2 Step 2 (Continued)-3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1381",
+      "description": "1384: Driver / Passenger Seat Belt Buckle Sensor Circuit Resistance High Step 1-3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1382",
+      "description": "1385: Driver / Passenger Seat Belt Buckle Sensor Circuit Short to Power Circuit Step 1-3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1383",
+      "description": "1386: Driver / Passenger Seat Belt Buckle Sensor Circuit Short to Ground Step 1-3",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1387",
+      "description": "1388: Driver / Passenger Seat Belt Buckle Sensor Performance Problem",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn ignition switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Replace defective seat belt buckle sensor.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1411",
+      "description": "Low Tire Pressure (DTC B1411: Low Tire Pressure (Tire Pressure Sensor No.1) / ) (DTC B1412: Low Tire Pressure (Tire Pressure Sensor No.2) /) (DTC B1413: Low Tire Pressure (Tire Pressure Sensor No.3) /) (DTC B1414: Low Tire Pressure (Tire Pressure Sensor No.4)) Step 1-2",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1421",
+      "description": "No Data From Tire Pressure Sensor (DTC B1421: No Data From Tire Pressure Sensor No.1 / ) (DTC B1422: No Data From Tire Pressure Sensor No.2 /) (DTC B1423: No Data From Tire Pressure Sensor No.3 /) (DTC B1424: No Data From Tire Pressure Sensor No.4) Step 1-4",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1431",
+      "description": "Invalid Pressure Signal From Tire Pressure Sensor (DTC B1431: Invalid pressure signal from tire pressure sensor No.1 / ) (DTC B1432: Invalid pressure signal from tire pressure sensor No.2 /) (DTC B1433: Invalid pressure signal from tire pressure sensor No.3 /) (DTC B1434: Invalid pressure signal from tire pressure sensor No.4) Step 1-2",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1441",
+      "description": "Invalid Status (DTC B1441: Invalid status (tire pressure sensor No.1) / ) (DTC B1442: Invalid status (tire pressure sensor No.2) /) (DTC B1443: Invalid status (tire pressure sensor No.3) /) (DTC B1444: Invalid status (tire pressure sensor No.4)) Step 1-2",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1451",
+      "description": "No Registration of ID Code Register the tire pressure sensor ID code in BCM, referring to Registration Procedure for Tire Pressure Sensor ID Code. If tire pressure sensor ID code can not be registered in BCM, substitute a known-good BCM and recheck.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1461",
+      "description": "No Input Vehicle Speed Signal Step 1-2",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1502",
+      "description": "H/L: Inside Air Temperature Sensor and/or Its Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch turned OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn ON ignition switch and clear DTC using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check DTC.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1503",
+      "description": "H/L: Evaporator Temperature Sensor and/or Its Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch turned OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn ON ignition switch and clear DTC using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check DTC.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1504",
+      "description": "H/L: Sunload Sensor and/or Its Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch turned OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn ON ignition switch and clear DTC using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check DTC. Step 1-4 Step 5-8",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1511",
+      "description": "H/L: Temperature Control Actuator (Position Sensor) and/or Its Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch turned OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn ON ignition switch and clear DTC using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check DTC.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1512",
+      "description": "H/L: Air Flow Control Actuator (Position Sensor) and/or Its Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch turned OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn ON ignition switch and clear DTC using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check DTC.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1513",
+      "description": "Temperature Control Actuator and/or Its Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch turned OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn ON ignition switch and clear DTC using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start A/C system and select temperature selector at \"MAX COOL\" position or \"MAX HOT\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Wait for 1 minute.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check DTC. Step 1-5 Step 6-10 Step 11-12",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1514",
+      "description": "Air Flow Control Actuator and/or Its Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch turned OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn ON ignition switch and clear DTC using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start A/C system and select mode selector at \"DEF\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Select mode selector at \"FOOT\" position and wait for 1 minute.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check DTC. Step 1-5 Step 6-10 Step 11-12",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1530",
+      "description": "H/L: Air Intake Control Actuator (Position Sensor) and/or Its Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch turned OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn ON ignition switch and clear DTC using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check DTC. Step 1-4 Step 4 (Continued)-8 Step 9-13",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1531",
+      "description": "Air Intake Control Actuator and/or Its Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch turned OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn ON ignition switch and clear DTC using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start A/C system and select air intake selector at \"FRE\" position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Select air intake selector at \"REC\" position and wait for 1 min. or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check DTC. Step 1-5 Step 6-9 Step 10-11",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1541",
+      "description": "Back-Up Power Supply Circuit Malfunction Step 1-2",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1546",
+      "description": "A/C Refrigerant Pressure Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scan tool to DLC with ignition switch turned OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn ON ignition switch and clear DTC using scan tool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start engine and warm up to normal operating temperature.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Start A/C system for 1 min. or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check DTC. Step 1-5",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1556",
+      "description": "Crankshaft Position (CKP) Sensor and/or Its Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and A/C system ON. Step 1",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1557",
+      "description": "Wheel Speed Sensor and/or Its Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and A/C system ON. Step 1",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1561",
+      "description": "Engine Coolant Temperature Sensor and/or Its Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and A/C system ON. Step 1",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1562",
+      "description": "Outside Air Temperature Sensor and/or Its Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Start engine and A/C system ON. Step 1",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1563",
+      "description": "A/C Refrigerant Pressure Sensor and/or Its Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

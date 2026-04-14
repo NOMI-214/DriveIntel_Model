@@ -1,0 +1,424 @@
+{
+  "source_file": "Civic_U_Codes.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 11,
+  "dtcs": [
+    {
+      "dtc_code": "U0029",
+      "description": "F-CAN Malfunction (BUS-OFF (ECM/PCM))",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Turn the ignition switch to ON (II). -2. Clear the DTC with the HDS. -3. Check for Pending or Confirmed DTCs with the HDS. Is DTC U0029 indicated? -YES- The failure is duplicated. Update the ECM/PCM  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Testing and Inspection/Programming and Relearning/ECM/PCM Update if it does not have the latest software, or substitute a known-good ECM/PCM  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Service and Repair, then do the repair verification. -NO- Intermittent failure, the system is OK at this time. Repair verification: -1. Check for Pending or Confirmed DTCs with the HDS. Is DTC U0029 indicated? -YES- If the ECM/PCM was updated, substitute a known-good ECM/PCM  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Service and Repair, then recheck. If the ECM/PCM was substituted, go to step 1. -NO- Troubleshooting is complete. If the ECM/PCM was substituted, replace the original ECM/PCM  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Service and Repair. If any other Pending or Confirmed DTCs are indicated, go to the indicated DTC's troubleshooting. Gauge Control Module Control System DTCs U0029",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100",
+      "description": "Control System DTCs U0100 DTC U100 : Gauge Control Module Lost Communication With ECM/PCM The controller area network (CAN) transmits/receives pulsing signals to/from the control modules simultaneously by using two signal lines (F_CAN-H and F_CAN-L). When the information is not sent from the VSA modulator-control unit via the F-CAN lines and this condition continues for a specified time or when the information sent from the VSA modulator-control unit is abnormal and this condition continues for a specified cycle, the engine control module (ECM)/powertrain control module (PCM) detects a malfunction and stores a DTC.",
+      "detection_condition": [
+        "One of these conditions is met:",
+        "-",
+        "The ECM/PCM does not receive any signals via the F-CAN lines for at least 1 second.",
+        "-",
+        "The information sent from the VSA modulator-control unit is abnormal at least 20 times."
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTCs with the HDS. -2. Turn the ignition switch to LOCK (0) and then back to ON (II). -3. Wait for at least 6 seconds. -4. Check for DTCs with the HDS. Is DTC U0100 indicated? -YES- Go to step 2. -NO- Intermittent failure, the system is OK at this time. Check for loose or poor connections.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Open wire check (F_CAN lines): Open wire check (F_CAN lines) -1. Turn the ignition switch to LOCK (0). -2. Jump the SCS line with the HDS. -3. Disconnect the following connectors. -4. Check for continuity between test points 1 and 2 respectively. Is there continuity? -YES- Replace the gauge control module (tach)  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair/Gauge Control Module (Tach) Removal and Installation. -NO- An open or poor connection in the F_CAN wires between the ECM/PCM and the gauge control module (tach). Advanced Diagnostics Advanced Diagnostics - DTC U0122: F-CAN Malfunction (Engine Control Module (ECM)/Powertrain Control Module (PCM)-VSA Modulator-Control Unit) (PGM-FI System (Engine Type: R18Z1, R18A9)) U0122",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0122",
+      "description": "Gauge Control Module Lost Communication With VSA Modulator-Control Unit (VSA Message)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "DTC check: DTC check -1. Turn the ignition switch to ON (II). -2. Check for Pending or Confirmed DTCs with the HDS. Are DTC U0029 and U0122 indicated at the same time? -YES- Go to the troubleshooting for DTC U0029  See: U0029/DTC Troubleshooting/ECM/PCM. -NO- Go to step 2.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTC with the HDS. -2. Check for Pending or Confirmed DTCs with the HDS. Is DTC U0122 indicated? -YES- The failure is duplicated. Go to step 3. -NO- Intermittent failure, the system is OK at this time. Check for poor connections or loose terminals at the VSA modulator-control unit, and the ECM/PCM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "VSA system check: VSA system check -1. Check for communication to the VSA system with the HDS. Does the HDS communicate with the VSA modulator-control unit? -YES- Go to step 4. -NO- Go to the symptom troubleshooting for ABS indicator, brake system indicator, and VSA indicator do not go off  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related Diagnostic Procedures/ABS Indicator, Brake System Indicator, and VSA Indicator Do Not Go Off.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Open wire check (F_CAN-H line): Open wire check (F_CAN-H line) -1. Turn the ignition switch to LOCK (0). -2. Jump the SCS line with the HDS. -3. Disconnect the following connectors. -4. Check for continuity between test points 1 and 2. Is there continuity? -YES- The F_CAN-H wire is OK. Go to step 5. -NO- Repair an open in the F_CAN-H wire between the ECM/PCM (A3) and the VSA modulator-control unit, then do the repair verification.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Open wire check (F_CAN-L line): Open wire check (F_CAN-L line) -1. Check for continuity between test points 1 and 2. Is there continuity? -YES- The F_CAN-L wire is OK. Update the VSA modulator-control unit  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Traction Control Module/Testing and Inspection/Programming and Relearning if it does not have the latest software, then do the repair verification. If DTC U0122 is indicated after updated, replace the original VSA modulator-control unit  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Traction Control Module/Service and Repair, then do the repair verification. -NO- Repair an open in the F_CAN-L wire between the ECM/PCM (A4) and the VSA modulator-control unit, then do the repair verification. Repair verification: -1. Turn the ignition switch to LOCK (0). -2. Reconnect all connectors. -3. Turn the ignition switch to ON (II). -4. Reset the ECM/PCM with the HDS  See: Powertrain Management/Computers and Control Systems/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The Fuel And Emissions Systems. -5. Do the ECM/PCM idle learn procedure  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Testing and Inspection/Programming and Relearning/ECM/PCM Idle Learn Procedure. -6. Check for Pending or Confirmed DTCs with the HDS. Is DTC U0122 indicated? -YES- Check for poor connections or loose terminals at the VSA modulator-control unit and the ECM/PCM, then go to step 1. -NO- Troubleshooting is complete. If any other Pending or Confirmed DTCs are indicated, go to the indicated DTC's troubleshooting. Gauge Control Module Control System DTCs U0122",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Open wire check (F_CAN lines): Open wire check (F_CAN lines) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check for continuity between test points 1 and 2 respectively. Is there continuity? -YES- Replace the gauge control module (tach)  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair/Gauge Control Module (Tach) Removal and Installation. -NO- An open or poor connection in the F_CAN wires between the VSA modulator-control unit and the gauge control module (tach).",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0127",
+      "description": "Gauge Control Module Lost Communication With TPMS Control Unit (TPMS Message)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTCs with the HDS. -2. Turn the ignition switch to LOCK (0) and then back to ON (II). -3. Wait for at least 6 seconds. -4. Check for DTCs with the HDS. Is DTC U0121 indicated? -YES- Go to step 2. -NO- Intermittent failure, the system is OK at this time. Check for loose or poor connections.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Fuse check: Fuse check -1. Check the following fuse. Is the fuse OK? -YES- Go to step 3. -NO- Replace the fuse. If the fuse blows again, repair a short to ground in the No. B40 (7.5 A) fuse circuit.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Open wire check (+B_TPMS line): Open wire check (+B_TPMS line) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Measure the voltage between test points 1 and 2. Is there battery voltage? -YES- Go to step 4. -NO- Repair an open or high resistance in the wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Open wire check (IG1_METER): Open wire check (IG1_METER) -1. Measure the voltage between test points 1 and 2. Is there battery voltage? -YES- Go to step 5. -NO- Repair an open or high resistance in the wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Open wire check (GND): Open wire check (GND) -1. Check for continuity between test points 1 and 2. Is there battery voltage? -YES- Go to step 6. -NO- Repair an open or high resistance in the ground wire or poor ground (G501).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Open wire check (F_CAN lines): Open wire check (F_CAN lines) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Check for continuity between test points 1 and 2 respectively. Is there continuity? -YES- Replace the gauge control module (tach)  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair/Gauge Control Module (Tach) Removal and Installation. -NO- An open or poor connection in the F_CAN wires between the TPMS control unit and the gauge control module (tach). Automatic Lighting Control Unit Control System DTCs U128D",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U128D",
+      "description": "MICU Lost Communication With Gauge Control Module The controller area network (CAN) transmits/receives pulsing signals to/from the control modules simultaneously using two signal lines (F_CAN-H and F_CAN-L). When the engine control module (ECM)/powertrain control module (PCM) does not receive signals from the electrical power steering (EPS) control unit via the F-CAN lines for a set time, the ECM/PCM detects a malfunction and stores a DTC.",
+      "detection_condition": [
+        "The ECM/PCM does not receive any signals via the F-CAN lines for at least 1 second."
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTCs with the HDS. -2. Turn the ignition switch to LOCK (0) and then back to ON (II). -3. Wait for at least 6 seconds. -4. Check for DTCs with the HDS. Is DTC U128D indicated? -YES- Go to step 2. -NO- Intermittent failure, the system is OK at this time. Check for loose or poor connections.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Determine possible failure area (gauge control module (tach) power and ground, B_CAN line): Determine possible failure area (gauge control module (tach) power and ground, B_CAN line) -1. Select B-CAN CONTROL UNITS INFORMATION from the BODY ELECTRICAL SYSTEM SELECT menu, and then select CHECK CONNECTED CONTROL UNITS. -2. Check the DETECT/NOT AVAILABLE information of the GAUGE CONTROL MODULE. Is DETECT indicated? -YES- Go to step 7. -NO- Go to step 3.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Fuse check: Fuse check -1. Check the following fuse. Is the fuse OK? -YES- Go to step 4. -NO- Replace the fuse. If the fuse blows again, repair a short to ground in the No. A29 (10 A) fuse circuit.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Open wire check (+B_BACK_UP line): Open wire check (+B_BACK_UP line) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Measure the voltage between test points 1 and 2. Is there battery voltage? -YES- Go to step 5. -NO- Repair an open or high resistance in the wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Open wire check (GND line): Open wire check (GND line) -1. Check for continuity between test points 1 and 2 individually. Is there continuity? -YES- Go to step 6. -NO- Repair an open or high resistance in the ground wire or poor ground (G502/G503).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Open wire check (B_CAN lines): Open wire check (B_CAN lines) -1. Disconnect the following connector. -2. Check for continuity between test points 1 and 2. Is there continuity? -YES- An open or poor connection in the B_CAN-L wire between the automatic lighting control unit and the gauge control module (tach). -NO- An open or poor connection in the B_CAN-H wire between the automatic lighting control unit and the gauge control module (tach).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Open wire check (B_CAN lines): Open wire check (B_CAN lines) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connectors. -3. Check for continuity between test points 1 and 2. Is there continuity? -YES- An open or poor connection in the B_CAN-L wire between the automatic lighting control unit and the gauge control module (tach). -NO- An open or poor connection in the B_CAN-H wire between the automatic lighting control unit and the gauge control module (tach). Immobilizer-Keyless Control Unit Control System DTCs U128D",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0131",
+      "description": "Gauge Control Module Lost Communication with EPS Unit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "DTC check: DTC check -1. Turn the ignition switch to ON (II). -2. Check for Pending or Confirmed DTCs with the HDS. Are DTC U0028 and U0131 indicated at the same time? -YES- Go to the troubleshooting for DTC U0029  See: U0029/DTC Troubleshooting/ECM/PCM. -NO- Go to step 2.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTC with the HDS. -2. Check for Pending or Confirmed DTCs with the HDS. Is DTC U0131 indicated? -YES- The failure is duplicated. Go to step 3. -NO- Intermittent failure, the system is OK at this time. Check for poor connections or loose terminals at the EPS control unit and the ECM/PCM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "EPS system check: EPS system check -1. Check that the HDS communicates with the EPS system. Does the HDS communicate with the EPS control unit? -YES- Go to step 4. -NO- Go to the symptom troubleshooting for an EPS indicator does not go off, and no DTCs are stored  See: Steering and Suspension/Steering/Testing and Inspection/Symptom Related Diagnostic Procedures/EPS Indicator Does Not Go Off, And No DTCs Are Stored.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Open wire check (F_CAN-H line): Open wire check (F_CAN-H line) -1. Turn the ignition switch to LOCK (0). -2. Jump the SCS line with the HDS. -3. Disconnect the following connectors. -4. Check for continuity between test points 1 and 2. Is there continuity? -YES- The F_CAN-H wire is OK. Go to step 5. -NO- Repair an open in the F_CAN-H wire between the ECM/PCM (A3) and the EPS control unit, then do the repair verification.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Open wire check (F_CAN-L line): Open wire check (F_CAN-L line) -1. Check for continuity between test points 1 and 2. Is there continuity? -YES- The F_CAN-L wire is OK. Update the EPS control unit  See: Relays and Modules/Relays and Modules - Steering and Suspension/Relays and Modules - Steering/Steering Control Module/Testing and Inspection/Programming and Relearning if it does not have the latest software, or substitute a known-good EPS control unit  See: Relays and Modules/Relays and Modules - Steering and Suspension/Relays and Modules - Steering/Steering Control Module/Service and Repair, then do the repair verification. If DTC U0131 is not indicated after substitution, replace the original EPS control unit  See: Relays and Modules/Relays and Modules - Steering and Suspension/Relays and Modules - Steering/Steering Control Module/Service and Repair, then do the repair verification. -NO- Repair an open in the F_CAN-L wire between the ECM/PCM (A4) and the EPS control unit, then do the repair verification. Repair verification: -1. Reconnect all connectors. -2. Turn the ignition switch to ON (II). -3. Reset the ECM/PCM with the HDS  See: Powertrain Management/Computers and Control Systems/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The Fuel And Emissions Systems. -4. Do the ECM/PCM idle learn procedure  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Testing and Inspection/Programming and Relearning/ECM/PCM Idle Learn Procedure. -5. Check for Pending or Confirmed DTCs with the HDS. Is DTC U0131 indicated? -YES- Check for poor connections or loose terminals at the EPS control unit and the ECM/PCM, then go to step 1. -NO- Troubleshooting is complete. If any other Pending or Confirmed DTCs are indicated, go to the indicated DTC's troubleshooting. Gauge Control Module Control System DTCs U0131",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0151",
+      "description": "Gauge Control Module Lost Communication with SRS Unit The controller area network (CAN) transmits/receives pulsing signals to/from the control modules simultaneously by using two signal lines (F_CAN-H and F_CAN-L). When the information is not sent from the gauge control module (tach) via the F-CAN lines and this condition continues for a specified time or when the information sent from the gauge control module (tach) is abnormal and this condition continues for a specified cycle, the engine control module (ECM)/powertrain control module (PCM) detects a malfunction and stores a DTC.",
+      "detection_condition": [
+        "One of these conditions is met:",
+        "-",
+        "The ECM/PCM does not receive any signals via the F-CAN lines for at least 1 second.",
+        "The information sent from the gauge control module (tach) is abnormal at least 20 times."
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTCs with the HDS. -2. Turn the ignition switch to LOCK (0) and then back to ON (II). -3. Wait for at least 6 seconds. -4. Check for DTCs with the HDS. Is DTC U0151 indicated? -YES- Go to step 2. -NO- Intermittent failure, the system is OK at this time. Check for loose or poor connections.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Open wire check (F_CAN lines): Open wire check (F_CAN lines) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connectors. -3. Check for continuity between test points 1 and 2. Is there continuity? -YES- Replace the gauge control module (tach)  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair/Gauge Control Module (Tach) Removal and Installation. -NO- An open or poor connection in the F_CAN wires between the SRS unit and the gauge control module (tach). Advanced Diagnostics Advanced Diagnostics - DTC U0155: F-CAN Malfunction (Engine Control Module (ECM)/Powertrain Control Module (PCM)-Gauge Control Module) (Engine Type: R18Z1, R18A9) Control System DTCs U0155",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0155",
+      "description": "F-CAN Malfunction (ECM/PCM-Gauge Control Module)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Turn the ignition switch to ON (II). -2. Clear the DTC with the HDS. -3. Check for Pending or Confirmed DTCs with the HDS. Is DTC U0155 indicated? -YES- The failure is duplicated. Go to step 2. -NO- Intermittent failure, the system is OK at this time. Check for poor connections or loose terminals at the gauge control module (tach) and the ECM/PCM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Body electrical system DTC check: Body electrical system DTC check -1. Check for body electrical DTCs with the HDS. Is DTC B1168, B1169, and/or B1178 indicated? -YES- Go to step 3. -NO- Do the gauge control module (tach) input test.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Open wire check (F_CAN-H line): Open wire check (F_CAN-H line) -1. Turn the ignition switch to LOCK (0). -2. Jump the SCS line with the HDS. -3. Disconnect the following connectors. -4. Check for continuity between test points 1 and 2. Is there continuity? -YES- The F_CAN-H wire is OK. Go to step 4. -NO- Repair an open in the F_CAN-H wire between the ECM/PCM (A3) and the gauge control module (tach), then do the repair verification.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Open wire check (F_CAN-L line): Open wire check (F_CAN-L line) -1. Check for continuity between test points 1 and 2. Is there continuity? -YES- The F_CAN-L wire is not open. Substitute a known-good gauge control module (tach)  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair/Gauge Control Module (Tach) Removal and Installation, then do the repair verification. If DTC U0155 is not indicated after substitution, replace the original gauge control module (tach) See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair/Gauge Control Module (Tach) Removal and Installation, then do the repair verification. -NO- Repair an open in the F_CAN-L wire between the ECM/PCM (A4) and the gauge control module (tach), then do the repair verification. Repair verification: -1. Turn the ignition switch to LOCK (0). -2. Reconnect all connectors. -3. Turn the ignition switch to ON (II). -4. Reset the ECM/PCM with the HDS  See: Powertrain Management/Computers and Control Systems/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Troubleshoot The Fuel And Emissions Systems. -5. Do the ECM/PCM idle learn procedure  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Testing and Inspection/Programming and Relearning/ECM/PCM Idle Learn Procedure. -6. Check for Pending or Confirmed DTCs with the HDS. Is DTC U0155 indicated? -YES- Check for poor connections or loose terminals at the gauge control module (tach) and the ECM/PCM, then go to step 1. -NO- Troubleshooting is complete. If any other Pending or Confirmed DTCs are indicated, go to the indicated DTC's troubleshooting. Automatic Lighting Control Unit Control System DTCs U1280",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1280",
+      "description": "Immobilizer-Keyless Control Unit Communication Bus Line Error (BUS-OFF)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTCs with the HDS. -2. Turn the ignition switch to LOCK (0) and then back to ON (II). -3. Wait for at least 6 seconds. -4. Check for DTCs with the HDS. Is DTC U1280 indicated? -YES- Go to MICU DTC U1280 troubleshooting  See: U1280/Multiplex Integrated Control Unit. -NO- Intermittent failure, the system is OK at this time. Check for loose or poor connections. Gauge Control Module Control System DTCs U1280",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "B-CAN related units check: B-CAN related units check -1. Turn the ignition switch to LOCK (0). -2. Disconnect the appropriate connector at each control unit in the table one at a time. Clear the DTC, then recheck for DTCs after each unit is disconnected. Is DTC U1280 indicated with each individual unit disconnected? -YES- Leave the connectors disconnected, and go to step 3. -NO- Replace the control unit that was disconnected when DTC U1280 did not reset.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Shorted wire check (B_CAN lines) 1: Shorted wire check (B_CAN lines) 1 -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connectors. -3. Check for continuity between test points 1 and 2 individually. Is there continuity? -YES- Repair a short to ground in the B_CAN wires. -NO- Go to step 4.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Shorted wire check (B_CAN lines) 2: Shorted wire check (B_CAN lines) 2 -1. Check for continuity between test points 1 and 2 individually. Is there continuity? -YES- Repair a short to ground in the B_CAN wires. -NO- Go to step 5.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Shorted wire check (B_CAN lines) 3: Shorted wire check (B_CAN lines) 3 -1. Check for continuity between test points 1 and 2 individually. Is there continuity? -YES- Repair a short to ground in the B_CAN wires. -NO- Go to step 6.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Shorted wire check (B_CAN-L to B_CAN-H line) 1: Shorted wire check (B_CAN-L to B_CAN-H line) 1 -1. Check for continuity between test points 1 and 2. Is there continuity? -YES- Repair a short in the B_CAN wires. -NO- Go to step 7.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Shorted wire check (B_CAN-L to B_CAN-H line) 2: Shorted wire check (B_CAN-L to B_CAN-H line) 2 -1. Check for continuity between test points 1 and 2. Is there continuity? -YES- Repair a short in the B_CAN wires. -NO- Go to step 8.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Shorted wire check (B_CAN-L to B_CAN-H line) 3: Shorted wire check (B_CAN-L to B_CAN-H line) 3 -1. Check for continuity between test points 1 and 2. Is there continuity? -YES- Repair a short in the B-CAN wires. -NO- Faulty MICU, replace the under-dash fuse/relay box  See: Maintenance/Fuses and Circuit Breakers/Relay Box/Service and Repair. Automatic Lighting Control Unit Control System DTCs U1281",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1281",
+      "description": "Gauge Control Module Lost Communication With MICU (MICU Frame)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTCs with the HDS. -2. Turn the ignition switch to LOCK (0) and then back to ON (II). -3. Wait for at least 6 seconds. -4. Check for DTCs with the HDS. Is DTC U1281 indicated? -YES- Go to MICU DTC U1280 troubleshooting  See: U1280/Multiplex Integrated Control Unit. -NO- Intermittent failure, the system is OK at this time. Check for loose or poor connections. Gauge Control Module Control System DTCs U1281",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1296",
+      "description": "Gauge Control Module Lost Communication With Multi-Information Display Unit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Problem verification: Problem verification -1. Clear the DTCs with the HDS. -2. Turn the ignition switch to LOCK (0) and then back to ON (II). -3. Wait for at least 6 seconds. -4. Check for DTCs with the HDS. Is DTC U1296 indicated? -YES- Go to step 2. -NO- Intermittent failure, the system is OK at this time. Check for loose or poor connections.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Determine possible failure area (gauge control module (tach) power and ground, B_CAN line): Determine possible failure area (gauge control module (tach) power and ground, B_CAN line) -1. Select B-CAN CONTROL UNITS INFORMATION from the BODY ELECTRICAL SYSTEM SELECT menu, and then select CHECK CONNECTED CONTROL UNITS. -2. Check the DETECT/NOT AVAILABLE information of the MULTI-INFORMATION DISPLAY UNIT. Is DETECT indicated? -YES- Go to step 7. -NO- Go to step 3.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Fuse check: Fuse check -1. Check the following fuse. Is the fuse OK? -YES- Go to step 4. -NO- Replace the fuse. If the fuse blows again, repair a short to ground in the No. A29 (10 A) fuse circuit.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Open wire check (+B_BACK_UP line): Open wire check (+B_BACK_UP line) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connector. -3. Measure the voltage between test points 1 and 2. Is there battery voltage? -YES- Go to step 5. -NO- Repair an open or high resistance in the wire.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Open wire check (GND line): Open wire check (GND line) -1. Check for continuity between test points 1 and 2. Is there continuity? -YES- Go to step 6. -NO- Repair an open or high resistance in the ground wire or poor ground (G502).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Open wire check (B_CAN lines): Open wire check (B_CAN lines) -1. Disconnect the following connector. -2. Check for continuity between test points 1 and 2. Is there continuity? -YES- An open or poor connection in the B_CAN-L wire between the multi-information display unit and the gauge control module (tach). -NO- An open or poor connection in the B_CAN-H wire between the multi-information display unit and the gauge control module (tach).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Open wire check (B_CAN lines): Open wire check (B_CAN lines) -1. Turn the ignition switch to LOCK (0). -2. Disconnect the following connectors. -3. Check for continuity between test points 1 and 2. Is there continuity? -YES- An open or poor connection in the B_CAN-L wire between the multi-information display unit and the gauge control module (tach). -NO- An open or poor connection in the B_CAN-H wire between the multi-information display unit and the gauge control module (tach). Without Multi-Information Display Control System DTCs U1296",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

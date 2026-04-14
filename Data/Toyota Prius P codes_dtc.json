@@ -1,0 +1,147 @@
+{
+  "source_file": "Toyota Prius P codes.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 15,
+  "dtcs": [
+    {
+      "dtc_code": "P0AAC",
+      "description": "Hybrid Battery Pack Air Temperature Sensor \"A\" Circuit DTC Detection Condition The intake air temperature sensor is provided on the HV battery assembly. Its resistance value varies with the changes in the intake air temperature. The characteristics of the intake air temperature sensor are the same as the battery temperature sensors. The battery ECU uses the signals from the intake air temperature sensor for adjusting the air flow speed of the battery blower. HINT: After confirming DTC P0AAC, enter the following menus on the intelligent tester: DIAGNOSIS / OBD/ MOBD / HV BATTERY / DATA LIST. Then, confirm the temperature of the intake ambient air to the battery pack by checking \"BATT INSIDE AIR\". MONITOR DESCRIPTION Monitor Strategy Typical Enabling Conditions Typical Malfunction Thresholds Component Operating Range If the temperature indicated by the intake air temperature sensor is lower than the standard level (open), or is higher than the standard level (short), the battery ECU determines that a malfunction has occurred. If the battery ECU detects an abnormal intake air temperature, it will illuminate the MIL and set a DTC.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0AA1",
+      "description": "INF231",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0AA1-231",
+      "description": "Hybrid Battery Positive Contactor Circuit Stuck Closed DTC Detection Condition The SMRs (System Main Relays) connect and disconnect the high-voltage power supply circuit in accordance with requests from the HV control ECU. To ensure a reliable operation, they consists of a total of 3 relays (1 for the negative side and 2 for the positive side). To connect, SMR1 and SMR3 turn ON initially. Then, SMR2 turns ON and SMR1 turns OFF. This process protects the circuit from the high-voltage surge current by allowing the limit current to flow via the resistor. To disconnect, SMR2 and SMR3 turn OFF in that order. The HV control ECU checks that the relays have turned OFF properly. The HV control ECU monitors the proper operation of the SMRs (CON1, CON2 and CON3) to check for a malfunction. Because it might be impossible to shut off the high-voltage system if either of the No. 1 and No. 2 system main relays becomes stuck, the HV control ECU monitors the two relays and stops the system if malfunction is found in either relay. Step 1",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0AA1-233",
+      "description": "Hybrid Battery Positive Contactor Circuit Stuck Closed DTC Detection Condition The SMRs (System Main Relays) connect and disconnect the high-voltage power supply circuit in accordance with requests from the HV control ECU. To ensure a reliable operation, they consists of a total of 3 relays (1 for the negative side and 2 for the positive side). To connect, SMR1 and SMR3 turn ON initially. Then, SMR2 turns ON and SMR1 turns OFF. This process protects the circuit from the high-voltage surge current by allowing the limit current to flow via the resistor. To disconnect, SMR2 and SMR3 turn OFF in that order. The HV control ECU checks that the relays have turned OFF properly. The HV control ECU monitors the proper operation of the SMRs (CON1, CON2 and CON3) to check for a malfunction. Because it might be impossible to shut off the high-voltage system if any one of the No. 1 to No. 3 system main relays becomes stuck, the HV control ECU monitors the 3 relays and stops the system if malfunction is found in either relay. Step 1-2",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0AA4-232",
+      "description": "Hybrid Battery Negative Contactor Circuit Stuck Closed DTC Detection Condition The SMRs (System Main Relays) connect and disconnect the high-voltage power supply circuit in accordance with requests from the HV control ECU. To ensure a reliable operation, they consists of a total of 3 relays (1 for the negative side and 2 for the positive side). To connect, SMR1 and SMR3 turn ON initially. Then, SMR2 turns ON and SMR1 turns OFF. This process protects the circuit from the high-voltage surge current by allowing the limit current to flow via the resistor. To disconnect, SMR2 and SMR3 turn OFF in that order. The HV control ECU checks that the relays have turned OFF properly. The HV control ECU monitors the proper operation of the SMRs (CON1, CON2 and CON3) to check for a malfunction. MONITOR DESCRIPTION Monitor Strategy Typical Enabling Conditions Typical Malfunction Thresholds Component Operating Range The HV control ECU monitors the No. 3 system main relay, because shutting off the high-voltage system might be impossible if the relay terminal becomes stuck. If the HV control ECU detects that the relay terminal has stuck closed, it illuminates the MIL and sets a DTC. Step 1 If the information (INF) code is present, replace the No. 3 system main relay. Air Conditioning System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0AA6",
+      "description": "611 Hybrid Battery Voltage System Isolation Fault Hybrid Vehicle Control System",
+      "detection_condition": [
+        "The DTC is output if there is insulation trouble with the high-voltage circuits in the air conditioning system. Insulation trouble with the electric inverter",
+        "compressor or A/C inverter may be the cause. Any oil other than ND-OIL 11 may have entered the refrigeration cycle.",
+        "The motor driven with high-voltage is built into the electrical compressor and is cooled directly with refrigerant. Compressor oil (ND-OIL 11) with high",
+        "insulation performance is used because a leakage of electrical power may occur if regular compressor oil (ND-OIL 8) is used."
+      ],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0AA6-526",
+      "description": "Hybrid Battery Voltage System Isolation Fault",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0AA6-611",
+      "description": "Hybrid Battery Voltage System Isolation Fault",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0AA6-612",
+      "description": "Hybrid Battery Voltage System Isolation Fault",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0AA6-613",
+      "description": "Hybrid Battery Voltage System Isolation Fault",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0AA6-614",
+      "description": "Hybrid Battery Voltage System Isolation Fault DTC Detection Condition",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0ABF",
+      "description": "Hybrid Battery Pack Current Sensor Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0AC0",
+      "description": "Hybrid Battery Pack Current Sensor Circuit Range/Performance",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0AC1",
+      "description": "Hybrid Battery Pack Current Sensor Circuit Low",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0AC2",
+      "description": "Hybrid Battery Pack Current Sensor Circuit High DTC Detection Condition (Part 1) DTC Detection Condition (Part 2) The battery current sensor, which is mounted on the negative cable side of the HV battery assembly, detects the amperage that flows into the HV battery. The battery current sensor inputs a voltage (which varies between 0 to 5 V in proportion to the amperage) into the IB terminal of the battery ECU. An output voltage of the battery current sensor below 2.5 V indicates that the HV battery assembly is being charged, and above 2.5 V indicates that the HV battery assembly is being discharged. The battery ECU determines the charging and discharging amperage of the HV battery assembly based on the signals that are input to its IB terminal, and calculates the SOC (state of charge) of the HV battery through the estimation of the amperage. MONITOR DESCRIPTION Monitor Strategy Typical Enabling Conditions Typical Malfunction Thresholds Component Operating Range If the battery ECU detects malfunction in the battery current sensor, it will illuminate the MIL and set a DTC.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

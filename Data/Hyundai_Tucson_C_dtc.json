@@ -1,0 +1,2209 @@
+{
+  "source_file": "Hyundai_Tucson_C.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 51,
+  "dtcs": [
+    {
+      "dtc_code": "C1101",
+      "description": "Battery Voltage High The ABS ECU(Electronic Control Unit) checks the battery voltage and generator output voltage to determine, as a safety issue, whether the ABS system can operate normally or not. The normal battery voltage range is essential for controlling the ABS system as intended. The ABS ECU monitors battery voltage and alternator output voltage. When the voltage is higher than the expected normal value, this code is set, and the ABS/EBD/ESC/DBC functions are prohibited. If the voltage recovers, to within normal operating ranges, then the controller returns to normal operation as well. DTC Detecting Condition Specification Diagnostic Circuit Diagram Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Start engine and turn the headight and the heatwire on.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Monitor the \"BATTERY VOLTAGE\" parameter on the scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Maintaining ENG. RPM at 2,500RPM(idle) over 2 minutes. Specification :less than 17 [V]",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter within specifications? W/Harness Inspection Power Steering",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1102",
+      "description": "Battery Voltage Low The ABS ECU(Electronic Control Unit) checks the battery voltage and generator output voltage to determine, as a safety issue, whether the ABS system can operate normally or not. The normal battery voltage range is essential for controlling the ABS system as intended. The ABS ECU monitors the battery voltage and alternator output voltage by reading the value of voltage. When the voltage is lower than the expected normal value, this code is set. If the voltage recovers, to within normal operating ranges, then the controller returns to normal operations as well. DTC Detecting Condition Specification Diagnostic Circuit Diagram Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Start engine and turn the headight and the heatwire on.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Monitor the \"BATTERY VOLTAGE\" parameter on the scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Maintaining ENG. RPM at 2,500RPM(idle) over 2 minutes. Specification :more than 10 [V]",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter within specifications? W/Harness Inspection Power Steering",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1109",
+      "description": "IGN Signal Error The EPS CM senses the state of battery voltage in order to operate it's system normally. If battery voltage is too low, the system couldn't run. And if it is too high, the EPS CM couldn't be damaged. If the voltage of IG circuit is out of the setting value, the EPS unit sets this DTC. DTC Detecting Condition Specification Diagnostic Circuit Diagram Power Steering",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Start engine and turn the headight and the heatwire on.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Monitor the \"IG Voltage\" parameter on the scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Maintaining ENG. RPM at 2,500RPM(idle) over 2 minutes. Specification :Battery Voltage",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter within specifications? W/Harness Inspection Power Steering",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1112",
+      "description": "Sensor source voltage The HECU supplies operating voltage with Steering angle senor (12V), Yaw rate & lateral G sensor (12V), G sensor (5V). The HECU monitors supply voltage of each sensor for normal ESC control. If supply voltage is out of specified range ABS/ESC warning lamps are turned on and ABS/ESC controls are inhibited. A failure is detected if the external sensor supply voltage is out of the specified range for more than the specified min. fault duration. DTC Detecting Condition Diagnostic Circuit Diagram Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect GDS to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Monitor the \"BATTERY VOLTAGE, 5 VOLT REFERENCE\" parameter on the GDS. Specification :BATTERY VOLTAGE (Approx. 10V ~ 16V) 5 VOLT REFERENCE (Approx. 5V) Fig 1) Test Condition : Ignition \"ON\" & Engine \"ON\". Normal Data",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is parameter displayed within specifications? W/Harness Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Are any DTCs present ? General Information Power Steering",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1200",
+      "description": "Wheel Speed Sensor Front-LH Open/Short The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor circuit continuously. If the sensor signal current is continuously out of the specified range for 140msec, then the HECU determines that the circuit is open/short, and sets this code.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Power Circuit Inspection Open or Short Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure waveform between wheel speed sensor signal terminal of the HECU harness connector and chassis ground with osciloscope. Specification :High : 1.18 - 1.68V , Low : 0.59 - 0.84V",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured waveform within specifications? Component Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1201",
+      "description": "Wheel Speed Sensor Front-LH Range / Performance / Intermittent The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. This code is set if an abnormal speed change ratio is detected while the vehicle speed is more than 2Km/h. Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect GDS to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 40km/h. (24mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPEED(FL)\" parameter on the GDS. Specification :Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1202",
+      "description": "Wheel Speed Sensor Front-LH Invalid/no Signal The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. This code is set when the sensor air gap is out of specified range or when the ABS control cycle is continued abnormally. The HECU checks for air gap malfunctioning by monitoring the sensor signal at speeds between 2Km/h to 10 Km/h. Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect GDS to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 10km/h. (6.2mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPEED(FL)\" parameter on the GDS. Specification :Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1203",
+      "description": "Wheel Speed Sensor Front-RH Open/Short The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor circuit continuously. If the sensor signal current is continuously out of the specified range for 140msec, then the HECU determines that the circuit is open/short, and sets this code.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Power Circuit Inspection Open or Short Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure waveform between wheel speed sensor signal terminal of the HECU harness connector and chassis ground. Specification :High : 1.18 - 1.68V , Low : 0.59 - 0.84V",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured waveform within specifications? Component Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1204",
+      "description": "Wheel Speed Sensor Front-RH Range / Performance / Intermittent The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. This code is set if an abnormal speed change ratio is detected while the vehicle speed is more than 2Km/h. Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect GDS to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 40km/h. (24mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPEED(FR)\" parameter on the GDS. Specification :Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1205",
+      "description": "Wheel Speed Sensor Front-RH Invalid/no Signal The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. This code is set when the sensor air gap is out of specified range or when the ABS control cycle is continued abnormally. The HECU checks for air gap malfunctioning by monitoring the sensor signal at speeds between 2Km/h to 10 Km/h. Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect GDS to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 10km/h. (6.2mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPEED(FR)\" parameter on the GDS. Specification :Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1206",
+      "description": "Wheel Speed Sensor Rear-LH Open/Short The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor circuit continuously. If the sensor signal current is continuously out of the specified range for 140msec, then the HECU determines that the circuit is open/short, and sets this code.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Power Circuit Inspection Open or Short Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure waveform between wheel speed sensor signal terminal of the HECU harness connector and chassis ground. Specification :High : 1.18 - 1.68V , Low : 0.59 - 0.84V",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured waveform within specifications? Component Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1207",
+      "description": "Wheel Speed Sensor Rear-LH Range / Performance / Intermittent The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. This code is set if an abnormal speed change ratio is detected while the vehicle speed is more than 2Km/h. Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect GDS to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 40km/h. (24mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPEED(RL)\" parameter on the GDS. Specification :Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1208",
+      "description": "Wheel Speed Sensor Rear-LH Invalid/no Signal The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. This code is set when the sensor air gap is out of specified range or when the ABS control cycle is continued abnormally. The HECU checks for air gap malfunctioning by monitoring the sensor signal at speeds between 2Km/h to 10 Km/h. Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect GDS to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 10km/h. (6.2mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPEED(RL)\" parameter on the GDS. Specification :Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1209",
+      "description": "Wheel Speed Sensor Rear-RH Open/Short The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor circuit continuously. If the sensor signal current is continuously out of the specified range for 140msec, then the HECU determines that the circuit is open/short, and sets this code.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Power Circuit Inspection Open or Short Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure waveform between signal terminal of the wheel speed sensor harness connector and chassis ground with osciloscope. Specification :High : 1.18 - 1.68V , Low : 0.59 - 0.84V",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured waveform within specifications? Component Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1210",
+      "description": "Wheel Speed Sensor Rear-RH Range / Performance / Intermittent The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. This code is set if an abnormal speed change ratio is detected while the vehicle speed is more than 2Km/h. Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect GDS to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 40km/h. (24mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPEED(RR)\" parameter on the GDS. Specification :Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1211",
+      "description": "Wheel Speed Sensor Rear-RH Invalid/no Signal The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a referecnce value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. This code is set when the sensor air gap is out of specified range or when the ABS control cycle is continued abnormally. The HECU checks for air gap malfunctioning by monitoring the sensor signal at speeds between 2Km/h to 10 Km/h. Warning lamp is turned OFF unless additional faults are detected when the IG KEY is turned ON again, and wheel speed is more than 10 Km/h (6.2mph). DTC Detecting Condition Specification Diagnostic Circuit Diagram Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect GDS to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 10km/h. (6.2mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPEED(RR)\" parameter on the GDS. Specification :Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1235",
+      "description": "Primary Pressure Sensor-Electrical The pressure sensor, installed in the HECU, senses the brake oil pressure to judge a driver's brake intention when the ESC program is operated. If pressure of master cyclinder is applied to pressure sensor, the strain of the piezo element is changed and then the resistance of bridge circuit is changed according to the changed strain. Therefore this changed resistance changes the output voltage of bridge circuit and the output voltage changes linearly. The sensor output is an analog signal in proportion to the supply voltage, and the HECU recognizes a pressure value according to signal ratio about supply voltage. A failure is detected if the output signal voltage of the pressure sensor is out of specified range. DTC Detecting Condition Diagnostic Circuit Diagram Component Inspection Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Connect GDS and select \"Diagnostic Trouble Codes(DTCs)\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a GDS, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check if the pressure sensor's service data shows '0 bar' on the GDS while not pressing the brake pedal.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check if the pressure sensor's service data rises on the GDS while pressing the brake pedal.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Is the pressure sensor's data unusually shown? Verification vehicle Repair Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1237",
+      "description": "Primary Pressure Sensor-Signal The pressure sensor, installed in the HECU, senses the brake oil pressure to judge a driver's brake intention when the ESC program is operated. If pressure of master cyclinder is applied to pressure sensor, the strain of the piezo element is changed and then the resistance of bridge circuit is changed according to the changed strain. Therefore this changed resistance changes the output voltage of bridge circuit and the output voltage changes linearly. The sensor output is an analog signal in proportion to the supply voltage, and the HECU recognizes a pressure value according to signal ratio about supply voltage. The failure is detected if the pressure sensor signal noise is out of normal range, or the pressure sensor signal is changed abnormally. In spite of no brake switch signal, master cylinder pressure exceeds 20bar when brake switch is normal. DTC Detecting Condition Diagnostic Circuit Diagram Component Inspection Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Connect GDS and select \"Diagnostic Trouble Codes(DTCs)\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a GDS, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check if the pressure sensor's service data shows '0 bar' on the GDS while not pressing the brake pedal.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check if the pressure sensor's service data rises on the GDS while pressing the brake pedal.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Is the pressure sensor's data unusually shown? Verification vehicle Repair Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1259",
+      "description": "Steering Angle Sensor - Electrical Malfunction EPS is designed to provide directional control and smooth feeling to driver when driver operates steering wheel. There is a function to detect rotation speed and direction of steering wheel in Torque Sensor. Rotation speed and direction signals are used for \"damper\" and \"return\" control, \"assist\" control. If there is an error in steering signals, the EPS unit sets DTC C1259. DTC Detecting Condition Power Steering",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the steering wheel to the left or right.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"STEERING ANGLE SNSR\" parameters on the Scantool. Specification :Approx. 450 ~ -450DEG.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Whenever steering wheel is turned, is the steering sensor's scantool data changed? ** Perform steering angle sensor calibration.",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1260",
+      "description": "Steering Angle Sensor Circuit-Signal The Steering angle sensor(SAS) is installed below the clock spring and it sends messages to HECU through CAN communication line. The SAS is used to determine turning direction and speed of the steering wheel. The HECU uses the signals from the SAS when performing ESC-related calculations. The HECU monitors the signals of the steering angle sensor and if the abnormal signal is detected or the difference between the angle speed calculated from the other sensors and the the angle speed measured from the steering angle sensor is above a certain value, this DTC is set. DTC Detecting Condition Diagnostic Circuit Diagram Component Inspection Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"OFF\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Connect GDS and select \"Diagnostic Trouble Codes(DTCs)\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a GDS, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Using a GDS, Check DTC present.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification vehicle Repair Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1261",
+      "description": "Steering Angle Sensor Not Calibrated The Steering angle sensor(SAS) is installed below the clock spring and it sends messages to HECU through CAN communication line. The SAS is used to determine turning direction and speed of the steering wheel. The HECU uses the signals from the SAS when performing ESC-related calculations. The steering angle sensor in the ESC system is an absolute angle sensor type. For this reason, the steering angle sensor needs the zero setting(Calibration) by the scantool. If the calibration of this sensor is undone, this DTC is set. DTC Detecting Condition Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Line up wheels like Figure 1. (1) Perform the wheel alignment. (2) Line up the wheel in a straight. (3) Drive the vehicle ahead and back 2 - 3 times without holding steering wheel.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect GDS to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Perform steering angle sensor calibration.(Figure 2)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Disconnect GDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check the condition of SAS zero point adjustment by driving the vehicle to right-turn and left-turn at least one time.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Is the calibration(zero point adjustment) completed? Verification vehicle Repair Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1282",
+      "description": "Yaw Rate & Lateral G Sensor-Electrical When the vehicle is turning, the yaw rate sensor detects the yaw rate electronically by the vibration change of plate fork inside the yaw rate sensor. If the yaw velocity reaches the specific velocity after it detects the vehicle's yawing, the ESC control is reactivated. The lateral G sensor senses the vehicle's lateral acceleration. A small element inside the sensor is attached to a deflectable leverarm by lateral acceleration. Direction and magnitude of lateral acceleration loaded to vehicle can be known by electrostatic capacity changing according to lateral acceleration. It interchanges signals with HECU through extra CAN line which is only used for communication between HECU and the sensor. In case of the vehicle with 4WD & ESC, G sensor is packaged with yaw rate & later G sensor. A failure is detected if the Yaw rate & lateral G & longitudinal G sensor's message was not received or the HECU detects the sensor CAN Bus off state for more than the specified failure detection time. The Monitoring starts after Power-Up. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Power Circuit Inspection Open or Short Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the measured value within specifications? Signal Circuit Inspection Short Check (to ground)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Using a GDS, Check DTC present.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Is the same DTC shown? Verification of Vehicle Repair Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1283",
+      "description": "Yaw Rate & Lateral G Sensor-Signal When the vehicle is turning, the yaw rate sensor detects the yaw rate electronically by the vibration change of plate fork inside the yaw rate sensor. If the yaw velocity reaches the specific velocity after it detects the vehicle's yawing, the ESC control is reactivated. The lateral G sensor senses the vehicle's lateral acceleration. A small element inside the sensor is attached to a deflectable leverarm by lateral acceleration. Direction and magnitude of lateral acceleration loaded to vehicle can be known by electrostatic capacity changing according to lateral acceleration. It interchanges signals with HECU through extra CAN line which is only used for communication between HECU and the sensor. In case of the vehicle with 4WD & ESC, G sensor is packaged with yaw rate & later G sensor. If the difference between the estimated value from the other sensors and the measured value from the yaw rate and lateral G sensor is larger than predefined value for predefined time, the failure is recognized. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Component Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a GDS, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes(DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification vehicle Repair Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1285",
+      "description": "Sensor Cluster Change Detection/Uncalibrated The longitudinal G sensor is installed in the YAW-RATE sensor. This longitudinal G sensor detects vertical acceleration of the vehicle, while the lateral G sensor detects lateral acceleration of the vehicle. The HECU uses thses signals for the Hill start Assist Control function. If abnormal zero-setting is detected or no information in the HECU is detected, a failure is recognized. DTC Detecting Condition Component Inspection Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "IG ON, ENG OFF",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Stand the vehicle on a flat ground without any inclination.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Set the steering wheel at the center position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Keep the vehicle under normal tire pressure condition and normal loading condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Connect GDS to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Is \"Longitudinal sensor's calibration\" completed normally? Verification of Vehicle Repair Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1290",
+      "description": "Torque Sensor Signal Error The steering angle sensor has a function to sense a steering angle and a velocity of a steering wheel. The procedure is as follows: A drive turns a steering wheel -> Main/Sub-gear turns -> Rotation angle senses -> A steering angle is calculated. The EPS(MDPS) CM uses signals of steering angle sensor and controls for its restoring and damping control. If the signal of main/sub sensor is out of a normal range, the EPS CM sets DTC C1290. DTC Detecting Condition Power Steering",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the steering wheel to the left or right.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"Torque Sensor\" parameters on the Scantool. Specification :Approx. 0.5 - 4.5V.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Whenever steering wheel is turned, is the steering sensor's scantool data changed? Verification of Vehicle Repair Power Steering",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1503",
+      "description": "TCS/ESC(ESP) Switch error Driver can inhibit the ESC control by ESC switch. When switch signal sends into the HECU, the ESC warning lamp goes \"ON\" and the ESC control is stopped and if the next switch signal is inputted again, the ESC control is ready. This function is used for sporty driving or vehicle inspection. This DTC is set when the condition that the level of ESC switch is high is continued for more than 60 seconds. DTC Detecting Condition Specification Diagnostic Circuit Diagram Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect GDS to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "IG ON",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Press the ESC switch.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"ESC switch\" parameter on the GDS. Specification :ESC switch parameter changed ON / OFF stats.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Whenever the switch is pushed, is the ESC off switch's GDS data changed ON/OFF? W/Harness Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1513",
+      "description": "Brake switch error This switch is mounted on the pedal assembly and is used to send the status of the brake pedal to the HECU. The switch is turned on when the brake pedal is pressed. The brake light switch is a normally-open contact type which runs to battery voltage when it is active (this means that the brake pedal is pressed). When it is passive (this means that the brake pedal is released), the line is grounded via the brake light bulb. The brake light signal is a reference to judge driver's intention for braking. The HECU checks open or short circuit of brake light switch for normal ESC control. If an error is present, the warning lamp will illuminate. DTC Detecting Condition Specification Diagnostic Circuit Diagram Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Press the brake pedal.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check the service data related to \"Brake Switch\" on the GDS. Specification :The brake switch's signal changes from OFF to ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Does the service data change normally? W/Harness Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1520",
+      "description": "Clutch switch The clutch switch is used for the Hill start Assist Control function. If the wrong clutch signal is continued for a certain period of time, a failure is recognized. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Signal Circuit Inspection Open Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure resistance between ground terminal of clutch switch harness connector and chassis ground. Specification :Below 1Ohms",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured value within specifications? Short Check",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1526",
+      "description": "DBC Switch Error The DBC function is the shorten word of Downhill Brake Control function. When a vehicle goes down the hill, just pushing the DBC switch enables the car to keep its vehicle's speed at a constant value without operating the brake pedal. The DBC function is operated when the vehicle is on the decline and its velocity is under the predetermined speed. This DTC is set if the DBC switch has a short circuit and the DBC function is inhibited. DTC Detecting Condition Specification Diagnostic Circuit Diagram W/Harness Inspection Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Signal Circuit Inspection Open or Short Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the measured value within specifications? Component Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured value within specifications? Verification of Vehicle Repair Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1527",
+      "description": "Gear R Switch Error The clutch switch is used for the Hill start Assist Control function. If the wrong reverse gear signal has been set for a certain period of time, a failure is recognized. [A/T] HECU receives reverse gear switch signal from TCM via C-CAN. [M/T] Cluster receives back up lamp signal from IPS(Intelligent Power Switch System) via B-CAN and sends it to HECU via C-CAN. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Signal Circuit Inspection Open or Short Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the measured value within specifications? Component Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Are any DTCs present ? General Information Power Steering",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1603",
+      "description": "MDPS Thermal Protection The MDPS is the system that supports a driver's steering force by an electric motor. An electric motor consumes much current when it operates. If a driver steers full turn to the left or right over 10 times at stop condition, it can be overheat. To protect MDPS system from malfunctioning by overheating, EPS CM restricts the operating current of a electric motor. Generally, when the operating current is limited, it feels like that steering force is heavy. This code happens when a driver excessively steers at stop condition. At this time, clear DTC and wait for about 20 - 30 minutes with not steering. And then check if the steering force gets back to normal. DTC Detecting Condition Power Steering",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Check DTCs detected on scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "After clearing DTC C1603, wait for about 20 - 30 minutes with not steering. ** Even though DTC C1603 is eliminated, it takes about 20 - 30 minutes that a steering force gets back to normal.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the current DTC detected again? Verification of Vehicle Repair Power Steering",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1604",
+      "description": "ECU Hardware Error The HECU consists of an ECU (Electronic Control Unit ) and a HCU( Hydraulic Control Unit). The HCU portion of the assembly contains a pump motor, solenoid valves, and accumulator. Increase and decrease of hydraulic pressure is opreated by electronic motor, according to a measured signal by wheel speed sensor. The function of HCU is to increase, decrease or maintain the hydralic pressure supplied to a wheel cylinder by operating return pump according to HECU control signal while ABS control is active. The ECU monitors various sensor and switch inputs. These inputs are used to make decisions regarding HCU component operation. The HECU monitors the operation of the IC components such as memory, register, A/D converter and so on. The ECU sets this code when the EEPROM data read by the master processor is different than prior data written, or when the master/slave processor detects abnormal operation in RAM, Status Register, Interrupt, Timer, A/D converter or cycle time. DTC Detecting Condition W/Harness Inspection Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check all connectors (and connections) for looseness, bending, corrosion, contamination, deterioration, and/or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found ? Component Inspection Power Steering",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a scantool, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes(DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair Power Steering",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1605",
+      "description": "CAN Hardware error The HECU sends requirement data, such as torque reduction, the number of fuel cut cylinders, and the ESC control request, to the PCM(ECM & TCM) through CAN bus line. The PCM(ECM) performs the fuel cut function according to a request signal from the HECU and then retards an ignition timing. The PCM(TCM) maintains current gear position during the ESC control period in order not to increase power which causes a Kickdown shift. The HECU checks the CAN RAM for normal TCS control, and sets this code if a CAN RAM malfunction is detected. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Component Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a GDS, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes(DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1611",
+      "description": "CAN Time-out ECM The HECU sends requirement data, such as torque reduction, the number of fuel cut cylinders, and the ESC control request, to the PCM(ECM & TCM) through CAN bus line. The PCM(ECM) performs the fuel cut function according to a request signal from the HECU and then retards an ignition timing. The PCM(TCM) maintains current gear position during the ESC control period in order not to increase power which causes a Kickdown shift. The HECU checks the CAN communcation lines for normal ESC control, and sets this code if an ECM message is not received within 500ms. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Signal circuit inspection Open Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the measured resistance within specifications? Component Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes(DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1612",
+      "description": "CAN Time-out TCM The HECU sends requirement data, such as torque reduction, the number of fuel cut cylinders, and the ESC control request, to the PCM(ECM & TCM) through CAN bus line. The PCM(ECM) performs the fuel cut function according to a request signal from the HECU and then retards an ignition timing. The PCM(TCM) maintains current gear position during the ESC control period in order not to increase power which causes a Kickdown shift. The HECU checks the CAN communcation lines for the normal ESC control, and sets this code if an TCM message is not received within 500ms. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Signal circuit inspection Open Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the measured resistance within specifications? Component Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes(DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1613",
+      "description": "CAN Wrong Message The HECU sends requirement data, such as torque reduction, the number of fuel cut cylinders, and the ESC control request, to the PCM(ECM & TCM) through CAN bus line. The PCM(ECM) performs the fuel cut function according to a request signal from the HECU and then retards an ignition timing. The PCM(TCM) maintains current gear position during the ESC control period in order not to increase power which causes a Kickdown shift. The HECU checks the CAN communcation lines for the normal ESC control, and sets this code if the data received from EMS is not the same with that from TCM. DTC Detecting Condition Diagnostic Circuit Diagram Component Inspection Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"OFF\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Connect GDS and select \"Diagnostic Trouble Codes(DTCs)\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a GDS, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes(DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1616",
+      "description": "CAN Bus off The HECU sends requirement data, such as torque reduction, the number of fuel cut cylinders, and the ESC control request, to the PCM(ECM & TCM) through CAN bus line. The PCM(ECM) performs the fuel cut function according to a request signal from the HECU and then retards an ignition timing. The PCM(TCM) maintains current gear position during the ESC control period in order not to increase power which causes a Kickdown shift. The HECU checks the CAN communication lines for normal TCS control, and sets this code if CAN BUS OFF status is detected for more than 100ms. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? CAN Signal Circuit Inspection Check CAN communication line for open",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure resistance between CAN-Low terminal of ECM/TCM/4WD harness connector and CAN-Low terminal of HECU harness connector. Specification :Approx. below 1Ohms",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured resistance within specifications? Check CAN communication line for short",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Is the measured resistance within specifications? Component Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1622",
+      "description": "Vehicle Speed Signal Error EPS provides different assist force according to vehicle speed while engine ON. A vehicle speed signal must be inputted normally to EPS CM for normal EPS control. EPS CM sets this code if EPS CM doesn't receives a vehicle speed signal from EMS normally. At that time it controls EPS system by using predefined vehicle speed value. DTC Detecting Condition Diagnostic Circuit Diagram Power Steering",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool with diagnostic connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Check that there is DTC on the VDC side.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check ESC first if there is any DTC on the ESC side and confirm that it is erasable.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "If no DTC, select \"Wheel Speed sensor\" parameter on the ESC side.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check that the value of wheel speed sensor is changable with driving the vehicle. Check wheel speed is changeable together with vehicle speed changes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Is parameter within specifications? W/Harness Inspection Power Steering",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1623",
+      "description": "CAN Time-out Steering Angle Sensor The Steering wheel angle sensor uses two sensors ( A-sensor and B-sensor ) to determine the direction of the rotation. The main components of each sensor are LED, photo transistor and slit plate. The slit plate, which has 45 holes, is installed between LED and photo transistor, and generates signals if slit plate rotates according to the steering wheel rotation. The sensor signals are generated by photo transistor which is driven whenever the light passes through the holes. The HECU detects operating speed and direction of the steering wheel by this input signal, and the signal is used to input signal for anti-roll control. The HECU checks the CAN communcation lines for normal control and if a steering anlge sensor's message is not received for a certain period, this DTC is set. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Power Circuit Inspection Open or Short Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure voltage between power terminal of the steering angle sensor harness connector and chassis ground. Specification :Approx. 12V",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured value within specifications? Ground Circuit Inspection Open or Short Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1627",
+      "description": "CAN time-out 4WD The HECU sends requirement data, such as torque reduction, the number of fuel cut cylinders, and the ESC control request, to the PCM(ECM & TCM) through CAN bus line. The PCM(ECM) performs the fuel cut function according to a request signal from the HECU and then retards an ignition timing. The PCM(TCM) maintains current gear position during the ESC control period in order not to increase power which causes a Kickdown shift. The HECU checks the CAN communcation lines and sets this code if an 4WD ECU message is not received within 500ms. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Signal Circuit Inspection Open Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the measured resistance within specifications? Component Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes(DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1647",
+      "description": "CAN Hardware Error - Sensor Channel When the vehicle is turning, the yaw rate sensor detects the yaw rate electronically by the vibration change of plate fork inside the yaw rate sensor. If the yaw velocity reaches the specific velocity after it detects the vehicle's yawing, the ESC control is reactivated. The lateral G sensor senses the vehicle's lateral acceleration. A small element inside the sensor is attached to a deflectable leverarm by lateral acceleration. Direction and magnitude of lateral acceleration loaded to vehicle can be known by electrostatic capacity changing according to lateral acceleration. It interchanges signals with HECU through extra CAN line which is only used for communication between HECU and the sensor. The HECU checks the sensor CAN H/W for normal ESC control, and sets this code if a sensor CAN H/W malfunction is detected. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Component Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a GDS, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes(DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1702",
+      "description": "Variant Coding Error The ESC system is the shorten word of Electronic Stability Control system. This system recognizes a critical driving condition by Yaw-rate sensor, Lateral acceleration sensor and Steering angle sensor. And then it stabilizes the vehicle by a individual wheel braking and engine torque control through CAN communication. There is no difference in the HECU's hardware side according to a vehicle speficiation, but there is a difference in its software side because the applied vehicle parameters differ according to a vehicle specification. The HECU stores the variant code value in the ECU's memory based on the received data by CAN communication. The HECU checks variant code and if an inappropriate variant code or no variant code is detected, this DTC is set. DTC Detecting Condition Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect GDS to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "IG \"ON\"",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Using GDS, Perform Variant coding program.(Fig.1)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "IG \"OFF\" and wait for about 10 seconds, and then IG \"ON\"",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "IG \"OFF\" and wait for about 10 seconds again, and then, IG \"ON",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Go to \"Component Inspection\" procedure. Fig.1) GDS diagnostic item -VARIANT CODING Component Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair Power Steering",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1704",
+      "description": "ECU Fail-Safe Relay Fault EPS CM has a relay to cut off current to a motor if abnormal operation is detected. EPS CM checks a condition of relay while ig ON. EPS CM sets this code and turns on warning lamp if a relay can't be on state when it receives a commend to turn it on. DTC Detecting Condition W/Harness Inspection Power Steering",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check all connectors (and connections) for looseness, bending, corrosion, contamination, deterioration, and/or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found ? Component Inspection Power Steering",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a scantool, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes(DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair Power Steering",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2112",
+      "description": "Valve Relay Error The HECU supplies battery power to all soleonid valves with a valve relay which is controlled by the Electronic Control UNIT(ECU). The valve relay and all solenoid valves are installed inside the HECU ( Hydraulic and Electronic Control Unit ). ABS ECU monitors voltage of the valve relay to check if ABS ECU can perform ABS control normally. When the valve relay is switched to ON, the HECU will set this code if the solenoid drive voltage is below permissible voltage ranges for a period of time. When the valve relay is switched to OFF, the HECU sets this code if the solenoid drive voltage is over the permissible voltage range for a period of time. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Power Circuit Inspection Open or Short Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the measured value within specifications? Verification of Vehicle Repair Electronic Stability Control",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Are any DTCs present ? General Information Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2130",
+      "description": "Brake Lamp Relay Error The DBC function is the shorten word of Downhill Brake Control function. When a vehicle goes down the hill, just pushing the DBC switch enables the car to keep its vehicle's speed at a constant value without operating the brake pedal. The DBC function is operated when the vehicle is on the decline and its velocity is under the predetermined speed. The HECU monitors the brake lamp relay(DBC relay) for a normal operation and if there is a open or short circuit in the relay, this DTC is set. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Power Circuit Inspection Open or Short Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure voltage between power terminal of brake lamp relay(DBC relay) harness connector and chassis ground. Specification :Battery voltage",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured value within specifications? Control Circuit Inspection Open Check",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2227",
+      "description": "Excessive Temperature Of Brake Disc BTCS ( Brake Traction Control System ) is operated when the value ( Wheel acceleration value + speed difference value ) exceeds the specified value when vehicle speed is lower than the 50 Km/h. The BTCS intalled HECU calculates the DISC temperature logically, which is an assumed value, by using the value of Wheel speed, vehicle speed change, control mode and BLS(Brake Lamp Signal) signal. Assumed DISC Temperature is used to protect DISC overheating, caused by long-time operation, which may cause a decrease in brake efficiency. The HECU calculates a disc's temperature for a normal operation and if the calculated disc's temperature is over 500 °C(932 °F), this DTC is set. DTC Detecting Condition Component Inspection Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Wait until the brake disc sufficiently gets cold.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"OFF\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Connect GDS and select \"Diagnostic Trouble Codes(DTCs)\" mode",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Using a GDS, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Select \"Diagnostic Trouble Codes(DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2380",
+      "description": "ABS/TCS/ESC(ESP) valve error The ABS HECU is composed of a ECU (Electronic Control Unit ) and an HCU( Hydraulic Control Unit), so the HECU hardware includes all solenoid valves inside the unit as well as the ECU. Solenoid valves are switched to ON, OFF by HECU when the ABS is activated. Solenoid valves function is to increase, decrease or maintain the hydralic pressure supplied to a wheel cylinder. The HECU monitors the operation of the valves by checking the drive circuit of the solenid valves, and then sets this code when the unexpcted drive voltage is detected. For example, the HECU sets the DTC if an unexpected high drive voltage is detected when the valve relay is switched to OFF. (or unexpected low voltage is detected when the solenoid valve drive TR is switched to ON) DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Component Inspection Electronic Stability Control",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a GDS, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes(DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair Electronic Stability Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2401",
+      "description": "Motor Position Sensor Error There is a sensor to detect a motor position in EPS CM for controlling EPS motor preciously. ESP CM controls a motor according to a data read from this sensor. EPS CM sets this code and inhibits EPS if a data read from motor position sensor has an error. DTC Detecting Condition W/Harness Inspection Power Steering",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check all connectors (and connections) for looseness, bending, corrosion, contamination, deterioration, and/or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found ? Component Inspection Power Steering",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a scantool, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes(DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair Power Steering",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2402",
+      "description": "Motor Failure The ABS ECU supplies battery power to the electric motor by way of a motor relay which is controlled by the Electronic Control Unit(ECU). The electric motor pump supplies hydraulic pressure to all wheel brake calipers by operating the piston inside the pump. The ABS ECU monitors the pump motor relay or fuse open, open or short in motor or motor lock and then sets this code if a malfunction is detected. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection Electronic Stability Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Power Circuit Inspection Open or Short Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the measured value within specifications? Verification of Vehicle Repair Electronic Stability Control",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Are any DTCs present ? General Information Power Steering",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2412",
+      "description": "Motor Short or Open EPS uses an electric motor to provide directional contol to the driver. EPS CM always monitors voltage of the motor because current of the motor is controlled by voltage. Three phase current of the motor is controlled by three phase voltage. EPS CM sets this code and inhibits EPS control if these voltage values are different from predefined value. DTC Detecting Condition W/Harness Inspection Power Steering",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check all connectors (and connections) for looseness, bending, corrosion, contamination, deterioration, and/or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found ? Component Inspection Power Steering",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a scantool, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes(DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair Power Steering",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2413",
+      "description": "Motor Current Error EPS uses an electric motor to provide directional contol to the driver. EPS CM always monitors current of the motor because power of the EPS system is decided by current. EPS CM compares current measured by internal current sensor with predefined value at same torque condition. EPS CM sets this code and inhibits EPS function if a gap between two values is out of specified range. DTC Detecting Condition W/Harness Inspection Power Steering",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check all connectors (and connections) for looseness, bending, corrosion, contamination, deterioration, and/or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found ? Component Inspection Power Steering",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a scantool, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes(DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present ? Verification of Vehicle Repair Power Steering",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

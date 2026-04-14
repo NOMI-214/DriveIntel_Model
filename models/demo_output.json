@@ -1,0 +1,122 @@
+{
+  "session_id": "demo-session-001",
+  "model_version": "ab6b566f-bed7-4539-8ccb-3c9046132f61",
+  "inference_timestamp": "2026-04-13T19:56:04.748182Z",
+  "dtc_analysis": [
+    {
+      "dtc_code": "P0420",
+      "description": "",
+      "severity": 1,
+      "severity_label": "MEDIUM",
+      "category": "emissions",
+      "confidence": 1.0,
+      "severity_probs": [
+        1.8572670512639888e-07,
+        0.9999938011169434,
+        5.100577254779637e-06,
+        9.082696124096401e-07
+      ]
+    },
+    {
+      "dtc_code": "P0300",
+      "description": "",
+      "severity": 2,
+      "severity_label": "HIGH",
+      "category": "ignition",
+      "confidence": 0.8958,
+      "severity_probs": [
+        0.0006183963851071894,
+        0.0016436745645478368,
+        0.8957515954971313,
+        0.10198630392551422
+      ]
+    }
+  ],
+  "sensor_analysis": {
+    "rpm": {
+      "status": "NORMAL",
+      "anomaly_score": 0.4323,
+      "days_to_alert": null,
+      "trend": "stable"
+    },
+    "coolant_temp": {
+      "status": "ABNORMAL",
+      "anomaly_score": 1.0,
+      "days_to_alert": 3,
+      "trend": "stable"
+    },
+    "o2_voltage": {
+      "status": "NORMAL",
+      "anomaly_score": 0.0095,
+      "days_to_alert": null,
+      "trend": "stable"
+    },
+    "maf": {
+      "status": "NORMAL",
+      "anomaly_score": 0.1281,
+      "days_to_alert": null,
+      "trend": "stable"
+    },
+    "fuel_trim_short": {
+      "status": "ABNORMAL",
+      "anomaly_score": 1.0,
+      "days_to_alert": 3,
+      "trend": "stable"
+    },
+    "fuel_trim_long": {
+      "status": "ABNORMAL",
+      "anomaly_score": 1.0,
+      "days_to_alert": 3,
+      "trend": "stable"
+    },
+    "throttle_pos": {
+      "status": "NORMAL",
+      "anomaly_score": 0.0093,
+      "days_to_alert": null,
+      "trend": "stable"
+    },
+    "battery_voltage": {
+      "status": "ABNORMAL",
+      "anomaly_score": 1.0,
+      "days_to_alert": 3,
+      "trend": "stable"
+    },
+    "intake_air_temp": {
+      "status": "NORMAL",
+      "anomaly_score": 0.1631,
+      "days_to_alert": null,
+      "trend": "stable"
+    },
+    "vehicle_speed": {
+      "status": "ABNORMAL",
+      "anomaly_score": 1.0,
+      "days_to_alert": 3,
+      "trend": "stable"
+    }
+  },
+  "health": {
+    "score": 0.0,
+    "status": "CRITICAL",
+    "summary": "Vehicle health is critical at 0.0/100."
+  },
+  "severity_summary": {
+    "highest_severity": "HIGH",
+    "justification": "Highest active fault severity across 2 DTC(s).",
+    "user_action": "Book urgently"
+  },
+  "workshop_query": {
+    "lat": 33.6844,
+    "lng": 73.0479,
+    "radius_km": 15,
+    "fault_categories": [
+      "ignition",
+      "emissions"
+    ],
+    "severity_level": "HIGH",
+    "urgency": "within_week",
+    "filters": {
+      "min_rating": 3.5,
+      "open_now": true
+    }
+  }
+}

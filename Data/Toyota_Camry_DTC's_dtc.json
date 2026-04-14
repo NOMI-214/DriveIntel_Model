@@ -1,0 +1,549 @@
+{
+  "source_file": "Toyota_Camry_DTC's.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 58,
+  "dtcs": [
+    {
+      "dtc_code": "B1411",
+      "description": "11-B1446/46",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1471",
+      "description": "71-B1499/99 / P0AA6-611 HINT * *1: If the cabin temperature is approx. -18.6°C (-1.48°F) or lower, DTC B1411/11 may be output even though the system is normal. * *2: If the ambient temperature is approx. -52.9°C (-63.22°F) or lower, DTC B1412/12 may be output even though the system is normal. * *3: If the check is performed in a dark place, DTC B1421/21 or B1424/24 (solar sensor circuit abnormal) may be output even though the system is normal. * *4: Depending on the timing of the power supply to the 12 V power supply circuit and high-voltage circuit when the power switch is turned on (READY), an abnormal information signal may be output, causing this DTC to be stored. If the output DTC is a code that was memorized in the past, check the fuses and wire harnesses. If there is no malfunction, erase the DTC. * *5: The A/C amplifier memorizes the DTC of the respective malfunction if it has occurred for the period of time indicated in the brackets. Airbag System SUPPLEMENTAL RESTRAINT SYSTEM: AIRBAG SYSTEM: DIAGNOSTIC TROUBLE CODE CHART",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "DTCs FOR AIRBAG SYSTEM If a trouble code is displayed during the DTC check, check the circuit listed for the code in the table below (refer to the Diagnostic Trouble Code Test below). HINT * When the SRS warning light remains on and the DTC output is the normal system code, a voltage source drop is likely to occur. This malfunction is not stored in the memory by the center airbag sensor assembly. If the power source voltage returns to normal, the SRS warning light will automatically go off. * When 2 or more codes are indicated, the code with the lower number appears first. * If a code is not listed on the display chart, the center airbag sensor assembly may have failed. * In the case of any malfunction concerning an open circuit, short to ground, or short to B+ due to a squib, other trouble codes may not be detected. In this case, repair the malfunction currently indicated and then perform malfunction diagnosis again. * When DTC B1650/32 is detected as a result of troubleshooting for the Airbag System, perform troubleshooting for the Occupant Classification System. * Mark in the check mode column: * *1: DTC is not corresponding to the check mode. * *2: DTC is corresponding to the check mode. AIRBAG SYSTEM:",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1000",
+      "description": "31-B1617/84",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1618",
+      "description": "84-B1632/81",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1633",
+      "description": "81-B1648/82",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1650",
+      "description": "32-B1803/51",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1805",
+      "description": "52-B1816/54",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1817",
+      "description": "54-B1831/57",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1832",
+      "description": "57-B1900/73",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B1901",
+      "description": "73-B1908/74 Audio and Visual System AUDIO / VISUAL: AUDIO AND VISUAL SYSTEM: DIAGNOSTIC TROUBLE CODE CHART Communication Diagnosis 01-21 - 01-DC 01-DD - 01-FF Telephone Telephone Radio Unit Radio Unit CD Player CD Player In-dash CD Changer In-dash CD Changer XM Tuner XM Tuner USB Audio USB Audio CAN Communication System CAN COMMUNICATION: CAN COMMUNICATION SYSTEM: DIAGNOSTIC TROUBLE CODE CHART CAN COMMUNICATION SYSTEM: CAN COMMUNICATION SYSTEM: Cruise Control System CRUISE CONTROL: CRUISE CONTROL SYSTEM: DIAGNOSTIC TROUBLE CODE CHART If a trouble code is displayed during the DTC check, check the trouble areas listed for that code in the table below and proceed to the appropriate Diagnostic Trouble Code Test below. Cruise control system Cruise control system: Door Lock - Smart Key System DOOR LOCK: SMART KEY SYSTEM: DIAGNOSTIC TROUBLE CODE CHART HINT If a trouble code is indicated during the DTC check, check the circuit listed for that code in the table below. Then proceed to the appropriate Diagnostic Trouble Code Test below. Power door lock control system: Power door lock control system: Electric Steering Lock STEERING COLUMN: ELECTRIC STEERING LOCK: DIAGNOSTIC TROUBLE CODE CHART If a trouble code is displayed during the DTC check, check the parts listed for that code in the table below and proceed to the appropriate Diagnostic Trouble Code Test below. HINT The steering lock ECU does not store DTCs regarding the past problems. ELECTRIC STEERING LOCK: ELECTRIC STEERING LOCK: Electronic Power Steering System POWER STEERING: ELECTRONIC POWER STEERING SYSTEM: DIAGNOSTIC TROUBLE CODE CHART HINT If a trouble code is displayed during the DTC check, check the circuit indicated by the DTC. For details of each code, turn to respective DTC code in the DTC chart ELECTRONIC POWER STEERING SYSTEM DIAGNOSTIC TROUBLE CODE CHART: C1511-C1528 C1531-C1581 / U0073-U0293 Electronically Controlled Brake System BRAKE CONTROL: ELECTRONICALLY CONTROLLED BRAKE SYSTEM: DIAGNOSTIC TROUBLE CODE CHART HINT * If a trouble code is displayed during the DTC check, check the circuit indicated by the DTC. For details of each code, turn to the respective DTC Code in the DTC chart. * Inspect the fuse and relay before investigating the trouble areas as shown in the table below. DTC chart of ABS: 42 / C0200/31-C1235/35",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1236",
+      "description": "36-C1442/44",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0124",
+      "description": "95 * Drive the vehicle at the speed of 50 km/h (31 mph) and depress the brake pedal strongly for approximately 3 seconds. * Repeat the above operation 3 times or more and check that the ABS warning light goes off. * Clear the DTC. HINT * In some cases, Techstream cannot be used when the ABS warning light remains on. * When U0073/94, U0123/62, U0124/95, U0126/63, U0131/67, or U0293/59 is output, inspect and repair the trouble areas indicated by these codes first. DTC chart of VSC: 43-45 / C1210/36-C1445/66",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0123",
+      "description": "62-U0131/67 DTC chart of Electronically Controlled Brake: 36 / C1202/68-C1247/47",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1249",
+      "description": "49-C1313/13",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1314",
+      "description": "14-C1354/25",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1355",
+      "description": "27-C1368/67",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1377",
+      "description": "43-C1392/48 / U0073/94-U0293/59 (*1): These codes are displayed to indicate the ABS and Electronically Controlled Brake DTCs. Test Mode DTC of ABS: Test Mode DTC of ABS: Test Mode DTC of VSC: Test Mode DTC of VSC: Test Mode DTC of Electronically Controlled Brake: Test Mode DTC of Electronically Controlled Brake: Engine Control System - SFI System 2AZ-FXE ENGINE CONTROL SYSTEM: SFI SYSTEM: DIAGNOSTIC TROUBLE CODE CHART HINT Parameters listed in the chart may be different than your readings depending on the type of instruments and other factors. If any DTCs are displayed during a check mode DTC check, check the circuits for the DTCs listed in the table below. For details of each DTC, refer to the applicable Diagnostic Trouble Code Test indicated. SFI SYSTEM: P0010-P0100 P0101-P0118 P011B-P0137 P0138-P0172 P0220-P0300 P0301-P0302 P0303-P0328 P0335-P0354 P0420-P0450 P0451-P0604 P0606-P1453 P2102-P2196 P2237-P2253 P2401-P2420 P2450-P3193 U0001-U0293 Engine Immobiliser System ENGINE IMMOBILISER: ENGINE IMMOBILISER SYSTEM: DIAGNOSTIC TROUBLE CODE CHART",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CERTIFICATION ECU DIAGNOSTIC TROUBLE CODE CHART CERTIFICATION ECU CERTIFICATION ECU",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "HYBRID VEHICLE CONTROL ECU DIAGNOSTIC TROUBLE CODE CHART HINT The DTCs for the engine immobiliser system are specified above. If other codes are output, check the DTC chart for the hybrid control system. HYBRID VEHICLE CONTROL ECU HYBRID VEHICLE CONTROL ECU Hybrid Battery System HYBRID BATTERY CONTROL: HYBRID BATTERY SYSTEM: DIAGNOSTIC TROUBLE CODE CHART",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0A1F-123",
+      "description": "P0A85-123",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0A95-123",
+      "description": "P0AC2-123",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0AC6-123",
+      "description": "P0B3D-123",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0B42-123",
+      "description": "P3011-123",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P3012-123",
+      "description": "P308A-123",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U029A-123",
+      "description": "Hybrid Control System P311 HYBRID VEHICLE CONTROL: HYBRID CONTROL SYSTEM: DIAGNOSTIC TROUBLE CODE CHART HYBRID CONTROL SYSTEM:",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0343-747",
+      "description": "P062F-143",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0630-804",
+      "description": "P0A01-726",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0A02-719",
+      "description": "P0A09-591",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0A0D-350",
+      "description": "P0A0F-525",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0A0F-533",
+      "description": "P0A1A-658",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0A1A-659",
+      "description": "P0A1B-198",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0A1B-511",
+      "description": "P0A1D-135",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0A1D-140",
+      "description": "P0A1D-823",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0A1F-129",
+      "description": "P0A37-258",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0A37-260",
+      "description": "P0A4B-253",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0A4C-513",
+      "description": "P0A63-298",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0A63-302",
+      "description": "P0A78-121",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0A78-128",
+      "description": "P0A78-286",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0A78-287",
+      "description": "P0A78-506",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0A78-510",
+      "description": "P0A7A-322",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0A7A-324",
+      "description": "P0A7A-517",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0A7A-518",
+      "description": "P0A92-261",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0A92-521",
+      "description": "P0A94-547",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0A94-548",
+      "description": "P0A94-556",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0A94-557",
+      "description": "P0AA6-526",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0AA6-611",
+      "description": "P0AA7-727",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0AC0-817",
+      "description": "P0AE6-225",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0AE7-224",
+      "description": "P0AEE-277",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0AEF-275",
+      "description": "P2121-106",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P2122-104",
+      "description": "P2138-154",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P2511-149",
+      "description": "P3004-131",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P3004-132",
+      "description": "P3004-801",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P3004-803",
+      "description": "P3108-536",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P3108-538",
+      "description": "P3147-241",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P3147-242",
+      "description": "P3222-313",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0129-220",
+      "description": "U0424-537 Lighting System LIGHTING: LIGHTING SYSTEM: DIAGNOSTIC TROUBLE CODE CHART LIGHTING SYSTEM: LIGHTING SYSTEM: LIN Communication System MULTIPLEX COMMUNICATION: LIN COMMUNICATION SYSTEM: DIAGNOSTIC TROUBLE CODE CHART LIN Communication System Diagnostic Trouble Code Chart LIN Communication System Diagnostic Trouble Code Chart * *: w/ Sliding Roof System Meter / Gauge System METER: METER / GAUGE SYSTEM: DIAGNOSTIC TROUBLE CODE CHART METER / GAUGE SYSTEM: METER / GAUGE SYSTEM: Navigation System NAVIGATION: NAVIGATION SYSTEM: DIAGNOSTIC TROUBLE CODE CHART Navigation System: B1561-B15B0 B15B3-B15FF / U0073 Occupant Classification System SUPPLEMENTAL RESTRAINT SYSTEM: OCCUPANT CLASSIFICATION SYSTEM: DIAGNOSTIC TROUBLE CODE CHART HINT When DTC B1650/32 is detected as a result of troubleshooting for the Airbag System, perform troubleshooting for the Occupant Classification System as shown in the chart below. OCCUPANT CLASSIFICATION SYSTEM: B1771-B1787 B1788-B1796 Power Window Control System WINDSHIELD / WINDOW GLASS: POWER WINDOW CONTROL SYSTEM: DIAGNOSTIC TROUBLE CODE CHART Power Window Control System Power Window Control System Rear View Monitor System PARK ASSIST / MONITORING: REAR VIEW MONITOR SYSTEM: DIAGNOSTIC TROUBLE CODE CHART HINT If a trouble code is output during the DTC check, inspect the trouble areas listed for that code. For details of the code, refer to the DTC chart. Inspect fuses and relays before investigating the trouble areas shown in the table below. Rear View Monitor System Rear View Monitor System Sliding Roof System SLIDING ROOF: SLIDING ROOF SYSTEM: DIAGNOSTIC TROUBLE CODE CHART If any trouble code is displayed during DTC check, check the circuit corresponding to the code in the table below. Proceed to the given circuit. Sliding Roof System Sliding Roof System Starting - Smart Key System 2AZ-FXE STARTING: SMART KEY SYSTEM: DIAGNOSTIC TROUBLE CODE CHART PUSH-BUTTON START FUNCTION: B2271-B2283 B2284-B2289 Tire Pressure Warning System TIRE AND WHEEL: TIRE PRESSURE WARNING SYSTEM: DIAGNOSTIC TROUBLE CODE CHART HINT If a trouble code is displayed during the DTC check, inspect the trouble areas listed for that code. For details of the code, refer to the applicable Diagnostic Trouble Code Test below. TIRE PRESSURE WARNING SYSTEM",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2111",
+      "description": "11-C2123/23",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2124",
+      "description": "24-C2166/66",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2167",
+      "description": "67-C2181/81",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2182",
+      "description": "82-C2191/91 Wireless Door Lock Control System DOOR LOCK: WIRELESS DOOR LOCK CONTROL SYSTEM: DIAGNOSTIC TROUBLE CODE CHART HINT If a trouble code is indicated during the DTC check, check the circuit listed for that code in the table below. Then proceed to the appropriate Diagnostic Trouble Code Test. WIRELESS DOOR LOCK CONTROL SYSTEM: WIRELESS DOOR LOCK CONTROL SYSTEM:",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

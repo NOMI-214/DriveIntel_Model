@@ -1,0 +1,2615 @@
+{
+  "source_file": "KIA_Sorento_C.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 61,
+  "dtcs": [
+    {
+      "dtc_code": "C1101",
+      "description": "Battery Voltage High General Information The ABS ECU (Electronic Control Unit) checks the battery voltage and generator output voltage to determine, as a safety issue, whether the ABS system can operate normally or not. The normal battery voltage range is essential for controlling the ABS system as intended. The ABS ECU monitors battery voltage and alternator output voltage. When the voltage is higher than the expected normal value, this code is set, and the ABS/EBD/ESC functions are prohibited. If the voltage recovers, to within normal operating ranges, then the controller returns to normal operation as well. DTC Detecting Condition Specification Diagnostic Circuit Diagram Monitor Scantool Data",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Monitor the \"BATTERY VOLTAGE\" parameter on the scantool. Specification :  Below. 17.5 V Fig 1) Test Condition : Ignition \"ON\" & Engine \"ON\". Normal Data",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is parameter displayed within specifications? W/Harness Inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Are any DTCs present? General Information",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1102",
+      "description": "Battery Voltage Low General Information The ABS ECU (Electronic Control Unit) checks the battery voltage and generator output voltage to determine, as a safety issue, whether the ABS system can operate normally or not. The normal battery voltage range is essential for controlling the ABS system as intended. The ABS ECU monitors the battery voltage and alternator output voltage by reading the value of voltage. When the voltage is lower than the expected normal value, this code is set. The ABS/ESC functions are prohibited and the EBD function is allowed on LOW VOLTAGE CONDITION, the ABS/EBD/ESC functions are prohibited on UNDER VOLTAGE CONDITION. If the voltage recovers, to within normal operating ranges, then the controller returns to normal operations as well. DTC Detecting Condition Specification Diagnostic Circuit Diagram Monitor Scantool Data",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Monitor the \"BATTERY VOLTAGE\" parameter on the scantool. Specification :  Above. 9±0.5 V Fig 1) Test Condition : Ignition \"ON\" & Engine \"ON\". Normal Data",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is parameter displayed within specifications? W/Harness Inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Are any DTCs present? General Information",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1112",
+      "description": "Sensor source voltage General Information The HECU supplies operating voltage with Steering angle senor (12 V), Yaw rate & lateral G sensor (12 V), G sensor (5 V). The HECU monitors supply voltage of each sensor for normal ESC control. If supply voltage is out of specified range ABS/ESC warning lamps are turned on and ABS/ESC controls are inhibited. A failure is detected if the external sensor supply voltage is out of the specified range for more than the specified min. fault duration. DTC Detecting Condition Diagnostic Circuit Diagram Monitor Scantool Data",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Monitor the \"BATTERY VOLTAGE, 5 VOLT REFERENCE\" parameter on the scantool. Specification :  BATTERY VOLTAGE (Approx. 10 V ~ 16 V) 5 VOLT REFERENCE (Approx. 5 V) Fig 1) Test Condition : Ignition \"ON\" & Engine \"ON\". Normal Data",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is parameter displayed within specifications? W/Harness Inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Are any DTCs present? General Information",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1121",
+      "description": "Front Left Sensor Battery Voltage Low General Information The TPMS system is the shorten word of Tire Pressure Monitoring System. This system monitors the pressure of the tire and when it drops below a certain pressure, the TPMS ECU makes the warning lamp turn on for notifying the driver. This system consists of TPMS ECU (or TPMS Receiver), TPMS sensors. Among components of TPMS system, the TPMS sensor is installed at each wheel rim. and its role is to measure the air pressure and the temperature of the tire and then it transmits its signals to TPMS ECU. The communication from TPMS sensors is done via RF (Radio Frequency) at a frequency. The TPMS ECU monitors the voltage of sensor's battery and if it is below 2.2 V, this DTC is set. DTC Detecting Condition",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Set up 'GDS' with 'GDS TPMS'.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"Vehicle S/W Management\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"Sensor Status\" mode of \"Data Treatment\" item.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the parameter of \"Battery Level\" on the screen. Specification :  'Battery Level' is 'OK'.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter within specifications? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1122",
+      "description": "Front Right Sensor Battery Voltage Low General Information The TPMS system is the shorten word of Tire Pressure Monitoring System. This system monitors the pressure of the tire and when it drops below a certain pressure, the TPMS ECU makes the warning lamp turn on for notifying the driver. This system consists of TPMS ECU (or TPMS Receiver), TPMS sensors. Among components of TPMS system, the TPMS sensor is installed at each wheel rim. and its role is to measure the air pressure and the temperature of the tire and then it transmits its signals to TPMS ECU. The communication from TPMS sensors is done via RF (Radio Frequency) at a frequency. The TPMS ECU monitors the voltage of sensor's battery and if it is below 2.2 V, this DTC is set. DTC Detecting Condition",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Set up 'GDS' with 'GDS TPMS'.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"Vehicle S/W Management\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"Sensor Status\" mode of \"Data Treatment\" item.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the parameter of \"Battery Level\" on the screen. Specification :  'Battery Level' is 'OK'.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter within specifications? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1123",
+      "description": "Rear Left Sensor Battery Voltage Low General Information The TPMS system is the shorten word of Tire Pressure Monitoring System. This system monitors the pressure of the tire and when it drops below a certain pressure, the TPMS ECU makes the warning lamp turn on for notifying the driver. This system consists of TPMS ECU (or TPMS Receiver), TPMS sensors. Among components of TPMS system, the TPMS sensor is installed at each wheel rim. and its role is to measure the air pressure and the temperature of the tire and then it transmits its signals to TPMS ECU. The communication from TPMS sensors is done via RF (Radio Frequency) at a frequency. The TPMS ECU monitors the voltage of sensor's battery and if it is below 2.2 V, this DTC is set. DTC Detecting Condition",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Set up 'GDS' with 'GDS TPMS'.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"Vehicle S/W Management\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"Sensor Status\" mode of \"Data Treatment\" item.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the parameter of \"Battery Level\" on the screen. Specification :  'Battery Level' is 'OK'.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter within specifications? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1124",
+      "description": "Rear Right Sensor Battery Voltage Low General Information The TPMS system is the shorten word of Tire Pressure Monitoring System. This system monitors the pressure of the tire and when it drops below a certain pressure, the TPMS ECU makes the warning lamp turn on for notifying the driver. This system consists of TPMS ECU (or TPMS Receiver), TPMS sensors. Among components of TPMS system, the TPMS sensor is installed at each wheel rim. and its role is to measure the air pressure and the temperature of the tire and then it transmits its signals to TPMS ECU. The communication from TPMS sensors is done via RF (Radio Frequency) at a frequency. The TPMS ECU monitors the voltage of sensor's battery and if it is below 2.2 V, this DTC is set. DTC Detecting Condition",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Set up 'GDS' with 'GDS TPMS'.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select \"Vehicle S/W Management\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"Sensor Status\" mode of \"Data Treatment\" item.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the parameter of \"Battery Level\" on the screen. Specification :  'Battery Level' is 'OK'.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter within specifications? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1126",
+      "description": "TPMS ECU Battery Voltage Low General Information The TPMS system is the shorten word of Tire Pressure Monitoring System. This system monitors the pressure of the tire and when it drops below a certain pressure, the TPMS ECU makes the warning lamp turn on for notifying the driver. This system consists of TPMS ECU (or TPMS Receiver), TPMS sensors. The TPMS ECU monitors the battery voltage to determine, as a safety issue, whether this system can operate normally or not. The normal battery voltage range is essential for controlling this system as intended. The TPMS ECU monitors the voltage of battery and if it stays below a certain value, this DTC is set. DTC Detecting Condition Specification Diagnostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect GDS to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Start engine and turn the headlight and the heatwire on.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Monitor the \"BATTERY VOLTAGE\" parameter on the GDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Maintaining ENG. RPM at 2,500 RPM (idle) over 2 minutes. Specification :  more than 10 [V]",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter within specifications? W/Harness Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1127",
+      "description": "TPMS ECU Battery Voltage High General Information The TPMS system is the shorten word of Tire Pressure Monitoring System. This system monitors the pressure of the tire and when it drops below a certain pressure, the TPMS ECU makes the warning lamp turn on for notifying the driver. This system consists of TPMS ECU (or TPMS Receiver), TPMS sensors. The TPMS ECU monitors the battery voltage to determine, as a safety issue, whether this system can operate normally or not. The normal battery voltage range is essential for controlling this system as intended. The TPMS ECU monitors the voltage of battery and if it stays below a certain value, this DTC is set. DTC Detecting Condition Specification Diagnostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect GDS to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Start engine and turn the headlight and the heatwire on.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Monitor the \"BATTERY VOLTAGE\" parameter on the GDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Maintaining ENG. RPM at 2,500 RPM (idle) over 2 minutes. Specification :  more than 10 [V]",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter within specifications? W/Harness Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1200",
+      "description": "Wheel Speed Sensor Front-LH Open/Short General Information The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a reference value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor circuit continuously. If the sensor signal current is continuously out of the specified range for 140msec, then the HECU determines that the circuit is open/short, and sets this code.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Power Circuit Inspection Open or Short Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure waveform between wheel speed sensor signal terminal of the HECU harness connector and chassis ground with oscilloscope. Specification :  High : 1.18 - 1.68 V, Low : 0.59 - 0.84 V",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured waveform within specifications? Component Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1201",
+      "description": "Wheel Speed Sensor Front-LH Range / Performance / Intermittent General Information The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a reference value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. This code is set if an abnormal speed change ratio is detected while the vehicle speed is more than 2 km/h.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect scantool to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 40 km/h. (24 mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPEED (FL)\" parameter on the Scantool. Specification :  Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1202",
+      "description": "Wheel Speed Sensor Front-LH Invalid/no Signal General Information The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a reference value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. This code is set when the sensor air gap is out of specified range or when the ABS control cycle is continued abnormally. The HECU checks for air gap malfunctioning by monitoring the sensor signal at speeds between 2 km/h to 10 Km/h.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect scantool to Data Link Connector (DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 10 km/h. (6.2 mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPEED (FL)\" parameter on the Scantool. Specification :  Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1203",
+      "description": "Wheel Speed Sensor Front-RH Open/Short General Information The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a reference value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor circuit continuously. If the sensor signal current is continuously out of the specified range for 140msec, then the HECU determines that the circuit is open/short, and sets this code.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Power Circuit Inspection Open or Short Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure waveform between wheel speed sensor signal terminal of the HECU harness connector and chassis ground. Specification :  High : 1.18 - 1.68 V, Low : 0.59 - 0.84 V",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured waveform within specifications? Component Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1204",
+      "description": "Wheel Speed Sensor Front-RH Range / Performance / Intermittent General Information The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a reference value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. This code is set if an abnormal speed change ratio is detected while the vehicle speed is more than 2 km/h.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect scantool to Data Link Connector (DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 40 km/h. (24 mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPEED (FR)\" parameter on the Scantool. Specification :  Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1205",
+      "description": "Wheel Speed Sensor Front-RH Invalid/no Signal General Information The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a reference value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. This code is set when the sensor air gap is out of specified range or when the ABS control cycle is continued abnormally. The HECU checks for air gap malfunctioning by monitoring the sensor signal at speeds between 2 km/h to 10 Km/h.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect scantool to Data Link Connector (DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 10 km/h. (6.2 mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPEED (FR)\" parameter on the Scantool. Specification :  Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1206",
+      "description": "Wheel Speed Sensor Rear-LH Open/Short General Information The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a reference value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor circuit continuously. If the sensor signal current is continuously out of the specified range for 140msec, then the HECU determines that the circuit is open/short, and sets this code.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Power Circuit Inspection Open or Short Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure waveform between wheel speed sensor signal terminal of the HECU harness connector and chassis ground. Specification :  High : 1.18 - 1.68 V, Low : 0.59 - 0.84 V",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured waveform within specifications? Component Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1207",
+      "description": "Wheel Speed Sensor Rear-LH Range / Performance / Intermittent General Information The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a reference value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. This code is set if an abnormal speed change ratio is detected while the vehicle speed is more than 2 km/h.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect scantool to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 40 km/h. (24 mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPEED (RL)\" parameter on the Scantool. Specification :  Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1208",
+      "description": "Wheel Speed Sensor Rear-LH Invalid/no Signal General Information The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a reference value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. This code is set when the sensor air gap is out of specified range or when the ABS control cycle is continued abnormally. The HECU checks for air gap malfunctioning by monitoring the sensor signal at speeds between 2 km/h to 10 Km/h.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect scantool to Data Link Connector (DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 10 km/h. (6.2 mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPEED (RL)\" parameter on the Scantool. Specification :  Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1209",
+      "description": "Wheel Speed Sensor Rear-RH Open/Short General Information The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a reference value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor circuit continuously. If the sensor signal current is continuously out of the specified range for 140msec, then the HECU determines that the circuit is open/short, and sets this code.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Power Circuit Inspection Open or Short Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure waveform between signal terminal of the wheel speed sensor harness connector and chassis ground with oscilloscope. Specification :  High : 1.18 - 1.68 V, Low : 0.59 - 0.84 V",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured waveform within specifications? Component Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1210",
+      "description": "Wheel Speed Sensor Rear-RH Range / Performance / Intermittent General Information The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a reference value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. This code is set if an abnormal speed change ratio is detected while the vehicle speed is more than 2 km/h.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect scantool to Data Link Connector (DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 40 km/h. (24 mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPEED (RR)\" parameter on the Scantool. Specification :  Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1211",
+      "description": "Wheel Speed Sensor Rear-RH Invalid/no Signal General Information The wheel speed sensor is the essential component the ABS ECU uses to calculate vehicle speed and to determine whether wheel lock occurs. For example, rear wheel speed signal is used as a reference value, for vehicle speed, in front wheel drive vehicles, and if a difference between front and rear wheel speed occurs, then ABS control is performed. Wheel speed sensor is active hall-sensor type. The ABS ECU monitors the wheel speed sensor signal continuously. This code is set when the sensor air gap is out of specified range or when the ABS control cycle is continued abnormally. The HECU checks for air gap malfunctioning by monitoring the sensor signal at speeds between 2 km/h to 10 Km/h. Warning lamp is turned OFF unless additional faults are detected when the IG KEY is turned ON again, and wheel speed is more than 10 Km/h (6.2 mph). DTC Detecting Condition Specification Diagnostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\" & Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect scantool to Data Link Connector (DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start and drive vehicle in gear and maintain vehicle speed at or above 10 km/h. (6.2 mph)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the \"WHEEL SPEED (RR)\" parameter on the Scantool. Specification :  Compare with other parameters related to wheel speed sensor. If it is the same as other parameters, it is in normal condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed within specifications? Component Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1235",
+      "description": "Primary Pressure Sensor-Electrical General Information The pressure sensor, installed in the HECU, senses the brake oil pressure to judge a driver's brake intention when the ESC program is operated. If pressure of master cylinder is applied to pressure sensor, the strain of the piezo element is changed and then the resistance of bridge circuit is changed according to the changed strain. Therefore this changed resistance changes the output voltage of bridge circuit and the output voltage changes linearly. The sensor output is an analog signal in proportion to the supply voltage, and the HECU recognizes a pressure value according to signal ratio about supply voltage. A failure is detected if the output signal voltage of the pressure sensor is out of specified range. DTC Detecting Condition Diagnostic Circuit Diagram Component Inspection",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Connect scantool and select \"Diagnostic Trouble Codes (DTCs)\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a scantool, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check if the pressure sensor's service data shows '0 bar' on the scantool while not pressing the brake pedal.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check if the pressure sensor's service data rises on the scantool while pressing the brake pedal.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Is the pressure sensor's data unusually shown? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1237",
+      "description": "Primary Pressure Sensor-Signal General Information The pressure sensor, installed in the HECU, senses the brake oil pressure to judge a driver's brake intention when the ESC program is operated. If pressure of master cylinder is applied to pressure sensor, the strain of the piezo element is changed and then the resistance of bridge circuit is changed according to the changed strain. Therefore this changed resistance changes the output voltage of bridge circuit and the output voltage changes linearly. The sensor output is an analog signal in proportion to the supply voltage, and the HECU recognizes a pressure value according to signal ratio about supply voltage. The failure is detected if the pressure sensor signal noise is out of normal range, or the pressure sensor signal is changed abnormally. In spite of no brake switch signal, master cylinder pressure exceeds 20bar when brake switch is normal. DTC Detecting Condition Diagnostic Circuit Diagram Component Inspection",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Connect scantool and select \"Diagnostic Trouble Codes (DTCs)\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a scantool, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check if the pressure sensor's service data shows '0 bar' on the scantool while not pressing the brake pedal.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check if the pressure sensor's service data rises on the scantool while pressing the brake pedal.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Is the pressure sensor's data unusually shown? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1260",
+      "description": "Steering Angle Sensor Circuit-Signal General Information The Steering wheel angle sensor uses two sensors (A-sensor and B-sensor) to determine the direction of the rotation. The main components of each sensor are LED, photo transistor and slit plate. The slit plate, which has 45 holes, is installed between LED and photo transistor, and generates signals if slit plate rotates according to the steering wheel rotation. The sensor signals are generated by photo transistor which is driven whenever the light passes through the holes. The HECU detects operating speed and direction of the steering wheel by this input signal, and the signal is used to input signal for anti-roll control. The HECU monitors the signals of the steering angle sensor and if the abnormal signal is detected or the difference between the angle speed calculated from the other sensors and the the angle speed measured from the steering angle sensor is above a certain value, this DTC is set. DTC Detecting Condition Diagnostic Circuit Diagram Component Inspection",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"OFF\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Connect scantool and select \"Diagnostic Trouble Codes (DTCs)\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a scantool, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Using a scantool, Check DTC present.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1261",
+      "description": "Steering Angle Sensor Not Calibrated General Information The Steering wheel angle sensor uses two sensors (A-sensor and B-sensor) to determine the direction of the rotation. The main components of each sensor are LED, photo transistor and slit plate. The slit plate, which has 45 holes, is installed between LED and photo transistor, and generates signals if slit plate rotates according to the steering wheel rotation. The sensor signals are generated by photo transistor which is driven whenever the light passes through the holes. The HECU detects operating speed and direction of the steering wheel by this input signal, and the signal is used to input signal for anti-roll control. The steering angle sensor in the ESC system is an absolute angle sensor type. For this reason, the steering angle sensor needs the zero setting (Calibration) by the scantool. If the calibration of this sensor is undone, this DTC is set. DTC Detecting Condition",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Line up wheels like Figure 1. (1) Perform the wheel alignment. (2) Line up the wheel in a straight. (3) Drive the vehicle ahead and back 2 - 3 times without holding steering wheel.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Connect scantool to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Perform steering angle sensor calibration. (Figure 2)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Disconnect scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check the condition of SAS zero point adjustment by driving the vehicle to right-turn and left-turn at least one time.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Is the calibration (zero point adjustment) completed? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1282",
+      "description": "Yaw Rate & Lateral G Sensor-Electrical General Information When the vehicle is turning, the yaw rate sensor detects the yaw rate electronically by the vibration change of plate fork inside the yaw rate sensor. If the yaw velocity reaches the specific velocity after it detects the vehicle's yawing, the ESC control is reactivated. The lateral G sensor senses the vehicle's lateral acceleration. A small element inside the sensor is attached to a deflectable leverarm by lateral acceleration. Direction and magnitude of lateral acceleration loaded to vehicle can be known by electrostatic capacity changing according to lateral acceleration. It interchanges signals with HECU through extra CAN line which is only used for communication between HECU and the sensor. A failure is detected if the Yaw rate & lateral G sensor's message was not received or the HECU detects the sensor CAN Bus off state for more than the specified failure detection time. The Monitoring starts after Power-Up. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Power Circuit Inspection Open or Short Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the measured value within specifications? Signal Circuit Inspection Short Check (to ground)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Using a scantool, Check DTC present.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Is the same DTC shown? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1283",
+      "description": "Yaw Rate & Lateral G Sensor-Signal General Information When the vehicle is turning, the yaw rate sensor detects the yaw rate electronically by the vibration change of plate fork inside the yaw rate sensor. If the yaw velocity reaches the specific velocity after it detects the vehicle's yawing, the ESC control is reactivated. The lateral G sensor senses the vehicle's lateral acceleration. A small element inside the sensor is attached to a deflectable leverarm by lateral acceleration. Direction and magnitude of lateral acceleration loaded to vehicle can be known by electrostatic capacity changing according to lateral acceleration. It interchanges signals with HECU through extra CAN line which is only used for communication between HECU and the sensor. If the difference between the estimated value from the other sensors and the measured value from the yaw rate and lateral G sensor is larger than predefined value for predefined time, the failure is recognized. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Component Inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a scantool, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes (DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1285",
+      "description": "Longitudinal G Sensor Not Calibrated General Information The longitudinal G sensor is installed in the YAW-RATE sensor. This longitudinal G sensor detects vertical acceleration of the vehicle, while the lateral G sensor detects lateral acceleration of the vehicle. The HECU uses these signals for the Hill start Assist Control function. If abnormal zero-setting is detected or no information in the HECU is detected, a failure is recognized. DTC Detecting Condition Component Inspection",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "IG ON, ENG OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Stand the vehicle on a flat ground without any inclination.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Set the steering wheel at the center position.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Keep the vehicle under normal tire pressure condition and normal loading condition.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Connect scantool to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Perform Longitudinal G Sensor Calibration. (figure 1).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Is \"Steering angle sensor calibration.\" completed normally? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1300",
+      "description": "TPMS ECU IRX not responding General Information The TPMS system is the shorten word of Tire Pressure Monitoring System. This system monitors the pressure of the tire and when it drops below a certain pressure, the TPMS ECU makes the warning lamp turn on for notifying the driver. This system consists of TPMS ECU (or TPMS Receiver), TPMS sensors. Among components of TPMS system, the TPMS sensor is installed at each wheel rim. and its role is to measure the air pressure and the temperature of the tire and then it transmits its signals to TPMS ECU. The communication from TPMS sensors is done via RF (Radio Frequency) at a frequency. The TPMS ECU monitors RF signals of TPMS sensor and if the TPMS ECU does not receive a valid signal from the sensor, this DTC is set. DTC Detecting Condition",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Using a scantool, clear DTCs.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "IG OFF and then, IG ON, again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Again using scantool, Check DTC present.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the same DTC shown, again? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1312",
+      "description": "Front Left Sensor RF Channel Failure General Information The TPMS system is the shorten word of Tire Pressure Monitoring System. This system monitors the pressure of the tire and when it drops below a certain pressure, the TPMS ECU makes the warning lamp turn on for notifying the driver. This system consists of TPMS ECU (or TPMS Receiver), TPMS sensors. Among components of TPMS system, the TPMS sensor is installed at each wheel rim. and its role is to measure the air pressure and the temperature of the tire and then it transmits its signals to TPMS ECU. The communication from TPMS sensors is done via RF (Radio Frequency) at a frequency. The TPMS ECU monitors the RF signal of the sensor and if it is not received, this DTC is set. DTC Detecting Condition",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect VCI to Data Link Connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "IG KEY ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check TPMS sensor's ID out of service data items. Measuring method : Refer to No.1 Measurement No.1) A method of checking a sensor ID with VCI Connect VCI to Data Link Connector. Check TPMS sensor's ID out of service data items. Fig.1) Data displayed by TPMS ECU",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Position the GDS TPMS as near as possible to the tire. (Reading may take 30 - 60 seconds depending on the sensor's characteristics.)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check a sensor's ID out of sensor's information. Measuring method : Refer to No.2 Measurement No.2) A method of checking a sensor ID with TPMS Exciter TPMS Exciter within 10 cm of the tire's sensor which will of the tire's sensor which will be measured Fig.2) Data displayed by TPMS Exciter",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Is the Fig.1's sensor ID same with the Fig.2's? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1313",
+      "description": "Front Right Sensor RF Channel Failure General Information The TPMS system is the shorten word of Tire Pressure Monitoring System. This system monitors the pressure of the tire and when it drops below a certain pressure, the TPMS ECU makes the warning lamp turn on for notifying the driver. This system consists of TPMS ECU (or TPMS Receiver), TPMS sensors. Among components of TPMS system, the TPMS sensor is installed at each wheel rim. and its role is to measure the air pressure and the temperature of the tire and then it transmits its signals to TPMS ECU. The communication from TPMS sensors is done via RF (Radio Frequency) at a frequency. The TPMS ECU monitors the RF signal of the sensor and if it is not received, this DTC is set. DTC Detecting Condition",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect VCI to Data Link Connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "IG KEY ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check TPMS sensor's ID out of service data items. Measuring method : Refer to No.1 Measurement No.1) A method of checking a sensor ID with VCI Connect VCI to Data Link Connector. Check TPMS sensor's ID out of service data items. Fig.1) Data displayed by TPMS ECU",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Position the GDS TPMS as near as possible to the tire. (Reading may take 30 - 60 seconds depending on the sensor's characteristics.)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check a sensor's ID out of sensor's information. Measuring method : Refer to No.2 Measurement No.2) A method of checking a sensor ID with TPMS Exciter TPMS Exciter within 10 cm of the tire's sensor which will of the tire's sensor which will be measured Fig.2) Data displayed by TPMS Exciter",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Is the Fig.1's sensor ID same with the Fig.2's? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1314",
+      "description": "Rear Left Sensor RF Channel Failure General Information The TPMS system is the shorten word of Tire Pressure Monitoring System. This system monitors the pressure of the tire and when it drops below a certain pressure, the TPMS ECU makes the warning lamp turn on for notifying the driver. This system consists of TPMS ECU (or TPMS Receiver), TPMS sensors. Among components of TPMS system, the TPMS sensor is installed at each wheel rim. and its role is to measure the air pressure and the temperature of the tire and then it transmits its signals to TPMS ECU. The communication from TPMS sensors is done via RF (Radio Frequency) at a frequency. The TPMS ECU monitors the RF signal of the sensor and if it is not received, this DTC is set. DTC Detecting Condition",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect VCI to Data Link Connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "IG KEY ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check TPMS sensor's ID out of service data items. Measuring method : Refer to No.1 Measurement No.1) A method of checking a sensor ID with VCI Connect VCI to Data Link Connector. Check TPMS sensor's ID out of service data items. Fig.1) Data displayed by TPMS ECU",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Position the GDS TPMS as near as possible to the tire. (Reading may take 30 - 60 seconds depending on the sensor's characteristics.)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check a sensor's ID out of sensor's information. Measuring method : Refer to No.2 Measurement No.2) A method of checking a sensor ID with TPMS Exciter TPMS Exciter within 10 cm of the tire's sensor which will of the tire's sensor which will be measured Fig.2) Data displayed by TPMS Exciter",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Is the Fig.1's sensor ID same with the Fig.2's? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1315",
+      "description": "Rear Right Sensor RF Channel Failure General Information The TPMS system is the shorten word of Tire Pressure Monitoring System. This system monitors the pressure of the tire and when it drops below a certain pressure, the TPMS ECU makes the warning lamp turn on for notifying the driver. This system consists of TPMS ECU (or TPMS Receiver), TPMS sensors. Among components of TPMS system, the TPMS sensor is installed at each wheel rim. and its role is to measure the air pressure and the temperature of the tire and then it transmits its signals to TPMS ECU. The communication from TPMS sensors is done via RF (Radio Frequency) at a frequency. The TPMS ECU monitors the RF signal of the sensor and if it is not received, this DTC is set. DTC Detecting Condition",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect VCI to Data Link Connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "IG KEY ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check TPMS sensor's ID out of service data items. Measuring method : Refer to No.1 Measurement No.1) A method of checking a sensor ID with VCI Connect VCI to Data Link Connector. Check TPMS sensor's ID out of service data items. Fig.1) Data displayed by TPMS ECU",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Position the GDS TPMS as near as possible to the tire. (Reading may take 30 - 60 seconds depending on the sensor's characteristics.)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check a sensor's ID out of sensor's information. Measuring method : Refer to No.2 Measurement No.2) A method of checking a sensor ID with TPMS Exciter TPMS Exciter within 10 cm of the tire's sensor which will of the tire's sensor which will be measured Fig.2) Data displayed by TPMS Exciter",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Is the Fig.1's sensor ID same with the Fig.2's? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1322",
+      "description": "Front Left Sensor Over Temperature General Information The TPMS system is the shorten word of Tire Pressure Monitoring System. This system monitors the pressure of the tire and when it drops below a certain pressure, the TPMS ECU makes the warning lamp turn on for notifying the driver. This system consists of TPMS ECU (or TPMS Receiver), TPMS sensors. Among components of TPMS system, the TPMS sensor is installed at each wheel rim. and its role is to measure the air pressure and the temperature of the tire and then it transmits its signals to TPMS ECU. The communication from TPMS sensors is done via RF (Radio Frequency) at a frequency. The TPMS ECU monitors the RF signal of the sensor and if its temperature is more than 239 °F (115 °C), this DTC is set. DTC Detecting Condition",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Set up 'GDS' with 'GDS TPMS'.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select the \"Sensor Status\" mode of \"Vehicle S/W Management\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Monitor the parameter related to 'Sensor 1' on the GDS. Specification :  'Temperature' is Less than 115 °C Fig.1) Data displayed by TPMS Exciter",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is parameter within specifications? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1323",
+      "description": "Front Right Sensor Over Temperature General Information The TPMS system is the shorten word of Tire Pressure Monitoring System. This system monitors the pressure of the tire and when it drops below a certain pressure, the TPMS ECU makes the warning lamp turn on for notifying the driver. This system consists of TPMS ECU (or TPMS Receiver), TPMS sensors. Among components of TPMS system, the TPMS sensor is installed at each wheel rim. and its role is to measure the air pressure and the temperature of the tire and then it transmits its signals to TPMS ECU. The communication from TPMS sensors is done via RF (Radio Frequency) at a frequency. The TPMS ECU monitors the RF signal of the sensor and if its temperature is more than 239 °F (115 °C), this DTC is set. DTC Detecting Condition",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Set up 'GDS' with 'GDS TPMS'.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select the \"Sensor Status\" mode of \"Vehicle S/W Management\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Monitor the parameter related to 'Sensor 2' on the GDS. Specification :  'Temperature' is Less than 115 °C Fig.1) Data displayed by TPMS Exciter",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is parameter within specifications? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1324",
+      "description": "Rear Left Sensor Over Temperature General Information The TPMS system is the shorten word of Tire Pressure Monitoring System. This system monitors the pressure of the tire and when it drops below a certain pressure, the TPMS ECU makes the warning lamp turn on for notifying the driver. This system consists of TPMS ECU (or TPMS Receiver), TPMS sensors. Among components of TPMS system, the TPMS sensor is installed at each wheel rim. and its role is to measure the air pressure and the temperature of the tire and then it transmits its signals to TPMS ECU. The communication from TPMS sensors is done via RF (Radio Frequency) at a frequency. The TPMS ECU monitors the RF signal of the sensor and if its temperature is more than 239 °F (115 °C), this DTC is set. DTC Detecting Condition",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Set up 'GDS' with 'GDS TPMS'.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select the \"Sensor Status\" mode of \"Vehicle S/W Management\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Monitor the parameter related to 'Sensor 3' on the GDS. Specification :  'Temperature' is Less than 115 °C Fig.1) Data displayed by TPMS Exciter",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is parameter within specifications? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1325",
+      "description": "Rear Right Sensor Over Temperature General Information The TPMS system is the shorten word of Tire Pressure Monitoring System. This system monitors the pressure of the tire and when it drops below a certain pressure, the TPMS ECU makes the warning lamp turn on for notifying the driver. This system consists of TPMS ECU (or TPMS Receiver), TPMS sensors. Among components of TPMS system, the TPMS sensor is installed at each wheel rim. and its role is to measure the air pressure and the temperature of the tire and then it transmits its signals to TPMS ECU. The communication from TPMS sensors is done via RF (Radio Frequency) at a frequency. The TPMS ECU monitors the RF signal of the sensor and if its temperature is more than 239 °F (115 °C), this DTC is set. DTC Detecting Condition",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Set up 'GDS' with 'GDS TPMS'.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select the \"Sensor Status\" mode of \"Vehicle S/W Management\" function.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Monitor the parameter related to 'Sensor 3' on the GDS. Specification :  'Temperature' is Less than 115 °C Fig.1) Data displayed by TPMS Exciter",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is parameter within specifications? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1332",
+      "description": "Front Left Sensor Fault General Information The TPMS system is the shorten word of Tire Pressure Monitoring System. This system monitors the pressure of the tire and when it drops below a certain pressure, the TPMS ECU makes the warning lamp turn on for notifying the driver. This system consists of TPMS ECU (or TPMS Receiver), TPMS sensors. Among components of TPMS system, the TPMS sensor is installed at each wheel rim. and its role is to measure the air pressure and the temperature of the tire and then it transmits its signals to TPMS ECU. The communication from TPMS sensors is done via RF (Radio Frequency) at a frequency. This DTC indicates that the WE Sensor has detected that it has an internal fault (measurement diagnosis or hardware diagnosis status). The most likely",
+      "detection_condition": [],
+      "possible_causes": [
+        "is sensor failure.",
+        "DTC Detecting Condition"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect GDS to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Using GDS, clear DTCs.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "IG OFF and then, IG ON, again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Again using GDS, Check DTC present.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the same DTC shown, again? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1333",
+      "description": "Front Right Sensor Fault General Information The TPMS system is the shorten word of Tire Pressure Monitoring System. This system monitors the pressure of the tire and when it drops below a certain pressure, the TPMS ECU makes the warning lamp turn on for notifying the driver. This system consists of TPMS ECU (or TPMS Receiver), TPMS sensors. Among components of TPMS system, the TPMS sensor is installed at each wheel rim. and its role is to measure the air pressure and the temperature of the tire and then it transmits its signals to TPMS ECU. The communication from TPMS sensors is done via RF (Radio Frequency) at a frequency. This DTC indicates that the WE Sensor has detected that it has an internal fault (measurement diagnosis or hardware diagnosis status). The most likely",
+      "detection_condition": [],
+      "possible_causes": [
+        "is sensor failure.",
+        "DTC Detecting Condition"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect GDS to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Using GDS, clear DTCs.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "IG OFF and then, IG ON, again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Again using GDS, Check DTC present.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the same DTC shown, again? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1334",
+      "description": "Left Rear Sensor Fault General Information The TPMS system is the shorten word of Tire Pressure Monitoring System. This system monitors the pressure of the tire and when it drops below a certain pressure, the TPMS ECU makes the warning lamp turn on for notifying the driver. This system consists of TPMS ECU (or TPMS Receiver), TPMS sensors. Among components of TPMS system, the TPMS sensor is installed at each wheel rim. and its role is to measure the air pressure and the temperature of the tire and then it transmits its signals to TPMS ECU. The communication from TPMS sensors is done via RF (Radio Frequency) at a frequency. This DTC indicates that the WE Sensor has detected that it has an internal fault (measurement diagnosis or hardware diagnosis status). The most likely",
+      "detection_condition": [],
+      "possible_causes": [
+        "is sensor failure.",
+        "DTC Detecting Condition"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect GDS to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Using GDS, clear DTCs.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "IG OFF and then, IG ON, again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Again using GDS, Check DTC present.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the same DTC shown, again? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1335",
+      "description": "Rear Right Sensor Fault General Information The TPMS system is the shorten word of Tire Pressure Monitoring System. This system monitors the pressure of the tire and when it drops below a certain pressure, the TPMS ECU makes the warning lamp turn on for notifying the driver. This system consists of TPMS ECU (or TPMS Receiver), TPMS sensors. Among components of TPMS system, the TPMS sensor is installed at each wheel rim. and its role is to measure the air pressure and the temperature of the tire and then it transmits its signals to TPMS ECU. The communication from TPMS sensors is done via RF (Radio Frequency) at a frequency. This DTC indicates that the WE Sensor has detected that it has an internal fault (measurement diagnosis or hardware diagnosis status). The most likely",
+      "detection_condition": [],
+      "possible_causes": [
+        "is sensor failure.",
+        "DTC Detecting Condition"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect GDS to Data Link Connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Using GDS, clear DTCs.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "IG OFF and then, IG ON, again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Again using GDS, Check DTC present.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the same DTC shown, again? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1503",
+      "description": "TCS/ESC (ESP) Switch error General Information Driver can inhibit the ESC control by ESC switch. When switch signal sends into the HECU, the ESC warning lamp goes \"ON\" and the ESC control is stopped and if the next switch signal is inputted again, the ESC control is ready. This function is used for sporty driving or vehicle inspection. This DTC is set when the condition that the level of ESC switch is high is continued for more than 60 seconds. DTC Detecting Condition Specification Diagnostic Circuit Diagram W/Harness Inspection",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Signal Circuit Inspection Open or Short Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the measured value within specifications? Component Inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Are any DTCs present? General Information",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1513",
+      "description": "Brake switch error General Information This switch is mounted on the pedal assembly and is used to send the status of the brake pedal to the HECU. The switch is turned on when the brake pedal is pressed. The brake light switch is a normally-open contact type which runs to battery voltage when it is active (this means that the brake pedal is pressed). When it is passive (this means that the brake pedal is released), the line is grounded via the brake light bulb. The brake light signal is a reference to judge driver's intention for braking. The HECU checks open or short circuit of brake light switch for normal ESC control. If an error is present, the warning lamp will illuminate. DTC Detecting Condition Specification Diagnostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector (DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Press the brake pedal.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check the service data related to \"Brake Switch\" on the scantool. Specification :  The brake switch's signal changes from OFF to ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Does the service data change normally? W/Harness Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1526",
+      "description": "DBC Switch Error General Information The DBC function is the shorten word of Downhill Brake Control function. When a vehicle goes down the hill, just pushing the DBC switch enables the car to keep its vehicle's speed at a constant value without operating the brake pedal. The DBC function is operated when the vehicle is on the decline and its velocity is under the predetermined speed. This DTC is set if the DBC switch has a short circuit and the DBC function is inhibited. DTC Detecting Condition Specification Diagnostic Circuit Diagram W/Harness Inspection",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Signal Circuit Inspection Open or Short Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the measured value within specifications? Component Inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured value within specifications? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1604",
+      "description": "ECU Hardware Error General Information The HECU consists of an ECU (Electronic Control Unit) and a HCU (Hydraulic Control Unit). The HCU portion of the assembly contains a pump motor, solenoid valves, and accumulator. Increase and decrease of hydraulic pressure is operated by electronic motor, according to a measured signal by wheel speed sensor. The function of HCU is to increase, decrease or maintain the hydraulic pressure supplied to a wheel cylinder by operating return pump according to HECU control signal while ABS control is active. The ECU monitors various sensor and switch inputs. These inputs are used to make decisions regarding HCU component operation. The HECU monitors the operation of the IC components such as memory, register, A/D converter and so on. The ECU sets this code when the EEPROM data read by the master processor is different than prior data written, or when the master/slave processor detects abnormal operation in RAM, Status Register, Interrupt, Timer, A/D converter or cycle time. DTC Detecting Condition W/Harness Inspection",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Component Inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a scantool, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes (DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1605",
+      "description": "CAN Hardware error General Information The HECU sends requirement data, such as torque reduction, the number of fuel cut cylinders, and the ESC control request, to the PCM (ECM & TCM) through CAN bus line. The PCM (ECM) performs the fuel cut function according to a request signal from the HECU and then retards an ignition timing. The PCM (TCM) maintains current gear position during the ESC control period in order not to increase power which causes a Kickdown shift. The HECU checks the CAN RAM for normal TCS control, and sets this code if a CAN RAM malfunction is detected. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Component Inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a scantool, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes (DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1611",
+      "description": "CAN Time-out ECM General Information The HECU sends requirement data, such as torque reduction, the number of fuel cut cylinders, and the ESC control request, to the PCM (ECM & TCM) through CAN bus line. The PCM (ECM) performs the fuel cut function according to a request signal from the HECU and then retards an ignition timing. The PCM (TCM) maintains current gear position during the ESC control period in order not to increase power which causes a Kickdown shift. The HECU checks the CAN communication lines for normal ESC control, and sets this code if an ECM message is not received within 500ms. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Signal circuit inspection Open Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the measured resistance within specifications? Component Inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes (DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1612",
+      "description": "CAN Time-out TCM General Information The HECU sends requirement data, such as torque reduction, the number of fuel cut cylinders, and the ESC control request, to the PCM (ECM & TCM) through CAN bus line. The PCM (ECM) performs the fuel cut function according to a request signal from the HECU and then retards an ignition timing. The PCM (TCM) maintains current gear position during the ESC control period in order not to increase power which causes a Kickdown shift. The HECU checks the CAN communication lines for the normal ESC control, and sets this code if an TCM message is not received within 500ms. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Signal circuit inspection Open Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the measured resistance within specifications? Component Inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes (DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1613",
+      "description": "CAN Wrong Message General Information The HECU sends requirement data, such as torque reduction, the number of fuel cut cylinders, and the ESC control request, to the PCM (ECM & TCM) through CAN bus line. The PCM (ECM) performs the fuel cut function according to a request signal from the HECU and then retards an ignition timing. The PCM (TCM) maintains current gear position during the ESC control period in order not to increase power which causes a Kickdown shift. The HECU checks the CAN communication lines for the normal ESC control, and sets this code if the data received from EMS is not the same with that from TCM. DTC Detecting Condition Diagnostic Circuit Diagram Component Inspection",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminal condition. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check all connectors (and connections) for looseness, bending, corrosion, contamination, deterioration, and/or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Signal Circuit Inspection Open Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure resistance between CAN HIGH, LOW terminal of the TPMS ECU harness connector and CAN HIGH, LOW terminal terminal of the ABS ECU harness connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Measure resistance between Vehicle speed in terminal of the PCM harness connector and Vehicle speed out terminal of the ABS ECU harness connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Measure resistance between FR WSS Power terminal of the ABS ECU harness connector and FR WSS Power terminal of the FR WSS harness connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Measure resistance between FR WSS Signal terminal of the ABS ECU harness connector and FR WSS Signal terminal of the FR WSS harness connector. Specification :  0 Ohms",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Is the measured resistance within specifications? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1616",
+      "description": "CAN Bus off General Information The HECU sends requirement data, such as torque reduction, the number of fuel cut cylinders, and the ESC control request, to the PCM (ECM & TCM) through CAN bus line. The PCM (ECM) performs the fuel cut function according to a request signal from the HECU and then retards an ignition timing. The PCM (TCM) maintains current gear position during the ESC control period in order not to increase power which causes a Kickdown shift. The HECU checks the CAN communication lines for normal TCS control, and sets this code if CAN BUS OFF status is detected for more than 100ms. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"OFF\", connect scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\", select \"Diagnostic Trouble Codes (DTC)\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Monitor diagnostic trouble code and present of trouble code.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a scan tool, clear the DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is DTC present problem? W/Harness Inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Is the measured resistance within specifications? Component Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1623",
+      "description": "CAN Time-out Steering Angle Sensor General Information The Steering wheel angle sensor uses two sensors (A-sensor and B-sensor) to determine the direction of the rotation. The main components of each sensor are LED, photo transistor and slit plate. The slit plate, which has 45 holes, is installed between LED and photo transistor, and generates signals if slit plate rotates according to the steering wheel rotation. The sensor signals are generated by photo transistor which is driven whenever the light passes through the holes. The HECU detects operating speed and direction of the steering wheel by this input signal, and the signal is used to input signal for anti-roll control. The HECU checks the CAN communication lines for normal control and if a steering angle sensor's message is not received for a certain period, this DTC is set. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Power Circuit Inspection Open or Short Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure voltage between power terminal of the steering angle sensor harness connector and chassis ground. Specification :  Approx. 12 V",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured value within specifications? Ground Circuit Inspection Open or Short Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1627",
+      "description": "CAN time-out 4WD General Information The HECU sends requirement data, such as torque reduction, the number of fuel cut cylinders, and the ESC control request, to the PCM (ECM & TCM) through CAN bus line. The PCM (ECM) performs the fuel cut function according to a request signal from the HECU and then retards an ignition timing. The PCM (TCM) maintains current gear position during the ESC control period in order not to increase power which causes a Kickdown shift. The HECU checks the CAN communication lines and sets this code if an 4WD ECU message is not received within 500ms. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Signal Circuit Inspection Open Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the measured resistance within specifications? Component Inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes (DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1647",
+      "description": "CAN Hardware Error Sensor Channel - General Information When the vehicle is turning, the yaw rate sensor detects the yaw rate electronically by the vibration change of plate fork inside the yaw rate sensor. If the yaw velocity reaches the specific velocity after it detects the vehicle's yawing, the ESC control is reactivated. The lateral G sensor senses the vehicle's lateral acceleration. A small element inside the sensor is attached to a deflectable leverarm by lateral acceleration. Direction and magnitude of lateral acceleration loaded to vehicle can be known by electrostatic capacity changing according to lateral acceleration. It interchanges signals with HECU through extra CAN line which is only used for communication between HECU and the sensor. The HECU checks the sensor CAN H/W for normal ESC control, and sets this code if a sensor CAN H/W malfunction is detected. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Component Inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a scantool, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes (DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1661",
+      "description": "Receiver EEPROM Failure General Information The TPMS system is the shorten word of Tire Pressure Monitoring System. This system monitors the pressure of the tire and when it drops below a certain pressure, the TPMS ECU makes the warning lamp turn on for notifying the driver. This system consists of TPMS ECU (or TPMS Receiver), TPMS sensors. Among components of TPMS system, the TPMS sensor is installed at each wheel rim. and its role is to measure the air pressure and the temperature of the tire and then it transmits its signals to TPMS ECU. The communication from TPMS sensors is done via RF (Radio Frequency) at a frequency. This DTC indicates that the receiver has a problem reading or writing to EEPROM. The most likely cause is TPMS Receiver failure. DTC Detecting Condition Diagnostic Circuit Diagram Component Inspection",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Set up 'GDS' with 'GDS TPMS'.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Select the \"TPMS\" system.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Execute \"DTC Analysis\" mode and clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check the present DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is 'C1661' present? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1662",
+      "description": "Auto Learning failure General Information Auto Learning AL (Auto Learning) starts every time, the vehicle was parked long enough to change or permute wheels (19 min), and is traveling again at a speed that ensures that the WE sensors are transmitting. AL is automatically considering all WE identifiers received and extracts, based on statistical evaluation, IDs belonging to the WEs mounted on the vehicle. If new IDs are detected their recurrence will be tracked by AL. When AL is in progress, tire pressure monitoring is running in parallel with the old set of identifiers known from the last run of AL. This DTC indicates that A failure of Auto-learning happens when less than WE sensors were learned. DTC Detecting Condition",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Park the vehicle on a level surface.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Set up 'GDS' with 'GDS TPMS'.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Select the \"TPMS\" system.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Execute \"DTC Analysis\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check the present DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are there any DTC's except for 'C1662'? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1702",
+      "description": "Variant Coding Error General Information The ESC system is the shorten word of Electronic Stability Control system. This system recognizes a critical driving condition by Yaw-rate sensor, Lateral acceleration sensor and Steering angle sensor. And then it stabilizes the vehicle by a individual wheel braking and engine torque control through CAN communication. There is no difference in the HECU's hardware side according to a vehicle specification, but there is a difference in its software side because the applied vehicle parameters differ according to a vehicle specification. The HECU stores the variant code value in the ECU's memory based on the received data by CAN communication. The HECU checks variant code and if an inappropriate variant code or no variant code is detected, this DTC is set. DTC Detecting Condition",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector (DLC)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "IG \"ON\"",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Using scantool, Perform Variant coding program. (Fig.1)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "IG \"OFF\" and wait for about 10 seconds, and then IG \"ON\"",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "IG \"OFF\" and wait for about 10 seconds again, and then, IG \"ON",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Go to \"Component Inspection\" procedure. Fig.1) Scantool diagnostic item -VARIANT CODING Component Inspection",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2112",
+      "description": "Valve Relay Error General Information The HECU supplies battery power to all solenoid valves with a valve relay which is controlled by the Electronic Control UNIT (ECU). The valve relay and all solenoid valves are installed inside the HECU (Hydraulic and Electronic Control Unit). ABS ECU monitors voltage of the valve relay to check if ABS ECU can perform ABS control normally. When the valve relay is switched to ON, the HECU will set this code if the solenoid drive voltage is below permissible voltage ranges for a period of time. When the valve relay is switched to OFF, the HECU sets this code if the solenoid drive voltage is over the permissible voltage range for a period of time. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Power Circuit Inspection Open or Short Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the measured value within specifications? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Are any DTCs present? General Information",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2130",
+      "description": "Brake Lamp Relay Error General Information The DBC function is the shorten word of Downhill Brake Control function. When a vehicle goes down the hill, just pushing the DBC switch enables the car to keep its vehicle's speed at a constant value without operating the brake pedal. The DBC function is operated when the vehicle is on the decline and its velocity is under the predetermined speed. The HECU monitors the brake lamp relay (DBC relay) for a normal operation and if there is a open or short circuit in the relay, this DTC is set. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Power Circuit Inspection Open or Short Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure voltage between power terminal of brake lamp relay (DBC relay) harness connector and chassis ground. Specification :  Battery voltage",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured value within specifications? Control Circuit Inspection Open Check",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2227",
+      "description": "Excessive Temperature Of Brake Disc General Information BTCS (Brake Traction Control System) is operated when the value (Wheel acceleration value + speed difference value) exceeds the specified value when vehicle speed is lower than the 50 Km/h. The BTCS installed HECU calculates the DISC temperature logically, which is an assumed value, by using the value of Wheel speed, vehicle speed change, control mode and BLS (Brake Lamp Signal) signal. Assumed DISC Temperature is used to protect DISC overheating, caused by long-time operation, which may cause a decrease in brake efficiency. The HECU calculates a disc's temperature for a normal operation and if the calculated disc's temperature is over 500 °C (932 °F), this DTC is set. DTC Detecting Condition Component Inspection",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Wait until the brake disc sufficiently gets cold.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Ignition \"OFF\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Ignition \"ON\" & Engine \"OFF\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Connect scantool and select \"Diagnostic Trouble Codes (DTCs)\" mode",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Using a scantool, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Select \"Diagnostic Trouble Codes (DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Are any DTCs present? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2380",
+      "description": "ABS/TCS/ESC (ESP) valve error General Information The ABS HECU is composed of a ECU (Electronic Control Unit) and an HCU (Hydraulic Control Unit), so the HECU hardware includes all solenoid valves inside the unit as well as the ECU. Solenoid valves are switched to ON, OFF by HECU when the ABS is activated. Solenoid valves function is to increase, decrease or maintain the hydraulic pressure supplied to a wheel cylinder. The HECU monitors the operation of the valves by checking the drive circuit of the solenoid valves, and then sets this code when the unexpected drive voltage is detected. For example, the HECU sets the DTC if an unexpected high drive voltage is detected when the valve relay is switched to OFF. (or unexpected low voltage is detected when the solenoid valve drive TR is switched to ON) DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Component Inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Using a scantool, Clear DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Select \"Diagnostic Trouble Codes (DTCs)\" mode again.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Are any DTCs present? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2402",
+      "description": "Motor Failure General Information The ABS ECU supplies battery power to the electric motor by way of a motor relay which is controlled by the Electronic Control Unit (ECU). The electric motor pump supplies hydraulic pressure to all wheel brake calipers by operating the piston inside the pump. The ABS ECU monitors the pump motor relay or fuse open, open or short in motor or motor lock and then sets this code if a malfunction is detected. DTC Detecting Condition Diagnostic Circuit Diagram W/Harness Inspection",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness(es) and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? Power Circuit Inspection Open or Short Check",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the measured value within specifications? Verification of Vehicle Repair",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Are any DTCs present?",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

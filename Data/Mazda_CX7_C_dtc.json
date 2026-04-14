@@ -1,0 +1,337 @@
+{
+  "source_file": "Mazda_CX7_C.pdf",
+  "format_detected": "mazda_image",
+  "dtc_count": 66,
+  "dtcs": [
+    {
+      "dtc_code": "C0077",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C144A",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1295",
+      "description": "DTC , C1307, C1441, C1442, C1443, C1444, C144A, C144C [BCM]",
+      "system": ""
+    },
+    {
+      "dtc_code": "C144C",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1095",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1096",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1141",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1142",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1143",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1144",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1145",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1148",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1155",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1158",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1165",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1168",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1175",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1178",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1186",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1189",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1194",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1198",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1210",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1214",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1222",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1233",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1234",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1235",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1236",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1242",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1246",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1250",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1254",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1266",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1279",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1280",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1281",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1284",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1290",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1306",
+      "description": "",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "C1400",
+      "description": "",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "C1410",
+      "description": "",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "C1414",
+      "description": "",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "C1441",
+      "description": "",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "C1442",
+      "description": "",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "C1443",
+      "description": "",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "C1444",
+      "description": "",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "C1937",
+      "description": "DTC [BCM]",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "C1938",
+      "description": "",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "C1947",
+      "description": "",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "C1948",
+      "description": "",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "C1952",
+      "description": "",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "C1953",
+      "description": "",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "C1954",
+      "description": "",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "B1484",
+      "description": "DTC , C1954",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "C1957",
+      "description": "",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "C1958",
+      "description": "",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "C1959",
+      "description": "",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "C1981",
+      "description": "",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "C1994",
+      "description": "",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "C2011",
+      "description": "49",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "C2012",
+      "description": "87, C2013:87 or C2014:87 may be stored in the memory. In this case, re-implement the wheel unit ID registration and after confirming that",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "C2013",
+      "description": "49",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "C2014",
+      "description": "49",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "C2768",
+      "description": "",
+      "system": "Bcm"
+    },
+    {
+      "dtc_code": "B2741",
+      "description": "DTC , C2768, U2516",
+      "system": "Bcm"
+    }
+  ]
+}

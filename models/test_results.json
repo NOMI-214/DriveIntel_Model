@@ -1,0 +1,462 @@
+[
+  {
+    "id": "T01",
+    "name": "Generic SAE: P0420 Catalyst + O2 (Honda Civic)",
+    "vehicle": {
+      "make": "Honda",
+      "model": "Civic 1.5T",
+      "year": 2016,
+      "engine": "1.5L VTEC Turbo",
+      "mileage_km": 92000
+    },
+    "highest_severity": "MEDIUM",
+    "expected": "MEDIUM",
+    "match": true,
+    "health_score": 54.5,
+    "health_status": "FAIR",
+    "days_to_alert": 3,
+    "urgency": "within_week",
+    "inference_ms": 64.0,
+    "dtcs": [
+      {
+        "code": "P0420",
+        "severity": "MEDIUM",
+        "category": "emissions",
+        "confidence": 0.8598,
+        "note": ""
+      },
+      {
+        "code": "P0136",
+        "severity": "MEDIUM",
+        "category": "emissions",
+        "confidence": 1.0,
+        "note": ""
+      }
+    ],
+    "flagged_sensors": [
+      "fuel_trim_short",
+      "fuel_trim_long"
+    ]
+  },
+  {
+    "id": "T02",
+    "name": "Generic SAE: P0300 Random Misfire + Overheating",
+    "vehicle": {
+      "make": "Toyota",
+      "model": "Corolla",
+      "year": 2018,
+      "engine": "1.8L 2ZR-FE",
+      "mileage_km": 87400
+    },
+    "highest_severity": "VERY_CRITICAL",
+    "expected": "VERY_CRITICAL",
+    "match": true,
+    "health_score": 20.7,
+    "health_status": "CRITICAL",
+    "days_to_alert": 3,
+    "urgency": "immediate",
+    "inference_ms": 17.6,
+    "dtcs": [
+      {
+        "code": "P0300",
+        "severity": "VERY_CRITICAL",
+        "category": "fuel",
+        "confidence": 1.0,
+        "note": ""
+      },
+      {
+        "code": "P0301",
+        "severity": "VERY_CRITICAL",
+        "category": "ignition",
+        "confidence": 0.9983,
+        "note": ""
+      }
+    ],
+    "flagged_sensors": [
+      "rpm",
+      "coolant_temp",
+      "maf"
+    ]
+  },
+  {
+    "id": "T03",
+    "name": "OEM Toyota P1349: VVT Oil Control Valve",
+    "vehicle": {
+      "make": "Toyota",
+      "model": "RAV4",
+      "year": 2020,
+      "engine": "2.5L A25A-FKS",
+      "mileage_km": 45000
+    },
+    "highest_severity": "MEDIUM",
+    "expected": "MEDIUM",
+    "match": true,
+    "health_score": 74.5,
+    "health_status": "GOOD",
+    "days_to_alert": null,
+    "urgency": "within_week",
+    "inference_ms": 16.4,
+    "dtcs": [
+      {
+        "code": "P1349",
+        "severity": "MEDIUM",
+        "category": "engine",
+        "confidence": 0.9998,
+        "note": ""
+      }
+    ],
+    "flagged_sensors": []
+  },
+  {
+    "id": "T04",
+    "name": "OEM Audi P000A: Camshaft Timing + MAF Sensor",
+    "vehicle": {
+      "make": "Audi",
+      "model": "A4 B9",
+      "year": 2019,
+      "engine": "2.0L TFSI EA888",
+      "mileage_km": 63000
+    },
+    "highest_severity": "HIGH",
+    "expected": "HIGH",
+    "match": true,
+    "health_score": 43.9,
+    "health_status": "POOR",
+    "days_to_alert": 3,
+    "urgency": "within_week",
+    "inference_ms": 18.7,
+    "dtcs": [
+      {
+        "code": "P000A",
+        "severity": "HIGH",
+        "category": "ignition",
+        "confidence": 1.0,
+        "note": ""
+      },
+      {
+        "code": "P0101",
+        "severity": "MEDIUM",
+        "category": "engine",
+        "confidence": 1.0,
+        "note": ""
+      }
+    ],
+    "flagged_sensors": [
+      "maf",
+      "fuel_trim_short",
+      "intake_air_temp"
+    ]
+  },
+  {
+    "id": "T05",
+    "name": "Body B0100/B0102: Airbag/SRS Open Circuit",
+    "vehicle": {
+      "make": "Hyundai",
+      "model": "Elantra",
+      "year": 2017,
+      "engine": "2.0L Nu MPI",
+      "mileage_km": 78000
+    },
+    "highest_severity": "VERY_CRITICAL",
+    "expected": "VERY_CRITICAL",
+    "match": true,
+    "health_score": 34.5,
+    "health_status": "POOR",
+    "days_to_alert": null,
+    "urgency": "immediate",
+    "inference_ms": 33.0,
+    "dtcs": [
+      {
+        "code": "B0100",
+        "severity": "VERY_CRITICAL",
+        "category": "airbag",
+        "confidence": 1.0,
+        "note": ""
+      },
+      {
+        "code": "B0102",
+        "severity": "VERY_CRITICAL",
+        "category": "airbag",
+        "confidence": 1.0,
+        "note": ""
+      }
+    ],
+    "flagged_sensors": []
+  },
+  {
+    "id": "T06",
+    "name": "Chassis C0035/C0040: ABS Wheel Speed Sensors",
+    "vehicle": {
+      "make": "KIA",
+      "model": "Sportage",
+      "year": 2021,
+      "engine": "2.0L MPI Theta II",
+      "mileage_km": 38000
+    },
+    "highest_severity": "HIGH",
+    "expected": "HIGH",
+    "match": true,
+    "health_score": 62.2,
+    "health_status": "FAIR",
+    "days_to_alert": null,
+    "urgency": "within_week",
+    "inference_ms": 16.2,
+    "dtcs": [
+      {
+        "code": "C0035",
+        "severity": "HIGH",
+        "category": "abs_brakes",
+        "confidence": 1.0,
+        "note": ""
+      },
+      {
+        "code": "C0040",
+        "severity": "HIGH",
+        "category": "abs_brakes",
+        "confidence": 1.0,
+        "note": ""
+      }
+    ],
+    "flagged_sensors": []
+  },
+  {
+    "id": "T07",
+    "name": "Network U0100/U0073: CAN Bus Loss + Low Battery",
+    "vehicle": {
+      "make": "BMW",
+      "model": "328i",
+      "year": 2014,
+      "engine": "2.0L N20B20 Turbo",
+      "mileage_km": 110000
+    },
+    "highest_severity": "HIGH",
+    "expected": "HIGH",
+    "match": true,
+    "health_score": 48.1,
+    "health_status": "POOR",
+    "days_to_alert": 3,
+    "urgency": "within_week",
+    "inference_ms": 16.5,
+    "dtcs": [
+      {
+        "code": "U0100",
+        "severity": "HIGH",
+        "category": "network",
+        "confidence": 0.9994,
+        "note": "battery 11.4V + network fault"
+      },
+      {
+        "code": "U0073",
+        "severity": "HIGH",
+        "category": "network",
+        "confidence": 1.0,
+        "note": ""
+      }
+    ],
+    "flagged_sensors": [
+      "battery_voltage"
+    ]
+  },
+  {
+    "id": "T08",
+    "name": "Pakistan: Suzuki Alto AGS Clutch + Dusty MAF",
+    "vehicle": {
+      "make": "Suzuki",
+      "model": "Alto AGS",
+      "year": 2022,
+      "engine": "K10C 0.66L VVT",
+      "mileage_km": 25000
+    },
+    "highest_severity": "MEDIUM",
+    "expected": "MEDIUM",
+    "match": true,
+    "health_score": 61.0,
+    "health_status": "FAIR",
+    "days_to_alert": 3,
+    "urgency": "within_week",
+    "inference_ms": 15.9,
+    "dtcs": [
+      {
+        "code": "P0810",
+        "severity": "MEDIUM",
+        "category": "transmission",
+        "confidence": 1.0,
+        "note": ""
+      },
+      {
+        "code": "P0101",
+        "severity": "MEDIUM",
+        "category": "engine",
+        "confidence": 0.9988,
+        "note": ""
+      }
+    ],
+    "flagged_sensors": [
+      "maf",
+      "fuel_trim_short"
+    ]
+  },
+  {
+    "id": "T09",
+    "name": "Predictive: Battery Drain (no DTCs)",
+    "vehicle": {
+      "make": "Toyota",
+      "model": "Prius PHV",
+      "year": 2019,
+      "engine": "1.8L 2ZR-FXE Hybrid",
+      "mileage_km": 105000
+    },
+    "highest_severity": "LOW",
+    "expected": "LOW",
+    "match": true,
+    "health_score": 69.6,
+    "health_status": "FAIR",
+    "days_to_alert": 3,
+    "urgency": "routine",
+    "inference_ms": 6.8,
+    "dtcs": [],
+    "flagged_sensors": [
+      "battery_voltage"
+    ]
+  },
+  {
+    "id": "T10",
+    "name": "Predictive: Fuel System LTFT Creeping Lean",
+    "vehicle": {
+      "make": "Mitsubishi",
+      "model": "Lancer",
+      "year": 2015,
+      "engine": "2.0L 4B11",
+      "mileage_km": 130000
+    },
+    "highest_severity": "MEDIUM",
+    "expected": "MEDIUM",
+    "match": true,
+    "health_score": 56.1,
+    "health_status": "FAIR",
+    "days_to_alert": 3,
+    "urgency": "within_week",
+    "inference_ms": 15.7,
+    "dtcs": [
+      {
+        "code": "P0171",
+        "severity": "MEDIUM",
+        "category": "fuel",
+        "confidence": 1.0,
+        "note": ""
+      }
+    ],
+    "flagged_sensors": [
+      "maf",
+      "fuel_trim_short",
+      "fuel_trim_long"
+    ]
+  },
+  {
+    "id": "T11",
+    "name": "Predictive: Cooling System Degrading (P0116)",
+    "vehicle": {
+      "make": "Lexus",
+      "model": "LX570",
+      "year": 2016,
+      "engine": "5.7L 3UR-FE V8",
+      "mileage_km": 175000
+    },
+    "highest_severity": "HIGH",
+    "expected": "HIGH",
+    "match": true,
+    "health_score": 59.6,
+    "health_status": "FAIR",
+    "days_to_alert": 3,
+    "urgency": "within_week",
+    "inference_ms": 16.0,
+    "dtcs": [
+      {
+        "code": "P0116",
+        "severity": "HIGH",
+        "category": "engine",
+        "confidence": 0.9734,
+        "note": ""
+      }
+    ],
+    "flagged_sensors": [
+      "coolant_temp",
+      "maf"
+    ]
+  },
+  {
+    "id": "T12",
+    "name": "Multi-Code CRITICAL: Trans + Engine + ABS Storm",
+    "vehicle": {
+      "make": "Toyota",
+      "model": "Land Cruiser",
+      "year": 2015,
+      "engine": "4.5L 1VD-FTV V8 Diesel",
+      "mileage_km": 210000
+    },
+    "highest_severity": "VERY_CRITICAL",
+    "expected": "VERY_CRITICAL",
+    "match": true,
+    "health_score": 0.4,
+    "health_status": "CRITICAL",
+    "days_to_alert": 3,
+    "urgency": "immediate",
+    "inference_ms": 16.3,
+    "dtcs": [
+      {
+        "code": "P0700",
+        "severity": "VERY_CRITICAL",
+        "category": "transmission",
+        "confidence": 0.9999,
+        "note": "compound escalation"
+      },
+      {
+        "code": "P0087",
+        "severity": "MEDIUM",
+        "category": "fuel",
+        "confidence": 1.0,
+        "note": ""
+      },
+      {
+        "code": "P0562",
+        "severity": "VERY_CRITICAL",
+        "category": "engine",
+        "confidence": 0.8998,
+        "note": "coolant 106\u00b0C + engine fault"
+      },
+      {
+        "code": "C0200",
+        "severity": "VERY_CRITICAL",
+        "category": "abs_brakes",
+        "confidence": 1.0,
+        "note": "compound escalation"
+      }
+    ],
+    "flagged_sensors": [
+      "coolant_temp",
+      "fuel_trim_short",
+      "battery_voltage"
+    ]
+  },
+  {
+    "id": "T13",
+    "name": "Healthy Baseline: No faults, all PIDs nominal",
+    "vehicle": {
+      "make": "Toyota",
+      "model": "Yaris",
+      "year": 2023,
+      "engine": "1.5L 3NR-VE",
+      "mileage_km": 8000
+    },
+    "highest_severity": "LOW",
+    "expected": "LOW",
+    "match": true,
+    "health_score": 76.4,
+    "health_status": "GOOD",
+    "days_to_alert": null,
+    "urgency": "routine",
+    "inference_ms": 6.8,
+    "dtcs": [],
+    "flagged_sensors": []
+  }
+]

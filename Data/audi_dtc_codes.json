@@ -1,0 +1,601 @@
+{
+  "vehicles": [
+    {
+      "vehicle": "2011 Audi A5 Cabriolet (8F7) L4-2.0L Turbo (CAEB)",
+      "source_file": "Audi_A5_U.pdf",
+      "dtc_codes": [
+        {
+          "code": "U0001",
+          "description": "High Speed CAN Communication Bus",
+          "malfunction_criteria": "CAN message, No feedback",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "250 mSec",
+          "frequency_of_checks": "2 DCY"
+        },
+        {
+          "code": "U0002",
+          "description": "High Speed CAN Communication Bus",
+          "malfunction_criteria": "Global time out",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "450 mSec",
+          "frequency_of_checks": "2 DCY"
+        },
+        {
+          "code": "U0100",
+          "description": "Lost Communication with ECM/PCM A",
+          "malfunction_criteria": [
+            "Failure of all CAN engine messages, Time out more than 490 mSec",
+            "Failure of all CAN engine messages but not all CAN messages, Time out more than 1010 mSec"
+          ],
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "1 Sec",
+          "frequency_of_checks": "---"
+        },
+        {
+          "code": "U0101",
+          "description": "Lost Communication with TCM",
+          "malfunction_criteria": [
+            "Checksum check Failed Message counter check failed",
+            "Time out check No message received by ECM"
+          ],
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Direct Shift Gearbox (DSG) Mechatronic (J743) to Motronic Engine Control Module (ECM) (J623).",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "500 mSec",
+          "frequency_of_checks": "2 DCY"
+        },
+        {
+          "code": "U102E",
+          "description": "LIN Communication",
+          "malfunction_criteria": "LIN message, incorrect",
+          "diagnostic_procedure": [
+            "Check the Lin-Bus.",
+            "Refer to [LIN-Bus Circuit, Checking]."
+          ],
+          "monitoring_time_length": "0.50 Sec",
+          "frequency_of_checks": ["Continuous", "2 DCY"]
+        },
+        {
+          "code": "U102F",
+          "description": "LIN Communication",
+          "malfunction_criteria": "time out",
+          "diagnostic_procedure": [
+            "Check the Lin-Bus.",
+            "Refer to [LIN-Bus Circuit, Checking]."
+          ],
+          "monitoring_time_length": "0.50 Sec",
+          "frequency_of_checks": ["Continuous", "2 DCY"]
+        },
+        {
+          "code": "U0121",
+          "description": "CAN ABS brake unit",
+          "malfunction_criteria": "CAN communication with brake unit, time-out",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "500 mSec",
+          "frequency_of_checks": "2 DCY"
+        },
+        {
+          "code": "U0146",
+          "description": "CAN gateway A",
+          "malfunction_criteria": "CAN communication with gateway, time-out",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "0.50 Sec",
+          "frequency_of_checks": "2 DCY"
+        },
+        {
+          "code": "U0302",
+          "description": "Software Incompatibility with Transmission Control Module",
+          "malfunction_criteria": "AT vehicle ECM coded as MT vehicle",
+          "diagnostic_procedure": [
+            "Replace the Direct Shift Gearbox (DSG) Mechatronic (J743)."
+          ],
+          "monitoring_time_length": "100 mSec",
+          "frequency_of_checks": "2 DCY"
+        },
+        {
+          "code": "U0323",
+          "description": "CAN: Instrument cluster Audi only",
+          "malfunction_criteria": "ambient temp value module not encoded for ambient temp sensor, 00h",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "2 Sec",
+          "frequency_of_checks": ["multiple", "2 DCY"]
+        },
+        {
+          "code": "U0402",
+          "description": "CAN communication with TCM",
+          "malfunction_criteria": "Data length code transmitted, incorrect",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Selector Lever (E313) to Motronic Engine Control Module (ECM) (J623)."
+          ],
+          "monitoring_time_length": "300 mSec",
+          "frequency_of_checks": "2 DCY"
+        },
+        {
+          "code": "U0404",
+          "description": "Invalid Data Received From Gear Shift Control Module",
+          "malfunction_criteria": [
+            "If the value of message counter is permanent, constant, or change exceeds a threshold, increment an event counter",
+            "maximum change of message counter > 5"
+          ],
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Selector Lever (E313) to Motronic Engine Control Module (ECM) (J623).",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "50 mSec",
+          "frequency_of_checks": ["Continuous", "2 DCY"]
+        },
+        {
+          "code": "U0415",
+          "description": "CAN link to speed sensor",
+          "malfunction_criteria": "speed sensor initialization failure",
+          "diagnostic_procedure": [
+            "Refer to ABS System."
+          ],
+          "monitoring_time_length": "1980 mSec",
+          "frequency_of_checks": "2 DCY"
+        },
+        {
+          "code": "U0422",
+          "description": "CAN: Instrument cluster",
+          "malfunction_criteria": "ambient temp. value (initialization), Audi, 01h",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "2.0 Sec",
+          "frequency_of_checks": ["multiple", "2 DCY"]
+        },
+        {
+          "code": "U0447",
+          "description": "CAN gateway",
+          "malfunction_criteria": "CAN message, incorrect",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "0.50 Sec",
+          "frequency_of_checks": ["Continuous", "2 DCY"]
+        },
+        {
+          "code": "U1030",
+          "description": "LIN Communication",
+          "malfunction_criteria": "not active",
+          "diagnostic_procedure": [
+            "Check the Lin-Bus.",
+            "Refer to [LIN-Bus Circuit, Checking]."
+          ],
+          "monitoring_time_length": "0.50 Sec",
+          "frequency_of_checks": ["Continuous", "2 DCY"]
+        }
+      ]
+    },
+    {
+      "vehicle": "2011 Audi A5 Cabriolet (8F7) L4-2.0L Turbo (CAEB)",
+      "source_file": "Audi_A5_P.pdf",
+      "note": "P-code DTC data — file uploaded but P-code content not in provided context pages. U-codes extracted from Audi_A5_U.pdf above."
+    },
+    {
+      "vehicle": "2011 Audi A6 Sedan (4F2) V6-3.2L (CALA)",
+      "source_file": "Audi_A6_U.pdf",
+      "dtc_codes": [
+        {
+          "code": "U0001",
+          "description": "High Speed CAN Communication Bus",
+          "malfunction_criteria": "CAN message Powertrain, No feedback",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "continuous",
+          "frequency_of_checks": ["continuous", "2 DCY"]
+        },
+        {
+          "code": "U0002",
+          "description": "High Speed CAN Communication Bus",
+          "malfunction_criteria": "Global time out. Receiving no message",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "0.5 Sec",
+          "frequency_of_checks": ["immediately", "2 DCY"]
+        },
+        {
+          "code": "U0100",
+          "description": "Lost Communication with ECM/PCM A",
+          "malfunction_criteria": [
+            "Failure of all CAN engine messages, Time out more than 490 mSec",
+            "Failure of all CAN engine messages but not all CAN messages, Time out more than 1010 mSec"
+          ],
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "1 Sec",
+          "frequency_of_checks": "---"
+        },
+        {
+          "code": "U0101",
+          "description": "Communication with TCM",
+          "malfunction_criteria": "no CAN message received from TCM no message",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Direct Shift Gearbox (DSG) Mechatronic (J743) to Motronic Engine Control Module (ECM) (J623).",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "0.5 Sec",
+          "frequency_of_checks": ["continuous", "2 DCY"]
+        },
+        {
+          "code": "U0121",
+          "description": "Communication with TCU",
+          "malfunction_criteria": "no CAN message received from TCU no message",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "0.5 Sec",
+          "frequency_of_checks": ["continuous", "2 DCY"]
+        },
+        {
+          "code": "U0140",
+          "description": "CAN communication with Body Control Module",
+          "malfunction_criteria": "received CAN message - no message",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "1000 mSec",
+          "frequency_of_checks": ["continuous", "2 DCY"]
+        },
+        {
+          "code": "U0141",
+          "description": "CAN: BCM",
+          "malfunction_criteria": "CAN communication with Body Control Module timed out",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "0.5 Sec",
+          "frequency_of_checks": "2 DCY"
+        },
+        {
+          "code": "U0146",
+          "description": "CAN gateway A",
+          "malfunction_criteria": "CAN communication with gateway, time-out",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "1000 mSec",
+          "frequency_of_checks": "2 DCY"
+        },
+        {
+          "code": "U0155",
+          "description": "CAN: Instrument Cluster",
+          "malfunction_criteria": "CAN communication w/ instrument cluster module..timed out",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "0.5 Sec",
+          "frequency_of_checks": ["continuous", "2 DCY"]
+        },
+        {
+          "code": "U0302",
+          "description": "Software Incompatibility with Transmission Control Module",
+          "malfunction_criteria": "AT vehicle ECM coded as MT vehicle",
+          "diagnostic_procedure": [
+            "Replace the Direct Shift Gearbox (DSG) Mechatronic (J743)."
+          ],
+          "monitoring_time_length": "5 Sec",
+          "frequency_of_checks": ["continuous", "2 DCY"]
+        },
+        {
+          "code": "U0323",
+          "description": "CAN: Instrument cluster Audi only",
+          "malfunction_criteria": "ambient temp value module not encoded for ambient temp sensor, 00h",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "2 Sec",
+          "frequency_of_checks": ["multiple", "2 DCY"]
+        },
+        {
+          "code": "U0402",
+          "description": "CAN communication with TCM",
+          "malfunction_criteria": "invalid data received from TCM implausible message",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Selector Lever (E313) to Motronic Engine Control Module (ECM) (J623)."
+          ],
+          "monitoring_time_length": "0.5 Sec",
+          "frequency_of_checks": ["Continuous", "2 DCY"]
+        },
+        {
+          "code": "U0404",
+          "description": "Invalid Data Received From Gear Shift Control Module",
+          "malfunction_criteria": [
+            "If the value of message counter is permanent, constant, or change exceeds a threshold, increment an event counter",
+            "maximum change of message counter > 5"
+          ],
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Selector Lever (E313) to Motronic Engine Control Module (ECM) (J623)."
+          ],
+          "monitoring_time_length": "50 mSec",
+          "frequency_of_checks": ["Continuous", "2 DCY"]
+        },
+        {
+          "code": "U0415",
+          "description": "Communication with TCU",
+          "malfunction_criteria": "invalid data received from TCU implausible message",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking].",
+            "Check vehicle speed signal. Refer to [Speed Signal, Checking]."
+          ],
+          "monitoring_time_length": "0.1 Sec",
+          "frequency_of_checks": ["Continuous", "2 DCY"]
+        },
+        {
+          "code": "U0422",
+          "description": "CAN: Instrument cluster",
+          "malfunction_criteria": "ambient temp. value (initialization), Audi, 01h",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "3.0 Sec",
+          "frequency_of_checks": ["multiple", "2 DCY"]
+        },
+        {
+          "code": "U0423",
+          "description": "CAN: Instrument Cluster",
+          "malfunction_criteria": "invalid data received from ICL implausible message",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "0.5 Sec",
+          "frequency_of_checks": ["Continuous", "2 DCY"]
+        },
+        {
+          "code": "U0447",
+          "description": "CAN gateway",
+          "malfunction_criteria": "CAN message, incorrect",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "300 mSec",
+          "frequency_of_checks": ["Continuous", "2 DCY"]
+        }
+      ]
+    },
+    {
+      "vehicle": "2011 Audi A3",
+      "source_file": "Audi_A3_P.pdf",
+      "note": "P-code DTC data — file uploaded. P-code content not shown in provided context pages."
+    },
+    {
+      "vehicle": "2011 Audi A4 Quattro Sedan (8K2) L4-2.0L Turbo (CAEB)",
+      "source_file": "Audi_A4_P.pdf",
+      "note": "P-code DTC data — file uploaded. P-code content not shown in provided context pages."
+    },
+    {
+      "vehicle": "2011 Audi A4 Quattro Sedan (8K2) L4-2.0L Turbo (CAEB)",
+      "source_file": "Audi_A4_U.pdf",
+      "dtc_codes": [
+        {
+          "code": "U0001",
+          "description": "High Speed CAN Communication Bus",
+          "malfunction_criteria": "CAN message, No feedback",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "250 mSec",
+          "frequency_of_checks": "2 DCY"
+        },
+        {
+          "code": "U0002",
+          "description": "High Speed CAN Communication Bus",
+          "malfunction_criteria": "Global time out",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "450 mSec",
+          "frequency_of_checks": "2 DCY"
+        },
+        {
+          "code": "U0100",
+          "description": "Lost Communication with ECM/PCM A",
+          "malfunction_criteria": [
+            "Failure of all CAN engine messages, Time out more than 490 mSec",
+            "Failure of all CAN engine messages but not all CAN messages, Time out more than 1010 mSec"
+          ],
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "1 Sec",
+          "frequency_of_checks": "---"
+        },
+        {
+          "code": "U0101",
+          "description": "Lost Communication with TCM",
+          "malfunction_criteria": [
+            "Checksum check Failed Message counter check failed",
+            "Time out check No message received by ECM"
+          ],
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Direct Shift Gearbox (DSG) Mechatronic (J743) to Motronic Engine Control Module (ECM) (J623).",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "500 mSec",
+          "frequency_of_checks": "2 DCY"
+        },
+        {
+          "code": "U102E",
+          "description": "LIN Communication",
+          "malfunction_criteria": "LIN message, incorrect",
+          "diagnostic_procedure": [
+            "Check the Lin-Bus.",
+            "Refer to [LIN-Bus Circuit, Checking]."
+          ],
+          "monitoring_time_length": "0.50 Sec",
+          "frequency_of_checks": ["Continuous", "2 DCY"]
+        },
+        {
+          "code": "U102F",
+          "description": "LIN Communication",
+          "malfunction_criteria": "time out",
+          "diagnostic_procedure": [
+            "Check the Lin-Bus.",
+            "Refer to [LIN-Bus Circuit, Checking]."
+          ],
+          "monitoring_time_length": "0.50 Sec",
+          "frequency_of_checks": ["Continuous", "2 DCY"]
+        },
+        {
+          "code": "U0121",
+          "description": "CAN ABS brake unit",
+          "malfunction_criteria": "CAN communication with brake unit, time-out",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "500 mSec",
+          "frequency_of_checks": "2 DCY"
+        },
+        {
+          "code": "U0146",
+          "description": "CAN gateway A",
+          "malfunction_criteria": "CAN communication with gateway, time-out",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "0.50 Sec",
+          "frequency_of_checks": "2 DCY"
+        },
+        {
+          "code": "U0302",
+          "description": "Software Incompatibility with Transmission Control Module",
+          "malfunction_criteria": "AT vehicle ECM coded as MT vehicle",
+          "diagnostic_procedure": [
+            "Replace the Direct Shift Gearbox (DSG) Mechatronic (J743)."
+          ],
+          "monitoring_time_length": "100 mSec",
+          "frequency_of_checks": "2 DCY"
+        },
+        {
+          "code": "U0323",
+          "description": "CAN: Instrument cluster Audi only",
+          "malfunction_criteria": "ambient temp value module not encoded for ambient temp sensor, 00h",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "2 Sec",
+          "frequency_of_checks": ["multiple", "2 DCY"]
+        },
+        {
+          "code": "U0402",
+          "description": "CAN communication with TCM",
+          "malfunction_criteria": "Data length code transmitted, incorrect",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Selector Lever (E313) to Motronic Engine Control Module (ECM) (J623)."
+          ],
+          "monitoring_time_length": "300 mSec",
+          "frequency_of_checks": "2 DCY"
+        },
+        {
+          "code": "U0404",
+          "description": "Invalid Data Received From Gear Shift Control Module",
+          "malfunction_criteria": [
+            "If the value of message counter is permanent, constant, or change exceeds a threshold, increment an event counter",
+            "maximum change of message counter > 5"
+          ],
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Selector Lever (E313) to Motronic Engine Control Module (ECM) (J623).",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "50 mSec",
+          "frequency_of_checks": ["Continuous", "2 DCY"]
+        },
+        {
+          "code": "U0415",
+          "description": "CAN link to speed sensor",
+          "malfunction_criteria": "speed sensor initialization failure",
+          "diagnostic_procedure": [
+            "Refer to ABS System."
+          ],
+          "monitoring_time_length": "1980 mSec",
+          "frequency_of_checks": "2 DCY"
+        },
+        {
+          "code": "U0422",
+          "description": "CAN: Instrument cluster",
+          "malfunction_criteria": "ambient temp. value (initialization), Audi, 01h",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "2.0 Sec",
+          "frequency_of_checks": ["multiple", "2 DCY"]
+        },
+        {
+          "code": "U0447",
+          "description": "CAN gateway",
+          "malfunction_criteria": "CAN message, incorrect",
+          "diagnostic_procedure": [
+            "Check the CAN-Bus terminal resistance.",
+            "Refer to [CAN Bus Terminal Resistance, Checking]."
+          ],
+          "monitoring_time_length": "0.50 Sec",
+          "frequency_of_checks": ["Continuous", "2 DCY"]
+        },
+        {
+          "code": "U1030",
+          "description": "LIN Communication",
+          "malfunction_criteria": "not active",
+          "diagnostic_procedure": [
+            "Check the Lin-Bus.",
+            "Refer to [LIN-Bus Circuit, Checking]."
+          ],
+          "monitoring_time_length": "0.50 Sec",
+          "frequency_of_checks": ["Continuous", "2 DCY"]
+        }
+      ]
+    }
+  ]
+}

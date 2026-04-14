@@ -1,0 +1,1843 @@
+{
+  "source_file": "Toyota_Yaris_Sedan_C.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 82,
+  "dtcs": [
+    {
+      "dtc_code": "C0226",
+      "description": "SFR Solenoid Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": [
+        "C0236",
+        "C0246",
+        "C0256"
+      ]
+    },
+    {
+      "dtc_code": "C0256",
+      "description": "SRL Solenoid Circuit These solenoids turn on when signals are received from the skid control ECU and they control the pressure acting on the wheel cylinders to control the braking force. NOTICE: Inspect the fuses for circuits related to this system before performing the following inspection procedure. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "RECONFIRM DTC HINT These codes are detected when a problem is determined in the brake actuator assembly (skid control ECU). The solenoid circuits are in the brake actuator assembly (skid control ECU). Therefore, solenoid circuit inspection and solenoid unit inspection cannot be performed. Be sure to check if any DTCs are output before replacing the brake actuator assembly (skid control ECU). (a) Clear the DTC    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). (b) Start the engine. (c) Drive the vehicle at the speed of 20 km/h (12 mph) or more for 30 seconds or more. (d) Check if the same DTC is recorded    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). Result HINT * If a speed signal of 6 km/h (4 mph) or more is input to the brake actuator assembly (skid control ECU), with the ignition switch ON and the stop light switch off, the ECU performs self diagnosis of the motor and solenoid circuits. * If the normal system code is output (the trouble code is not output), slightly jiggle the connectors, wire harness, and fuses of the brake actuator assembly (skid control ECU). Make sure that no DTCs are output. * If any DTCs are output while jiggling a connector or wire harness from the brake actuator assembly (skid control ECU), inspect and repair the connector or wire harness. * The DTCs were probably output due to a bad connection of the connector terminal. B --  REPLACE BRAKE ACTUATOR ASSEMBLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal A --  CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/Electronic Circuit Vehicle Stability Control System (for Sedan) BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM (for Sedan): C0226, C0236, C0246, C0256, C1225: SFR Solenoid Circuit",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1225",
+      "description": "SM Solenoid Circuit These solenoids turn on when signals are received from the skid control ECU and they control the pressure acting on the wheel cylinders to control the braking force. NOTICE: * When replacing the brake actuator assembly, perform zero point calibration See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Programming and Relearning. * Inspect the fuses for circuits related to this system before performing the following inspection procedure. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "RECONFIRM DTC HINT These codes are detected when a problem is determined in the brake actuator assembly. The solenoid circuits are in the brake actuator assembly. Therefore, solenoid circuit inspection and solenoid unit inspection cannot be performed. Be sure to check if any DTCs are output before replacing the brake actuator assembly. (a) Clear the DTC    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). (b) Start the engine. (c) Drive the vehicle at the speed of 20 km/h (12 mph) or more. (d) Check if the same DTC is recorded    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). Result HINT * If a speed signal of 6 km/h (4 mph) or more is input to the skid control ECU, with the ignition switch ON and the stop light switch off, the ECU performs self diagnosis of the motor and solenoid circuits. * If the normal system code is output (the trouble code is not output), slightly jiggle the connectors, wire harness, and fuses of the brake actuator assembly. Make sure that no DTCs are output. * If any DTCs are output while jiggling a connector or wire harness from the brake actuator assembly (skid control ECU), inspect and repair the connector or wire harness. * The DTCs were probably output due to a bad connection of the connector terminal. B --  REPLACE BRAKE ACTUATOR ASSEMBLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal A --  CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Component Tests and General Diagnostics/Vehicle Stability Control System (for Sedan)/Check For Intermittent Problems Anti-Lock Brake System (for Sedan)",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C0273",
+      "description": "Open in ABS Motor Relay Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": [
+        "C0274"
+      ]
+    },
+    {
+      "dtc_code": "C0274",
+      "description": "Short in ABS Motor Relay Circuit The ABS motor relay supplies power to the ABS pump motor. While the ABS is activated, the ECU turns the motor relay on and operates the ABS pump motor. If the voltage supplied to the motor relay (+BM) is below the DTC's detection threshold due to low voltage from the battery or alternator, the DTC may be stored. NOTICE: Inspect the fuses for circuits related to this system before performing the following inspection procedure. HINT When C1241 is output together with C0273 and/or C0274 inspect and repair the trouble areas indicated by C1241 first See:",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1241",
+      "description": "Low Power Supply Voltage Malfunction If a malfunction is detected in the power supply circuit, the skid control ECU (housed in the actuator assembly) stores this DTC and the fail-safe function prohibits ABS operation. This DTC is stored when the IG1 terminal voltage deviates from the DTC detection condition due to a malfunction in the power supply or charging circuit such as the battery or generator circuit, etc. The DTC is cancelled when the IG1 terminal voltage returns to normal. NOTICE: * When replacing the brake actuator assembly, perform zero point calibration See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Programming and Relearning. * Inspect the fuses for circuits related to this system before performing the following inspection procedure. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK HARNESS AND CONNECTOR (+BM TERMINAL) (a) Turn the ignition switch off. (b) Make sure that there is no looseness at the locking part and the connecting part of the connectors. (c) Disconnect the A15 brake actuator assembly (skid control ECU) connector. (d) Check the connector case and terminals for deformation and corrosion. OK: No deformation or corrosion. (e) Measure the voltage according to the value(s) in the table below. Standard Voltage: Text in Illustration NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR (+BM CIRCUIT) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK HARNESS AND CONNECTOR (GND2 TERMINAL) (a) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration (b) Reconnect the A15 brake actuator assembly (skid control ECU) connector. NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR (GND2 CIRCUIT) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "RECONFIRM DTC HINT These codes are detected when a problem is determined in the brake actuator assembly (skid control ECU). The solenoid circuits are in the brake actuator assembly (skid control ECU). Therefore, solenoid circuit inspection and solenoid unit inspection cannot be performed. Be sure to check if any DTCs are output before replacing the brake actuator assembly (skid control ECU). (a) Clear the DTC    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). (b) Start the engine. (c) Drive the vehicle at the speed of 20 km/h (12 mph) or more for 30 seconds or more. (d) Check if the same DTC is recorded    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). Result HINT * If a speed signal of 6 km/h (4 mph) or more is input to the brake actuator assembly (skid control ECU), with the ignition switch ON and the stop light switch off, the ECU performs self diagnosis of the motor and solenoid circuits. * If the normal system code is output (the trouble code is not output), slightly jiggle the connectors, wire harness, and fuses of the brake actuator assembly (skid control ECU). Make sure that no DTCs are output. * If any DTCs are output while jiggling a connector or wire harness from the brake actuator assembly (skid control ECU), inspect and repair the connector or wire harness. * The DTCs were probably output due to a bad connection of the connector terminal. B --  REPLACE BRAKE ACTUATOR ASSEMBLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal A --  CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/Electronic Circuit Vehicle Stability Control System (for Sedan) BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM (for Sedan): C0273, C0274, C1361: Open in ABS Motor Relay Circuit",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "RECONFIRM DTC HINT This code is detected when a problem is identified in the brake actuator assembly. The ABS motor relay is in the brake actuator assembly. Therefore, ABS motor relay inspection and motor relay unit inspection cannot be performed. Be sure to check if the DTC is output before replacing the brake actuator assembly. (a) Turn the ignition switch off. (b) Reconnect the skid control ECU connector. (c) Clear the DTC    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). (d) Start the engine. (e) Drive the vehicle at a speed of 20 km/h (12 mph) or more for 30 seconds or more. (f) Check if the same DTC is recorded    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). Result HINT * If a speed signal of 6 km/h (4 mph) or more is input to the skid control ECU, with the ignition switch ON and the stop light switch off, the ECU performs self diagnosis of the motor and solenoid circuits. * If the normal system code is output (the trouble code is not output), slightly jiggle the connectors, wire harness, and fuses of the brake actuator assembly. Make sure that no DTCs are output. * If any DTCs are output while jiggling a connector or wire harness of the brake actuator assembly (skid control ECU), inspect and repair the connector or wire harness. * The DTCs were probably output due to a bad connection of the connector terminal. B --  REPLACE BRAKE ACTUATOR ASSEMBLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal A --  CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Component Tests and General Diagnostics/Vehicle Stability Control System (for Sedan)/Check For Intermittent Problems Anti-Lock Brake System (for Sedan)",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1361",
+      "description": "Short in ABS Motor Fail Safe Relay Circuit The ABS motor relay supplies power to the ABS pump motor. While the ABS is activated, the ECU turns the motor relay on and operates the ABS pump motor. If the voltage supplied to the motor relay (BM) is below the DTC's detection threshold due to low voltage from the battery or generator, the DTC may be stored. NOTICE: * When replacing the brake actuator assembly, perform zero point calibration See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Programming and Relearning. * Inspect the fuses for circuits related to this system before performing the following inspection procedure. HINT When C1241 is output together with C0273, C0274 and/or C1361 inspect and repair the trouble areas indicated by C1241 first See:",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C0278",
+      "description": "Open in ABS Solenoid Relay Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": [
+        "C0279"
+      ]
+    },
+    {
+      "dtc_code": "C0279",
+      "description": "Short in ABS Solenoid Relay Circuit The ABS solenoid relay supplies power to the ABS solenoid and TRAC solenoid. The solenoid relay is turned on 1.5 seconds after the ignition switch is turned to ON, and is turned off if an open or short in the solenoid is detected by the self diagnosis performed when the engine starts running. The ABS solenoid relay is housed in the skid control ECU in the actuator assembly. NOTICE: * When replacing the brake actuator assembly, perform zero point calibration See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Programming and Relearning. * Inspect the fuses for circuits related to this system before performing the following inspection procedure. HINT When C1241 is output together with C0278 and/or C0279, inspect and repair the trouble areas indicated by C1241 first See:",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C0371",
+      "description": "BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM (for Sedan): C1232, C0371, C1243, C1245, C1279: Acceleration Sensor Stuck Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1279",
+      "description": "Acceleration Sensor Output Voltage Malfunction (Test Mode DTC) The skid control ECU receives signals from the yaw rate and acceleration sensor via the CAN communication system. The yaw rate sensor has a built in acceleration sensor and detects the vehicle's condition using 2 circuits (GL1, GL2). If there is trouble in the bus lines between the yaw rate and acceleration sensor and the CAN communication system, the DTCs U0123 (malfunction in CAN communication with the yaw rate sensor) and U0124 (malfunction in CAN communication with the acceleration sensor) are output. These DTCs are also output when calibration has not been completed. DTCs C0371 and C1279 can be cleared when the yaw rate and acceleration sensor sends a yaw rate and/or acceleration signal or the Test Mode ends. DTCs C0371 and C1279 are output only in the Test Mode. NOTICE: * When replacing the yaw rate and deceleration sensor, perform the zero point calibration See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Programming and Relearning. * Inspect the fuses for circuits related to this system before performing the following inspection procedure. HINT When U0123, U0124 and/or U0126 is output together with C1232, C1243 and/or C1245, inspect and repair the trouble areas indicated by U0123, U0124 and/or U0126 first See: U Code Charts/U0073/Vehicle Stability Control System (for Sedan). PROCEDURE /Diagnosis System. (e) Check if DTCs for zero point calibration of the yaw rate sensor undone (C1210) or for zero point calibration of the acceleration sensor undone (C1336) are output See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). Result B -- CHECK CAN COMMUNICATION SYSTEM See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Proceed With Troubleshooting C -- REPAIR CIRCUIT INDICATED BY OUTPUT DTC See: Diagnostic Trouble Code Descriptions/Vehicle Stability Control System (for Sedan) A -- Continue to next step.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK DTC (a) Clear the DTC    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). (b) Turn the ignition switch off. (c) At a speed of 30 km/h (19 mph) or more, drive the vehicle, turn the steering wheel, and decelerate (depress the brake pedal) the vehicle. (d) Turn the ignition switch to ON again and check that no CAN communication system DTC is output    See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK YAW RATE AND ACCELERATION SENSOR INSTALLATION (a) Turn the ignition switch off. (b) Check that the yaw rate and acceleration sensor has been installed properly    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Acceleration/Deceleration Sensor/Service and Repair/Installation. OK: The sensor should be tightened to the specified torque. The sensor should not be tilted. NG --  INSTALL YAW RATE AND ACCELERATION SENSOR CORRECTLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Acceleration/Deceleration Sensor/Service and Repair/Installation OK --  REPLACE YAW RATE AND ACCELERATION SENSOR  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Acceleration/Deceleration Sensor/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1201",
+      "description": "Engine Control System Malfunction If a malfunction in the engine control system is detected, VSC and TRAC operations are prohibited by the fail-safe function. When the signals from the engine are input normally, the fail-safe is cancelled and the DTC is not stored. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK ENGINE CONTROL SYSTEM (a) Check if any engine control system DTC is output    See: Powertrain Management/Computers and Control Systems/Testing and Inspection/Initial Inspection and Diagnostic Overview/Diagnosis System. Result B --  CHECK ENGINE CONTROL SYSTEM  See: Powertrain Management/Computers and Control Systems/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Proceed With Troubleshooting A --  CHECK FOR INTERMITTENT PROBLEMS (ENGINE CONTROL SYSTEM)",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1203",
+      "description": "ECM Communication Circuit Malfunction The circuit is used to send TRAC and VSC control information from the skid control ECU to the ECM, and engine control information from the ECM to the skid control ECU through the CAN communication system. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK PART NUMBER (ECM AND BRAKE ACTUATOR ASSEMBLY) (a) Check that the proper ECM and brake actuator assembly (skid control ECU) are installed. Result B --  REPLACE ECUS WITH PROPER ONES A --  REPLACE ECM",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1210",
+      "description": "Zero Point Calibration of Yaw Rate Sensor Undone",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": [
+        "C1336"
+      ]
+    },
+    {
+      "dtc_code": "C1336",
+      "description": "Zero Point Calibration of Acceleration Sensor Undone The skid control ECU receives signals from the yaw rate and acceleration sensor via the CAN communication system. The yaw rate sensor has a built in acceleration sensor and detects the vehicle's condition using 2 circuits (GL1, GL2). If there is trouble in the bus lines between the yaw rate and acceleration sensor and the CAN communication system, the DTCs U0123 (yaw rate sensor communication trouble) and U0124 (acceleration sensor communication trouble) are output. The DTCs are also output when the calibration has not been completed. NOTICE: When replacing the brake actuator assembly, perform zero point calibration See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Programming and Relearning. HINT When U0123, U0124 and/or U0126 is output along with C1210 and/or C1336, inspect and repair trouble areas indicated by U0123,",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0124",
+      "description": "and/or U0126 first See: U Code Charts/U0073/Vehicle Stability Control System (for Sedan). PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "PERFORM ZERO POINT CALIBRATION OF YAW RATE AND ACCELERATION SENSOR (a) Perform zero point calibration of the yaw rate and acceleration sensor    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Programming and Relearning. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "PERFORM TEST MODE (SIGNAL CHECK) (a) Turn the ignition switch off. (b) Perform the sensor check in the Test Mode procedure    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Scan Tool Testing and Procedures/Vehicle Stability Control System (for Sedan)/Test Mode Procedure. OK: All Test Mode DTCs are cleared. HINT If troubleshooting has been carried out according to Problem Symptoms Table, refer back to the table and proceed to the next step See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related Diagnostic Procedures/Vehicle Stability Control System (for Sedan)/Problem Symptoms Table. NG --  CHECK YAW RATE AND ACCELERATION SENSOR INSTALLATION OK --  END",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK YAW RATE AND ACCELERATION SENSOR INSTALLATION (a) Turn the ignition switch off. (b) Check that the yaw rate and acceleration sensor has been installed properly    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Acceleration/Deceleration Sensor/Service and Repair/Installation. OK: The sensor should be tightened to the specified torque. The sensor is not installed in a tilted position. NG --  INSTALL YAW RATE AND ACCELERATION SENSOR CORRECTLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Acceleration/Deceleration Sensor/Service and Repair/Installation OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "READ VALUE USING TECHSTREAM (YAW RATE AND ACCELERATION SENSOR) (a) Connect the Techstream to the DLC3. (b) Turn the ignition switch to ON. (c) Enter the following menus: Chassis / ABS/VSC/TRAC / Data List. ABS/VSC/TRAC (Skid Control ECU) (d) Check the yaw rate and acceleration sensor output value displayed on the Techstream. OK: The yaw rate and acceleration sensor output value is normal. NOTICE: Check the yaw rate and acceleration sensor signal after replacement    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Scan Tool Testing and Procedures/Vehicle Stability Control System (for Sedan)/Test Mode Procedure. HINT If troubleshooting has been carried out according to Problem Symptoms Table, refer back to the table and proceed to the next step See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related Diagnostic Procedures/Vehicle Stability Control System (for Sedan)/Problem Symptoms Table. NG --  REPLACE YAW RATE AND ACCELERATION SENSOR  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Acceleration/Deceleration Sensor/Service and Repair/Removal OK --  REPLACE BRAKE ACTUATOR ASSEMBLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1232",
+      "description": "BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM (for Sedan): C1232, C0371, C1243, C1245, C1279: Acceleration Sensor Stuck Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1243",
+      "description": "BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM (for Sedan): C1232, C0371, C1243, C1245, C1279: Acceleration Sensor Stuck Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1245",
+      "description": "BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM (for Sedan): C1232, C0371, C1243, C1245, C1279: Acceleration Sensor Stuck Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1401",
+      "description": "and C1271 are for the front speed sensor RH. *",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": [
+        "C1271",
+        "C1272",
+        "C1402"
+      ]
+    },
+    {
+      "dtc_code": "C1402",
+      "description": "Front Speed Sensor LH Malfunction The speed sensors detect the wheel speeds and send appropriate signals to the skid control ECU. Speed sensor rotors have rows of alternating N and S magnetic poles, and their magnetic fields change as the rotors turn. The speed sensors detect those magnetic changes and send pulse signals to the skid control ECU. The ECU monitors the wheel speeds through these pulse signals to control the ABS control system. HINT When testing voltage, perform the test while the connector between the sensor and ECU is connected. Do not disconnect the connector between the sensor and ECU. HINT *",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK FRONT SPEED SENSOR INSTALLATION (a) Turn the ignition switch off. (b) Check the speed sensor installation. OK: There is no clearance between the sensor and the front steering knuckle. The installation bolt is tightened properly. Torque 8.5 N*m (87 kgf*cm, 75 in.*lbf) Text in Illustration NG --  INSTALL FRONT SPEED SENSOR CORRECTLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Wheel Speed Sensor/Service and Repair/Front Speed Sensor (for Sedan)/Installation OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "INSPECT FRONT SPEED SENSOR TIP (a) Remove the front speed sensor    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Wheel Speed Sensor/Service and Repair/Front Speed Sensor (for Sedan)/Removal. (b) Check the speed sensor tip. OK: No scratches, oil, or foreign matter on the sensor tip. NOTICE: If no damage to the speed sensor tip is found during this inspection, do not replace the speed sensor. (c) Reinstall the front speed sensor    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Wheel Speed Sensor/Service and Repair/Front Speed Sensor (for Sedan)/Installation. NG --  CLEAN OR REPLACE FRONT SPEED SENSOR OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "INSPECT FRONT AXLE HUB BEARING (a) Remove the front axle hub bearing    See: Maintenance/Wheels and Tires/Wheel Hub/Service and Repair/Front Axle Hub (for Sedan)/Removal. (b) Check the speed sensor rotor. OK: No scratches, oil, or foreign matter on the rotors. HINT If the front speed sensor rotor needs to be replaced, replace it together with the front axle hub bearing. (c) Reinstall the front axle hub assembly    See: Maintenance/Wheels and Tires/Wheel Hub/Service and Repair/Front Axle Hub (for Sedan)/Installation. NG --  CLEAN OR REPLACE FRONT AXLE HUB BEARING OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "READ VALUE USING TECHSTREAM (FRONT SPEED SENSOR) (a) Turn the ignition switch off. (b) Connect the Techstream to the DLC3. (c) Turn the ignition switch to ON. (d) Turn the Techstream on. (e) Enter the following menus: Chassis / ABS/VSC/TRAC / Data List. (f) According to the display on the Techstream, read the Data List. ABS/VSC/TRAC (g) Check that there is no difference between the speed value output from the speed sensor displayed on the Techstream and the speed value displayed on the speedometer when driving the vehicle. HINT Factors that affect the indicated vehicle speed include tire size, tire inflation, and tire wear. The speed indicated on the speedometer has an allowable margin of error. This can be tested using a speedometer tester (calibrated chassis dynamometer). For details about testing and the margin of error, see the reference chart. OK: The speed value output from the speed sensor displayed on the Techstream is the same as the actual vehicle speed measured using a speedometer tester (calibrated chassis dynamometer). HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Anti-Lock Brake System (for Sedan)/Problem Symptoms Table. NG --  REPLACE FRONT SPEED SENSOR OK --  CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/Electronic Circuit",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "REPLACE FRONT SPEED SENSOR (a) Turn the ignition switch off. (b) Replace the front speed sensor    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Wheel Speed Sensor/Service and Repair/Front Speed Sensor (for Sedan)/Removal. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "RECONFIRM DTC (a) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). (b) Start the engine. (c) Drive the vehicle at a speed of 40 km/h (25 mph) or more for at least 60 seconds. (d) Check if the same DTC is recorded    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). Result HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Anti-Lock Brake System (for Sedan)/Problem Symptoms Table. B --  REPLACE FRONT AXLE HUB BEARING  See: Maintenance/Wheels and Tires/Wheel Hub/Service and Repair/Front Axle Hub (for Sedan)/Installation A --  END Vehicle Stability Control System (for Sedan) BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM (for Sedan): C1401, C1271, C1272,",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1403",
+      "description": "and C1273 are for the rear speed sensor RH. *",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": [
+        "C1273",
+        "C1274",
+        "C1404"
+      ]
+    },
+    {
+      "dtc_code": "C1404",
+      "description": "and C1274 are for the rear speed sensor LH. NOTICE: * Disassembly of the speed sensor from the rear axle hub and bearing assembly is prohibited. * Check the speed sensor signal after cleaning or replacement See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Scan Tool Testing and Procedures/Vehicle Stability Control System (for Sedan)/Test Mode Procedure. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK REAR SPEED SENSOR INSTALLATION (a) Turn the ignition switch off. (b) Check the speed sensor installation. OK: There is no clearance between the sensor and the rear axle hub. HINT Because the rear axle hub and bearing assembly cannot be disassembled, if the rear speed sensor needs replacement, replace the rear axle hub and bearing assembly. Text in Illustration NG --  REPLACE REAR AXLE HUB AND BEARING ASSEMBLY  See: Maintenance/Wheels and Tires/Wheel Hub/Service and Repair/Rear Axle Hub (for Sedan)/Removal OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "READ VALUE USING TECHSTREAM (REAR SPEED SENSOR) (a) Turn the ignition switch off. (b) Connect the Techstream to the DLC3. (c) Turn the ignition switch to ON. (d) Turn the Techstream on. (e) Enter the following menus: Chassis / ABS/VSC/TRAC / Data List. (f) According to the display on the Techstream, read the Data List. ABS/VSC/TRAC (g) Check that there is no difference between the speed value output from the speed sensor displayed on the Techstream and the speed value displayed on the speedometer when driving the vehicle. HINT Factors that affect the indicated vehicle speed include tire size, tire inflation, and tire wear. The speed indicated on the speedometer has an allowable margin of error. This can be tested using a speedometer tester (calibrated chassis dynamometer). For details about testing and the margin of error, see the reference chart. OK: The speed value output from the speed sensor displayed on the Techstream is the same as the actual vehicle speed measured using a speedometer tester (calibrated chassis dynamometer). HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Anti-Lock Brake System (for Sedan)/Problem Symptoms Table. NG --  REPLACE REAR AXLE HUB AND BEARING ASSEMBLY  See: Maintenance/Wheels and Tires/Wheel Hub/Service and Repair/Rear Axle Hub (for Sedan)/Removal OK --  CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/Electronic Circuit Vehicle Stability Control System (for Sedan) BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM (for Sedan): C1403, C1273, C1274,",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1413",
+      "description": "and C1275 are for the front speed sensor RH. *",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": [
+        "C1275",
+        "C1276",
+        "C1414"
+      ]
+    },
+    {
+      "dtc_code": "C1414",
+      "description": "and C1276 are for the front speed sensor LH. NOTICE: Check the speed sensor signal after cleaning or replacement See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Scan Tool Testing and Procedures/Vehicle Stability Control System (for Sedan)/Test Mode Procedure . PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "READ VALUE USING TECHSTREAM (MOMENTARY INTERRUPTION)   See: C1405/Anti-Lock Brake System (for Sedan) NG --  CHECK HARNESS AND CONNECTOR (SKID CONTROL ECU - FRONT SPEED SENSOR) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "READ VALUE USING TECHSTREAM (FRONT SPEED SENSOR)   See: C1401/Anti-Lock Brake System (for Sedan) NG --  CHECK FRONT SPEED SENSOR INSTALLATION OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "PERFORM TEST MODE (SIGNAL CHECK) (a) Turn the ignition switch off. (b) Perform the sensor check in the Test Mode procedure    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Scan Tool Testing and Procedures/Anti-Lock Brake System (for Sedan)/Test Mode Procedure. OK: All Test Mode DTCs are cleared. NG --  CHECK FRONT SPEED SENSOR INSTALLATION OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "RECONFIRM DTC (a) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). (b) Start the engine. (c) Drive the vehicle at a speed of 40 km/h (25 mph) or more for at least 60 seconds. (d) Check if the same DTC is recorded    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). Result HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Anti-Lock Brake System (for Sedan)/Problem Symptoms Table. B --  REPLACE FRONT SPEED SENSOR A --  CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/Electronic Circuit",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "CHECK FRONT SPEED SENSOR INSTALLATION   See: C1401/Anti-Lock Brake System (for Sedan) NG --  INSTALL FRONT SPEED SENSOR CORRECTLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Wheel Speed Sensor/Service and Repair/Front Speed Sensor (for Sedan)/Installation OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "INSPECT FRONT SPEED SENSOR TIP   See: C1401/Anti-Lock Brake System (for Sedan) NG --  CLEAN OR REPLACE FRONT SPEED SENSOR OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "INSPECT FRONT AXLE HUB BEARING   See: C1401/Anti-Lock Brake System (for Sedan) NG --  CLEAN OR REPLACE FRONT AXLE HUB BEARING OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "CHECK HARNESS AND CONNECTOR (SKID CONTROL ECU - FRONT SPEED SENSOR)   See: C1405/Anti-Lock Brake System (for Sedan) NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "CHECK BRAKE ACTUATOR ASSEMBLY (SENSOR INPUT)   See: C1405/Anti-Lock Brake System (for Sedan) NG --  REPLACE BRAKE ACTUATOR ASSEMBLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "RECONFIRM DTC (a) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). (b) Start the engine. (c) Drive the vehicle at a speed of 40 km/h (25 mph) or more for at least 60 seconds. (d) Check if the same DTC is recorded    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). Result HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Anti-Lock Brake System (for Sedan)/Problem Symptoms Table. B --  REPLACE FRONT SPEED SENSOR A --  CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/Electronic Circuit",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "REPLACE FRONT SPEED SENSOR (a) Turn the ignition switch off. (b) Replace the front speed sensor    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Wheel Speed Sensor/Service and Repair/Front Speed Sensor (for Sedan)/Removal. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "RECONFIRM DTC (a) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). (b) Start the engine. (c) Drive the vehicle at a speed of 40 km/h (25 mph) or more for at least 60 seconds. (d) Check if the same DTC is recorded    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). Result HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Anti-Lock Brake System (for Sedan)/Problem Symptoms Table. B --  REPLACE FRONT AXLE HUB BEARING A --  END",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "REPLACE FRONT AXLE HUB BEARING (a) Remove the front axle hub bearing    See: Maintenance/Wheels and Tires/Wheel Hub/Service and Repair/Front Axle Hub (for Sedan)/Removal. HINT If the front speed sensor rotor needs to be replaced, replace it together with the front axle hub bearing. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "RECONFIRM DTC (a) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). (b) Start the engine. (c) Drive the vehicle at a speed of 40 km/h (25 mph) or more for at least 60 seconds. (d) Check if the same DTC is recorded    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). Result HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Anti-Lock Brake System (for Sedan)/Problem Symptoms Table. B --  REPLACE BRAKE ACTUATOR ASSEMBLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal A --  END Vehicle Stability Control System (for Sedan) BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM (for Sedan): C1413, C1275, C1276,",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1415",
+      "description": "and C1277 are for the rear speed sensor RH. *",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": [
+        "C1277",
+        "C1278",
+        "C1416"
+      ]
+    },
+    {
+      "dtc_code": "C1416",
+      "description": "and C1278 are for the rear speed sensor LH. NOTICE: * Disassembly of the rear speed sensor from the rear axle hub and bearing assembly is prohibited. * Check the speed sensor signal after replacement See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Scan Tool Testing and Procedures/Vehicle Stability Control System (for Sedan)/Test Mode Procedure. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "READ VALUE USING TECHSTREAM (MOMENTARY INTERRUPTION)   See: C1407/Anti-Lock Brake System (for Sedan) NG --  INSPECT SKID CONTROL SENSOR WIRE OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "READ VALUE USING TECHSTREAM (REAR SPEED SENSOR)   See: C1403/Anti-Lock Brake System (for Sedan) NG --  CHECK REAR SPEED SENSOR INSTALLATION OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "PERFORM TEST MODE (SIGNAL CHECK) (a) Turn the ignition switch off. (b) Perform the sensor check in the Test Mode procedure    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Scan Tool Testing and Procedures/Anti-Lock Brake System (for Sedan)/Test Mode Procedure. OK: All Test Mode DTCs are cleared. NG --  CHECK REAR SPEED SENSOR INSTALLATION OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "RECONFIRM DTC (a) Turn the ignition switch off. (b) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). (c) Start the engine. (d) Drive the vehicle at a speed of 40 km/h (25 mph) or more for at least 60 seconds. (e) Check if the same DTC is recorded    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). Result HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Anti-Lock Brake System (for Sedan)/Problem Symptoms Table. B --  REPLACE REAR AXLE HUB AND BEARING ASSEMBLY A --  CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/Electronic Circuit",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "CHECK REAR SPEED SENSOR INSTALLATION   See: C1403/Anti-Lock Brake System (for Sedan) NG --  REPLACE REAR AXLE HUB AND BEARING ASSEMBLY  See: Maintenance/Wheels and Tires/Wheel Hub/Service and Repair/Rear Axle Hub (for Sedan)/Removal OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "INSPECT SKID CONTROL SENSOR WIRE   See: C1407/Anti-Lock Brake System (for Sedan) NG --  REPLACE SKID CONTROL SENSOR WIRE OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "CHECK HARNESS AND CONNECTOR (BRAKE ACTUATOR ASSEMBLY - REAR SPEED SENSOR)   See: C1407/Anti-Lock Brake System (for Sedan) NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "CHECK BRAKE ACTUATOR ASSEMBLY (SENSOR INPUT)   See: C1407/Anti-Lock Brake System (for Sedan) NG --  REPLACE BRAKE ACTUATOR ASSEMBLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "RECONFIRM DTC (a) Turn the ignition switch off. (b) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). (c) Start the engine. (d) Drive the vehicle at a speed of 40 km/h (25 mph) or more for at least 60 seconds. (e) Check if the same DTC is recorded    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). Result HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Anti-Lock Brake System (for Sedan)/Problem Symptoms Table. B --  REPLACE REAR AXLE HUB AND BEARING ASSEMBLY A --  CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/Electronic Circuit",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "REPLACE REAR AXLE HUB AND BEARING ASSEMBLY (a) Turn the ignition switch off. (b) Replace the rear speed sensor and rear axle hub and bearing assembly    See: Maintenance/Wheels and Tires/Wheel Hub/Service and Repair/Rear Axle Hub (for Sedan)/Removal. HINT The rear speed sensor rotor is incorporated into the rear axle hub and bearing assembly. If the rear speed sensor rotor needs to be replaced, replace it together with the rear axle hub and bearing assembly with rear speed sensor. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "RECONFIRM DTC (a) Turn the ignition switch off. (b) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). (c) Start the engine. (d) Drive the vehicle at a speed of 40 km/h (25 mph) or more for at least 60 seconds. (e) Check if the same DTC is recorded    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). Result HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Anti-Lock Brake System (for Sedan)/Problem Symptoms Table. B --  REPLACE BRAKE ACTUATOR ASSEMBLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal A --  END Vehicle Stability Control System (for Sedan) BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM (for Sedan): C1415, C1277, C1278,",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1281",
+      "description": "BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM (for Sedan): C1421, C1281, C1423,",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1424",
+      "description": "Master Cylinder Pressure Sensor Output Malfunction The master cylinder pressure sensor is connected to the skid control ECU in the brake actuator assembly. NOTICE: * When replacing the brake actuator assembly, perform zero point calibration See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Programming and Relearning. * Inspect the fuses for circuits related to this system before performing the following inspection procedure. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "REPLACE BRAKE ACTUATOR ASSEMBLY (a) Replace the brake actuator assembly (master cylinder pressure sensor)    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal. NEXT --  END",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1290",
+      "description": "Steering Angle Sensor Zero Point Malfunction The skid control ECU acquires steering angle sensor zero point every time the ignition switch is turned to ON and the vehicle is driven at 35 km/h (22 mph) or more for approximately 5 seconds. The ECU also stores the previous zero point. If front wheel alignment or steering wheel position is adjusted without disconnecting the negative battery terminal, or if yaw rate and acceleration sensor zero point is not acquired after the adjustments have been completed, the skid control ECU detects the difference between the previous zero point and newly acquired zero point and outputs this DTC to indicate a poor adjustment. The steering angle sensor zero point malfunction warning will be cancelled by turning the ignition switch off. NOTICE: When replacing the brake actuator assembly, perform zero point calibration See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Programming and Relearning. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "PERFORM ZERO POINT CALIBRATION OF YAW RATE AND ACCELERATION SENSOR (a) Perform zero point calibration of the yaw rate and acceleration sensor    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Programming and Relearning. HINT * When the stored zero point of the yaw rate and acceleration sensor is cleared, the steering angle sensor zero point will also be cleared. * If the zero point and output value of the yaw rate and acceleration sensor and the output value of the speed sensors are not normal, steering angle sensor zero point cannot be acquired normally even if the vehicle is driven straight ahead at 35 km/h (22 mph) or more. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK STEERING ANGLE SENSOR ZERO POINT CALIBRATION (a) Drive the vehicle straight ahead at 35 km/h (22 mph) or more for at least 5 seconds. (b) Check that the centered position of the steering wheel is correctly set while driving straight ahead. HINT If front wheel alignment and steering position are adjusted as a result of abnormal centered position of the steering wheel, acquire the yaw rate and acceleration sensor zero point again after the adjustments are completed. OK: The centered position of the steering wheel is correctly set. NG --  ADJUST FRONT WHEEL ALIGNMENT OR STEERING POSITION OK --  END",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1381",
+      "description": "Acceleration Sensor Power Supply Voltage Malfunction The skid control ECU receives signals from the yaw rate and acceleration sensor via the CAN communication system. The yaw rate sensor has a built in acceleration sensor and detects the vehicle's condition using 2 circuits (GL1, GL2). If there is trouble in the bus lines between the yaw rate and acceleration sensor and the CAN communication system, the DTCs U0123 (malfunction in CAN communication with the yaw rate sensor) and U0124 (malfunction in CAN communication with the acceleration sensor) are output. These DTCs are also output when calibration has not been completed. NOTICE: * When replacing the yaw rate and deceleration sensor, perform zero point calibration See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Programming and Relearning. * Inspect the fuses for circuits related to this system before performing the following inspection procedure. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "INSPECT YAW RATE AND ACCELERATION SENSOR (IG TERMINAL) (a) Disconnect the yaw rate and acceleration sensor connector. Text in Illustration (b) Turn the ignition switch to ON. (c) Measure the voltage according to the value(s) in the table below. Standard Voltage: OK --  REPAIR OR REPLACE HARNESS OR CONNECTOR (IG CIRCUIT) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "INSPECT YAW RATE AND ACCELERATION SENSOR (GND TERMINAL) (a) Turn the ignition switch off. Text in Illustration (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: NOTICE: Check the yaw rate and acceleration sensor signal after replacement    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Scan Tool Testing and Procedures/Vehicle Stability Control System (for Sedan)/Test Mode Procedure. HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Vehicle Stability Control System (for Sedan)/Problem Symptoms Table. NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR (GND CIRCUIT) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "RECONFIRM DTC (a) Reconnect the yaw rate and acceleration sensor connector. (b) Clear the DTC    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). (c) Start the engine. (d) Perform a road test. (e) Check if the same DTC is recorded    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). Result NG --  REPLACE YAW RATE AND ACCELERATION SENSOR  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Acceleration/Deceleration Sensor/Service and Repair/Removal OK --  CHECK FOR INTERMITTENT PROBLEMS  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Component Tests and General Diagnostics/Vehicle Stability Control System (for Sedan)/Check For Intermittent Problems Anti-Lock Brake System (for Sedan)",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1405",
+      "description": "Open or Short in Front Speed Sensor RH Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": [
+        "C1406"
+      ]
+    },
+    {
+      "dtc_code": "C1406",
+      "description": "is for the front speed sensor LH. NOTICE: Check the speed sensor signal after replacement See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Scan Tool Testing and Procedures/Vehicle Stability Control System (for Sedan)/Test Mode Procedure . PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "READ VALUE USING TECHSTREAM (MOMENTARY INTERRUPTION) (a) Using the Techstream, check for any momentary interruption in the wire harness and connector corresponding to the DTC    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Component Tests and General Diagnostics/Anti-Lock Brake System (for Sedan)/Check For Intermittent Problems. ABS/VSC/TRAC OK: There are no momentary interruptions. HINT Perform the above inspection before removing the sensor and connector. NG --  CHECK HARNESS AND CONNECTOR (BRAKE ACTUATOR ASSEMBLY - FRONT SPEED SENSOR) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "READ VALUE USING TECHSTREAM (FRONT SPEED SENSOR)   See: C1401/Anti-Lock Brake System (for Sedan) NG --  CHECK HARNESS AND CONNECTOR (BRAKE ACTUATOR ASSEMBLY - FRONT SPEED SENSOR) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "RECONFIRM DTC (a) Turn the ignition switch off. (b) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). (c) Start the engine. (d) Drive the vehicle at a speed of 40 km/h (25 mph) or more for at least 60 seconds. (e) Check if the same DTC is recorded    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). Result HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Anti-Lock Brake System (for Sedan)/Problem Symptoms Table. B --  REPLACE BRAKE ACTUATOR ASSEMBLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal A --  CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/Electronic Circuit",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "CHECK HARNESS AND CONNECTOR (BRAKE ACTUATOR ASSEMBLY - FRONT SPEED SENSOR) (a) Turn the ignition switch off. (b) Make sure that there is no looseness at the locking part and the connecting part of the connectors. (c) Disconnect the A15 brake actuator assembly (skid control ECU) connector and the A7 and/or A11 front speed sensor connector. (d) Measure the resistance according to the value(s) in the table below. Standard Resistance: (e) Reconnect the A15 brake actuator assembly (skid control ECU) connector and the front speed sensor connector. NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "CHECK BRAKE ACTUATOR ASSEMBLY (SENSOR INPUT) (a) Turn the ignition switch to ON. (b) Measure the voltage according to the value(s) in the table below. Standard Voltage: RH LH Text in Illustration HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Anti-Lock Brake System (for Sedan)/Problem Symptoms Table. NG --  REPLACE BRAKE ACTUATOR ASSEMBLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal OK --  REPLACE FRONT SPEED SENSOR  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Wheel Speed Sensor/Service and Repair/Front Speed Sensor (for Sedan)/Removal Vehicle Stability Control System (for Sedan)",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1407",
+      "description": "Open or Short in Rear Speed Sensor RH Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": [
+        "C1408"
+      ]
+    },
+    {
+      "dtc_code": "C1408",
+      "description": "is for the rear speed sensor LH. NOTICE: * Disassembly of the rear speed sensor from the rear axle hub and bearing assembly is prohibited. * Check the speed sensor signal after replacement See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Scan Tool Testing and Procedures/Vehicle Stability Control System (for Sedan)/Test Mode Procedure. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "READ VALUE USING TECHSTREAM (MOMENTARY INTERRUPTION) (a) Using the Techstream, check for any momentary interruption in the wire harness and connector corresponding to the DTC    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Component Tests and General Diagnostics/Anti-Lock Brake System (for Sedan)/Check For Intermittent Problems. ABS/VSC/TRAC OK: There are no momentary interruptions. HINT Perform the above inspection before removing the sensor and connector. NG --  INSPECT SKID CONTROL SENSOR WIRE OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "READ VALUE USING TECHSTREAM (REAR SPEED SENSOR)   See: C1403/Anti-Lock Brake System (for Sedan) NG --  INSPECT SKID CONTROL SENSOR WIRE OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "RECONFIRM DTC (a) Turn the ignition switch off. (b) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). (c) Start the engine. (d) Drive the vehicle at a speed of 40 km/h (25 mph) or more for at least 60 seconds. (e) Check if the same DTC is recorded    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). Result HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Anti-Lock Brake System (for Sedan)/Problem Symptoms Table. B --  REPLACE BRAKE ACTUATOR ASSEMBLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal A --  CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/Electronic Circuit",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "INSPECT SKID CONTROL SENSOR WIRE (a) Turn the ignition switch off. (b) Make sure that there is no looseness at the locking part and the connecting part of the connectors. (c) Disconnect the skid control sensor wire. (d) Measure the resistance according to the value(s) in the table below. Standard Resistance: RH LH Text in Illustration (e) Reconnect the rear speed sensor wire. NG --  REPLACE SKID CONTROL SENSOR WIRE OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "CHECK HARNESS AND CONNECTOR (BRAKE ACTUATOR ASSEMBLY - REAR SPEED SENSOR) (a) Turn the ignition switch off. (b) Make sure that there is no looseness at the locking part and the connecting part of the connectors. (c) Disconnect the A15 brake actuator assembly (skid control ECU) connector and the Z1 and/or a1 rear speed sensor connector. (d) Measure the resistance according to the value(s) in the table below. Standard Resistance: (e) Reconnect the A15 brake actuator assembly (skid control ECU) connector and the rear speed sensor connector. NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "CHECK BRAKE ACTUATOR ASSEMBLY (SENSOR INPUT) (a) Turn the ignition switch to ON. (b) Measure the voltage according to the value(s) in the table below. Standard Voltage: RH LH Text in Illustration HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Anti-Lock Brake System (for Sedan)/Problem Symptoms Table. (c) Reconnect the Z1 and/or a1 rear speed sensor connector. NG --  REPLACE BRAKE ACTUATOR ASSEMBLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal OK --  REPLACE REAR AXLE HUB AND BEARING ASSEMBLY  See: Maintenance/Wheels and Tires/Wheel Hub/Service and Repair/Rear Axle Hub (for Sedan)/Removal Vehicle Stability Control System (for Sedan)",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1417",
+      "description": "High Power Supply Voltage Malfunction If a malfunction is detected in the power supply circuit, the skid control ECU (housed in the actuator assembly) stores this DTC and the fail-safe function prohibits ABS operation. This DTC is stored when the IG1 terminal voltage deviates from the DTC detection condition due to a malfunction in the power supply or charging circuit such as the battery or generator circuit, etc. The DTC is cancelled when the IG1 terminal voltage returns to normal. NOTICE: * When replacing the brake actuator assembly, perform zero point calibration See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Programming and Relearning. * Inspect the fuses for circuits related to this system before performing the following inspection procedure. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "INSPECT BATTERY (a) Inspect the battery voltage. Standard Voltage: 11 to 14 V NG --  CHECK OR REPLACE CHARGING SYSTEM OR BATTERY  See: Starting and Charging/Charging System/Testing and Inspection OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK HARNESS AND CONNECTOR (IG1 TERMINAL) (a) Turn the ignition switch off. (b) Make sure that there is no looseness at the locking part and the connecting part of the connectors. (c) Disconnect the A15 brake actuator assembly (skid control ECU) connector. (d) Check the connector case and terminals for deformation and corrosion. OK: No deformation or corrosion. (e) Measure the voltage according to the value(s) in the table below. Standard Voltage: Text in Illustration HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Anti-Lock Brake System (for Sedan)/Problem Symptoms Table. (f) Reconnect the A15 brake actuator assembly (skid control ECU) connector. NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR (IG1 CIRCUIT) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "RECONFIRM DTC (a) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). (b) Check if the same DTC is recorded    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). Result HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Anti-Lock Brake System (for Sedan)/Problem Symptoms Table. B --  REPLACE BRAKE ACTUATOR ASSEMBLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal A --  CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/Electronic Circuit Vehicle Stability Control System (for Sedan)",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1419",
+      "description": "BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM (for Sedan): C1419, C1435: Acceleration Sensor Internal Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1435",
+      "description": "Yaw Rate Sensor Internal Circuit The skid control ECU receives signals from the yaw rate and acceleration sensor via the CAN communication system. The yaw rate sensor has a built-in acceleration sensor and detects the vehicle's condition using 2 circuits (GL1, GL2). If there is trouble in the bus lines between the yaw rate and acceleration sensor and the CAN communication system, DTCs U0123 (malfunction in CAN communication with the yaw rate sensor) and U0124 (malfunction in CAN communication with the acceleration sensor) are set. These DTCs are also output when calibration has not been completed. NOTICE: When replacing the yaw rate and acceleration sensor, perform the zero point calibration. HINT When U0123, U0124 and/or U0126 is output together with C1419 and/or C1435, inspect and repair the trouble areas indicated by U0123, U0124 and/or U0126 first See: U Code Charts/U0073/Vehicle Stability Control System (for Sedan). PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "REPLACE YAW RATE AND ACCELERATION SENSOR (a) Replace the yaw rate and acceleration sensor    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Acceleration/Deceleration Sensor/Service and Repair/Removal. NOTICE: Check the yaw rate and acceleration sensor signal after replacement    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Scan Tool Testing and Procedures/Vehicle Stability Control System (for Sedan)/Test Mode Procedure. HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Vehicle Stability Control System (for Sedan)/Problem Symptoms Table. NEXT --  END",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1420",
+      "description": "Acceleration Sensor Malfunction The skid control ECU receives signals from the yaw rate and acceleration sensor via the CAN communication system. The yaw rate sensor has a built-in acceleration sensor and detects the vehicle's condition using 2 circuits (GL1, GL2). If there is trouble in the bus lines between the yaw rate and acceleration sensor and the CAN communication system, DTCs U0123 (malfunction in CAN communication with the yaw rate sensor) and U0124 (malfunction in CAN communication with the acceleration sensor) are set. These DTCs are also output when calibration has not been completed. NOTICE: * When replacing the yaw rate and acceleration sensor, perform the zero point calibration See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Programming and Relearning. * Inspect the fuses for circuits related to this system before performing the following inspection procedure. HINT When U0123, U0124 and/or U0126 is output together with C1420, inspect and repair the trouble areas indicated by U0123, U0124 and/or U0126 first See: U Code Charts/U0073/Vehicle Stability Control System (for Sedan). PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK YAW RATE AND ACCELERATION SENSOR INSTALLATION (a) Check that the yaw rate and acceleration sensor has been installed properly    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Acceleration/Deceleration Sensor/Service and Repair/Installation. OK: The sensor should be tightened to the specified torque. The sensor should not be installed in a tilted position. NG --  INSTALL YAW RATE AND ACCELERATION SENSOR CORRECTLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Acceleration/Deceleration Sensor/Service and Repair/Installation OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "REPLACE YAW RATE AND ACCELERATION SENSOR (a) Replace the yaw rate and acceleration sensor    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Acceleration/Deceleration Sensor/Service and Repair/Removal. NOTICE: Check the yaw rate and acceleration sensor signal after replacement    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Scan Tool Testing and Procedures/Vehicle Stability Control System (for Sedan)/Test Mode Procedure. HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Vehicle Stability Control System (for Sedan)/Problem Symptoms Table. NEXT --  END",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1421",
+      "description": "BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM (for Sedan): C1421, C1281, C1423,",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1422",
+      "description": "Master Cylinder Pressure Sensor Zero Point High Malfunction The master cylinder pressure sensor is connected to the skid control ECU in the brake actuator assembly. NOTICE: * When replacing the brake actuator assembly, perform zero point calibration See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Programming and Relearning. * Inspect the fuses for circuits related to this system before performing the following inspection procedure. HINT When C1425 is output together with C1422, inspect and repair the trouble areas indicated by C1425 first See: C1425/Vehicle Stability Control System (for Sedan). PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK STOP LIGHT OPERATION (a) Check that the stop lights come on when the brake pedal is depressed, and go off when the brake pedal is released. OK: NG --  INSPECT STOP LIGHT CIRCUIT  See: Lighting and Horns/Testing and Inspection/Symptom Related Diagnostic Procedures/Lighting System (for Sedan) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "READ VALUE USING TECHSTREAM (STOP LIGHT SWITCH) (a) Connect the Techstream to the DLC3. (b) Turn the ignition switch to ON. (c) Turn the Techstream on. (d) Enter the following menus: Chassis / ABS/VSC/TRAC / Data List. ABS/VSC/TRAC (Skid Control ECU) (e) Check that the stop light condition observed on the Techstream changes according to brake pedal operation. OK: The Techstream displays ON or OFF according to brake pedal operation. NG --  INSPECT SKID CONTROL ECU (STOP TERMINAL) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK BRAKE PEDAL AND STOP LIGHT SWITCH INSTALLATION (a) Turn the ignition switch off. (b) Check the brake pedal height and stop light switch installation    See: Brakes and Traction Control/Brake Pedal Assy/Service and Repair/Installation. OK: The brake pedal height and stop light switch installation are normal. NG --  ADJUST BRAKE PEDAL OR STOP LIGHT SWITCH  See: Brakes and Traction Control/Brake Pedal Assy/Service and Repair/Installation OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "RECONFIRM DTC (a) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). (b) Start the engine. (c) Drive the vehicle at a speed of 40 km/h (25 mph) or more and perform braking test (decelerate the vehicle by depressing the brake pedal). (d) Check if the same DTC is recorded    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). Result B --  REPLACE BRAKE ACTUATOR ASSEMBLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal A --  CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Component Tests and General Diagnostics/Vehicle Stability Control System (for Sedan)/Check For Intermittent Problems",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "INSPECT SKID CONTROL ECU (STOP TERMINAL) (a) Turn the ignition switch off. Text in Illustration (b) Make sure that there is no looseness at the locking part and the connecting part of the connectors. (c) Disconnect the skid control ECU connector. (d) Measure the voltage according to the value(s) in the table below. Standard Voltage: NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR (STOP CIRCUIT) OK --  REPLACE BRAKE ACTUATOR ASSEMBLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1423",
+      "description": "BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM (for Sedan): C1421, C1281, C1423,",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1425",
+      "description": "Open in Stop Light Switch Circuit The skid control ECU detects the brake operating conditions through a signal transmitted by the stop light switch. The skid control ECU has an open detection circuit, which outputs this DTC when detecting an open in the stop light input line or the ground line of the stop light circuit with the stop light switch off (brake pedal not depressed). NOTICE: * When replacing the brake actuator assembly, perform zero point calibration See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Programming and Relearning. * Inspect the fuses for circuits related to this system before performing the following inspection procedure. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK STOP LIGHT OPERATION (a) Check that the stop lights come on when the brake pedal is depressed, and go off when the brake pedal is released. OK: NG --  INSPECT STOP LIGHT CIRCUIT  See: Lighting and Horns/Testing and Inspection/Symptom Related Diagnostic Procedures/Lighting System (for Sedan) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "READ VALUE USING TECHSTREAM (STOP LIGHT SWITCH) (a) Turn the ignition switch off. (b) Connect the Techstream to the DLC3. (c) Turn the ignition switch to ON. (d) Turn the Techstream on. (e) Enter the following menus: Chassis / ABS/VSC/TRAC / Data List. (f) According to the display on the Techstream, read the Data List. ABS/VSC/TRAC (g) Check that the stop light switch display observed on the Techstream changes according to brake pedal operation. OK: The Techstream displays ON or OFF according to brake pedal operation. NG --  CHECK HARNESS AND CONNECTOR (STOP TERMINAL) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "RECONFIRM DTC (a) Turn the ignition switch off. (b) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). (c) Start the engine. (d) Depress the brake pedal several times to test the stop light circuit. (e) Check if the same DTC is recorded    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). Result HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Anti-Lock Brake System (for Sedan)/Problem Symptoms Table. B --  REPLACE BRAKE ACTUATOR ASSEMBLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal A --  CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/Electronic Circuit",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "CHECK HARNESS AND CONNECTOR (STOP TERMINAL) (a) Turn the ignition switch off. (b) Make sure that there is no looseness at the locking part and the connecting part of the connectors. (c) Disconnect the A15 brake actuator assembly (skid control ECU) connector. (d) Check the connector case and terminals for deformation and corrosion. OK: No deformation or corrosion. (e) Measure the voltage according to the value(s) in the table below. Standard Voltage: Text in Illustration (f) Reconnect the A15 brake actuator assembly (skid control ECU) connector. NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK --  REPLACE BRAKE ACTUATOR ASSEMBLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal Vehicle Stability Control System (for Sedan)",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1427",
+      "description": "Motor Malfunction NOTICE: * When replacing the brake actuator assembly, perform zero point calibration See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Programming and Relearning. * Inspect the fuses for circuits related to this system before performing the following inspection procedure. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "PERFORM ACTIVE TEST USING TECHSTREAM (ABS MOTOR RELAY) (a) Turn the ignition switch off. (b) Connect the Techstream to the DLC3. (c) Turn the ignition switch to ON. (d) Turn the Techstream on. (e) Enter the following menus: Chassis / ABS/VSC/TRAC / Active Test. (f) According to the display on the Techstream, perform the Active Test. ABS/VSC/TRAC (g) Check for operating sound of the ABS motor relay when operating it with the Techstream. Result B --  RECONFIRM DTC A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK HARNESS AND CONNECTOR (GND2 TERMINAL) (a) Turn the ignition switch off. (b) Make sure that there is no looseness at the locking part and the connecting part of the connectors. (c) Disconnect the A15 brake actuator assembly (skid control ECU) connector. (d) Check the connector case and terminals for deformation and corrosion. OK: No deformation or corrosion. (e) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration (f) Reconnect the A15 brake actuator assembly (skid control ECU) connector. NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR (GND2 CIRCUIT) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "RECONFIRM DTC HINT This code is detected when a problem is identified in the brake actuator assembly. The ABS motor relay is in the brake actuator assembly. Therefore, ABS motor relay unit inspection cannot be performed. Be sure to check if the DTC is output before replacing the brake actuator assembly. (a) Turn the ignition switch off. (b) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). (c) Start the engine. (d) Drive the vehicle at a speed of 20 km/h (12 mph) or more for 30 seconds or more. (e) Check if the same DTC is recorded    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Anti-Lock Brake System (for Sedan). Result HINT * If a speed signal of 6 km/h (4 mph) or more is input to the brake actuator assembly (skid control ECU) with the ignition switch ON and the stop light switch off, the ECU performs self diagnosis of the motor and solenoid circuits. * If the normal system code is output (no trouble codes are output), slightly jiggle the connectors, wire harness, and fuses of the brake actuator assembly. Make sure that no DTCs are output. * If any DTCs are output while jiggling a connector or wire harness of the brake actuator assembly (skid control ECU), inspect and repair the connector or wire harness. * The DTCs were probably output due to a bad connection of the connector terminal. B --  REPLACE BRAKE ACTUATOR ASSEMBLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal A --  CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal Vehicle Stability Control System (for Sedan)",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1428",
+      "description": "Motor Circuit Malfunction NOTICE: When replacing the brake actuator assembly, perform zero point calibration See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Programming and Relearning. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK HARNESS AND CONNECTOR (GND2 TERMINAL) (a) Turn the ignition switch off. (b) Make sure that there is no looseness at the locking part and the connecting part of the connectors. (c) Disconnect the A15 brake actuator assembly (skid control ECU) connector. (d) Check the connector case and terminals for deformation and corrosion. OK: No deformation or corrosion. (e) Measure the resistance according to the value(s) in the table below. Standard Resistance: Text in Illustration (f) Reconnect the A15 brake actuator assembly (skid control ECU) connector. NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK --  REPLACE BRAKE ACTUATOR ASSEMBLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal Vehicle Stability Control System (for Sedan)",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1432",
+      "description": "Steering Angle Sensor Power Source Voltage Malfunction Signals from the steering sensor (built in to the spiral cable) are sent to the skid control ECU (built in to the brake actuator assembly) through CAN communication. NOTICE: * Do not remove the steering sensor from the spiral cable. * When replacing the spiral cable, confirm that the replacement part is of the correct specification. * Inspect the fuses for circuits related to this system before performing the following inspection procedure. HINT * When U0073, U0123, U0124 and/or U0126 is output together with C1432, inspect and repair the trouble areas indicated by U0073, U0123, U0124 and/or U0126 first See: U Code Charts/U0073/Vehicle Stability Control System (for Sedan). * When the speed sensor or the yaw rate and acceleration sensor has trouble, DTCs for the steering angle sensor may be output even when the steering angle sensor is normal. When DTCs for the speed sensor or yaw rate and acceleration sensor are output together with DTCs for the steering angle sensor, inspect and repair the speed sensor and yaw rate and acceleration sensor first, and then inspect and repair the steering angle sensor. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "INSPECT STEERING ANGLE SENSOR (BAT TERMINAL) (a) Turn the ignition switch off. Text in Illustration (b) Remove the steering wheel and the column cover lower. (c) Make sure that there is no looseness at the locking part and the connecting part of the connectors. (d) Disconnect the D80 steering angle sensor connector. (e) Measure the voltage according to the value(s) in the table below. Standard Voltage: NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR (BAT CIRCUIT) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "INSPECT STEERING ANGLE SENSOR (IG1 TERMINAL) (a) Turn the ignition switch ON. Text in Illustration (b) Measure the voltage according to the value(s) in the table below. Standard Voltage: NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR (GND CIRCUIT) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "INSPECT STEERING ANGLE SENSOR (GND TERMINAL) (a) Turn the ignition switch off. Text in Illustration (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Vehicle Stability Control System (for Sedan)/Problem Symptoms Table. NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR (GND) OK --  REPLACE SPIRAL CABLE (STEERING ANGLE SENSOR)  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Steering Angle Sensor/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1433",
+      "description": "Steering Angle Sensor Internal Circuit Signals from the steering sensor (built in to the spiral cable) are sent to the skid control ECU (built in to the brake actuator assembly) through CAN communication. HINT * When U0073, U0123, U0124 and/or U0126 is output together with C1433, inspect and repair the trouble areas indicated by U0073, U0123, U0124 and/or U0126 first See: U Code Charts/U0073/Vehicle Stability Control System (for Sedan). * When any of the speed sensors or the yaw rate and acceleration sensor has trouble, DTCs for the steering angle sensor may be output even when the steering angle sensor is normal. When DTCs for the speed sensors or yaw rate and acceleration sensor are output together with DTCs for the steering angle sensor, inspect and repair the speed sensor and yaw rate and acceleration sensor first, and then inspect and repair the steering angle sensor. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "REPLACE SPIRAL CABLE (STEERING ANGLE SENSOR) (a) Replace the spiral cable    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Steering Angle Sensor/Service and Repair/Removal. NOTICE: * Do not remove the steering sensor from the spiral cable. * When replacing the spiral cable, confirm that the replacement part is of the correct specification. HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Vehicle Stability Control System (for Sedan)/Problem Symptoms Table. NEXT --  END",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1434",
+      "description": "Steering Angle Sensor Output Malfunction Steering angle sensor signals are sent to the skid control ECU via the CAN communication system. When there is a malfunction in the CAN communication system, it will be detected by the steering angle sensor zero point malfunction diagnostic function. NOTICE: * Do not remove the steering sensor from the spiral cable. * When replacing the spiral cable, confirm that the replacement part is of the correct specification. * Inspect the fuses for circuits related to this system before performing the following inspection procedure. HINT * When U0073, U0123, U0124 and/or U0126 is output together with C1434, inspect and repair the trouble areas indicated by U0073, U0123, U01245 and/or U0126 first See: U Code Charts/U0073/Vehicle Stability Control System (for Sedan). * When any of the speed sensors or the yaw rate and acceleration sensor has trouble, DTCs for the steering angle sensor may be output even when the steering angle sensor is normal. When DTCs for the speed sensors or yaw rate and acceleration sensor are output together with DTCs for the steering angle sensor, inspect and repair the speed sensor and yaw rate and acceleration sensor first, and then inspect and repair the steering angle sensor. PROCEDURE /Diagnosis System. (d) Start the engine. (e) Drive the vehicle and turn the steering wheel to the right and left at a speed of 35 km/h (22 mph) and check that no speed sensor or yaw rate and acceleration sensor DTCs are output See: Diagnostic Trouble Code Descriptions/Vehicle Stability Control System (for Sedan). Result HINT * If there is a malfunction in any of the speed sensors or the yaw rate and acceleration sensor, an abnormal value may be output although the steering angle sensor is normal. * If speed sensor and yaw rate and acceleration sensor DTCs are output simultaneously, repair these two sensors first and inspect the steering angle sensor. B -- CHECK CAN COMMUNICATION SYSTEM See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Proceed With Troubleshooting C -- REPAIR CIRCUIT INDICATED BY OUTPUT DTC See: Diagnostic Trouble Code Descriptions/Vehicle Stability Control System (for Sedan) A -- Continue to next step.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK DTC (a) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). (b) Turn the ignition switch off. (c) Turn the ignition switch to ON again and check that no CAN communication system DTC is output    See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "INSPECT STEERING ANGLE SENSOR (BAT TERMINAL) (a) Turn the ignition switch off. Text in Illustration (b) Remove the steering wheel and the column cover lower. (c) Make sure that there is no looseness at the locking part and the connecting part of the connectors. (d) Disconnect the D80 steering angle sensor connector. (e) Measure the voltage according to the value(s) in the table below. Standard Voltage: NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR (BAT CIRCUIT) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "INSPECT STEERING ANGLE SENSOR (IG1 TERMINAL) (a) Turn the ignition switch ON. Text in Illustration (b) Measure the voltage according to the value(s) in the table below. Standard Voltage: NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR (IG1 CIRCUIT) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "INSPECT STEERING ANGLE SENSOR (GND TERMINAL) (a) Turn the ignition switch off. Text in Illustration (b) Measure the resistance according to the value(s) in the table below. Standard Resistance: HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Vehicle Stability Control System (for Sedan)/Problem Symptoms Table. NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR (GND CIRCUIT) OK --  REPLACE SPIRAL CABLE (STEERING ANGLE SENSOR)  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Steering Angle Sensor/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1436",
+      "description": "Yaw Rate Sensor Malfunction The skid control ECU receives signals from the yaw rate and acceleration sensor via the CAN communication system. The yaw rate sensor has a built-in acceleration sensor and detects the vehicle's condition using 2 circuits (GL1, GL2). If there is trouble in the bus lines between the yaw rate and acceleration sensor and the CAN communication system, DTCs U0123 (malfunction in CAN communication with the yaw rate sensor) and U0124 (malfunction in CAN communication with the acceleration sensor) are set. These DTCs are also output when calibration has not been completed. NOTICE: When replacing the yaw rate and deceleration sensor, perform the zero point calibration See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Programming and Relearning. HINT When U0123, U0124 and/or U0126 is output together with C1436, inspect and repair the trouble areas indicated by U0123, U0124 and/or U0126 first See: U Code Charts/U0073/Vehicle Stability Control System (for Sedan). PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "READ VALUE USING TECHSTREAM (YAW RATE AND ACCELERATION SENSOR) (a) Connect the Techstream to the DLC3. (b) Turn the ignition switch to ON. (c) Enter the following menus: Chassis / ABS/VSC/TRAC / Data List. ABS/VSC/TRAC (Skid Control ECU) (d) Check that the yaw rate and acceleration sensor output value displayed on the Techstream. Result NOTICE: Check the yaw rate and acceleration sensor signal after replacement    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Scan Tool Testing and Procedures/Vehicle Stability Control System (for Sedan)/Test Mode Procedure. HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Vehicle Stability Control System (for Sedan)/Problem Symptoms Table. B --  REPLACE YAW RATE AND ACCELERATION SENSOR  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Acceleration/Deceleration Sensor/Service and Repair/Removal C --  CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Component Tests and General Diagnostics/Vehicle Stability Control System (for Sedan)/Check For Intermittent Problems A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK YAW RATE AND ACCELERATION SENSOR INSTALLATION (a) Turn the ignition switch off. (b) Check that the yaw rate and acceleration sensor has been installed properly    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Acceleration/Deceleration Sensor/Service and Repair/Installation. OK: The sensor should be tightened to the specified torque. The sensor should not be installed in a tilted position. NOTICE: Check the yaw rate and acceleration sensor signal after replacement    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Scan Tool Testing and Procedures/Vehicle Stability Control System (for Sedan)/Test Mode Procedure. HINT If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related s/Vehicle Stability Control System (for Sedan)/Problem Symptoms Table. NG --  INSTALL YAW RATE AND ACCELERATION SENSOR CORRECTLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Acceleration/Deceleration Sensor/Service and Repair/Installation OK --  REPLACE YAW RATE AND ACCELERATION SENSOR  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Acceleration/Deceleration Sensor/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1437",
+      "description": "Lost Communication with ECM The skid control ECU receives signals from the ECM via the CAN communication system. NOTICE: When replacing the brake actuator assembly, perform zero point calibration See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Programming and Relearning. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK HARNESS AND CONNECTOR (MOMENTARY INTERRUPTION) (a) Using the Techstream, check for any momentary interruption in the wire harness and connector corresponding to the DTC    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Component Tests and General Diagnostics/Vehicle Stability Control System (for Sedan)/Check For Intermittent Problems. ABS/VSC/TRAC OK: There are no momentary interruptions. HINT Perform the above inspection before removing the sensor and connector. NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR (SKID CONTROL ECU - ECM) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "RECONFIRM DTC (a) Turn the ignition switch off. (b) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). (c) Start the engine. (d) Drive the vehicle at a speed of 15 km/h (9 mph) or more for 10 seconds or more. (e) Check that no CAN communication system DTC is output    See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/Diagnosis System. (f) Check if the same DTC is recorded    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). Result B --  REPLACE BRAKE ACTUATOR ASSEMBLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal C --  CHECK CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Proceed With Troubleshooting A --  CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Component Tests and General Diagnostics/Vehicle Stability Control System (for Sedan)/Check For Intermittent Problems",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "REPAIR OR REPLACE HARNESS OR CONNECTOR (SKID CONTROL ECU - ECM) (a) Turn the ignition switch off. (b) Repair or replace the harness or connector. (c) Check for any momentary interruption between the skid control ECU and the ECM    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Component Tests and General Diagnostics/Vehicle Stability Control System (for Sedan)/Check For Intermittent Problems. (d) Check that there is no momentary interruption. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "RECONFIRM DTC (a) Turn the ignition switch off. (b) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). (c) Start the engine. (d) Drive the vehicle at a speed of 15 km/h (9 mph) or more for 10 seconds or more. (e) Check that no CAN communication system DTC is output    See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/Diagnosis System. (f) Check if the same DTC is recorded    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). Result B --  REPLACE BRAKE ACTUATOR ASSEMBLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal C --  CHECK CAN COMMUNICATION SYSTEM  See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Proceed With Troubleshooting A --  END",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1439",
+      "description": "Steering Angle Sensor Initialization Incomplete",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": [
+        "C1445"
+      ]
+    },
+    {
+      "dtc_code": "C1445",
+      "description": "Vehicle Driven with Steering Angle Sensor not Initialized The skid control ECU acquires the steering angle sensor zero point every time the ignition switch is turned ON and the vehicle is driven at 35 km/h (22 mph) or more for approximately 5 seconds. The ECU also stores previous zero points. DTCs C1439 and C1445 will be cleared when the ignition switch is turned off. NOTICE: * When replacing the brake actuator assembly, perform zero point calibration See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Programming and Relearning. * Before proceeding with the inspection, explain to the customer that the output DTC is related to temporary loss of the steering angle zero point calibration, such as when the power source voltage drops when the battery is removed, and confirm that this condition occurred. HINT * When DTC U0073, U0123, U0124 and/or U0126 is output together with DTC C1439 and/or C1445, inspect and repair the trouble areas indicated by DTC U0073, U0123, U0124 and/or U0126 first See: U Code Charts/U0073/Vehicle Stability Control System (for Sedan). * When the speed sensor or the yaw rate and acceleration sensor has a malfunction, DTCs for the steering angle sensor may be output even when the steering angle sensor is normal. When DTCs for the speed sensor or yaw rate and acceleration sensor are output together with other DTCs for the steering angle sensor, inspect and repair the speed sensor and yaw rate and acceleration sensor first, and then inspect and repair the steering angle sensor. PROCEDURE /Diagnosis System. (d) Drive the vehicle and turn the steering wheel to the right and left at a speed of 35 km/h (22 mph) and check that no speed sensor and yaw rate and acceleration sensor DTCs are output See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). Result HINT * If there is a malfunction in the speed sensor or the yaw rate and acceleration sensor, an abnormal value may be output although the steering angle sensor is normal. * If the speed sensor and the yaw rate and acceleration sensor DTCs are output simultaneously, repair the sensors and inspect the steering angle sensor. * If the same DTC C1439/66 and/or C1445/66 is not output again, the DTC may have been stored due to a temporary loss of the steering angle zero point calibration, such as when the power source voltage drops. B -- INSPECT CAN COMMUNICATION SYSTEM See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/How To Proceed With Troubleshooting C -- REPAIR CIRCUIT INDICATED BY OUTPUT DTC See: Diagnostic Trouble Code Descriptions/Vehicle Stability Control System (for Sedan) D -- USE SIMULATION METHOD TO CHECK A -- Continue to next step.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK DTC (a) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). (b) Turn the ignition switch off. (c) Turn the ignition switch to ON again and check that no CAN communication system DTCs are output    See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK STEERING ANGLE SENSOR ZERO POINT CALIBRATION (a) Drive the vehicle straight ahead at 35 km/h (22 mph) or more for at least 5 seconds. (b) Check if the centered position of the steering wheel is correctly set while driving straight ahead. HINT If the front wheel alignment and steering position are adjusted as a result of an off-centered position of the steering wheel, acquire yaw rate and acceleration sensor zero point again after the adjustments are completed. OK: The centered position of the steering wheel is correctly set. NG --  ADJUST FRONT WHEEL ALIGNMENT OR STEERING POSITION OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "RECONFIRM DTC (a) Turn the ignition switch off. (b) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). (c) Start the engine. (d) Drive the vehicle and turn the steering wheel to the right and left at the speed of 35 km/h (22 mph) or more. (e) Check if the same DTC is recorded    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). Result HINT If the same DTC C1439 and/or C1445 is not output again, the DTC may have been stored due to a temporary loss of the steering angle zero point calibration, such as when the power source voltage drops. B --  END A --  REPLACE BRAKE ACTUATOR ASSEMBLY  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1440",
+      "description": "Unusual Bank Angle Detected If the skid control ECU determines that the vehicle is being driven at a steep bank angle, the skid control ECU stores DTC C1440 while VSC operation is temporarily disabled. It is not a malfunction if the system and sensor circuits are normal and if the normal VSC operation resumes. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK DTC (a) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). (b) Perform a road test. (c) Check if the same DTC is recorded    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). Result B --  END C --  REPAIR CIRCUIT INDICATED BY OUTPUT DTC  See: Diagnostic Trouble Code Descriptions/Vehicle Stability Control System (for Sedan) A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CLEAR DTC (a) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). HINT * If the skid control ECU determines that the vehicle is being driven at a steep bank angle, the skid control ECU stores DTC C1440 while VSC operation is temporarily disabled. * It is not a malfunction if the system and sensor circuits are normal and if the normal VSC operation resumes. NEXT --  END",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1442",
+      "description": "Invalid Data Received from Acceleration Sensor",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": [
+        "C1443"
+      ]
+    },
+    {
+      "dtc_code": "C1443",
+      "description": "Invalid Data Received from Yaw Rate Sensor The skid control ECU receives signals from the yaw rate and acceleration sensor via the CAN communication system. The yaw rate sensor has a built-in acceleration sensor and detects the vehicle condition. NOTICE: When replacing the yaw rate and acceleration sensor, perform zero point calibration See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Programming and Relearning. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK DTC (a) Clear the DTCs    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). (b) Start and idle the engine for 60 seconds, and then stop the engine. (c) Check if the same DTC is recorded    See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes/Vehicle Stability Control System (for Sedan). Result B --  USE SIMULATION METHOD TO CHECK  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Initial Inspection and Diagnostic Overview/Vehicle Stability Control System (for Sedan)/Diagnosis System A --  REPLACE YAW RATE AND ACCELERATION SENSOR  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Acceleration/Deceleration Sensor/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1511",
+      "description": "11-C1514/14, C1517/17: Torque Sensor 1 Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1517",
+      "description": "17 - Torque Sensor Hold Malfunction The torque sensor converts the rotation torque input from the steering wheel into electric signals and sends them to the power steering ECU. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "READ VALUE USING TECHSTREAM (a) Connect a Techstream to the DLC3. (b) Turn the ignition switch to ON. (c) Turn the Techstream on. (d) Enter the following menus: Chassis / EMPS / Data List. (e) Select the items \"Torque Sensor 1 Output\" and \"Torque Sensor 2 Output\" in the Data List and read the value displayed on the Techstream. EMPS: (f) Check the difference in the values between \"Torque Sensor 1 Output\" and \"Torque Sensor 2 Output\". OK: The voltage difference is below 0.3 V. OK --  CHECK INTERMITTENT PROBLEMS  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/Electronic Circuit Inspection Procedure NG -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "INSPECT POWER STEERING ECU (OUTPUT) (a) Turn the ignition switch to ON. (b) Measure the voltage. Standard voltage: NG --  REPLACE POWER STEERING ECU  See: Relays and Modules/Relays and Modules - Steering and Suspension/Relays and Modules - Steering/Steering Control Module/Service and Repair/Removal OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "INSPECT STEERING COLUMN ASSEMBLY (TORQUE SENSOR) (a) Turn the ignition switch to ON. (b) Measure the voltage. Standard voltage: NG --  REPLACE STEERING COLUMN ASSEMBLY  See: Steering and Suspension/Steering/Steering Column/Service and Repair/Removal and Replacement/Removal OK --  REPLACE POWER STEERING ECU  See: Relays and Modules/Relays and Modules - Steering and Suspension/Relays and Modules - Steering/Steering Control Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1515",
+      "description": "15 - Torque Sensor Zero Point Adjustment is not Initialized This DTC does not indicate a malfunction. The power steering ECU outputs this DTC when it determines that the torque sensor zero point calibration has not been performed. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "PERFORM ZERO POINT CALIBRATION (TORQUE SENSOR) NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CONFIRM DTC (a) Check for DTCs    See: Steering and Suspension/Steering/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. Result: HINT The steering column assembly must be replaced if C1515/15 is still output even after the torque sensor zero point calibration is performed 3 times. B --  PERFORM ZERO POINT CALIBRATION (TORQUE SENSOR) C --  END A --  REPLACE STEERING COLUMN ASSEMBLY  See: Steering and Suspension/Steering/Steering Column/Service and Repair/Removal and Replacement/Removal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1516",
+      "description": "16 - Torque Sensor Zero Point Adjustment Incomplete This DTC does not indicate a malfunction. The power steering ECU outputs this DTC when it determines that the torque sensor zero point calibration has not been completed successfully. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CLEAR DTC NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "PERFORM INITIALIZATION (TORQUE SENSOR ZERO POINT) NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "PERFORM ZERO POINT CALIBRATION (TORQUE SENSOR) NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "CONFIRM DTC (a) Check for DTCs    See: Steering and Suspension/Steering/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. Result: HINT The steering column assembly must be replaced if C1516/16 is still output even after the torque sensor zero point calibration is performed 3 times. B --  CLEAR DTC C --  END A --  REPLACE STEERING COLUMN ASSEMBLY  See: Steering and Suspension/Steering/Steering Column/Service and Repair/Removal and Replacement/Removal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1524",
+      "description": "24 - Motor Circuit Malfunction The power steering ECU supplies the current to the power steering motor through the motor circuit. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "READ VALUE USING TECHSTREAM (a) Connect a Techstream to the DLC3. (b) Turn the ignition switch to ON. (c) Turn the Techstream on. (d) Enter the following menus: Chassis / EMPS / Data List. (e) Select the item \"Motor Actual Current\" and \"Command Value Current\" in the Data List and read the value displayed on the Techstream. Standard current: HINT The current changes when steering wheel is turned. OK --  CHECK INTERMITTENT PROBLEMS  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/Electronic Circuit Inspection Procedure NG -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "INSPECT POWER STEERING ECU (a) Turn the ignition switch to ON. (b) Measure the voltage. Standard voltage: OK --  INSPECT STEERING COLUMN ASSEMBLY (POWER STEERING MOTOR) NG -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK HARNESS AND CONNECTOR (POWER STEERING ECU - BODY GROUND) (a) Disconnect the connector from the power steering ECU. (b) Measure the resistance and the voltage. Standard: NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "INSPECT STEERING COLUMN ASSEMBLY (POWER STEERING MOTOR) (a) Disconnect the connector from the power steering ECU. (b) Measure the resistance. Standard resistance: NG --  REPLACE STEERING COLUMN ASSEMBLY  See: Steering and Suspension/Steering/Steering Column/Service and Repair/Removal and Replacement/Removal OK --  REPLACE POWER STEERING ECU  See: Relays and Modules/Relays and Modules - Steering and Suspension/Relays and Modules - Steering/Steering Control Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1531",
+      "description": "31-C1535/35: EPS ECU Circuit Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1535",
+      "description": "35 - Steering Wheel Location Data Error The fail-safe function operates to stop power assist when DTCs indicating ECU malfunctions are output. However, the power assist operation continues when DTC C1534/34 is output because it indicates an EEPROM error in the ECU. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CONFIRM DTC (a) Check for DTCs. OK: DTCs other than C1531/31, C1532/32, C1533/33, C1534/34 and C1535/35 are not output. NG --  REPAIR CIRCUITS INDICATED BY OUTPUT DTCS  See: Diagnostic Trouble Code Descriptions/Power Steering System (for Sedan) OK --  REPLACE POWER STEERING ECU  See: Relays and Modules/Relays and Modules - Steering and Suspension/Relays and Modules - Steering/Steering Control Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1541",
+      "description": "41, C1542/42, C1571/71: Speed Sensor Malfunction",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1571",
+      "description": "71 - Speed Sensor Malfunction (Test Mode DTC) Based on the vehicle speed signal received from the combination meter, the power steering ECU adjusts the amount of power assist according to vehicle speed. The power steering ECU monitors the speed signal input and stores a DTC if a malfunction is detected. While a malfunction exists in the vehicle speed signal, fail-safe operation maintains the amount of power assist at the level for a speed of 70 km/h (43 mph). NOTICE: Revving the engine while the vehicle is stopped may cause DTC C1541/41 or C1542/42 to be stored. HINT * If C1541/41 is stored while the vehicle is stopped, driving the vehicle for 5 minutes or more and then turning the ignition switch to off will clear the DTC. * If C1542/42 is stored while the vehicle is stopped, driving the vehicle for 5 minutes or more will clear the DTC. * These DTCs are only for vehicles without a skid control ECU (ABS ECU). * When the sensor is normal, a pulse signal (43 Hz at 37 mph [60 km/h]) that alternates between 0 V and 5 V is transmitted to the ECU. *Threshold: An engine speed of 4000 rpm or greater is detected within 5 minutes after engine is started, or an engine speed of 2100 rpm or greater is detected 5 minutes or more after engine is started. HINT Confirm that DTC C1571/71 has been cleared by activating test mode after the repair is completed. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "READ VALUE USING TECHSTREAM (a) Connect a Techstream to the DLC3. (b) Turn the ignition switch to ON. (c) Turn the Techstream on. (d) Enter the following menus: Chassis / EMPS /Data List. (e) Select the item \"Meter Vehicle Velocity\" in the Data List and the value displayed on the Techstream. EMPS OK: When the vehicle is being driven at 12.4 mph (20 km/h) the Techstream displays a speed within the range of 11.1 to 13.6 mph (18 to 22 km/h). OK --  CHECK INTERMITTENT PROBLEMS  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/Electronic Circuit Inspection Procedure NG -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK HARNESS AND CONNECTOR (POWER STEERING ECU - COMBINATION METER) (a) Disconnect the connectors from the power steering ECU and the combination meter. (b) Measure the resistance. Standard resistance: NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK --  GO TO COMBINATION METER SYSTEM  See: Instrument Panel, Gauges and Warning Indicators/Testing and Inspection/Initial Inspection and Diagnostic Overview/Meter / Gauge System (for Sedan)/How To Proceed With Troubleshooting",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1551",
+      "description": "51 - IG Power Supply Voltage Malfunction The power steering ECU distinguishes the ignition switch status as on or off through the IG power source circuit. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "READ VALUE USING TECHSTREAM (a) Connect a Techstream to the DLC3. (b) Turn the ignition switch to ON. (c) Turn the Techstream on. (d) Enter the following menus: Chassis / EMPS / Data List. (e) Select the item \"IG Power Supply\" in the Data List and read the value displayed on the Techstream. EMPS: OK: The normal condition value is displayed on the Techstream. OK --  CHECK INTERMITTENT PROBLEMS  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/Electronic Circuit Inspection Procedure NG -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "INSPECT FUSE (ECU-IG) (a) Remove the ECU-IG fuse from the instrument panel J/B. (b) Check the resistance of the fuse. Standard resistance: Below 1 Ohms NG --  INSPECT SHORT CIRCUIT IN COMPONENTS AND WIRES CONNECTED TO FUSE OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK HARNESS AND CONNECTOR (POWER STEERING ECU - BODY GROUND) (a) Disconnect the connectors from the power steering ECU. (b) Measure the voltage and the resistance. Standard: NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK --  REPLACE POWER STEERING ECU  See: Relays and Modules/Relays and Modules - Steering and Suspension/Relays and Modules - Steering/Steering Control Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1552",
+      "description": "52-C1555/55: PIG Power Source Circuit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1555",
+      "description": "55 - EPS Motor Relay Circuit When a problem occurs in the system, the power source relay circuit and the motor relay circuit are shut off to stop the power assist. The ECU must be replaced when there is a problem with the relays because each relay is built into the ECU. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "READ VALUE USING TECHSTREAM (a) Connect a Techstream to the DLC3. (b) Turn the ignition switch to ON. (c) Turn the Techstream on. (d) Enter the following menus: Chassis / EMPS / Data List. (e) Select the item \"PIG Power Supply\" in the Data List and read the value displayed on the Techstream. EMPS: OK: The normal condition value is displayed on the Techstream. OK --  CHECK INTERMITTENT PROBLEMS  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/Electronic Circuit Inspection Procedure NG -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "INSPECT FUSE (EPS FUSE) (a) Remove the EPS fuse from the engine room R/B. (b) Measure the resistance of the fuse. Standard resistance: Below 1Ohms NG --  INSPECT SHORT CIRCUIT IN COMPONENTS AND WIRES CONNECTED TO FUSE OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK HARNESS AND CONNECTOR (POWER STEERING ECU - BODY GROUND) (a) Disconnect the connector from the power steering ECU. (b) Measure the voltage and the resistance. Standard: NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "INSPECT STEERING COLUMN ASSEMBLY (POWER STEERING MOTOR) (a) Disconnect the connector from the power steering ECU. (b) Measure the resistance. Standard resistance: NG --  REPLACE STEERING COLUMN ASSEMBLY  See: Steering and Suspension/Steering/Steering Column/Service and Repair/Removal and Replacement/Removal OK --  REPLACE POWER STEERING ECU  See: Relays and Modules/Relays and Modules - Steering and Suspension/Relays and Modules - Steering/Steering Control Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C1581",
+      "description": "81 - Assist Map Un-Writing The power steering ECU outputs this DTC when it determines that the assist map is not written in the ECU. The power steering ECU must be replaced when this DTC is output because this malfunction cannot be repaired. HINT The assist map data is written in the power steering ECU to control assisting power. The assist map is selected from five types based on the vehicle specification communication data (designation and grade package information). NOTICE: If replacing the power steering ECU, initialize and calibrate the torque sensor zero point See: Steering and Suspension/Steering/Testing and Inspection/Programming and Relearning. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "PERFORM ASSIST MAP WRITING (a) Connect a Techstream to the DLC3. (b) Turn the ignition switch to ON. (c) Turn the Techstream on. (d) Set the Techstream to Test Mode (select \"Signal Check\"). HINT Refer to the Techstream operator's manual for further details. (e) Wait for 7 seconds or more. HINT Assist map is automatically written when approximately 7 seconds have elapsed after setting the Techstream to Test Mode. DTC",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK CAN COMMUNICATION SYSTEM (a) Check for DTCs of the CAN communication system    See: Powertrain Management/Computers and Control Systems/Information Bus/Testing and Inspection/Initial Inspection and Diagnostic Overview/Diagnosis System. OK: DTCs are not output. NG --  REPAIR CIRCUITS INDICATED BY OUTPUT DTCS  See: Diagnostic Trouble Code Descriptions/Power Steering System (for Sedan) OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK ECM (a) Check if a qualified ECM is installed. OK: A qualified ECM is installed. NG --  REPLACE ECM  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Service and Repair/Removal OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "CHECK SKID CONTROL ECU (a) Check if a qualified skid control ECU is installed. OK: A qualified skid control ECU is installed. NG --  REPLACE SKID CONTROL ECU  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Hydraulic Control Assembly - Antilock Brakes/Service and Repair/Removal OK --  REPLACE POWER STEERING ECU  See: Relays and Modules/Relays and Modules - Steering and Suspension/Relays and Modules - Steering/Steering Control Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2111",
+      "description": "11-C2114/14: Transmitter ID1 Operation Stop",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2114",
+      "description": "14 - Transmitter ID4 Operation Stop The tire pressure warning valves and transmitters that are installed in the tire and wheel assemblies measure the air pressure of the tires. The measured values are transmitted to the tire pressure warning antenna and receiver on the body as radio waves and then sent to the tire pressure warning ECU. The ECU compares the measured air pressure values with the air pressure threshold. When the measured air pressure value is less than this threshold, the PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "PERFORM FORCED TRANSMISSION OF TRANSMITTER ID OF ALL WHEELS (a) Set the tire pressure to the specified value    See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Service Precautions. (b) Connect a Techstream to the DLC3. (c) Turn the ignition switch to ON and turn the Techstream on. (d) Enter the following menus: Chassis / Tire Pressure Monitor / Data List / (e) Check the values by referring to the table below. Tire Pressure Monitor HINT *: It may take about 2 or 3 minutes until the values are displayed. If the values are not displayed after a few minutes, perform according to the inspection procedure for DTCs C2121/21 to C2124/24    See: C2121. (f) Rapidly reduce the tire pressure for each wheel at least 40 kPa (0.4 kgf/cm2, 5.8 psi) within 30 seconds. (g) Check that each tire pressure data displayed on the Techstream screen has changed. OK: Each tire pressure data displayed on the Techstream screen will change to the value of the tire pressure. NOTICE: * It takes about 2 or 3 minutes to display the updated tire pressure data. * When the \"ID Tire Inflation Pressure\" data has not changed, reset the tire pressure to the appropriate specified value and rotate the tire 90 to 270°. Then rapidly release the tire pressure and recheck it. (h) After confirming that all of the tire pressure data displayed on the Techstream screen has changed, set the tire pressure to the appropriate specified values. HINT If the tire pressure data displayed on the Techstream screen has not changed after rechecking, inspect for another problem (malfunction in transmission or reception function)    See: C2121. NG --  GO TO TRANSMITTER AND RECEIVER INSPECTION PROCEDURE  See: C2121 OK --  END",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2121",
+      "description": "21-C2124/24, C2181/81-C2184/84: No Signal from Transmitter ID1 in Main Mode",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2184",
+      "description": "84 - Transmitter ID4 not Received (Test Mode DTC) The tire pressure warning valves and transmitters that are installed in the tire and wheel assemblies measure the air pressure of the tires. The measured values are transmitted to the tire pressure warning antenna and receiver on the body as radio waves and then sent to the tire pressure warning ECU. The ECU compares the measured air pressure values with the air pressure threshold. When the measured air pressure value is less than this threshold, the NOTICE: * When replacing the tire pressure warning ECU, read the IDs stored in the old ECU using a Techstream and write them down before removal. * It is necessary to perform registration See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Service and Repair of the transmitter IDs into the tire pressure warning ECU after the ECU and/or valve and transmitter has been replaced. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "READ OUTPUT DTC (DTC C2173/73) (a) Turn the ignition switch off. (b) Connect a Techstream to the DLC3. (c) Turn the ignition switch to ON and turn the Techstream on. (d) Enter the following menus: Chassis / Tire Pressure Monitor / Trouble Codes / (e) Read DTCs. Result NOTICE: When DTC C2173/73 is output, troubleshoot that DTC first. Then troubleshoot DTCs C2121/21 to C2124/24. B --  GO TO DTC C2173/73  See: C2173 A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK FREQUENCY RECEIVING CONDITION (a) Check if the vehicle is located in areas such as the ones described below: (1) Facilities or devices that use similar radio frequencies are located in the vicinity of the vehicle. HINT If the vehicle is located in areas described above, the tire pressure warning light may turn on only in a particular area. (2) Devices using similar radio frequencies are used in the vehicle. OK: Facilities, or devices that use similar radio frequencies are not located in the vicinity of the vehicle. HINT Radio frequency may be interrupted due to surroundings or devices installed by the user. NG --  CHECK IF ANY DEVICE IS INSTALLED BY USER OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "IDENTIFY TRANSMITTER CORRESPONDING TO DTC (a) Set the tire pressure to the appropriate specified values    See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Service Precautions. (b) Turn the ignition switch off. (c) Connect a Techstream to the DLC3. (d) Turn the ignition switch to ON and turn the Techstream on. (e) Enter the following menus: Chassis / Tire Pressure Monitor / Data List / (f) Check the values by referring to the table below. Tire Pressure Monitor HINT *: It may take about 2 or 3 minutes until the values are displayed. (g) Rapidly reduce the tire pressure for each wheel at least 40 kPa (0.4 kgf/cm2, 5.8 psi) within 30 seconds. (h) Check the Data List. NOTICE: * It takes about 2 or 3 minutes to display the updated tire pressure data. * When no \"ID Tire Inflation Pressure\" data has changed, reset the tire pressure to the appropriate specified value and rotate the tire 90 to 270°. Then rapidly release the tire pressure and recheck it. * Record the \"ID Tire Inflation Pressure\" data transmitter ID that corresponds to each tire. (i) After confirming that the \"ID Tire Inflation Pressure\" data for one tire (ID1 to ID4) has changed, repeat this procedure one by one. Identify the transmitter that corresponds to the DTC. Result B --  CHECK TRANSMITTER ID C --  END A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "CHECK HARNESS AND CONNECTOR (ECU - RECEIVER) (a) Disconnect the D78 ECU connector. (b) Disconnect the J46 receiver connector. (c) Measure the resistance according to the value(s) in the table below. Standard resistance: NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "CHECK TRANSMITTER ID (a) Turn the ignition switch off. (b) Connect a Techstream to the DLC3. (c) Turn the ignition switch to ON and turn the Techstream on. (d) Enter the following menus: Chassis / Tire Pressure Monitor / Data List / (e) Check the values by referring to the table below. Tire Pressure Monitor (f) Check the ID number on the identified transmitter by removing it from the tire and wheel. (g) Confirm that the ID number on the transmitter and recorded transmitter ID match. Result B --  REGISTRATION OF TRANSMITTER ID A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "REPLACE TIRE PRESSURE WARNING VALVE AND TRANSMITTER (a) Replace the tire pressure warning valve and transmitter    See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Tire Pressure Sensor/Service and Repair/Removal and Replacement/Removal. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "REGISTRATION OF TRANSMITTER ID (a) Perform registration    See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Service and Repair. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "CONFIRM TIRE INFLATION PRESSURE (DATA LIST) (a) Turn the ignition switch off. (b) Connect a Techstream to the DLC3. (c) Turn the ignition switch to ON and turn the Techstream on. (d) Enter the following menus: Chassis / Tire Pressure Monitor/ Data List / (e) Check the values by referring to the table below. Tire Pressure Monitor HINT * *: It may take about 2 or 3 minutes until the values are displayed. * When no \"ID Tire Inflation Pressure\" data has changed, reset the tire pressure to the appropriate specified value and rotate the tire 90 to 270°. Then rapidly release the tire pressure and recheck it. Result B --  END A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "REPLACE TIRE PRESSURE WARNING ANTENNA AND RECEIVER (a) Replace the tire pressure warning antenna and receiver    See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Tire Pressure Monitor Receiver / Transponder/Service and Repair/Removal. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "CONFIRM TIRE INFLATION PRESSURE (DATA LIST) (a) Turn the ignition switch off. (b) Connect a Techstream to the DLC3. (c) Turn the ignition switch to ON and turn the Techstream on. (d) Enter the following menus: Chassis / Tire Pressure Monitor / Data List / (e) Check the values by referring to the table below. Tire Pressure Monitor HINT * *: It may take about 2 or 3 minutes until the values are displayed. * When no \"ID Tire Inflation Pressure\" data has changed, reset the tire pressure to the appropriate specified value and rotate the tire 90 to 270°. Then rapidly release the tire pressure and recheck it. Result B --  REPLACE TIRE PRESSURE WARNING ECU  See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Tire Pressure Module/Service and Repair/Removal A --  END",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2126",
+      "description": "26 - Transmitter ID not Received in Main Mode After all IDs are registered, DTC C2126/26 is set in the tire pressure warning ECU and the tire pressure warning light blinks for 1 minute and then comes on. When the tire pressure warning ECU successfully receives radio waves from all the transmitters whose IDs are stored in the ECU, DTC C2126/26 is deleted and the tire pressure warning light goes off. HINT If the IDs stored in the tire pressure warning ECU differ from the transmitter IDs, DTC C2126/26 is set. Check that the IDs in the ECU are the same as the transmitter IDs. NOTICE: * When replacing the tire pressure warning ECU, read the IDs stored in the old ECU using a Techstream and write them down before removal. * It is necessary to perform registration See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Service and Repair of the transmitter IDs into the tire pressure warning ECU after the ECU and/or valve and transmitter has been replaced. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "IDENTIFY TRANSMITTER NOT RECEIVED (a) Set the tire pressure to the appropriate specified values    See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Service Precautions. (b) Turn the ignition switch off. (c) Connect a Techstream to the DLC3. (d) Turn the ignition switch to ON and turn the Techstream on. (e) Enter the following menus: Chassis / Tire Pressure Monitor / Data List / (f) Check the values by referring to the table below. Tire Pressure Monitor HINT *: It may take about 2 or 3 minutes until the values are displayed. (g) Rapidly reduce the tire pressure for each wheel at least 40 kPa (0.4 kgf/cm2, 5.8 psi) within 30 seconds. (h) Check the Data List. NOTICE: * It takes about 2 or 3 minutes to display the updated tire pressure data. * When no \"ID Tire Inflation Pressure\" data has changed, reset the tire pressure to the appropriate specified value and rotate the tire 90 to 270°. Then rapidly release the tire pressure and recheck it. * Record the \"ID Tire Inflation Pressure\" data transmitter ID that corresponds to each tire. (i) After confirming that the \"ID Tire Inflation Pressure\" data for one tire (ID1 to ID4) has changed, repeat this procedure one by one. Identify the transmitter not received. Result B --  END A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK TRANSMITTER ID (a) Turn the ignition switch off. (b) Connect a Techstream to the DLC3. (c) Turn the ignition switch to ON and turn the Techstream on. (d) Enter the following menus: Chassis / Tire Pressure Monitor / Data List / (e) Check the values by referring to the table below. Tire Pressure Monitor (f) Check the ID number on the identified transmitter by removing it from the tire and wheel. (g) Confirm that the ID number on the transmitter and recorded transmitter ID match. Result B --  REGISTRATION OF TRANSMITTER ID A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "REPLACE TIRE PRESSURE WARNING VALVE AND TRANSMITTER (a) Replace the tire pressure warning valve and transmitter    See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Tire Pressure Sensor/Service and Repair/Removal and Replacement/Removal. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "REGISTRATION OF TRANSMITTER ID (a) Perform registration    See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Service and Repair. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "CONFIRM TIRE INFLATION PRESSURE (DATA LIST) (a) Turn the ignition switch off. (b) Connect a Techstream to the DLC3. (c) Turn the ignition switch to ON and turn the Techstream on. (d) Enter the following menus: Chassis / Tire Pressure Monitor/ Data List / (e) Check the values by referring to the table below. Tire Pressure Monitor HINT * *: It may take about 2 or 3 minutes until the values are displayed. * When no \"ID Tire Inflation Pressure\" data has changed, reset the tire pressure to the appropriate specified value and rotate the tire 90 to 270°. Then rapidly release the tire pressure and recheck it. Result B --  END A -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "REPLACE TIRE PRESSURE WARNING ANTENNA AND RECEIVER (a) Replace the tire pressure warning antenna and receiver    See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Tire Pressure Monitor Receiver / Transponder/Service and Repair/Removal. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "CONFIRM TIRE INFLATION PRESSURE (DATA LIST) (a) Turn the ignition switch off. (b) Connect a Techstream to the DLC3. (c) Turn the ignition switch to ON and turn the Techstream on. (d) Enter the following menus: Chassis / Tire Pressure Monitor / Data List / (e) Check the values by referring to the table below. Tire Pressure Monitor HINT * *: It may take about 2 or 3 minutes until the values are displayed. * When no \"ID Tire Inflation Pressure\" data has changed, reset the tire pressure to the appropriate specified value and rotate the tire 90 to 270°. Then rapidly release the tire pressure and recheck it. Result B --  REPLACE TIRE PRESSURE WARNING ECU  See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Tire Pressure Module/Service and Repair/Removal A --  END",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2141",
+      "description": "41-C2144/44: Transmitter ID1 Error",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2144",
+      "description": "44 - Transmitter ID4 Error The tire pressure warning valves and transmitters that are installed in the tire and wheel assemblies measure the air pressure of the tires. The measured values are transmitted to the tire pressure warning antenna and receiver on the body as radio waves and then sent to the tire pressure warning ECU. The ECU compares the measured air pressure values with the air pressure threshold. When the measured air pressure value is less than this threshold, the NOTICE: * When replacing the tire pressure warning ECU, read the IDs stored in the old ECU using a Techstream and write them down before removal. * It is necessary to perform registration See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Service and Repair of the transmitter IDs into the tire pressure warning ECU after the ECU and/or valve and transmitter has been replaced. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "IDENTIFY TRANSMITTER CORRESPONDING TO DTC (a) Set the tire pressure to the specified value    See: Maintenance/Wheels and Tires/Testing and Inspection/Component Tests and General Diagnostics. (b) Turn the ignition switch off. (c) Connect a Techstream to the DLC3. (d) Turn the ignition switch to ON and turn the Techstream on. (e) Enter the following menus: Chassis / Tire Pressure Monitor / Data List (f) Display the \"ID Tire Inflation Pressure\" data for each wheel using the Techstream. (g) Rapidly reduce the tire pressure for each wheel at least 40 kPa (0.4 kgf/cm2, 5.8 psi) within 30 seconds. If \"ID Tire Inflation Pressure\" data displayed on the Techstream (ID1 to ID4) does not change, the tire pressure warning valve and transmitter corresponding to the unchanged \"ID Tire Inflation Pressure\" data was the cause of the output DTC. HINT * Identify the malfunctioning tire pressure warning valve and transmitter by repeatedly decreasing the tire pressure for each tire. * Record which \"ID Tire Inflation Pressure\" data (ID1 to ID4) corresponds to which tire. Tire Pressure Monitor HINT *: It may take about 2 or 3 minutes until the values are displayed. If the values are not displayed after a few minutes, perform according to the inspection procedure for DTCs C2121/21 to C2124/24    See: C2121. (h) Check the Data List. Result NOTICE: * When \"ID Tire Inflation Pressure\" data has not changed, reset the tire pressure to the appropriate specified value and rotate the tire 90 to 270°. Then forcibly transmit the transmitter ID and recheck. * Record the transmitter ID and position of transmitters that are normal. (i) When the \"ID Tire Inflation Pressure\" data (ID1 to ID4) has changed, repeat this procedure to identify the tire pressure warning valve and transmitter that corresponds to the DTC. (j) When all of the \"ID Tire Inflation Pressure\" data (ID1 to ID4) has changed, identify the malfunctioning tire pressure warning valve and transmitter using recorded ID numbers and output DTC. (k) Set the tire pressures to the appropriate specified values    See: Maintenance/Wheels and Tires/Testing and Inspection/Component Tests and General Diagnostics. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "REPLACE TIRE PRESSURE WARNING VALVE AND TRANSMITTER (a) Replace the identified tire pressure warning valve and transmitter with a new one    See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Tire Pressure Sensor/Service and Repair/Removal and Replacement/Removal. HINT * Before installing a new tire pressure warning valve and transmitter, read and write down its transmitter ID. * The IDs for the tire pressure warning valves and transmitters that are not replaced should be checked using the tester and recorded. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "REGISTRATION OF TRANSMITTER ID (a) Register the transmitter ID for all wheels    See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Service and Repair. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "CONFIRM TIRE INFLATION PRESSURE (DATA LIST) (a) Turn the ignition switch off. (b) Connect a Techstream to the DLC3. (c) Turn the ignition switch to ON and turn the Techstream on. (d) Enter the following menus: Chassis / Tire Pressure Monitor / Data List (e) Check the values by referring to the table below. Tire Pressure Monitor HINT * *: It may take about 2 or 3 minutes until the values are displayed. * When no \"ID Tire Inflation Pressure\" data has changed, reset the tire pressure to the appropriate specified value and rotate the tire 90 to 270°. Then rapidly release the tire pressure and recheck it. Result B --  END A --  REPLACE TIRE PRESSURE WARNING ECU  See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Tire Pressure Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2165",
+      "description": "65-C2168/68: Abnormal Temperature Inside ID1 Tire",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2168",
+      "description": "68 - Abnormal Temperature Inside ID4 Tire Each tire pressure warning valve and transmitter measures the internal temperature of its tire as well as tire pressure, and transmits the information to the tire pressure warning ECU along with the transmitter ID. If the measured temperature is out of the specified range, the tire pressure warning ECU recognizes it as a malfunction and outputs DTCs, and the tire pressure warning light blinks for 1 minute and then remains on. HINT It is necessary to perform the procedure to identify the tire pressure warning valve and transmitter that is malfunctioning because it cannot be identified by the output DTC. NOTICE: * When replacing the tire pressure warning ECU, read the IDs stored in the old ECU using a Techstream and note them down before removal. * It is necessary to perform registration See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Service and Repair of the transmitter IDs into the tire pressure warning ECU after the ECU and/or valve and transmitter has been replaced. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CHECK TIRES (a) Check that the tires are not flat, and have no indication of air pressure drop. OK: Tires are normal. HINT If a tire is damaged, the tire pressure warning valve and transmitter may also have been damaged at the same time. NG --  REPLACE TIRE AND TIRE PRESSURE WARNING VALVE AND TRANSMITTER  See: Instrument Panel, Gauges and",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "IDENTIFY TRANSMITTER CORRESPONDING TO DTC (a) Set the tire pressure to the specified value    See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Service Precautions. (b) Turn the ignition switch off. (c) Connect a Techstream to the DLC3. (d) Turn the ignition switch to ON and turn the Techstream on. (e) Enter the following menus: Chassis / Tire Pressure Monitor / Data List / (f) Display the \"ID Tire Inflation Pressure\" data for each wheel using the Techstream. (g) Rapidly reduce the tire pressure for each wheel at least 40 kPa (0.4 kgf/cm2, 5.8 psi) within 30 seconds. (h) Check the Data List. Tire Pressure Monitor HINT *: It may take about 2 or 3 minutes until the values are displayed. If the values are not displayed after a few minutes, perform according to the inspection procedure for DTCs C2121/21 to C2124/24    See: C2121. Result NOTICE: * It takes about 2 or 3 minutes to display the updated tire pressure data. * When no \"ID Tire Inflation Pressure\" data has changed, reset the tire pressure to the appropriate specified value and rotate the tire 90 to 270°. Then forcibly transmit the transmitter ID and recheck it. * Record the transmitter ID and position of transmitters that are normal. (i) When the \"ID Tire Inflation Pressure\" data (ID1 to ID4) has changed, repeat this procedure to identify the tire pressure warning valve and transmitter that corresponds to the DTC. (j) When all of the \"ID Tire Inflation Pressure\" data (ID1 to ID4) has changed, identify the malfunctioning tire pressure warning valve and transmitter based on the recorded ID numbers and output DTC. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "REPLACE TIRE PRESSURE WARNING VALVE AND TRANSMITTER (a) Replace the identified tire pressure warning valve and transmitter with a new one    See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Tire Pressure Sensor/Service and Repair/Removal and Replacement/Removal. HINT * Before installing a new tire pressure warning valve and transmitter, read and write down its transmitter ID. * The IDs for the tire pressure warning valves and transmitters that are not replaced should be checked using the tester and recorded. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "CHECK REGISTRATION OF TRANSMITTER ID (a) Register the transmitter ID for all wheels    See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Service and Repair. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "CONFIRM TIRE INFLATION PRESSURE (DATA LIST) (a) Turn the ignition switch off. (b) Connect a Techstream to the DLC3. (c) Turn the ignition switch to ON and turn the Techstream on. (d) Enter the following menus: Chassis / Tire Pressure Monitor / Data List / (e) Check the values by referring to the table below. Tire Pressure Monitor HINT * *: It may take about 2 or 3 minutes until the values are displayed. * When no \"ID Tire Inflation Pressure\" data has changed, reset the tire pressure to the appropriate specified value and rotate the tire 90 to 270°. Then rapidly release the tire pressure and recheck it. Result B --  END A --  REPLACE TIRE PRESSURE WARNING ECU  See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Tire Pressure Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2171",
+      "description": "71 - Transmitter ID not Registered The IDs of each tire pressure warning valve and transmitter are registered in the tire pressure warning ECU. When the ECU detects that transmitter ID code is not registered in the ECU, a DTC is output. NOTICE: * When replacing the tire pressure warning ECU, read the IDs stored in the old ECU using a Techstream and write them down before removal. * It is necessary to perform registration See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Service and Repair of the transmitter IDs into the tire pressure warning ECU after the ECU has been replaced. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CONFIRM REGISTRATION CONDITION (REGISTERED ID CODES) (a) Turn the ignition switch off. (b) Connect a Techstream to the DLC3. (c) Turn the ignition switch to ON and turn the Techstream on. (d) Enter the following menus: Chassis / Tire Pressure Monitor / Data List / (e) Check the values by referring to the table below. Tire Pressure Monitor OK: The registered transmitter ID codes are displayed on the Techstream screen. NG --  PERFORM REGISTRATION (TRANSMITTER ID) OK --  REPLACE TIRE PRESSURE WARNING ECU  See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Tire Pressure Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "PERFORM REGISTRATION (TRANSMITTER ID) (a) Register the transmitter IDs for all the wheels    See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Service and Repair. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CONFIRM TIRE INFLATION PRESSURE (DATA LIST) (a) Turn the ignition switch off. (b) Connect a Techstream to the DLC3. (c) Turn the ignition switch to ON and turn the Techstream on. (d) Enter the following menus: Chassis / Tire Pressure Monitor / Data List / (e) Check the values by referring to the table below. Tire Pressure Monitor HINT * *: It may take about 2 or 3 minutes until the values are displayed. * When no \"ID Tire Inflation Pressure\" data has changed, reset the tire pressure to the appropriate specified value and rotate the tire 90 to 270°. Then rapidly release the tire pressure and recheck it. Result B --  REPLACE TIRE PRESSURE WARNING ECU  See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Tire Pressure Module/Service and Repair/Removal A --  END",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2173",
+      "description": "73 - Vehicle Speed or Engine Speed Signal Malfunction The tire pressure warning ECU receives a vehicle speed signal from the combination meter and an engine speed signal from the ECM. The tire pressure NOTICE: * When replacing the tire pressure warning ECU, read the IDs stored in the old ECU using a Techstream and write them down before removal. * It is necessary to perform registration See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Service and Repair of the transmitter IDs into the tire pressure warning ECU after the ECU has been replaced. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "PERFORM SIGNAL CHECK (VEHICLE SPEED SIGNAL AND ENGINE SPEED SIGNAL) (a) Enter the signal check mode in TEST MODE PROCEDURE    See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Testing and Inspection/Scan Tool Testing and Procedures/Test Mode Procedure. (b) Drive the vehicle at 20 km/h (12 mph) or more for 10 seconds to erase DTC C2191/91 and C2194/94. (c) Check the test mode DTCs. Result HINT DTCs C2181/81 to C2184/84 (Transmitter ID not Received) are output at this time, but they are not related to this check. B --  GO TO DTC C2191/91  See: C2191 C --  GO TO DTC C2194/94  See: C2194 A --  USE SIMULATION METHOD TO CHECK  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/How To Proceed With Troubleshooting",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2176",
+      "description": "76 - Receiver Error This DTC is stored when, due to an ECU internal data error, data cannot be referenced. NOTICE: * When replacing the tire pressure warning ECU, read the IDs stored in the old ECU using a Techstream and write them down before removal. * It is necessary to perform registration See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Service and Repair of the transmitter IDs into the tire pressure warning ECU after the ECU has been replaced. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "CLEAR DTC (a) Turn the ignition switch off. (b) Connect a Techstream to the DLC3. (c) Turn the ignition switch to ON and turn the Techstream on. (d) Enter the following menus: Chassis / Tire Pressure Monitor / Trouble Codes / (e) Clear the DTCs. NEXT -- Continue to next step.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "CHECK FOR DTC HINT After clearing DTCs, turn the ignition switch off and ON once. (a) Turn the ignition switch off. (b) Connect a Techstream to the DLC3. (c) Turn the ignition switch to ON and turn the Techstream on. (d) Enter the following menus: Chassis / Tire Pressure Monitor / Trouble Codes / (e) Check for DTCs. Result B --  REPLACE TIRE PRESSURE WARNING ECU  See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Tire Pressure Module/Service and Repair/Removal A --  USE SIMULATION METHOD TO CHECK  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/How To Proceed With Troubleshooting",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2191",
+      "description": "91 - Vehicle Speed Signal Error (Test Mode DTC) The tire pressure warning ECU receives a vehicle speed signal from the combination meter. This DTC is stored upon entering test mode, and cleared when a vehicle speed signal of 20 km/h (12 mph) is detected for 3 seconds or more. This DTC is output only in test mode. NOTICE: * When replacing the tire pressure warning ECU, read the transmitter IDs stored in the old ECU using a Techstream and write them down before removal. * It is necessary to perform registration See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Service and Repair of the transmitter IDs into the tire pressure warning ECU after the ECU has been replaced. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "READ VALUE USING TECHSTREAM (VEHICLE SPEED) (a) Turn the ignition switch off. (b) Connect a Techstream to the DLC3. (c) Turn the ignition switch to ON and the Techstream on. (d) Enter the following menus: Chassis / Tire Pressure Monitor / Data List (e) Check that the values indicated on the Techstream and on the combination meter are the same. Tire Pressure Monitor OK: Vehicle speed indicated on the Techstream and on the combination meter are the same. NG --  INSPECT TIRE PRESSURE WARNING ECU (SPD SIGNAL) OK --  USE SIMULATION METHOD TO CHECK  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/How To Proceed With Troubleshooting",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "INSPECT TIRE PRESSURE WARNING ECU (SPD SIGNAL) (a) Disconnect the D78 ECU connector. (b) Jack up the vehicle. (c) Move the shift lever to N. (d) Turn the ignition switch to ON. (e) Check the waveform of the ECU connector using an oscilloscope, while turning the wheel slowly. OK: Tool Setting HINT * The wavelength becomes shorter as the vehicle speed increases. * Depending on the vehicle, the output waveform voltage may rise to 12 V if influenced by optionally installed systems. NG --  CHECK HARNESS AND CONNECTOR (TIRE PRESSURE WARNING ECU - COMBINATION METER) OK --  REPLACE TIRE PRESSURE WARNING ECU  See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Tire Pressure Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK HARNESS AND CONNECTOR (TIRE PRESSURE WARNING ECU - COMBINATION METER) (a) Disconnect the D78 ECU connector. (b) Disconnect the D1 meter connector. (c) Measure the resistance according to the value(s) in the table below. Standard resistance: Result B --  REPLACE COMBINATION METER  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Service and Repair/Removal and Replacement/Removal A --  REPAIR OR REPLACE HARNESS OR CONNECTOR",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "C2194",
+      "description": "94 - Engine Speed Signal Error (Test Mode DTC) The tire pressure warning ECU receives an engine speed signal from the ECM. This DTC is stored upon entering test mode, and cleared when an engine speed signal of 1000 rpm or more is detected for 3 seconds or more. This DTC is output only in test mode. NOTICE: * When replacing the tire pressure warning ECU, read the transmitter IDs stored in the old ECU using a Techstream and write them down before removal. * It is necessary to perform registration See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Service and Repair of the transmitter IDs into the tire pressure warning ECU after the ECU has been replaced. PROCEDURE",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "READ VALUE USING TECHSTREAM (ENGINE SPEED) (a) Turn the ignition switch off. (b) Connect a Techstream to the DLC3. (c) Turn the ignition switch ON and the Techstream ON. (d) Enter the following menus: Chassis / Tire Pressure Monitor / Data List (e) Check that the values indicated on the Techstream and on the combination meter are the same. Tire Pressure Monitor OK: Engine speed indicated on the Techstream and on the combination meter are the same. NG --  INSPECT TIRE PRESSURE WARNING ECU (TACH SIGNAL) OK --  USE SIMULATION METHOD TO CHECK  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Diagrams/Diagnostic Aids/How To Troubleshoot ECU Controlled Systems/How To Proceed With Troubleshooting",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "INSPECT TIRE PRESSURE WARNING ECU (TACH SIGNAL) (a) Disconnect the D78 ECU connector. (b) Start the engine. (c) Check the waveform of the ECU connector using an oscilloscope, while idling the engine. OK: Tool Setting HINT The wavelength becomes shorter as the engine speed increases. NG --  CHECK HARNESS AND CONNECTOR (TIRE PRESSURE WARNING ECU - ECM) OK --  REPLACE TIRE PRESSURE WARNING ECU  See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Tire Pressure Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "CHECK HARNESS AND CONNECTOR (TIRE PRESSURE WARNING ECU - ECM) (a) Disconnect the D78 ECU connector. (b) Disconnect the A21 ECM connector. (c) Measure the resistance according to the value(s) in the table below. Standard resistance: NG --  REPAIR OR REPLACE HARNESS OR CONNECTOR OK --  REPLACE ECM  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Service and Repair/Removal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

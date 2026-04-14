@@ -1,0 +1,917 @@
+{
+  "source_file": "Hyundai_Elantra_C.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 22,
+  "dtcs": [
+    {
+      "dtc_code": "U0001",
+      "description": "High Speed CAN Communication Bus off (C-CAN) The controllers are mounted on the vehicle communicates others by CAN(H-CAN, C-CAN) communication way to share information and control their logic. the C-CAN communication is connected with two wires phyiscally to send information. In order to successfully perform CAN communication, BMS-ECU and PCM are equipped with an internal 120Ohms termination resistor. BMS ECU sets the DTC related to CAN Communication when the CAN communication does not fail by any cause. Field action when High Voltage Battery discharges BMS ECU sets DTC U0001 when C-CAN communication error occurs among controllersAlthough it occurs, the service lamp is not turned on. If it is recovery to a normal state, the current DTC will delete after lasting 2 terms driving cylcle(IG ON /OFF), and thengenerate a historic DTC( H character is displayed at the end of the DTC code). At the same time the service lamp turns off, the scantool could delete the historic DTC. DTC Detecting Condition Specification Diagnostic Circuit Diagram HEV Battery System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect GDS and select \"DTC Analysis\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Click \"DTC Status\" on the menu bar to see DTC's information.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Confirm that \"DTC Readiness Flag\" indicates \"COMPLETED\". If not, drive the vehicle within conditions noted in the freeze frame data or enable conditions.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Read \"DTC Status\" parameter.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed \"History(Not Present) fault\"?",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "s the measured value within specification ? Check signal waveform of C-CAN LOW sigal circuit and C-CAN HIGH signal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U05A0",
+      "description": "Invalid Data Received from Evaporative Emission System Leak Detection Control Module The Evaporative system monitoring is made by using Natural Vacuum Leak Detection (NVLD). The leak detection is made by using two components. The \"NVLD Sensor module\" which incorporates the NVLD pressure switch and temperature sensor. And the canister purge valve which is used as actuator to create vacuum in the tank when the engine is running.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect GDS and select \"DTC Analysis\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Click \"DTC Status\" on the menu bar to see DTC's information.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Confirm that \"DTC Readiness Flag\" indicates \"COMPLETED\". If not, drive the vehicle within conditions noted in the freeze frame data or enable conditions.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Read \"DTC Status\" parameter.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed \"History(Not Present) fault\"?",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U029F",
+      "description": "Lost Communication with Evaporative Emission System Leak Detection Control Module The Evaporative system monitoring is made by using Natural Vacuum Leak Detection (NVLD). The leak detection is made by using two components. The \"NVLD Sensor module\" which incorporates the NVLD pressure switch and temperature sensor. And the canister purge valve which is used as actuator to create vacuum in the tank when the engine is running.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect GDS and select \"DTC Analysis\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Click \"DTC Status\" on the menu bar to see DTC's information.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Confirm that \"DTC Readiness Flag\" indicates \"COMPLETED\". If not, drive the vehicle within conditions noted in the freeze frame data or enable conditions.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Read \"DTC Status\" parameter.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed \"History(Not Present) fault\"?",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100",
+      "description": "Lost Communication With ECM/PCM Several control units are applied to electronically controlled vehicles. These units perform each control with information from various sensors. Thus, sharing signal information from sensors is needed, so CAN communication type whose communication speed is high and insensitive to electrical noise by spark generation is adopted to controlling power-train(PCM(ECM), TCM, ESP PCM(ECM), ABS PCM(ECM)). As sharing signals of engine speed, APS, gear shifting, torque reduction in ESP and various modules, active control is performed. This DTC is set when PCM/TCM detects that no message is received from CAN communication line. DTC Detecting Condition Diagnostic Circuit Diagram Automatic Transaxle",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? CAN communication circuit inspection CAN communication line inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure the resistance between CAN-LOW terminal of HCU harness connector and CAN-LOW terminal of PCM harness connector. Specification :Below 1Ohms",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured registance within specification ? Verification of Vehicle Repair HEV Control System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0101",
+      "description": "Lost Communication With TCM A communication line exists between the Engine Control Module(PCM) and the Transaxle Control Module(TCM). The communication is through a Control Area Network(CAN). Without CAN communication, an independent pin and wiring is needed to receive a sensor information from a PCM. The more information to be communicated, the more wirings is required. In case of CAN communication type, all the information need to be communicated among control modules such as PCM and ABS control module use CAN lines. The PCM determines CAN communication error and sets DTC U0101 if no message received from TCM. DTC Detecting Condition Diagnostic Circuit Diagram Engine Control",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect GDS and select \"DTC Analysis\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Click \"DTC Status\" on the menu bar to see DTC's information.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Confirm that \"DTC Readiness Flag\" indicates \"COMPLETED\". If not, drive the vehicle within conditions noted in the freeze frame data or enable conditions.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Read \"DTC Status\" parameter.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is parameter displayed \"History(Not Present) fault\"?",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0110",
+      "description": "Lost Communication With Drive Motor Control Module (C-CAN) The controllers are mounted on the vehicle communicates others by CAN(H-CAN, C-CAN) communication way to share information and control their logic. the C-CAN communication is connected with two wires phyiscally to send information. In order to successfully perform CAN communication, BMS-ECU and PCM are equipped with an internal 120Ohms termination resistor. BMS ECU sets the DTC related to CAN Communication when the CAN communication does not fail by any cause. Field action when High Voltage Battery discharges BMS ECU sets DTC U0110 when BMS ECU could not communicate with a MCU via C-CAN.Although it occurs, the service lamp is not turned on. If it is recovery to a normal state, the current DTC will delete after lasting 2 terms driving cylcle(IG ON /OFF), and thengenerate a historic DTC( H character is displayed at the end of the DTC code). At the same time the service lamp turns off, the scantool could delete the historic DTC. DTC Detecting Condition Specification Diagnostic Circuit Diagram HEV Battery System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration,or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? CAN communication circuit inspection CAN communication line inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure the resistance between CAN-LOW terminal of HCU harness connector and CAN-LOW terminal of MCU harness connector. Specification :below 1Ohms",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured registance within specification ? Verification of Vehicle Repair Engine Control",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "s the measured value within specification ? Check signal waveform of C-CAN LOW sigal circuit and C-CAN HIGH signal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0111",
+      "description": "Lost Communication With Battery Energy Control Module Componet Location Several control units are applied to electronically controlled vehicles. These units perform each control with informations from various sensors. Thus, sharing signal information from sensors is needed, so CAN communication type whose communication speed is high and insensitive to electrical noise by spark generation is adopted to controlling power-train & Chassis & HEV. The HCU sets DTC U0111 if No message during 2s has not been received through the CAN signal. DTC Detecting Condition Diagnostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration,or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? CAN communication circuit inspection CAN communication line inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure the resistance between CAN-LOW terminal of HCU harness connector and CAN-LOW terminal of BMS harness connector. Specification :below 1Ohms",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured registance within specification ? Verification of Vehicle Repair Engine Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0122",
+      "description": "Lost Communication With Vehicle Dynamics Control Module Several control units are applied to electronically controlled vehicles. These units perform each control with informations from various sensors. Thus, sharing signal information from sensors is needed, so CAN communication type whose communication speed is high and insensitive to electrical noise by spark generation is adopted to controlling power-train & Chassis & HEV. The HCU sets DTC U0122 if No message during 0.5s has not been received through the CAN signal. DTC Detecting Condition Diagnostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? CAN communication circuit inspection CAN communication line inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure the resistance between CAN-LOW terminal of HCU harness connector and CAN-LOW terminal of ESC harness connector. Specification :Below 1Ohms",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured registance within specification ? Verification of Vehicle Repair HEV Control System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0129",
+      "description": "Lost Communication With Brake System Control Module Several control units are applied to electronically controlled vehicles. These units perform each control with informations from various sensors. Thus, sharing signal information from sensors is needed, so CAN communication type whose communication speed is high and insensitive to electrical noise by spark generation is adopted to controlling power-train & Chassis & HEV. The HCU sets DTC U0129 if No message during 0.5s has not been received through the CAN signal. DTC Detecting Condition Diagnostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? CAN communication circuit inspection CAN communication line inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure the resistance between CAN-LOW terminal of HCU harness connector and CAN-LOW terminal of ABS harness connector. Specification :Below 1Ohms",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured registance within specification ? Verification of Vehicle Repair HEV Control System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0155",
+      "description": "Lost Communication With Instrument Panel Cluster (IPC) Control Module Several control units are applied to electronically controlled vehicles. These units perform each control with informations from various sensors. Thus, sharing signal information from sensors is needed, so CAN communication type whose communication speed is high and insensitive to electrical noise by spark generation is adopted to controlling power-train & Chassis & HEV. The HCU sets DTC U0155 if No message during 0.5 - 2.0s has not been received through the CAN signal. DTC Detecting Condition Diagnostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? CAN communication circuit inspection CAN communication line inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure the resistance between CAN-LOW terminal of HCU harness connector and CAN-LOW terminal of CLU harness connector. Specification :Below 1Ohms",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured registance within specification ? Verification of Vehicle Repair HEV Control System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0164",
+      "description": "Lost Communication with HVAC Control Module Several control units are applied to electronically controlled vehicles. These units perform each control with informations from various sensors. Thus, sharing signal information from sensors is needed, so CAN communication type whose communication speed is high and insensitive to electrical noise by spark generation is adopted to controlling power-train & Chassis & HEV. The HCU sets DTC U0164 if No message during 2s has not been received through the CAN signal. DTC Detecting Condition Diagnostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? CAN communication circuit inspection CAN communication line inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure the resistance between CAN-LOW terminal of HCU harness connector and CAN-LOW terminal of FATC harness connector. Specification :Below 1Ohms",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured registance within specification ? Verification of Vehicle Repair HEV Control System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0293",
+      "description": "Lost Communication With Hybrid Powertrain Contral Module (C-CAN) The controllers are mounted on the vehicle communicates others by CAN(H-CAN, C-CAN) communication way to share information and control their logic. the C-CAN communication is connected with two wires phyiscally to send information. In order to successfully perform CAN communication, BMS-ECU and PCM are equipped with an internal 120Ohms termination resistor. BMS ECU sets the DTC related to CAN Communication when the CAN communication does not fail by any cause. Field action when High Voltage Battery discharges BMS ECU sets DTC U0293 when BMS ECU could not communicate with a HCU via C-CAN.Although it occurs, the service lamp is not turned on. If it is recovery to a normal state, the current DTC will delete after lasting 2 terms driving cylcle(IG ON /OFF), and thengenerate a historic DTC( H character is displayed at the end of the DTC code). DTC Detecting Condition Specification Diagnostic Circuit Diagram HEV Battery System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration,or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? CAN communication circuit inspection CAN communication line inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure the resistance between CAN-LOW terminal of HCU harness connector and CAN-LOW terminal of ESC harness connector. Specification :below 1Ohms",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured registance within specification ? Verification of Vehicle Repair Engine Control",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "s the measured value within specification ? Check signal waveform of C-CAN LOW sigal circuit and C-CAN HIGH signal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0298",
+      "description": "Lost Communication with DC to DC Converter Control Module Several control units are applied to electronically controlled vehicles. These units perform each control with informations from various sensors. Thus, sharing signal information from sensors is needed, so CAN communication type whose communication speed is high and insensitive to electrical noise by spark generation is adopted to controlling power-train & Chassis & HEV. The HCU sets DTC U0298 if No message during 2s has not been received through the CAN signal. DTC Detecting Condition Diagnostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? CAN communication circuit inspection CAN communication line inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure the resistance between CAN-LOW terminal of HCU harness connector and CAN-LOW terminal of LDC harness connector. Specification :Below 1Ohms",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured registance within specification ? Verification of Vehicle Repair HEV Control System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1001",
+      "description": "High Speed CAN Communication Bus (H-CAN) The controllers are mounted on the vehicle communicates others by CAN(H-CAN, C-CAN) communication way to share information and control their logic. the C-CAN communication is connected with two wires phyiscally to send information. In order to successfully perform CAN communication, BMS-ECU and PCM are equipped with an internal 120Ohms termination resistor. BMS ECU sets the DTC related to CAN Communication when the CAN communication does not fail by any cause. Field action when High Voltage Battery discharges BMS ECU sets DTC U1001 when H-CAN communication error occurs among controllersAlthough it occurs, the service lamp is not turned on. If it is recovery to a normal state, the current DTC will delete after lasting 2 terms driving cylcle(IG ON /OFF), and thengenerate a historic DTC( H character is displayed at the end of the DTC code). At the same time the service lamp turns off, the scantool could delete the historic DTC. DTC Detecting Condition Specification Diagnostic Circuit Diagram HEV Battery System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Check DTC with scantool.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Check that DTC related H-CAN communication is set between HCU and Each Module.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "If there any DTC related Module, check the DTC first.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Erase the DTC after inspection and repair has done.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the DTC erased ? W/Harness Inspection Engine Control",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Is the measured value within specification ? Verification of Vehicle Repair Engine Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1002",
+      "description": "Lost Communication with ECM (H-CAN) Several control units are applied to electronically controlled vehicles. These units perform each control with information from various sensors. Thus, sharing signal information from sensors is needed, so CAN communication type whose communication speed is high and insensitive to electrical noise by spark generation is adopted to controlling power-train(PCM(ECM), TCM, ESP PCM(ECM), ABS PCM(ECM)). As sharing signals of engine speed, APS, gear shifting, torque reduction in ESP and various modules, active control is performed. This DTC is set when PCM/TCM detects that no message relating EMS is received from HEV CAN communication line. DTC Detecting Condition Diagnostic Circuit Diagram Automatic Transaxle",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? CAN communication circuit inspection H-CAN communication line inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure the resistance between H-CAN-LOW terminal of HCU harness connector and H-CAN-LOW terminal of PCM harness connector. Specification :Below 1Ohms",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured registance within specification ? Verification of Vehicle Repair HEV Control System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1003",
+      "description": "Lost Communication with TCM (H-CAN) Several control units are applied to electronically controlled vehicles. These units perform each control with informations from various sensors. Thus, sharing signal information from sensors is needed, so CAN communication type whose communication speed is high and insensitive to electrical noise by spark generation is adopted to controlling power-train & Chassis & HEV. The PCM sets DTC U1002 if No message during 100m sec has not been received through the H-CAN signal. DTC Detecting Condition Diagnostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect GDS and select \"DTC Analysis\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Click \"DTC Status\" and confirm that \"DTC Readiness Flag\" indicates \"Complete\". If not, drive the vehicle within conditions noted in the freeze frame data or enable conditions.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Read \"DTC Status\" parameter.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is parameter displayed \"History(Not Present) fault\"? General Information HEV Control System",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured registance within specification ? Verification of Vehicle Repair HEV Control System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1004",
+      "description": "Lost Communication with Hybrid Powertrain Control Module (H-CAN) The controllers are mounted on the vehicle communicates others by CAN(H-CAN, C-CAN) communication way to share information and control their logic. the C-CAN communication is connected with two wires phyiscally to send information. In order to successfully perform CAN communication, BMS-ECU and PCM are equipped with an internal 120Ohms termination resistor. BMS ECU sets the DTC related to CAN Communication when the CAN communication does not fail by any cause. Field action when High Voltage Battery discharges BMS ECU sets DTC U1004 when BMS ECU could not communicate with a HCU via H-CAN.Although it occurs, the service lamp is not turned on. If it is recovery to a normal state, the current DTC will delete after lasting 2 terms driving cylcle(IG ON /OFF), and thengenerate a historic DTC( H character is displayed at the end of the DTC code). DTC Detecting Condition Specification Diagnostic Circuit Diagram HEV Battery System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration,or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? CAN communication circuit inspection CAN communication line inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure the resistance between CAN-LOW terminal of HCU harness connector and CAN-LOW terminal of ESC harness connector. Specification :below 1Ohms",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured registance within specification ? Verification of Vehicle Repair Engine Control",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "s the measured value within specification ? Check signal waveform of H-CAN LOW sigal circuit and H-CAN HIGH signal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1005",
+      "description": "Lost Communication with Drive Motor Control Module (H-CAN) The controllers are mounted on the vehicle communicates others by CAN(H-CAN, C-CAN) communication way to share information and control their logic. the C-CAN communication is connected with two wires phyiscally to send information. In order to successfully perform CAN communication, BMS-ECU and PCM are equipped with an internal 120Ohms termination resistor. BMS ECU sets the DTC related to CAN Communication when the CAN communication does not fail by any cause. Field action when High Voltage Battery discharges BMS ECU sets DTC U1005 when BMS ECU could not communicate with a MCU via H-CAN.Although it occurs, the service lamp is not turned on. If it is recovery to a normal state, the current DTC will delete after lasting 2 terms driving cylcle(IG ON /OFF), and thengenerate a historic DTC( H character is displayed at the end of the DTC code). At the same time the service lamp turns off, the scantool could delete the historic DTC. DTC Detecting Condition Specification Diagnostic Circuit Diagram HEV Battery System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Ignition \"ON\"& Engine \"OFF\", select \"DTC Diagnostics\" mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Check DTC is set on the scan tool when DTC self-diagnositcs.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Erase DTC with scan tool. Fig.1) DTC detection after Diagnostics",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is the DTC set again ? W/Harness Inspection HEV Battery System",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check resistance between H-CAN LOW signal and H-CAN HIGH signal terminal of disconnected BMS ECU connector. Specification :Specification : Approx. 120 Ohms",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "s the measured value within specification ? Check signal waveform of H-CAN LOW sigal circuit and H-CAN HIGH signal",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1006",
+      "description": "Lost Communication with Battery Energy Control Module Several control units are applied to electronically controlled vehicles. These units perform each control with informations from various sensors. Thus, sharing signal information from sensors is needed, so CAN communication type whose communication speed is high and insensitive to electrical noise by spark generation is adopted to controlling power-train & Chassis & HEV. The HCU sets DTC U1006 if No message during 2s has not been received through the H-CAN signal. DTC Detecting Condition Diagnostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration, or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? H-CAN communication circuit inspection H-CAN communication line inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure the resistance between H-CAN-LOW terminal of HCU harness connector and H-CAN-LOW terminal of BMS harness connector. Specification :Below 1Ohms",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured registance within specification ? Verification of Vehicle Repair HEV Control System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1007",
+      "description": "CAN Timeout OPU on C-CAN Several control units are applied to electronically controlled vehicles. These units perform each control with information from various sensors. Thus, sharing signal information from sensors is needed, so CAN communication type whose communication speed is high and insensitive to electrical noise by spark generation is adopted to controlling power-train(PCM(ECM), TCM, ESP PCM(ECM), ABS PCM(ECM)). As sharing signals of engine speed, APS, gear shifting, torque reduction in ESP and various modules, active control is performed. This DTC is set when PCM/TCM detects that no message relating OPU is received from CAN communication line. DTC Detecting Condition Diagnostic Circuit Diagram Automatic Transaxle",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect scantool to Data Link Connector(DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Engine \"ON\".",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Monitor the \"CAN Communication Service Data (Oil actual speed, Oil enable status,Oil enable status Oil pump max duty)\" parameters on the GDS. Fig 1) Channel A : OPU Status, Channel B : HALL Signal (Normal situation) Fig 2) Channel A : OPU Status, Channel B : HALL Signal (CAN Line Error)",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Is measured current data within specific? W/Harness Inspection Automatic Transaxle",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1008",
+      "description": "Lost Communication with Radiator Shutter (Active Air Flap) (C-CAN) A.A.F(=Active Air Flap) system is equipped with a flip can be opened between radiator grille and radiator. During High speed driving, it will enhance the driving stability by closing the flap to reduce the air resistance. Inside the engine room, the temperature rise is to be a concern if the components overheat the engine room. it opened the flap function to lower the internal temperature.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration,or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? CAN communication circuit inspection CAN communication line inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure the resistance between CAN-LOW terminal of HCU harness connector and CAN-LOW terminal of ESC harness connector. Specification :below 1Ohms",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured registance within specification ? Verification of Vehicle Repair Engine Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1116",
+      "description": "Lost Communication With Motor Electronics Coolant Pump (C-CAN) Several control units are applied to electronically controlled vehicles. These units perform each control with informations from various sensors. Thus, sharing signal information from sensors is needed, so CAN communication type whose communication speed is high and insensitive to electrical noise by spark generation is adopted to controlling power-train & Chassis & HEV. The MCU sets DTC U0116 if No message during 2s has not been received through the CAN signal. DTC Detecting Condition Diagnostic Circuit Diagram",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Many malfunctions in the electrical system are caused by poor harness and terminals. Faults can also be caused by interference from other electrical systems, and mechanical or chemical damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Thoroughly check connectors for looseness, poor connection, bending, corrosion, contamination, deterioration,or damage.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Has a problem been found? CAN communication circuit inspection CAN communication line inspection",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Measure the resistance between CAN-LOW terminal of MCU harness connector and CAN-LOW terminal of EWP harness connector. Specification :Below 1Ohms",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Is the measured registance within specification ? Verification of Vehicle Repair HEV Motor System",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

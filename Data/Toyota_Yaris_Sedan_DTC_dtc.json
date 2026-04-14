@@ -1,0 +1,29 @@
+{
+  "source_file": "Toyota_Yaris_Sedan_DTC.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 1,
+  "dtcs": [
+    {
+      "dtc_code": "U340E",
+      "description": "AUTOMATIC TRANSMISSION / TRANSAXLE: AUTOMATIC TRANSAXLE SYSTEM (for Sedan): DIAGNOSTIC TROUBLE CODE CHART If a DTC is displayed during the DTC check, check the parts listed in the table below and proceed to the page given. HINT * *1: \"Comes on\" means the MIL (Malfunction Indicator Lamp) illuminates. * *2: \"DTC stored\" means the ECM stores the trouble code if the ECM detects the DTC detection condition. * These DTCs may be output when the clutch, brake and gear components inside the automatic transaxle are damaged.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "TRANSPONDER KEY ECU DIAGNOSTIC TROUBLE CHART Transponder Key ECU",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "ECM DIAGNOSTIC TROUBLE CHART HINT The DTCs for the immobiliser system are specified above. If the other codes are output, check the DTC(s) chart for the engine control system. ECM Meter / Gauge System (for Sedan) METER / GAUGE / DISPLAY: METER / GAUGE SYSTEM (for Sedan): DIAGNOSTIC TROUBLE CODE CHART Occupant Classification System (for Sedan) SUPPLEMENTAL RESTRAINT SYSTEMS: OCCUPANT CLASSIFICATION SYSTEM (for Sedan): DIAGNOSTIC TROUBLE CODE CHART If a trouble code is displayed during the DTC check, check the circuit listed for the code in the table below (proceed to the page listed for that circuit). Occupant Classification ECU Power Steering System (for Sedan) POWER ASSIST SYSTEMS: POWER STEERING SYSTEM (for Sedan): DIAGNOSTIC TROUBLE CODE CHART HINT * If any DTCs are displayed during the DTC check, inspect the circuit listed for those DTCs. For details of each DTC, refer to the page indicated in the DTC chart. * Test mode code C1571/71 is stored during the transition to test mode. This code does not indicate a malfunction since the code will be cleared when the ECU determines that the sensor is normal. The test mode code is cleared simultaneously when test mode is terminated. * The EPS warning light remains illuminated during test mode and starts blinking when the speed sensor is determined to be normal. Power Steering System (for Sedan) * *1: w/o ABS * *2: w/ ABS SFI System (for Sedan) 1NZ-FE ENGINE CONTROL: SFI SYSTEM (for Sedan): DIAGNOSTIC TROUBLE CODE CHART HINT * *1: MIL flashes when a catalyst damaging misfire is detected. * *2: Only for Mexico models Theft Deterrent System (for Sedan) THEFT DETERRENT / KEYLESS ENTRY: THEFT DETERRENT SYSTEM (for Sedan): DIAGNOSTIC TROUBLE CODE CHART If a malfunction code is displayed during the DTC check, check the circuit listed for that code in the table below and then proceed to the page given for that circuit. MAIN BODY ECU DIAGNOSTIC TROUBLE CODE CHART Tire Pressure Warning System (for Sedan) TIRE PRESSURE MONITORING: TIRE PRESSURE WARNING SYSTEM (for Sedan): DIAGNOSTIC TROUBLE CODE CHART HINT If a trouble code is displayed during the DTC check, inspect the trouble areas listed for that code. For details of the code, refer to the \"See page\" below. Tire Pressure Warning System Vehicle Stability Control System (for Sedan) BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS: VEHICLE STABILITY CONTROL SYSTEM (for Sedan): DIAGNOSTIC TROUBLE CODE CHART NOTICE: Turn the ignition switch off before removing parts. HINT * If no abnormality is found when inspecting parts, inspect the skid control ECU and ground points for poor contact. * If a trouble code is displayed during the DTC check, check the circuit indicated by the DTC. For details of each code, refer to the page for the respective \"DTC Code\" in the DTC chart. * When 2 or more DTCs are detected, perform circuit inspection one by one until the problem is identified. * Inspect the fuse and relay before investigating the trouble areas as shown in the table below. ABS System *1, *2: Even after the trouble areas are repaired, the ABS warning light will not go off unless the following operations are performed: * *1: a. Drive the vehicle at 20 km/h (12 mph) for 30 seconds or more and check that the ABS warning light goes off. b. Clear the DTC. * *2: a. Keep the vehicle stationary for 5 seconds or more and depress the brake pedal lightly 2 or 3 times. b. Drive the vehicle at a vehicle speed of 50 km/h (31 mph) and keep depressing the brake pedal strongly for approximately 3 seconds. c. Repeat the above operation 3 times or more and check that the ABS warning light goes off. d. Clear the DTC. HINT In some cases, the tester cannot be used when the ABS warning light remains on. VSC System HINT In some cases, the tester cannot be used when the SLIP indicator light remains on. ABS System Test Mode VSC System Test Mode Wireless Door Lock Control System (for Sedan) DOOR LOCK: WIRELESS DOOR LOCK CONTROL SYSTEM (for Sedan): DIAGNOSTIC TROUBLE CODE CHART HINT * If a trouble code is displayed during the DTC check, inspect the suspected areas listed for that code. For details of the code, refer to the \"See page\" in the DTC chart. * Inspect the fuse and relay before investigating the suspected areas shown in the table below. Wireless Door Lock Control",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

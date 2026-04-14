@@ -1,0 +1,56 @@
+{
+  "source_file": "Mitsubishi_Lancer_DTC's.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 2,
+  "dtcs": [
+    {
+      "dtc_code": "B16A6",
+      "description": "Headlight HEADLIGHT DIAGNOSTIC TROUBLE CODE CHART",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Check that the DTC is not stored. If the DTC is stored, perform the DTC troubleshooting, then repair the DTC.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Drive the vehicle at least once under the conditions satisfying all the following requirements: - The total driving (engine running) time must be more than 10 consecutive minutes. - More than 30 seconds of idling must be included in the driving - More than 5 consecutive minutes of driving at more than 40 km/h (25 mph) must be included in the driving.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Drive the vehicle at least two times in the drive cycle pattern suitable for the permanent DTC. (Refer to OBD-II DRIVE CYCLE for the drive cycle pattern.) If the DTC does not have the drive cycle pattern, start and stop the engine. Wait 15 seconds or more to start again after the stop. Repeat at least 2 times.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Restart and stop the engine.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check that the permanent DTC is erased. If the permanent DTC is not erased, check the DTC or the provisional DTC. If the malfunction code is stored, repair the DTC. Try to erase the permanent DTC again (from Step 1 to 5). If the malfunction code is not stored, the drive cycle pattern (Step 3) monitoring the malfunction can possibly be insufficient. Power Window System POWER WINDOW DIAGNOSIS DIAGNOSTIC TROUBLE CODE CHART L0730-L0750",
+          "yes": null,
+          "no": null
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "B2222",
+      "description": "U0019-U0197 Sunroof System SUNROOF DIAGNOSTIC TROUBLE CODE CHART",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

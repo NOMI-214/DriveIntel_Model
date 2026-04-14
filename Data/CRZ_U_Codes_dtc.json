@@ -1,0 +1,3089 @@
+{
+  "source_file": "CRZ_U_Codes.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 13,
+  "dtcs": [
+    {
+      "dtc_code": "U0029-107",
+      "description": "Advanced Diagnostics - DTC U0029 (107): F-CAN Malfunction (BUS-OFF (Motor Control Module (MCM))) (IMA System (Motor)) Advanced Diagnostics - DTC U0029 (108): F-CAN Malfunction (BUS-OFF (Motor Control Module (MCM))) (IMA System (Battery)) The motor control processor and the battery control processor are in the motor control module (MCM). The controller area network (CAN) transmits/receives pulsing signals to/from the control modules simultaneously by using two signal lines (F-CAN H and F-CAN L). When each processor does not receive the signals via the F-CAN lines for a set time, a malfunction is detected and a DTC is stored.",
+      "detection_condition": [
+        "No signals via the F-CAN lines are received for at least 0.5 second.",
+        "Diagnosis Details",
+        "Conditions for setting the DTC",
+        "When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the MCM memory. If the malfunction returns in the next",
+        "(second) drive cycle, the MIL comes on and a Confirmed DTC and the freeze data are stored.",
+        "Conditions for clearing the DTC",
+        "The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed",
+        "DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the battery."
+      ],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0029-108",
+      "description": "Advanced Diagnostics - DTC U0029 (107): F-CAN Malfunction (BUS-OFF (Motor Control Module (MCM))) (IMA System (Motor)) Advanced Diagnostics - DTC U0029 (108): F-CAN Malfunction (BUS-OFF (Motor Control Module (MCM))) (IMA System (Battery)) The motor control processor and the battery control processor are in the motor control module (MCM). The controller area network (CAN) transmits/receives pulsing signals to/from the control modules simultaneously by using two signal lines (F-CAN H and F-CAN L). When each processor does not receive the signals via the F-CAN lines for a set time, a malfunction is detected and a DTC is stored. U0029 (107), U0122 (107), U0155 (107), U1205 (120) DTC U0029: F-CAN Malfunction (F-CAN Bus OFF) DTC U0122: Lost Communication With Vehicle Dynamics Control Module DTC U0155: Lost Communication With Gauge Control Module DTC U1205: IMA-CAN Malfunction (PCM-to-Motor Control Module) The integrated motor assist-controller area network (IMA-CAN) uses two signal lines, IMA-CAN H and IMA-CAN L, and it receives and transmits multiple signals simultaneously to/from multiple control modules. When the engine control module (ECM)/powertrain control module (PCM) does not receive the signals via the IMA-CAN lines for a set time, the ECM/PCM detects a malfunction and stores a DTC. The integrated motor assist-controller area network (IMA-CAN) uses two signal lines, IMA-CAN H and IMA-CAN L, and it receives and transmits multiple signals simultaneously to/from multiple control modules. When the powertrain control module (PCM) does not receive the signals via the IMA-CAN lines for a set time, the PCM detects a malfunction and stores a DTC.",
+      "detection_condition": [
+        "No signals via the F-CAN lines are received for at least 0.5 second.",
+        "Diagnosis Details",
+        "Conditions for setting the DTC",
+        "When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the MCM memory. If the malfunction returns in the next",
+        "(second) drive cycle, the MIL comes on and a Confirmed DTC and the freeze data are stored.",
+        "Conditions for clearing the DTC",
+        "The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed",
+        "DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the battery.",
+        "CVT System",
+        "The ECM/PCM does not receive any signals via the IMA-CAN lines for at least 1 second.",
+        "Diagnosis Details",
+        "Conditions for setting the DTC",
+        "When a malfunction is detected, the MIL comes on and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the ECM/PCM memory.",
+        "Conditions for clearing the DTC",
+        "The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed",
+        "DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the battery.",
+        "CVT System",
+        "Advanced Diagnostics - DTC U0038: IMA-CAN Malfunction (IMA-CAN Bus OFF) (CVT System)",
+        "The PCM does not receive any signals via the IMA-CAN lines for at least 1 second.",
+        "Diagnosis Details",
+        "Conditions for setting the DTC",
+        "When a malfunction is detected, the MIL comes on and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the PCM memory.",
+        "Conditions for clearing the DTC",
+        "The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed",
+        "DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the battery."
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for Pending or Confirmed DTCs in the PGM-FI SYSTEM with the HDS. Is DTC U0029, U0122, U0155, or U1205 indicated in the PGM-FI SYSTEM? Go to the DTC U0029 troubleshooting  See: U0029/DTC Troubleshooting/PGM-FI System, DTC U0122 troubleshooting  See: U0122/DTC /PGM-FI System, DTC U0155 troubleshooting  See: U0155/PGM-FI System, or DTC U1205 troubleshooting  See: U0038/PGM-FI System in Communication Systems. Go to step 4.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 4,
+          "instruction": "Check for Pending or Confirmed DTCs in the A/T SYSTEM with the HDS. Is DTC U0029, U0122, U0155, or U1205 indicated in the A/T SYSTEM? Go to step 5. Intermittent failure, the system is OK at this time. If any other Pending or Confirmed DTCs were indicated, go to the indicated DTC's troubleshooting.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Update the PCM if it does not have the latest software  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Testing and Inspection/ECM/PCM Update, or substitute a known-good PCM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Start the engine, and let it idle for at least 2 minutes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check for Pending or Confirmed DTCs the A/T SYSTEM with the HDS. Is DTC U0029, U0122, U0155, or U1205 indicated in the A/T SYSTEM? Check for poor connections or loose terminals at the PCM. If the PCM was updated, substitute a known-good PCM, then go to step 6. If the PCM was substituted, go to step 1. Go to step 8.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Monitor the OBD STATUS for U0029, U0122, U0155, or U1205 in the DTCs MENU with the HDS. Does the HDS indicate PASSED? If the PCM was updated, troubleshooting is complete. If the PCM was substituted, replace the original PCM  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Service and Repair. If any other Pending or Confirmed DTCs were indicated in step 7, go to the indicated DTC's troubleshooting. If the HDS indicates FAILED, check for poor connections or loose terminals at the PCM. If the PCM was updated, substitute a known-good PCM, then go to step 1. If the HDS indicates NOT COMPLETED, go to step 6. IMA System U0029 (107), U0029 (108) DTC U0029: F-CAN Malfunction (BUS-OFF (Motor Control Module (MCM))) U0029 DTC U0029: F-CAN Communication Line Error (BUS OFF)",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0), and then back to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0029 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections, or worn/shorted wires. If the connections are good, check the battery condition  See: Starting and Charging/Battery/Testing and Inspection/12 Volt Battery Test and the charging system.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Disconnect the appropriate connector at each control unit in the table one at a time. Clear the DTC, then recheck for DTCs after each unit is disconnected. *: With TPMS Is DTC U0029 indicated after each individual unit was disconnected? Go to step 7. Replace the control unit that was disconnected when DTC U0029 did not set.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Disconnect all the control unit connectors in the following table. *: With TPMS",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect the HDS from the data link connector (DLC).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Check for continuity between body ground and gauge control module 32P connector terminal No. 19 and No. 20 individually. Is there continuity? Repair a short to ground in the wire. Go to step 11.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 11,
+          "instruction": "Check for continuity between gauge control module 32P connector terminals No. 19 and No. 20. Is there continuity? Repair a short in the F-CAN wire. Replace the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair. PGM-FI System U0029, U0029 DTC U0029: F-CAN Malfunction (BUS-OFF (ECM/PCM))",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0029 indicated? Go to step 4. Intermittent failure, the system is OK at this time.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 4,
+          "instruction": "Update the ECM/PCM if it does not have the latest software  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Testing and Inspection/ECM/PCM Update, or substitute a known-good ECM/PCM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0029 indicated? If the ECM/PCM was updated, substitute a known-good ECM/PCM, then recheck. If the ECM/PCM was substituted, go to step 1. If the ECM/PCM was updated, troubleshooting is complete. If the ECM/PCM was substituted, replace the original ECM/PCM  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Service and Repair. If any other Pending or Confirmed DTCs are indicated, go to the indicated DTC's troubleshooting. Motor Control Module U0038 (99), U1204 (55) DTC U0038: IMA-CAN Malfunction (BUS-OFF (Motor Control Module (MCM))) DTC U1204: IMA-CAN Malfunction (Powertrain Control Module (PCM) - Motor Control Module (MCM))",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Check for ENGINE COOLANT TEMPERATURE in the IMA DATA LIST with the HDS. Is 419 °F (215 °C) indicated? Go to step 3. Intermittent failure, the system is OK at this time. Check for poor connections or loose terminals at the ECM/PCM and the MCM.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 3,
+          "instruction": "Jump the SCS line with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Disconnect ECM/PCM connector A (44P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Measure the resistance between ECM/PCM connector terminals A38 and A39. Is there about 120 Ohms? Go to step 19. Go to step 7.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Measure the resistance between ECM/PCM connector terminals A38 and A39. Is there about 0 Ohms? Go to step 8. Go to step 13.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Turn the battery module switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Remove the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Remove the PCU lid, the PCU busplate, and the PCU cover  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect MCM connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between MCM connector terminals A1 and A2. Is there continuity? Repair a short in the wire between MCM connector terminals A1 and A2, then go to step 32. Go to step 38.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 13,
+          "instruction": "Turn the battery module switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "Remove the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "Remove the PCU lid, the PCU busplate, and the PCU cover  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 16,
+          "instruction": "Disconnect MCM connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 17,
+          "instruction": "Check for continuity between MCM connector terminal A2 and ECM/PCM connector terminal A38. Is there continuity? Go to step 18. Repair an open in the wire between the ECM/PCM (A38) and the MCM (A2), then go to step 32.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 18,
+          "instruction": "Check for continuity between MCM connector terminal A1 and ECM/PCM connector terminal A39. Is there continuity? Go to step 38. Repair an open in the wire between the ECM/PCM (A39) and the MCM (A1), then go to step 32.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 19,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 20,
+          "instruction": "Turn the battery module switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 21,
+          "instruction": "Remove the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 22,
+          "instruction": "Remove the PCU lid, the PCU busplate, and the PCU cover  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 23,
+          "instruction": "Disconnect MCM connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 24,
+          "instruction": "Check for continuity between MCM connector terminal A2 and body ground. Is there continuity? Repair a short to ground in the wire between the ECM/PCM (A38) and the MCM (A2), then go to step 32. Go to step 25.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 25,
+          "instruction": "Check for continuity between MCM connector terminal A1 and body ground. Is there continuity? Repair a short to ground in the wire between the ECM/PCM (A39) and the MCM (A1), then go to step 32. Go to step 26.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 26,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 27,
+          "instruction": "Measure the voltage between MCM connector terminal A2 and body ground. Is there about 5-12 V? Repair a short to power in the wire between the ECM/PCM (A38) and the MCM (A2), then go to step 32. Go to step 28.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 28,
+          "instruction": "Measure the voltage between MCM connector terminal A1 and body ground. Is there about 5-12 V? Repair a short to power in the wire between the ECM/PCM (A39) and the MCM (A1), then go to step 32. Go to step 29.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 29,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 30,
+          "instruction": "Reconnect ECM/PCM connector A (44P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 31,
+          "instruction": "Measure the resistance between MCM connector terminals A1 and A2. Is there about 120 Ohms? Go to step 38. Update the ECM/PCM if it does not have the latest software, or substitute a known-good ECM/PCM, then recheck. If the symptom/indication goes away with a known-good ECM/PCM, replace the original ECM/PCM, then go to step 32.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 32,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 33,
+          "instruction": "Reinstall the PCU cover, the PCU busplate, and the PCU lid  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 34,
+          "instruction": "Reinstall the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation, then turn the battery module switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 35,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 36,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 37,
+          "instruction": "Check for Pending or Confirmed DTCs in the IMA SYSTEM with the HDS. Is DTC U0038 or U1204 indicated? Check for poor connections or loose terminals at the ECM/PCM and the MCM, then go to step 1. is complete. If any other Pending or Confirmed DTCs are indicated, go to the indicated DTC's troubleshooting.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 38,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 39,
+          "instruction": "Reinstall the PCU cover, the PCU busplate, and the PCU lid  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 40,
+          "instruction": "Reinstall the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation, then turn the battery module switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 41,
+          "instruction": "Update the MCM if it does not have the latest software  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Testing and Inspection, or substitute a known-good MCM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 42,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 43,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS in the IMA SYSTEM. Is DTC U0038 or U1204 indicated? Check for poor connections or loose terminals at the ECM/PCM and the MCM. If the MCM was updated, substitute a known-good MCM, then recheck. If the MCM was substituted, go to step 1. If the MCM was updated, troubleshooting is complete. If the MCM was substituted, replace the original MCM  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair. If any other Pending or Confirmed DTCs were indicated, go to the indicated DTC's . CVT System U0038 (120) DTC U0038: IMA-CAN Malfunction (IMA-CAN Bus OFF)",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for Pending or Confirmed DTCs in the PGM-FI SYSTEM with the HDS. Is DTC U0038 indicated in the PGM-FI SYSTEM? Go to the DTC U0038 troubleshooting in Communication Systems  See: U0038/PGM-FI System. Go to step 4.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 4,
+          "instruction": "Check for Pending or Confirmed DTCs in the A/T SYSTEM with the HDS. Is DTC U0038 indicated in the A/T SYSTEM? Go to step 5. Intermittent failure, the system is OK at this time. If any other Pending or Confirmed DTCs were indicated, go to the indicated DTC's troubleshooting.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Update the PCM if it does not have the latest software  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Testing and Inspection/ECM/PCM Update, or substitute a known-good PCM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Start the engine, and let it idle for at least 2 minutes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check for Pending or Confirmed DTCs in the A/T SYSTEM with the HDS. Is DTC U0038 indicated in the A/T SYSTEM? Check for poor connections or loose terminals at the PCM. If the PCM was updated, substitute a known-good PCM, then go to step 6. If the PCM was substituted, go to step 1. Go to step 8.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Monitor the OBD STATUS for U0038 in the DTCs MENU with the HDS. Does the HDS indicate PASSED? If the PCM was updated, troubleshooting is complete. If the PCM was substituted, replace the original PCM  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Service and Repair. If any other Pending or Confirmed DTCs were indicated in step 7, go to the indicated DTC's troubleshooting. If the HDS indicates FAILED, check for poor connections or loose terminals at the PCM. If the PCM was updated, substitute a known-good PCM, then go to step 6. If the PCM was substituted, go to step 1. If the HDS indicates NOT COMPLETED, go to step 6. PGM-FI System U0038, U1205, U0038, U1205 DTC U0038: IMA-CAN Malfunction (BUS-OFF) DTC U1205: IMA-CAN Malfunction (ECM/PCM-Motor Control Module (MCM))",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0038 or U1205 indicated? Go to step 6. Intermittent failure, the system is OK at this time. Check for poor connections or loose terminals at the motor control module (MCM) and the ECM/PCM.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Check for DTCs in the IMA system with the HDS. Is DTC U0038 or U1205 indicated? Go to step 7. Go to step 38.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Jump the SCS line with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect ECM/PCM connector A (44P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Measure the resistance between ECM/PCM connector terminals A38 and A39. Is there about 108-132 Ohms? Go to step 22. - More than 132 Ohms: Go to step 11. - Less than 108 Ohms: Go to step 17.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 11,
+          "instruction": "Turn the battery module switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Remove the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "Remove the PCU lid, the PCU busplate, and the PCU cover  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "Disconnect motor control module (MCM) connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "Measure the resistance between ECM/PCM connector terminals A38 and motor control module (MCM) connector terminal A2. Is there about 1.0 Ohms or less ? Go to step 16. Repair an open in the wire between the ECM/PCM (A38) and the motor control module (MCM) (A2) , then go to step 33.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 16,
+          "instruction": "Measure the resistance between ECM/PCM connector terminals A39 and motor control module (MCM) connector terminal A1. Is there about 1.0 Ohms or less ? Replace the motor control module (MCM)  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair, then go to step 33. Repair an open in the wire between the ECM/PCM (A39) and the motor control module (MCM) (A1), then go to step 33.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 17,
+          "instruction": "Turn the battery module switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 18,
+          "instruction": "Remove the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 19,
+          "instruction": "Remove the PCU lid, the PCU busplate, and the PCU cover  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 20,
+          "instruction": "Disconnect motor control module (MCM) connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 21,
+          "instruction": "Measure the resistance between ECM/PCM connector terminals A38 and A39. Is there about 1.0 Ohms or more ? Replace the motor control module  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair, then go to step 33. Repair a short in the wires between the ECM/PCM (A38) (IMA-CAN H line) and the ECM/PCM (A39) (IMA-CAN L line), then go to step 33.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 22,
+          "instruction": "Turn the battery module switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 23,
+          "instruction": "Remove the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 24,
+          "instruction": "Remove the PCU lid, the PCU busplate, and the PCU cover  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 25,
+          "instruction": "Disconnect motor control module (MCM) connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 26,
+          "instruction": "Measure the resistance between body ground and ECM/PCM connector terminals A38 and A39 individually. Is there about 1.0 Ohms or more ?. Go to step 27. Repair a short to ground in the wire between the ECM/PCM (A38) and the motor control module (MCM) (A2) or between the ECM/PCM (A39) the and the motor control module (MCM) (A1), then go to step 33.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 27,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 28,
+          "instruction": "Measure the voltage between body ground and ECM/PCM connector terminals A38 and A39 individually. Is there voltage? Repair a short to power in the wire between the ECM/PCM (A38) and the motor control module (MCM) (A2) or between the ECM/PCM (A39) and the motor control module (MCM) (A1), then go to step 32. Go to step 29.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 29,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 30,
+          "instruction": "Reconnect ECM/PCM connector A (44P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 31,
+          "instruction": "Measure the resistance between motor control module (MCM) connector terminals A1 and A2. Is there about 108-132 Ohms? Go to step 36. Replace the ECM/PCM  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Service and Repair, then go to step 33.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 32,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 33,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 34,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 35,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0038 or DTC U1205 indicated? Check for poor connections or loose terminals at the motor control module (MCM) and the ECM/PCM, then go to step 1. is complete. If any other Pending or Confirmed DTCs are indicated, go to the indicated DTC's troubleshooting.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 36,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 37,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 38,
+          "instruction": "Update the ECM/PCM if it does not have the latest software  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Testing and Inspection/ECM/PCM Update, or substitute a known-good ECM/PCM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 39,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0038 or DTC U1205 indicated? Check for poor connections or loose terminals at the motor control module (MCM), and ECM/PCM. If the ECM/PCM was updated, substitute a known-good ECM/PCM, then recheck. If the ECM/PCM was substituted, go to step 1. If the ECM/PCM was updated, troubleshooting is complete. If the ECM/PCM was substituted, replace the original ECM/PCM  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Service and Repair. If any other Pending or Confirmed DTCs are indicated, go to the indicated DTC's troubleshooting. PGM-FI System Advanced Diagnostics - DTC U0038: IMA-CAN Malfunction (BUS-OFF (Engine Control Module (ECM)/Powertrain Control Module (PCM)) (PGM-FI System)",
+          "yes": "",
+          "no": ""
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0038-99",
+      "description": "Advanced Diagnostics - DTC U0038 (99): IMA-CAN Malfunction (BUS-OFF (Motor Control Module (MCM))) (IMA System) The integrated motor assist-controller area network (IMA-CAN) transmits/receives pulsing signals to/from the control modules simultaneously by using two signal lines (IMA-CAN H and IMA-CAN L). When the motor control module (MCM) does not receive the signals via the IMA-CAN lines for a set time, a malfunction is detected and a DTC is stored. U0100 DTC U0100: Gauge Control Module Lost Communication With ECM/PCM",
+      "detection_condition": [
+        "No signals via the IMA-CAN lines are received for at least 0.5 second.",
+        "Diagnosis Details",
+        "Conditions for setting the DTC",
+        "When a malfunction is detected, the MIL comes on and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the MCM memory.",
+        "Conditions for clearing the DTC",
+        "The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed",
+        "DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the battery.",
+        "Gauge Control Module"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0), and then back to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0100 indicated? Go to step 5. Intermittent failure, the F-CAN communication line is OK at this time. Check for DTCs in the ECM/PCM with the HDS. If F-CAN DTCs are present, check for loose or poor connections at the gauge control module and the ECM/PCM. If the connections are good, check the battery condition  See: Starting and Charging/Battery/Testing and Inspection/12 Volt Battery Test and the charging system, then clear all DTCs.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Check for DTCs in the ECM/PCM with the HDS. Are any DTCs indicated? Go to the ECM/PCM indicated DTCs troubleshooting, then recheck. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Jump the SCS line with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect ECM/PCM connector A (49P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Check for continuity between gauge control module 32P connector terminals No. 19 and No. 20 and ECM/PCM connector A (44P) terminals No. 36 and No. 37 respectively. Is there continuity? Update the ECM/PCM if it does not have the latest software  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Testing and Inspection/ECM/PCM Update, or substitute a known-good ECM/PCM, and recheck. If the indication goes away, replace the original ECM/PCM  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Service and Repair. If the DTC is still present, replace the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair. Repair an open or poor connection in the wire between the ECM/PCM and the gauge control module.. IMA System U0100 (102), U0100 (103) DTC U0100: F-CAN Malfunction (Powertrain Control Module (PCM)-Motor Control Module (MCM))",
+          "yes": "",
+          "no": ""
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100-102",
+      "description": "Advanced Diagnostics - DTC U0100 (102): F-CAN Malfunction (Powertrain Control Module (PCM) - Motor Control Module (MCM)) (Motor) Advanced Diagnostics - DTC U0100 (103): F-CAN Malfunction (Powertrain Control Module (PCM) - Motor Control Module (MCM)) (Battery) The motor control processor and the battery control processor are in the motor control module (MCM). The controller area network (CAN) transmits/receives pulsing signals to/from the control modules simultaneously by using two signal lines (F-CAN H and F-CAN L). When each processor does not receive the signals from the engine control module (ECM)/powertrain control module (PCM) via the F-CAN lines for a set time, or the received data is abnormal for a specified cycle, a malfunction is detected and a DTC is stored.",
+      "detection_condition": [
+        "No signals from the ECM/PCM via the F-CAN lines are received for at least 1.0 second, or received data is abnormal at least 50 counts.",
+        "Diagnosis Details",
+        "Conditions for setting the DTC",
+        "When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the MCM memory. If the malfunction returns in the next",
+        "(second) drive cycle, the MIL comes on and a Confirmed DTC and the freeze data are stored.",
+        "Conditions for clearing the DTC",
+        "The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed",
+        "DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the battery."
+      ],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0100-103",
+      "description": "Advanced Diagnostics - DTC U0100 (102): F-CAN Malfunction (Powertrain Control Module (PCM) - Motor Control Module (MCM)) (Motor) Advanced Diagnostics - DTC U0100 (103): F-CAN Malfunction (Powertrain Control Module (PCM) - Motor Control Module (MCM)) (Battery) The motor control processor and the battery control processor are in the motor control module (MCM). The controller area network (CAN) transmits/receives pulsing signals to/from the control modules simultaneously by using two signal lines (F-CAN H and F-CAN L). When each processor does not receive the signals from the engine control module (ECM)/powertrain control module (PCM) via the F-CAN lines for a set time, or the received data is abnormal for a specified cycle, a malfunction is detected and a DTC is stored. The controller area network (CAN) transmits/receives pulsing signals to/from the control modules simultaneously by using two signal lines (F-CAN H and F-CAN L). When the information is not sent from the motor control module (MCM) via the F-CAN lines and this condition continues for a specified time or when the information sent from the MCM is abnormal and this condition continues for a specified cycle, the engine control module (ECM)/powertrain control module (PCM) detects a malfunction and stores a DTC. U0110, U0110 DTC U0110: F-CAN Malfunction (ECM/PCM-MCM)",
+      "detection_condition": [
+        "No signals from the ECM/PCM via the F-CAN lines are received for at least 1.0 second, or received data is abnormal at least 50 counts.",
+        "Diagnosis Details",
+        "Conditions for setting the DTC",
+        "When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the MCM memory. If the malfunction returns in the next",
+        "(second) drive cycle, the MIL comes on and a Confirmed DTC and the freeze data are stored.",
+        "Conditions for clearing the DTC",
+        "The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed",
+        "DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the battery.",
+        "Advanced Diagnostics",
+        "Advanced Diagnostics - DTC U0110: F-CAN Malfunction (Engine Control Module (ECM)/Powertrain Control Module (PCM)-Motor Control",
+        "Module (MCM))",
+        "One of these conditions is met:",
+        "-",
+        "The ECM/PCM does not receive any signals via the F-CAN lines for at least 1 second.",
+        "-",
+        "The information sent from the MCM is abnormal at least 20 times.",
+        "Diagnosis Details",
+        "Conditions for setting the DTC",
+        "When a malfunction is detected, the MIL comes on and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the ECM/PCM memory.",
+        "Conditions for clearing the DTC",
+        "The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed",
+        "DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the battery."
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Are DTC U0029 and U0110 indicated at the same time? Go to the troubleshooting for DTC U0029  See: U0029/DTC Troubleshooting/PGM-FI System. Go to step 4.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 4,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0110 indicated? Go to step 6. Intermittent failure, the system is OK at this time. Check for poor connections or loose terminals at the motor control module (MCM) and the ECM/PCM.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS again. Are DTC U0110 and U1205 indicated at the same time? Go to step 7. Update the motor control module (MCM) if it does not have the latest software  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Testing and Inspection, or substitute a known-good motor control module (MCM), then go to step 27 and recheck. If DTC U0110 is not indicated with a known-good motor control module (MCM), replace the original motor control module (MCM)  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair, then go to step 27.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Turn the battery module switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Remove the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Remove the PCU lid, the PCU busplate, and the PCU cover  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Check for poor connections or loose terminals at motor control module (MCM) connector A (31P). Are the connections and the terminals OK? Go to step 12. Repair the connections or the terminals, then go to step 24.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 12,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "Measure the voltage between motor control module (MCM) connector terminal A9 and body ground within 1 second. Is there 12V battery voltage? Go to step 14. Go to step 16.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 14,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "Check for continuity between motor control module (MCM) connector terminal A6 and body ground. Is there continuity? Update the motor control module (MCM) if it does not have the latest software  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Testing and Inspection, or substitute a known-good motor control module (MCM), then go to step 24 and recheck. If DTC U0110 is not indicated with a known-good motor control module (MCM), replace the original motor control module (MCM)  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair, then go to step 24. Repair an open in the wire between the motor control module (MCM) (A6) and G901, then go to step 24.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 16,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 17,
+          "instruction": "Remove the motor control module (MCM) relay 1.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 18,
+          "instruction": "Test motor control module (MCM) relay 1  See: Power and Ground Distribution/Power Distribution Relay/Testing and Inspection. Is the relay OK? Go to step 19. Replace motor control module (MCM) relay 1, then go to step 24.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 19,
+          "instruction": "Check the No. B42 IMA1 (7.5 A) fuse in the under-dash fuse/relay box. Is the fuse OK? Go to step 20. - Repair a short in the wire between the No. B42 IMA1 (7.5 A) fuse and motor control module (MCM) relay 1. Also replace the No. B42 IMA1 (7.5 A) fuse, then go to step 24. - Repair a short in the wire between the motor control module (MCM) relay 1 and the motor control module (MCM). Also replace the No. B42 IMA1 (7.5 A) fuse, then go to step 24.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 20,
+          "instruction": "Measure the voltage between rear relay block 8P connector (motor control module (MCM) relay 1) terminal No. 6 and body ground. Is there battery voltage? Go to step 21. Repair an open in the wire between the No. B42 IMA1 (7.5 A) fuse and motor control module (MCM) relay 1, then go to step 23.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 21,
+          "instruction": "Check for continuity between rear relay block 8P connector (motor control module (MCM) relay 1) terminal No. 5 and motor control module (MCM) connector terminal A9. Is there continuity? Go to step 22. Repair an open in the wire between the motor control module (MCM) (A9) and motor control module (MCM) relay 1, then go to step 24.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 22,
+          "instruction": "Check for continuity between rear relay block 8P connector (motor control module (MCM) relay 1) terminal No. 8 and motor control module (MCM) connector terminal A3. Is there continuity? Update the motor control module (MCM) if it does not have the latest software  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Testing and Inspection, or substitute a known-good motor control module (MCM), then go to step 24 and recheck. If DTC U0110 is not indicated with a known-good motor control module (MCM), replace the original motor control module (MCM)  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair, then go to step 24. Repair an open in the wire between the motor control module (MCM) (A3) and motor control module (MCM) relay 1, then go to step 24.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 23,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 24,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 25,
+          "instruction": "Reinstall the PCU cover, the PCU busplate, and the PCU lid  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 26,
+          "instruction": "Reinstall the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 27,
+          "instruction": "Turn the battery module switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 28,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 29,
+          "instruction": "Reset the ECM/PCM with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 30,
+          "instruction": "Do the ECM/PCM idle learn procedure  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Testing and Inspection/ECM/PCM Idle Learn Procedure.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 31,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0110 indicated? Check for poor connections or loose terminals at the motor control module (MCM), and the ECM/PCM, then go to step 1. is complete. If any other Pending or Confirmed DTCs are indicated, go to the indicated DTC's troubleshooting.",
+          "yes": "",
+          "no": ""
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0111",
+      "description": "Gauge Control Module Lost Communication With Motor Control Module (BATT message) The controller area network (CAN) transmits/receives pulsing signals to/from the control modules simultaneously by using two signal lines (F-CAN H and F-CAN L). When the information is not sent from the VSA modulator-control unit via the F-CAN lines and this condition continues for a specified time or when the information sent from the VSA modulator-control unit is abnormal and this condition continues for a specified cycle, the engine control module (ECM)/powertrain control module (PCM) detects a malfunction and stores a DTC. The controller area network (CAN) transmits/receives pulsing signals to/from the control modules simultaneously by using two signal lines (F-CAN H and F-CAN L). When the information is not sent from the VSA modulator-control unit via the F-CAN lines and this condition continues for a specified time or when the information sent from the VSA modulator-control unit is abnormal and this condition continues for a specified cycle, the powertrain control module (PCM) detects a malfunction and stores a DTC.",
+      "detection_condition": [
+        "One of these conditions is met:",
+        "-",
+        "The ECM/PCM does not receive any signals via the F-CAN lines for at least 1 second.",
+        "-",
+        "The information sent from the VSA modulator-control unit is abnormal at least 20 times.",
+        "Diagnosis Details",
+        "Conditions for setting the DTC",
+        "When a malfunction is detected, a Pending DTC, a Confirmed DTC, and the freeze data are stored in the ECM/PCM memory. The MIL does not come",
+        "on.",
+        "Conditions for clearing the DTC",
+        "The Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the battery.",
+        "CVT System",
+        "Advanced Diagnostics - DTC U0122: Lost Communication With Vehicle Dynamics Control Module (CVT System)",
+        "One of these conditions is met:",
+        "-",
+        "The PCM does not receive any signals via the F-CAN lines for at least 1 second.",
+        "-",
+        "The information sent from the VSA modulator-control unit is abnormal at least 20 times.",
+        "Diagnosis Details",
+        "Conditions for setting the DTC",
+        "When a malfunction is detected, the D indicator blinks, and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the PCM memory. The",
+        "MIL does not come on.",
+        "Conditions for clearing the DTC",
+        "The Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the battery.",
+        "Gauge Control Module"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0), and then back to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0111 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the gauge control module and the motor control module (MCM).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Check for IMA system DTCs with the HDS. Are any DTCs indicated? Go to the indicated DTCs troubleshooting, then recheck. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Disconnect motor control module (MCM) connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Check for continuity between gauge control module 32P connector terminal No. 19 and No.20 and motor control module (MCM) connector A (31P) terminal No. 23 and No. 22 respectively. Is there continuity? Go to step 10. Repair an open or poor connection in the wire between the motor control module (MCM) and the gauge control module.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 10,
+          "instruction": "Reconnect the gauge control module 32P connector and motor control module (MCM) connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Turn the ignition switch to LOCK (0) and then back to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0111 indicated? Replace the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair. Replace the motor control module (MCM)  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair. PGM-FI System Advanced Diagnostics - DTC U0122: F-CAN Malfunction (Engine Control Module (ECM)/Powertrain Control Module (PCM)-VSA Modulator-Control Unit) (PGM-FI System) U0122 DTC U0122: Gauge Control Module Lost Communication With VSA Modulator-Control Unit (VSA Message) for ABS indicator, brake system indicator, and VSA indicator do not go off, and no DTCs are stored  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related Diagnostic Procedures/VSA Cannot Be Turned Off/Symptom Troubleshooting.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0), and then back to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0122 indicated? Go to step 5. Intermittent failure, the F-CAN communication line is OK at this time. Check for DTCs in the ECM/PCM and the VSA modulator-control unit with the HDS. If F-CAN DTCs are present, check for a loose VSA ground or poor connections at the VSA modulator-control unit or gauge control module. If the connections are good, check the battery condition  See: Starting and Charging/Battery/Testing and Inspection/12 Volt Battery Test and the charging system, then clear all DTCs.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Check for VSA system DTCs with the HDS. Are any DTCs indicated? Go to the indicated DTCs troubleshooting, then recheck. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Disconnect the VSA modulator-control unit 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Check for continuity between gauge control module 32P connector terminal No. 19 and No. 20 and VSA modulator-control unit 32P connector terminal No. 6 and No. 5 respectively. Is there continuity? Check for poor connections, power, and ground to the VSA modulator-control unit. If the VSA modulator-control unit was updated and symptom is still present, replace the original VSA modulator-control unit. If the DTC is still present, replace the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair. Repair an open or poor connection in the F-CAN wire between the VSA modulator-control unit and the gauge control module. CVT System U0029 (107), U0122 (107), U0155 (107), U1205 (120) DTC U0029: F-CAN Malfunction (F-CAN Bus OFF) DTC U0122: Lost Communication With Vehicle Dynamics Control Module DTC U0155: Lost Communication With Gauge Control Module DTC U1205: IMA-CAN Malfunction (PCM-to-Motor Control Module)",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for Pending or Confirmed DTCs in the PGM-FI SYSTEM with the HDS. Is DTC U0029, U0122, U0155, or U1205 indicated in the PGM-FI SYSTEM? Go to the DTC U0029 troubleshooting  See: U0029/DTC Troubleshooting/PGM-FI System, DTC U0122 troubleshooting  See: U0122/DTC /PGM-FI System, DTC U0155 troubleshooting  See: U0155/PGM-FI System, or DTC U1205 troubleshooting  See: U0038/PGM-FI System in Communication Systems. Go to step 4.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 4,
+          "instruction": "Check for Pending or Confirmed DTCs in the A/T SYSTEM with the HDS. Is DTC U0029, U0122, U0155, or U1205 indicated in the A/T SYSTEM? Go to step 5. Intermittent failure, the system is OK at this time. If any other Pending or Confirmed DTCs were indicated, go to the indicated DTC's troubleshooting.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Update the PCM if it does not have the latest software  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Testing and Inspection/ECM/PCM Update, or substitute a known-good PCM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Start the engine, and let it idle for at least 2 minutes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check for Pending or Confirmed DTCs the A/T SYSTEM with the HDS. Is DTC U0029, U0122, U0155, or U1205 indicated in the A/T SYSTEM? Check for poor connections or loose terminals at the PCM. If the PCM was updated, substitute a known-good PCM, then go to step 6. If the PCM was substituted, go to step 1. Go to step 8.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Monitor the OBD STATUS for U0029, U0122, U0155, or U1205 in the DTCs MENU with the HDS. Does the HDS indicate PASSED? If the PCM was updated, troubleshooting is complete. If the PCM was substituted, replace the original PCM  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Service and Repair. If any other Pending or Confirmed DTCs were indicated in step 7, go to the indicated DTC's troubleshooting. If the HDS indicates FAILED, check for poor connections or loose terminals at the PCM. If the PCM was updated, substitute a known-good PCM, then go to step 1. If the HDS indicates NOT COMPLETED, go to step 6. PGM-FI System U0122, U0122 DTC U0122: F-CAN Malfunction (ECM/PCM-VSA Modulator-Control Unit)",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Are DTC U0029 and U0122 indicated at the same time? Go to the troubleshooting for DTC U0029  See: U0029/DTC Troubleshooting/PGM-FI System. Go to step 3.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 3,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0122 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for poor connections or loose terminals at the gauge control module, the VSA modulator-control unit, and the ECM/PCM.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Check for communication to the VSA system with the HDS. Does the HDS communicate with the VSA modulator-control unit? Go to step 6. Go to the symptom troubleshooting for ABS indicator, brake system indicator, and VSA indicator do not go off  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Testing and Inspection/Symptom Related Diagnostic Procedures/VSA Cannot Be Turned Off/Symptom Troubleshooting.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Jump the SCS line with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Disconnect the VSA modulator-control unit 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect ECM/PCM connector A (44P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Check for continuity between ECM/PCM connector terminal A36 and VSA modulator-control unit 32P connector terminal No. 6. Is there continuity? Go to step 11. Repair an open in the wire between the ECM/PCM (A36) and the VSA modulator-control unit, then go to step 12.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 11,
+          "instruction": "Check for continuity between ECM/PCM connector terminal A37 and VSA modulator-control unit 32P connector terminal No. 5. Is there continuity? Update the VSA modulator-control unit if it does not have the latest software  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Traction Control Module/Testing and Inspection, or substitute a known-good VSA modulator-control unit  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Traction Control Module/Service and Repair, then go to step 12 and recheck. If DTC U0122 is not indicated after substitution, replace the original VSA modulator-control unit  See: Brakes and Traction Control/Antilock Brakes / Traction Control Systems/Traction Control Module/Service and Repair, then go to step 12. Repair an open in the wire between the ECM/PCM (A37) and the VSA modulator-control unit, then go to step 12.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 12,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "Reset the ECM/PCM with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "Do the ECM/PCM idle learn procedure  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Testing and Inspection/ECM/PCM Idle Learn Procedure.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 16,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0122 indicated? Check for poor connections or loose terminals at the gauge control module, the VSA modulator-control unit, and the ECM/PCM, then go to step 1. is complete. If any other Pending or Confirmed DTCs are indicated, go to the indicated DTC's troubleshooting.",
+          "yes": "",
+          "no": ""
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0127",
+      "description": "Gauge Control Module Lost Communication With TPMS Control Unit (TPMS message)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0), and then back to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0127 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the gauge control module and the TPMS control unit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Check for TPMS DTCs with the HDS. Are any DTCs indicated? Go to the TPMS indicated DTCs troubleshooting, then recheck. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Disconnect the TPMS control unit 20P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Check for continuity between gauge control module 32P connector terminals No. 19 and No. 20 and TPMS control unit 20P connector terminals No. 9 and No. 20 respectively. Is there continuity? Substitute a known-good TPMS control unit, and recheck. If the indication goes away, replace the original TPMS control unit  See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Tire Pressure Module/Service and Repair. If the DTC is still present, replace the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair. Repair an open or high resistance in the wire poor connection in the F-CAN wire between the TPMS control unit and gauge control module.",
+          "yes": "",
+          "no": ""
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0131",
+      "description": "Gauge Control Module Lost Communication With EPS Unit (EPS Message) for EPS indicator does not go off, and no DTCs are stored See: Steering and Suspension/Steering/Testing and Inspection/Symptom Related Diagnostic Procedures/EPS Indicator Does Not Go Off, And No DTCs Are Stored.",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0), and then back to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0131 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the gauge control module and the EPS control unit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Check for EPS DTCs with the HDS  See: Steering and Suspension/Steering/Testing and Inspection/Initial Inspection and Diagnostic Overview. Are any DTCs indicated? Go to the indicated DTCs troubleshooting, then recheck. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Disconnect EPS control unit connector A (11P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Check for continuity between gauge control module 32P connector terminal No. 19 and No. 20 and EPS control unit connector A (11P) terminal No. 7 and No. 9 respectively. Is there continuity? Substitute a known-good EPS control unit, and recheck. If the indication goes away, replace the original EPS control unit  See: Relays and Modules/Relays and Modules - Steering and Suspension/Relays and Modules - Steering/Steering Control Module/Service and Repair. If the DTC is still present, replace the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair. Repair an open wire or poor connection in the wire between the EPS control unit and the gauge control module.",
+          "yes": "",
+          "no": ""
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0151",
+      "description": "Gauge Control Module Lost Communication With SRS Unit (SRS Message) s/SRS Indicator Stays On, But No DTCs Are Stored, Or Cannot Be Read/Symptom Troubleshooting. The controller area network (CAN) transmits/receives pulsing signals to/from the control modules simultaneously by using two signal lines (F-CAN H and F-CAN L). When the information is not sent from the gauge control module via the F-CAN lines and this condition continues for a specified time or when the information sent from the gauge control module is abnormal and this condition continues for a specified cycle, the engine control module (ECM)/powertrain control module (PCM) detects a malfunction and stores a DTC. The controller area network (CAN) transmits/receives pulsing signals to/from the control modules simultaneously by using two signal lines (F-CAN H and F-CAN L). When the information is not sent from the gauge control module via the F-CAN lines and this condition continues for a specified time or when the information sent from the gauge control module is abnormal and this condition continues for a specified cycle, the powertrain control module (PCM) detects a malfunction and stores a DTC.",
+      "detection_condition": [
+        "One of these conditions is met:",
+        "-",
+        "The ECM/PCM does not receive any signals via the F-CAN lines for at least 1 second.",
+        "-",
+        "The information sent from the gauge control module is abnormal at least 20 times.",
+        "Diagnosis Details",
+        "Conditions for setting the DTC",
+        "When a malfunction is detected, the MIL comes on and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the ECM/PCM memory.",
+        "Conditions for clearing the DTC",
+        "The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed",
+        "DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the battery.",
+        "CVT System",
+        "Advanced Diagnostics - DTC U0155: Lost Communication With Gauge Control Module (CVT System)",
+        "One of these conditions is met:",
+        "-",
+        "The PCM does not receive any signals via the F-CAN lines for at least 1 second.",
+        "-",
+        "The information sent from the gauge control module is abnormal at least 20 times.",
+        "Diagnosis Details",
+        "Conditions for setting the DTC",
+        "When a malfunction is detected, the D indicator blinks, and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the PCM memory. The",
+        "MIL does not come on.",
+        "Conditions for clearing the DTC",
+        "The Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the battery.",
+        "IMA System"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0), and then back to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0151 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the gauge control module and the SRS unit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Check for SRS DTCs with the HDS  See: Restraints and Safety Systems/Air Bag Systems/Testing and Inspection/Reading and Clearing Diagnostic Trouble Codes. Are any DTCs indicated? Go to the SRS indicated DTCs troubleshooting, then recheck. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Do the battery terminal disconnection procedure, then wait at least 3 minutes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect SRS unit connector A (39P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Check for continuity between gauge control module 32P connector terminal No. 19 and No. 20 and SRS unit connector A (39P) terminal No. 6 and No. 7 respectively. Is there continuity? Substitute a known-good SRS unit, and recheck. If the indication goes away, replace the original SRS unit  See: Relays and Modules/Relays and Modules - Restraints and Safety Systems/Air Bag Control Module/Service and Repair. If the DTC is still present, replace the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair. Repair an open or poor connection in the wire between the SRS unit and the gauge control module PGM-FI System Advanced Diagnostics - DTC U0155: F-CAN Malfunction (Engine Control Module (ECM)/Powertrain Control Module (PCM)-Gauge Control Module) (PGM-FI System) U0155 (106) DTC U0155: F-CAN Malfunction (Gauge Control Module-Motor Control Module (MCM))",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to ON (II), and wait 4 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch to LOCK (0), then turn the ignition switch to ON (II) again, and wait 4 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check for Pending or Confirmed DTCs in the IMA SYSTEM with the HDS. Is DTC U0155 indicated? Go to step 7. Intermittent failure, the system is OK at this time.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Turn the ignition switch to ON (II), and watch the instrument panel indicators. Do any indicators come on? Go to step 9. Go to step 17.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 9,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Turn the battery module switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Remove the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Remove the PCU lid, the PCU busplate, and the PCU cover  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "Disconnect MCM connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "Check for continuity between gauge control module 32P connector terminal No. 19 and MCM connector terminal A23. Is there continuity? Go to step 16. Repair an open in the wire between the gauge control module 32P connector and the MCM (A23), then go to step 22.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 16,
+          "instruction": "Check for continuity between gauge control module 32P connector terminal No. 20 and MCM connector terminal A22. Is there continuity? Replace the gauge control module. Repair an open in the wire between the gauge control module 32P connector and the MCM (A22), then go to step 22.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 17,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 18,
+          "instruction": "Check the No. B22 METER (7.5 A) fuse in the under-dash fuse/relay box. Is the fuse OK? Go to step 19. Repair a short in the wire between the No. B22 METER (7.5 A) fuse and gauge control module 32P connector terminal No. 17. Also replace the No. B22 METER (7.5 A) fuse, then go to step 22.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 19,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 20,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 21,
+          "instruction": "Measure the voltage between gauge control module 32P connector terminal No. 17 and body ground. Is there battery voltage? Repair an open in the ground wire (G501), then go to step 22. Repair an open in the wire between the No. B22 METER (7.5 A) fuse and the gauge control module 32P connector, then go to step 22.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 22,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 23,
+          "instruction": "Reinstall the PCU cover, the PCU busplate, and the PCU lid  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 24,
+          "instruction": "Reinstall the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation, then turn the battery module switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 25,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 26,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 27,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0155 indicated? Check for poor connections or loose terminals at the MCM and the gauge control module, then go to step 1. is complete. If any other Pending or Confirmed DTCs are indicated, go to the indicated DTC's troubleshooting. CVT System U0029 (107), U0122 (107), U0155 (107), U1205 (120) DTC U0029: F-CAN Malfunction (F-CAN Bus OFF) DTC U0122: Lost Communication With Vehicle Dynamics Control Module DTC U0155: Lost Communication With Gauge Control Module DTC U1205: IMA-CAN Malfunction (PCM-to-Motor Control Module)",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for Pending or Confirmed DTCs in the PGM-FI SYSTEM with the HDS. Is DTC U0029, U0122, U0155, or U1205 indicated in the PGM-FI SYSTEM? Go to the DTC U0029 troubleshooting  See: U0029/DTC Troubleshooting/PGM-FI System, DTC U0122 troubleshooting  See: U0122/DTC /PGM-FI System, DTC U0155 troubleshooting  See: U0155/PGM-FI System, or DTC U1205 troubleshooting  See: U0038/PGM-FI System in Communication Systems. Go to step 4.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 4,
+          "instruction": "Check for Pending or Confirmed DTCs in the A/T SYSTEM with the HDS. Is DTC U0029, U0122, U0155, or U1205 indicated in the A/T SYSTEM? Go to step 5. Intermittent failure, the system is OK at this time. If any other Pending or Confirmed DTCs were indicated, go to the indicated DTC's troubleshooting.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Update the PCM if it does not have the latest software  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Testing and Inspection/ECM/PCM Update, or substitute a known-good PCM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Start the engine, and let it idle for at least 2 minutes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check for Pending or Confirmed DTCs the A/T SYSTEM with the HDS. Is DTC U0029, U0122, U0155, or U1205 indicated in the A/T SYSTEM? Check for poor connections or loose terminals at the PCM. If the PCM was updated, substitute a known-good PCM, then go to step 6. If the PCM was substituted, go to step 1. Go to step 8.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Monitor the OBD STATUS for U0029, U0122, U0155, or U1205 in the DTCs MENU with the HDS. Does the HDS indicate PASSED? If the PCM was updated, troubleshooting is complete. If the PCM was substituted, replace the original PCM  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Service and Repair. If any other Pending or Confirmed DTCs were indicated in step 7, go to the indicated DTC's troubleshooting. If the HDS indicates FAILED, check for poor connections or loose terminals at the PCM. If the PCM was updated, substitute a known-good PCM, then go to step 1. If the HDS indicates NOT COMPLETED, go to step 6. PGM-FI System U0155, U0155 DTC U0155: F-CAN Malfunction (ECM/PCM-Gauge Control Module)",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0155 indicated? Go to step 4. Intermittent failure, the system is OK at this time. Check for poor connections or loose terminals at the gauge control module and the ECM/PCM.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 4,
+          "instruction": "Check for body electrical DTCs in the DTCs MENU with the HDS. Is DTC B1168, B1169, and/or B1178 indicated? Go to step 5. Do the gauge control module input test  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Testing and Inspection/Component Tests and General Diagnostics.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Jump the SCS line with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Remove the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect ECM/PCM connector A (44P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Check for continuity between ECM/PCM connector terminal A36 and gauge control module 32P connector terminal No. 19. Is there continuity? Go to step 11. Repair an open in the wire between the ECM/PCM(A36) and the gauge control module, then go to step 12.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 11,
+          "instruction": "Check for continuity between ECM/PCM connector terminal A37 and gauge control module 32P connector terminal No. 20. Is there continuity? Substitute a known-good gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair, then go to step 12 and recheck. If DTC U0155 is not indicated after substitution, replace the original gauge control module, then go to step 12. Repair an open in the wire between the ECM/PCM(A37) and the gauge control module, then go to step 12.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 12,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "Reset the ECM/PCM with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "Do the ECM/PCM idle learn procedure  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Testing and Inspection/ECM/PCM Idle Learn Procedure.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 16,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0155 indicated? Check for poor connections or loose terminals at the gauge control module and the ECM/PCM, then go to step 1. is complete. If any other Pending or Confirmed DTCs are indicated, go to the indicated DTC's troubleshooting.",
+          "yes": "",
+          "no": ""
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0155-106",
+      "description": "Advanced Diagnostics - DTC U0155 (106): F-CAN Malfunction (Gauge Control Module - Motor Control Module (MCM)) (IMA System) The controller area network (CAN) transmits/receives pulsing signals to/from the control modules simultaneously by using two signal lines (F-CAN H and F-CAN L). When the battery control processor in the motor control module (MCM) does not receive the signals from the gauge control module via the F-CAN lines for a set time, or the received data is abnormal for a specified cycle, a malfunction is detected and a DTC is stored. U0301 DTC U0301: PGM-FI System Program Version Mismatch The integrated motor assist-controller area network (IMA-CAN) uses two signal lines, IMACAN H and IMACAN L, and it receives and transmits multiple signals simultaneously to/from multiple control modules. When the software version in the engine control module (ECM)/powertrain control module (PCM) and the motor control module (MCM) are mismatched for a set time, the ECM/PCM detects a malfunction and stores a DTC. The integrated motor assist-controller area network (IMA-CAN) uses two signal lines, IMACANH and IMACANL, and it receives and transmits multiple signals simultaneously to/from multiple control modules. When the software version in the FI CPU and the CVT CPU are mismatched (CVT CPU software version is old) for a set time, the powertrain control module (PCM) detects a malfunction and stores a DTC. The motor control processor and the battery control processor softwares which are in the motor control module (MCM) can be updated by software rewriting device connected via the F-CAN lines, When both processors need to be updated but either processor fails rewriting, the indicator comes on and stores a DTC. Each processor stores a program version information, and compare their versions each other by transmitting/receiving via the internal serial communication. If the motor control processor judges that its own software version is old, a malfunction is detected and a DTC is stored. The motor control processor and the battery control processor softwares which are in the motor control module (MCM) and the FI CPU which is in the engine control module (ECM)/powertrain control module (PCM) can be updated by software rewriting device connected via the F-CAN lines. When the battery control processor and the FI CPU, or the motor control processor need to be updated but either processor fails rewriting, the indicator comes on and stores a DTC. Each processor stores a program version information, and compare their versions each other by transmitting/receiving via the serial communication. If the battery control processor judges that its own software version is old, a malfunction is detected and a DTC is stored.",
+      "detection_condition": [
+        "No signals from the gauge control module via the F-CAN lines are received for at least 1.0 second, or received data is abnormal at least 25 counts.",
+        "Diagnosis Details",
+        "Conditions for setting the DTC",
+        "When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the MCM memory. If the malfunction returns in the next",
+        "(second) drive cycle, a Confirmed DTC and the freeze data are stored. The MIL does not come on.",
+        "Conditions for clearing the DTC",
+        "The Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the battery.",
+        "The software version in the ECM/PCM and the MCM are mismatched for at least 1 second.",
+        "Diagnosis Details",
+        "Conditions for setting the DTC",
+        "When a malfunction is detected, the MIL comes on and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the ECM/PCM memory.",
+        "Conditions for clearing the DTC",
+        "The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed",
+        "DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the battery.",
+        "The software version in the FI CPU and the CVT CPU are mismatched (CVT CPU software version is old) for at least 1 second.",
+        "Diagnosis Details",
+        "Conditions for setting the DTC",
+        "When a malfunction is detected, the MIL comes on and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the PCM memory.",
+        "Conditions for clearing the DTC",
+        "The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed",
+        "DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the battery.",
+        "Advanced Diagnostics",
+        "Advanced Diagnostics - DTC U0311(123): MCM And BCM Program Version Mismatch",
+        "The motor control processor judges that its own software version is old for at least 1 second.",
+        "Diagnosis Details",
+        "Conditions for setting the DTC",
+        "When a malfunction is detected, the MIL comes on and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the MCM memory.",
+        "Conditions for clearing the DTC",
+        "The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed",
+        "DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the battery.",
+        "The battery control processor judges that its own software version is old for at least 1 second.",
+        "Diagnosis Details",
+        "Conditions for setting the DTC",
+        "When a malfunction is detected, the MIL comes on and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the MCM memory.",
+        "Conditions for clearing the DTC",
+        "The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed",
+        "DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the battery.",
+        "Motor Control Module"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Do the ECM/PCM update procedure  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Testing and Inspection/ECM/PCM Update.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0301 indicated? Replace the original ECM/PCM  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Service and Repair. is complete. If any other Pending or Confirmed DTCs are indicated, go to the indicated DTC's troubleshooting. Advanced Diagnostics Advanced Diagnostics - DTC U0301: PGM-FI System Program Version Mismatch U0302 (129) DTC U0302: PGM-FI System and A/T System Program Mismatch",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Update the PCM (A/T system)  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Testing and Inspection/ECM/PCM Update.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0302 indicated? Replace the original PCM  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Service and Repair. is complete. Advanced Diagnostics Advanced Diagnostics - DTC U0302: PGM-FI System And A/T System Program Mismatch U0311 (123) DTC U0311: MCM and BCM Program Version Mismatch",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Do the MCM (IMA Motor) update procedure  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Testing and Inspection.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0311 indicated? Replace the original MCM  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair. Update is complete. If any other Pending or Confirmed DTCs are indicated, go to the indicated DTC's troubleshooting. U0312 (124) DTC U0312: BCM, MCM and PGM-FI System Program Version Mismatch",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Do the MCM (IMA Battery) update procedure  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Testing and Inspection.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0312 indicated? Replace the original MCM  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair. Update is complete. If any other Pending or Confirmed DTCs are indicated, go to the indicated DTC's troubleshooting. Advanced Diagnostics Advanced Diagnostics - DTC U0312(124): BCM, MCM And PGM-FI System Program Version Mismatch U0038 (99), U1204 (55) DTC U0038: IMA-CAN Malfunction (BUS-OFF (Motor Control Module (MCM))) DTC U1204: IMA-CAN Malfunction (Powertrain Control Module (PCM) - Motor Control Module (MCM))",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Check for ENGINE COOLANT TEMPERATURE in the IMA DATA LIST with the HDS. Is 419 °F (215 °C) indicated? Go to step 3. Intermittent failure, the system is OK at this time. Check for poor connections or loose terminals at the ECM/PCM and the MCM.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 3,
+          "instruction": "Jump the SCS line with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Disconnect ECM/PCM connector A (44P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Measure the resistance between ECM/PCM connector terminals A38 and A39. Is there about 120 Ohms? Go to step 19. Go to step 7.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Measure the resistance between ECM/PCM connector terminals A38 and A39. Is there about 0 Ohms? Go to step 8. Go to step 13.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Turn the battery module switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Remove the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Remove the PCU lid, the PCU busplate, and the PCU cover  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect MCM connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between MCM connector terminals A1 and A2. Is there continuity? Repair a short in the wire between MCM connector terminals A1 and A2, then go to step 32. Go to step 38.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 13,
+          "instruction": "Turn the battery module switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "Remove the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "Remove the PCU lid, the PCU busplate, and the PCU cover  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 16,
+          "instruction": "Disconnect MCM connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 17,
+          "instruction": "Check for continuity between MCM connector terminal A2 and ECM/PCM connector terminal A38. Is there continuity? Go to step 18. Repair an open in the wire between the ECM/PCM (A38) and the MCM (A2), then go to step 32.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 18,
+          "instruction": "Check for continuity between MCM connector terminal A1 and ECM/PCM connector terminal A39. Is there continuity? Go to step 38. Repair an open in the wire between the ECM/PCM (A39) and the MCM (A1), then go to step 32.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 19,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 20,
+          "instruction": "Turn the battery module switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 21,
+          "instruction": "Remove the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 22,
+          "instruction": "Remove the PCU lid, the PCU busplate, and the PCU cover  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 23,
+          "instruction": "Disconnect MCM connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 24,
+          "instruction": "Check for continuity between MCM connector terminal A2 and body ground. Is there continuity? Repair a short to ground in the wire between the ECM/PCM (A38) and the MCM (A2), then go to step 32. Go to step 25.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 25,
+          "instruction": "Check for continuity between MCM connector terminal A1 and body ground. Is there continuity? Repair a short to ground in the wire between the ECM/PCM (A39) and the MCM (A1), then go to step 32. Go to step 26.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 26,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 27,
+          "instruction": "Measure the voltage between MCM connector terminal A2 and body ground. Is there about 5-12 V? Repair a short to power in the wire between the ECM/PCM (A38) and the MCM (A2), then go to step 32. Go to step 28.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 28,
+          "instruction": "Measure the voltage between MCM connector terminal A1 and body ground. Is there about 5-12 V? Repair a short to power in the wire between the ECM/PCM (A39) and the MCM (A1), then go to step 32. Go to step 29.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 29,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 30,
+          "instruction": "Reconnect ECM/PCM connector A (44P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 31,
+          "instruction": "Measure the resistance between MCM connector terminals A1 and A2. Is there about 120 Ohms? Go to step 38. Update the ECM/PCM if it does not have the latest software, or substitute a known-good ECM/PCM, then recheck. If the symptom/indication goes away with a known-good ECM/PCM, replace the original ECM/PCM, then go to step 32.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 32,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 33,
+          "instruction": "Reinstall the PCU cover, the PCU busplate, and the PCU lid  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 34,
+          "instruction": "Reinstall the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation, then turn the battery module switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 35,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 36,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 37,
+          "instruction": "Check for Pending or Confirmed DTCs in the IMA SYSTEM with the HDS. Is DTC U0038 or U1204 indicated? Check for poor connections or loose terminals at the ECM/PCM and the MCM, then go to step 1. is complete. If any other Pending or Confirmed DTCs are indicated, go to the indicated DTC's troubleshooting.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 38,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 39,
+          "instruction": "Reinstall the PCU cover, the PCU busplate, and the PCU lid  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 40,
+          "instruction": "Reinstall the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation, then turn the battery module switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 41,
+          "instruction": "Update the MCM if it does not have the latest software  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Testing and Inspection, or substitute a known-good MCM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 42,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 43,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS in the IMA SYSTEM. Is DTC U0038 or U1204 indicated? Check for poor connections or loose terminals at the ECM/PCM and the MCM. If the MCM was updated, substitute a known-good MCM, then recheck. If the MCM was substituted, go to step 1. If the MCM was updated, troubleshooting is complete. If the MCM was substituted, replace the original MCM  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair. If any other Pending or Confirmed DTCs were indicated, go to the indicated DTC's .",
+          "yes": "",
+          "no": ""
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1204-55",
+      "description": "Advanced Diagnostics - DTC U1204 (55): IMA-CAN Malfunction (Powertrain Control Module (PCM) - Motor Control Module (MCM)) The integrated motor assist-controller area network (IMA-CAN) transmits/receives pulsing signals to/from the control modules simultaneously by using two signal lines (IMA-CAN H and IMA-CAN L). When the battery control processor in the motor control module (MCM) does not receive the signals from the engine control module (ECM)/powertrain control module (PCM) via the IMA-CAN lines for a set time, or the received data is abnormal for a specified cycle, a malfunction is detected and a DTC is stored. U0029 (107), U0122 (107), U0155 (107), U1205 (120) DTC U0029: F-CAN Malfunction (F-CAN Bus OFF) DTC U0122: Lost Communication With Vehicle Dynamics Control Module DTC U0155: Lost Communication With Gauge Control Module DTC U1205: IMA-CAN Malfunction (PCM-to-Motor Control Module) The integrated motor assist-controller area network (IMA-CAN) uses two signal lines, IMA-CAN H and IMA-CAN L, and it receives and transmits multiple signals simultaneously to/from multiple control modules. When the information is not sent from the motor control module (MCM) via the IMA-CAN lines and this condition continues for a specified time or when the information sent from the MCM is abnormal and this condition continues for a specified cycle, the powertrain control module (PCM) detects a malfunction and stores a DTC. The integrated motor assist-controller area network (IMA-CAN) uses two signal lines, IMA-CAN H and IMA-CAN L, and it receives and transmits multiple signals simultaneously to/from multiple control modules. When the information is not sent from the motor control module (MCM) via the IMA-CAN lines and this condition continues for a specified time or when the information sent from the MCM is abnormal and this condition continues for a specified cycle, the engine control module (ECM)/powertrain control module (PCM) detects a malfunction and stores a DTC. The DC-DC converter uses an internal timer to measure the intervals between serial communication data updates. When an update is not received for a specified time, a SCIMD serial communication reception malfunction is detected and a DTC is stored. The motor control module (MCM) communicates with the DC-DC converter. When the MCM does not receive the signals from the DC-DC converter via the SCIDM serial line, or the received data is abnormal for a specified time, a malfunction is detected and a DTC is stored.",
+      "detection_condition": [
+        "No signals from the ECM/PCM via the IMA-CAN lines are received for at least 1.0 second, or received data is abnormal at least 50 counts.",
+        "Diagnosis Details",
+        "Conditions for setting the DTC",
+        "When a malfunction is detected, the MIL comes on and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the MCM memory.",
+        "Conditions for clearing the DTC",
+        "The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed",
+        "DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the battery.",
+        "CVT System",
+        "One of these conditions is met:",
+        "-",
+        "The PCM does not receive any signals via the IMA-CAN lines for at least 1 second.",
+        "-",
+        "The information sent from the MCM is abnormal at least 20 times.",
+        "Diagnosis Details",
+        "Conditions for setting the DTC",
+        "When a malfunction is detected, the MIL comes on and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the PCM memory.",
+        "Conditions for clearing the DTC",
+        "The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed",
+        "DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the battery.",
+        "PGM-FI System",
+        "Advanced Diagnostics - DTC U1205: IMA-CAN Malfunction (Engine Control Module (ECM)/Powertrain Control Module (PCM)-Motor",
+        "Control Module (MCM)) (PGM-FI System)",
+        "One of these conditions is met:",
+        "-",
+        "The ECM/PCM does not receive any signals via the IMA-CAN lines for at least 1 second.",
+        "-",
+        "The information sent from the MCM is abnormal at least 20 times.",
+        "Diagnosis Details",
+        "Conditions for setting the DTC",
+        "When a malfunction is detected, the MIL comes on and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the ECM/PCM memory.",
+        "Conditions for clearing the DTC",
+        "The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed",
+        "DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the battery.",
+        "PGM-FI System",
+        "The serial communication data is not updated for at least 2 seconds.",
+        "Diagnosis Details",
+        "Conditions for setting the DTC",
+        "When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the MCM memory. If the malfunction returns in the next",
+        "(second) drive cycle, the MIL comes on and a Confirmed DTC and the freeze data are stored.",
+        "Conditions for clearing the DTC",
+        "The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed",
+        "DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the battery.",
+        "No signals via the SCIDM serial line are received, or the received data is abnormal for at least 2.0 seconds.",
+        "Diagnosis Details",
+        "Conditions for setting the DTC",
+        "When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the MCM memory. If the malfunction returns in the next",
+        "(second) drive cycle, the MIL comes on and a Confirmed DTC and the freeze data are stored.",
+        "Conditions for clearing the DTC",
+        "The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed",
+        "DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the battery."
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for Pending or Confirmed DTCs in the PGM-FI SYSTEM with the HDS. Is DTC U0029, U0122, U0155, or U1205 indicated in the PGM-FI SYSTEM? Go to the DTC U0029 troubleshooting  See: U0029/DTC Troubleshooting/PGM-FI System, DTC U0122 troubleshooting  See: U0122/DTC /PGM-FI System, DTC U0155 troubleshooting  See: U0155/PGM-FI System, or DTC U1205 troubleshooting  See: U0038/PGM-FI System in Communication Systems. Go to step 4.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 4,
+          "instruction": "Check for Pending or Confirmed DTCs in the A/T SYSTEM with the HDS. Is DTC U0029, U0122, U0155, or U1205 indicated in the A/T SYSTEM? Go to step 5. Intermittent failure, the system is OK at this time. If any other Pending or Confirmed DTCs were indicated, go to the indicated DTC's troubleshooting.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Update the PCM if it does not have the latest software  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Testing and Inspection/ECM/PCM Update, or substitute a known-good PCM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Start the engine, and let it idle for at least 2 minutes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Check for Pending or Confirmed DTCs the A/T SYSTEM with the HDS. Is DTC U0029, U0122, U0155, or U1205 indicated in the A/T SYSTEM? Check for poor connections or loose terminals at the PCM. If the PCM was updated, substitute a known-good PCM, then go to step 6. If the PCM was substituted, go to step 1. Go to step 8.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Monitor the OBD STATUS for U0029, U0122, U0155, or U1205 in the DTCs MENU with the HDS. Does the HDS indicate PASSED? If the PCM was updated, troubleshooting is complete. If the PCM was substituted, replace the original PCM  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Service and Repair. If any other Pending or Confirmed DTCs were indicated in step 7, go to the indicated DTC's troubleshooting. If the HDS indicates FAILED, check for poor connections or loose terminals at the PCM. If the PCM was updated, substitute a known-good PCM, then go to step 1. If the HDS indicates NOT COMPLETED, go to step 6. CVT System Advanced Diagnostics - DTC U1205: IMA-CAN Malfunction (PCM-To-Motor Control Module) (CVT System) U0038, U1205, U0038, U1205 DTC U0038: IMA-CAN Malfunction (BUS-OFF) DTC U1205: IMA-CAN Malfunction (ECM/PCM-Motor Control Module (MCM))",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0038 or U1205 indicated? Go to step 6. Intermittent failure, the system is OK at this time. Check for poor connections or loose terminals at the motor control module (MCM) and the ECM/PCM.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Check for DTCs in the IMA system with the HDS. Is DTC U0038 or U1205 indicated? Go to step 7. Go to step 38.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Jump the SCS line with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect ECM/PCM connector A (44P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Measure the resistance between ECM/PCM connector terminals A38 and A39. Is there about 108-132 Ohms? Go to step 22. - More than 132 Ohms: Go to step 11. - Less than 108 Ohms: Go to step 17.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 11,
+          "instruction": "Turn the battery module switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Remove the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "Remove the PCU lid, the PCU busplate, and the PCU cover  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "Disconnect motor control module (MCM) connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "Measure the resistance between ECM/PCM connector terminals A38 and motor control module (MCM) connector terminal A2. Is there about 1.0 Ohms or less ? Go to step 16. Repair an open in the wire between the ECM/PCM (A38) and the motor control module (MCM) (A2) , then go to step 33.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 16,
+          "instruction": "Measure the resistance between ECM/PCM connector terminals A39 and motor control module (MCM) connector terminal A1. Is there about 1.0 Ohms or less ? Replace the motor control module (MCM)  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair, then go to step 33. Repair an open in the wire between the ECM/PCM (A39) and the motor control module (MCM) (A1), then go to step 33.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 17,
+          "instruction": "Turn the battery module switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 18,
+          "instruction": "Remove the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 19,
+          "instruction": "Remove the PCU lid, the PCU busplate, and the PCU cover  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 20,
+          "instruction": "Disconnect motor control module (MCM) connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 21,
+          "instruction": "Measure the resistance between ECM/PCM connector terminals A38 and A39. Is there about 1.0 Ohms or more ? Replace the motor control module  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair, then go to step 33. Repair a short in the wires between the ECM/PCM (A38) (IMA-CAN H line) and the ECM/PCM (A39) (IMA-CAN L line), then go to step 33.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 22,
+          "instruction": "Turn the battery module switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 23,
+          "instruction": "Remove the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 24,
+          "instruction": "Remove the PCU lid, the PCU busplate, and the PCU cover  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 25,
+          "instruction": "Disconnect motor control module (MCM) connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 26,
+          "instruction": "Measure the resistance between body ground and ECM/PCM connector terminals A38 and A39 individually. Is there about 1.0 Ohms or more ?. Go to step 27. Repair a short to ground in the wire between the ECM/PCM (A38) and the motor control module (MCM) (A2) or between the ECM/PCM (A39) the and the motor control module (MCM) (A1), then go to step 33.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 27,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 28,
+          "instruction": "Measure the voltage between body ground and ECM/PCM connector terminals A38 and A39 individually. Is there voltage? Repair a short to power in the wire between the ECM/PCM (A38) and the motor control module (MCM) (A2) or between the ECM/PCM (A39) and the motor control module (MCM) (A1), then go to step 32. Go to step 29.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 29,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 30,
+          "instruction": "Reconnect ECM/PCM connector A (44P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 31,
+          "instruction": "Measure the resistance between motor control module (MCM) connector terminals A1 and A2. Is there about 108-132 Ohms? Go to step 36. Replace the ECM/PCM  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Service and Repair, then go to step 33.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 32,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 33,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 34,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 35,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0038 or DTC U1205 indicated? Check for poor connections or loose terminals at the motor control module (MCM) and the ECM/PCM, then go to step 1. is complete. If any other Pending or Confirmed DTCs are indicated, go to the indicated DTC's troubleshooting.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 36,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 37,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 38,
+          "instruction": "Update the ECM/PCM if it does not have the latest software  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Testing and Inspection/ECM/PCM Update, or substitute a known-good ECM/PCM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 39,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0038 or DTC U1205 indicated? Check for poor connections or loose terminals at the motor control module (MCM), and ECM/PCM. If the ECM/PCM was updated, substitute a known-good ECM/PCM, then recheck. If the ECM/PCM was substituted, go to step 1. If the ECM/PCM was updated, troubleshooting is complete. If the ECM/PCM was substituted, replace the original ECM/PCM  See: Powertrain Management/Computers and Control Systems/Engine Control Module/Service and Repair. If any other Pending or Confirmed DTCs are indicated, go to the indicated DTC's troubleshooting. Advanced Diagnostics Advanced Diagnostics - DTC U1220 (34): DC-DC Converter Lost Communication With Motor Control Module (MCM) U1220 (34) DTC U1220: DC-DC Converter Lost Communication with Motor Control Module (MCM)",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Start the engine.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Monitor the OBD STATUS for U1220 in the DTCs MENU with the HDS. Does the HDS indicate FAILED? Go to step 5. If the HDS indicates PASSED, intermittent failure, the system is OK at this time. Check for poor connections or loose terminals at the DC-DC converter and the MCM. If the HDS indicates NOT COMPLETED, keep the ignition switch ON (II) until a result comes on.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the battery module switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Remove the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Remove the MCM  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect the DC-DC converter 4P connector (A).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Check for continuity between MCM connector terminal A27 and body ground. Is there continuity? Repair a short in the wire between the MCM (A27) and the DC-DC converter, then go to step 22. Go to step 11.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 11,
+          "instruction": "Reconnect the DC-DC converter 4P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "Measure the voltage between MCM connector terminal A27 and body ground. Is there about 8-12 V? Go to step 29. Go to step 14.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 14,
+          "instruction": "Measure the voltage between DC-DC converter 4P connector terminal No. 3 and body ground. Is there 8-12 V? Repair an open in the wire between the MCM (A27) and the DC-DC converter, then go to step 22. Go to step 15.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 15,
+          "instruction": "Substitute a known-good DC-DC converter  See: Hybrid Drive Systems/Power Control System/Voltage Converter/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 16,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 17,
+          "instruction": "Reinstall the MCM  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 18,
+          "instruction": "Reinstall the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation, then turn the battery module switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 19,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 20,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 21,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U1220 indicated? Go to step 32. Replace the original DC-DC converter  See: Hybrid Drive Systems/Power Control System/Voltage Converter/Service and Repair, then go to step 22.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 22,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 23,
+          "instruction": "Reinstall the MCM  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 24,
+          "instruction": "Reinstall the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation, then turn the battery module switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 25,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 26,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 27,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U1220 indicated? Check for poor connections or loose terminals at the DC-DC converter and the MCM, then go to step 1. Go to step 28.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 28,
+          "instruction": "Monitor the OBD STATUS for U1220 in the DTCs MENU with the HDS. Does the HDS indicate PASSED? is complete. If any other Pending or Confirmed DTCs were indicated in step 27, go to the indicated DTC's troubleshooting. If the HDS indicates FAILED, check for poor connections or loose terminals at the DC-DC converter and the MCM, then go to step 1. If the HDS indicates NOT COMPLETED, keep the ignition switch ON (II) until a result comes on.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 29,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 30,
+          "instruction": "Reinstall the MCM  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 31,
+          "instruction": "Reinstall the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation, then turn the battery module switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 32,
+          "instruction": "Update the MCM if it does not have the latest software  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Testing and Inspection, or substitute a known-good MCM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 33,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 34,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U1220 indicated? Check for poor connections or loose terminals at the DC-DC converter and the MCM. If the MCM was updated, substitute a known-good MCM, then recheck. If the MCM was substituted, go to step 1. Go to step 35.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 35,
+          "instruction": "Monitor the OBD STATUS for U1220 in the DTCs MENU with the HDS. Does the HDS indicate PASSED? If the MCM was updated, troubleshooting is complete. If the MCM was substituted, replace the original MCM  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair. If any other Pending or Confirmed DTCs were indicated in step 34, go to the indicated DTC's troubleshooting. If the HDS indicates FAILED, check for poor connections or loose terminals at the DC-DC converter and the MCM. If the MCM was updated, substitute a known-good MCM, then recheck. If the MCM was substituted, go to step 1. If the HDS indicates NOT COMPLETED, keep the ignition switch ON (II) until a result comes on. Advanced Diagnostics Advanced Diagnostics - DTC U1221 (35): Motor Control Module (MCM) Lost Communication With DC-DC Converter U1221 (35) DTC U1221: Motor Control Module (MCM) Lost Communication with DC-DC Converter",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U1221 indicated? Go to step 4. Intermittent failure, the system is OK at this time. Check for poor connections or loose terminals at the DC-DC converter and the MCM.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 4,
+          "instruction": "Check the No. B12 IG IMA (10 A) fuse in the under-dash fuse/relay box. Is the fuse OK? Go to step 5. Repair a short to ground in the wire between the DC-DC converter 4P connector and the No. B12 IG IMA (10 A) fuse. Also replace the No. B12 IG IMA (10 A) fuse, then go to step 23.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the battery module switch OFF.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Remove the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Remove the PCU lid, the PCU busplate, and the PCU cover  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Reinstall the PCU busplate  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Check for poor connections, loose bolts, and damage at the busbars (A). Are the busbar connections OK? Go to step 11. Repair the busbar connections, then go to step 23.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect MCM connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Measure the resistance between MCM connector terminal A28 and body ground. Is there 1 MOhms or more? Go to step 13. Go to step 21.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 13,
+          "instruction": "Disconnect the DC-DC converter 4P connector (A).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "Measure the voltage between DC-DC converter 4P connector terminal No. 1 and body ground. Is there battery voltage? Go to step 16. Repair an open in the wire between the DC-DC converter 4P connector and the No. B12 IG IMA (10 A) fuse, then go to step 23.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 16,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 17,
+          "instruction": "Reconnect MCM connector A (31P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 18,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 19,
+          "instruction": "Measure the voltage between DC-DC converter 4P connector terminal No. 4 and body ground. Is there about 12 V? Replace the DC-DC converter  See: Hybrid Drive Systems/Power Control System/Voltage Converter/Service and Repair, then go to step 23. Go to step 20.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 20,
+          "instruction": "Measure the voltage between MCM connector terminal A28 and body ground. Is there about 12 V? Repair an open in the wire between the DC-DC converter 4P connector and the MCM (A28), then go to step 23. Go to step 29.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 21,
+          "instruction": "Disconnect the DC-DC converter 4P connector (A).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 22,
+          "instruction": "Measure the resistance between MCM connector terminal A28 and body ground. Is there 1MOhms or more? Replace the DC-DC converter  See: Hybrid Drive Systems/Power Control System/Voltage Converter/Service and Repair, then go to step 23. Repair a short in the wire between the DC-DC converter 4P connector and the MCM (A28), then go to step 23.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 23,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 24,
+          "instruction": "Reinstall the PCU cover, the PCU busplate, and the PCU lid  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 25,
+          "instruction": "Reinstall the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation, then turn the battery module switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 26,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 27,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 28,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U1221 indicated? Check for poor connections or loose terminals at the MCM and the DC-DC converter, then go to step 1. is complete. If any other Pending or Confirmed DTCs are indicated, go to the indicated DTC's troubleshooting.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 29,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 30,
+          "instruction": "Reinstall the PCU cover, the PCU busplate, and the PCU lid  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 31,
+          "instruction": "Reinstall the IPU cover  See: Hybrid Drive Systems/Service and Repair/Removal and Replacement/IPU Cover Removal/Installation, then turn the battery module switch ON.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 32,
+          "instruction": "Update the MCM if it does not have the latest software  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Testing and Inspection, or substitute a known-good MCM.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 33,
+          "instruction": "Turn the ignition switch to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 34,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U1221 indicated? Check for poor connections or loose terminals at the MCM and the DC-DC converter. If the MCM was updated, substitute a known-good MCM, then recheck. If the MCM was substituted, go to step 1. If the MCM was updated, troubleshooting is complete. If the MCM was substituted, replace the original MCM  See: Hybrid Drive Systems/Power Control System/Drive Motor Control Module/Service and Repair. If any other Pending or Confirmed DTCs were indicated, go to the indicated DTC's .",
+          "yes": "",
+          "no": ""
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1280",
+      "description": ", U1280 DTC U1280: Communication Bus Line Error (BUS-OFF)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0), and then back to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC B1280 indicated? Troubleshoot DTC B1000. Intermittent failure, the system is OK at this time.",
+          "yes": "",
+          "no": ""
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1281",
+      "description": "Lost Communication With MICU (MICU frame)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0) and then back to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U1281 indicated? Faulty gauge control module; replace the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the gauge control module and the MICU.",
+          "yes": "",
+          "no": ""
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

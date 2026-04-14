@@ -1,0 +1,512 @@
+{
+  "source_file": "Mazda_MX5_Miata_B.pdf",
+  "format_detected": "mazda_image",
+  "dtc_count": 101,
+  "dtcs": [
+    {
+      "dtc_code": "B104B",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B104C",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B104D",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B104F",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B112A",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B293B",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B296A",
+      "description": "DTC / B294B / B293C / B293B [POWER RETRACTABLE HARDTOP]",
+      "system": ""
+    },
+    {
+      "dtc_code": "B293C",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B293D",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B293E",
+      "description": "DTC / B293D / B294C / B293F [POWER RETRACTABLE HARDTOP]",
+      "system": ""
+    },
+    {
+      "dtc_code": "B293F",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B294B",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B294C",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B294D",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B294E",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B294F",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B296B",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B296C",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B296D",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1013",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1047",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1051",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1055",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1093",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1126",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1127",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1128",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1129",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1131",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1132",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1133",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1134",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1213",
+      "description": "SECURITY LIGHT -, DTC / - / P1260 [IMMOBILIZER SYSTEM (ADVANCED KEYLESS AND START SYSTEM)]",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1317",
+      "description": "DTC , B1318 [ABS]",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "B1318",
+      "description": "DTC",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "B1342",
+      "description": "DTC [ABS]",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "B1428",
+      "description": "",
+      "system": "Engine"
+    },
+    {
+      "dtc_code": "B1484",
+      "description": "DTC [ABS]",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "B1600",
+      "description": "SECURITY LIGHT 13, DTC - / / P1260 [IMMOBILIZER SYSTEM (ADVANCED KEYLESS AND START SYSTEM)]",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1601",
+      "description": "SECURITY LIGHT 15, DTC - / / P1260 [IMMOBILIZER SYSTEM (ADVANCED KEYLESS AND START SYSTEM)]",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1602",
+      "description": "SECURITY LIGHT 14, DTC - / / P1260 [IMMOBILIZER SYSTEM (ADVANCED KEYLESS AND START SYSTEM)]",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1681",
+      "description": "w/ Keyless Control Module Code And w/ Instrument Cluster Code",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1869",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B1871",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "B1877",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "B1878",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "B1879",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "B1881",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "B1882",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "B1883",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "B1884",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "B1885",
+      "description": "",
+      "system": "Engine"
+    },
+    {
+      "dtc_code": "B1886",
+      "description": "",
+      "system": "Engine"
+    },
+    {
+      "dtc_code": "B1916",
+      "description": "",
+      "system": "Engine"
+    },
+    {
+      "dtc_code": "B1925",
+      "description": "",
+      "system": "Engine"
+    },
+    {
+      "dtc_code": "B1932",
+      "description": "",
+      "system": "Engine"
+    },
+    {
+      "dtc_code": "B1933",
+      "description": "",
+      "system": "Engine"
+    },
+    {
+      "dtc_code": "B1934",
+      "description": "",
+      "system": "Engine"
+    },
+    {
+      "dtc_code": "B1935",
+      "description": "",
+      "system": "Engine"
+    },
+    {
+      "dtc_code": "B1936",
+      "description": "",
+      "system": "Engine"
+    },
+    {
+      "dtc_code": "B1938",
+      "description": "",
+      "system": "Engine"
+    },
+    {
+      "dtc_code": "B1992",
+      "description": "",
+      "system": "Engine"
+    },
+    {
+      "dtc_code": "B1993",
+      "description": "",
+      "system": "Engine"
+    },
+    {
+      "dtc_code": "B1994",
+      "description": "",
+      "system": "Engine"
+    },
+    {
+      "dtc_code": "B1995",
+      "description": "",
+      "system": "Engine"
+    },
+    {
+      "dtc_code": "B1996",
+      "description": "",
+      "system": "Engine"
+    },
+    {
+      "dtc_code": "B1997",
+      "description": "",
+      "system": "Engine"
+    },
+    {
+      "dtc_code": "B1998",
+      "description": "",
+      "system": "Engine"
+    },
+    {
+      "dtc_code": "B1999",
+      "description": "",
+      "system": "Engine"
+    },
+    {
+      "dtc_code": "B2103",
+      "description": "SECURITY LIGHT 12, DTC / / P1260 [IMMOBILIZER SYSTEM (ADVANCED KEYLESS AND START SYSTEM)]",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2139",
+      "description": "SECURITY LIGHT 23, DTC - / / P1260 [IMMOBILIZER SYSTEM (ADVANCED KEYLESS AND START SYSTEM)]",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2141",
+      "description": "SECURITY LIGHT 22, DTC - / / P1260 [IMMOBILIZER SYSTEM (ADVANCED KEYLESS AND START SYSTEM)]",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2143",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2170",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2226",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2227",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2228",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2229",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2230",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2231",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2232",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2233",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2234",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2235",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2290",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2431",
+      "description": "SECURITY LIGHT 13, DTC - / / P1260 [IMMOBILIZER SYSTEM (ADVANCED KEYLESS AND START SYSTEM)]",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2433",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2434",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2437",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2438",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2477",
+      "description": "DTC",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2741",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "B2840",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "B2856",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "B2867",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "B2868",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "B2869",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "B2870",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "B2871",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "B2886",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "B2887",
+      "description": "",
+      "system": "Instrument"
+    }
+  ]
+}

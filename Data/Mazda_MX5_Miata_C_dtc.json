@@ -1,0 +1,187 @@
+{
+  "source_file": "Mazda_MX5_Miata_C.pdf",
+  "format_detected": "mazda_image",
+  "dtc_count": 36,
+  "dtcs": [
+    {
+      "dtc_code": "C1093",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "C1095",
+      "description": "DTC , C1096 [ABS]",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1141",
+      "description": "DTC , C1142, C1143, C1144 [ABS]",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1145",
+      "description": "DTC , C1155, C1165, C1175 [ABS]",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1148",
+      "description": "DTC , C1158, C1168, C1178 [ABS]",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1186",
+      "description": "DTC , C1266 [ABS]",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1194",
+      "description": "DTC , C1198, C1210, C1214, C1242, C1246, C1250, C1254 [ABS]",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1222",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1233",
+      "description": "DTC , C1234, C1235, C1236 [ABS]",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1279",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1280",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1281",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1290",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1295",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1306",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1307",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1400",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1410",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1805",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1937",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1938",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1946",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1947",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1948",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1952",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1953",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1954",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "B1484",
+      "description": "DTC , C1954 [DYNAMIC STABILITY CONTROL (DSC)]",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1956",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1957",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1958",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1959",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1982",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C1994",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "C2768",
+      "description": "",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "B2741",
+      "description": "DTC , C2768, U2516 [DYNAMIC STABILITY CONTROL (DSC)]",
+      "system": "Abs"
+    }
+  ]
+}

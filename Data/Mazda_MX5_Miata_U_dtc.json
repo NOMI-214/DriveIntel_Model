@@ -1,0 +1,147 @@
+{
+  "source_file": "Mazda_MX5_Miata_U.pdf",
+  "format_detected": "mazda_image",
+  "dtc_count": 28,
+  "dtcs": [
+    {
+      "dtc_code": "U0028",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0030",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0031",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0073",
+      "description": "DTC , U0100, U0101, U0155, U1900 [DYNAMIC STABILITY CONTROL (DSC)]",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0074",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0100",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0101",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0123",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0127",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0151",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0155",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0214",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "U0236",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "U1147",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "U2510",
+      "description": "SECURITY LIGHT 16, DTC / P1260, U1147 / P1260 [IMMOBILIZER SYSTEM (KEYLESS ENTRY SYSTEM)]",
+      "system": ""
+    },
+    {
+      "dtc_code": "U1901",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "U2017",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B1051",
+      "description": "DTC , U2017",
+      "system": ""
+    },
+    {
+      "dtc_code": "U2018",
+      "description": "",
+      "system": ""
+    },
+    {
+      "dtc_code": "B104F",
+      "description": "DTC , U2018",
+      "system": ""
+    },
+    {
+      "dtc_code": "U2023",
+      "description": "DTC [ABS]",
+      "system": "Abs"
+    },
+    {
+      "dtc_code": "U2064",
+      "description": "",
+      "system": "Instrument"
+    },
+    {
+      "dtc_code": "U2516",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "B2741",
+      "description": "DTC , C2768, U2516 [DYNAMIC STABILITY CONTROL (DSC)]",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "U2616",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "U2618",
+      "description": "and U2619 may be stored in the memory. In this case, re-implement the wheel unit ID registration, and after confirming that the TPMS",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "U2617",
+      "description": "",
+      "system": "Immobilizer"
+    },
+    {
+      "dtc_code": "U2619",
+      "description": "",
+      "system": "Immobilizer"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Claude Code session files
+.claude/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large model binaries — uncomment if files exceed 100MB GitHub limit
+# models/*.pt
+# models/*.onnx
+
+# Logs
+*.log

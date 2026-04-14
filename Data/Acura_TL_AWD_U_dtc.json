@@ -1,0 +1,2718 @@
+{
+  "source_file": "Acura_TL_AWD_U.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 8,
+  "dtcs": [
+    {
+      "dtc_code": "U0127",
+      "description": "Gauge Control Module Lost Communication With the TPMS Control Unit (TPMS Message) for TPMS indicator does not go off, and no DTCs are stored See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Testing and Inspection/Symptom Related Diagnostic Procedures/TPMS Indicator Does Not Go Off, And No DTCs Are Stored .",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0) and then back to ON (II), or press the engine start/stop button to select the OFF mode and then the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0127 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the gauge control module   and the TPMS control unit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Check for TPMS DTCs with the HDS. Are any DTCs indicated? Go to the TPMS   indicated DTCs troubleshooting, then recheck. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to LOCK (0), or press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Disconnect the TPMS control unit 20P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Check for continuity between the gauge control module 32P connector terminals No. 13   and No. 14   and TPMS control unit 20P connector terminals No. 11   and No. 2   respectively. Is there continuity? Substitute a known-good TPMS control unit  See: Instrument Panel, Gauges and Warning Indicators/Tire Monitoring System/Tire Pressure Module/Service and Repair, and recheck. If the indication goes away, replace the original TPMS control unit. If the DTC is still present, replace the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair. Repair an open or poor connection in the wire between the TPMS control unit   and the gauge control module.",
+          "yes": "",
+          "no": ""
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U128B",
+      "description": "Gauge Control Module Lost Communication With Power Control Unit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Press the engine start/stop button to select the OFF, ACC, and ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U128B indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the power control unit   and the gauge control module.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "From the BODY ELECTRICAL SYSTEM SELECT menu, select B-CAN CONTROL UNITS INFORMATION, and then select CHECK CONNECTED CONTROL UNITS. Is the power control unit detected? Go to step 9. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Measure the voltage between body ground and power control unit connector C (36P) terminal No. 1. Is there battery voltage? Go to step 8. Go to step 7.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Check the No. 15 (10 A) fuse in the under-hood fuse/relay box. Is the fuse OK? Repair an open or high resistance in the No. 15(10 A)   fuse circuit. Replace the fuse. If the fuse blows again, repair a short to ground in the No. 15(10 A)   fuse circuit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Measure the voltage between body ground and power control unit connector C (36P) terminals No. 18 and No. 36 individually. Is there less than 0.2 V? Go to step 9. Repair an open or high resistance in the ground wire or poor ground (G402).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 9,
+          "instruction": "Press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect power control unit connector C (36P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between gauge control module 32P connector terminals No. 29   and No. 30   and power control unit connector C (36P) terminals No. 17   and No. 16   respectively. Is there continuity? Replace the power control unit. Repair an open or poor connection in the B-CAN wire between the power control unit   and the gauge control module.",
+          "yes": "",
+          "no": ""
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U128D",
+      "description": "Lost Communication with Gauge Control Module",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Connect the HDS to the DLC  See: Accessories and Optional Equipment/Radio, Stereo, and Compact Disc/Testing and Inspection/Initial Inspection and Diagnostic Overview/How to Troubleshoot the AcuraLink.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to ON (II), or press the engine start/stop button to select the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs with the HDS and DTC log data in the navigation system diagnostic mode  See: Accessories and Optional Equipment/Radio, Stereo, and Compact Disc/Testing and Inspection/Initial Inspection and Diagnostic Overview/AcuraLink Self-Diagnostic Function. Is DTC U128D indicated with HDS and on the navigation display? Go to step 4. Intermittent failure, the B-CAN communication line is OK at this time. Check for poor connections or loose terminals at the AcuraLink control unit (XM receiver).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to LOCK (0), or press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Disconnect AcuraLink control unit (XM receiver) connector A (32P) and the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check for continuity between AcuraLink control unit (XM receiver) connector A (32P) terminals No. 8 and No. 9 and gauge control module 32P connector terminals No. 29 and No. 30 respectively. Is there continuity? Check for poor connections or loose terminals at the AcuraLink control unit (XM receiver). If OK, Update the AcuraLink control unit  See: Accessories and Optional Equipment/Radio, Stereo, and Compact Disc/Testing and Inspection/Programming and Relearning   if it does not have the latest software. If the software is the latest, replace the AcuraLink control unit (XM receiver)  See: Accessories and Optional Equipment/Radio, Stereo, and Compact Disc/Testing and Inspection/Programming and Relearning. Repair an open in the wire between the AcuraLink control unit (XM receiver)   and the gauge control module.",
+          "yes": "",
+          "no": ""
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U128F",
+      "description": "Gauge Control Module Lost Communication With BSI Control Unit (BSI Message) The controller area network (CAN) transmits/receives pulsing signals to/from the control modules simultaneously by using two signal lines (CANH and CANL). When the engine control module (ECM)/powertrain control module (PCM) does not receive the signals from the EPS control unit via the F-CAN lines for a set time, the ECM/PCM detects a malfunction and stores a DTC.",
+      "detection_condition": [
+        "The ECM/PCM does not receive any signals via the F-CAN lines for at least 1 second.",
+        "Diagnosis Details",
+        "Conditions for setting the DTC",
+        "When a malfunction is detected, a Pending DTC, a Confirmed DTC, and the freeze data are stored in the ECM/PCM memory. The MIL does not come",
+        "on.",
+        "Conditions for clearing the DTC",
+        "The Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the battery."
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Press the engine start/stop button to select the OFF, ACC and ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U128F indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the gauge control module   and the BSI control unit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "From the BODY ELECTRICAL SYSTEM SELECT menu, select B-CAN CONTROL UNITS INFORMATION, and then select CHECK CONNECTED CONTROL UNITS. Is the BSI control unit detected? Go to step 9. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Measure the voltage between body ground and BSI control unit 16P connector terminal No. 10. Is there battery voltage? Go to step 8. Go to step 7.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Check the No. 1 (7.5 A) fuse in the driver's under-dash fuse/relay box. Is the fuse OK? Repair an open or high resistance in the No. 1 (7.5 A)   fuse circuit. Replace the fuse. If the fuse blows again, repair a short to ground in the No. 1(7.5 A)   fuse circuit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Measure the voltage between body ground and BSI control unit 16P connector terminal No. 7. Is there less than 0.2 V? Go to step 9. Repair an open or high resistance in the ground wire or poor ground (G603).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 9,
+          "instruction": "Press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect the BSI control unit 16P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between gauge control module 32P connector terminals No. 29   and No. 30   and BSI control unit 16P connector terminals No. 5   and No. 6   respectively. Is there continuity? Replace the BSI control unit  See: Accessories and Optional Equipment/Collision Avoidance and Parking Assist Systems/Blind Spot Module/Service and Repair/BSI Control Unit Removal/Installation. Repair an open or poor connection in the B-CAN wire between the BSI control unit   and the gauge control module. Advanced Diagnostics Advanced Diagnostics - DTC U0131: F-CAN Malfunction (Engine Control Module (ECM)/Powertrain Control Module (PCM)-EPS Control Unit) U0131, U0131 DTC U0131: F-CAN Malfunction (ECM/PCM-EPS Control Unit)",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to ON (II), or press the engine start/stop button to select the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Are DTC U0029 and U0131 indicated at the same time? Go to the troubleshooting for DTC U0029  See: U0029/ECM/PCM. Go to step 3.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 3,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0131 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for poor connections or loose terminals at the EPS control unit, and the ECM/PCM.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Check for communication the EPS system with the HDS. Does the HDS communicate with the EPS control unit? Go to step 6. Go to the symptom troubleshooting for EPS indicator does not go off, and no DTCs are stored  See: Steering and Suspension/Steering/Testing and Inspection/Symptom Related Diagnostic Procedures/EPS Indicator Does Not Go Off, And No DTCs Are Stored.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to LOCK (0), or press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Jump the SCS line with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Disconnect EPS control unit connector D (28P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect ECM/PCM connector A (49P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Check for continuity between ECM/PCM connector terminal A48 and EPS control unit connector D (28P) terminal No. 1. Is there continuity? Go to step 11. Repair open in the wire between the ECM/PCM(A48)   and the EPS control unit, then go to step 12.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 11,
+          "instruction": "Check for continuity between ECM/PCM connector terminal A49 and EPS control unit connector D (28P) terminal No. 15. Is there continuity? Substitute a known-good EPS control unit  See: Relays and Modules/Relays and Modules - Steering and Suspension/Relays and Modules - Steering/Steering Control Module/Service and Repair, then go to step 12   and recheck. If DTC U0131 is not indicated, replace the original EPS control unit  See: Relays and Modules/Relays and Modules - Steering and Suspension/Relays and Modules - Steering/Steering Control Module/Service and Repair, then go to step 12. Repair open in the wire between the ECM/PCM(A49)   and the EPS control unit, then go to step 12.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 12,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "Turn the ignition switch to ON (II), or press the engine start/stop button to select the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "Reset the ECM/PCM with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "Do the ECM/PCM idle learn procedure .",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 16,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0131 indicated? Check for poor connections or loose terminals at the EPS control unit   and the ECM/PCM, then go to step 1. is complete. If any other Pending or Confirmed DTCs are indicated, go to the indicated DTC's troubleshooting. Gauge Control Module U0131 DTC U0131: Gauge Control Module Lost Communication With EPS Control Unit (EPS Message) for EPS indicator does not go off, and no DTCs are stored  See: Steering and Suspension/Steering/Testing and Inspection/Symptom Related Diagnostic Procedures/EPS Indicator Does Not Go Off, And No DTCs Are Stored.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0) and then back to ON (II), or press the engine start/stop button to select the OFF mode and then the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0131 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the gauge control module   and the EPS control unit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Check for EPS DTCs with the HDS. Are any DTCs indicated? Go to the EPS indicated DTCs troubleshooting, then recheck. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to LOCK (0), or press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Disconnect EPS control unit connector D (28P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Check for continuity between the gauge control module 32P connector terminals No. 13   and No. 14   and EPS control unit connector D (28P) terminals No. 15   and No. 1   respectively. Is there continuity? Substitute a known-good EPS control unit  See: Relays and Modules/Relays and Modules - Steering and Suspension/Relays and Modules - Steering/Steering Control Module/Service and Repair, and recheck. If the indication goes away, replace the original EPS control unit. If the DTC is still present, replace the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair. Repair an open or poor connection in the wire between the EPS control unit   and the gauge control module.",
+          "yes": "",
+          "no": ""
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0151",
+      "description": "Gauge Control Module Lost Communication With SRS Unit (SRS Message) s/SRS Indicator Stays On, But No DTCs Are Stored, Or Cannot Be Read/Symptom Troubleshooting. The controller area network (CAN) transmits/receives pulsing signals to/from the control modules simultaneously by using two signal lines (CANH and CANL). When the information is not sent from the gauge control module via the F-CAN lines and this condition continues for a specified time or when the information sent from the gauge control module is abnormal and this condition continues for a specified cycle, the engine control module (ECM)/powertrain control module (PCM) detects a malfunction and stores a DTC.",
+      "detection_condition": [
+        "One of these conditions must be met:",
+        "-",
+        "The ECM/PCM does not receive any signals via the F-CAN lines for at least 1 second.",
+        "-",
+        "The information sent from the gauge control module is abnormal at least 20 times.",
+        "Diagnosis Details",
+        "Conditions for setting the DTC",
+        "When a malfunction is detected, the MIL comes on and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the ECM/PCM memory.",
+        "Conditions for clearing the DTC",
+        "The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed",
+        "DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the battery.",
+        "Driver's MICU"
+      ],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0) and then back to ON (II), or press the engine start/stop button to select the OFF mode and then the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0151 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the gauge control module   and the SRS unit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Check for SRS DTCs with the HDS. Are any DTCs indicated? Go to the SRS indicated DTCs troubleshooting, then recheck. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Turn the ignition switch to LOCK (0), or press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Do the battery terminal disconnection procedure  See: Starting and Charging/Battery/Service and Repair/Procedures, then wait at least 3 minutes.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect SRS unit connector A (39P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Check for continuity between gauge control module 32P connector terminals No. 13   and No. 14   and SRS unit connector A (39P) terminals No. 17   and No. 16   respectively. Is there continuity? Substitute a known-good SRS unit  See: Relays and Modules/Relays and Modules - Restraints and Safety Systems/Air Bag Control Module/Service and Repair, and recheck. If the indication goes away, replace the original SRS unit. If the DTC is still present, replace the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair. Repair an open or poor connection in the wire between the SRS unit   and the gauge control module. AcuraLink Control Unit U0155 DTC U0155: F-CAN Lost communication with Gauge Control Module",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Connect the HDS to the DLC  See: Accessories and Optional Equipment/Radio, Stereo, and Compact Disc/Testing and Inspection/Initial Inspection and Diagnostic Overview/How to Troubleshoot the AcuraLink.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to ON (II), or press the engine start/stop button to select the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs with the HDS and DTC log data in the navigation system diagnostic mode  See: Accessories and Optional Equipment/Radio, Stereo, and Compact Disc/Testing and Inspection/Initial Inspection and Diagnostic Overview/AcuraLink Self-Diagnostic Function. Is DTC U0155 indicated with HDS and on the navigation display? Go to step 4. Intermittent failure, the F-CAN communication line is OK at this time. Check for poor connections or loose terminals at the AcuraLink control unit (XM receiver).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 4,
+          "instruction": "Turn the ignition switch to LOCK (0), or press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 5,
+          "instruction": "Disconnect AcuraLink control unit (XM receiver) connector A (32P) and the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Check for continuity between AcuraLink control unit (XM receiver) connector A (32P) terminals No. 6 and No. 7 and gauge control module 32P connector terminals No. 13 and No. 14 respectively. Is there continuity? Check for poor connections or loose terminals at the AcuraLink control unit (XM receiver). If OK, Update the AcuraLink control unit  See: Accessories and Optional Equipment/Radio, Stereo, and Compact Disc/Testing and Inspection/Programming and Relearning   if it does not have the latest software. If the software is the latest, replace the AcuraLink control unit (XM receiver)  See: Accessories and Optional Equipment/Radio, Stereo, and Compact Disc/Testing and Inspection/Programming and Relearning. Repair an open in the wire between the AcuraLink control unit (XM receiver)   and the gauge control module. BSI Control Unit U0155 DTC U0155: Lost Communication With the Gauge Control Module",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Press the engine start/stop button to select the ON mode, then wait for 10 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0155 indicated? Go to step 4. Intermittent failure, the system is OK at this time.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 4,
+          "instruction": "Check for any DTCs with the HDS. Are there any other gauge control module DTCs indicated? Troubleshoot the indicated gauge control module   DTC(s). After troubleshooting, clear the DTC. Go to step 5.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Disconnect the BSI control unit 16P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Disconnect gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Check for continuity between gauge control module 32P connector terminal No. 30 and BSI control unit 16P connector terminal No. 6, and between gauge control module 32P connector terminal No. 29 and BSI control unit 16P connector terminal No 5. Is there continuity? Replace the BSI control unit  See: Accessories and Optional Equipment/Collision Avoidance and Parking Assist Systems/Blind Spot Module/Service and Repair/BSI Control Unit Removal/Installation. Repair an open in the wire between the gauge control module   and the BSI control unit. Without Climate Control U0155 DTC U0155: Lost Communication with Gauge Control Module (Climate Control Unit)",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0), and then back to ON (II), or press the engine start/stop button to select the OFF mode, and then the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Do the Self-Diagnostic Function with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs. Is DTC U0155 indicated? Go to step 5. The system is OK at this time. Check for loose wires or poor connections on the B-CAN lines between the gauge control module   and the climate control unit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Select B-CAN Control Units Information in the BODY ELECTRICAL menu.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Select Check Connected Units in the B-CAN Control Units Information menu. Is the gauge control module detected? Substitute a known-good climate control unit, and recheck. If the symptom/indication goes away, replace the original climate control unit  See: Heating and Air Conditioning/Control Assembly/Service and Repair/Climate Control Unit Removal/Installation. Go to step 7.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the ignition switch to LOCK (0), or press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect climate control unit connector C (20P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Check for continuity between the following terminals of the gauge control module 32P connector and climate control unit connector C (20P). Is there continuity? Go to the gauge control module input test  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Testing and Inspection/Component Tests and General Diagnostics. Repair an open in the wire(s) between the climate control unit   and the gauge control module. A/T, PGM-FI System U0155, U0155 DTC U0155: F-CAN Malfunction (ECM/PCM-Gauge Control Module)",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to ON (II), or press the engine start/stop button to select the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0155 indicated? Go to step 4. Intermittent failure, the system is OK at this time. Check for poor connections or loose terminals at the gauge control module   and the ECM/PCM.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 4,
+          "instruction": "Check for body electrical DTCs in the DTCs MENU with the HDS. Is DTC U0029 and/or U0100 indicated? Go to step 5. Do the gauge control module input test .",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch to LOCK (0), or press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Jump the SCS line with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Remove the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect ECM/PCM connector A (49P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Check for continuity between ECM/PCM connector terminal A48 and gauge control module 32P connector terminal No. 14. Is there continuity? Go to step 11. Repair open in the wire between the ECM/PCM(A48)   and the gauge control module, then go to step 12.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 11,
+          "instruction": "Check for continuity between ECM/PCM connector terminal A49 and gauge control module 32P connector terminal No. 13. Is there continuity? Substitute a known-good gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair, then go to step 12   and recheck. If DTC U0155 is not indicated after substitution, replace the original gauge control module, then go to step 12. Repair open in the wire between the ECM/PCM(A49)   and the gauge control module, then go to step 12.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 12,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "Turn the ignition switch to ON (II), or press the engine start/stop button to select the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "Reset the ECM/PCM with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "Do the ECM/PCM idle learn procedure .",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 16,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0155 indicated? Check for poor connections or loose terminals at the gauge control module   and the ECM/PCM,   then go to step 1. is complete. If any other Pending or Confirmed DTCs are indicated, go to the indicated DTC's troubleshooting. M/T, PGM-FI System U0155, U0155 DTC U0155: F-CAN Malfunction (ECM/PCM-Gauge Control Module)",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Turn the ignition switch to ON (II), or press the engine start/stop button to select the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Clear the DTC with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0155 indicated? Go to step 4. Intermittent failure, the system is OK at this time. Check for poor connections or loose terminals at the gauge control module   and the ECM/PCM.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 4,
+          "instruction": "Check for body electrical DTCs in the DTCs MENU with the HDS. Is DTC U0029 and/or U0100 indicated? Go to step 5. Do the gauge control module input test .",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch to LOCK (0), or press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Jump the SCS line with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 7,
+          "instruction": "Remove the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect ECM/PCM connector A (49P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Check for continuity between ECM/PCM connector terminal A48 and gauge control module 32P connector terminal No. 14. Is there continuity? Go to step 11. Repair open in the wire between the ECM/PCM(A48)   and the gauge control module, then go to step 12.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 11,
+          "instruction": "Check for continuity between ECM/PCM connector terminal A49 and gauge control module 32P connector terminal No. 13. Is there continuity? Substitute a known-good gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair, then go to step 12   and recheck. If DTC U0155 is not indicated after substitution, replace the original gauge control module, then go to step 12. Repair open in the wire between the ECM/PCM(A49)   and the gauge control module, then go to step 12.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 12,
+          "instruction": "Reconnect all connectors.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "Turn the ignition switch to ON (II), or press the engine start/stop button to select the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 14,
+          "instruction": "Reset the ECM/PCM with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 15,
+          "instruction": "Do the ECM/PCM idle learn procedure .",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 16,
+          "instruction": "Check for Pending or Confirmed DTCs with the HDS. Is DTC U0155 indicated? Check for poor connections or loose terminals at the gauge control module   and the ECM/PCM,   then go to step 1. is complete. If any other Pending or Confirmed DTCs are indicated, go to the indicated DTC's troubleshooting. Multiplex Control Unit, Door U0155 DTC U0155: Door Multiplex Control Unit Lost Communication With Gauge Control Module",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0) and then back to ON (II), or press the engine start/stop button to select the OFF mode and then the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0155 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the door multiplex control unit   and the gauge control module.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "From the BODY ELECTRICAL SYSTEM SELECT menu, select B-CAN CONTROL UNITS INFORMATION, and then select CHECK CONNECTED CONTROL UNITS. Is the gauge control module detected? Go to step 9. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Measure the voltage between body ground and gauge control module 32P connector terminals No. 15 and No. 16 individually. Is there battery voltage? Go to step 8. Go to step 7.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Check the No. 15 (10 A) fuse in the under-hood fuse/relay box and the No. 12 (7.5 A) fuse in the driver's under-dash fuse/relay box. Are the fuses OK? Repair an open or high resistance in the No. 15(10 A)   and/or No. 12(7.5 A)   fuse circuit. Replace the fuse(s). If the fuse blows again, repair a short to ground in the No. 15(10 A)   and/or No. 12(7.5 A)   fuse circuit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Measure the voltage between body ground and gauge control module 32P connector terminals No. 1 and No. 17 individually. Is there less than 0.2 V? Go to step 9. Repair an open or high resistance in the ground wire or poor ground (G401) and/or (G402).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 9,
+          "instruction": "Turn the ignition switch to LOCK (0), or press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect the power window master switch 37P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between gauge control module 32P connector terminals No. 29 and No. 30 and power window master switch 37P connector terminals No. 33   and No. 35 respectively. Is there continuity? Replace the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair. Repair an open or poor connection in the B-CAN wire between the door multiplex control unit   and the gauge control module. Remote Slot Control Unit U0155 DTC U0155: Remote Slot Control Unit Lost Communication With Gauge Control Module",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Press the engine start/stop button to select the OFF, ACC, and ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0155 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the remote   slot control unit and the gauge control module.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "From the BODY ELECTRICAL SYSTEM SELECT menu, select B-CAN CONTROL UNITS INFORMATION, and then select CHECK CONNECTED CONTROL UNITS. Is the gauge control module detected? Go to step 9. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Measure the voltage between body ground and gauge control module 32P connector terminals No. 15 and No. 16 individually. Is there battery voltage? Go to step 8. Go to step 7.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Check the No. 15 (10 A) fuse in the under-hood fuse/relay box and the No. 12 (7.5 A) fuse in the driver's under-dash fuse/relay box. Are the fuses OK? Repair an open or high resistance in the No. 15 (10 A) and/or No. 12 (7.5 A) fuse circuit. Replace the fuse(s). If the fuse blows again, repair a short to ground in the No. 15 (10 A) and/or No. 12 (7.5 A)   fuse circuit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Measure the voltage between body ground and gauge control module 32P connector terminals No. 1 and No. 17 individually. Is there less than 0.2 V? Go to step 9. Repair an open or high resistance in the ground wire or poor ground (G401) and/or (G402).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 9,
+          "instruction": "Press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect the remote slot control unit 40P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between gauge control module 32P connector terminals No. 29 and No. 30 and remote slot control unit 40P connector terminals No. 23   and No. 3 respectively. Is there continuity? Replace the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair. Repair an open or poor connection in the B-CAN wire between the remote   slot control unit and the gauge control module. Advanced Diagnostics Advanced Diagnostics - DTC U0155: F-CAN Malfunction (Engine Control Module (ECM)/Powertrain Control Module (PCM)-Gauge Control Module) U0155 DTC U0155: Driver's MICU Lost Communication With Gauge Control Module",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0) and then back to ON (II), or press the engine start/stop button to select the OFF mode and then the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0155 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the driver's MICU   and the gauge control module.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Measure the voltage between body ground and gauge control module 32P connector terminals No. 15 and No. 16 individually. Is there battery voltage? Go to step 7. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Check the No. 15 (10 A) fuse in the under-hood fuse/relay box and the No. 12 (7.5 A) fuse in the driver's under-dash fuse/relay box. Are the fuses OK? Repair an open or high resistance in the No. 15(10 A)   and/or No. 12(7.5 A)   fuse circuit. Replace the fuse(s). If the fuse blows again, repair a short to ground in the No. 15(10 A)   and/or No. 12(7.5 A)   fuse circuit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Measure the voltage between body ground and gauge control module 32P connector terminals No. 1   and No. 17   individually. Is there less than 0.2 V? Go to step 8. Repair an open or high resistance in the ground wire or poor ground (G401) and/or (G402).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Turn the ignition switch to LOCK (0), or press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect driver's under-dash fuse/relay box connector P (20P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Check for continuity between gauge control module 32P connector terminals No. 29 and No. 30 and driver's under-dash fuse/relay box connector P (20P) terminals No. 5 and No. 6 respectively. Is there continuity? Replace the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair. Repair an open or poor connection in the B-CAN wire between the driver's MICU   and the gauge control module. Immobilizer-Keyless Control Unit U0155 DTC U0155: Immobilizer-Keyless Control Unit Lost Communication With Gauge Control Module",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0) and then back to ON (II), or press the engine start/stop button to select the OFF mode and then the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0155 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the immobilizer-keyless control unit   and the gauge control module.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "From the BODY ELECTRICAL SYSTEM SELECT menu, select B-CAN CONTROL UNITS INFORMATION, and then select CHECK CONNECTED CONTROL UNITS. Is the gauge control module detected? Go to step 9. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Measure the voltage between body ground and gauge control module 32P connector terminals No. 15   and No. 16   individually. Is there battery voltage? Go to step 8. Go to step 7.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Check the No. 15 (10 A) fuse in the under-hood fuse/relay box and the No. 12 (7.5 A) fuse in the driver's under-dash fuse/relay box. Are the fuses OK? Repair an open or high resistance in the No. 15(10 A)   and/or No. 12(7.5 A)   fuse circuit. Replace the fuse(s). If the fuse blows again, repair a short to ground in the No. 15(10 A)   and/or No. 12 (7.5 A)   fuse circuit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Measure the voltage between body ground and gauge control module 32P connector terminals No. 1 and No. 17 individually. Is there less than 0.2 V? Go to step 9. Repair an open or high resistance in the ground wire or poor ground (G401) and/or (G402).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 9,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect the immobilizer-keyless control unit 7P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between gauge control module 32P connector terminals No. 29 and No. 30 and immobilizer-keyless control unit 7P connector terminals No. 3 and No. 4 respectively. Is there continuity? Replace the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair. Repair an open or poor connection in the B-CAN wire between the immobilizer-keyless control unit   and the gauge control module. Keyless Access Control Unit U0155 DTC U0155: Keyless Access Control Unit Lost Communication With Gauge Control Module",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Press the engine start/stop button to select the OFF, ACC, and ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0155 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the keyless access control unit   and the gauge control module.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "From the BODY ELECTRICAL SYSTEM SELECT menu, select B-CAN CONTROL UNITS INFORMATION, and then select CHECK CONNECTED CONTROL UNITS. Is the gauge control module detected? Go to step 9. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Measure the voltage between body ground and gauge control module 32P connector terminals No. 15 and No. 16 individually. Is there battery voltage? Go to step 8. Go to step 7.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Check the No. 15 (10 A) fuse in the under-hood fuse/relay box and the No. 12 (7.5 A) fuse in the driver's under-dash fuse/relay box. Are the fuses OK? Repair an open or high resistance in the No. 15 (10 A) and/or No. 12 (7.5 A) fuse circuit. Replace the fuse(s). If the fuse blows again, repair a short to ground in the No. 15 (10 A) and/or No. 12 (7.5 A)   fuse circuit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Measure the voltage between body ground and gauge control module 32P connector terminals No. 1 and No. 17 individually. Is there less than 0.2 V? Go to step 9. Repair an open or high resistance in the ground wire or poor ground (G401) and/or (G402).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 9,
+          "instruction": "Press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect keyless access control unit connector B (32P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between gauge control module 32P connector terminals No. 29 and No. 30 and keyless access control unit connector B (32P) terminals No. 7 and No. 8 respectively. Is there continuity? Replace the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair. Repair an open or poor connection in the B-CAN wire between the keyless access control unit   and the gauge control module. Passenger's MICU U0155 DTC U0155: Passenger's MICU Lost Communication With Gauge Control Module",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0) and then back to ON (II), or press the engine start/stop button to select the OFF mode and then the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0155 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the passenger's MICU   and the gauge control module.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "From the BODY ELECTRICAL SYSTEM SELECT menu, select B-CAN CONTROL UNITS INFORMATION, and then select CHECK CONNECTED CONTROL UNITS. Is the gauge control module detected? Go to step 9. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Measure the voltage between body ground and gauge control module 32P connector terminals No. 15   and No. 16   individually. Is there battery voltage? Go to step 8. Go to step 7.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Check the No. 15 (10 A) fuse in the under-hood fuse/relay box and the No. 12 (7.5 A) fuse in the driver's under-dash fuse/relay box. Are the fuses OK? Repair an open or high resistance in the No. 15(10 A)   and/or No. 12(7.5 A)   fuse circuit. Replace the fuse(s). If the fuse blows again, repair a short to ground in the No. 15(10 A)   and/or No. 12(7.5 A)   fuse circuit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Measure the voltage between body ground and gauge control module 32P connector terminals No. 1   and No. 17   individually. Is there less than 0.2 V? Go to step 9. Repair an open or high resistance in the ground wire or poor ground (G401) and/or (G402).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 9,
+          "instruction": "Turn the ignition switch to LOCK (0), or press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect passenger's under-dash fuse/relay box connector A (38P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between gauge control module 32P connector terminals No. 29 and No. 30 and passenger's under-dash fuse/relay box connector A (38P) terminals No. 29 and No. 11 respectively. Is there continuity? Replace the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair. Repair an open or poor connection in the B-CAN wire between the passenger's MICU   and the gauge control module. Power Control Unit U0155 DTC U0155: Power Control Unit Lost Communication With Gauge Control Module",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Press the engine start/stop button to select the OFF, ACC, and ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0155 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the power control unit   and the gauge control module.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "From the BODY ELECTRICAL SYSTEM SELECT menu, select B-CAN CONTROL UNITS INFORMATION, and then select CHECK CONNECTED CONTROL UNITS. Is the gauge control module detected? Go to step 9. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Measure the voltage between body ground and gauge control module 32P connector terminals No. 15 and No. 16 individually. Is there battery voltage? Go to step 9. Go to step 7.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Check the No. 15 (10 A) fuse in the under-hood fuse/relay box and the No. 12 (7.5 A) fuse in the driver's under-dash fuse/relay box. Are the fuses OK? Repair an open or high resistance in the No. 15 (10 A) and/or No. 12 (7.5 A) fuse circuit. Replace the fuse(s). If the fuse blows again, repair a short to ground in the No. 15 (10 A) and/or No. 12 (7.5 A)   fuse circuit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Measure the voltage between body ground and gauge control module 32P connector terminals No. 1 and No. 17 individually. Is there less than 0.2 V? Go to step 9. Repair an open or high resistance in the ground wire or poor ground (G401) and/or (G402).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 9,
+          "instruction": "Press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect power control unit connector C (36P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between gauge control module 32P connector terminals No. 29 and No. 30 and power control unit connector C (36P) terminals No. 17   and No. 16 respectively. Is there continuity? Replace the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair. Repair an open or poor connection in the B-CAN wire between the power control unit   and the gauge control module. Power Seat Control Unit U0155 DTC U0155: Power Seat Control Unit Lost Communication With Gauge Control Module",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0) and then back to ON (II), or press the engine start/stop button to select the OFF mode and then the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0155 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the power seat control unit   and the gauge control module.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "From the BODY ELECTRICAL SYSTEM SELECT menu, select B-CAN CONTROL UNITS INFORMATION, and then select CHECK CONNECTED CONTROL UNITS. Is the gauge control module detected? Go to step 9. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Measure the voltage between body ground and gauge control module 32P connector terminals No. 15   and No. 16   individually. Is there battery voltage? Go to step 8. Go to step 7.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Check the No. 15(10 A)   fuse in the under-hood fuse/relay box and the No. 12(7.5 A) fuse in the driver's under-dash fuse/relay box. Are the fuses OK? Repair an open or high resistance in the No. 15(10 A)   and/or No. 12(7.5 A)   fuse circuit. Replace the fuse(s). If the fuse blows again, repair a short to ground in the No. 15(10 A)   and/or No. 12 (7.5 A)   fuse circuit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Measure the voltage between body ground and gauge control module 32P connector terminals No. 1   and No. 17   individually. Is there less than 0.2 V? Go to step 9. Repair an open or high resistance in the ground wire or poor ground (G401) and/or (G402).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 9,
+          "instruction": "Turn the ignition switch to LOCK (0), or press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect power seat control unit connector A (40P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between gauge control module 32P connector terminals No. 29 and No. 30 and power seat control unit connector A (40P) terminals No. 39 and No. 40 respectively. Is there continuity? Replace the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair. Repair an open or poor connection in the B-CAN wire between the power seat control unit   and the gauge control module. Gauges U0164 DTC U0164: Gauge Control Module Lost Communication With Climate Control Unit",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0) and then back to ON (II), or press the engine start/stop button to select the OFF mode and then the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0155 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the gauge control module   and the climate control unit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "From the BODY ELECTRICAL SYSTEM SELECT menu, select B-CAN CONTROL UNITS INFORMATION, and then select CHECK CONNECTED CONTROL UNITS. Is the climate control unit detected? Go to step 9. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Measure the voltage between body ground and climate control unit connector A (32P) terminal No. 15. Is there battery voltage? Go to step 8. Go to step 7.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Check the No. 16 (7.5 A) fuse in the driver's under-dash fuse/relay box. Is the fuse OK? Repair an open or high resistance in the No. 16(7.5 A)   fuse circuit. Replace the fuse. If the fuse blows again, repair a short to ground in the No. 16 (7.5 A) fuse circuit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Measure the voltage between body ground and climate control unit connector A (32P) terminal No. 1. Is there less than 0.2 V? Go to step 9. Repair an open or high resistance in the ground wire or poor ground (G403).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 9,
+          "instruction": "Turn the ignition switch to LOCK (0), or press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect climate control unit connector A (28P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between climate control unit connector C (20P) terminals No. 7 and No. 8 and gauge control module connector terminals No. 29   and No. 30 respectively. Is there continuity? Replace the climate control unit  See: Heating and Air Conditioning/Control Assembly/Service and Repair/Climate Control Unit Removal/Installation. Repair an open or poor connection in the B-CAN wire between the gauge control module   and the climate control unit. Power Windows U0164 DTC U0164: Door Multiplex Control Unit Lost Communication With Climate Control Unit",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0) and then back to ON (II), or press the engine start/stop button to select the OFF mode and then the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0155 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the door multiplex control unit   and the climate control unit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "From the BODY ELECTRICAL SYSTEM SELECT menu, select B-CAN CONTROL UNITS INFORMATION, and then select CHECK CONNECTED CONTROL UNITS. Is the climate control unit detected? Go to step 9. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Measure the voltage between body ground and climate control unit connector A (32P) terminal No. 15. Is there battery voltage? Go to step 8. Go to step 7.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Check the No. 16 (7.5 A) fuse in the driver's under-dash fuse/relay box. Is the fuse OK? Repair an open or high resistance in the No. 16(7.5 A)   fuse circuit. Replace the fuse. If the fuse blows again, repair a short to ground in the No. 16 (7.5 A) fuse circuit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Measure the voltage between body ground and climate control unit connector A (32P) terminal No. 1. Is there less than 0.2 V? Go to step 9. Repair an open or high resistance in the ground wire or poor ground (G403).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 9,
+          "instruction": "Turn the ignition switch to LOCK (0), or press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect climate control unit connector A (32P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect the power window master switch 37P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between climate control unit connector A (32P) terminals No. 7 and No. 8 and power window master switch 37P connector terminals No. 33   and No. 35 respectively. Is there continuity? Replace the climate control unit  See: Heating and Air Conditioning/Control Assembly/Service and Repair/Climate Control Unit Removal/Installation. Repair an open or poor connection in the B-CAN wire between the door multiplex control unit   and the climate control unit. Driver's MICU U0199 DTC U0199: Driver's MICU Lost Communication With Door Multiplex Control Unit",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0) and then back to ON (II), or press the engine start/stop button to select the OFF mode and then the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0199 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the driver's MICU   and the door multiplex control unit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Measure the voltage between body ground and power window master switch 37P connector terminal No. 13. Is there battery voltage? Go to step 7. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Check the No. 15 (10 A) fuse in the under-hood fuse/relay box. Is the fuse OK? Repair an open or high resistance in the No. 15 (10 A) fuse circuit. Replace the fuse. If the fuse blows again, repair a short to ground in the No. 15 (10 A) fuse circuit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Measure the voltage between body ground and power window master switch 37P connector terminals No. 32 and No. 37 individually. Is there less than 0.2 V? Go to step 8. Repair an open or high resistance in the ground wire or poor ground (G401) and/or (G402).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Turn the ignition switch to LOCK (0), or press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect driver's under-dash fuse/relay box connector P (20P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect the power window master switch 37P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Check for continuity between power window master switch 37P connector terminals No. 33 and No. 35 and driver's under-dash fuse/relay box connector P (20P) terminals No. 5 and No. 6 respectively. Is there continuity? Replace the power window master switch  See: Sensors and Switches/Sensors and Switches - Windows and Glass/Power Window Switch/Service and Repair/Power Window Master Switch Replacement. Repair an open or poor connection in the B-CAN wire between the driver's MICU   and the door multiplex control unit. Gauge Control Module U0199 DTC U0199: Gauge Control Module Lost Communication With Door Multiplex Control Unit",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0) and then back to ON (II), or press the engine start/stop button to select the OFF mode and then the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0199 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the gauge control module   and the door multiplex control unit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "From the BODY ELECTRICAL SYSTEM SELECT menu, select B-CAN CONTROL UNITS INFORMATION, and then select CHECK CONNECTED CONTROL UNITS. Is the power window unit detected? Go to step 9. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Measure the voltage between body ground and power window master switch 37P connector terminal No. 13. Is there battery voltage? Go to step 8. Go to step 7.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Check the No. 15 (10 A) fuse in the under-hood fuse/relay box. Is the fuse OK? Repair an open or high resistance in the No. 15(10 A)   fuse circuit. Replace the fuse. If the fuse blows again, repair a short to ground in the No. 15 (10 A) fuse circuit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Measure the voltage between body ground and power window master switch 37P connector terminals No. 32 and No. 37 individually. Is there less than 0.2 V? Go to step 9. Repair an open or high resistance in the ground wire or poor ground (G401) and/or (G402).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 9,
+          "instruction": "Turn the ignition switch to LOCK (0), or press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect the power window master switch 37P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between power window master switch 37P connector terminals No. 33 and No. 35 and the gauge control module 32P connector terminals No. 29 and No. 30 respectively. Is there continuity? Faulty door multiplex control unit; replace the power window master switch  See: Sensors and Switches/Sensors and Switches - Windows and Glass/Power Window Switch/Service and Repair/Power Window Master Switch Replacement. Repair an open or poor connection in the B-CAN wire between the gauge control module   and the door multiplex control unit. Immobilizer-Keyless Control Unit U0199 DTC U0199: Immobilizer-Keyless Control Unit Lost Communication With Door Multiplex Control Unit",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0), and then back to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0199 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the immobilizer-keyless control unit   and the door multiplex control unit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "From the BODY ELECTRICAL SYSTEM SELECT menu, select B-CAN CONTROL UNITS INFORMATION, and then select CHECK CONNECTED CONTROL UNITS. Is the power window unit detected? Go to step 9. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Measure the voltage between body ground and power window master switch 37P connector terminal No. 13. Is there battery voltage? Go to step 8. Go to step 7.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Check the No. 15 (10 A) fuse in the under-hood fuse/relay box. Is the fuse OK? Repair an open or high resistance in the No. 15 (10 A) fuse circuit. Replace the fuse. If the fuse blows again, repair a short to ground in the No. 15 (10 A) fuse circuit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Measure the voltage between body ground and power window master switch 37P connector terminals No. 32 and No. 37 individually. Is there less than 0.2 V? Go to step 9. Repair an open or high resistance in the ground wire or poor ground (G401) and/or (G402).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 9,
+          "instruction": "Turn the ignition switch to LOCK (0).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect the immobilizer-keyless control unit 7P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect the power window master switch 37P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between power window master switch 37P connector terminals No. 33 and No. 35 and immobilizer-keyless control unit 7P connector terminals No. 3 and No. 4 respectively. Is there continuity? Replace the power window master switch  See: Sensors and Switches/Sensors and Switches - Windows and Glass/Power Window Switch/Service and Repair/Power Window Master Switch Replacement. Repair an open or poor connection in the B-CAN wire between the immobilizer-keyless control unit   and the door multiplex control unit. Keyless Access Control Unit U0199 DTC U0199: Keyless Access Control Unit Lost Communication With Door Multiplex Control Unit",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Press the engine start/stop button to select the OFF, ACC, and ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0199 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the keyless access control unit   and the door multiplex control unit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "From the BODY ELECTRICAL SYSTEM SELECT menu, select B-CAN CONTROL UNITS INFORMATION, and then select CHECK CONNECTED CONTROL UNITS. Is the power window unit detected? Go to step 9. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Measure the voltage between body ground and power window master switch 37P connector terminal No. 13. Is there battery voltage? Go to step 8. Go to step 7.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Check the No. 15 (10 A) fuse in the under-hood fuse/relay box. Is the fuse OK? Repair an open or high resistance in the No. 15 (10 A) fuse circuit. Replace the fuse. If the fuse blows again, repair a short to ground in the No. 15 (10 A) fuse circuit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Measure the voltage between body ground and power window master switch 37P connector terminals No. 32 and No. 37 individually. Is there less than 0.2 V? Go to step 9. Repair an open or high resistance in the ground wire or poor ground (G401) and/or (G402).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 9,
+          "instruction": "Press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect the power window master switch 37P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect power tailgate control unit connector B (32P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between power window master switch 37P connector terminals No. 33 and No. 35 and keyless access control unit connector B (32P) terminals No. 7 and No. 6 respectively. Is there continuity? Replace the power window master switch  See: Sensors and Switches/Sensors and Switches - Windows and Glass/Power Window Switch/Service and Repair/Power Window Master Switch Replacement. Repair an open or poor connection in the B-CAN wire between the keyless access control unit   and the door multiplex control unit. Power Control Unit U0199 DTC U0199: Power Control Unit Lost Communication With Door Multiplex Control Unit",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Press the engine start/stop button to select the OFF, ACC, and ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0199 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the power control unit   and the door multiplex control unit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "From the BODY ELECTRICAL SYSTEM SELECT menu, select B-CAN CONTROL UNITS INFORMATION, and then select CHECK CONNECTED CONTROL UNITS. Is the power window unit detected? Go to step 9. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Measure the voltage between body ground and power window master switch 37P connector terminal No. 13. Is there battery voltage? Go to step 8. Go to step 7.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Check the No. 15 (10 A) fuse in the under-hood fuse/relay box. Is the fuse OK? Repair an open or high resistance in the No. 15 (10 A) fuse circuit. Replace the fuse. If the fuse blows again, repair a short to ground in the No. 15 (10 A) fuse circuit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Measure the voltage between body ground and power window master switch 37P connector terminals No. 32 and No. 37 individually. Is there less than 0.2 V? Go to step 9. Repair an open or high resistance in the ground wire or poor ground (G401) and/or (G402).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 9,
+          "instruction": "Press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect the power window master switch 37P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect power control unit connector C (36P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between power window master switch 37P connector terminals No. 33 and No. 35 and power control unit connector C (36P) terminals No. 17 and No. 16 respectively. Is there continuity? Replace the power window master switch  See: Sensors and Switches/Sensors and Switches - Windows and Glass/Power Window Switch/Service and Repair/Power Window Master Switch Replacement. Repair an open or poor connection in the B-CAN wire between the power control unit   and the door multiplex control unit. Power Seat Control Unit U0199 DTC U0199: Power Seat Control Unit Lost Communication With Door Multiplex Control Unit",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0) and then back to ON (II), or press the engine start/stop button to select the OFF mode and then the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0199 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the power seat control unit   and the door multiplex control unit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "From the BODY ELECTRICAL SYSTEM SELECT menu, select B-CAN CONTROL UNITS INFORMATION, and then select CHECK CONNECTED CONTROL UNITS. Is the power window unit detected? Go to step 9. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Measure the voltage between body ground and power window master switch 37P connector terminal No. 13. Is there battery voltage? Go to step 8. Go to step 7.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Check the No. 15 (10 A) fuse in the under-hood fuse/relay box. Is the fuse OK? Repair an open or high resistance in the No. 15(10 A)   fuse circuit. Replace the fuse. If the fuse blows again, repair a short to ground in the No. 15 (10 A) fuse circuit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Measure the voltage between body ground and power window master switch 37P connector terminals No. 32 and No. 37 individually. Is there less than 0.2 V? Go to step 9. Repair an open or high resistance in the ground wire or poor ground (G401) and/or (G402).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 9,
+          "instruction": "Turn the ignition switch to LOCK (0), or press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect power seat control unit connector A (40P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect the power window master switch 37P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between power window master switch 37P connector terminals No. 33 and No. 35 and power seat control unit connector A (40P) terminals No. 39 and No. 40 respectively. Is there continuity? Replace the power window master switch  See: Sensors and Switches/Sensors and Switches - Windows and Glass/Power Window Switch/Service and Repair/Power Window Master Switch Replacement. Repair an open or poor connection in the B-CAN wire between the power seat control unit   and the door multiplex control unit.",
+          "yes": "",
+          "no": ""
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U0423",
+      "description": "Invalid Data Received from PCM (Vehicle Speed Data)",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Start the engine, then wait at least 3 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Test-drive the vehicle at 6 mph (10 km/h) or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0423 indicated? Troubleshoot the indicated PGM-FI system DTC(s).   After troubleshooting, clear the DTC. Intermittent failure, the system is OK at this time. AcuraLink Control Unit U1280, U1280, U1280, U1280, U1280, U1280, U1280, U1280, U1280, U1280, U1280 DTC U1280: Communication Bus Line Error (BUS-OFF)",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0) and then back to ON (II), or press the engine start/stop button to select the OFF mode and then the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U1280 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections, or worn/shorted wires. If the connections are good, check the battery condition  See: Starting and Charging/Battery/Testing and Inspection/Component Tests and General Diagnostics/Battery Test   and the charging system.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Turn the ignition switch to LOCK (0), or press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 6,
+          "instruction": "Disconnect the appropriate connector at each control unit in the table one at a time. Clear the DTC, then recheck for DTCs after each unit is disconnected. Is DTC U1280 indicated with each individual unit disconnected? Leave the connectors disconnected, and go to step 7. Go to the input test (or circuit troubleshooting) for the control unit that was disconnected when DTC U1280 did not reset, and perform all power and ground input tests. If the tests prove OK, replace that unit. - Passenger's MICU input test - Door multiplex control unit (power window master switch) input test  See: Windows and Glass/Windows/Testing and Inspection/Power Window Master Switch Input Test - Gauge control module input test  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Testing and Inspection/Component Tests and General Diagnostics - Power control unit input test - Keyless access control unit input test  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Keyless Entry/Testing and Inspection/Component Tests and General Diagnostics/Keyless Access System Input Test - Remote slot control unit input test - Immobilizer-keyless control unit input test  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Testing and Inspection/Component Tests and General Diagnostics/Immobilizer-Keyless Control Unit Input Test - Climate control unit power and ground circuit troubleshooting  See: Heating and Air Conditioning/Testing and Inspection/Component Tests and General Diagnostics/Climate Control Power And Ground Circuit Troubleshooting - Power seat control unit input test  See: Body and Frame/Relays and Modules - Body and Frame/Power Seat Control Module/Testing and Inspection/Power Seat Control Unit Input Test/Replacement - HandsFreeLink control unit input test  See: Accessories and Optional Equipment/Relays and Modules - Accessories and Optional Equipment/Voice Activation Module/Testing and Inspection - AcuraLink control unit input test - Audio unit input test - Audio-navigation unit input test - BSI control unit input test.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Turn the ignition switch to LOCK (0), or press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 8,
+          "instruction": "Remove the driver's dashboard undercover  See: Body and Frame/Interior Moulding / Trim/Dashboard / Instrument Panel/Service and Repair/Driver's Dashboard Undercover Removal / Installation.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect driver's under-dash fuse/relay box connector P (20P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Check for continuity between driver's under-dash fuse/relay box connector P (20P) terminals No. 5   and No. 6. Is there continuity? Repair a short in the B-CAN wires. Go to step 11.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 11,
+          "instruction": "Check for continuity between body ground and driver's under-dash fuse/relay box connector P (20P)   terminals No. 5   and No. 6   individually. Is there continuity? Repair a short to ground in the wire(s). Go to step 12.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 12,
+          "instruction": "Turn the ignition switch to ON (II), or press the engine start/stop button to select the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 13,
+          "instruction": "Measure the voltage between body ground and driver's under-dash fuse/relay box connector P (20P)   terminals No. 5   and No. 6   individually. Is there voltage? Repair a short to power in the wire(s). Faulty driver's MICU; replace the driver's under-dash fuse/relay box  See: Maintenance/Fuses and Circuit Breakers/Fuse Block/Service and Repair/Drivers Under-Dash Fuse/Relay Box (Drivers MICU) Removal and Installation. BSI Control Unit U1280 DTC U1280: Communication Bus Line Error (BUS-OFF)",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Press the engine start/stop button to select the ON mode, then wait for 10 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Check for DTCs with the HDS. Is DTC U1280 indicated? Replace the BSI control unit  See: Accessories and Optional Equipment/Collision Avoidance and Parking Assist Systems/Blind Spot Module/Service and Repair/BSI Control Unit Removal/Installation. Intermittent failure, the system is OK at this time. Gauge Control Module U1282 DTC U1282: Gauge Control Module Lost Communication With Driver's MICU",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0) and then back to ON (II), or press the engine start/stop button to select the OFF mode and then the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U1282 indicated? Replace the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the gauge control module and the driver's MICU. Immobilizer-Keyless Control Unit U1282 DTC U1282: Immobilizer-Keyless Control Unit Lost Communication With Driver's MICU",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0), and then back to ON (II).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U1282 indicated? Go to the driver's MICU input test, and do all power, ground, and communication input tests. If the tests prove OK, replace the driver's under-dash fuse/relay box  See: Maintenance/Fuses and Circuit Breakers/Fuse Block/Service and Repair/Drivers Under-Dash Fuse/Relay Box (Drivers MICU) Removal and Installation. If the DTC is still present, replace the immobilizer-keyless control unit  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Alarm Module/Service and Repair. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the immobilizer-keyless control unit and the driver's MICU. Keyless Access Control Unit U1282 DTC U1282: Keyless Access Control Unit Lost Communication With Driver's MICU",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Press the engine start/stop button to select the OFF, ACC, and ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for 6 seconds or more.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U1282 indicated? Go to the driver's MICU input test, and do all power, ground, and communication input tests. If the tests prove OK, replace the driver's under-dash fuse/relay box  See: Maintenance/Fuses and Circuit Breakers/Fuse Block/Service and Repair/Drivers Under-Dash Fuse/Relay Box (Drivers MICU) Removal and Installation. If the DTC is still present, replace the keyless access control unit. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the keyless access control unit and the driver's MICU. Passenger's MICU U1282 DTC U1282: Passenger's MICU Lost Communication With Driver's MICU",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0) and then back to ON (II), or press the engine start/stop button to select the OFF mode and then the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U1282 indicated? Faulty passenger's MICU; replace the passenger's under-dash fuse/relay box  See: Maintenance/Fuses and Circuit Breakers/Fuse Block/Service and Repair/Passengers Under-Dash Fuse/Relay Box (Passengers MICU) Removal and Installation. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the Passenger's MICU and the driver's MICU. Multiplex Control Unit, Door U1282 DTC U1282: Door Multiplex Control Unit Lost Communication With Driver's MICU",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0) and then back to ON (II), or press the engine start/stop button to select the OFF mode and then the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U1282 indicated? Replace the power window master switch  See: Sensors and Switches/Sensors and Switches - Windows and Glass/Power Window Switch/Service and Repair/Power Window Master Switch Replacement. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the door multiplex control unit and the driver's MICU. Power Seat Control Unit U1282 DTC U1282: Power Seat Control Unit Lost Communication With Driver's MICU",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0) and then back to ON (II), or press the engine start/stop button to select the OFF mode and then the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U1282 indicated? Replace the power seat control unit  See: Body and Frame/Relays and Modules - Body and Frame/Power Seat Control Module/Testing and Inspection/Power Seat Control Unit Input Test/Replacement. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the power seat control unit and the driver's MICU. Driver's MICU U1283 DTC U1283: Driver's MICU Lost Communication With Passenger's MICU",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0) and then back to ON (II), or press the engine start/stop button to select the OFF mode and then the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U1283 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the driver's MICU and the passenger's MICU.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "Measure the voltage between body ground and passenger's under-dash fuse/relay box connector A (38P) terminals No. 14 and No. 35 individually. Is there battery voltage? Go to step 7. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Check the No. 15 (10 A) fuse in the under-hood fuse/relay box and the No. 12 (7.5 A) fuse in the driver's under-dash fuse/relay box. Are the fuses OK? Repair an open or high resistance in the No. 15 (10 A) and/or No. 12 (7.5 A) fuse circuit. Replace the fuse(s). If the fuse blows again, repair a short to ground in the No. 15 (10 A) and/or No. 12 (7.5 A)   fuse circuit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Measure the voltage between body ground and passenger's under-dash fuse/relay box connector A (38P) and E (18P) terminals as shown. Is there less than 0.2 V? Go to step 8. Repair an open or high resistance in the ground wire or poor ground (G203), (G401), and/or (G405).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Turn the ignition switch to LOCK (0), or press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 9,
+          "instruction": "Disconnect passenger's under-dash fuse/relay box connector A (38P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect the power window master switch 37P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Check for continuity between passenger's under-dash fuse/relay box connector A (38P) terminals No. 11 and No. 29 and driver's under-dash fuse/relay box connector P (20P) terminals No. 6   and No. 5 respectively. Is there continuity? Faulty driver's MICU; replace the driver's under-dash fuse/relay box  See: Maintenance/Fuses and Circuit Breakers/Fuse Block/Service and Repair/Drivers Under-Dash Fuse/Relay Box (Drivers MICU) Removal and Installation. Repair an open or poor connection in the B-CAN wire between the driver's MICU and the passenger's MICU. Gauge Control Module U1283 DTC U1283: Gauge Control Module Lost Communication With Passenger's MICU",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0) and then back to ON (II), or press the engine start/stop button to select the OFF mode and then the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U1283 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the gauge control module and the passenger's MICU.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "From the BODY ELECTRICAL SYSTEM SELECT menu, select B-CAN CONTROL UNITS INFORMATION, and then select CHECK CONNECTED CONTROL UNITS. Is the passenger's MICU detected? Go to step 9. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Measure the voltage between body ground and passenger's under-dash fuse/relay box connector A (38P) terminals No. 14 and No. 35 individually. Is there battery voltage? Go to step 8. Go to step 7.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Check the No. 15 (10 A) fuse in the under-hood fuse/relay box and the No. 12 (7.5 A) fuse in the driver's under-dash fuse/relay box. Are the fuses OK? Repair an open or high resistance in the No. 15 (10 A) and/or No. 12 (7.5 A) fuse circuit. Replace the fuse(s). If the fuse blows again, repair a short to ground in the No. 15 (10 A) and/or No. 12 (7.5 A)   fuse circuit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Measure the voltage between body ground and passenger's under-dash fuse/relay box connector A (38P) and E (18P) terminals as shown. Is there less than 0.2 V? Go to step 9. Repair an open or high resistance in the ground wire or poor ground (G203), (G401), and/or (G405).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 9,
+          "instruction": "Turn the ignition switch to LOCK (0), or press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect passenger's under-dash fuse/relay box connector A (38P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between passenger's under-dash fuse/relay box connector A (38P) terminals No. 11 and No. 29 and gauge control module 32P connector terminals No. 30   and No. 29 respectively. Is there continuity? Replace the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair. Repair an open or poor connection in the B-CAN wire between the gauge control module and the passenger's MICU. Keyless Access Control Unit U1283 DTC U1283: Keyless Access Control Unit Lost Communication With Passenger's MICU",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Press the engine start/stop button to select the OFF, ACC, and ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U01283 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the keyless access control unit and the passenger's MICU.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "From the BODY ELECTRICAL SYSTEM SELECT menu, select B-CAN CONTROL UNITS INFORMATION, and then select CHECK CONNECTED CONTROL UNITS. Is the passenger's MICU detected? Go to step 9. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Measure the voltage between body ground and passenger's under-dash fuse/relay box connector A (38P) terminals No. 14 and No. 35 individually. Is there battery voltage? Go to step 8. Go to step 7.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Check the No. 15 (10 A) fuse in the under-hood fuse/relay box and the No. 12 (7.5 A) fuse in the driver's under-dash fuse/relay box. Are the fuses OK? Repair an open or high resistance in the No. 15 (10 A) and/or No. 12 (7.5 A) fuse circuit. Replace the fuse(s). If the fuse blows again, repair a short to ground in the No. 15 (10 A) and/or No. 12 (7.5 A)   fuse circuit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Measure the voltage between body ground and passenger's under-dash fuse/relay box connector A (38P) and E (18P) terminals as shown. Is there less than 0.2 V? Go to step 9. Repair an open or high resistance in the ground wire or poor ground (G203), (G401) and/or (G405).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 9,
+          "instruction": "Press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect keyless access control unit connector B (32P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect passenger's under-dash fuse/relay box connector A (38P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between passenger's under-dash fuse/relay box connector A (38P) terminals No. 11 and No. 29 and keyless access control unit connector B (32P) terminals No. 8   and No. 7 respectively. Is there continuity? Replace the keyless access control unit. An open or poor connection in the B-CAN wire between the keyless access control unit and the passenger's MICU. Multiplex Control Unit, Door U1283 DTC U1283: Door Multiplex Control Unit Lost Communication With Passenger's MICU",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Turn the ignition switch to LOCK (0) and then back to ON (II), or press the engine start/stop button to select the OFF mode and then the ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U0155 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the door multiplex control unit and the passenger's MICU.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "From the BODY ELECTRICAL SYSTEM SELECT menu, select B-CAN CONTROL UNITS INFORMATION, and then select CHECK CONNECTED CONTROL UNITS. Is the passenger's MICU detected? Go to step 9. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Measure the voltage between body ground and passenger's under-dash fuse/relay box connector A (38P) terminals No. 14 and No. 35 individually. Is there battery voltage? Go to step 8. Go to step 7.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Check the No. 15 (10 A) fuse in the under-hood fuse/relay box and the No. 12 (7.5 A) fuse in the driver's under-dash fuse/relay box. Are the fuses OK? Repair an open or high resistance in the No. 15 (10 A) and/or No. 12 (7.5 A) fuse circuit. Replace the fuse(s). If the fuse blows again, repair a short to ground in the No. 15 (10 A) and/or No. 12 (7.5 A)   fuse circuit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Measure the voltage between body ground and passenger's under-dash fuse/relay box connector A (38P) and E (18P) terminals as shown. Is there less than 0.2 V? Go to step 9. Repair an open or high resistance in the ground wire or poor ground (G203), (G401), and/or (G405).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 9,
+          "instruction": "Turn the ignition switch to LOCK (0), or press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect passenger's under-dash fuse/relay box connector A (38P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect the power window master switch 37P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between passenger's under-dash fuse/relay box connector A (38P) terminals No. 11 and No. 29 and power window master switch 37P connector terminals No. 35   and No. 33 respectively. Is there continuity? Replace the power window master switch  See: Sensors and Switches/Sensors and Switches - Windows and Glass/Power Window Switch/Service and Repair/Power Window Master Switch Replacement. Repair an open or poor connection in the B-CAN wire between the door multiplex control unit and the passenger's MICU.",
+          "yes": "",
+          "no": ""
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1286",
+      "description": "Gauge Control Module Lost Communication With Keyless Access Control Unit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Press the engine start/stop button to select the OFF, ACC, and ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U1286 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the gauge control module   and the keyless access control unit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "From the BODY ELECTRICAL SYSTEM SELECT menu, select B-CAN CONTROL UNITS INFORMATION, and then select CHECK CONNECTED CONTROL UNITS. Is the keyless access control unit detected? Go to step 9. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Measure the voltage between body ground and keyless access control unit connector B (32P) terminals No. 1 and No. 17 individually. Is there battery voltage? Go to step 8. Go to step 7.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Check the No. 15 (10 A) fuse in the under-hood fuse/relay box and the No. 9 (20 A) fuse in the driver's under-dash fuse/relay box. Are the fuses OK? Repair an open or high resistance in the No. 15 (10 A) and/or No. 9 (20 A) fuse circuit. Replace the fuse(s). If the fuse blows again, repair a short to ground in the No. 15 (10 A) and/or No. 9 (20 A)   fuse circuit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Measure the voltage between body ground and keyless access control unit connector A (36P) and B (32P) terminals as shown. Is there less than 0.2 V? Go to step 9. Repair an open or high resistance in the ground wire or poor ground (G402).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 9,
+          "instruction": "Press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect keyless access control unit connector B (32P).",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between keyless access control unit connector B (32P) terminals No. 7 and No. 8 and gauge control module 32P connector terminals No. 29   and No. 30 respectively. Is there continuity? Replace the gauge control module  See: Instrument Panel, Gauges and Warning Indicators/Instrument Cluster / Carrier/Instrument Panel Control Module/Service and Repair. Repair an open or poor connection in the B-CAN wire between the gauge control module   and keyless access control unit.",
+          "yes": "",
+          "no": ""
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "U1289",
+      "description": "Gauge Control Module Lost Communication With Remote Slot Control Unit",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Clear the DTCs with the HDS.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 2,
+          "instruction": "Press the engine start/stop button to select the OFF, ACC, and ON mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 3,
+          "instruction": "Wait for at least 6 seconds.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 4,
+          "instruction": "Check for DTCs with the HDS. Is DTC U1289 indicated? Go to step 5. Intermittent failure, the system is OK at this time. Check for loose or poor connections between the remote   slot control unit and the gauge control module.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 5,
+          "instruction": "From the BODY ELECTRICAL SYSTEM SELECT menu, select B-CAN CONTROL UNITS INFORMATION, and then select CHECK CONNECTED CONTROL UNITS. Is the remote slot control unit detected? Go to step 9. Go to step 6.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 6,
+          "instruction": "Measure the voltage between body ground and remote slot control unit 40P connector terminals No. 1 and No. 21 individually. Is there battery voltage? Go to step 7. Go to step 8.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 7,
+          "instruction": "Check the No. 15 (10 A) fuse in the under-hood fuse/relay box and the No. 9 (20 A) fuse in the driver's under-dash fuse/relay box. Are the fuses OK? Repair an open or high resistance in the No. 15(10 A)   and/or No. 9 (20 A)   fuse circuit. Replace the fuse(s). If the fuse blows again, repair a short to ground in the No. 15(10 A)   and/or No. 9(20 A)   fuse circuit.",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 8,
+          "instruction": "Measure the voltage between body ground and remote slot control unit 40P connector terminals No. 20   and No. 40 individually. Is there less than 0.2 V? Go to step 9. Repair an open or high resistance in the ground wire or poor ground (G405).",
+          "yes": "",
+          "no": ""
+        },
+        {
+          "step": 9,
+          "instruction": "Press the engine start/stop button to select the OFF mode.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 10,
+          "instruction": "Disconnect the remote slot control unit 40P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 11,
+          "instruction": "Disconnect the gauge control module 32P connector.",
+          "yes": null,
+          "no": null
+        },
+        {
+          "step": 12,
+          "instruction": "Check for continuity between gauge control module 32P connector terminals No. 29   and No. 30   and remote slot control unit 40P connector terminals No. 23   and No. 3   respectively. Is there continuity? Replace the remote slot control unit  See: Accessories and Optional Equipment/Antitheft and Alarm Systems/Keyless Entry/Testing and Inspection/Component Tests and General Diagnostics/Keyless Access Remote Slot Test/Replacement. Repair an open or poor connection in the B-CAN wire between the remote   slot control unit and the gauge control module.",
+          "yes": "",
+          "no": ""
+        }
+      ],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}

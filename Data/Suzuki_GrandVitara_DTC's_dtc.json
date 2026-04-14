@@ -1,0 +1,25 @@
+{
+  "source_file": "Suzuki_GrandVitara_DTC's.pdf",
+  "format_detected": "alldata",
+  "dtc_count": 2,
+  "dtcs": [
+    {
+      "dtc_code": "P1618",
+      "description": "U0164 U0114-U0100 / No.31-No.33 Air Bag System SDM DTC B1013-B1051 B1052-B1311 B1312-B1388/U0073-U0100 Air Conditioning System",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    },
+    {
+      "dtc_code": "P0300",
+      "description": "J24B. See: P Code Charts/P0300 EVAP-Leak-Check Model P0010-P0101 P0102-P0131 P0132-P0304 P0327-P0463 P0480-P050B P0532-P2004 P2006-P2128 P2135-P2610 P2A01-P1646 / U0073-U0155 Non-EVAP-Leak-Check Model P0010-P0116 P0117-P0223 P0300-P0480 P0481-P0617 P0620-P2119 P2122-P2A01 P1614-P1638 / U0073-U0140 For Vehicle Equipped with A/T When using CAN communication OBD generic scan tool, not only the DTC(s) related to ECM but also the following DTC(s) related to ECM is displayed on CAN communication OBD generic scan tool simultaneously. P0602-P2764 / U0073-U0140",
+      "detection_condition": [],
+      "possible_causes": [],
+      "steps": [],
+      "enable_conditions": [],
+      "related_codes": []
+    }
+  ]
+}
